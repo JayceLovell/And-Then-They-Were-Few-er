@@ -1,9 +1,9 @@
 # And Then They Were Few(er)
  Game develop by ontario tech students for GDW
 
-![](RackMultipart20220926-1-xd2u7c_html_fc86bb1b3912c5a4.png)
+![Picture1](https://user-images.githubusercontent.com/19291090/192363433-bc6617ac-9b03-42a5-9cc0-d60ab35bd1c7.jpg)
 
-I dunno man
+#### I dunno man
 
 ### Team Members
 
@@ -13,12 +13,6 @@ I dunno man
 - Lay Ndiaye (Artist/ Sound Designer)
 - Fahad Tariq (Design, Artist)
 - Adnan Kasujja (Game Design/Co-Writer)
-
-###
-
-
-###
-
 
 ### Concept
 
@@ -42,9 +36,6 @@ In "And Then There Were Fewer", the player can use Keyboard and Mouse to play th
 | Select/Pickup Clue | Left click | R2 |
 | Aim Player | Mouse movement | Right joystick |
 | Interact/Start Conversation | E | Button 3 |
-
-###
-
 
 ### Key Mechanics
 
@@ -91,7 +82,6 @@ With a cast of 6 characters, there will also be an emphasis on the double faced 
 - Player Sprite
 - Suspects sprites
 - Bubble Speech
--
 - NPC's/The Other Guests Sprite
 - Various Items/Clues
 - Tilesets
@@ -112,19 +102,9 @@ With a cast of 6 characters, there will also be an emphasis on the double faced 
 
 Steampunk Aesthetic. Game will be set in a mansion. Pixel art,not detailed.
 
-![](RackMultipart20220926-1-xd2u7c_html_509f68b5015772c3.png)
-
-![](RackMultipart20220926-1-xd2u7c_html_eeae95a7ff904195.png)
-
-![](RackMultipart20220926-1-xd2u7c_html_f7204c1e93f53c3f.jpg)
-
-##
-
-
-##
-
-
-##
+![Picture1](https://user-images.githubusercontent.com/19291090/192364074-535ed898-2672-499b-aae1-527c254b2898.jpg)
+![Picture2](https://user-images.githubusercontent.com/19291090/192364087-949cb0f2-430c-4cd7-8c72-ddeb532f89dc.jpg)
+![Picture3](https://user-images.githubusercontent.com/19291090/192364094-7284c158-1907-4ba7-9b4e-24a6487dba0a.jpg)
 
 
 ## Characters
@@ -135,24 +115,9 @@ Steampunk Aesthetic. Game will be set in a mansion. Pixel art,not detailed.
 
 Detective. Liar(to get her results) ,con artist type, looks for results, can be cruel in her methods,underground and small detective (Make the character neutral to appeal more) (Not a strong personality that way the player can immerse into the character) (Possible Motive: killing the famous inventor and blaming it to another person making the public believe that she solved it will elevate her name as a detective and become famous. Possible Motive number 2 she is an underground and small detective she could need the money to pay rent).
 
-#### Nikki Test ![](RackMultipart20220926-1-xd2u7c_html_254e9206c0cb3e95.jpg)
-
+#### Nikki Test 
+![Picture4](https://user-images.githubusercontent.com/19291090/192364032-1d53cc9b-cefe-4a50-a012-71cac2d37c4d.jpg)
 The inventor that is murdered. Nikki grew up in an impoverished neighborhood. Her father left when she was young, leaving her with her mother with the family business. Too stubborn to follow her mothers wishes and take on the family business she instead used her intelligence to invent the Synthesizer.
-
-###
-
-
-###
-
-
-###
-
-
-###
-
-
-###
-
 
 ### Supporting Characters
 
