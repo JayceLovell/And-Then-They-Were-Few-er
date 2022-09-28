@@ -33,4 +33,8 @@ public class Character : MonoBehaviour
     {
 
     }
+    public string Trust()
+    {
+        return Name + "trust level is " + TrustLevel+".";
+    }
 }
