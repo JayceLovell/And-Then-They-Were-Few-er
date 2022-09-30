@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nikki-foward_0
+      name: nikki-down_0
       rect:
         serializedVersion: 2
         x: 8
@@ -126,7 +126,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-foward_1
+      name: nikki-down_1
       rect:
         serializedVersion: 2
         x: 56
@@ -147,7 +147,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-foward_2
+      name: nikki-down_2
       rect:
         serializedVersion: 2
         x: 105
@@ -294,7 +294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-back_9
+      name: nikki-up_9
       rect:
         serializedVersion: 2
         x: 9
@@ -315,7 +315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-back_10
+      name: nikki-up_10
       rect:
         serializedVersion: 2
         x: 56
@@ -336,7 +336,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-back_11
+      name: nikki-up_11
       rect:
         serializedVersion: 2
         x: 103
@@ -367,17 +367,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nikki-foward_2: 2027043927
+      nikki-up_9: -1068163235
+      nikki-up_10: 1330376317
+      nikki-down_1: 2113903081
+      nikki-up_11: 2051034293
+      nikki-down_0: 17160183
       nikki-left_3: -211257233
       nikki-left_5: 1226856242
-      nikki-back_10: 1330376317
       nikki-right_8: -399305904
-      nikki-back_11: 2051034293
-      nikki-back_9: -1068163235
-      nikki-foward_1: 2113903081
-      nikki-foward_0: 17160183
       nikki-right_6: -1432150796
       nikki-right_7: 1304023330
+      nikki-down_2: 2027043927
       nikki-left_4: -1719403356
   spritePackingTag: 
   pSDRemoveMatte: 0
