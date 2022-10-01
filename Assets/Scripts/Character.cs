@@ -50,4 +50,14 @@ public class Character : MonoBehaviour
     {
         return Name + "trust level is " + TrustLevel+".";
     }
+    /// <summary>
+    /// use this method by
+    /// StartCoroutine(WaitInSeconds());
+    /// </summary>
+    /// <param name="seconds"></param>
+    /// <returns>no resumes code</returns>
+    IEnumerator WaitInSeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+    }
 }
