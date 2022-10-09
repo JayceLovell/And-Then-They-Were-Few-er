@@ -16,7 +16,7 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_playerInteracts == true)
+        if (_playerInteracts)
         { 
             _playerInteracts = false;
         }
