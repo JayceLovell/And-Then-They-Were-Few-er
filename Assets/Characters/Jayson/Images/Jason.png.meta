@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bad1cbe9e380eb442bf7e10c905d50d0
+guid: 801be9f44fa871444aedf1cf6dad044d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,11 +105,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jason_Walk_0
+      name: Jason_down_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 145
+        y: 144
         width: 47
         height: 47
       alignment: 0
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89aa43f0be07021488ab34b3ee0580dc
-      internalID: -69420963
+      spriteID: f76d500536b1ae745953f087699ba767
+      internalID: 540890903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jason_Walk_1
+      name: Jason_down_1
       rect:
         serializedVersion: 2
         x: 48
-        y: 1
+        y: 144
         width: 47
-        height: 192
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,18 +140,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c9bb8c04db191c40a3c148efbaafd23
-      internalID: 1839394134
+      spriteID: 819ff66c5ca3e794e88703c41907b1a9
+      internalID: -137232902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jason_Walk_2
+      name: Jason_down_2
       rect:
         serializedVersion: 2
         x: 96
-        y: 145
+        y: 144
         width: 47
         height: 47
       alignment: 0
@@ -161,18 +161,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed63dad970511eb4d8ecfde916072512
-      internalID: -1325493215
+      spriteID: 320a708004a979b41a00ec970d714acb
+      internalID: -6226718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jason_Walk_3
+      name: Jason_Left_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 97
+        y: 96
         width: 47
         height: 47
       alignment: 0
@@ -182,18 +182,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2eb3caa9ad18f9243b242529f5f4a4cb
-      internalID: 553115304
+      spriteID: bb4cf235e40cb1f479ca1747215ae2ee
+      internalID: 1352386800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jason_Walk_4
+      name: Jason_Left_2
       rect:
         serializedVersion: 2
         x: 96
-        y: 97
+        y: 96
         width: 47
         height: 47
       alignment: 0
@@ -203,18 +203,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74077a23c05db994ab7ba32446fb65cc
-      internalID: 1174905913
+      spriteID: dd9805452fe42664e8bf7c7065fd496e
+      internalID: -1979384293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jason_Walk_5
+      name: Jason_Right_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 49
+        y: 48
         width: 47
         height: 47
       alignment: 0
@@ -224,18 +224,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29511736f7d93e84dbe2217ed7eb5350
-      internalID: -538394047
+      spriteID: 11438384fcd1a544f99b5413d1a7eadc
+      internalID: 454701548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jason_Walk_6
+      name: Jason_Right_2
       rect:
         serializedVersion: 2
         x: 96
-        y: 49
+        y: 48
         width: 47
         height: 47
       alignment: 0
@@ -245,18 +245,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 215f4e75454cdbb408a31433be92347e
-      internalID: 1648506629
+      spriteID: 5b01fb6c355763840a434762e8ead7bf
+      internalID: 1643575196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jason_Walk_7
+      name: Jason_Top_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
+        y: 0
         width: 47
         height: 47
       alignment: 0
@@ -266,18 +266,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 983c9f0f40b403f4ca7dff91bc45bda9
-      internalID: 1605868566
+      spriteID: d340d5c287cb9e449bed3f5d9c68148f
+      internalID: -809928563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jason_Walk_8
+      name: Jason_Top_2
       rect:
         serializedVersion: 2
         x: 96
-        y: 1
+        y: 0
         width: 47
         height: 47
       alignment: 0
@@ -287,8 +287,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59f0538ab734888418f4d8f3d9673ffe
-      internalID: -1948424038
+      spriteID: 448af3f4128689a418058dbc6b79b0a4
+      internalID: -2107661402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jason_Left_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e17e0d964560245bb5d09b895339ec
+      internalID: 343619832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jason_Right_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1083559b8c92d04449e88aef1e22ac84
+      internalID: 428694256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jason_Top_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20aee0f7a6dc16479b76e30fa70a8e4
+      internalID: 674611825
       vertices: []
       indices: 
       edges: []
@@ -304,15 +367,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jason_Walk_5: -538394047
-      Jason_Walk_6: 1648506629
-      Jason_Walk_4: 1174905913
-      Jason_Walk_8: -1948424038
-      Jason_Walk_2: -1325493215
-      Jason_Walk_7: 1605868566
-      Jason_Walk_3: 553115304
-      Jason_Walk_1: 1839394134
-      Jason_Walk_0: -69420963
+      Jason_Top_2: -2107661402
+      Jason_Left_2: -1979384293
+      Jason_Left_0: 1352386800
+      Jason_Right_1: 428694256
+      Jason_down_2: -6226718
+      Jason_down_1: -137232902
+      Jason_Left_1: 343619832
+      Jason_Top_1: 674611825
+      Jason_down_0: 540890903
+      Jason_Top_0: -809928563
+      Jason_Right_0: 454701548
+      Jason_Right_2: 1643575196
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

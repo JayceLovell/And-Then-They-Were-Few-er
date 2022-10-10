@@ -109,7 +109,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4
-        y: 144
+        y: 149
         width: 39
         height: 47
       alignment: 0
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57a236d398fd8064dbdd320a0771fe42
-      internalID: -1635287791
+      spriteID: 570b837ef2078854b8e04f46323cb40e
+      internalID: 1998499914
       vertices: []
       indices: 
       edges: []
@@ -130,9 +130,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 52
-        y: 0
+        y: 149
         width: 39
-        height: 192
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 453a8e8dc0b912c458d81c618eb03293
-      internalID: 736608801
+      spriteID: 0c4cf70ac44ce2745aa602f4bf19acb1
+      internalID: -656256226
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 100
-        y: 144
+        y: 149
         width: 39
         height: 47
       alignment: 0
@@ -161,18 +161,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1584c298aeb45624f971d7bd8ea0e3d2
-      internalID: -994234644
+      spriteID: c9420831f4f1f3347adbbf78581e87de
+      internalID: 1520421477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mirianne_walk_3
+      name: Mirianne_walk_left_0
       rect:
         serializedVersion: 2
         x: 8
-        y: 96
+        y: 101
         width: 35
         height: 47
       alignment: 0
@@ -182,18 +182,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07faf85e05d1345469c495e79a98a538
-      internalID: -1038537513
+      spriteID: cf6d7590b68fc3a4c90cfe25a7ede9d1
+      internalID: 711076801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mirianne_walk_4
+      name: Mirianne_walk_left_2
       rect:
         serializedVersion: 2
         x: 104
-        y: 96
+        y: 101
         width: 35
         height: 47
       alignment: 0
@@ -203,18 +203,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f85f2d957b741e341b1071da1e3c6ec4
-      internalID: -1138894032
+      spriteID: e89ed6752b41adb4cb7a5cb5e03a657b
+      internalID: 915320166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mirianne_walk_5
+      name: Mirianne_walk_right_0
       rect:
         serializedVersion: 2
         x: 4
-        y: 48
+        y: 53
         width: 36
         height: 47
       alignment: 0
@@ -224,18 +224,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b3f938193301084e9195ef660dfce68
-      internalID: -1860271644
+      spriteID: d37955b92f0486f41a814e5f5cf96dd7
+      internalID: -383562445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mirianne_walk_6
+      name: Mirianne_walk_right_2
       rect:
         serializedVersion: 2
         x: 100
-        y: 48
+        y: 53
         width: 36
         height: 47
       alignment: 0
@@ -245,18 +245,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 741668bcb4c93214289c61efb3439d18
-      internalID: 956079185
+      spriteID: 54c0ba463efcf724d9963522cf88e307
+      internalID: 1822785991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mirianne_walk_7
+      name: Mirianne_walk_Up_0
       rect:
         serializedVersion: 2
         x: 4
-        y: 0
+        y: 5
         width: 39
         height: 47
       alignment: 0
@@ -266,18 +266,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e755cea200afcf3428781c1f8b799799
-      internalID: 1001207300
+      spriteID: 6c6a9c2384b60974984d8093277f8008
+      internalID: -1086207063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mirianne_walk_8
+      name: Mirianne_walk_Up_2
       rect:
         serializedVersion: 2
         x: 100
-        y: 0
+        y: 5
         width: 39
         height: 47
       alignment: 0
@@ -287,8 +287,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aa840787ecf3284d9e5a79c2da79c9e
-      internalID: -369650577
+      spriteID: 5659344605ad146498a8558191f9a4a6
+      internalID: 211078589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne_walk_left_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 101
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0486a456be1ed418526e003a94e561
+      internalID: -494336372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne_walk_right_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 53
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d41a2d73add1a2449cfea8aaf7fee33
+      internalID: 783957785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne_walk_Up_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 5
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27643f51d15157408d4814887e93eb3
+      internalID: -450920928
       vertices: []
       indices: 
       edges: []
@@ -304,15 +367,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mirianne_walk_3: -1038537513
-      Mirianne_walk_1: 736608801
-      Mirianne_walk_2: -994234644
-      Mirianne_walk_5: -1860271644
-      Mirianne_walk_4: -1138894032
-      Mirianne_walk_7: 1001207300
-      Mirianne_walk_0: -1635287791
-      Mirianne_walk_6: 956079185
-      Mirianne_walk_8: -369650577
+      Mirianne_walk_left_2: 915320166
+      Mirianne_walk_1: -656256226
+      Mirianne_walk_2: 1520421477
+      Mirianne_walk_Up_2: 211078589
+      Mirianne_walk_left_0: 711076801
+      Mirianne_walk_right_2: 1822785991
+      Mirianne_walk_right_1: 783957785
+      Mirianne_walk_Up_1: -450920928
+      Mirianne_walk_right_0: -383562445
+      Mirianne_walk_0: 1998499914
+      Mirianne_walk_Up_0: -1086207063
+      Mirianne_walk_left_1: -494336372
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
