@@ -162,7 +162,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Animation_Controller 3
+  m_Name: Mirianne_Animation_Controller
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Up

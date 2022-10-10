@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 145
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cf38ad5137eb94eae587f69edcf941
+      internalID: 139217352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 145
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7196c4e52b60142b7d4dc24d2eda8d
+      internalID: 543376894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 145
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1b98d98d7ac554797c1af4ad046bdf
+      internalID: 1168574365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 97
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5dc224decbce946bdef27903f6b753
+      internalID: 614132327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_4
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 97
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86ac8833cf4c504bbc96e5bc52b51ce
+      internalID: 1703438356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_5
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 97
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636d194aa13ce234aa6a285903366968
+      internalID: -1961231146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 49
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db7ca1a71701554498971d0d3185113
+      internalID: 101208182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 49
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0237ef87f6cf93b45a8d49baa316da75
+      internalID: 1152006996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_8
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 49
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fcb287e82e11e498e352077a7e1e2c
+      internalID: 339960527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e880899116dbfea46a466c5c14c64e60
+      internalID: -1864427992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e19b1ee214b26428a117bea29fa97f
+      internalID: -1853216291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_crazy_man_walk_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab97a481e3a7454ab3410b655c6b0d0
+      internalID: 1199428460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +366,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Old_crazy_man_walk_7: 1152006996
+      Old_crazy_man_walk_9: -1864427992
+      Old_crazy_man_walk_8: 339960527
+      Old_crazy_man_walk_6: 101208182
+      Old_crazy_man_walk_3: 614132327
+      Old_crazy_man_walk_0: 139217352
+      Old_crazy_man_walk_2: 1168574365
+      Old_crazy_man_walk_10: -1853216291
+      Old_crazy_man_walk_5: -1961231146
+      Old_crazy_man_walk_1: 543376894
+      Old_crazy_man_walk_4: 1703438356
+      Old_crazy_man_walk_11: 1199428460
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
