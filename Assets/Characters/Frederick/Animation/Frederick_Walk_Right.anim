@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Walk_Up
+  m_Name: Frederick_Walk_Right
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -683394133, guid: 7ea35c1ccf1e9aa4fb8891502b907e59, type: 3}
+      value: {fileID: 521962915, guid: 4680d3808b8d77c4d92ff377483d4d5d, type: 3}
     - time: 0.083333336
-      value: {fileID: -304040568, guid: 7ea35c1ccf1e9aa4fb8891502b907e59, type: 3}
+      value: {fileID: 1386514479, guid: 4680d3808b8d77c4d92ff377483d4d5d, type: 3}
     - time: 0.16666667
-      value: {fileID: 1342719192, guid: 7ea35c1ccf1e9aa4fb8891502b907e59, type: 3}
+      value: {fileID: 1616086359, guid: 4680d3808b8d77c4d92ff377483d4d5d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -683394133, guid: 7ea35c1ccf1e9aa4fb8891502b907e59, type: 3}
-    - {fileID: -304040568, guid: 7ea35c1ccf1e9aa4fb8891502b907e59, type: 3}
-    - {fileID: 1342719192, guid: 7ea35c1ccf1e9aa4fb8891502b907e59, type: 3}
+    - {fileID: 521962915, guid: 4680d3808b8d77c4d92ff377483d4d5d, type: 3}
+    - {fileID: 1386514479, guid: 4680d3808b8d77c4d92ff377483d4d5d, type: 3}
+    - {fileID: 1616086359, guid: 4680d3808b8d77c4d92ff377483d4d5d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
