@@ -10,8 +10,15 @@ public class Objects : MonoBehaviour
 {
     private bool _playerInteracts;
 
-    public string TypeOfObject;
+    public enum TypeOfObject
+    {
+        Door,
+        Chair,
+        ClueType,
+        Placeholder
+    }
 
+    public TypeOfObject objectType;
     /// <summary>
     /// If player is interacting with object
     /// </summary>
@@ -45,7 +52,7 @@ public class Objects : MonoBehaviour
     }
     /// <summary>
     /// @DrCatman
-    /// Put what this method does
+    /// describe this method does
     /// </summary>
     /// <param name="Interacts"></param>
     public void SetPlayerInteraction(bool Interacts)

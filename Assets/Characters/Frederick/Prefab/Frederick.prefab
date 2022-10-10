@@ -100,8 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TrustLevel: 0
-  Name: 
-  isAlive: 0
+  Name: Frederick
+  isAlive: 1
+  Profile: {fileID: 2800000, guid: a8e0780d90007084f86fadc8f29a85e8, type: 3}
   Positions: []
 --- !u!95 &6237777029506226020
 Animator:

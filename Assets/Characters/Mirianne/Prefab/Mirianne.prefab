@@ -98,5 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TrustLevel: 0
-  Name: 
+  Name: Mirianne
   isAlive: 0
+  Profile: {fileID: 2800000, guid: 74002ac4f7ae36e4a820e9575123920e, type: 3}
+  Positions: []

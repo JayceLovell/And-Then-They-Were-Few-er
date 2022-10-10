@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    public GameManager GameManager;
+
+    void Awake()
+    {
+        GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
     // Start is called before the first frame update
     void Start()
     {

@@ -98,5 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TrustLevel: 0
-  Name: 
+  Name: Jayson
   isAlive: 0
+  Profile: {fileID: 2800000, guid: bb6796ae590284147a6b95adf39dcb4d, type: 3}
+  Positions: []

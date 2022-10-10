@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Character parent class
@@ -22,6 +23,12 @@ public class Character : MonoBehaviour
 
     [Tooltip("Dead or alive o.o")]
     public bool isAlive;
+
+    /// <summary>
+    /// Characters Image for conversation
+    /// </summary>
+    [Tooltip("Characters image for conversation")]
+    public Texture2D Profile;
 
     /// <summary>
     /// Where the character should be based on story progression and trust level
