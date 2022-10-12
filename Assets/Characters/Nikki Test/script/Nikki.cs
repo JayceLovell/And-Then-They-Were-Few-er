@@ -15,4 +15,5 @@ public class Nikki : Character
     {
         
     }
+    
 }
