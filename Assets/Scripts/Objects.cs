@@ -48,6 +48,7 @@ public class Objects : MonoBehaviour
     /// </summary>
     public void Use()
     {
+        Debug.Log("Action");
         // thinking of putting an output dialog to screen about using the object
     }
     /// <summary>

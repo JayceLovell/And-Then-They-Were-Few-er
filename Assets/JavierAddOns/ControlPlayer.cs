@@ -14,8 +14,10 @@ public class ControlPlayer : MonoBehaviour
     public InputAction interact;
     Vector2 input = Vector2.zero;
 
-    bool CanInteract;
-    public bool _playerInteraction;
+    public bool CanInteract;
+    bool _playerInteraction;
+
+    public GameObject CurrentInteractableObject;
 
     void Awake()
     {
@@ -75,19 +77,19 @@ public class ControlPlayer : MonoBehaviour
 
         if (CanInteract == true && _playerInteraction == true)
         {
-
+            CurrentInteractableObject.GetComponent<Objects>().Use();
             FindObjectOfType<Interactable>().SetPlayerInteraction(true);
             _playerInteraction = false;
 
         }
 
     }
-
     void OnTriggerStay2D(Collider2D collision)
     {
 
         if (collision.tag == "Interactable")
         {
+            CurrentInteractableObject=collision.gameObject;
             CanInteract =true;
         }
     }
