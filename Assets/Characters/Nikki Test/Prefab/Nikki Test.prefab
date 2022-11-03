@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2464139286769317214}
   - component: {fileID: 2371517218328731662}
   - component: {fileID: 5781129788191747957}
+  - component: {fileID: 6858053411055140244}
   m_Layer: 0
   m_Name: Nikki Test
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 17160183, guid: 62fc21c839c7862488257dc9f0079402, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,5 +99,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TrustLevel: 0
-  Name: 
-  isAlive: 0
+  Name: Nikki Test
+  isAlive: 1
+  Positions: []
+--- !u!95 &6858053411055140244
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379050557245956705}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 79797ece62639f14088ae9886a28f453, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
