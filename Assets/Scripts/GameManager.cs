@@ -15,6 +15,11 @@ public class GameManager : MonoBehaviour
             }
             return _instance; }
     }
+
+    /// <summary>
+    /// How many Clues for Game Won
+    /// </summary>
+    public int GameWinCondition;
     /// <summary>
     /// Will be used to end game
     /// </summary>
@@ -32,6 +37,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameWinCondition = 5;
         IsGameOver = false;
     }
 
