@@ -15,7 +15,7 @@ public class ControlPlayer : MonoBehaviour
     Vector2 input = Vector2.zero;
 
     bool CanInteract;
-    bool _playerInteraction;
+    public bool _playerInteraction;
 
     void Awake()
     {
