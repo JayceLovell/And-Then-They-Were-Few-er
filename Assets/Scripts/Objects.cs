@@ -37,12 +37,6 @@ public class Objects : MonoBehaviour
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     /// <summary>
     /// Default class for using an object
     /// </summary>
