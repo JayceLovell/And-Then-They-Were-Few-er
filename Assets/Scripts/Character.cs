@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
+/// <summary>
+/// Character parent class
+/// </summary>
 public class Character : MonoBehaviour
 {
+    private bool _playerInteracts;
+
     /// <summary>
     /// Characters trust level with player
     /// </summary>
@@ -19,12 +25,29 @@ public class Character : MonoBehaviour
     public bool isAlive;
 
     /// <summary>
+    /// Characters Image for conversation
+    /// </summary>
+    [Tooltip("Characters image for conversation")]
+    public Texture2D Profile;
+
+    /// <summary>
     /// Where the character should be based on story progression and trust level
     /// </summary>
     [Tooltip("Positions for characters to be in")]
     public List<Vector3> Positions;
 
-
+    /// <summary>
+    /// If player is interacting with object
+    /// </summary>
+    public bool PlayerInteracts
+    {
+        get { return _playerInteracts; }
+        set { 
+            _playerInteracts = value; 
+            if(value)
+                _playerInteracts = false;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +64,15 @@ public class Character : MonoBehaviour
     public void DefaultConvo()
     {
 
+    }
+    /// <summary>
+    /// @DrCatman
+    /// Put what this method does
+    /// </summary>
+    /// <param name="Interacts"></param>
+    public void SetPlayerInteraction(bool Interacts)
+    {
+        _playerInteracts = Interacts;
     }
     /// <summary>
     /// returns a string of the characters name and trust level.
