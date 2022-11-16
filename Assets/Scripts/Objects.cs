@@ -37,17 +37,12 @@ public class Objects : MonoBehaviour
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     /// <summary>
     /// Default class for using an object
     /// </summary>
     public void Use()
     {
+        Debug.Log("Action");
         // thinking of putting an output dialog to screen about using the object
     }
     /// <summary>
