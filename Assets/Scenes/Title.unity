@@ -567,6 +567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 839368049}
   - component: {fileID: 839368048}
+  - component: {fileID: 839368050}
   m_Layer: 0
   m_Name: TitleController
   m_TagString: GameController
@@ -586,23 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96b01b7bb29d6d4ca77937d3f202670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartGame:
-    m_Name: Start Game
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 970f9171-eedd-428f-8d02-d3bcf8f21a5d
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: e34ba736-05c8-4079-b4de-cdd0ef468df8
-      m_Path: <Keyboard>/enter
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Start Game
-      m_Flags: 0
-    m_Flags: 0
+  GameManager: {fileID: 0}
 --- !u!4 &839368049
 Transform:
   m_ObjectHideFlags: 0
@@ -618,6 +603,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &839368050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839368047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 16bbb9adfe0aae7468a23fc47cc3dfd5, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &860022477
 GameObject:
   m_ObjectHideFlags: 0
