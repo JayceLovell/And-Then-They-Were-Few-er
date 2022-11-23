@@ -15,10 +15,14 @@ public class Objects : MonoBehaviour
         Door,
         Chair,
         ClueType,
-        Placeholder
+        Placeholder,
+        SecretBookShelf,
+        StairsToSecretRoom
     }
 
     public TypeOfObject objectType;
+
+    public String Dialog;
     /// <summary>
     /// If player is interacting with object
     /// </summary>
@@ -40,7 +44,7 @@ public class Objects : MonoBehaviour
     /// <summary>
     /// Default class for using an object
     /// </summary>
-    public void Use()
+    public virtual void Use()
     {
         Debug.Log("Action");
         // thinking of putting an output dialog to screen about using the object

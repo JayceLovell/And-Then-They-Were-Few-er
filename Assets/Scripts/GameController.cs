@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -50,5 +51,14 @@ public class GameController : MonoBehaviour
     void Update()
     {
         
+    }
+    /// <summary>
+    /// Prepares and move to next scene
+    /// </summary>
+    /// <param name="SceneName"></param>
+    public void MoveToScene(String SceneName)
+    {
+        GameManager.SaveScene();
+        SceneManager.LoadScene(SceneName);
     }
 }

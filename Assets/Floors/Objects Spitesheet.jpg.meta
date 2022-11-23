@@ -482,6 +482,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: GreyStairs
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 673
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d433c9fe2d77a54ebdf43813b6141c4
+      internalID: -763467354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -496,6 +517,7 @@ TextureImporter:
       MasterBed: -767587271
       Bookshelf: 925487515
       Couch F South: 1284310113
+      GreyStairs: -763467354
       Couch F West: 55302804
       Bedroom Dresser: -466178215
       Dresser: 2106885303
