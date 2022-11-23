@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 3203519595649341117}
   - component: {fileID: 3203519595649341118}
   m_Layer: 5
-  m_Name: Statement Button
+  m_Name: Clue Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

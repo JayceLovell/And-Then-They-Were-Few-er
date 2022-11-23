@@ -29,6 +29,11 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if(DialogueManager.dialogueManager.inCutscene || DialogueManager.dialogueManager.inDialogue)
+        {
+            moveInput = Vector2.zero;
+        }
+
         rigidbody.velocity = moveInput * PlayerSpeed;
         switch (moveInput.y)
         {
