@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
         get { return _isGameOver; }
         set { _isGameOver = value; }
     }
+    public string CurrentScene;
 
     void Awake()
     {
@@ -45,5 +47,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public void SaveScene()
+    {
+        CurrentScene = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetString("LastScene", CurrentScene);
+        PlayerPrefs.Save();
     }
 }
