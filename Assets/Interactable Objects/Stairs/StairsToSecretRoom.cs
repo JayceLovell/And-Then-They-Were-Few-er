@@ -5,7 +5,7 @@ using UnityEngine;
 public class StairsToSecretRoom : Objects
 {
     GameController controller;
-    private void Start()
+    void Start()
     {
         controller = GetComponent<GameController>();
     }

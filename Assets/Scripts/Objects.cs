@@ -17,7 +17,8 @@ public class Objects : MonoBehaviour
         ClueType,
         Placeholder,
         SecretBookShelf,
-        StairsToSecretRoom
+        StairsToSecretRoom,
+        RoomSwitch
     }
 
     public TypeOfObject objectType;
