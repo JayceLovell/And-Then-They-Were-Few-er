@@ -22,6 +22,7 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogueSequence()
     {
+        DialogueManager.dialogueManager.playableDirector.Pause();
         DialogueManager.dialogueManager.currentDialogue = dialogueLines;
         DialogueManager.dialogueManager.index = 0;
         DialogueManager.dialogueManager.OpenTextBox();

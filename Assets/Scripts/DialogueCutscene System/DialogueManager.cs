@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -54,6 +54,11 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public void EndCutscene()
+    {
+        inCutscene = false;
+    }
+
     public void OpenTextBox()
     {
         inDialogue = true;
@@ -66,6 +71,13 @@ public class DialogueManager : MonoBehaviour
     {
         textbox.SetActive(false);
         text.text = "";
+
+        if (inCutscene)
+        {
+            playableDirector.Resume();
+            inDialogue = false;
+        }
+
         StartCoroutine(TurnOffDialogue());
     }
 
