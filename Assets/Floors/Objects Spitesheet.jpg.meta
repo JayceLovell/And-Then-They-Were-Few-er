@@ -482,6 +482,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: GreyStairs
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 673
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d433c9fe2d77a54ebdf43813b6141c4
+      internalID: -763467354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 673
+        width: 145
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14cd3bd1ced25a46b14e392343be25a
+      internalID: -2016494285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51540ac85156a6d4c9e7be4823a72815
+      internalID: -2140266950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -495,22 +558,27 @@ TextureImporter:
     nameFileIdTable:
       MasterBed: -767587271
       Bookshelf: 925487515
+      Objects Spitesheet_1: -434064006
       Couch F South: 1284310113
+      GreyStairs: -763467354
       Couch F West: 55302804
       Bedroom Dresser: -466178215
       Dresser: 2106885303
       Pipe Pillar: -1144662138
+      Objects Spitesheet_0: 1841783047
       Cupboard: -1065360824
       Couch F East: -2127721805
       Coffee Table: -541832107
       Chair F South: 982220193
       Chair F North: 157281479
+      Table: -2140266950
       Chair F West: -2004509119
       Wooden Create: 1544318658
       Cough F North: -1568729557
       Chair F East: 1094521795
       Bed: -92046345
       KnightStand: -1649649332
+      Kitchen: -2016494285
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

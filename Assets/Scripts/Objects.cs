@@ -9,16 +9,22 @@ using UnityEngine;
 public class Objects : MonoBehaviour
 {
     private bool _playerInteracts;
+    private GameController _gameController;
 
     public enum TypeOfObject
     {
         Door,
         Chair,
-        ClueType,
-        Placeholder
+        Clue,
+        Placeholder,
+        SecretBookShelf,
+        StairsToSecretRoom,
+        RoomSwitch
     }
 
     public TypeOfObject objectType;
+
+    public String Dialog;
     /// <summary>
     /// If player is interacting with object
     /// </summary>
@@ -35,14 +41,14 @@ public class Objects : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameController gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
     /// <summary>
     /// Default class for using an object
     /// </summary>
-    public void Use()
+    public virtual void Use()
     {
-        Debug.Log("Action");
+        Debug.Log("Action from object: "+objectType.ToString());
         // thinking of putting an output dialog to screen about using the object
     }
     /// <summary>
