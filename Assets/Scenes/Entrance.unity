@@ -265,14 +265,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8993788615336659048, guid: 648bc9bc66600124eb1ad75bae69375d, type: 3}
-      propertyPath: Scene
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8993788615336659048, guid: 648bc9bc66600124eb1ad75bae69375d, type: 3}
-      propertyPath: NewPos
-      value: 
-      objectReference: {fileID: 1056498190}
-    - target: {fileID: 8993788615336659048, guid: 648bc9bc66600124eb1ad75bae69375d, type: 3}
       propertyPath: PlayerPrefab
       value: 
       objectReference: {fileID: 3899831894831801394, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
@@ -280,18 +272,6 @@ PrefabInstance:
       propertyPath: DefaultSpawnLocation
       value: 
       objectReference: {fileID: 1056498190}
-    - target: {fileID: 8993788615336659048, guid: 648bc9bc66600124eb1ad75bae69375d, type: 3}
-      propertyPath: ExitLocationsName.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8993788615336659048, guid: 648bc9bc66600124eb1ad75bae69375d, type: 3}
-      propertyPath: ExitLocationsPoint.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8993788615336659048, guid: 648bc9bc66600124eb1ad75bae69375d, type: 3}
-      propertyPath: ExitLocationsName.Array.data[0]
-      value: GrandHall
-      objectReference: {fileID: 0}
     - target: {fileID: 8993788615336659048, guid: 648bc9bc66600124eb1ad75bae69375d, type: 3}
       propertyPath: ExitLocationsPoint.Array.data[0]
       value: 

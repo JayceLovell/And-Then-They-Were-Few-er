@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: 8993788615336659048, guid: 648bc9bc66600124eb1ad75bae69375d, type: 3}
       propertyPath: PlayerPrefab
       value: 
-      objectReference: {fileID: 2692539282686698567, guid: bcd6da8de235d734ebccffc0cb389684, type: 3}
+      objectReference: {fileID: 3899831894831801394, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
     - target: {fileID: 8993788615336659048, guid: 648bc9bc66600124eb1ad75bae69375d, type: 3}
       propertyPath: ExitToGrandHall
       value: 

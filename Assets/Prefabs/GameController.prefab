@@ -45,3 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  PlayerPrefab: {fileID: 3899831894831801394, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+  DefaultSpawnLocation: {fileID: 0}
+  ExitLocationsName:
+  - GrandHall
+  ExitLocationsPoint:
+  - {fileID: 0}
+  NewPos: {fileID: 0}
+  Scene: 3
