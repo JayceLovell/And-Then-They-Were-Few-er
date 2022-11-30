@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
 
     public float MusicVolume
     {
-        get { 
+        get {
+            _musicVolume = PlayerPrefs.GetFloat("Volume");
             return (_musicVolume / 100);
         }
         set { 

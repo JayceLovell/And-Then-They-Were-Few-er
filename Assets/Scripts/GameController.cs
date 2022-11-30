@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     public Transform DefaultSpawnLocation;
     public List<String> ExitLocationsName;
     public List<Transform> ExitLocationsPoint;
-    public Transform NewPos;
+    private Transform NewPos;
 
     public enum WhichScene
     {
@@ -39,11 +39,11 @@ public class GameController : MonoBehaviour
                 if(lastScene == ExitLocationsName[i])
                 {
                 NewPos = ExitLocationsPoint[i];
-                    Instantiate(PlayerPrefab, NewPos);
+                    Instantiate(PlayerPrefab, NewPos.position,Quaternion.identity);
                     break;
                 }
                 if (i == ExitLocationsName.Count-1)
-                    Instantiate(PlayerPrefab, DefaultSpawnLocation);
+                    Instantiate(PlayerPrefab, DefaultSpawnLocation.position, Quaternion.identity);
             }
 
         GameManager.SaveScene();

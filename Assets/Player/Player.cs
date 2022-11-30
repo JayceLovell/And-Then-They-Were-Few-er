@@ -87,6 +87,10 @@ public class Player : MonoBehaviour
             CanInteract = true;
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        CurrentInteractableObject = null;
+    }
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Interactable")
@@ -94,5 +98,9 @@ public class Player : MonoBehaviour
             CurrentInteractableObject = collision.gameObject;
             CanInteract = true;
         }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        CurrentInteractableObject = null;
     }
 }
