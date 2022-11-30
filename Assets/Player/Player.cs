@@ -29,6 +29,11 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if(DialogueManager.dialogueManager.inCutscene || DialogueManager.dialogueManager.inDialogue)
+        {
+            moveInput = Vector2.zero;
+        }
+
         rigidbody.velocity = moveInput * PlayerSpeed;
         switch (moveInput.y)
         {
@@ -50,6 +55,7 @@ public class Player : MonoBehaviour
                 break;
             case -1:
                 animator.SetBool("Left", true);
+                //transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
                 break;
             default:
                 animator.SetBool("Left", false);

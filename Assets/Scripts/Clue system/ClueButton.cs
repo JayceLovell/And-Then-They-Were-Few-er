@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ConclusionButton : MonoBehaviour
+public class ClueButton : MonoBehaviour
 {
-    public StatementManager statementManager;
-    public Conclusion conclusion;
+    public ClueManager clueManager;
+    public Clue clue;
 
     public TextMeshProUGUI text;
 
     private void Start()
     {
-        text.text = conclusion.conclusionText;
+        text.text = clue.clueText;
     }
 
     public void OnClick()
     {
-
+        
     }
 }
