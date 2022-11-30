@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96b01b7bb29d6d4ca77937d3f202670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: 
+  SceneToLoad: Entrance
   GameManager: {fileID: 0}
   TitleMusic: {fileID: 8300000, guid: a649324167daa0348bd9febb3343f7da, type: 3}
 --- !u!4 &839368049
