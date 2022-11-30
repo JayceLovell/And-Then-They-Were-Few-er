@@ -17010,7 +17010,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Map_GDW_805
+      name: Bathroom Tile
       rect:
         serializedVersion: 2
         x: 432
@@ -34825,7 +34825,6 @@ TextureImporter:
       Map_GDW_718: 588403178
       Map_GDW_342: 585050189
       Map_GDW_517: 880571064
-      Map_GDW_805: 1872881880
       Map_GDW_1604: -396096209
       Map_GDW_982: 1262912742
       Map_GDW_1266: 1251711914
@@ -35708,6 +35707,7 @@ TextureImporter:
       Map_GDW_1350: 168187065
       Map_GDW_105: -1363649665
       Map_GDW_1343: -1116856205
+      Bathroom Tile: 1872881880
       Map_GDW_416: -1653816981
       Map_GDW_1021: 1694998108
       Map_GDW_374: 1845031052
@@ -35797,9 +35797,9 @@ TextureImporter:
       Map_GDW_113: 566969866
       Map_GDW_246: 434538607
       Map_GDW_61: 2038392075
+      Map_GDW_759: 41263855
       Map_GDW_1194: -1035909203
       Map_GDW_1632: 1362008312
-      Map_GDW_759: 41263855
       Map_GDW_801: -769510640
       Map_GDW_945: 888117155
       Map_GDW_415: -1099102171
@@ -36097,11 +36097,11 @@ TextureImporter:
       Map_GDW_503: -1624577488
       Map_GDW_956: -518797403
       Map_GDW_268: 1717389686
-      Map_GDW_673: -682444690
       Map_GDW_611: 1502757121
+      Map_GDW_673: -682444690
       Map_GDW_65: -1305464747
-      Map_GDW_1630: -1743705316
       Map_GDW_1084: -698471620
+      Map_GDW_1630: -1743705316
       Map_GDW_1087: 1043087612
       Map_GDW_1160: 1177227375
       Map_GDW_1257: 1063653146
