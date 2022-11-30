@@ -14,9 +14,12 @@ public class CutsceneTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        DialogueManager.dialogueManager.playableDirector.playableAsset = cutscene;
-        DialogueManager.dialogueManager.playableDirector.Play();
-        DialogueManager.dialogueManager.inCutscene = true;
-        this.enabled = false;
+        if(collision.tag == "Player" && DialogueManager.dialogueManager.inCutscene == false && DialogueManager.dialogueManager.inDialogue == false)
+        {
+            DialogueManager.dialogueManager.playableDirector.playableAsset = cutscene;
+            DialogueManager.dialogueManager.playableDirector.Play();
+            DialogueManager.dialogueManager.inCutscene = true;
+            this.enabled = false;
+        }
     }
 }
