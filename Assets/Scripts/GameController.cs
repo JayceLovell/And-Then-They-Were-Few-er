@@ -1,14 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
     public GameManager GameManager;
+    public GameObject PlayerPrefab;
+    public Transform DefaultSpawnLocation;
+    public List<String> ExitLocationsName;
+    public List<Transform> ExitLocationsPoint;
 
     public enum WhichScene
     {
         Test,
+        LevelDesign,
         Game,
         Entrance,
         GrandHall,
@@ -24,12 +31,34 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Scene: "+ Scene);
+        string lastScene = PlayerPrefs.GetString("LastScene", null);
+
+            for(int i = 0; i < ExitLocationsName.Count; i++)
+            {
+                if(lastScene == ExitLocationsName[i])
+                {
+                    Instantiate(PlayerPrefab, ExitLocationsPoint[i]);
+                    break;
+                }
+                if (i == ExitLocationsName.Count-1)
+                    Instantiate(PlayerPrefab, DefaultSpawnLocation);
+            }
+
+        GameManager.SaveScene();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    /// <summary>
+    /// Prepares and move to next scene
+    /// </summary>
+    /// <param name="SceneName"></param>
+    public void MoveToScene(String SceneName)
+    {
+        GameManager.SaveScene();
+        SceneManager.LoadScene(SceneName);
     }
 }

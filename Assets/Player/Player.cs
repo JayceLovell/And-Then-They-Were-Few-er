@@ -81,4 +81,12 @@ public class Player : MonoBehaviour
             CanInteract = true;
         }
     }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Interactable")
+        {
+            CurrentInteractableObject = collision.gameObject;
+            CanInteract = true;
+        }
+    }
 }

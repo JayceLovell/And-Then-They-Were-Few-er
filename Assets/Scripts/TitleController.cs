@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class TitleController : MonoBehaviour
 {
+    public string SceneToLoad;
     public GameManager GameManager;
+    public AudioClip TitleMusic;
+    private AudioSource _titleMusicPlayer;
     void Awake()
     {
         GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -14,7 +17,10 @@ public class TitleController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _titleMusicPlayer = GetComponent<AudioSource>();
 
+        _titleMusicPlayer.clip=TitleMusic;
+        _titleMusicPlayer.Play();
     }
 
     // Update is called once per frame
@@ -24,6 +30,6 @@ public class TitleController : MonoBehaviour
     }
     void OnStart()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(SceneToLoad);
     }
 }
