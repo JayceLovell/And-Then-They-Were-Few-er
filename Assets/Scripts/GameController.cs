@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public Transform DefaultSpawnLocation;
     public List<String> ExitLocationsName;
     public List<Transform> ExitLocationsPoint;
+    public Transform NewPos;
 
     public enum WhichScene
     {
@@ -37,7 +38,8 @@ public class GameController : MonoBehaviour
             {
                 if(lastScene == ExitLocationsName[i])
                 {
-                    Instantiate(PlayerPrefab, ExitLocationsPoint[i]);
+                NewPos = ExitLocationsPoint[i];
+                    Instantiate(PlayerPrefab, NewPos);
                     break;
                 }
                 if (i == ExitLocationsName.Count-1)
