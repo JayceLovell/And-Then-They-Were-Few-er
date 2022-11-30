@@ -17010,7 +17010,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Map_GDW_805
+      name: Bathroom Tile
       rect:
         serializedVersion: 2
         x: 432
@@ -34825,7 +34825,6 @@ TextureImporter:
       Map_GDW_718: 588403178
       Map_GDW_342: 585050189
       Map_GDW_517: 880571064
-      Map_GDW_805: 1872881880
       Map_GDW_1604: -396096209
       Map_GDW_982: 1262912742
       Map_GDW_1266: 1251711914
@@ -35708,6 +35707,7 @@ TextureImporter:
       Map_GDW_1350: 168187065
       Map_GDW_105: -1363649665
       Map_GDW_1343: -1116856205
+      Bathroom Tile: 1872881880
       Map_GDW_416: -1653816981
       Map_GDW_1021: 1694998108
       Map_GDW_374: 1845031052
