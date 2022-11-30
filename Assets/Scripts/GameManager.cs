@@ -50,10 +50,6 @@ public class GameManager : MonoBehaviour
         set { _isGameOver = value; }
     }
     public string CurrentScene;
-    void OnValidate()
-    {
-        MusicVolume = _musicVolume;
-    }
     //CalledFirst
     void OnEnable()
     {
@@ -96,7 +92,10 @@ public class GameManager : MonoBehaviour
                 _musicPlayer.loop = true;
                 break;
             default:
-                _musicPlayer.Stop();
+                if (_musicPlayer.isPlaying)
+                {
+                    _musicPlayer.Stop();
+                }             
                 break;
         }
     }
