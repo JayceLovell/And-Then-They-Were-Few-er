@@ -13,8 +13,13 @@ public class DialogueManager : MonoBehaviour
 
     public PlayableDirector playableDirector;
 
+
+    public GameObject interogationArea;
+    public Camera mainCam;
+
     public bool inDialogue;
     public bool inCutscene;
+    public bool inInterrogation;
 
     public float textSpeed = 0.05f;
 
@@ -51,6 +56,17 @@ public class DialogueManager : MonoBehaviour
                     DialogueManager.dialogueManager.text.text = currentDialogue[index];
                 }
             }
+        }
+
+        if (inInterrogation)
+        {
+            mainCam.enabled = false;
+            interogationArea.SetActive(true);
+        }
+        else
+        {
+            mainCam.enabled = true;
+            interogationArea.SetActive(false);
         }
     }
 

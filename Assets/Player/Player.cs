@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
                 break;
             case -1:
                 animator.SetBool("Left", true);
-                transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
+                //transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
                 break;
             default:
                 animator.SetBool("Left", false);
