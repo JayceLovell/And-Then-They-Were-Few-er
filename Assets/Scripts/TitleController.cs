@@ -54,4 +54,8 @@ public class TitleController : MonoBehaviour
             _isVolumeDisplayed=false;
         }
     }
+    public void VolumeLevel(float volume)
+    {
+        _titleMusicPlayer.volume = volume / 100;
+    }
 }

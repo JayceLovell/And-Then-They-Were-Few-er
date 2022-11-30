@@ -226,9 +226,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 839368051}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: set_volume
+      - m_Target: {fileID: 839368048}
+        m_TargetAssemblyTypeName: TitleController, Assembly-CSharp
+        m_MethodName: VolumeLevel
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -577,7 +577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -400, y: -11.824524}
+  m_AnchoredPosition: {x: -400, y: -11.824463}
   m_SizeDelta: {x: 800, y: 23.6509}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754274591
