@@ -264,441 +264,174 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
---- !u!1001 &1334458993
+--- !u!1001 &1056468235960703678
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1172013809885060495, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584512, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_Name
       value: Rachel_INT
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.59752953
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_LocalPosition.y
       value: -14.664643
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2227733817352584540, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.size
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[0]
-      value: (Rachel has her hands in her face, and is crying)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[1]
-      value: 'Ashlyn: Rachel, I''m so sorry for your loss.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[2]
-      value: (Rachel lifts her head)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[3]
-      value: 'Rachel: I just can''t believe she''s gone. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[4]
-      value: 'Rachel: Who would do this to my poor baby?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[5]
-      value: (Rachel has tears streaming down her face)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[6]
-      value: (She seems to reach for something in her pocket, gets startled, withdraws
-        and wipes her face with her hands. Ashlyn takes notes of this)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[7]
-      value: 'Ashlyn: When did you last see Nikki?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[8]
-      value: 'Rachel: After the showcase. Watson and I were helping to clean up,
-        but I felt a bit faint and went to bed shortly after'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[9]
-      value: 'Ashlyn: Speaking of Watson, I haven''t seen him all night. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[10]
-      value: 'Ashlyn: Where could he be?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[11]
-      value: 'Rachel (a bit startled): Ah, Nikki usually shuts him down for the night
-        before bed.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[12]
-      value: 'Rachel: I dont know where he is kept though.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[13]
-      value: (Rachel turns away from Ashlyn)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[14]
-      value: 'Rachel: May I have a moment? I just....'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[15]
-      value: (Rachel starts to sob into her hands again)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[16]
-      value: 'Ashlyn: Of course. Please, let us know if you need anything.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[17]
-      value: (Ashlyn leaves the room, puzzled)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[18]
-      value: END OF INTERROGATION
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: postInterrogationDialogueLines.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
---- !u!1001 &1594606309
+  m_SourcePrefab: {fileID: 100100000, guid: 7f7b911c3e33a344097f39d72474c0a8, type: 3}
+--- !u!1001 &1174492682331668241
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1172013809885060495, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: m_Name
-      value: Karol_INT
-      objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.95
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_LocalPosition.y
       value: -6.4
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 4352446116290663, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.size
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[0]
-      value: 'Karol: Yes?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[1]
-      value: 'Ashlyn: Where were you at the time of the murder?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[2]
-      value: 'Karol: I was in my room. I couldn''t sleep of course.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[3]
-      value: 'Ashlyn: Oh? And why was that?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[4]
-      value: 'Karol: Nikki''s Synthesizer! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[5]
-      value: 'Karol: I hate to say it, but it''s the most amazing technology I''ve
-        ever seen!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[6]
-      value: 'Karol: My brain could just not stop thinking of way''s to one up her
-        designs.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[7]
-      value: 'Karol: It''s a shame that now she''s gone, it might never see the light
-        of day....'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[8]
-      value: (Karol, who had excitedly been talking about the invention, has her
-        mood shift from excitement to a more somber mood)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[9]
-      value: 'Ashlyn: But I suppose that now Nikki is gone, you should have no competition
-        left in Wandermere, eh?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[10]
-      value: 'Karol: What are you trying to say Detective!?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[11]
-      value: (Karol stands up rapidly and gets angry)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[12]
-      value: 'Karol: Are you trying to suggest that it was me who killed Nikki?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[13]
-      value: 'Karol: Thats a heavy accusation!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[14]
-      value: 'Karol: Now, Nikki and I may have been rivals, but I still had respect
-        for her! If anything I''d want her to still be alive, to witness me surpass
-        her!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[15]
-      value: 'Karol: If anything I''d want her to still be alive, to witness me surpass
-        her!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[16]
-      value: 'Karol: If you want someone to suspect, Detective, I''d suggest looking
-        into Mr. Damien.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[17]
-      value: 'Karol:  I heard Nikki was thinking of firing him, maybe he felt threatened.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[18]
-      value: (Karol angrily leaves)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[19]
-      value: END OF INTERROGATION
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: postInterrogationDialogueLines.Array.size
-      value: 0
+    - target: {fileID: 4352446116290683, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
+      propertyPath: m_Name
+      value: Karol_INT
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
---- !u!1001 &2048894381
+  m_SourcePrefab: {fileID: 100100000, guid: 17d16cfd3996fd04d8dbfb08315148b2, type: 3}
+--- !u!1001 &3656513728534280065
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1172013809885060495, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979427, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_Name
       value: Damien_INT
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8102921
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.7103057
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+    - target: {fileID: 2521276392063979455, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: interrogationDialogue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.size
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[0]
-      value: "Damien: Hello Detective, in what can I help?\n                "
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[1]
-      value: 'Ashlyn: There are members in this household that strongly suspect you
-        for being Nikki''s murderer.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[2]
-      value: 'Damien: Me?! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[3]
-      value: 'Ashlyn: Yes, and I might be inclined to agree! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[4]
-      value: 'Ashlyn: When I found Nikki, there was a pipe in the corner of the room.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[5]
-      value: 'Ashlyn: Did you use this to attack Nikki?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[6]
-      value: 'Damien: I assure you Detective, I''m the last person here who would
-        want Nikki dead.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[7]
-      value: 'Damien: She''s the only person who was willing to take me in as an
-        apprentice.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[8]
-      value: 'Ashlyn: Really? And yet I hear that she was thinking of replacing you! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[9]
-      value: 'Damien: I dont know about that. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[10]
-      value: 'Damien: But I do know that Nikki was already stressed over the pressure
-        she was getting from her mother to abandon her scientific pursuits and follow
-        in the family business.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[11]
-      value: 'Damien: If I left Nikki she would have had no choice but to close up
-        shop and join her mother''s bakery.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[12]
-      value: 'Damien: I believed in Nikki and her work here Detective. She is.........
-        was.... my friend.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[13]
-      value: (Damien starts to sob.)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[14]
-      value: (Ashlyn leaves, conflicted)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: dialogueLines.Array.data[15]
-      value: END OF INTERROGATION
-      objectReference: {fileID: 0}
-    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
-      propertyPath: postInterrogationDialogueLines.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 47b83acdea3686e4bb22bf7ea677dbcf, type: 3}
