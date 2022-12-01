@@ -16,12 +16,41 @@ public class IntroController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(text[GameManager.CurrentPlayText],GameObject.Find("Canvas").transform);
-        GameManager.CurrentPlayText++;
+        Instantiate(text[GameManager.CurrentPlayText],GameObject.Find("Canvas").transform);        
     }
-    public void ToEntrance()
+    public void MoveOn()
     {
         GameManager.SaveScene();
-        SceneManager.LoadScene("Entrance");
+        switch (GameManager.CurrentPlayText)
+        {
+            case 1:
+                GameManager.CurrentPlayText++;
+                Destroy(GameObject.Find("After Intro 1(Clone)"));
+                Instantiate(text[GameManager.CurrentPlayText], GameObject.Find("Canvas").transform);
+                break;
+            case 2:
+                GameManager.CurrentPlayText++;
+                Destroy(GameObject.Find("After Intro 2(Clone)"));                
+                Instantiate(text[GameManager.CurrentPlayText], GameObject.Find("Canvas").transform);
+                break;
+            case 3:
+                GameManager.CurrentPlayText++;
+                Destroy(GameObject.Find("Body Discovery 1(Clone)"));
+                Instantiate(text[GameManager.CurrentPlayText], GameObject.Find("Canvas").transform);
+                break;
+            case 4:
+                GameManager.CurrentPlayText++;
+                Destroy(GameObject.Find("Body Discovery 2(Clone)"));
+                Instantiate(text[GameManager.CurrentPlayText], GameObject.Find("Canvas").transform);
+                break;
+            case 5:
+                GameManager.CurrentPlayText = 5;
+                SceneManager.LoadScene("Grandhall");
+                break;
+            default:
+                GameManager.CurrentPlayText++;
+                SceneManager.LoadScene("Entrance");
+                break;
+        }
     }
 }

@@ -76,6 +76,10 @@ public class Player : MonoBehaviour
             CurrentInteractableObject.GetComponent<Objects>().Use();
         }
     }
+    void OnExit()
+    {
+        Application.Quit();
+    }
     void OnTriggerStay2D(Collider2D collision)
     {
 

@@ -13,6 +13,12 @@ public class MoveToOtherRoom : Objects
     public override void Use()
     {
         base.Use();
-        controller.MoveToScene(NameOfRoom);
+        //Story Guide
+        if (controller.GameManager.CurrentPlayText == 1)
+        {
+            controller.MoveToScene("Text");
+        }
+        else
+            controller.MoveToScene(NameOfRoom);
     }
 }
