@@ -1,0 +1,1106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1001 &60655257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_Name
+      value: Damien
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: interrogationDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: 'Damien: Ah, you must be Detective Ashlyn.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: 'Damien: Nikki has told me so much about you.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: 'Ashlyn: She has?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: 'Ashlyn: So I would assume you''re Nikki''s apprentice then?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: 'Damien: Oh, pardon me I forgot to introduce myself.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: 'Damien: I am Damien and yes I am Nikki''s apprentice.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: 'Damien: Nikki was so excited to finally meet you again, so please make
+        yourself at home.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: (Ashlyn begins to blush a little.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: 'Ashlyn: I''m surprised Nikki still cares about me that much considering
+        it''s been years since we last talked.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: 'Damien: Of course Nikki still cares.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: 'Damien: To tell the truth she''s been wanting to meet with you again
+        for a while now but has been far too busy to reach out until now.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[11]
+      value: 'Ashlyn: Whoa... I guess it isn''t easy being an inventor.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[12]
+      value: 'Damien: Sadly it isn''t but that''s what makes today quite special.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[13]
+      value: 'Damien: She arranged this whole event so we could celebrate her achievements
+        and have a good time.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[14]
+      value: 'Damien: So please enjoy the food and drink and relax.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[15]
+      value: 'Ashlyn: Haha, yeah will do.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[16]
+      value: 'Ashlyn: Haha, yeah will do.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: postInterrogationDialogueLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+--- !u!1001 &110181522
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_Name
+      value: Miriane_INT
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: interrogationDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: 'Ashlyn: Where were you at the time of the murder?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "Miriane: I don\u2019t see why this is any of your business, \u201CDetective.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "Ashlyn: Hey! Don\u2019t tell me you are going to undermine an active
+        murder investigation!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: 'Miriane: Well, last time I checked, you are not the police. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: 'Miriane: I thought you and our dear Mayor were going to fetch real
+        law enforcement once this storm cleared up.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: (Ashlyn takes a deep breath, trying to control her anger)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "Ashlyn: I\u2019d just like to know all the facts, before the Mayor
+        and I approach the police."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: (Ashlyn sighs, and her tone changes  from interrogative to mournful)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: "Ashlyn: There\u2019s a potential murderer on the loose."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: 'Ashlyn: And Nikki was my best friend.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: 'Ashlyn: I need to get to the bottom of this.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[11]
+      value: (Miriane, who had been glaring at Ashlyn, changes her expression somewhat
+        to a look of resentful understanding)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[12]
+      value: "Miriane: Well, if there\u2019s one thing that hasn\u2019t changed,
+        it\u2019s how much you\u2019re willing to do for your friends\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[13]
+      value: 'Miriane: If you must know, I was in the grand hall.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[14]
+      value: "Miriane: I could hear two people talking very loudly, but couldn\u2019t
+        make out what they were saying. The storm was too loud."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[15]
+      value: 'Miriane: At the time, I heard a very loud sound, which I assumed was
+        the thunder.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[16]
+      value: "Miriane: But now that I think about it\u2026."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[17]
+      value: "(Miriane begins to scowl\r)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[18]
+      value: "Ashlyn: \u2026What?\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[19]
+      value: "Miriane: \u2026It may have been a body hitting the ground\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[20]
+      value: "(Miriane\u2019s expression hardens)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[21]
+      value: "Miriane: I didn\u2019t pay it any mind. Shortly after, I left for my
+        room."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[22]
+      value: "Miriane: Well, that\u2019s where I was. May I go now, \u201CDetective?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[23]
+      value: (Ashlyn nods, deep in thought)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[24]
+      value: '(Miriane leaves)
+
+
+        END OF INTERROGATION'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[25]
+      value: '(Miriane leaves)
+
+
+        END OF INTERROGATION'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[26]
+      value: '(Miriane leaves)
+
+
+        END OF INTERROGATION'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: postInterrogationDialogueLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+--- !u!1001 &237267463
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3899831894831801394, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_Name
+      value: Player Essentials Asset
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.563978
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.972669
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+--- !u!1001 &482773414
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_Name
+      value: Jayson_INT
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: interrogationDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "(Ashlyn is frustrated and vents to Jayson)\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: 'Ashlyn: @#$%!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "Jayson: Hey, calm down. I\u2019m sure you can get to the bottom of
+        this."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "(Jayson tries to smile reassuringly at Ashlyn. She calms down a bit)\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: 'Ashlyn: Thanks.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: "Ashlyn: I just can\u2019t wrap my head around it. Who would do something
+        like this to Nikki?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "Jayson: A truly horrible person, that\u2019s who."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: "Jayson: Hey, you don\u2019t think it might have been Karol?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: 'Ashlyn: What makes you suspect her?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: "Jayson: Well, she was Nikki\u2019s rival, after all."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: 'Jayson: With Nikki gone, she has no competition.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[11]
+      value: "Ashlyn: Hm, I don\u2019t think Karol would stoop to murder though\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[12]
+      value: 'Jayson: Well, to me at least, she seems the most likely suspect.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[13]
+      value: (Ashlyn disagrees respectfully and excuses herself from the room, but
+        decides to probe Karol about this)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[14]
+      value: "Miriane: I could hear two people talking very loudly, but couldn\u2019t
+        make out what they were saying. The storm was too loud."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[15]
+      value: 'Miriane: At the time, I heard a very loud sound, which I assumed was
+        the thunder.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[16]
+      value: "Miriane: But now that I think about it\u2026."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[17]
+      value: "(Miriane begins to scowl\r)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[18]
+      value: "Ashlyn: \u2026What?\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[19]
+      value: "Miriane: \u2026It may have been a body hitting the ground\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[20]
+      value: "(Miriane\u2019s expression hardens)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[21]
+      value: "Miriane: I didn\u2019t pay it any mind. Shortly after, I left for my
+        room."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[22]
+      value: "Miriane: Well, that\u2019s where I was. May I go now, \u201CDetective?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[23]
+      value: (Ashlyn nods, deep in thought)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[24]
+      value: '(Miriane leaves)
+
+
+        END OF INTERROGATION'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[25]
+      value: '(Miriane leaves)
+
+
+        END OF INTERROGATION'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[26]
+      value: '(Miriane leaves)
+
+
+        END OF INTERROGATION'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: postInterrogationDialogueLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+--- !u!1001 &627340812
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_Name
+      value: Karol
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: interrogationDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: 'Ashlyn: Hello there. I''m Detective Ashlyn, nice to meet you.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: 'Karol: Hello yes, I am Karol. Inventor extraordinaire!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "Karol: I\u2019m sure you\u2019ve heard all about me."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: 'Ashlyn: Uh... no sorry, can''t say I have.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: "(Karol looks disappointed.\r)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: 'Karol: Oh...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: 'Karol: W-well, I guess you can''t expect a detective such as yourself
+        to be plugged into the world of inventing.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: 'Karol: I''ll be taking the place of Nikki as the most prolific inventor
+        in Wandermere soon enough.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: 'Karol: Once my latest invention is complete you''ll be hearing my name
+        uttered from the lips of everyone in town.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: 'Ashlyn: Well if you say so.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: 'Ashlyn: Good luck... I guess.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[11]
+      value: 'Ashlyn: Whoa... I guess it isn''t easy being an inventor.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[12]
+      value: 'Damien: Sadly it isn''t but that''s what makes today quite special.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[13]
+      value: 'Damien: She arranged this whole event so we could celebrate her achievements
+        and have a good time.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[14]
+      value: 'Damien: So please enjoy the food and drink and relax.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[15]
+      value: 'Ashlyn: Haha, yeah will do.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[16]
+      value: 'Ashlyn: Haha, yeah will do.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: postInterrogationDialogueLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+--- !u!1001 &1714675358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_Name
+      value: Nikki
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.583258
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: interrogationDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: 'Ashlyn: Nikki, long time no see!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "Nikki: Ashlyn! It\u2019s been so long! I\u2019m so glad you could make
+        it!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "Ashlyn:  Well, I couldn\u2019t say no to an invitation from an old
+        friend."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "Ashlyn: Quite the fancy to-do you\u2019ve set up."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: "Nikki: Heh heh, glad you\u2019re impressed."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: 'Nikki: It takes a lot more effort than you might think to set up one
+        of these. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "Nikki: Almost didn\u2019t want to do it but it\u2019d be a shame not
+        to show off my latest invention."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: 'Ashlyn:  What is the invention anyway? You never told anyone, did you?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: "Nikki: You\u2019ll just have to wait and see! Can\u2019t spoil the
+        surprise!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: "Nikki: You\u2019ll just have to wait and see! Can\u2019t spoil the
+        surprise!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: postInterrogationDialogueLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+--- !u!1001 &2012404942
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_Name
+      value: Rachel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: interrogationDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: (As Ashlyn is walking around the mansion, Rachel accidentally bumps
+        into Ashlyn causing her to accidentally drop her belongings)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "Rachel: Oh how clumsy of me! I\u2019m so sorry!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: (Both Rachel and Ashlyn go down to pick up the belongings)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: 'Ashlyn: It''s all good! It happens.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: 'Rachel: No, no, no should have been looking where I have been going.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: (Both of them finish picking up the belongings)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "Ashlyn: Well thank you so much. I\u2019m Ashlyn by the way, nice to
+        meet you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: (Ashlyn notices Rachel looks distress, as she has something on her mind)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: (Rachel notices Ashlyn looking at her)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: "Rachel: Oh uh I\u2019m Rachel. Nikki\u2019s Mother."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: (Rachel looks like she wants to leave)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[11]
+      value: (Rachel looks like she wants to leave)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[12]
+      value: 'Rachel: Please excuse me.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[13]
+      value: (Rachel walks away before more small talk can be made)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[14]
+      value: 'Damien: So please enjoy the food and drink and relax.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[15]
+      value: 'Ashlyn: Haha, yeah will do.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: dialogueLines.Array.data[16]
+      value: 'Ashlyn: Haha, yeah will do.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
+      propertyPath: postInterrogationDialogueLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d30f7571e8726e34ab56f146031c4771, type: 3}
