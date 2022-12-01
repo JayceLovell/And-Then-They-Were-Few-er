@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,8 @@ public class Player : MonoBehaviour
     public bool CanInteract;
 
     public GameObject CurrentInteractableObject;
+
+    public GameObject PlayerObjectTextBox;
 
     private Rigidbody2D rigidbody;
     private Animator animator;
@@ -97,10 +100,12 @@ public class Player : MonoBehaviour
         {
             CurrentInteractableObject = collision.gameObject;
             CanInteract = true;
+            PlayerObjectTextBox.SetActive(true);
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
         CurrentInteractableObject = null;
+        PlayerObjectTextBox.SetActive(false);
     }
 }
