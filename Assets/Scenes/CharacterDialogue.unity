@@ -1,0 +1,1445 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!4 &26456399 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+  m_PrefabInstance: {fileID: 1891938042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &395662677 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+  m_PrefabInstance: {fileID: 1475491406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &444052506
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3899831894831801394, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_Name
+      value: Player Essentials Asset
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1151.8369
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -103.15022
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+--- !u!1001 &809951488
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1468347443}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_Name
+      value: Fredrick/Mayor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.099365
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.020752
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.031532113
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: '(This is Fredrick, the  mayor of the town)
+
+        
+
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: 'Ashlyn: Good Evening Mr. Mayor
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: 'Mayor: Good Evening Ms. Hunt
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "(Ashlyn walks away)\r"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+--- !u!4 &942793725 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+  m_PrefabInstance: {fileID: 2097349070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1007230606 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+  m_PrefabInstance: {fileID: 809951488}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1102275116
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1468347443}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_Name
+      value: John
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.3535156
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.4575424
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.031532113
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: '(John is a nervous character, always searching for his father and fixing
+        the problems that he causes)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: '(His Dad is the crazy old man)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "Ashlyn: Hi\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: 'John: Oh, hello there.
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: 'Ashlyn: Come to see the showcase as well?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: 'John: Yeah, but I''m worried my dad might do something to interrupt
+        the show.
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "(Both turn to look at the Crazy Old Man, who is muttering something
+        loud about gears)\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: 'John: Oh Dad...
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: (John covers his hands with his face in embarrassment)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+--- !u!4 &1178417137 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+  m_PrefabInstance: {fileID: 1463722311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1373051620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2049051397}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_Name
+      value: CrazyOldMan_Int
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6417236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.0124207
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.043002825
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: interrogationDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: 'Ashlyn: Where were you at the time of the murder?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: 'Crazy Old Man: I was in the bathroom.
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: 'Ashlyn: Can anyone verify that you were there?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: 'Crazy Old Man: Yes, my son was inside with me.
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: 'Ashlyn: Your son was in the bathroom with you?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: 'Crazy Old Man: Yes. I always ask him to accompany me so that I have
+        someone to hold my gears. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "Don\u2019t want to drop them in the toilet!\r!\n\r\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: "(Ashlyn is flabbergasted\r)\n\nEND OF INTERROGATION\n"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+--- !u!1001 &1463722311
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1468347443}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_Name
+      value: Miriane
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.635498
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8869705
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.031532113
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: '(This is Miriane. She is a vain trend chasing fashion designer).
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: 'Mirianne: Oh, so you''re here too, are you?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "Ashlyn:  Well, hello to you too\r!\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: '(Miriane stares at Ashlyn in disdain)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: "A: I'm a friend of Nikki's\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: '(Miriane continues to stare)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "Miriane: Ah, I see\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: "Miriane: I must admit, Nikki's built quite the reputation for herself. 
+        \r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: '(Ashlyn grins rogue-ishly)
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: "Ashlyn: Yeah, ol' Nikki's on the up and up! \r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: "Miriane: Well, she might be Wandermere's hottest new inventor, but
+        I have a feeling that someone else will be taking her spot pretty soon\r...\n\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[11]
+      value: '(Ashlyn narrows her eyes at Miriane as she walks away. Miriane narrows
+        hers as well)
+
+'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+--- !u!1 &1468347442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1468347443}
+  m_Layer: 0
+  m_Name: Before Showcase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1468347443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468347442}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1150.8037, y: -104.04489, z: -0.031532113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1887811108}
+  - {fileID: 2012573868}
+  - {fileID: 26456399}
+  - {fileID: 1178417137}
+  - {fileID: 1007230606}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1475491406
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2049051397}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_Name
+      value: John_Int
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.3690186
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7352524
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.043002825
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: interrogationDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: 'Ashlyn: Where were you at the time of the murder?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: 'John: I was in my room.
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "Ashlyn: Really? Your father says otherwise\u2026\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: '(John begins to blush profusely)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: 'Ashlyn: Now tell me, where were you really?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: "(John covers his face in embarrassment\r)\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "John: I was in the bathroom with my Dad\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: 'Ashlyn (while shaking her head): Well, at least that provides an alibi
+        for the both of you.
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: "John: Please don\u2019t tell anyone! I was already scared that we would
+        get caught last night, someone tried to use the bathroom when we were in
+        there!\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: 'Ashlyn: Hm? Do you know who this might have been?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: 'John: No idea. But before they realized it was occupied they tried
+        really hard to get in. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[11]
+      value: "They must have need to pee really badly\r!\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[12]
+      value: "Ashlyn: I\u2019ll bet they did\u2026\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[13]
+      value: "John: After that, it seemed like they went into the next stall. \r\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[14]
+      value: "I think I might have heard something hit the floor, but I\u2019m not
+        sure, I didn\u2019t look in to check.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[15]
+      value: '(Ashlyn ponders this information)
+
+
+        END OF INTERROGATION'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+--- !u!1001 &1548977156
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1468347443}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_Name
+      value: Crazy Old Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.607544
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2905197
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.031532113
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "(A Crazy Old Man. He is very random, loud and rude). \n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: 'Crazy Old Man: Do you smell it in the air?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: 'Ashlyn: Excuse me? Smell what?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: 'Crazy Old Man: The gears of course! I love the smell of freshly oiled
+        gears!
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: '(The Crazy Old Man has an excited but wild look about him) '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: "\nAshlyn: Well, I can kind of relate. I like the smell of fresh ink
+        and newly printed parchment paper\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "(Ashlyn smiles cheekily\r)\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: "Crazy Old Man: Ink? Parchment! Now that's just weird\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: "(The Crazy Old Man sticks his tongue out at Ashlyn and starts muttering
+        to himself as Ashlyn walks away\r)\n"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+--- !u!4 &1748932756 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+  m_PrefabInstance: {fileID: 1373051620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1887811108 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+  m_PrefabInstance: {fileID: 1102275116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1891938042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1468347443}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_Name
+      value: Jayson
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.031532113
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: '(Jayson is an attractive but clumsy amateur detective)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "Ashlyn: Good Evening\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: '(Jayson looks Ashlyn up and down)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "Jayson: Well, hello there\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: '(Ashlyn finds Jayson quite attractive, and returns his smile)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: "Ashlyn: Well, hello yourself\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "Jayson: You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's
+        hot new detective in the flesh\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: 'Ashlyn: So I see my reputation precedes me, eh?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: 'Ashlyn: Do I live up to the stories?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: '(Jayson grins at Ashlyn)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: "Jayson: That's yet to be determined\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[11]
+      value: 'Jayson: I''m afraid though, that you might have some competition.
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[12]
+      value: 'Ashlyn: Oh? And who might that be?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[13]
+      value: '(Jayson, takes a step closer, but trips and ends up falling on his
+        front)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[14]
+      value: '(Ashlyn laughs, but not in a cruel mocking way, moreso found it cute
+        and funny)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[15]
+      value: '(Jayson hurriedly picks himself up hurriedly  and stretches out his
+        hand to shake Ashlyn''s)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[16]
+      value: '(Winded, still comes off as confident, but clearly a bit embarrassed)
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[17]
+      value: "Jayson: Jayson Klutsch! I may not have your reputation quite yet, but
+        I do believe I'm a force to be reckoned with\r.\n\r\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[18]
+      value: '(Ashlyn shakes his hand back, still giggling)
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[19]
+      value: "Ashlyn: Glad to make your acquaintance\r."
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+--- !u!1 &2005979786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2005979789}
+  - component: {fileID: 2005979788}
+  - component: {fileID: 2005979787}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &2005979787
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005979786}
+  m_Enabled: 1
+--- !u!20 &2005979788
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005979786}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &2005979789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005979786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2012573868 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+  m_PrefabInstance: {fileID: 1548977156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2049051396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2049051397}
+  m_Layer: 0
+  m_Name: Interrogation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2049051397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049051396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1149.8289, y: -104.26588, z: -0.043002825}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 942793725}
+  - {fileID: 1748932756}
+  - {fileID: 395662677}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2097349070
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2049051397}
+    m_Modifications:
+    - target: {fileID: 1172013809885060495, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_Name
+      value: Fred/Mayor_Int
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3486328
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2303085
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.043002825
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172013809885060499, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: interrogationDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "Ashlyn: Mr. Mayor, I hope you understand, I have to question everyone
+        as to their whereabouts during the murder\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "Fredrick: Yes, of course\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: 'Fredrick: I was in the foyer. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: 'I heard a loud noise, and went out into the hall. I walked by the lab,
+        but the door was closed at the time.
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: 'Ashlyn: Anything else?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: 'Fredrick: No. I had thought it might be thunder, so I kept walking
+        and went back to my room. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "Unfortunately due to the low lighting I did not notice the bloody footprints
+        that you had mentioned earlier, but it does explain why the floor felt sticky\u2026\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: 'Fredrick: By the way, you had mentioned finding the door ajar? Where
+        are the keys to the lab?
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: "Ashlyn: That\u2019s a good question. They weren\u2019t in the room\u2026\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: "Fredrick: It might do us some good to look for them\r.\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: 'Ashlyn: Noted.
+
+        
+
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117183034246657011, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
+      propertyPath: dialogueLines.Array.data[11]
+      value: "(Ashlyn makes a mental note to search the house for the keys. Maybe
+        the killer dropped them somewhere\u2026)\r\n\nEND OF INTERROGATION"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e3b3c1f25f07614e912272d00e772a0, type: 3}
