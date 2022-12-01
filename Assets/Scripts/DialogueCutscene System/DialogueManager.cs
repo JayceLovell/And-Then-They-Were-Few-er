@@ -94,6 +94,11 @@ public class DialogueManager : MonoBehaviour
             inDialogue = false;
         }
 
+        if (inInterrogation)
+        {
+            inInterrogation = false;
+        }
+
         StartCoroutine(TurnOffDialogue());
     }
 
