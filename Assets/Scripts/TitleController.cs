@@ -37,7 +37,7 @@ public class TitleController : MonoBehaviour
     {
  
     }
-    void OnStart()
+    public void OnStart()
     {
         SceneManager.LoadScene(SceneToLoad);
     }
