@@ -8,10 +8,22 @@ public class GameManager : MonoBehaviour
     private bool _isGameOver;
     private static GameManager _instance;
     private AudioSource _musicPlayer;
+    private int _currentPlayText;
     // This only public for testing
     [Range(0.0f, 100.0f)]
     private float _musicVolume;
 
+    public int CurrentPlayText
+    {
+        get {
+            _currentPlayText = PlayerPrefs.GetInt("PlayTextNumber");
+            return _currentPlayText; 
+        }
+        set { 
+            _currentPlayText = value;
+            PlayerPrefs.SetInt("PlayTextNumber",value);
+        }
+    }
     public float MusicVolume
     {
         get {
@@ -69,6 +81,12 @@ public class GameManager : MonoBehaviour
         GameWinCondition = 5;
         IsGameOver = false;
         _musicPlayer.volume = MusicVolume;
+        if ((PlayerPrefs.GetInt("PlayTextNumber",0) == 0))
+        {
+            CurrentPlayText = 0;
+        }
+        else
+            CurrentPlayText = PlayerPrefs.GetInt("PlayTextNumber");
     }
 
     // Update is called once per frame
@@ -82,12 +100,22 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("LastScene", CurrentScene);
         PlayerPrefs.Save();
     }
+    /// <summary>
+    /// Don't forget to add scene stuff here for music
+    /// </summary>
+    /// <param name="scene"></param>
+    /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("Scene Loaded: " + scene.name);
         switch (scene.name)
         {
             case "Entrance":
+                _musicPlayer.clip = BackgroundMusic;
+                _musicPlayer.Play();
+                _musicPlayer.loop = true;
+                break;
+            case "Grandhall":
                 _musicPlayer.clip = BackgroundMusic;
                 _musicPlayer.Play();
                 _musicPlayer.loop = true;

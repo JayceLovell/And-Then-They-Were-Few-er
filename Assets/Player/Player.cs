@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,8 +11,11 @@ public class Player : MonoBehaviour
 
     public GameObject CurrentInteractableObject;
 
+    public GameObject PlayerObjectTextBox;
+
     private Rigidbody2D rigidbody;
     private Animator animator;
+    private AudioSource audioSource;
 
     public Vector2 moveInput = Vector2.zero;
 
@@ -20,12 +24,7 @@ public class Player : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        audioSource = GetComponent<AudioSource>();
     }
     void FixedUpdate()
     {
@@ -55,7 +54,6 @@ public class Player : MonoBehaviour
                 break;
             case -1:
                 animator.SetBool("Left", true);
-                //transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
                 break;
             default:
                 animator.SetBool("Left", false);
@@ -97,10 +95,12 @@ public class Player : MonoBehaviour
         {
             CurrentInteractableObject = collision.gameObject;
             CanInteract = true;
+            PlayerObjectTextBox.SetActive(true);
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
         CurrentInteractableObject = null;
+        PlayerObjectTextBox.SetActive(false);
     }
 }
