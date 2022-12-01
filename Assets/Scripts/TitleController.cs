@@ -43,14 +43,14 @@ public class TitleController : MonoBehaviour
     }
     public void DisplayVolume()
     {
-        if (_isVolumeDisplayed)
+        if (!_isVolumeDisplayed)
         {
-            VolumeSlider.SetActive(false);
+            VolumeSlider.SetActive(true);
             _isVolumeDisplayed = true;
         }
         else
         {
-            VolumeSlider.SetActive(true);
+            VolumeSlider.SetActive(false);
             _isVolumeDisplayed=false;
         }
     }
