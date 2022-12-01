@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    private Transform NewPos;
+    private AudioSource AudioSource;
+
     public GameManager GameManager;
     public GameObject PlayerPrefab;
     public Transform DefaultSpawnLocation;
+    public AudioClip SceneSwitchDoorUse;
     public List<String> ExitLocationsName;
     public List<Transform> ExitLocationsPoint;
-    private Transform NewPos;
+    
 
     public enum WhichScene
     {
@@ -28,6 +32,7 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        AudioSource = GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()
@@ -47,6 +52,8 @@ public class GameController : MonoBehaviour
             }
 
         GameManager.SaveScene();
+        AudioSource.clip = SceneSwitchDoorUse;
+        AudioSource.Play();
     }
 
     // Update is called once per frame
