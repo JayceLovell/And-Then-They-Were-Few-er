@@ -1,5 +1,7 @@
-# And Then They Were Few(er)
+# And Then They Were Few(er) 
  Game develop by ontario tech students for GDW
+ [Download Game](http:google.com)
+
 
 ![Picture1](https://user-images.githubusercontent.com/19291090/192363433-bc6617ac-9b03-42a5-9cc0-d60ab35bd1c7.jpg)
 
@@ -13,6 +15,8 @@
 - Lay Ndiaye (Artist/ Sound Designer)
 - Fahad Tariq (Design, Artist)
 - Adnan Kasujja (Game Design/Co-Writer)
+
+
 
 ### Concept
 
@@ -30,77 +34,92 @@ However, you must ensure the guests trust you enough to believe your judgement, 
 
 In "And Then There Were Fewer", the player can use Keyboard and Mouse to play the game.
 
-| **Action** | **Keyboard/ Mouse** | **Controller** |
-| --- | --- | --- |
-| Move | WASD | Left joystick |
-| Select/Pickup Clue | Left click | R2 |
-| Aim Player | Mouse movement | Right joystick |
-| Interact/Start Conversation | E | Button 3 |
-
-### Key Mechanics
-
+|**Action**|**Keyboard/ Mouse**|**Controller**|
+| :- | :- | :- |
+|Move |WASD|Left joystick|
+|Select/Pickup Clue|Left click|R2|
+|Aim Player|Mouse movement|Right joystick |
+|Interact/Start Conversation|E|West Button|
+## Key Mechanics
 - Collecting Clues/Evidence
 - Interviewing People/Collecting Statements
 - Trust mechanic: The more trust you gain from characters, the more information they will reveal. This might help the player to discover the murderer.
 
-### Gameplay
+### Complete Gameplay Breakdown
+The player goes around asking the attendees of the event various questions. The questions include: 
 
-- The player will need to explore the various rooms to look for clues. This will include moving objects around the room. Items collected will be stored in the player's inventory, and can also be used to question characters.
+\- Why they came to the event
 
-- Certain rooms will require the player to solve a puzzle. Hints for puzzles can be found around the house, or revealed in conversations while speaking to characters.
+\- What they where doing, and where they were during the murder
 
-- There will also be dialogue options to advance conversations and reveal background information about characters, as well as potential agendas
-- The ability to intimidate suspects; This can either help or hinder the investigation, depending on how it's done
+\- Who they suspect most (if anyone), and why
 
-The Final Verdict is decided by the player; The suspect that is named is sentenced, and only after will it be revealed if the player caught the right person, or sentenced an innocent soul to die (similar to _Among Us_)
+\- If they've come across anything that could be a clue or suspicious 
 
-### Key Inspirations
+1. The answers the player gets from the other characters will give them a list of statements. 
+1. Statements are recorded, and can be accessed from this list. The clues that are found (via exploration) are also stored, and can be used in conjunction with statements when questioning suspects.
+1. Combining the right statements with the right clues can lead the player to discovering contradictions, and help them to come to the right conclusions about the events surrounding the murder.
+1. Once the player has found a contradiction, or come to a conclusion, they can present this information, along with other statements and clues, to one of the guests to press them on their statement. 
+1. If the player presses the right guest with the right statement, clue, or conclusion, they will come closer to finding the truth about what happened. 
+
+1. There’s no tim limit for th player to catch the murderer.When the player is ready, they will have to accuse someone of the murder. 
+1. During the accusation, it is important that the other guests have enough trust in the player's judgment to believe what they say. 
+1. The player will present what they think are the 5 most important statements/conclusions, and provide enough evidence for them using other statements/conclusions and clues. 
+1. Picking the right statements with the right evidence will increase the trust level of all the other guests, meaning that if the player gets all the statements right they will be able to accuse the murderer without issue. 
+1. However if the player doesn’t get enough statements (50% of all items) right to thoroughly convince all the other guests, the conclusion they come to will be based on the level of trust the player has built with each of them. 
+
+
+
+1. There are only 2 endings. In the good ending the player catches the killer and they are sent to jail while the other characters celebrate your victory. In the bad ending the player sends the wrong person to jail and later the main character gets a letter from the real killer telling them they failed and thanking them for deviating the guilt from them. 
+## Key Inspirations
 
 - Poirot
 - And Then There Were None
 - Sherlock Holmes
 - Among Us
 - Danganronpa
-
-### Game Elements
-
+## Game Elements
 **Mood/Atmosphere**
 
-The feeling of being in a Sherlock or Poirot novel. "And Then There Were None" would also serve as a key inspiration. We want there to be a heavy feeling of suspense, and to emulate thrillers.
+The feeling of being in a Sherlock or Poirot novel. “And Then There Were None” would also serve as a key inspiration. We want there to be a heavy feeling of suspense, and to emulate thrillers. 
 
 With a cast of 6 characters, there will also be an emphasis on the double faced nature of humanity. How things are not always as they appear on the surface.
 
-### Asset List
-
-## Art
-
+## Asset List
+### Art
 - Title Screen
 - Menu
-- End Screen
+- End Screen 
 - Game Over
-
 - Player Sprite
 - Suspects sprites
 - Bubble Speech
-- NPC's/The Other Guests Sprite
+
+- NPC’s/The Other Guests Sprite
 - Various Items/Clues
 - Tilesets
   - Mansion
   - Different Floors/Rooms
-
-## Music
-
+### Music
 - Title Theme
 - Game Over
+- Interrogation music (dramatic music)
+- Background theme music
 
-## Sound Effects
+(For the music, we want the background music to be ambient and somewhat ominous, to give the player a feeling of tension as they search the mansion)
+### Sound Effects
+- Finding a clue
+- Changing options on the menus and dialogue options
+- Player walking
+- Sound effect of opening doors
 
-- Sound Effect for finding a clue
--
 
-## Visual Style/Art Aesthetic
 
+### Visual Style/Art Aesthetic 
 Steampunk Aesthetic. Game will be set in a mansion. Pixel art,not detailed.
+
+(Below are some screenshots we made of key scenes, using RPG Maker)
+
 
 ![Picture1](https://user-images.githubusercontent.com/19291090/192364074-535ed898-2672-499b-aae1-527c254b2898.jpg)
 ![Picture2](https://user-images.githubusercontent.com/19291090/192364087-949cb0f2-430c-4cd7-8c72-ddeb532f89dc.jpg)
