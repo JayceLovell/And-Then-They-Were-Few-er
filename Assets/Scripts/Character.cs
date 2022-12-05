@@ -31,6 +31,12 @@ public class Character : MonoBehaviour
     public Texture2D Profile;
 
     /// <summary>
+    /// Characters Image for interigation
+    /// </summary>
+    [Tooltip("Characters image for Int")]
+    public Sprite InterrigationSprite;
+
+    /// <summary>
     /// Where the character should be based on story progression and trust level
     /// </summary>
     [Tooltip("Positions for characters to be in")]
