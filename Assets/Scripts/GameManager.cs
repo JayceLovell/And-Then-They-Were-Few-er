@@ -9,9 +9,8 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     private AudioSource _musicPlayer;
     private int _currentPlayText;
-    // This only public for testing
-    [Range(0.0f, 100.0f)]
-    private float _musicVolume;
+    private float _bgMusicVolume;
+    private float _sfxVolume;
 
     public int CurrentPlayText
     {
@@ -24,18 +23,31 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("PlayTextNumber",value);
         }
     }
-    public float MusicVolume
+    public float BGMusicVolume
     {
         get {
-            _musicVolume = PlayerPrefs.GetFloat("Volume");
-            return (_musicVolume / 100);
+            _bgMusicVolume = PlayerPrefs.GetFloat("Background Volume");
+            return (_bgMusicVolume / 100);
         }
         set { 
-            _musicVolume = value;
-            _musicPlayer.volume = (_musicVolume / 100);
-            PlayerPrefs.SetFloat("Volume", value);
+            _bgMusicVolume = value;
+            _musicPlayer.volume = (_bgMusicVolume / 100);
+            PlayerPrefs.SetFloat("Background Volume", value);
             PlayerPrefs.Save();
         }
+    }
+    public float SfxVolume {
+        get
+        {
+            _sfxVolume = PlayerPrefs.GetFloat("Sfx Volume");
+            return (_sfxVolume / 100);
+        }
+        set
+        {
+            _sfxVolume = value;
+            PlayerPrefs.SetFloat("Sfx Volume",value);
+            PlayerPrefs.Save();
+        } 
     }
     public AudioClip GameOverMusic;
     public AudioClip BackgroundMusic;
@@ -62,6 +74,7 @@ public class GameManager : MonoBehaviour
         get { return _isGameOver; }
         set { _isGameOver = value; }
     }
+
     public string CurrentScene;
     //CalledFirst
     void OnEnable()
@@ -79,14 +92,23 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         GameWinCondition = 5;
-        IsGameOver = false;
-        _musicPlayer.volume = MusicVolume;
-        if ((PlayerPrefs.GetInt("PlayTextNumber",0) == 0))
-        {
+        IsGameOver = false;        
+        CheckPlayerPrefs();
+        _musicPlayer.volume = BGMusicVolume;
+    }
+
+    private void CheckPlayerPrefs()
+    {
+        if ((PlayerPrefs.GetInt("PlayTextNumber", 0) == 0))
             CurrentPlayText = 0;
-        }
         else
             CurrentPlayText = PlayerPrefs.GetInt("PlayTextNumber");
+
+        if ((PlayerPrefs.GetFloat("Sfx Volume", 0) == 0))
+            SfxVolume = 50;
+
+        if ((PlayerPrefs.GetFloat("Background volume", 0) == 0))
+            BGMusicVolume = 50;
     }
 
     // Update is called once per frame
@@ -111,11 +133,13 @@ public class GameManager : MonoBehaviour
         switch (scene.name)
         {
             case "Entrance":
+                _musicPlayer.volume = BGMusicVolume;
                 _musicPlayer.clip = BackgroundMusic;
                 _musicPlayer.Play();
                 _musicPlayer.loop = true;
                 break;
-            case "Grandhall":
+            case "GrandHall":
+                _musicPlayer.volume=BGMusicVolume;
                 _musicPlayer.clip = BackgroundMusic;
                 _musicPlayer.Play();
                 _musicPlayer.loop = true;

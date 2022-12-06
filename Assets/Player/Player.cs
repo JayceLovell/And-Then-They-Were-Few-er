@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        audioSource.volume = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SfxVolume;
     }
     void FixedUpdate()
     {

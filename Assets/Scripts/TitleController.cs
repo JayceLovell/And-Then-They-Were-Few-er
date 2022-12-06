@@ -27,8 +27,13 @@ public class TitleController : MonoBehaviour
     void Start()
     {
         _titleMusicPlayer = GetComponent<AudioSource>();
+        MusicPlayer();
+    }
 
-        _titleMusicPlayer.clip=TitleMusic;
+    private void MusicPlayer()
+    {
+        _titleMusicPlayer.clip = TitleMusic;
+        _titleMusicPlayer.volume = GameManager.BGMusicVolume;
         _titleMusicPlayer.Play();
     }
 
@@ -47,6 +52,7 @@ public class TitleController : MonoBehaviour
         {
             VolumeSlider.SetActive(true);
             _isVolumeDisplayed = true;
+            VolumeSlider.GetComponent<Slider>().value = GameManager.BGMusicVolume;
         }
         else
         {
