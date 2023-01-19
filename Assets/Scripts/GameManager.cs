@@ -117,6 +117,12 @@ public class GameManager : MonoBehaviour
     {
         
     }
+    public void NewGame()
+    {
+        PlayerPrefs.DeleteKey("LastScene");
+        PlayerPrefs.DeleteKey("PlayTextNumber");
+        CheckPlayerPrefs();
+    }
     public void SaveScene()
     {
         CurrentScene = SceneManager.GetActiveScene().name;
