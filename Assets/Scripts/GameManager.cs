@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
     }
 
     public string CurrentScene;
+
     //CalledFirst
     void OnEnable()
     {
