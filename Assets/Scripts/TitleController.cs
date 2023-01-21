@@ -9,10 +9,8 @@ public class TitleController : MonoBehaviour
 {
     public string SceneToLoad;
     public GameManager GameManager;
-    public AudioClip TitleMusic;
     public GameObject VolumeSlider;
 
-    private AudioSource _titleMusicPlayer;
     private bool _isVolumeDisplayed;
     public bool IsVolumeDisplayed
     {
@@ -26,15 +24,7 @@ public class TitleController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _titleMusicPlayer = GetComponent<AudioSource>();
-        MusicPlayer();
-    }
-
-    private void MusicPlayer()
-    {
-        _titleMusicPlayer.clip = TitleMusic;
-        _titleMusicPlayer.volume = GameManager.BGMusicVolume;
-        _titleMusicPlayer.Play();
+        
     }
 
     // Update is called once per frame
@@ -64,9 +54,5 @@ public class TitleController : MonoBehaviour
             VolumeSlider.SetActive(false);
             _isVolumeDisplayed=false;
         }
-    }
-    public void VolumeLevel(float volume)
-    {
-        _titleMusicPlayer.volume = volume / 100;
     }
 }

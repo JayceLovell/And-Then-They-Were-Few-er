@@ -24,8 +24,6 @@ public class Player : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
-        audioSource.volume = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SfxVolume;
     }
     void FixedUpdate()
     {
@@ -69,6 +67,7 @@ public class Player : MonoBehaviour
     void OnMove(InputValue value)
     {
         moveInput=value.Get<Vector2>();
+        SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
     }
     void OnInteract()
     {

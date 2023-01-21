@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     private bool _isGameOver;
     private static GameManager _instance;
-    private AudioSource _musicPlayer;
     private int _currentPlayText;
     private float _bgMusicVolume;
     private float _sfxVolume;
@@ -31,7 +30,6 @@ public class GameManager : MonoBehaviour
         }
         set { 
             _bgMusicVolume = value;
-            _musicPlayer.volume = (_bgMusicVolume / 100);
             PlayerPrefs.SetFloat("Background Volume", value);
             PlayerPrefs.Save();
         }
@@ -49,9 +47,6 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.Save();
         } 
     }
-    public AudioClip GameOverMusic;
-    public AudioClip BackgroundMusic;
-    public AudioClip GameWonMusic;
     public static GameManager Instance { 
         get { 
             if(_instance == null)
@@ -87,7 +82,7 @@ public class GameManager : MonoBehaviour
     {
         _instance = this;
         DontDestroyOnLoad(GameManager.Instance);
-        _musicPlayer = GetComponent<AudioSource>();
+        //_musicPlayer = GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()
@@ -95,7 +90,7 @@ public class GameManager : MonoBehaviour
         GameWinCondition = 5;
         IsGameOver = false;        
         CheckPlayerPrefs();
-        _musicPlayer.volume = BGMusicVolume;
+        //_musicPlayer.volume = BGMusicVolume;
     }
 
     private void CheckPlayerPrefs()
@@ -139,23 +134,22 @@ public class GameManager : MonoBehaviour
         Debug.Log("Scene Loaded: " + scene.name);
         switch (scene.name)
         {
+            case "Title":
+                SoundManager.StartBackground(SoundManager.BgSound.Title);
+                break;
+            case "GameWon":
+                break;
+            case "GameLost":
+                break;
             case "Entrance":
-                _musicPlayer.volume = BGMusicVolume;
-                _musicPlayer.clip = BackgroundMusic;
-                _musicPlayer.Play();
-                _musicPlayer.loop = true;
                 break;
             case "GrandHall":
-                _musicPlayer.volume=BGMusicVolume;
-                _musicPlayer.clip = BackgroundMusic;
-                _musicPlayer.Play();
-                _musicPlayer.loop = true;
                 break;
             default:
-                if (_musicPlayer.isPlaying)
-                {
-                    _musicPlayer.Stop();
-                }             
+                //if (_musicPlayer.isPlaying)
+                //{
+                //    _musicPlayer.Stop();
+                //}             
                 break;
         }
     }
