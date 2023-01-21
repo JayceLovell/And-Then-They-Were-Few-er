@@ -13,6 +13,7 @@
  - ~~Fahad Tariq (Design, Artist)
  - Adnan Kasujja (Game Design/Co-Writer/Project Mangement)
  - Jelani Garnes (Programmer/Artist/Sound)
+ - Adrian Ruggia (Artist)
 
 ### Concept
 
@@ -126,9 +127,10 @@ Steampunk Aesthetic. Game will be set in a mansion. Pixel art,not detailed.
 
 #### Detective Ashlyn (Protagonist)
 
-Detective. Liar(to get her results) ,con artist type, looks for results, can be cruel in her methods,underground and small detective (Make the character neutral to appeal more) (Not a strong personality that way the player can immerse into the character) (Possible Motive: killing the famous inventor and blaming it to another person making the public believe that she solved it will elevate her name as a detective and become famous. Possible Motive number 2 she is an underground and small detective she could need the money to pay rent).
+Detective. Liar(to get her results) ,con artist type, looks for results, can be cruel in her methods,underground and small detective (Make the character neutral to appeal more) (Not a strong personality that way the player can immerse into the character).
 
-#### Nikki Test 
+#### Nikki Test
+
 ![Picture4](https://user-images.githubusercontent.com/19291090/192364032-1d53cc9b-cefe-4a50-a012-71cac2d37c4d.jpg)
 The inventor that is murdered. Nikki grew up in an impoverished neighborhood. Her father left when she was young, leaving her with her mother with the family business. Too stubborn to follow her mothers wishes and take on the family business she instead used her intelligence to invent the Synthesizer.
 
@@ -136,23 +138,23 @@ The inventor that is murdered. Nikki grew up in an impoverished neighborhood. He
 
 #### Damien
 
-A young apprentice of Nikki Test who was planning on using the Synthesizer for morally bankrupt purposes. (Possible motive: Nikki was planning on potentially replacing Damien as she was suspecting him of having dubious intentions)
+A young apprentice of Nikki Test who was planning on using the Synthesizer for morally bankrupt purposes. 
 
 #### Jayson
 
-A player, stud, and a clumsy wanna be detective trying to solve the mystery but ruins clues and makes chaos. Justice warrior, noisy and loud .Odd character obsesses with mysteries and conspiracies. (Motive: found a terrible secret from the scientist and wanted to kill him in name of justice) Him ruining clues by accident could be a plan from him to hide that he killed the scientist.
+A player, stud, and a clumsy wanna be detective trying to solve the mystery but ruins clues and makes chaos. Justice warrior, noisy and loud .Odd character obsesses with mysteries and conspiracies. Him ruining clues by accident could be a plan from him to hide that he killed the scientist.
 
 #### Mirianne
 
-A vain trend chasing fashion designer (Possible motive: wanted to get rid of potential competition because she had invested tons of money into a rival inventor).
+A vain trend chasing fashion designer .
 
 #### Karol
 
-The eccentric and energetic rival inventor to Nikki Test, is sponsored by Mirianne (possible motive: wanted to get rid of Nikki as he was her biggest rival).
+The eccentric and energetic rival inventor to Nikki Test, is sponsored by Mirianne .
 
 #### Rachel
 
-The over-controling mother of Nikki Test (possible motive: was unhappy with nikki's career decisions as she wanted him to continue the family business which has been failing and would soon fall into bankrupcy) (actual murderer. She accidentally killed Nikki while arguing with her about the family business and her career decisions. She attempts to cover up her murder by playing the "sad old lady." She tells the protagonist that she's so sad because this was her first time meeting Nikki in so long and was their chance to finally reconnect.
+The over-controling mother of Nikki Test (actual murderer. She accidentally killed Nikki while arguing with her about the family business and her career decisions. She attempts to cover up her murder by playing the "sad old lady." She tells the protagonist that she's so sad because this was her first time meeting Nikki in so long and was their chance to finally reconnect.
 
 ### Background Characters
 
