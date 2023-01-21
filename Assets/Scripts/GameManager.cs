@@ -138,18 +138,19 @@ public class GameManager : MonoBehaviour
                 SoundManager.StartBackground(SoundManager.BgSound.Title);
                 break;
             case "GameWon":
+                SoundManager.StartBackground(SoundManager.BgSound.GameWon);
                 break;
             case "GameLost":
+                SoundManager.StartBackground(SoundManager.BgSound.GameLost);
                 break;
             case "Entrance":
+                SoundManager.StartBackground(SoundManager.BgSound.Background);
                 break;
             case "GrandHall":
+                SoundManager.StartBackground(SoundManager.BgSound.Background);
                 break;
             default:
-                //if (_musicPlayer.isPlaying)
-                //{
-                //    _musicPlayer.Stop();
-                //}             
+                Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
                 break;
         }
     }

@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class IntroController : MonoBehaviour
+public class TextController : MonoBehaviour
 {
-    public GameManager GameManager;
+    private GameManager GameManager;
+
     public List<TextMeshProUGUI> text;
 
     void Awake()
@@ -18,7 +20,7 @@ public class IntroController : MonoBehaviour
     {
         Instantiate(text[GameManager.CurrentPlayText],GameObject.Find("Canvas").transform);        
     }
-    public void MoveOn()
+    public void OnNext()
     {
         GameManager.SaveScene();
         switch (GameManager.CurrentPlayText)

@@ -6,7 +6,6 @@ using UnityEngine;
 public class SoundAssets : MonoBehaviour
 {
     private static SoundAssets instance;
-    public List<SoundAssets> SoundsObjects = new List<SoundAssets>();
 
 
     public static SoundAssets i
@@ -15,7 +14,6 @@ public class SoundAssets : MonoBehaviour
         {
             if (instance == null) 
                 instance = Instantiate(Resources.Load<SoundAssets>("SoundAssets"));
-            SoundsObjects.Add(instance);
             return instance;
         }
         

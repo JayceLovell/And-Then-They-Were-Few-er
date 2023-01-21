@@ -21,17 +21,6 @@ public class TitleController : MonoBehaviour
     {
         GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
- 
-    }
     public void OnStart()
     {
         SceneManager.LoadScene(SceneToLoad);

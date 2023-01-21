@@ -8,6 +8,8 @@ public static class SoundManager
     public enum SoundFX
     {
         PlayerWalk,
+        UseDoor,
+        MenuSelect
        
     }
     public enum BgSound
@@ -15,7 +17,9 @@ public static class SoundManager
         Title,
         Background,
         GameWon,
-        GameLost
+        GameLost,
+        MainMenu,
+        Interigation
     }
 
     public static void StartBackground(BgSound bgSound)
@@ -36,6 +40,7 @@ public static class SoundManager
         AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
         audioSource.PlayOneShot(GetAudio(sound));
         audioSource.volume = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SfxVolume;
+        soundGameObject.AddComponent<SoundFXLife>().SoundLength=GetAudio(sound).length;
     }
     private static AudioClip GetBGAudio(BgSound sound)
     {

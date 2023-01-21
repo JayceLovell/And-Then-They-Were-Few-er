@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rigidbody;
     private Animator animator;
-    private AudioSource audioSource;
 
     public Vector2 moveInput = Vector2.zero;
 
@@ -69,6 +68,9 @@ public class Player : MonoBehaviour
         moveInput=value.Get<Vector2>();
         SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
     }
+    /// <summary>
+    /// Interact with Interactble Object
+    /// </summary>
     void OnInteract()
     {
         if (CanInteract)

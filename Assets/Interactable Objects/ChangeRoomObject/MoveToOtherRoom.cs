@@ -20,5 +20,6 @@ public class MoveToOtherRoom : Objects
         }
         else
             controller.MoveToScene(NameOfRoom);
+
     }
 }
