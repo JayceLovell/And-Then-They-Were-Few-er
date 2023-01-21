@@ -9,7 +9,7 @@
 
 ### Team Members
 
-- Jayce Lovell (Programmer)
+- Jayce Lovell (Lead Programmer)
 - Javier Orduno (Programmer)
 - Toma Ikomi (Programmer/Writer)
 - Lay Ndiaye (Artist/ Sound Designer)
