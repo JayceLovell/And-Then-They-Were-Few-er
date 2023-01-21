@@ -8,9 +8,13 @@ public class Player : MonoBehaviour
 {
     public float PlayerSpeed;
     public bool CanInteract;
+    public bool CanTalkToNPC;
 
+    public Sprite NPCSprite;
+
+    public GameObject NPCDisplay;
     public GameObject CurrentInteractableObject;
-
+    public GameObject CurrentNPCToTalkTo;
     public GameObject PlayerObjectTextBox;
 
     private Rigidbody2D rigidbody;
@@ -69,18 +73,36 @@ public class Player : MonoBehaviour
         SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
     }
     /// <summary>
-    /// Interact with Interactble Object
+    /// Interact with Interactble Object Or NPC
     /// </summary>
     void OnInteract()
     {
-        if (CanInteract)
+        if (CanTalkToNPC && DialogueManager.dialogueManager.inDialogue == false)
+        {
+            CurrentNPCToTalkTo.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
+        }
+        else if (CanInteract)
         {
             CurrentInteractableObject.GetComponent<Objects>().Use();
         }
+        
     }
     void OnExit()
     {
         Application.Quit();
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "NPC")
+        {
+            CurrentNPCToTalkTo = collision.gameObject;
+            CanTalkToNPC = true;
+            // Wrote this since character isn't animating just static
+            NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
+            //In future use this to grab the interrigation sprite.
+            //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
+            NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
+        }
     }
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -95,6 +117,8 @@ public class Player : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         CurrentInteractableObject = null;
+        CurrentNPCToTalkTo = null;
+        PlayerObjectTextBox.SetActive(false);
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -108,6 +132,7 @@ public class Player : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         CurrentInteractableObject = null;
+        CurrentNPCToTalkTo = null;
         PlayerObjectTextBox.SetActive(false);
     }
 }
