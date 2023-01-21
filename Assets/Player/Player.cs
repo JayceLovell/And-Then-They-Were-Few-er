@@ -69,7 +69,13 @@ public class Player : MonoBehaviour
     /// <param name="value">The value which containts the vector2 X/Y input</param>
     void OnMove(InputValue value)
     {
-        moveInput=value.Get<Vector2>();
+        if (value.Get<Vector2>().x != 0 && value.Get<Vector2>().y == 0)
+            moveInput = value.Get<Vector2>();
+        else if (value.Get<Vector2>().y != 0 && value.Get<Vector2>().x == 0)
+            moveInput = value.Get<Vector2>();
+        else
+            moveInput = Vector2.zero;
+
         SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
     }
     /// <summary>
