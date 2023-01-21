@@ -1,22 +1,18 @@
 # And Then They Were Few(er) 
- Game develop by ontario tech students for GDW
- [Download Game](http:google.com)
-
+ Game develop by ontario tech students for GDW [Download Game](http:google.com)
 
 ![Picture1](https://user-images.githubusercontent.com/19291090/192363433-bc6617ac-9b03-42a5-9cc0-d60ab35bd1c7.jpg)
 
 #### I dunno man
 
 ### Team Members
-
-- Jayce Lovell (Lead Programmer)
-- Javier Orduno (Programmer)
-- Toma Ikomi (Programmer/Writer)
-- Lay Ndiaye (Artist/ Sound Designer)
-- Fahad Tariq (Design, Artist)
-- Adnan Kasujja (Game Design/Co-Writer)
-
-
+ - Jayce Lovell (Lead Programmer/Design)
+ - Javier Orduno (Programmer/Artist)
+ - Toma Ikomi (Programmer/Writer)
+ - Lay Ndiaye (Artist/ Sound Designer)
+ - ~~Fahad Tariq (Design, Artist)
+ - Adnan Kasujja (Game Design/Co-Writer/Project Mangement)
+ - Jelani Garnes (Programmer/Artist/Sound)
 
 ### Concept
 
@@ -25,12 +21,10 @@ Top Down 2D Detective Murder Mystery
 ### Overview
 
 After being invited to an invention showcase by the town's most prestigious inventor, along with 6 other guests, you are suddenly tasked with playing detective after the inventor is mysteriously murdered and the guests are trapped in the mansion by an unknown assassin. Explore the mansion, find clues and talk to the other guests to determine who did it and what the murderer hoped to achieve.
-
 Build up trust with the others by talking to them and doing favors to get them in your corner. Ask them questions about the case and any clues you may have found. Eventually, when you have enough information to determine the murderer, you must decide who the mysterious assailant is.
-
 However, you must ensure the guests trust you enough to believe your judgement, or else this murder might be pinned on you!
 
-## Controls
+### Controls
 
 In "And Then There Were Fewer", the player can use Keyboard and Mouse to play the game.
 
@@ -40,7 +34,8 @@ In "And Then There Were Fewer", the player can use Keyboard and Mouse to play th
 |Select/Pickup Clue|Left click|R2|
 |Aim Player|Mouse movement|Right joystick |
 |Interact/Start Conversation|E|West Button|
-## Key Mechanics
+ 
+### Key Mechanics
 - Collecting Clues/Evidence
 - Interviewing People/Collecting Statements
 - Trust mechanic: The more trust you gain from characters, the more information they will reveal. This might help the player to discover the murderer.
@@ -48,38 +43,37 @@ In "And Then There Were Fewer", the player can use Keyboard and Mouse to play th
 ### Complete Gameplay Breakdown
 The player goes around asking the attendees of the event various questions. The questions include: 
 
-\- Why they came to the event
+- Why they came to the event
 
-\- What they where doing, and where they were during the murder
+- What they where doing, and where they were during the murder
 
-\- Who they suspect most (if anyone), and why
+- Who they suspect most (if anyone), and why
 
-\- If they've come across anything that could be a clue or suspicious 
+- If they've come across anything that could be a clue or suspicious 
 
-1. The answers the player gets from the other characters will give them a list of statements. 
-1. Statements are recorded, and can be accessed from this list. The clues that are found (via exploration) are also stored, and can be used in conjunction with statements when questioning suspects.
-1. Combining the right statements with the right clues can lead the player to discovering contradictions, and help them to come to the right conclusions about the events surrounding the murder.
-1. Once the player has found a contradiction, or come to a conclusion, they can present this information, along with other statements and clues, to one of the guests to press them on their statement. 
-1. If the player presses the right guest with the right statement, clue, or conclusion, they will come closer to finding the truth about what happened. 
-
-1. There’s no tim limit for th player to catch the murderer.When the player is ready, they will have to accuse someone of the murder. 
-1. During the accusation, it is important that the other guests have enough trust in the player's judgment to believe what they say. 
-1. The player will present what they think are the 5 most important statements/conclusions, and provide enough evidence for them using other statements/conclusions and clues. 
-1. Picking the right statements with the right evidence will increase the trust level of all the other guests, meaning that if the player gets all the statements right they will be able to accuse the murderer without issue. 
-1. However if the player doesn’t get enough statements (50% of all items) right to thoroughly convince all the other guests, the conclusion they come to will be based on the level of trust the player has built with each of them. 
-
-
-
-1. There are only 2 endings. In the good ending the player catches the killer and they are sent to jail while the other characters celebrate your victory. In the bad ending the player sends the wrong person to jail and later the main character gets a letter from the real killer telling them they failed and thanking them for deviating the guilt from them. 
-## Key Inspirations
+- The answers the player gets from the other characters will give them a list of statements. 
+- Statements are recorded, and can be accessed from this list. The clues that are found (via exploration) are also stored, and can be used in conjunction with statements when questioning suspects.
+- Combining the right statements with the right clues can lead the player to discovering contradictions, and help them to come to the right conclusions about the events surrounding the murder.
+- Once the player has found a contradiction, or come to a conclusion, they can present this information, along with other statements and clues, to one of the guests to press them on their statement. 
+- If the player presses the right guest with the right statement, clue, or conclusion, they will come closer to finding the truth about what happened. 
+- There’s no tim limit for th player to catch the murderer.When the player is ready, they will have to accuse someone of the murder. 
+- During the accusation, it is important that the other guests have enough trust in the player's judgment to believe what they say. 
+- The player will present what they think are the 5 most important statements/conclusions, and provide enough evidence for them using other statements/conclusions and clues. 
+- Picking the right statements with the right evidence will increase the trust level of all the other guests, meaning that if the player gets all the statements right they will be able to accuse the murderer without issue. 
+- However if the player doesn’t get enough statements (50% of all items) right to thoroughly convince all the other guests, the conclusion they come to will be based on the level of trust the player has built with each of them. 
+- There are only 2 endings. In the good ending the player catches the killer and they are sent to jail while the other characters celebrate your victory. In the bad ending the player sends the wrong person to jail and later the main character gets a letter from the real killer telling them they failed and thanking them for deviating the guilt from them.
+ 
+### Key Inspirations
 
 - Poirot
 - And Then There Were None
 - Sherlock Holmes
 - Among Us
 - Danganronpa
-## Game Elements
-**Mood/Atmosphere**
+ 
+### Game Elements
+ 
+#### Mood/Atmosphere
 
 The feeling of being in a Sherlock or Poirot novel. “And Then There Were None” would also serve as a key inspiration. We want there to be a heavy feeling of suspense, and to emulate thrillers. 
 
@@ -91,27 +85,27 @@ With a cast of 6 characters, there will also be an emphasis on the double faced 
 - Menu
 - End Screen 
 - Game Over
-- Player Sprite
-- Suspects sprites
-- Bubble Speech
+ - Player Sprite
+ - Suspects sprites
+ - Bubble Speech
 
-- NPC’s/The Other Guests Sprite
-- Various Items/Clues
-- Tilesets
+ - NPC’s/The Other Guests Sprite
+ - Various Items/Clues
+ - Tilesets
   - Mansion
   - Different Floors/Rooms
 ### Music
-- Title Theme
-- Game Over
-- Interrogation music (dramatic music)
-- Background theme music
+ - Title Theme
+ - Game Over
+ - Interrogation music (dramatic music)
+ - Background theme music
 
 (For the music, we want the background music to be ambient and somewhat ominous, to give the player a feeling of tension as they search the mansion)
 ### Sound Effects
-- Finding a clue
-- Changing options on the menus and dialogue options
-- Player walking
-- Sound effect of opening doors
+ - Finding a clue
+ - Changing options on the menus and dialogue options
+ - Player walking
+ - Sound effect of opening doors
 
 
 
@@ -180,6 +174,6 @@ SuperNatural and out there ideas for characters:
 
 1. Cult members (maybe multiple characters could be part of this cult or just some background characters like the servants of the mansion. Not including the main character. Or two groups of actual characters could be members from cult rivals that went to the party to steal the invention from the inventor and they try to kill each other or mess with each other.)
 
-2: Shape Shifting aliens: Searching for the inventor's secrets they can shapeshift into other characters to confuse the protagonist and pose as them to take the blame.
+2. Shape Shifting aliens: Searching for the inventor's secrets they can shapeshift into other characters to confuse the protagonist and pose as them to take the blame.
 
-3: Interdimensional Traveler: Wanted to take the inventor to a different dimension for the hell of it. Also this character is a talking duck
+3. Interdimensional Traveler: Wanted to take the inventor to a different dimension for the hell of it. Also this character is a talking duck
