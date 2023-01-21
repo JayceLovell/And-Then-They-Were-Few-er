@@ -25,6 +25,7 @@ public class Objects : MonoBehaviour
     public TypeOfObject objectType;
 
     public String Dialog;
+
     /// <summary>
     /// If player is interacting with object
     /// </summary>
@@ -50,6 +51,7 @@ public class Objects : MonoBehaviour
     {
         Debug.Log("Action from object: "+objectType.ToString());
         // thinking of putting an output dialog to screen about using the object
+        DialogueManager.dialogueManager.ObjectDiablog(Dialog);
     }
     /// <summary>
     /// @DrCatman

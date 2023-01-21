@@ -74,7 +74,17 @@ public class DialogueManager : MonoBehaviour
     {
         inCutscene = false;
     }
-
+    /// <summary>
+    /// For Objects to put their text in Dialog
+    /// </summary>
+    /// <param name="Dialog"></param>
+    public void ObjectDiablog(string Dialog)
+    {
+        text.text = "";
+        textbox.SetActive(true);
+        text.text = Dialog;
+        StartCoroutine(TurnOffDialogue());
+    }
     public void OpenTextBox()
     {
         inDialogue = true;
@@ -102,21 +112,6 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TurnOffDialogue());
     }
 
-    IEnumerator TurnOffDialogue()
-    {
-        yield return new WaitForSeconds(0.3f);
-        inDialogue = false;
-    }
-
-    IEnumerator TypeLine()
-    {
-        foreach (char c in currentDialogue[index].ToCharArray())
-        {
-            DialogueManager.dialogueManager.text.text += c;
-            yield return new WaitForSeconds(DialogueManager.dialogueManager.textSpeed);
-        }
-    }
-
     void NextLine()
     {
         if (index < currentDialogue.Length - 1)
@@ -128,6 +123,19 @@ public class DialogueManager : MonoBehaviour
         else
         {
             DialogueManager.dialogueManager.CloseTextBox();
+        }
+    }
+    IEnumerator TurnOffDialogue()
+    {
+        yield return new WaitForSeconds(0.3f);
+        inDialogue = false;
+    }
+    IEnumerator TypeLine()
+    {
+        foreach (char c in currentDialogue[index].ToCharArray())
+        {
+            DialogueManager.dialogueManager.text.text += c;
+            yield return new WaitForSeconds(DialogueManager.dialogueManager.textSpeed);
         }
     }
 }

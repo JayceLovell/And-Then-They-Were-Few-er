@@ -116,9 +116,13 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        CurrentInteractableObject = null;
+        NPCSprite = null;
+       CurrentInteractableObject = null;
         CurrentNPCToTalkTo = null;
+        CanInteract = false;
+        CanTalkToNPC = false;
         PlayerObjectTextBox.SetActive(false);
+        DialogueManager.dialogueManager.CloseTextBox();
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -133,6 +137,8 @@ public class Player : MonoBehaviour
     {
         CurrentInteractableObject = null;
         CurrentNPCToTalkTo = null;
+        CanInteract = false;
         PlayerObjectTextBox.SetActive(false);
+        DialogueManager.dialogueManager.CloseTextBox();
     }
 }
