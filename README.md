@@ -10,7 +10,7 @@
  - Javier Orduno (Programmer/Artist)
  - Toma Ikomi (Programmer/Writer)
  - Lay Ndiaye (Artist/ Sound Designer)
- - ~~Fahad Tariq (Design, Artist)
+ - ~~Fahad Tariq (Design, Artist)~~
  - Adnan Kasujja (Game Design/Co-Writer/Project Mangement)
  - Jelani Garnes (Programmer/Artist/Sound)
  - Adrian Ruggia (Artist)
