@@ -1,11 +1,55 @@
+<div align="center" >
+
 # And Then They Were Few(er) 
  Game develop by ontario tech students for GDW [Download Game](http:google.com)
 
+
 ![Picture1](https://user-images.githubusercontent.com/19291090/192363433-bc6617ac-9b03-42a5-9cc0-d60ab35bd1c7.jpg)
 
-#### I dunno man
 
-### Team Members
+##### By 
+##### I dunno man
+
+</div>
+
+<div align="center" >
+
+# Table of Contents
+
+</div>
+
+- [Team Members](#team-members)
+- [Game Concept](#concept)
+- [Game Overview](#overview)
+- [Controls](#controls)
+- [Key Mechanics](#key-mechanics)
+- [Game breakdown](#complete-gameplay-breakdown)
+- [Key Inspirations](#key-inspirations)
+- [Game Elements](#game-elements)
+    - [Mood and Atmosphere](#moodatmosphere)
+- [Assets](#asset-list)
+    - [Art](#art)
+    - [Music](#music)
+    - [Sound Effects](#sound-effects)
+- [Visual Style/Art Aesthic](#visual-styleart-aesthetic)
+- [Characters](#characters)
+  - [Main Characters](#main-characters)
+    - [Protagonist](#detective-ashlyn-protagonist)
+    - [Nikki Test](#nikki-test)
+  - [Support Characters](#supporting-characters)
+    - [Damin](#damien)
+    - [Jayson](#jayson)
+    - [Mirianne](#mirianne)
+    - [Karol](#karol)
+    - [Rachel](#rachel)
+  - [Background Characters](#background-characters)
+    - [John](#john)
+    - [Frederick](#frederick)
+    - [Old Crazy man](#old-crazy-man)
+- [Game Progress](#game-progress)
+
+
+## Team Members
  - Jayce Lovell (Lead Programmer/Design)
  - Javier Orduno (Programmer/Artist)
  - Toma Ikomi (Programmer/Writer)
@@ -15,17 +59,17 @@
  - Jelani Garnes (Programmer/Artist/Sound)
  - Adrian Ruggia (Artist)
 
-### Concept
+## Concept
 
 Top Down 2D Detective Murder Mystery
 
-### Overview
+## Overview
 
 After being invited to an invention showcase by the town's most prestigious inventor, along with 6 other guests, you are suddenly tasked with playing detective after the inventor is mysteriously murdered and the guests are trapped in the mansion by an unknown assassin. Explore the mansion, find clues and talk to the other guests to determine who did it and what the murderer hoped to achieve.
 Build up trust with the others by talking to them and doing favors to get them in your corner. Ask them questions about the case and any clues you may have found. Eventually, when you have enough information to determine the murderer, you must decide who the mysterious assailant is.
 However, you must ensure the guests trust you enough to believe your judgement, or else this murder might be pinned on you!
 
-### Controls
+## Controls
 
 In "And Then There Were Fewer", the player can use Keyboard and Mouse to play the game.
 
@@ -36,12 +80,12 @@ In "And Then There Were Fewer", the player can use Keyboard and Mouse to play th
 |Aim Player|Mouse movement|Right joystick |
 |Interact/Start Conversation|E|West Button|
  
-### Key Mechanics
+## Key Mechanics
 - Collecting Clues/Evidence
 - Interviewing People/Collecting Statements
 - Trust mechanic: The more trust you gain from characters, the more information they will reveal. This might help the player to discover the murderer.
 
-### Complete Gameplay Breakdown
+## Complete Gameplay Breakdown
 The player goes around asking the attendees of the event various questions. The questions include: 
 
 - Why they came to the event
@@ -64,7 +108,7 @@ The player goes around asking the attendees of the event various questions. The 
 - However if the player doesn’t get enough statements (50% of all items) right to thoroughly convince all the other guests, the conclusion they come to will be based on the level of trust the player has built with each of them. 
 - There are only 2 endings. In the good ending the player catches the killer and they are sent to jail while the other characters celebrate your victory. In the bad ending the player sends the wrong person to jail and later the main character gets a letter from the real killer telling them they failed and thanking them for deviating the guilt from them.
  
-### Key Inspirations
+## Key Inspirations
 
 - Poirot
 - And Then There Were None
@@ -72,9 +116,9 @@ The player goes around asking the attendees of the event various questions. The 
 - Among Us
 - Danganronpa
  
-### Game Elements
+## Game Elements
  
-#### Mood/Atmosphere
+### Mood/Atmosphere
 
 The feeling of being in a Sherlock or Poirot novel. “And Then There Were None” would also serve as a key inspiration. We want there to be a heavy feeling of suspense, and to emulate thrillers. 
 
@@ -102,6 +146,7 @@ With a cast of 6 characters, there will also be an emphasis on the double faced 
  - Background theme music
 
 (For the music, we want the background music to be ambient and somewhat ominous, to give the player a feeling of tension as they search the mansion)
+
 ### Sound Effects
  - Finding a clue
  - Changing options on the menus and dialogue options
@@ -138,11 +183,11 @@ The inventor that is murdered. Nikki grew up in an impoverished neighborhood. He
 
 #### Damien
 
-A young apprentice of Nikki Test who was planning on using the Synthesizer for morally bankrupt purposes. 
+A young apprentice of Nikki Test.
 
 #### Jayson
 
-A player, stud, and a clumsy wanna be detective trying to solve the mystery but ruins clues and makes chaos. Justice warrior, noisy and loud .Odd character obsesses with mysteries and conspiracies. Him ruining clues by accident could be a plan from him to hide that he killed the scientist.
+A player, stud, and a clumsy wanna be detective trying to solve the mystery but ruins clues and makes chaos. Justice warrior, noisy and loud .Odd character obsesses with mysteries and conspiracies.
 
 #### Mirianne
 
@@ -154,7 +199,7 @@ The eccentric and energetic rival inventor to Nikki Test, is sponsored by Mirian
 
 #### Rachel
 
-The over-controling mother of Nikki Test (actual murderer. She accidentally killed Nikki while arguing with her about the family business and her career decisions. She attempts to cover up her murder by playing the "sad old lady." She tells the protagonist that she's so sad because this was her first time meeting Nikki in so long and was their chance to finally reconnect.
+The over-controling mother of Nikki Test.
 
 ### Background Characters
 
@@ -179,3 +224,11 @@ SuperNatural and out there ideas for characters:
 2. Shape Shifting aliens: Searching for the inventor's secrets they can shapeshift into other characters to confuse the protagonist and pose as them to take the blame.
 
 3. Interdimensional Traveler: Wanted to take the inventor to a different dimension for the hell of it. Also this character is a talking duck
+
+
+<div align="center" >
+
+## Game Progress
+![30%](https://progress-bar.dev/30)  
+bar by [Progress bar dev](https://github.com/fredericojordan/progress-bar)
+</div>
