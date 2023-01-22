@@ -18,7 +18,7 @@ public class PlayerDialogueInteract : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentNPC && Input.GetKeyDown(KeyCode.E) && DialogueManager.dialogueManager.inDialogue == false)
+        if (currentNPC && Input.GetKeyDown(KeyCode.E) && DialogueManager.dialogueManager.inDialogue == false && DialogueManager.dialogueManager.inInterrogation == false)
         {
             currentNPC.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();           
         }

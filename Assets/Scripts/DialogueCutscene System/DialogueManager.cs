@@ -23,10 +23,14 @@ public class DialogueManager : MonoBehaviour
 
     public float textSpeed = 0.05f;
 
+    public Dialogue currentDialogueScript;
+
     [TextArea(15, 20)]
-    public string[] currentDialogue;
+    public List<string> currentDialogue;
 
     public int index;
+
+    public Clue currentCorrectClue;
 
     private void Awake()
     {
@@ -88,6 +92,10 @@ public class DialogueManager : MonoBehaviour
         textbox.SetActive(false);
         text.text = "";
 
+        index = 0;
+
+        currentDialogue = null;
+
         if (inCutscene)
         {
             playableDirector.Resume();
@@ -97,6 +105,7 @@ public class DialogueManager : MonoBehaviour
         if (inInterrogation)
         {
             inInterrogation = false;
+            currentCorrectClue = null;
         }
 
         StartCoroutine(TurnOffDialogue());
@@ -119,7 +128,7 @@ public class DialogueManager : MonoBehaviour
 
     void NextLine()
     {
-        if (index < currentDialogue.Length - 1)
+        if (index < currentDialogue.Count - 1)
         {
             index++;
             DialogueManager.dialogueManager.text.text = "";

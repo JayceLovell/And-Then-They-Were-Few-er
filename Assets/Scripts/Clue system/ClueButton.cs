@@ -17,6 +17,12 @@ public class ClueButton : MonoBehaviour
 
     public void OnClick()
     {
-        
+        if (DialogueManager.dialogueManager.inInterrogation)
+        {
+            if(clue == DialogueManager.dialogueManager.currentCorrectClue)
+            {
+                DialogueManager.dialogueManager.currentDialogueScript.StartPostClueDialogue();
+            }
+        }
     }
 }
