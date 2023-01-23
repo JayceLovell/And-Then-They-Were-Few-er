@@ -9,7 +9,8 @@ public static class SoundManager
     {
         PlayerWalk,
         UseDoor,
-        MenuSelect
+        MenuSelect,
+        Clue
        
     }
     public enum BgSound
