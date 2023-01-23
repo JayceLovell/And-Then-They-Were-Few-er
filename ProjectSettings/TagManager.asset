@@ -9,6 +9,7 @@ TagManager:
   - GameManager
   - NPC
   - UIManager
+  - Canvas
   layers:
   - Default
   - TransparentFX

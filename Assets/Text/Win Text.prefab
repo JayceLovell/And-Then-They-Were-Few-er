@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &253141498412860153
+--- !u!1 &8549433571260055688
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 253141498412860152}
-  - component: {fileID: 253141498412860154}
-  - component: {fileID: 253141498412860155}
+  - component: {fileID: 8549433571260055689}
+  - component: {fileID: 8549433571260055695}
+  - component: {fileID: 8549433571260055694}
   m_Layer: 5
-  m_Name: Body Discovery 2
+  m_Name: Win Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &253141498412860152
+--- !u!224 &8549433571260055689
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253141498412860153}
+  m_GameObject: {fileID: 8549433571260055688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -35,24 +35,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 31, y: -309.04}
-  m_SizeDelta: {x: 756, y: 984.07}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &253141498412860154
+--- !u!222 &8549433571260055695
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253141498412860153}
+  m_GameObject: {fileID: 8549433571260055688}
   m_CullTransparentMesh: 1
---- !u!114 &253141498412860155
+--- !u!114 &8549433571260055694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253141498412860153}
+  m_GameObject: {fileID: 8549433571260055688}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -60,25 +60,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ashlyn runs in and finds that Nikki is dead.
-
-
-    She mourns for her
-    friend, and looks around the room.
-
-
-    She notices a bloody pipe in the corner
-    of the room.
-
-
-    Seeing nothing else, she leaves to announce the death of Nikki
-    Test...'
+  m_text: "Ashlyn correctly deduces that it was Rachel that was the murderer. \r\n\r\nRachel
+    and Nikki had got into an argument about Nikki joining the family business. In
+    a fit of anger, Rachel had pushed Nikki and she hit her head, dying due to blood
+    loss.\r\n\r\nRachel attempted to hide the keys to the lab in the toilet, and
+    was heard by John&his Father. She also tried to make Nikki\u2019s death look
+    like an attack, which is why the pipe was in the corner. Rachel placed it there.\r\n\r\nRachel
+    is remorseful and accepts her fate. Once the storm clears she is escorted by
+    Ashlyn and the Mayor to the Police Station\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -105,15 +100,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.26
-  m_fontSizeBase: 28.26
+  m_fontSize: 33.6
+  m_fontSizeBase: 21
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -141,7 +136,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -1.6762695, z: 0.6156616, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

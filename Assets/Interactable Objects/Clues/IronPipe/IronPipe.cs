@@ -18,5 +18,6 @@ public class IronPipe : Objects
     public override void Use()
     {
         base.Use();
+        SoundManager.PlaySound(SoundManager.SoundFX.Clue);
     }
 }

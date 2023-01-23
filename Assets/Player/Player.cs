@@ -22,11 +22,14 @@ public class Player : MonoBehaviour
 
     public Vector2 moveInput = Vector2.zero;
 
+    private DialogueManager _dialogueManager;
+
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        _dialogueManager = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueManager>();
     }
     void FixedUpdate()
     {
@@ -80,16 +83,27 @@ public class Player : MonoBehaviour
     }
     /// <summary>
     /// Interact with Interactble Object Or NPC
+    /// Normall E button
     /// </summary>
     void OnInteract()
     {
-        if (CanTalkToNPC && DialogueManager.dialogueManager.inDialogue == false)
+        // If in interrigation then continue
+        if (_dialogueManager.inDialogue)
         {
-            CurrentNPCToTalkTo.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
+           _dialogueManager.ContinueDialog();
         }
-        else if (CanInteract)
+        else
         {
-            CurrentInteractableObject.GetComponent<Objects>().Use();
+            // Start talking to NPC
+            if (CanTalkToNPC && DialogueManager.dialogueManager.inDialogue == false)
+            {
+                CurrentNPCToTalkTo.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
+            }
+            // Interact with object
+            else if (CanInteract)
+            {
+                CurrentInteractableObject.GetComponent<Objects>().Use();
+            }
         }
         
     }
@@ -120,16 +134,6 @@ public class Player : MonoBehaviour
             PlayerObjectTextBox.SetActive(true);
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        NPCSprite = null;
-       CurrentInteractableObject = null;
-        CurrentNPCToTalkTo = null;
-        CanInteract = false;
-        CanTalkToNPC = false;
-        PlayerObjectTextBox.SetActive(false);
-        DialogueManager.dialogueManager.CloseTextBox();
-    }
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Interactable")
@@ -139,11 +143,23 @@ public class Player : MonoBehaviour
             PlayerObjectTextBox.SetActive(true);
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
+        NPCSprite = null;
         CurrentInteractableObject = null;
         CurrentNPCToTalkTo = null;
         CanInteract = false;
+        CanTalkToNPC = false;
+        PlayerObjectTextBox.SetActive(false);
+        DialogueManager.dialogueManager.CloseTextBox();
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        NPCSprite = null;
+        CurrentInteractableObject = null;
+        CurrentNPCToTalkTo = null;
+        CanInteract = false;
+        CanTalkToNPC = false;
         PlayerObjectTextBox.SetActive(false);
         DialogueManager.dialogueManager.CloseTextBox();
     }

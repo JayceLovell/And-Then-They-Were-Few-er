@@ -49,6 +49,11 @@ public class TextController : MonoBehaviour
                 GameManager.CurrentPlayText = 5;
                 SceneManager.LoadScene("Grandhall");
                 break;
+            case 6:
+            case 7:
+                GameManager.CurrentPlayText = 0;
+                SceneManager.LoadScene("Title");
+                break;
             default:
                 GameManager.CurrentPlayText++;
                 SceneManager.LoadScene("Entrance");

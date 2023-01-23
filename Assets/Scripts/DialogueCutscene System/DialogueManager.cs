@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
 
 
     public GameObject interogationArea;
-    public Camera mainCam;
+    public GameObject MainCam;
 
     public bool inDialogue;
     public bool inCutscene;
@@ -46,31 +46,28 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DialogueManager.dialogueManager.inDialogue)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                if (DialogueManager.dialogueManager.text.text == currentDialogue[index])
-                {
-                    NextLine();
-                }
-                else
-                {
-                    StopAllCoroutines();
-                    DialogueManager.dialogueManager.text.text = currentDialogue[index];
-                }
-            }
-        }
 
         if (inInterrogation)
         {
-            mainCam.enabled = false;
+            MainCam.SetActive(false);
             interogationArea.SetActive(true);
         }
         else
         {
-            mainCam.enabled = true;
+            MainCam.SetActive(true);
             interogationArea.SetActive(false);
+        }
+    }
+    public void ContinueDialog()
+    {
+        if (DialogueManager.dialogueManager.text.text == currentDialogue[index])
+        {
+            NextLine();
+        }
+        else
+        {
+            StopAllCoroutines();
+            DialogueManager.dialogueManager.text.text = currentDialogue[index];
         }
     }
 

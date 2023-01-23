@@ -137,11 +137,13 @@ public class GameManager : MonoBehaviour
             case "Title":
                 SoundManager.StartBackground(SoundManager.BgSound.Title);
                 break;
-            case "GameWon":
-                SoundManager.StartBackground(SoundManager.BgSound.GameWon);
-                break;
-            case "GameLost":
-                SoundManager.StartBackground(SoundManager.BgSound.GameLost);
+            case "Text":
+                if (CurrentPlayText == 6)
+                    SoundManager.StartBackground(SoundManager.BgSound.GameLost);
+                else if (CurrentPlayText == 7)
+                    SoundManager.StartBackground(SoundManager.BgSound.GameWon);
+                else
+                    SoundManager.StartBackground(SoundManager.BgSound.MainMenu);
                 break;
             case "Entrance":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
