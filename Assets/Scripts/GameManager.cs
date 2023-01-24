@@ -1,10 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    /// <summary>
+    /// 15 mins count down
+    /// </summary>
+    public float GameTime
+    {
+        get
+        {
+            return _gameTime;
+        }
+        set
+        {
+            _gameTime = value;
+        }
+    }
+    private float _gameTime;
+
     private bool _isGameOver;
     private static GameManager _instance;
     private int _currentPlayText;
@@ -155,6 +172,10 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
                 break;
         }
+    }
+    void OnExit()
+    {
+        Application.Quit();
     }
     void OnDisable()
     {

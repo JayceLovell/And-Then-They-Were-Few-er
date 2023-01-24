@@ -375,37 +375,15 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "One Modifier",
-                    "id": "b45fc771-2fcf-4230-a7bb-aa4fc43f9a86",
-                    "path": "OneModifier",
+                    "name": "",
+                    "id": "64b74e5d-1d0a-4489-a430-1ce0023771d4",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Exit",
-                    "isComposite": true,
+                    "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "binding",
-                    "id": "d167025b-b519-4df4-a3fa-f544e68f0ad2",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Exit",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "binding",
-                    "id": "4fd019ad-a59a-4d38-9edc-72f5547c97c3",
-                    "path": "<Keyboard>/leftAlt",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Exit",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 }
             ]
         },

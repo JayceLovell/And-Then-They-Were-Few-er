@@ -30,15 +30,5 @@ public class UiManager : MonoBehaviour
         _instance = this;
         DontDestroyOnLoad(UiManager.Instance);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
