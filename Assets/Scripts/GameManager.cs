@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     private float _gameTime;
     private bool _timeStart;
     private bool _isGamePaused;
-    private bool _isGameOver;
+    private bool _isGameLost;
+    private bool _isGameWon;
     private static GameManager _instance;
     private int _currentPlayText;
     private float _bgMusicVolume;
@@ -91,23 +92,37 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// How many Clues for Game Won
-    /// </summary>
-    public int GameWinCondition;
-    /// <summary>
-    /// Will be used to end game
+    /// lost Game
     /// </summary>
     public bool IsGameOver
     {
         get { 
-            return _isGameOver; 
+            return _isGameLost; 
         }
         set { 
-            _isGameOver = value;
-            if(_isGameOver)
+            _isGameLost = value;
+            if(_isGameLost)
             {
                 _timeStart = false;
                 CurrentPlayText = 6;
+                SceneManager.LoadScene("Text");
+            }
+        }
+    }
+
+    public bool IsGameWon
+    {
+        get
+        {
+            return _isGameWon;
+        }
+        set
+        {
+            _isGameWon = value;
+            if (_isGameWon)
+            {
+                _timeStart = false;
+                CurrentPlayText = 7;
                 SceneManager.LoadScene("Text");
             }
         }
@@ -130,7 +145,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameWinCondition = 5;
         IsGameOver = false;
         IsGamePaused = false;
         CheckPlayerPrefs();
