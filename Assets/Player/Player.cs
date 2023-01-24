@@ -16,20 +16,21 @@ public class Player : MonoBehaviour
     public GameObject CurrentInteractableObject;
     public GameObject CurrentNPCToTalkTo;
     public GameObject PlayerObjectTextBox;
-
-    private Rigidbody2D rigidbody;
-    private Animator animator;
-
     public Vector2 moveInput = Vector2.zero;
 
+    private Rigidbody2D _rigidbody;
+    private Animator _animator;
+
     private DialogueManager _dialogueManager;
+    private GameController _gameController;
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
         _dialogueManager = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueManager>();
+        _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
     void FixedUpdate()
     {
@@ -38,31 +39,31 @@ public class Player : MonoBehaviour
             moveInput = Vector2.zero;
         }
 
-        rigidbody.velocity = moveInput * PlayerSpeed;
+        _rigidbody.velocity = moveInput * PlayerSpeed;
         switch (moveInput.y)
         {
             case 1:
-                animator.SetBool("Up", true);
+                _animator.SetBool("Up", true);
                 break;
             case -1:
-                animator.SetBool("Down", true);
+                _animator.SetBool("Down", true);
                 break;
             default:
-                animator.SetBool("Up", false);
-                animator.SetBool("Down", false);
+                _animator.SetBool("Up", false);
+                _animator.SetBool("Down", false);
                 break;
         }
         switch (moveInput.x)
         {
             case 1:
-                animator.SetBool("Right", true);
+                _animator.SetBool("Right", true);
                 break;
             case -1:
-                animator.SetBool("Left", true);
+                _animator.SetBool("Left", true);
                 break;
             default:
-                animator.SetBool("Left", false);
-                animator.SetBool("Right", false);
+                _animator.SetBool("Left", false);
+                _animator.SetBool("Right", false);
                 break;
         }
     }
@@ -72,14 +73,17 @@ public class Player : MonoBehaviour
     /// <param name="value">The value which containts the vector2 X/Y input</param>
     void OnMove(InputValue value)
     {
-        if (value.Get<Vector2>().x != 0 && value.Get<Vector2>().y == 0)
-            moveInput = value.Get<Vector2>();
-        else if (value.Get<Vector2>().y != 0 && value.Get<Vector2>().x == 0)
-            moveInput = value.Get<Vector2>();
-        else
-            moveInput = Vector2.zero;
+        if (!_gameController.GameManager.IsGamePaused)
+        {
+            if (value.Get<Vector2>().x != 0 && value.Get<Vector2>().y == 0)
+                moveInput = value.Get<Vector2>();
+            else if (value.Get<Vector2>().y != 0 && value.Get<Vector2>().x == 0)
+                moveInput = value.Get<Vector2>();
+            else
+                moveInput = Vector2.zero;
 
-        SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
+            SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
+        }
     }
     /// <summary>
     /// Interact with Interactble Object Or NPC

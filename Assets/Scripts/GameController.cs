@@ -7,12 +7,10 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     private Transform NewPos;
-    private AudioSource AudioSource;
 
     public GameManager GameManager;
     public GameObject PlayerPrefab;
     public Transform DefaultSpawnLocation;
-    public AudioClip SceneSwitchDoorUse;
     public List<String> ExitLocationsName;
     public List<Transform> ExitLocationsPoint;
     

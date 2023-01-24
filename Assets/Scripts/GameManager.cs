@@ -6,6 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
+
+    private float _gameTime;
+    private bool _timeStart;
+    private bool _isGamePaused;
+    private bool _isGameOver;
+    private static GameManager _instance;
+    private int _currentPlayText;
+    private float _bgMusicVolume;
+    private float _sfxVolume;
+
     /// <summary>
     /// 15 mins count down
     /// </summary>
@@ -18,16 +29,21 @@ public class GameManager : MonoBehaviour
         set
         {
             _gameTime = value;
+            if (_gameTime == 0)
+                IsGameOver = true;
         }
     }
-    private float _gameTime;
-
-    private bool _isGameOver;
-    private static GameManager _instance;
-    private int _currentPlayText;
-    private float _bgMusicVolume;
-    private float _sfxVolume;
-
+    public bool IsGamePaused
+    {
+        get
+        {
+            return _isGamePaused;
+        }
+        set
+        {
+            _isGamePaused = value;
+        }
+    }
     public int CurrentPlayText
     {
         get {
@@ -83,8 +99,18 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public bool IsGameOver
     {
-        get { return _isGameOver; }
-        set { _isGameOver = value; }
+        get { 
+            return _isGameOver; 
+        }
+        set { 
+            _isGameOver = value;
+            if(_isGameOver)
+            {
+                _timeStart = false;
+                CurrentPlayText = 6;
+                SceneManager.LoadScene("Text");
+            }
+        }
     }
 
     public string CurrentScene;
@@ -105,9 +131,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         GameWinCondition = 5;
-        IsGameOver = false;        
+        IsGameOver = false;
+        IsGamePaused = false;
         CheckPlayerPrefs();
-        //_musicPlayer.volume = BGMusicVolume;
     }
 
     private void CheckPlayerPrefs()
@@ -127,7 +153,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!IsGamePaused)
+        {
+            if (_timeStart)
+            {
+                 GameTime -= Time.deltaTime;
+            }
+        }
     }
     public void NewGame()
     {
@@ -141,11 +173,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("LastScene", CurrentScene);
         PlayerPrefs.Save();
     }
-    /// <summary>
-    /// Don't forget to add scene stuff here for music
-    /// </summary>
-    /// <param name="scene"></param>
-    /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("Scene Loaded: " + scene.name);
@@ -167,11 +194,20 @@ public class GameManager : MonoBehaviour
                 break;
             case "GrandHall":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
+
+                //900 is 15 mins
+                GameTime = 900;
+
+                _timeStart = true;
                 break;
             default:
                 Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
                 break;
         }
+    }
+    void OnPause()
+    {
+        IsGamePaused = !IsGamePaused;
     }
     void OnExit()
     {
@@ -179,7 +215,7 @@ public class GameManager : MonoBehaviour
     }
     void OnDisable()
     {
-        Debug.Log("OnDisable");
+        Debug.Log("GameManger Disable");
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
