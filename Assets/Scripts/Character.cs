@@ -2,12 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static Objects;
 
 /// <summary>
 /// Character parent class
 /// </summary>
-public class Character : MonoBehaviour
+public class Character :MonoBehaviour
 {
+    public enum CharacterName
+    {
+        Ashlyn,
+        Damien,
+        Frederick,
+        Jayson,
+        John,
+        Karol,
+        Mirianne,
+        Nikki,
+        OldCrazyMan,
+        Rachel
+    }
+
+    [Tooltip("Name of Character")]
+    public CharacterName Name;
+
     private bool _playerInteracts;
 
     /// <summary>
@@ -17,10 +35,6 @@ public class Character : MonoBehaviour
     [Tooltip("Characters Trust level")]
     public int TrustLevel;
 
-    
-    [Tooltip("Name of Character")]
-    public string Name;
-
     [Tooltip("Dead or alive o.o")]
     public bool isAlive;
 
@@ -28,7 +42,7 @@ public class Character : MonoBehaviour
     /// Characters Image for conversation
     /// </summary>
     [Tooltip("Characters image for conversation")]
-    public Texture2D Profile;
+    public Sprite Profile;
 
     /// <summary>
     /// Characters Image for interigation

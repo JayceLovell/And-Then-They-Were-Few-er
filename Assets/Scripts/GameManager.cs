@@ -1,17 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private bool _isGameOver;
+
+
+    private float _gameTime;
+    private bool _timeStart;
+    private bool _isGamePaused;
+    private bool _isGameLost;
+    private bool _isGameWon;
     private static GameManager _instance;
-    private AudioSource _musicPlayer;
     private int _currentPlayText;
     private float _bgMusicVolume;
     private float _sfxVolume;
 
+    /// <summary>
+    /// 15 mins count down
+    /// </summary>
+    public float GameTime
+    {
+        get
+        {
+            return _gameTime;
+        }
+        set
+        {
+            _gameTime = value;
+            if (_gameTime == 0)
+                IsGameOver = true;
+        }
+    }
+    public bool IsGamePaused
+    {
+        get
+        {
+            return _isGamePaused;
+        }
+        set
+        {
+            _isGamePaused = value;
+        }
+    }
     public int CurrentPlayText
     {
         get {
@@ -31,7 +64,6 @@ public class GameManager : MonoBehaviour
         }
         set { 
             _bgMusicVolume = value;
-            _musicPlayer.volume = (_bgMusicVolume / 100);
             PlayerPrefs.SetFloat("Background Volume", value);
             PlayerPrefs.Save();
         }
@@ -49,9 +81,6 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.Save();
         } 
     }
-    public AudioClip GameOverMusic;
-    public AudioClip BackgroundMusic;
-    public AudioClip GameWonMusic;
     public static GameManager Instance { 
         get { 
             if(_instance == null)
@@ -63,16 +92,40 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// How many Clues for Game Won
-    /// </summary>
-    public int GameWinCondition;
-    /// <summary>
-    /// Will be used to end game
+    /// lost Game
     /// </summary>
     public bool IsGameOver
     {
-        get { return _isGameOver; }
-        set { _isGameOver = value; }
+        get { 
+            return _isGameLost; 
+        }
+        set { 
+            _isGameLost = value;
+            if(_isGameLost)
+            {
+                _timeStart = false;
+                CurrentPlayText = 6;
+                SceneManager.LoadScene("Text");
+            }
+        }
+    }
+
+    public bool IsGameWon
+    {
+        get
+        {
+            return _isGameWon;
+        }
+        set
+        {
+            _isGameWon = value;
+            if (_isGameWon)
+            {
+                _timeStart = false;
+                CurrentPlayText = 7;
+                SceneManager.LoadScene("Text");
+            }
+        }
     }
 
     public string CurrentScene;
@@ -87,15 +140,14 @@ public class GameManager : MonoBehaviour
     {
         _instance = this;
         DontDestroyOnLoad(GameManager.Instance);
-        _musicPlayer = GetComponent<AudioSource>();
+        //_musicPlayer = GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        GameWinCondition = 5;
-        IsGameOver = false;        
+        IsGameOver = false;
+        IsGamePaused = false;
         CheckPlayerPrefs();
-        _musicPlayer.volume = BGMusicVolume;
     }
 
     private void CheckPlayerPrefs()
@@ -115,7 +167,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!IsGamePaused)
+        {
+            if (_timeStart)
+            {
+                 GameTime -= Time.deltaTime;
+            }
+        }
     }
     public void NewGame()
     {
@@ -129,39 +187,52 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("LastScene", CurrentScene);
         PlayerPrefs.Save();
     }
-    /// <summary>
-    /// Don't forget to add scene stuff here for music
-    /// </summary>
-    /// <param name="scene"></param>
-    /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("Scene Loaded: " + scene.name);
         switch (scene.name)
         {
+            case "Title":
+                SoundManager.StartBackground(SoundManager.BgSound.Title);
+                break;
+            case "Text":
+                if (CurrentPlayText == 6)
+                    SoundManager.StartBackground(SoundManager.BgSound.GameLost);
+                else if (CurrentPlayText == 7)
+                    SoundManager.StartBackground(SoundManager.BgSound.GameWon);
+                else
+                    SoundManager.StartBackground(SoundManager.BgSound.MainMenu);
+                break;
             case "Entrance":
-                _musicPlayer.volume = BGMusicVolume;
-                _musicPlayer.clip = BackgroundMusic;
-                _musicPlayer.Play();
-                _musicPlayer.loop = true;
+                SoundManager.StartBackground(SoundManager.BgSound.Background);
                 break;
             case "GrandHall":
-                _musicPlayer.volume=BGMusicVolume;
-                _musicPlayer.clip = BackgroundMusic;
-                _musicPlayer.Play();
-                _musicPlayer.loop = true;
+                SoundManager.StartBackground(SoundManager.BgSound.Background);
+
+                //900 is 15 mins
+                GameTime = 900;
+
+                _timeStart = true;
+                break;
+            case "Big Reveal":
+                SoundManager.StartBackground(SoundManager.BgSound.BigReveal);
                 break;
             default:
-                if (_musicPlayer.isPlaying)
-                {
-                    _musicPlayer.Stop();
-                }             
+                Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
                 break;
         }
     }
+    void OnPause()
+    {
+        IsGamePaused = !IsGamePaused;
+    }
+    void OnExit()
+    {
+        Application.Quit();
+    }
     void OnDisable()
     {
-        Debug.Log("OnDisable");
+        Debug.Log("GameManger Disable");
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 4319462649502943227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -1044671358, guid: 4680d3808b8d77c4d92ff377483d4d5d, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: adf7bc23a578bb444967fe95f2ba8f82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,10 +99,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9189f626d8dfb4a9da7d40f91b137b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: 2
   TrustLevel: 0
-  Name: Frederick
   isAlive: 1
   Profile: {fileID: 2800000, guid: a8e0780d90007084f86fadc8f29a85e8, type: 3}
+  InterrigationSprite: {fileID: 0}
   Positions: []
 --- !u!95 &6237777029506226020
 Animator:
@@ -135,5 +136,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.29, y: 0.45, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.1463032, y: 0.16789412, z: 0.20000002}
+  m_Center: {x: 0.020528143, y: -0.008968632, z: 0}

@@ -276,8 +276,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 962750239}
-        m_TargetAssemblyTypeName: IntroController, Assembly-CSharp
-        m_MethodName: MoveOn
+        m_TargetAssemblyTypeName: TextController, Assembly-CSharp
+        m_MethodName: OnNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -335,8 +335,9 @@ GameObject:
   m_Component:
   - component: {fileID: 962750240}
   - component: {fileID: 962750239}
+  - component: {fileID: 962750241}
   m_Layer: 0
-  m_Name: Intro Controller
+  m_Name: Text Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,7 +355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b2db6c69041b84d9181fb7d53ba168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 0}
   text:
   - {fileID: 2506188604409527312, guid: 87572bfef8c38ba41814a5aeb1ac32ac, type: 3}
   - {fileID: 7448371267282823508, guid: 4728ed03891ea054394201d9896ea812, type: 3}
@@ -362,6 +362,8 @@ MonoBehaviour:
   - {fileID: 7906555074417053862, guid: 5831965da384e68448c111de7f0d8bf7, type: 3}
   - {fileID: 253141498412860155, guid: 1cec7094dceed1943a63318e3f3fe5b4, type: 3}
   - {fileID: 6959369329845749178, guid: 1b234635bdfb79f4dbf26fb787eabc8a, type: 3}
+  - {fileID: 7365499493622319367, guid: 1007990dbae412747b7b5208b78afa81, type: 3}
+  - {fileID: 8549433571260055694, guid: 6e861d2e33168f141bc722abf103a675, type: 3}
 --- !u!4 &962750240
 Transform:
   m_ObjectHideFlags: 0
@@ -377,6 +379,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &962750241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962750238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 16bbb9adfe0aae7468a23fc47cc3dfd5, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1370335021
 GameObject:
   m_ObjectHideFlags: 0
