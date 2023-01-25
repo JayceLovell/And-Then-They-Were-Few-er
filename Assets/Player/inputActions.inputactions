@@ -78,7 +78,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Exit",
+                    "name": "Quit",
                     "type": "Button",
                     "id": "dd398a29-bbcf-481e-8a2a-02d3dd897b4f",
                     "expectedControlType": "Button",
@@ -436,7 +436,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Exit",
+                    "action": "Quit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

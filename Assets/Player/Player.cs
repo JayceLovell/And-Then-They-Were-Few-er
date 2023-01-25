@@ -115,6 +115,10 @@ public class Player : MonoBehaviour
     {
         GameManager.Instance.IsGamePaused = !GameManager.Instance.IsGamePaused;
     }
+    void OnQuit()
+    {
+        GameManager.Instance.Quit();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "NPC")

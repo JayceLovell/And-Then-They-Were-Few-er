@@ -97,7 +97,7 @@ public class UiManager : MonoBehaviour
 
         //Set Up QuitButton
         Button QuitButton = GameObject.Find("QuitButton").GetComponent<Button>();
-        _gameManager.OnExit();
+        _gameManager.Quit();
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)

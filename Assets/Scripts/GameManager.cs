@@ -230,7 +230,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Instructions", LoadSceneMode.Additive);
     }
-    public void OnExit()
+    public void Quit()
     {
         Application.Quit();
     }
