@@ -18,6 +18,7 @@ public class UiManager : MonoBehaviour
     private bool _isClockActive;
     private GameManager _gameManager;
     private static UiManager _instance;
+    private GameObject _pauseMenu;
     public static UiManager Instance
     {
         get
@@ -48,8 +49,15 @@ public class UiManager : MonoBehaviour
     }
     void Update()
     {
-        if (_isClockActive)
-            _updateClock();
+        if (_gameManager.IsGamePaused)
+        {
+
+        }
+        else
+        {
+            if (_isClockActive)
+                _updateClock();
+        }
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -57,7 +65,7 @@ public class UiManager : MonoBehaviour
         {
             case "Entrance":
             case "GrandHall":
-                StartCoroutine(FindClock());
+                StartCoroutine(FindRequiredGameObjects());
             break;
         }        
     }
@@ -91,7 +99,11 @@ public class UiManager : MonoBehaviour
     {
         Clock.SetActive(false);
     }
-    IEnumerator FindClock()
+    /// <summary>
+    /// Reason for delay check is because the order of objects spawn in scene
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator FindRequiredGameObjects()
     {
         yield return new WaitForSeconds(2);
 
