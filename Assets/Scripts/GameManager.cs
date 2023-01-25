@@ -214,6 +214,9 @@ public class GameManager : MonoBehaviour
 
                 _timeStart = true;
                 break;
+            case "Big Reveal":
+                SoundManager.StartBackground(SoundManager.BgSound.BigReveal);
+                break;
             default:
                 Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
                 break;

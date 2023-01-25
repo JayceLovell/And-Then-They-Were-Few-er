@@ -20,7 +20,8 @@ public static class SoundManager
         GameWon,
         GameLost,
         MainMenu,
-        Interigation
+        Interigation,
+        BigReveal
     }
 
     public static void StartBackground(BgSound bgSound)

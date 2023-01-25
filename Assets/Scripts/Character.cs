@@ -42,7 +42,7 @@ public class Character :MonoBehaviour
     /// Characters Image for conversation
     /// </summary>
     [Tooltip("Characters image for conversation")]
-    public Texture2D Profile;
+    public Sprite Profile;
 
     /// <summary>
     /// Characters Image for interigation

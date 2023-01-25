@@ -36,10 +36,5 @@ public class SoundAssets : MonoBehaviour
         public SoundManager.SoundFX sound;
         public AudioClip audioClip;
     }
-
-    private void Start()
-    {
-        
-    }
    
 }
