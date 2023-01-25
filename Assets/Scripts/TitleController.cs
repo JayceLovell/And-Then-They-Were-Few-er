@@ -46,6 +46,11 @@ public class TitleController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneToLoad);
     }
+    public void NewGame()
+    {
+        GameManager.NewGame();
+        SceneManager.LoadScene(SceneToLoad);
+    }
     public void DisplayVolume()
     {
         if (!_isVolumeDisplayed)
