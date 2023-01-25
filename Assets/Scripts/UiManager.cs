@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -65,9 +66,16 @@ public class UiManager : MonoBehaviour
         switch (_gameManager.CurrentScene)
         {
             case "Entrance":
-                _timeHour = System.DateTime.Now.Hour;
-                _timeMinute = System.DateTime.Now.Minute;
-                _clockText.text = string.Format("{00:00}:{01:00}", _timeHour ,_timeMinute);
+                if (_gameManager.CurrentGameProgress > 2)
+                {
+                    _countDownMinutes = Mathf.FloorToInt(_gameManager.GameTime / 60);
+                    _countDownSeconds = Mathf.FloorToInt(_gameManager.GameTime % 60);
+                    _clockText.text = string.Format("{00:00}:{01:00}", _countDownMinutes, _countDownSeconds);
+                }
+                else
+                    // Print time in 12 hr format
+                    _clockText.text = DateTime.Now.ToString("hh:mm");
+
                 break;
             case "GrandHall":
                 _countDownMinutes = Mathf.FloorToInt(_gameManager.GameTime / 60);

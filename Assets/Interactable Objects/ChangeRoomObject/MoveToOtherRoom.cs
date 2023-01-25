@@ -10,7 +10,7 @@ public class MoveToOtherRoom : Objects
     {
         base.Use();
         //Story Guide
-        if (_gameController.GameManager.CurrentPlayText == 1)
+        if (_gameController.GameManager.CurrentGameProgress == 1)
         {
             _gameController.MoveToScene("Text");
         }

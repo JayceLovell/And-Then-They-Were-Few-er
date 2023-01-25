@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private bool _isGameLost;
     private bool _isGameWon;
     private static GameManager _instance;
-    private int _currentPlayText;
+    private int _currentGameProgress;
     private float _bgMusicVolume;
     private float _sfxVolume;
 
@@ -45,14 +45,14 @@ public class GameManager : MonoBehaviour
             _isGamePaused = value;
         }
     }
-    public int CurrentPlayText
+    public int CurrentGameProgress
     {
         get {
-            _currentPlayText = PlayerPrefs.GetInt("PlayTextNumber");
-            return _currentPlayText; 
+            _currentGameProgress = PlayerPrefs.GetInt("PlayTextNumber");
+            return _currentGameProgress; 
         }
         set { 
-            _currentPlayText = value;
+            _currentGameProgress = value;
             PlayerPrefs.SetInt("PlayTextNumber",value);
         }
     }
@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
             if(_isGameLost)
             {
                 _timeStart = false;
-                CurrentPlayText = 6;
+                CurrentGameProgress = 6;
                 SceneManager.LoadScene("Text");
             }
         }
@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
             if (_isGameWon)
             {
                 _timeStart = false;
-                CurrentPlayText = 7;
+                CurrentGameProgress = 7;
                 SceneManager.LoadScene("Text");
             }
         }
@@ -153,9 +153,9 @@ public class GameManager : MonoBehaviour
     private void CheckPlayerPrefs()
     {
         if ((PlayerPrefs.GetInt("PlayTextNumber", 0) == 0))
-            CurrentPlayText = 0;
+            CurrentGameProgress = 0;
         else
-            CurrentPlayText = PlayerPrefs.GetInt("PlayTextNumber");
+            CurrentGameProgress = PlayerPrefs.GetInt("PlayTextNumber");
 
         if ((PlayerPrefs.GetFloat("Sfx Volume", 0) == 0))
             SfxVolume = 50;
@@ -196,9 +196,9 @@ public class GameManager : MonoBehaviour
                 SoundManager.StartBackground(SoundManager.BgSound.Title);
                 break;
             case "Text":
-                if (CurrentPlayText == 6)
+                if (CurrentGameProgress == 6)
                     SoundManager.StartBackground(SoundManager.BgSound.GameLost);
-                else if (CurrentPlayText == 7)
+                else if (CurrentGameProgress == 7)
                     SoundManager.StartBackground(SoundManager.BgSound.GameWon);
                 else
                     SoundManager.StartBackground(SoundManager.BgSound.MainMenu);

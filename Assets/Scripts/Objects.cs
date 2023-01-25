@@ -44,6 +44,11 @@ public class Objects : MonoBehaviour
     void Start()
     {
         _gameController = GameObject.Find("GameController").GetComponent<GameController>();
+                
+        if (GameManager.Instance.CurrentGameProgress <= 3)
+            if (objectType == TypeOfObject.Clue)
+                this.gameObject.SetActive(false);
+        
     }
     /// <summary>
     /// Default class for using an object
