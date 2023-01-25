@@ -96,6 +96,8 @@ GameObject:
   - component: {fileID: 9202729696329289352}
   - component: {fileID: 9168474255083645066}
   - component: {fileID: 9168474255083645065}
+  - component: {fileID: 9168474255083645067}
+  - component: {fileID: 9168474255083645070}
   m_Layer: 0
   m_Name: Ashlyn
   m_TagString: Untagged
@@ -217,3 +219,64 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &9168474255083645067
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6512527166726887649}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 9a8599916e1d5c94baf3edc28bdf7453, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -2340215125571876867, guid: 9a8599916e1d5c94baf3edc28bdf7453, type: 2}
+    value: {fileID: 9168474255083645065}
+  - key: {fileID: -4736559480524200201, guid: 9a8599916e1d5c94baf3edc28bdf7453, type: 2}
+    value: {fileID: 9168474255083645065}
+  m_ExposedReferences:
+    m_References: []
+--- !u!114 &9168474255083645070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6512527166726887649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcd16e018b6ef346bf571b111f05fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - Friends. Colleagues. Miriane. It is with a heavy heart that I must now reveal
+    to you the identity of Ashlyn's murderer.
+  - This has been a long and dark night. A night of revelations, misdeeds and misdirection.
+    And yet with my keen eye, I have followed the trail, observed every breadcrumb
+    and now find myself at the lion's den. Anticipating death, but walking with my
+    head held high to reveal the truth, knowing that God is my shield.
+  - 'Several members of the crowd look confused at this unnecessarily long speech
+
+    Miriane
+    mutters: "But she''s an atheist!"
+
+    Karol shouts, "For Pete''s sake, just
+    tell us who it is!"
+
+'
+  - 'Several members of the crowd look confused at this unnecessarily long speech
+
+    Miriane
+    mutters: "But she''s an atheist!"
+
+    Karol shouts, "For Pete''s sake, just
+    tell us who it is!"
+
+'
+  - Ashlyn coughs
+  - Okay then.
+  - The murderer is...

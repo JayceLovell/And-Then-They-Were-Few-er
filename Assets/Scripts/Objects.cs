@@ -50,7 +50,8 @@ public class Objects : MonoBehaviour
     public virtual void Use()
     {
         Debug.Log("Action from object: "+objectType.ToString());
-        // thinking of putting an output dialog to screen about using the object
+
+        // putting an output dialog to screen about using the object
         DialogueManager.dialogueManager.ObjectDiablog(Dialog);
     }
     /// <summary>
