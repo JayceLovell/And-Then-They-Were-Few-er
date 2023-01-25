@@ -93,7 +93,7 @@ public class UiManager : MonoBehaviour
 
         //Set Up HelpButton
         Button HelpButton = GameObject.Find("HelpButton").GetComponent<Button>();
-            SceneManager.LoadScene("Instructions", LoadSceneMode.Additive);
+            HelpButton.onClick.AddListener(delegate { _gameManager.LoadInstructions(); });
 
         //Set Up QuitButton
         Button QuitButton = GameObject.Find("QuitButton").GetComponent<Button>();

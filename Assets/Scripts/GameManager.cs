@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -224,6 +225,10 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
                 break;
         }
+    }
+    public void LoadInstructions()
+    {
+        SceneManager.LoadScene("Instructions", LoadSceneMode.Additive);
     }
     public void OnExit()
     {
