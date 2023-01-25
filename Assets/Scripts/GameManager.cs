@@ -10,12 +10,15 @@ public class GameManager : MonoBehaviour
 
     private float _gameTime;
     private bool _timeStart;
+    [SerializeField]
     private bool _isGamePaused;
     private bool _isGameLost;
     private bool _isGameWon;
     private static GameManager _instance;
     private int _currentGameProgress;
+    [SerializeField]
     private float _bgMusicVolume;
+    [SerializeField]
     private float _sfxVolume;
 
     /// <summary>
@@ -60,7 +63,7 @@ public class GameManager : MonoBehaviour
     {
         get {
             _bgMusicVolume = PlayerPrefs.GetFloat("Background Volume");
-            return (_bgMusicVolume / 100);
+            return (_bgMusicVolume);
         }
         set { 
             _bgMusicVolume = value;
@@ -72,7 +75,7 @@ public class GameManager : MonoBehaviour
         get
         {
             _sfxVolume = PlayerPrefs.GetFloat("Sfx Volume");
-            return (_sfxVolume / 100);
+            return (_sfxVolume);
         }
         set
         {
@@ -160,7 +163,7 @@ public class GameManager : MonoBehaviour
         if ((PlayerPrefs.GetFloat("Sfx Volume", 0) == 0))
             SfxVolume = 50;
 
-        if ((PlayerPrefs.GetFloat("Background volume", 0) == 0))
+        if ((PlayerPrefs.GetFloat("Background Volume", 0) == 0))
             BGMusicVolume = 50;
     }
 
@@ -222,11 +225,7 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-    void OnPause()
-    {
-        IsGamePaused = !IsGamePaused;
-    }
-    void OnExit()
+    public void OnExit()
     {
         Application.Quit();
     }

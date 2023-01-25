@@ -23,7 +23,10 @@ public static class SoundManager
         Interigation,
         BigReveal
     }
-
+    public static void MasterVolumeChanged(float value)
+    {
+        AudioListener.volume = value;
+    }
     public static void StartBackground(BgSound bgSound)
     {
         GameObject bgsoundGameObject = new GameObject("BgSound");

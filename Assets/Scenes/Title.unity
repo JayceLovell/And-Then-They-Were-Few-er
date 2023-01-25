@@ -292,19 +292,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1980585785}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: set_MusicVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 839368048}
-        m_TargetAssemblyTypeName: TitleController, Assembly-CSharp
-        m_MethodName: VolumeLevel
+        m_MethodName: set_BGMusicVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2252,6 +2240,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7744066642869676000, guid: d0524a99853ac7c438a178e62575199e, type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 3161433167506425035, guid: c0cc232a6d54ade489f2631c5c1d0fe9, type: 3}
+    - target: {fileID: 7744066642869676000, guid: d0524a99853ac7c438a178e62575199e, type: 3}
+      propertyPath: PauseMenuPrefab
+      value: 
+      objectReference: {fileID: 3161433167506425035, guid: c0cc232a6d54ade489f2631c5c1d0fe9, type: 3}
     - target: {fileID: 7744066642869676001, guid: d0524a99853ac7c438a178e62575199e, type: 3}
       propertyPath: m_RootOrder
       value: 5

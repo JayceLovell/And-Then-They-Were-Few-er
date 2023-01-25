@@ -1,24 +1,25 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
 {
     public GameObject Clock;
+    public GameObject PauseMenuPrefab;
 
+    private GameObject _pauseMenu;
     private TextMeshProUGUI _clockText;
     private int _timeHour;
     private int _timeMinute;
     private float _countDownMinutes;
     private float _countDownSeconds;
     private bool _isClockActive;
+    private bool _isPauseActive;
     private GameManager _gameManager;
     private static UiManager _instance;
-    private GameObject _pauseMenu;
     public static UiManager Instance
     {
         get
@@ -45,20 +46,60 @@ public class UiManager : MonoBehaviour
     }
     void Start()
     {
-        _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        _gameManager = GameManager.Instance;
     }
     void Update()
     {
         if (_gameManager.IsGamePaused)
         {
-
+            if (!_isPauseActive)
+            {
+                _pauseMenu = Instantiate(PauseMenuPrefab, GameObject.FindGameObjectWithTag("Canvas").transform);
+                _isPauseActive = true;
+                _setUpPauseMenuUI();
+            }
         }
         else
         {
+            if(_isPauseActive)
+            {
+                Destroy(_pauseMenu);
+                _isPauseActive = false;
+            }                
+
             if (_isClockActive)
                 _updateClock();
         }
     }
+    /// <summary>
+    /// required stuff for pausemenu to work
+    /// </summary>
+    private void _setUpPauseMenuUI()
+    {
+        //Set Up Background Volume Slider
+        Slider volumeslider = GameObject.Find("BGVolumeSlider").GetComponent<Slider>();
+        volumeslider.value = _gameManager.BGMusicVolume;
+        volumeslider.onValueChanged.AddListener(delegate { _gameManager.BGMusicVolume = volumeslider.value; });
+        volumeslider.onValueChanged.AddListener(value => SoundManager.MasterVolumeChanged(value));
+
+        //Set Up FX Volume Slider
+        Slider FXvolumeslider = GameObject.Find("FXVolumeSlider").GetComponent<Slider>();
+        FXvolumeslider.value = _gameManager.BGMusicVolume;
+        FXvolumeslider.onValueChanged.AddListener(delegate { _gameManager.SfxVolume = FXvolumeslider.value; });
+
+        //Set Up ResumeButton
+        Button ResumeButton = GameObject.Find("ResumeButton").GetComponent<Button>();
+        ResumeButton.onClick.AddListener(delegate { _gameManager.IsGamePaused = false; });
+
+        //Set Up HelpButton
+        Button HelpButton = GameObject.Find("HelpButton").GetComponent<Button>();
+            SceneManager.LoadScene("Instructions", LoadSceneMode.Additive);
+
+        //Set Up QuitButton
+        Button QuitButton = GameObject.Find("QuitButton").GetComponent<Button>();
+        _gameManager.OnExit();
+    }
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         switch (scene.name)
@@ -95,10 +136,6 @@ public class UiManager : MonoBehaviour
                 break;
         }        
     }
-    private void _removeClock()
-    {
-        Clock.SetActive(false);
-    }
     /// <summary>
     /// Reason for delay check is because the order of objects spawn in scene
     /// </summary>
@@ -107,12 +144,14 @@ public class UiManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
 
+        // first do clock
         Clock = GameObject.FindGameObjectWithTag("Clock");
         _timeHour = System.DateTime.Now.Hour;
         _timeMinute = System.DateTime.Now.Minute;
         _clockText = Clock.GetComponentInChildren<TextMeshProUGUI>();
         _clockText.text = _timeHour.ToString() + ":" + _timeMinute.ToString();
         _isClockActive = true;
+
     }
     void OnDisable()
     {
