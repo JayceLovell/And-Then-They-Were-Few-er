@@ -191,6 +191,10 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("LastScene", CurrentScene);
         PlayerPrefs.Save();
     }
+    /// <summary>
+    /// Calls on sce/summary>
+    /// <param name="scene"></param>
+    /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("Scene Loaded: " + scene.name);

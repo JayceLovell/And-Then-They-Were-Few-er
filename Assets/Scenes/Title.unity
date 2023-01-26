@@ -969,15 +969,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: And Then They Were Few-er
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
-  m_sharedMaterial: {fileID: -8115622975960587479, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f569fe1ce7c1d048be499be9b9d0f43, type: 2}
+  m_sharedMaterial: {fileID: -2166789695037228806, guid: 8f569fe1ce7c1d048be499be9b9d0f43, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279769112
+  m_fontColor: {r: 0.09433961, g: 0.09389461, b: 0.09389461, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

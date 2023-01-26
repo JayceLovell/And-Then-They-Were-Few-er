@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: deccf3169ca9f4447afa94ea0ef62d53
+guid: df12011cd8384724d8d30bf86a139d1c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - ArcadeClassic
+  - Pixel Intv
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
