@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    private Transform NewPos;
+
     public GameManager GameManager;
     public GameObject PlayerPrefab;
     public Transform DefaultSpawnLocation;
     public List<String> ExitLocationsName;
     public List<Transform> ExitLocationsPoint;
-    private Transform NewPos;
+    
 
     public enum WhichScene
     {
@@ -47,6 +49,9 @@ public class GameController : MonoBehaviour
             }
 
         GameManager.SaveScene();
+
+        //play door sound
+        SoundManager.PlaySound(SoundManager.SoundFX.UseDoor);
     }
 
     // Update is called once per frame

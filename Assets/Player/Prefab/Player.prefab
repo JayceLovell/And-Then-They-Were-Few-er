@@ -11,14 +11,14 @@ GameObject:
   - component: {fileID: 895587505239095313}
   - component: {fileID: 38948158685868590}
   - component: {fileID: 4147630681081963121}
+  - component: {fileID: 7216322577158222884}
   - component: {fileID: 7690113068498134056}
   - component: {fileID: 8755390500953867856}
   - component: {fileID: 1924112908}
   - component: {fileID: 795849748139723585}
-  - component: {fileID: 2017717889}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 2692539282686698567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2039446690226423638}
@@ -105,8 +105,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeed: 5
   CanInteract: 0
+  CanTalkToNPC: 0
+  NPCSprite: {fileID: 0}
+  NPCDisplay: {fileID: 0}
   CurrentInteractableObject: {fileID: 0}
+  CurrentNPCToTalkTo: {fileID: 0}
+  PlayerObjectTextBox: {fileID: 0}
   moveInput: {x: 0, y: 0}
+--- !u!114 &7216322577158222884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2692539282686698567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b447bbbb38dbc8439408e4a94912ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clues: []
+  clueButton: {fileID: 3203519595649341115, guid: 88758607791c5ab459aa2d916fef1257, type: 3}
+  clueListContent: {fileID: 0}
+  clueMenu: {fileID: 0}
 --- !u!95 &7690113068498134056
 Animator:
   serializedVersion: 4
@@ -120,7 +141,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: ecc7a95ba510ef04c80af8ba8403523d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -262,18 +283,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.028}
   m_Size: {x: 0.14, y: 0.14}
   m_Direction: 0
---- !u!114 &2017717889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2692539282686698567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e55f134492640fd49a66facc7f08a995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7314517516987724631
 GameObject:
   m_ObjectHideFlags: 0
