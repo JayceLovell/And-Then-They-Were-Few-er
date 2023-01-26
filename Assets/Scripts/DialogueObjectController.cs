@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class DialogueObjectController : MonoBehaviour
 {
+
     private bool _isInterrigation;
     private string _text;
     private string _speakerName;
@@ -87,6 +88,30 @@ public class DialogueObjectController : MonoBehaviour
     /// DO NOT SEND NAME HERE
     /// </summary>
     public TextMeshProUGUI SpeakerLabel;
+
+    /// <summary>
+    /// Dialogue Option 1
+    /// </summary>
+    public TextMeshProUGUI Option1;
+
+    /// <summary>
+    /// Dialogue Option 2
+    /// </summary>
+    public TextMeshProUGUI Option2;
+
+    /// <summary>
+    /// Dialogue Option 3
+    /// </summary>
+    public TextMeshProUGUI Option3;
+
+    /// <summary>
+    /// Response for button pressed
+    /// </summary>
+    public void Response(TextMeshProUGUI response)
+    {
+        
+    }
+
     /// <summary>
     /// DO NOT SEND IMAGE HERE
     /// </summary>
@@ -110,4 +135,6 @@ public class DialogueObjectController : MonoBehaviour
         else
             this.gameObject.SetActive(true);
     }
+
+
 }

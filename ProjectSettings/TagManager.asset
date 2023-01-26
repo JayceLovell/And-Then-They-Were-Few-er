@@ -12,6 +12,7 @@ TagManager:
   - Canvas
   - Clock
   - PauseMenu
+  - InterrogationController
   layers:
   - Default
   - TransparentFX

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -101,7 +102,8 @@ public class Player : MonoBehaviour
             // Start talking to NPC
             if (CanTalkToNPC && DialogueManager.dialogueManager.inDialogue == false)
             {
-                CurrentNPCToTalkTo.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
+                //  CurrentNPCToTalkTo.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
+                SceneManager.LoadScene("InterrogationScene");
             }
             // Interact with object
             else if (CanInteract)
