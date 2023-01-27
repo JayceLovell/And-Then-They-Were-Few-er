@@ -197,6 +197,7 @@ public class Character :MonoBehaviour
         {
             if (dialogForRegularConvo.Count == _numDialog)
             {
+                InDialog = false;
                 _dialogBox.Display();
                 _numDialog= 0;
                 GameObject.Find("Player").GetComponent<Player>().Talking = false;
@@ -234,6 +235,8 @@ public class Character :MonoBehaviour
                 }
                 break;
             case CurrentScene.GrandHall:
+                Debug.LogError("No Talking Dialog for current scene");
+                break;
                 break;
             case CurrentScene.Interrigation:
                 break;

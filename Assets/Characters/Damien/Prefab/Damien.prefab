@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1176520706, guid: a01b8ceadbab47441b62ce6bdb864c25, type: 3}
+  m_Sprite: {fileID: 163864177, guid: a01b8ceadbab47441b62ce6bdb864c25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 0
-  Scene: 0
+  Scene: 1
   Name: 1
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: c79b7a2451e629c488f1f9b2a4b6fbaa, type: 3}
@@ -109,48 +109,48 @@ MonoBehaviour:
   dialogForRegularConvo:
   - Text: '(A young apprentice of Nikki Test)
 
-      
 
-      
+
+
 
 '
     ImTalking: 1
   - Text: 'Ah, you must be Detective Ashlyn. Nikki has told me so much about you.
 
-      
+
 
 '
     ImTalking: 1
   - Text: 'She has? So I would assume you''re Nikki''s apprentice then?
 
-      
+
 
 '
     ImTalking: 0
   - Text: 'Oh, pardon me I forgot to introduce myself. I am Damien and yes I am Nikki''s
       apprentice.
 
-      
+
 
 '
     ImTalking: 1
   - Text: 'Nikki was so excited to finally meet you again, so please make yourself
       at home.
 
-      
+
 
 '
     ImTalking: 1
   - Text: '(Ashlyn begins to blush a little)
 
-      
+
 
 '
     ImTalking: 0
   - Text: 'I''m surprised Nikki still cares about me that much considering it''s
       been years since we last talked.
 
-      
+
 
 '
     ImTalking: 0
@@ -158,13 +158,13 @@ MonoBehaviour:
       meet with you again for a while now but has been far too busy to reach out
       until now.
 
-      
+
 
 '
     ImTalking: 1
   - Text: 'Whoa... I guess it isn''t easy being an inventor.
 
-      
+
 
 '
     ImTalking: 0
@@ -173,13 +173,13 @@ MonoBehaviour:
   - Text: 'She arranged this whole event so we could celebrate her achievements and
       have a good time.
 
-      
+
 
 '
     ImTalking: 1
   - Text: 'So please enjoy the food and drink and relax.
 
-      
+
 
 
 '
@@ -192,14 +192,14 @@ MonoBehaviour:
     ImTalking: 0
   - Text: 'Me?!
 
-      
+
 
 '
     ImTalking: 1
   - Text: 'Yes, and I might be inclined to agree! When I found Nikki, there was a
       pipe in the corner of the room. Did you use this to attack Nikki?
 
-      
+
 
 '
     ImTalking: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
     ImTalking: 1
   - Text: 'Really? And yet I hear that she was thinking of replacing you!
 
-      
+
 
 '
     ImTalking: 0
@@ -263,7 +263,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.14, y: 0.17}
+    oldSize: {x: 0.11, y: 0.17}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

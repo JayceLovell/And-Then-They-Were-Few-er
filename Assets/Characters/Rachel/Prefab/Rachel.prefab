@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 7788250956352414041}
   - component: {fileID: 1981829779909490592}
   - component: {fileID: 251772178004849129}
-  - component: {fileID: 7025145102358804301}
   - component: {fileID: 9179986237464571549}
+  - component: {fileID: -8045946443865020670}
   m_Layer: 0
   m_Name: Rachel
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 55a591c7b9b5862418c2c2064897c32a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,34 +100,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 0
-  Scene: 0
+  Scene: 1
   Name: 9
   CorrectClue: {fileID: 0}
-  Profile: {fileID: 2800000, guid: c64c5a4788422c34782c47996153549f, type: 3}
+  Profile: {fileID: 21300000, guid: c64c5a4788422c34782c47996153549f, type: 3}
   InterrigationSprite: {fileID: 0}
-  characterPosition: []
+  characterPosition:
+  - Scene: 1
+    Position: {x: 23.52159, y: 28.28614}
   dialogForRegularConvo:
   - Text: '(The over-controlling and overbearing mother of Nikki Test)
 
-      
+
 
 '
     ImTalking: 1
   - Text: '(Ashlyn bumps into Rachel accidentally and causes her to drop her purse)
 
-      
+
 
 '
     ImTalking: 0
   - Text: 'Oh!
 
-      
+
 
 '
     ImTalking: 1
   - Text: '(Rachel bends over to pick her purse)
 
-      
+
 
 
 '
@@ -135,7 +137,7 @@ MonoBehaviour:
   - Text: '(Ashlyn notices that a handkerchief has fallen out of the purse, and picks
       it up to hand it back to Rachel)
 
-      
+
 
 
 '
@@ -145,7 +147,7 @@ MonoBehaviour:
   - Text: '(Ashlyn notices that Rachel looks distressed, as though she has something
       else on her mind)
 
-      
+
 
 '
     ImTalking: 0
@@ -172,7 +174,7 @@ MonoBehaviour:
   dialogueForInterrigations:
   - Text: '(Rachel has her hands in her face, and is crying)
 
-      
+
 
 '
     ImTalking: 1
@@ -195,7 +197,7 @@ MonoBehaviour:
     ImTalking: 0
   - Text: 'When did you last see Nikki?
 
-      
+
 
 '
     ImTalking: 0
@@ -216,26 +218,13 @@ MonoBehaviour:
     ImTalking: 1
   - Text: 'Of course. Please, let us know if you need anything
 
-      
+
 
 '
     ImTalking: 0
   - Text: "(Ashlyn leaves the room, puzzled\r)\n"
     ImTalking: 0
   dialogueAfterClue: []
---- !u!65 &7025145102358804301
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2901787032884375440}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.15634021, y: 0.19178677, z: 0.20000002}
-  m_Center: {x: 0.011619603, y: 0, z: 0}
 --- !u!95 &9179986237464571549
 Animator:
   serializedVersion: 4
@@ -256,3 +245,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &-8045946443865020670
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2901787032884375440}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.42, y: 0.33}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.42, y: 0.33}
+  m_EdgeRadius: 0
