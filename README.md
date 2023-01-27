@@ -76,9 +76,12 @@ In "And Then There Were Fewer", the player can use Keyboard and Mouse to play th
 |**Action**|**Keyboard/ Mouse**|**Controller**|
 | :- | :- | :- |
 |Move |WASD|Left joystick|
-|Select/Pickup Clue|Left click|R2|
-|Aim Player|Mouse movement|Right joystick |
+|Select/Pickup Clue|E/G|R2|
 |Interact/Start Conversation|E|West Button|
+|Open Clues|I| East Button
+|Start|Enter|Start
+|Pause|Esc|Select
+|Next |Space | South
  
 ## Key Mechanics
 - Collecting Clues/Evidence

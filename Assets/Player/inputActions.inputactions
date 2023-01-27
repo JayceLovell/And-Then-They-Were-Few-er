@@ -78,7 +78,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Exit",
+                    "name": "Quit",
                     "type": "Button",
                     "id": "dd398a29-bbcf-481e-8a2a-02d3dd897b4f",
                     "expectedControlType": "Button",
@@ -332,11 +332,33 @@
                 },
                 {
                     "name": "",
+                    "id": "1c66f677-55c4-4ffa-ba98-82688ce5a5e3",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "2c736704-792e-4732-a433-c890bdd7d0b8",
                     "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
+                    "action": "Start",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "811e7eb1-0576-4615-ba6c-ff3dc31ba6a1",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Start",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -354,11 +376,33 @@
                 },
                 {
                     "name": "",
+                    "id": "bf3437cc-ecac-4579-8929-b17ca3381305",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "7219e562-b233-42b3-af9d-b6908379d626",
                     "path": "<Keyboard>/i",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
+                    "action": "BringUpClues",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b3f34955-b47e-49b5-9acf-a8a43fa87825",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "BringUpClues",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -376,12 +420,23 @@
                 },
                 {
                     "name": "",
+                    "id": "53f0dbab-faa7-4ba8-8725-51a85edda5d5",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "64b74e5d-1d0a-4489-a430-1ce0023771d4",
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Exit",
+                    "action": "Quit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

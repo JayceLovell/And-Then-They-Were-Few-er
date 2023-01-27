@@ -7,14 +7,41 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     private Transform NewPos;
+    private bool _inInterrogation;
+    private Transform _lastPosition;
 
     public GameManager GameManager;
     public GameObject PlayerPrefab;
     public Transform DefaultSpawnLocation;
     public List<String> ExitLocationsName;
     public List<Transform> ExitLocationsPoint;
-    
 
+    /// <summary>
+    /// Is player leaving to go in Interrogation
+    /// </summary>
+    public bool InInterrogation
+    {
+        get
+        {
+            return _inInterrogation;
+        }
+        set
+        {
+            _inInterrogation = value;
+        }
+    }
+    public Transform LastPositon
+    {
+        get { return _lastPosition; }
+        set
+        {
+            _lastPosition = value;
+        }
+    }
+    
+    /// <summary>
+    /// Update this with scens the gamecontroller is in
+    /// </summary>
     public enum WhichScene
     {
         Test,
@@ -29,11 +56,17 @@ public class GameController : MonoBehaviour
 
     void Awake()
     {
-        GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        GameManager = GameManager.Instance;
     }
     // Start is called before the first frame update
     void Start()
     {
+        if(InInterrogation)
+        {
+            Instantiate(PlayerPrefab,LastPositon.position,Quaternion.identity);
+        }
+        else
+        {
         string lastScene = PlayerPrefs.GetString("LastScene", null);
 
             for(int i = 0; i < ExitLocationsName.Count; i++)
@@ -47,11 +80,10 @@ public class GameController : MonoBehaviour
                 if (i == ExitLocationsName.Count-1)
                     Instantiate(PlayerPrefab, DefaultSpawnLocation.position, Quaternion.identity);
             }
-
-        GameManager.SaveScene();
-
         //play door sound
         SoundManager.PlaySound(SoundManager.SoundFX.UseDoor);
+        }
+        GameManager.SaveScene();
     }
 
     // Update is called once per frame

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,12 +11,15 @@ public class GameManager : MonoBehaviour
 
     private float _gameTime;
     private bool _timeStart;
+    [SerializeField]
     private bool _isGamePaused;
     private bool _isGameLost;
     private bool _isGameWon;
     private static GameManager _instance;
-    private int _currentPlayText;
+    private int _currentGameProgress;
+    [SerializeField]
     private float _bgMusicVolume;
+    [SerializeField]
     private float _sfxVolume;
 
     /// <summary>
@@ -45,14 +49,14 @@ public class GameManager : MonoBehaviour
             _isGamePaused = value;
         }
     }
-    public int CurrentPlayText
+    public int CurrentGameProgress
     {
         get {
-            _currentPlayText = PlayerPrefs.GetInt("PlayTextNumber");
-            return _currentPlayText; 
+            _currentGameProgress = PlayerPrefs.GetInt("PlayTextNumber");
+            return _currentGameProgress; 
         }
         set { 
-            _currentPlayText = value;
+            _currentGameProgress = value;
             PlayerPrefs.SetInt("PlayTextNumber",value);
         }
     }
@@ -60,7 +64,7 @@ public class GameManager : MonoBehaviour
     {
         get {
             _bgMusicVolume = PlayerPrefs.GetFloat("Background Volume");
-            return (_bgMusicVolume / 100);
+            return (_bgMusicVolume);
         }
         set { 
             _bgMusicVolume = value;
@@ -72,7 +76,7 @@ public class GameManager : MonoBehaviour
         get
         {
             _sfxVolume = PlayerPrefs.GetFloat("Sfx Volume");
-            return (_sfxVolume / 100);
+            return (_sfxVolume);
         }
         set
         {
@@ -104,7 +108,7 @@ public class GameManager : MonoBehaviour
             if(_isGameLost)
             {
                 _timeStart = false;
-                CurrentPlayText = 6;
+                CurrentGameProgress = 6;
                 SceneManager.LoadScene("Text");
             }
         }
@@ -122,7 +126,7 @@ public class GameManager : MonoBehaviour
             if (_isGameWon)
             {
                 _timeStart = false;
-                CurrentPlayText = 7;
+                CurrentGameProgress = 7;
                 SceneManager.LoadScene("Text");
             }
         }
@@ -153,14 +157,14 @@ public class GameManager : MonoBehaviour
     private void CheckPlayerPrefs()
     {
         if ((PlayerPrefs.GetInt("PlayTextNumber", 0) == 0))
-            CurrentPlayText = 0;
+            CurrentGameProgress = 0;
         else
-            CurrentPlayText = PlayerPrefs.GetInt("PlayTextNumber");
+            CurrentGameProgress = PlayerPrefs.GetInt("PlayTextNumber");
 
         if ((PlayerPrefs.GetFloat("Sfx Volume", 0) == 0))
             SfxVolume = 50;
 
-        if ((PlayerPrefs.GetFloat("Background volume", 0) == 0))
+        if ((PlayerPrefs.GetFloat("Background Volume", 0) == 0))
             BGMusicVolume = 50;
     }
 
@@ -187,6 +191,10 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("LastScene", CurrentScene);
         PlayerPrefs.Save();
     }
+    /// <summary>
+    /// Calls on sce/summary>
+    /// <param name="scene"></param>
+    /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("Scene Loaded: " + scene.name);
@@ -196,9 +204,9 @@ public class GameManager : MonoBehaviour
                 SoundManager.StartBackground(SoundManager.BgSound.Title);
                 break;
             case "Text":
-                if (CurrentPlayText == 6)
+                if (CurrentGameProgress == 6)
                     SoundManager.StartBackground(SoundManager.BgSound.GameLost);
-                else if (CurrentPlayText == 7)
+                else if (CurrentGameProgress == 7)
                     SoundManager.StartBackground(SoundManager.BgSound.GameWon);
                 else
                     SoundManager.StartBackground(SoundManager.BgSound.MainMenu);
@@ -222,11 +230,11 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-    void OnPause()
+    public void LoadInstructions()
     {
-        IsGamePaused = !IsGamePaused;
+        SceneManager.LoadScene("Instructions", LoadSceneMode.Additive);
     }
-    void OnExit()
+    public void Quit()
     {
         Application.Quit();
     }

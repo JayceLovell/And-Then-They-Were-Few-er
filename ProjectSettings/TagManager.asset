@@ -11,6 +11,9 @@ TagManager:
   - UIManager
   - Canvas
   - Clock
+  - PauseMenu
+  - DialogBox
+  - InterrogationController
   layers:
   - Default
   - TransparentFX
