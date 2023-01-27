@@ -11,16 +11,14 @@ public class GameManager : MonoBehaviour
 
     private float _gameTime;
     private bool _timeStart;
-    [SerializeField]
     private bool _isGamePaused;
     private bool _isGameLost;
     private bool _isGameWon;
     private static GameManager _instance;
     private int _currentGameProgress;
-    [SerializeField]
     private float _bgMusicVolume;
-    [SerializeField]
     private float _sfxVolume;
+    private GameObject _npcToInterrogate;
 
     /// <summary>
     /// 15 mins count down
@@ -84,6 +82,20 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetFloat("Sfx Volume",value);
             PlayerPrefs.Save();
         } 
+    }
+    /// <summary>
+    /// Send npc you want to interrogate here before heading to Interrogating scene.
+    /// </summary>
+    public GameObject NPCToInterrogate
+    {
+        get
+        {
+            return _npcToInterrogate;
+        }
+        set
+        {
+            _npcToInterrogate = value;
+        }
     }
     public static GameManager Instance { 
         get { 

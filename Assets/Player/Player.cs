@@ -130,6 +130,7 @@ public class Player : MonoBehaviour
                 {
                     _gameController.InInterrogation= true;
                     _gameController.LastPositon = this.gameObject.transform;
+                    _gameController.GameManager.NPCToInterrogate = CurrentNPCToTalkTo;
                     SceneManager.LoadScene("InterrogationScene");
                 }
                 else

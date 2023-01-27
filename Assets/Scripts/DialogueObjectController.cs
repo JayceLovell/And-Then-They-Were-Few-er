@@ -11,6 +11,7 @@ public class DialogueObjectController : MonoBehaviour
     private string _text;
     private string _speakerName;
     private Sprite _speakerImage;
+    private InterrogationController _interrogationController;
 
     /// <summary>
     /// When bool is set.
@@ -24,6 +25,7 @@ public class DialogueObjectController : MonoBehaviour
             Display();
             if (InterrigationMode)
             {
+                _interrogationController = GameObject.FindGameObjectWithTag("InterrogationController").GetComponent<InterrogationController>();
                 InterrigationObjects.SetActive(true);
                 SpeechObjects.SetActive(false);
             }

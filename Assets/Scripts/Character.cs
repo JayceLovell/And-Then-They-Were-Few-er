@@ -14,6 +14,7 @@ public class Character :MonoBehaviour
     private int _numDialog;
     private bool _isTalking;
     private bool _inDialog;
+    private InterrogationController _interrogationController;
 
     public bool InDialog
     {
@@ -40,12 +41,6 @@ public class Character :MonoBehaviour
         BigReveal,
         Test
     }
-
-    /// <summary>
-    /// Scene selected for characters
-    /// </summary>
-    [Tooltip("Current Scene Character is in")]
-    public CurrentScene Scene;
 
     public enum CharacterName
     {
@@ -157,18 +152,11 @@ public class Character :MonoBehaviour
 
         if (InterrigrationMode)
         {
+            _interrogationController = GameObject.FindGameObjectWithTag("InterrogationController").GetComponent<InterrogationController>();
             _dialogBox.InterrigationMode = true;
+            _dialogBox.SpeakerName = Name.ToString();
+            _dialogBox.SpeakerImage = Profile;
 
-            if(GameManager.Instance.CurrentScene==Scene.ToString())
-            {
-
-            }
-
-            if (CorrectClue)
-            {
-
-                //DialogueManager.dialogueManager.currentCorrectClue = CorrectClue;
-            }
         }
         else
         {
@@ -179,28 +167,20 @@ public class Character :MonoBehaviour
         StartCoroutine(Talk());
         _numDialog++;
     }
-
-    //to be called when the player presents the person being interrogated with the right clue
-    public void StartPostClueDialogue()
-    {
-        //DialogueManager.dialogueManager.CloseTextBox();
-        DialogueManager.dialogueManager.inDialogue = true;
-        DialogueManager.dialogueManager.inInterrogation = true;
-        //DialogueManager.dialogueManager.currentDialogue.RemoveRange(0, DialogueManager.dialogueManager.currentDialogue.Count);
-        //DialogueManager.dialogueManager.currentDialogue = dialogueAfterClue;
-        DialogueManager.dialogueManager.index = 0;
-        DialogueManager.dialogueManager.OpenTextBox();
-    }
     public void ContinueDialogue()
     {
         if (!_isTalking)
         {
-            if (dialogForRegularConvo.Count == _numDialog)
+            if ((dialogForRegularConvo.Count == _numDialog) || 
+                ((dialogueAfterClue.Count == _numDialog) && InterrigrationMode) ||
+                ((dialogueForInterrigations.Count == _numDialog) && InterrigrationMode))
             {
                 InDialog = false;
                 _dialogBox.Display();
                 _numDialog= 0;
-                GameObject.Find("Player").GetComponent<Player>().Talking = false;
+
+                if(!InterrigrationMode)
+                    GameObject.Find("Player").GetComponent<Player>().Talking = false;
             }
             else
             {
@@ -225,23 +205,35 @@ public class Character :MonoBehaviour
     IEnumerator Talk()
     {
         _isTalking = true;
-        switch (Scene)
+        switch (GameManager.Instance.CurrentScene)
         {
-            case CurrentScene.Entrance:
+            case "Entrance":
                 foreach (char c in dialogForRegularConvo[_numDialog].Text.ToCharArray())
                 {
                     _dialogBox.Text += c;
                     yield return new WaitForSeconds(0.02f);
                 }
                 break;
-            case CurrentScene.GrandHall:
-                Debug.LogError("No Talking Dialog for current scene");
-                break;
-                break;
-            case CurrentScene.Interrigation:
+            case "Interrigation":
+                if (CorrectClue)
+                {
+                    foreach (char c in dialogueAfterClue[_numDialog].Text.ToCharArray())
+                    {
+                        _dialogBox.Text += c;
+                        yield return new WaitForSeconds(0.02f);
+                    }
+                }
+                else
+                {
+                    foreach (char c in dialogueForInterrigations[_numDialog].Text.ToCharArray())
+                    {
+                        _dialogBox.Text += c;
+                        yield return new WaitForSeconds(0.02f);
+                    }
+                }
                 break;
             default:
-                Debug.LogError("No Talking Dialog for current scene");
+                Debug.LogError("No Talking Dialog for " + GameManager.Instance.CurrentScene);
                 break;
         }
         _isTalking = false;
