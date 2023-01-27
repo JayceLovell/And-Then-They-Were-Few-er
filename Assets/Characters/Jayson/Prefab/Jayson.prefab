@@ -98,12 +98,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3362df6245c670047ae7aa455b5df358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InterrigrationMode: 0
+  Scene: 0
   Name: 3
-  TrustLevel: 0
-  isAlive: 0
+  CorrectClue: {fileID: 0}
   Profile: {fileID: 2800000, guid: bb6796ae590284147a6b95adf39dcb4d, type: 3}
   InterrigationSprite: {fileID: 0}
-  Positions: []
+  characterPosition: []
+  dialogForRegularConvo:
+  - Text: '(An attractive but clumsy wannabe detective trying to solve the mystery
+      but ruins clues and makes chaos.Odd character, who is obsessed with mysteries
+      and conspiracies)
+
+'
+    ImTalking: 1
+  - Text: Good Evening
+    ImTalking: 0
+  - Text: (Jayson looks Ashlyn up and down)
+    ImTalking: 1
+  - Text: Well, hello there
+    ImTalking: 1
+  - Text: '(A finds J quite attractive, and returns his smile)
+
+'
+    ImTalking: 0
+  - Text: Well, hello yourself
+    ImTalking: 0
+  - Text: You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's
+      hot new detective in the flesh
+    ImTalking: 1
+  - Text: So I see my reputation precedes me, eh?
+    ImTalking: 0
+  - Text: Do I live up to the stories?
+    ImTalking: 0
+  - Text: '(J grins at A)
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'That''s yet to be determined
+
+      
+
+'
+    ImTalking: 1
+  - Text: I'm afraid though, that you might have some competition
+    ImTalking: 1
+  - Text: 'Oh? And who might that be?
+
+'
+    ImTalking: 0
+  - Text: '(Jayson, takes a step closer, but trips and ends up falling on his front)
+
+      
+
+'
+    ImTalking: 1
+  - Text: '(Ashlyn laughs, but not in a cruel mocking way, moreso found it cute and
+      funny)
+
+'
+    ImTalking: 0
+  - Text: '(Jayson hurriedly picks himself up hurriedly and stretches out his hand
+      to shake Ashlyn''s)
+
+      
+
+'
+    ImTalking: 1
+  - Text: '(Winded, still comes off as confident, but clearly a bit embarrassed)
+
+
+'
+    ImTalking: 1
+  - Text: 'Jayson Klutsch! I may not have your reputation quite yet, but I do believe
+      I''m a force to be reckoned with
+
+      
+
+'
+    ImTalking: 1
+  - Text: '(Ashlyn shakes his hand back, still giggling)
+
+      
+
+'
+    ImTalking: 0
+  - Text: Glad to make your acquaintance
+    ImTalking: 0
+  dialogueForInterrigations:
+  - Text: '(Ashlyn is frustrated and vents to Jayson)
+
+      
+
+
+'
+    ImTalking: 0
+  - Text: '*Says curse word*'
+    ImTalking: 0
+  - Text: "Hey, calm down. I\u2019m sure you can get to the bottom of this.\r\n"
+    ImTalking: 1
+  - Text: '(Jayson tries to smile reassuringly at Ashlyn. She calms down a bit)
+
+      
+
+'
+    ImTalking: 1
+  - Text: "Thanks. \r\n\r\n"
+    ImTalking: 0
+  - Text: "I just can\u2019t wrap my head around it. Who would do something like
+      this to Nikki?\r\n\r\n"
+    ImTalking: 0
+  - Text: "A truly horrible person, that\u2019s who\r\n\r\n"
+    ImTalking: 1
+  - Text: "Hey, you don\u2019t think it might have been Karol?\r\n\r\n"
+    ImTalking: 1
+  - Text: 'What makes you suspect her?
+
+'
+    ImTalking: 0
+  - Text: "Well, she was Nikki\u2019s rival, after all. With Nikki gone, she has
+      no competition.\r\n\r\n"
+    ImTalking: 1
+  - Text: "Hm, I don\u2019t think Karol would stoop to murder though\u2026\r\n\r\n"
+    ImTalking: 0
+  - Text: 'Well, to me at least, she seems the most likely suspect
+
+      
+
+
+'
+    ImTalking: 1
+  - Text: "(Ashlyn disagrees respectfully and excuses herself from the room, but
+      decides to probe Karol about this)\r"
+    ImTalking: 0
+  dialogueAfterClue: []
 --- !u!65 &5706456922479725005
 BoxCollider:
   m_ObjectHideFlags: 0

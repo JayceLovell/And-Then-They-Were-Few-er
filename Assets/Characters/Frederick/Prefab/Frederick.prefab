@@ -108,16 +108,41 @@ MonoBehaviour:
   characterPosition:
   - Scene: 1
     Position: {x: -1.88, y: 11.79}
-  dialogReuglarConvo:
-  - Text: (This is Fredrick, the  mayor of the town)
+  dialogForRegularConvo:
+  - Text: (The corrupt mayor of the town)
     ImTalking: 1
-  - Text: Good Evening Mr. Mayor
+  - Text: Good Evening Mayor
     ImTalking: 0
   - Text: Good Evening Ms. Hunt
     ImTalking: 1
-  - Text: "(Ashlyn walks away)\r"
+  dialogueForInterrigations:
+  - Text: 'Mr. Mayor, I hope you understand, I have to question everyone as to their
+      whereabouts during the murder
+
+'
     ImTalking: 0
-  dialogueForInterrigations: []
+  - Text: Yes, of course
+    ImTalking: 1
+  - Text: I was [some room near the lab (mentions seeing Miriane)]. (Also mentions
+      hearing a loud bang). I went out into the hall and walked by the lab, but the
+      door was closed at the time.
+    ImTalking: 1
+  - Text: Anything else?
+    ImTalking: 0
+  - Text: "No. I had thought it might be thunder, so I kept walking and went back
+      to my room. Unfortunately due to the low lighting I did not notice the bloody
+      footprints that you had mentioned earlier, but it does explain why the floor
+      felt sticky\u2026"
+    ImTalking: 1
+  - Text: By the way, you had mentioned finding the door ajar? Where are the keys
+      to the lab?
+    ImTalking: 1
+  - Text: "That\u2019s a good question. They weren\u2019t in the room\u2026"
+    ImTalking: 0
+  - Text: It might do us some good to look for them
+    ImTalking: 1
+  - Text: Noted
+    ImTalking: 0
   dialogueAfterClue: []
 --- !u!95 &6237777029506226020
 Animator:
