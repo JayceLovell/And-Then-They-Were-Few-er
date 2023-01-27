@@ -107,9 +107,124 @@ MonoBehaviour:
   InterrigationSprite: {fileID: 1176520706, guid: a01b8ceadbab47441b62ce6bdb864c25, type: 3}
   characterPosition: []
   dialogForRegularConvo:
-  - Text: 
+  - Text: '(A young apprentice of Nikki Test)
+
+      
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Ah, you must be Detective Ashlyn. Nikki has told me so much about you.
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'She has? So I would assume you''re Nikki''s apprentice then?
+
+      
+
+'
     ImTalking: 0
-  dialogueForInterrigations: []
+  - Text: 'Oh, pardon me I forgot to introduce myself. I am Damien and yes I am Nikki''s
+      apprentice.
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Nikki was so excited to finally meet you again, so please make yourself
+      at home.
+
+      
+
+'
+    ImTalking: 1
+  - Text: '(Ashlyn begins to blush a little)
+
+      
+
+'
+    ImTalking: 0
+  - Text: 'I''m surprised Nikki still cares about me that much considering it''s
+      been years since we last talked.
+
+      
+
+'
+    ImTalking: 0
+  - Text: 'Of course Nikki still cares. To tell the truth she''s been wanting to
+      meet with you again for a while now but has been far too busy to reach out
+      until now.
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Whoa... I guess it isn''t easy being an inventor.
+
+      
+
+'
+    ImTalking: 0
+  - Text: "Sadly it isn't but that's what makes today quite special. \r\n\r\n"
+    ImTalking: 1
+  - Text: 'She arranged this whole event so we could celebrate her achievements and
+      have a good time.
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'So please enjoy the food and drink and relax.
+
+      
+
+
+'
+    ImTalking: 1
+  - Text: "Haha, yeah will do.\r"
+    ImTalking: 0
+  dialogueForInterrigations:
+  - Text: "There are members in this household that strongly suspect you of being
+      Nikki\u2019s murderer\r\n\r\n"
+    ImTalking: 0
+  - Text: 'Me?!
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Yes, and I might be inclined to agree! When I found Nikki, there was a
+      pipe in the corner of the room. Did you use this to attack Nikki?
+
+      
+
+'
+    ImTalking: 0
+  - Text: "I assure you Detective, I\u2019m the last person here who would want Nikki
+      dead. She\u2019s the only person who was willing to take me in as an apprentice.
+      \r\n\r\n"
+    ImTalking: 1
+  - Text: 'Really? And yet I hear that she was thinking of replacing you!
+
+      
+
+'
+    ImTalking: 0
+  - Text: "I don\u2019t know about that. But I do know that Nikki was already stressed
+      over the pressure she was getting from her Mother to abandon her scientific
+      pursuits and follow in the family business.\r\n\r\n"
+    ImTalking: 1
+  - Text: "If I left Nikki she would have had no choice but to close up shop and
+      join her mother\u2019s bakery.\r\n\r\n"
+    ImTalking: 1
+  - Text: "I believed in Nikki and her work here Detective. She is\u2026 was\u2026
+      my friend. \r\n\r\n\n"
+    ImTalking: 1
+  - Text: (Damien starts to sob)
+    ImTalking: 1
   dialogueAfterClue: []
 --- !u!95 &3567300424763006586
 Animator:
