@@ -116,13 +116,13 @@ MonoBehaviour:
     ImTalking: 0
   - Text: (Jayson looks Ashlyn up and down)
     ImTalking: 1
-  - Text: Well, hello there
+  - Text: Well, Hello There
     ImTalking: 1
-  - Text: '(A finds J quite attractive, and returns his smile)
+  - Text: '(Ashlyn finds Jayson quite attractive, and returns his smile)
 
 '
     ImTalking: 0
-  - Text: Well, hello yourself
+  - Text: Well, Hello yourself
     ImTalking: 0
   - Text: You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's
       hot new detective in the flesh
@@ -133,13 +133,13 @@ MonoBehaviour:
     ImTalking: 0
   - Text: '(J grins at A)
 
-      
+
 
 '
     ImTalking: 1
   - Text: 'That''s yet to be determined
 
-      
+
 
 '
     ImTalking: 1
@@ -151,7 +151,7 @@ MonoBehaviour:
     ImTalking: 0
   - Text: '(Jayson, takes a step closer, but trips and ends up falling on his front)
 
-      
+
 
 '
     ImTalking: 1
@@ -163,7 +163,7 @@ MonoBehaviour:
   - Text: '(Jayson hurriedly picks himself up hurriedly and stretches out his hand
       to shake Ashlyn''s)
 
-      
+
 
 '
     ImTalking: 1
@@ -175,13 +175,13 @@ MonoBehaviour:
   - Text: 'Jayson Klutsch! I may not have your reputation quite yet, but I do believe
       I''m a force to be reckoned with
 
-      
+
 
 '
     ImTalking: 1
   - Text: '(Ashlyn shakes his hand back, still giggling)
 
-      
+
 
 '
     ImTalking: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
   dialogueForInterrigations:
   - Text: '(Ashlyn is frustrated and vents to Jayson)
 
-      
+
 
 
 '
@@ -201,7 +201,7 @@ MonoBehaviour:
     ImTalking: 1
   - Text: '(Jayson tries to smile reassuringly at Ashlyn. She calms down a bit)
 
-      
+
 
 '
     ImTalking: 1
@@ -225,7 +225,7 @@ MonoBehaviour:
     ImTalking: 0
   - Text: 'Well, to me at least, she seems the most likely suspect
 
-      
+
 
 
 '

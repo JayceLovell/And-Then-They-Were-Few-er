@@ -99,12 +99,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d5c66acca41364884e9d91b9acf3d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InterrigrationMode: 0
+  Scene: 0
   Name: 8
-  TrustLevel: 0
-  isAlive: 0
+  CorrectClue: {fileID: 0}
   Profile: {fileID: 2800000, guid: 8297ec95d6d9e22439dd4dc270b49de3, type: 3}
   InterrigationSprite: {fileID: 0}
-  Positions: []
+  characterPosition: []
+  dialogForRegularConvo:
+  - Text: '(The father of John. Very random. Loud and rude)
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Do you smell it in the air?
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Excuse me? Smell what?
+
+      
+
+
+'
+    ImTalking: 0
+  - Text: 'The gears of course! I love the smell of freshly oiled gears!
+
+      
+
+'
+    ImTalking: 1
+  - Text: "(The Crazy Old Man has an excited but wild look about him) \n\r\n"
+    ImTalking: 1
+  - Text: 'Well, I can kind of relate. I like the smell of fresh ink and newly printed
+      parchment paper
+
+      
+
+'
+    ImTalking: 0
+  - Text: 'Ashlyn smiles cheekily
+
+      
+
+'
+    ImTalking: 0
+  - Text: 'Ink? Parchment! Now that''s just weird
+
+      
+
+'
+    ImTalking: 1
+  - Text: (The Crazy Old Man sticks his tongue out at Ashlyn and starts muttering
+      to himself)
+    ImTalking: 1
+  - Text: (Ashlyn, mystified, walks away)
+    ImTalking: 0
+  dialogueForInterrigations:
+  - Text: 'Where were you at the time of the murder?
+
+      
+
+'
+    ImTalking: 0
+  - Text: 'I was in the bathroom.
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Can anyone verify that you were there?
+
+      
+
+'
+    ImTalking: 0
+  - Text: 'Yes, my son was inside with me
+
+      
+
+'
+    ImTalking: 1
+  - Text: '(Ashlyn stares at The Crazy Old Man)
+
+
+'
+    ImTalking: 0
+  - Text: 'Your son was in the bathroom with you?
+
+      
+
+'
+    ImTalking: 0
+  - Text: "Yes. I always ask him to accompany me so that I have someone to hold my
+      gears. Don\u2019t want to drop them in the toilet!\r\n\r\n\n"
+    ImTalking: 1
+  - Text: "(A leaves the room, flabbergasted\r)"
+    ImTalking: 0
+  dialogueAfterClue: []
 --- !u!65 &7119099243005794523
 BoxCollider:
   m_ObjectHideFlags: 0
