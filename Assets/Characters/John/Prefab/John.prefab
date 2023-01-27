@@ -99,12 +99,111 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b2e1591d7afd94aa2a4952640ad190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InterrigrationMode: 0
+  Scene: 0
   Name: 4
-  TrustLevel: 0
-  isAlive: 1
+  CorrectClue: {fileID: 0}
   Profile: {fileID: 2800000, guid: c89dfd33993d5164bac729d01f780dca, type: 3}
   InterrigationSprite: {fileID: 0}
-  Positions: []
+  characterPosition: []
+  dialogForRegularConvo:
+  - Text: "(Nervous character always searching for his father and fixing the problems
+      he causes)\r\n\r"
+    ImTalking: 1
+  - Text: '(His Dad is the crazy old man)
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Hi
+
+'
+    ImTalking: 0
+  - Text: 'Oh, hello there.
+
+      
+
+'
+    ImTalking: 1
+  - Text: "Come to see the showcase as well?\r\n\r\n\r"
+    ImTalking: 0
+  - Text: 'Yeah, but I''m worried my Dad might do something to interrupt the show.
+
+'
+    ImTalking: 1
+  - Text: (Both turn to look at the Old Man, who is muttering something loud about
+      gears)
+    ImTalking: 0
+  - Text: 'Oh Dad...
+
+      
+
+'
+    ImTalking: 1
+  - Text: (John covers his hands with his face in embarrassment)
+    ImTalking: 1
+  dialogueForInterrigations:
+  - Text: 'Where were you at the time of the murder?
+
+'
+    ImTalking: 0
+  - Text: 'I was in my room.
+
+      
+
+'
+    ImTalking: 1
+  - Text: "Really? Your father says otherwise\u2026\r\n\r\n"
+    ImTalking: 0
+  - Text: 'John begins to blush profusely
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Now tell me, where were you really?
+
+      
+
+'
+    ImTalking: 0
+  - Text: "(John covers his face in embarrassment\r)\n\r\n"
+    ImTalking: 1
+  - Text: 'I was in the bathroom with my Dad
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Ashlyn (while shaking her head): Well, at least that provides an alibi
+      for the both of you.'
+    ImTalking: 0
+  - Text: "Please don\u2019t tell anyone! I was already scared that we would get
+      caught last night, someone tried to use the bathroom when we were in there!\r\n\r\n"
+    ImTalking: 1
+  - Text: 'Hm? Do you know who this might have been?
+
+      
+
+'
+    ImTalking: 0
+  - Text: 'No idea. But before they realized it was occupied they tried really hard
+      to get in. They must have need to pee really badly
+
+      
+
+'
+    ImTalking: 1
+  - Text: "I\u2019ll bet they did\u2026\r\n\r\n"
+    ImTalking: 0
+  - Text: "After that, it seemed like they went into the next stall. I think I might
+      have heard something hit the floor, but I\u2019m not sure, I didn\u2019t look
+      in to check.\r\n\r\n\n"
+    ImTalking: 1
+  - Text: "(Ashlyn leaves the room, pondering\r)"
+    ImTalking: 0
+  dialogueAfterClue: []
 --- !u!65 &8315695848946378719
 BoxCollider:
   m_ObjectHideFlags: 0
