@@ -99,12 +99,158 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c579446a620410643aec8157659edca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InterrigrationMode: 0
+  Scene: 0
   Name: 6
-  TrustLevel: 0
-  isAlive: 1
+  CorrectClue: {fileID: 0}
   Profile: {fileID: 2800000, guid: 74002ac4f7ae36e4a820e9575123920e, type: 3}
   InterrigationSprite: {fileID: 0}
-  Positions: []
+  characterPosition: []
+  dialogForRegularConvo:
+  - Text: '(Miriane, a vain trend chasing fashion designer. Rich.)
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Oh, so you''re here too, are you?
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Well, hello to you too
+
+      
+
+'
+    ImTalking: 0
+  - Text: '(Mirianne stares at Ashlyn in disdain)
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'I''m a friend of Nikki''s
+
+      
+
+'
+    ImTalking: 0
+  - Text: '(Mirianne continues to stare)
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Ah, I see
+
+      
+
+'
+    ImTalking: 1
+  - Text: "I must admit, Nikki's built quite the reputation for herself.  \r\n\r\n"
+    ImTalking: 1
+  - Text: '(Ashlyn grins rogue-ishly)
+
+
+'
+    ImTalking: 0
+  - Text: "Yeah, ol' Nikki's on the up and up \r\n\r\n"
+    ImTalking: 0
+  - Text: 'Well, she might be Wandermere''s hottest new inventor, but I have a feeling
+      that someone else will be taking her spot pretty soon
+
+      
+
+'
+    ImTalking: 1
+  - Text: (Ashlyn narrows her eyes at M as she walks away)
+    ImTalking: 0
+  - Text: "(M narrows hers as well)\r"
+    ImTalking: 1
+  dialogueForInterrigations:
+  - Text: 'Where were you at the time of the murder?
+
+      
+
+'
+    ImTalking: 0
+  - Text: "I don\u2019t see why this is any of your business, \u201CDetective\u201D\r\n\r\n"
+    ImTalking: 1
+  - Text: "Hey! Don\u2019t tell me you are going to undermine an active murder investigation\r\n\r\n"
+    ImTalking: 0
+  - Text: "Well, last time I checked, you are not the police. \r\n\r\n"
+    ImTalking: 1
+  - Text: 'I thought you and our dear Mayor were going to fetch real law enforcement
+      once this storm cleared up
+
+      
+
+'
+    ImTalking: 1
+  - Text: "(Ashlyn takes a deep breath, trying to control her anger\r)\n\r\n"
+    ImTalking: 0
+  - Text: "I\u2019d just like to know all the facts, before the Mayor and I approach
+      the police.\r\n\r\n"
+    ImTalking: 0
+  - Text: '(Ashlyn sighs, and her tone changes  from interrogative to mournful)
+
+      
+
+'
+    ImTalking: 0
+  - Text: "There\u2019s a potential murderer on the loose. And Nikki was my best
+      friend. I need to get to the bottom of this\r\n\r\n"
+    ImTalking: 0
+  - Text: "(Mirianne, who had been glaring at Ashlyn, changes her expression somewhat
+      to a look of resentful understanding\r)\n\r\n"
+    ImTalking: 1
+  - Text: "Well, if there\u2019s one thing that hasn\u2019t changed, it\u2019s how
+      much you\u2019re willing to do for your friends\u2026\r\n\r\n"
+    ImTalking: 1
+  - Text: "If you must know, I was in [some room near the lab]. \r\n\r\n"
+    ImTalking: 1
+  - Text: 'Hold on. The Mayor says he saw you in [different room].
+
+      
+
+'
+    ImTalking: 0
+  - Text: "(Mirianne stutters for a bit, shocked, but quickly recovers\r)\n\r\n"
+    ImTalking: 1
+  - Text: 'Oh! Pardon me, I seem to have misremembered. Yes I was indeed in that
+      room.
+
+      
+
+'
+    ImTalking: 1
+  - Text: "I could hear two people talking very loudly, but couldn\u2019t make out
+      what they were saying. The storm was too loud\r\n\r\n"
+    ImTalking: 1
+  - Text: "At the time, I heard a very loud sound, which I assumed was the thunder.
+      But now that I think about it\u2026.\r\n\r\n"
+    ImTalking: 1
+  - Text: "(Miriane begins to scowl\r)\n\r\n"
+    ImTalking: 1
+  - Text: "\u2026what?\r\n\r\n\n"
+    ImTalking: 0
+  - Text: "\u2026It may have been a body hitting the ground\u2026\r\n\r\n"
+    ImTalking: 1
+  - Text: "(Miriane\u2019s expression hardens\r)\n\r\n"
+    ImTalking: 1
+  - Text: "I didn\u2019t pay it any mind. Shortly after, I left for my room.\r\n\r\n"
+    ImTalking: 1
+  - Text: "Well, that\u2019s where I was. May I go now, \u201CDetective\u201D?\r\n\r\n"
+    ImTalking: 1
+  - Text: '(Ashlyn nods, deep in thought)
+
+'
+    ImTalking: 0
+  - Text: (Miriane leaves)
+    ImTalking: 1
+  dialogueAfterClue: []
 --- !u!65 &3282730221336518318
 BoxCollider:
   m_ObjectHideFlags: 0

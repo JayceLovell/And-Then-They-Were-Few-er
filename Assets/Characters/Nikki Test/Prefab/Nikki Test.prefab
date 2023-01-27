@@ -98,10 +98,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9d00fb2b7737c47b9c9f10c16456e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrustLevel: 0
-  Name: Nikki Test
-  isAlive: 1
-  Positions: []
+  InterrigrationMode: 0
+  Scene: 0
+  Name: 0
+  CorrectClue: {fileID: 0}
+  Profile: {fileID: 0}
+  InterrigationSprite: {fileID: 0}
+  characterPosition: []
+  dialogForRegularConvo:
+  - Text: '(Nikki grew up in an impoverished neighborhood. Her father left when she
+      was young, leaving her with her mother with the family business. Too stubborn
+      to follow her mothers wishes and take on the family business she instead used
+      her intelligence to invent the Synthesizer)
+
+      
+
+'
+    ImTalking: 1
+  - Text: 'Nikki, long time no see!
+
+      
+
+'
+    ImTalking: 0
+  - Text: "Ashlyn! It\u2019s been so long! I\u2019m so glad you could make it!\r\n\r\n"
+    ImTalking: 1
+  - Text: "Well, I couldn\u2019t say no to an invitation from an old friend. Quite
+      the fancy to-do you\u2019ve set up.\r\n\r\n"
+    ImTalking: 0
+  - Text: "Heh heh, glad you\u2019re impressed. It takes a lot more effort than you
+      might think to set up one of these. Almost didn\u2019t want to do it but it\u2019d
+      be a shame not to show off my latest invention.\r\n\r\n"
+    ImTalking: 1
+  - Text: 'What is the invention anyway? You never told anyone, did you?
+
+      
+
+'
+    ImTalking: 0
+  - Text: "You\u2019ll just have to wait and see! Can\u2019t spoil the surprise!"
+    ImTalking: 1
+  dialogueForInterrigations: []
+  dialogueAfterClue: []
 --- !u!95 &6858053411055140244
 Animator:
   serializedVersion: 4
