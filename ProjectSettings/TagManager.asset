@@ -13,6 +13,7 @@ TagManager:
   - Clock
   - PauseMenu
   - DialogBox
+  - InterrogationController
   layers:
   - Default
   - TransparentFX

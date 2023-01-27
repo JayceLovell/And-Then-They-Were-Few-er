@@ -4,6 +4,7 @@ using System.Reflection;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -22,7 +23,6 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private Animator _animator;
 
-    private DialogueManager _dialogueManager;
     private GameController _gameController;
 
     // Start is called before the first frame update
@@ -117,9 +117,8 @@ public class Player : MonoBehaviour
                     }
                 }
 
-
-
-                //CurrentNPCToTalkTo.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
+                //  CurrentNPCToTalkTo.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
+                SceneManager.LoadScene("InterrogationScene");
             }
             // Interact with object
             else if (CanInteract)

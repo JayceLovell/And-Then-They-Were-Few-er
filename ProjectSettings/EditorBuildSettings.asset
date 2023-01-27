@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Instructions.unity
     guid: 1e45dc1ed6aadbc4a915a721c5ce9d8f
   - enabled: 1
+    path: Assets/Scenes/InterrogationScene.unity
+    guid: 09a74e909f83cc040878dc4ad7a47cfa
+  - enabled: 1
     path: Assets/Scenes/Entrance.unity
     guid: c4e301320e20acb4181d96514f7b7ef5
   - enabled: 1
