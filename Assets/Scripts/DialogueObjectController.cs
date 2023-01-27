@@ -12,7 +12,8 @@ public class DialogueObjectController : MonoBehaviour
     private Sprite _speakerImage;
 
     /// <summary>
-    /// When bool is set change display mode
+    /// When bool is set.
+    /// Activate Object and setup.
     /// </summary>
     public bool InterrigationMode
     {

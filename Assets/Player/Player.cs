@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -94,14 +95,31 @@ public class Player : MonoBehaviour
         // If in interrigation then continue
         if (_dialogueManager.inDialogue)
         {
-           _dialogueManager.ContinueDialog();
+          CurrentNPCToTalkTo.GetComponent<Damien>().ContinueDialogue();
         }
         else
         {
             // Start talking to NPC
-            if (CanTalkToNPC && DialogueManager.dialogueManager.inDialogue == false)
+            if (CanTalkToNPC)
             {
-                CurrentNPCToTalkTo.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
+                // LOOK JAYCE IF YOU LOOKING BACK AT THIS. THIS IS YOUR HIGHEST MOMENT IN CODING FOR EARLY 2023
+                Component[] components = CurrentNPCToTalkTo.GetComponents(typeof(Component));
+                foreach (Component component in components)
+                {
+                    if (component.GetType().Name == CurrentNPCToTalkTo.name)
+                    {
+                        MethodInfo methodInfo = component.GetType().GetMethod("StartDialogue");
+                        if (methodInfo != null)
+                        {
+                            methodInfo.Invoke(component, null);
+                            break;
+                        }
+                    }
+                }
+
+
+
+                //CurrentNPCToTalkTo.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
             }
             // Interact with object
             else if (CanInteract)
@@ -144,6 +162,16 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "NPC")
+        {
+            CurrentNPCToTalkTo = collision.gameObject;
+            CanTalkToNPC = true;
+            // Wrote this since character isn't animating just static
+            NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
+            //In future use this to grab the interrigation sprite.
+            //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
+            NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
+        }
         if (collision.gameObject.tag == "Interactable")
         {
             CurrentInteractableObject = collision.gameObject;

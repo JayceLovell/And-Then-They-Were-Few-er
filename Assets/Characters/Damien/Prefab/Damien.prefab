@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1127017614200277125}
   - component: {fileID: 6757317225428200063}
   - component: {fileID: 3567300424763006586}
-  - component: {fileID: 3392633649730805911}
+  - component: {fileID: 3614800635488939114}
   m_Layer: 0
   m_Name: Damien
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6375446272540135202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1176520706, guid: a01b8ceadbab47441b62ce6bdb864c25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -99,11 +99,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca888270c82497b4ea76be7391269b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrustLevel: 0
-  Name: Damian
-  isAlive: 1
-  Profile: {fileID: 2800000, guid: c79b7a2451e629c488f1f9b2a4b6fbaa, type: 3}
-  Positions: []
+  InDialog: 0
+  InterrigrationMode: 0
+  Scene: 0
+  Name: 1
+  CorrectClue: {fileID: 0}
+  Profile: {fileID: 21300000, guid: c79b7a2451e629c488f1f9b2a4b6fbaa, type: 3}
+  InterrigationSprite: {fileID: 1176520706, guid: a01b8ceadbab47441b62ce6bdb864c25, type: 3}
+  characterPosition: []
+  DialogueRegularConvo:
+  - 'Damien: Ah, you must be Detective Ashlyn.'
+  - 'Damien: Nikki has told me so much about you.'
+  - 'Ashlyn: She has?'
+  - 'Ashlyn: So I would assume you''re Nikki''s apprentice then?'
+  - 'Damien: Oh, pardon me I forgot to introduce myself.'
+  - 'Damien: I am Damien and yes I am Nikki''s apprentice.'
+  - 'Damien: Nikki was so excited to finally meet you again, so please make yourself
+    at home.
+
+'
+  - (Ashlyn begins to blush a little.)
+  - 'Ashlyn: I''m surprised Nikki still cares about me that much considering it''s
+    been years since we last talked.'
+  - 'Damien: Of course Nikki still cares.'
+  - 'Damien: To tell the truth she''s been wanting to meet with you again for a while
+    now but has been far too busy to reach out until now.'
+  - 'Ashlyn: Whoa... I guess it isn''t easy being an inventor.'
+  - 'Damien: Sadly it isn''t but that''s what makes today quite special.'
+  - 'Damien: She arranged this whole event so we could celebrate her achievements
+    and have a good time.'
+  - 'Damien: So please enjoy the food and drink and relax.'
+  - 'Ashlyn: Haha, yeah will do.'
+  DialogueForInterrigation:
+  - "Damien: Hello Detective, in what can I help?\n                "
+  - 'Ashlyn: There are members in this household that strongly suspect you for being
+    Nikki''s murderer.'
+  - 'Damien: Me?! '
+  - 'Ashlyn: Yes, and I might be inclined to agree! '
+  - 'Ashlyn: When I found Nikki, there was a pipe in the corner of the room.'
+  - 'Ashlyn: Did you use this to attack Nikki?'
+  - 'Damien: I assure you Detective, I''m the last person here who would want Nikki
+    dead.'
+  - 'Damien: She''s the only person who was willing to take me in as an apprentice.'
+  - 'Ashlyn: Really? And yet I hear that she was thinking of replacing you! '
+  - 'Damien: I dont know about that. '
+  - 'Damien: But I do know that Nikki was already stressed over the pressure she
+    was getting from her mother to abandon her scientific pursuits and follow in
+    the family business.'
+  - 'Damien: If I left Nikki she would have had no choice but to close up shop and
+    join her mother''s bakery.'
+  - 'Damien: I believed in Nikki and her work here Detective. She is......... was....
+    my friend.'
+  - (Damien starts to sob.)
+  - (Ashlyn leaves, conflicted)
+  - END OF INTERROGATION
+  DialogueAfterClue: []
 --- !u!95 &3567300424763006586
 Animator:
   serializedVersion: 4
@@ -124,16 +174,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &3392633649730805911
-BoxCollider:
+--- !u!61 &3614800635488939114
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6375446272540135202}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.008591}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.14, y: 0.17}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14, y: 0.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.14, y: 0.1528166}
+  m_EdgeRadius: 0
