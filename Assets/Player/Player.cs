@@ -197,7 +197,7 @@ public class Player : MonoBehaviour
             NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
             //In future use this to grab the interrigation sprite.
             //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
-            NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
+           // NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
         }
         if (collision.gameObject.tag == "Interactable")
         {

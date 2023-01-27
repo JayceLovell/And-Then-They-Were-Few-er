@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 using static Objects;
 
 /// <summary>
@@ -96,15 +97,15 @@ public class Character :MonoBehaviour
     public class CharacterPosition
     {
         public CurrentScene Scene;
-        public Transform position;
+        public Vector2 Position;
     }
 
     /// <summary>
     /// Regular Dialog
     /// </summary>
-    public List<DialogReuglarConvo> dialogReuglarConvo;
+    public List<DialogRegularConvo> dialogForRegularConvo;
     [System.Serializable]
-    public class DialogReuglarConvo
+    public class DialogRegularConvo
     {
         [TextArea(15, 20)]
         public string Text;
@@ -119,7 +120,7 @@ public class Character :MonoBehaviour
     public class DialogueForInterrigation
     {
         [TextArea(15, 20)]
-        public List<string> Text;
+        public string Text;
         public bool ImTalking;
     }
 
@@ -131,7 +132,7 @@ public class Character :MonoBehaviour
     public class DialogueAfterClue
     {
         [TextArea(15, 20)]
-        public List<string> Text;
+        public string Text;
         public bool ImTalking;
     }
 
@@ -194,7 +195,7 @@ public class Character :MonoBehaviour
     {
         if (!_isTalking)
         {
-            if (dialogReuglarConvo.Count == _numDialog)
+            if (dialogForRegularConvo.Count == _numDialog)
             {
                 _dialogBox.Display();
                 _numDialog= 0;
@@ -203,7 +204,7 @@ public class Character :MonoBehaviour
             else
             {
                 _dialogBox.Text = "";
-                if (dialogReuglarConvo[_numDialog].ImTalking)
+                if (dialogForRegularConvo[_numDialog].ImTalking)
                 {
                     _dialogBox.SpeakerName = Name.ToString();
                     _dialogBox.SpeakerImage = Profile;
@@ -226,7 +227,7 @@ public class Character :MonoBehaviour
         switch (Scene)
         {
             case CurrentScene.Entrance:
-                foreach (char c in dialogReuglarConvo[_numDialog].Text.ToCharArray())
+                foreach (char c in dialogForRegularConvo[_numDialog].Text.ToCharArray())
                 {
                     _dialogBox.Text += c;
                     yield return new WaitForSeconds(0.02f);

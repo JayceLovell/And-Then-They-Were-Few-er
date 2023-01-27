@@ -106,42 +106,8 @@ MonoBehaviour:
   Profile: {fileID: 21300000, guid: c79b7a2451e629c488f1f9b2a4b6fbaa, type: 3}
   InterrigationSprite: {fileID: 1176520706, guid: a01b8ceadbab47441b62ce6bdb864c25, type: 3}
   characterPosition: []
-  dialogReuglarConvo:
-  - Text: Ah, you must be Detective Ashlyn.
-    ImTalking: 1
-  - Text: Nikki has told me so much about you.
-    ImTalking: 1
-  - Text: She has?
-    ImTalking: 0
-  - Text: So I would assume you're Nikki's apprentice then?
-    ImTalking: 0
-  - Text: Oh, pardon me I forgot to introduce myself.
-    ImTalking: 1
-  - Text: I am Damien and yes I am Nikki's apprentice.
-    ImTalking: 1
-  - Text: Nikki was so excited to finally meet you again, so please make yourself
-      at home.
-    ImTalking: 1
-  - Text: (Ashlyn begins to blush a little.)
-    ImTalking: 0
-  - Text: ' I''m surprised Nikki still cares about me that much considering it''s
-      been years since we last talked.'
-    ImTalking: 0
-  - Text: ' Of course Nikki still cares.'
-    ImTalking: 1
-  - Text: ' To tell the truth she''s been wanting to meet with you again for a while
-      now but has been far too busy to reach out until now.'
-    ImTalking: 1
-  - Text: ' Whoa... I guess it isn''t easy being an inventor.'
-    ImTalking: 0
-  - Text: Sadly it isn't but that's what makes today quite special.
-    ImTalking: 1
-  - Text: ' She arranged this whole event so we could celebrate her achievements
-      and have a good time.'
-    ImTalking: 1
-  - Text: So please enjoy the food and drink and relax.
-    ImTalking: 1
-  - Text: Haha, yeah will do.
+  dialogForRegularConvo:
+  - Text: 
     ImTalking: 0
   dialogueForInterrigations: []
   dialogueAfterClue: []
