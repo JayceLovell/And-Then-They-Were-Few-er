@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 55a591c7b9b5862418c2c2064897c32a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 0
-  Scene: 1
+  Scene: 2
   Name: 9
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: c64c5a4788422c34782c47996153549f, type: 3}
@@ -108,6 +108,8 @@ MonoBehaviour:
   characterPosition:
   - Scene: 1
     Position: {x: 23.52159, y: 28.28614}
+  - Scene: 2
+    Position: {x: 20.84201, y: 2.390876}
   dialogForRegularConvo:
   - Text: '(The over-controlling and overbearing mother of Nikki Test)
 

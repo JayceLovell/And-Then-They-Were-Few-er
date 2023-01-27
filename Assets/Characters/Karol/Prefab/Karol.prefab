@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b1ea3ac097ec37e4fbde52db24b3384a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 0
-  Scene: 1
+  Scene: 2
   Name: 5
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: cf56f4f7d70b8f34fb0e3d898f74e7c9, type: 3}
@@ -108,6 +108,8 @@ MonoBehaviour:
   characterPosition:
   - Scene: 1
     Position: {x: 28.1636, y: -9.535529}
+  - Scene: 2
+    Position: {x: -0.7659025, y: -2.679589}
   dialogForRegularConvo:
   - Text: '(The eccentric and energetic rival inventor to Nikki Test. Is sponsored
       by Mirianne)

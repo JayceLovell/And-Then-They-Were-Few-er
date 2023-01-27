@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 89b9d8b039b42fd48971b710f0db54ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3362df6245c670047ae7aa455b5df358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InterrigrationMode: 0
-  Scene: 1
+  InterrigrationMode: 1
+  Scene: 2
   Name: 3
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: bb6796ae590284147a6b95adf39dcb4d, type: 3}
@@ -107,6 +107,8 @@ MonoBehaviour:
   characterPosition:
   - Scene: 1
     Position: {x: 35.26783, y: -2.433469}
+  - Scene: 2
+    Position: {x: -4.744253, y: -4.863781}
   dialogForRegularConvo:
   - Text: '(An attractive but clumsy wannabe detective trying to solve the mystery
       but ruins clues and makes chaos.Odd character, who is obsessed with mysteries
