@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class InterrogationController : MonoBehaviour
 {
-
-    public DialogueObjectController DialoguePrefab;
     private GameManager _gameManager;
-    public Transform Player;
-    public Transform Suspect;
+    [SerializeField]
+    private Sprite _interrogationNPC;
+
+    public GameObject PlayerPrefab;
+
+    public SpriteRenderer NPCSprite;
+
+    public Sprite InterrogationNPC
+    {
+        get { return _interrogationNPC;}
+        set { _interrogationNPC = value;}
+    }
+
 
     // Start is called before the first frame update
     void Start()
     {
-        _gameManager = GameManager.Instance;
-        DialoguePrefab = GameObject.Find("DialoguePrefab").GetComponent <DialogueObjectController>();
-        DialoguePrefab.InterrigationMode = true;
+        // _gameManager = GameManager.Instance;
+        NPCSprite.sprite = InterrogationNPC;
     }
 
     // Update is called once per frame

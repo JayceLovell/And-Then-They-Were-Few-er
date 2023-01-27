@@ -99,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca888270c82497b4ea76be7391269b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InDialog: 0
   InterrigrationMode: 0
   Scene: 0
   Name: 1
@@ -107,53 +106,45 @@ MonoBehaviour:
   Profile: {fileID: 21300000, guid: c79b7a2451e629c488f1f9b2a4b6fbaa, type: 3}
   InterrigationSprite: {fileID: 1176520706, guid: a01b8ceadbab47441b62ce6bdb864c25, type: 3}
   characterPosition: []
-  DialogueRegularConvo:
-  - 'Damien: Ah, you must be Detective Ashlyn.'
-  - 'Damien: Nikki has told me so much about you.'
-  - 'Ashlyn: She has?'
-  - 'Ashlyn: So I would assume you''re Nikki''s apprentice then?'
-  - 'Damien: Oh, pardon me I forgot to introduce myself.'
-  - 'Damien: I am Damien and yes I am Nikki''s apprentice.'
-  - 'Damien: Nikki was so excited to finally meet you again, so please make yourself
-    at home.
-
-'
-  - (Ashlyn begins to blush a little.)
-  - 'Ashlyn: I''m surprised Nikki still cares about me that much considering it''s
-    been years since we last talked.'
-  - 'Damien: Of course Nikki still cares.'
-  - 'Damien: To tell the truth she''s been wanting to meet with you again for a while
-    now but has been far too busy to reach out until now.'
-  - 'Ashlyn: Whoa... I guess it isn''t easy being an inventor.'
-  - 'Damien: Sadly it isn''t but that''s what makes today quite special.'
-  - 'Damien: She arranged this whole event so we could celebrate her achievements
-    and have a good time.'
-  - 'Damien: So please enjoy the food and drink and relax.'
-  - 'Ashlyn: Haha, yeah will do.'
-  DialogueForInterrigation:
-  - "Damien: Hello Detective, in what can I help?\n                "
-  - 'Ashlyn: There are members in this household that strongly suspect you for being
-    Nikki''s murderer.'
-  - 'Damien: Me?! '
-  - 'Ashlyn: Yes, and I might be inclined to agree! '
-  - 'Ashlyn: When I found Nikki, there was a pipe in the corner of the room.'
-  - 'Ashlyn: Did you use this to attack Nikki?'
-  - 'Damien: I assure you Detective, I''m the last person here who would want Nikki
-    dead.'
-  - 'Damien: She''s the only person who was willing to take me in as an apprentice.'
-  - 'Ashlyn: Really? And yet I hear that she was thinking of replacing you! '
-  - 'Damien: I dont know about that. '
-  - 'Damien: But I do know that Nikki was already stressed over the pressure she
-    was getting from her mother to abandon her scientific pursuits and follow in
-    the family business.'
-  - 'Damien: If I left Nikki she would have had no choice but to close up shop and
-    join her mother''s bakery.'
-  - 'Damien: I believed in Nikki and her work here Detective. She is......... was....
-    my friend.'
-  - (Damien starts to sob.)
-  - (Ashlyn leaves, conflicted)
-  - END OF INTERROGATION
-  DialogueAfterClue: []
+  dialogReuglarConvo:
+  - Text: Ah, you must be Detective Ashlyn.
+    ImTalking: 1
+  - Text: Nikki has told me so much about you.
+    ImTalking: 1
+  - Text: She has?
+    ImTalking: 0
+  - Text: So I would assume you're Nikki's apprentice then?
+    ImTalking: 0
+  - Text: Oh, pardon me I forgot to introduce myself.
+    ImTalking: 1
+  - Text: I am Damien and yes I am Nikki's apprentice.
+    ImTalking: 1
+  - Text: Nikki was so excited to finally meet you again, so please make yourself
+      at home.
+    ImTalking: 1
+  - Text: (Ashlyn begins to blush a little.)
+    ImTalking: 0
+  - Text: ' I''m surprised Nikki still cares about me that much considering it''s
+      been years since we last talked.'
+    ImTalking: 0
+  - Text: ' Of course Nikki still cares.'
+    ImTalking: 1
+  - Text: ' To tell the truth she''s been wanting to meet with you again for a while
+      now but has been far too busy to reach out until now.'
+    ImTalking: 1
+  - Text: ' Whoa... I guess it isn''t easy being an inventor.'
+    ImTalking: 0
+  - Text: Sadly it isn't but that's what makes today quite special.
+    ImTalking: 1
+  - Text: ' She arranged this whole event so we could celebrate her achievements
+      and have a good time.'
+    ImTalking: 1
+  - Text: So please enjoy the food and drink and relax.
+    ImTalking: 1
+  - Text: Haha, yeah will do.
+    ImTalking: 0
+  dialogueForInterrigations: []
+  dialogueAfterClue: []
 --- !u!95 &3567300424763006586
 Animator:
   serializedVersion: 4

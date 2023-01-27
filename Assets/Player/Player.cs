@@ -4,38 +4,54 @@ using System.Reflection;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Profiling;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    private Rigidbody2D _rigidbody;
+    private Animator _animator;
+    private bool _talking;
+
+    private GameController _gameController;
+
     public float PlayerSpeed;
     public bool CanInteract;
     public bool CanTalkToNPC;
 
-    public Sprite NPCSprite;
+    public Sprite Profile;
+    public Sprite InterrigationSprite;
 
+    public Sprite NPCSprite;
     public GameObject NPCDisplay;
     public GameObject CurrentInteractableObject;
     public GameObject CurrentNPCToTalkTo;
     public GameObject PlayerObjectTextBox;
     public Vector2 moveInput = Vector2.zero;
+    public DialogueObjectController DialogBox;
 
-    private Rigidbody2D _rigidbody;
-    private Animator _animator;
-
-    private GameController _gameController;
+    public bool Talking
+    {
+        get
+        {
+            return _talking;
+        }
+        set
+        {
+            _talking = value;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        _dialogueManager = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueManager>();
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
     void FixedUpdate()
     {
-        if(DialogueManager.dialogueManager.inCutscene || DialogueManager.dialogueManager.inDialogue)
+        if(Talking)
         {
             moveInput = Vector2.zero;
         }
@@ -92,41 +108,53 @@ public class Player : MonoBehaviour
     /// </summary>
     void OnInteract()
     {
-        // If in interrigation then continue
-        if (_dialogueManager.inDialogue)
+        if (CanTalkToNPC)
         {
-          CurrentNPCToTalkTo.GetComponent<Damien>().ContinueDialogue();
+            Component CharactersScript = null;
+            // LOOK JAYCE IF YOU LOOKING BACK AT THIS. THIS IS YOUR HIGHEST MOMENT IN CODING FOR EARLY 2023
+            Component[] components = CurrentNPCToTalkTo.GetComponents(typeof(Component));
+            foreach (Component component in components)
+            {
+                if(component.GetType().Name == CurrentNPCToTalkTo.name)
+                {
+                    CharactersScript= component;
+                    break;
+                }
+            }
+            // If already talking next set of dialogue
+            if ((bool) CharactersScript.GetType().GetProperty("InDialog").GetValue(CharactersScript))
+                CharactersScript.GetType().GetMethod("ContinueDialogue").Invoke(CharactersScript, null);
+            else
+            {
+                if (_gameController.GameManager.CurrentScene == "GrandHall")
+                {
+                    _gameController.InInterrogation= true;
+                    _gameController.LastPositon = this.gameObject.transform;
+                    SceneManager.LoadScene("InterrogationScene");
+                }
+                else
+                {
+                    Talking = true;
+                    DialogBox.Display();
+                    CharactersScript.GetType().GetMethod("StartDialogue").Invoke(CharactersScript, null);
+                }
+            }
+        }
+        // Interacting with object
+        else if (CanInteract)
+        {
+            CurrentInteractableObject.GetComponent<Objects>().Use();
         }
         else
         {
-            // Start talking to NPC
-            if (CanTalkToNPC)
-            {
-                // LOOK JAYCE IF YOU LOOKING BACK AT THIS. THIS IS YOUR HIGHEST MOMENT IN CODING FOR EARLY 2023
-                Component[] components = CurrentNPCToTalkTo.GetComponents(typeof(Component));
-                foreach (Component component in components)
-                {
-                    if (component.GetType().Name == CurrentNPCToTalkTo.name)
-                    {
-                        MethodInfo methodInfo = component.GetType().GetMethod("StartDialogue");
-                        if (methodInfo != null)
-                        {
-                            methodInfo.Invoke(component, null);
-                            break;
-                        }
-                    }
-                }
-
-                //  CurrentNPCToTalkTo.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
-                SceneManager.LoadScene("InterrogationScene");
-            }
-            // Interact with object
-            else if (CanInteract)
-            {
-                CurrentInteractableObject.GetComponent<Objects>().Use();
-            }
+            //for future use
         }
-        
+
+    }
+    public void ImTalking()
+    {
+        DialogBox.SpeakerName = "Ashlyn";
+        DialogBox.SpeakerImage = Profile;                
     }
     void OnPause()
     {

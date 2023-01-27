@@ -11,8 +11,19 @@ public class Character :MonoBehaviour
 {
     private DialogueObjectController _dialogBox;
     private int _numDialog;
+    private bool _isTalking;
+    private bool _inDialog;
 
-    public bool InDialog;
+    public bool InDialog
+    {
+        get{
+            return _inDialog;
+        }
+        set{
+            _inDialog = value;
+        }
+    }
+
     public bool InterrigrationMode;
 
     /// <summary>
@@ -54,6 +65,7 @@ public class Character :MonoBehaviour
 
     public Clue CorrectClue;
 
+
     ///// <summary>
     ///// Characters trust level with player
     ///// </summary>
@@ -90,20 +102,38 @@ public class Character :MonoBehaviour
     /// <summary>
     /// Regular Dialog
     /// </summary>
-    [TextArea(15, 20)]
-    public List<string> DialogueRegularConvo;
+    public List<DialogReuglarConvo> dialogReuglarConvo;
+    [System.Serializable]
+    public class DialogReuglarConvo
+    {
+        [TextArea(15, 20)]
+        public string Text;
+        public bool ImTalking;
+    }
 
     /// <summary>
     /// Dialogue For Interrigation
     /// </summary>
-    [TextArea(15, 20)]
-    public List<string> DialogueForInterrigation;
+    public List<DialogueForInterrigation> dialogueForInterrigations;
+    [System.Serializable]
+    public class DialogueForInterrigation
+    {
+        [TextArea(15, 20)]
+        public List<string> Text;
+        public bool ImTalking;
+    }
 
     /// <summary>
     /// Interigation Dialog after clue found
     /// </summary>
-    [TextArea(15, 20)]
-    public List<string> DialogueAfterClue;
+    public List<DialogueAfterClue> dialogueAfterClue;
+    [System.Serializable]
+    public class DialogueAfterClue
+    {
+        [TextArea(15, 20)]
+        public List<string> Text;
+        public bool ImTalking;
+    }
 
 
 
@@ -128,18 +158,23 @@ public class Character :MonoBehaviour
         {
             _dialogBox.InterrigationMode = true;
 
+            if(GameManager.Instance.CurrentScene==Scene.ToString())
+            {
+
+            }
+
             if (CorrectClue)
             {
 
                 //DialogueManager.dialogueManager.currentCorrectClue = CorrectClue;
-            }            
+            }
         }
         else
         {
             _dialogBox.InterrigationMode = false;
+            _dialogBox.SpeakerName = Name.ToString();
+            _dialogBox.SpeakerImage = Profile;
         }
-        _dialogBox.SpeakerName = Name.ToString();
-        _dialogBox.SpeakerImage = Profile;
         StartCoroutine(Talk());
         _numDialog++;
     }
@@ -157,7 +192,29 @@ public class Character :MonoBehaviour
     }
     public void ContinueDialogue()
     {
+        if (!_isTalking)
+        {
+            if (dialogReuglarConvo.Count == _numDialog)
+            {
+                _dialogBox.Display();
+                _numDialog= 0;
+                GameObject.Find("Player").GetComponent<Player>().Talking = false;
+            }
+            else
+            {
+                _dialogBox.Text = "";
+                if (dialogReuglarConvo[_numDialog].ImTalking)
+                {
+                    _dialogBox.SpeakerName = Name.ToString();
+                    _dialogBox.SpeakerImage = Profile;
+                }
+                else
+                    GameObject.Find("Player").GetComponent<Player>().ImTalking();
 
+                StartCoroutine(Talk());
+                _numDialog++;
+            }
+        }        
     }
     /// <summary>
     /// hold up one at a time
@@ -165,10 +222,11 @@ public class Character :MonoBehaviour
     /// <returns></returns>
     IEnumerator Talk()
     {
+        _isTalking = true;
         switch (Scene)
         {
             case CurrentScene.Entrance:
-                foreach (char c in DialogueRegularConvo[_numDialog].ToCharArray())
+                foreach (char c in dialogReuglarConvo[_numDialog].Text.ToCharArray())
                 {
                     _dialogBox.Text += c;
                     yield return new WaitForSeconds(0.02f);
@@ -181,8 +239,8 @@ public class Character :MonoBehaviour
             default:
                 Debug.LogError("No Talking Dialog for current scene");
                 break;
-        }        
-
+        }
+        _isTalking = false;
     }
     ///// <summary>
     ///// returns a string of the characters name and trust level.

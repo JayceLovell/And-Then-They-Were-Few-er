@@ -14,14 +14,14 @@ public class DialogueObjectController : MonoBehaviour
 
     /// <summary>
     /// When bool is set.
-    /// Activate Object and setup.
+    /// SetUpObject for mode.
     /// </summary>
     public bool InterrigationMode
     {
         get { return _isInterrigation; }
         set { 
             _isInterrigation = value;
-
+            Display();
             if (InterrigationMode)
             {
                 InterrigationObjects.SetActive(true);
@@ -85,38 +85,17 @@ public class DialogueObjectController : MonoBehaviour
             SpeakerProfile.sprite = value;
         }
     }
+
+    [Header("Who is talking?")]
     /// <summary>
     /// DO NOT SEND NAME HERE
     /// </summary>
     public TextMeshProUGUI SpeakerLabel;
 
     /// <summary>
-    /// Dialogue Option 1
-    /// </summary>
-    public TextMeshProUGUI Option1;
-
-    /// <summary>
-    /// Dialogue Option 2
-    /// </summary>
-    public TextMeshProUGUI Option2;
-
-    /// <summary>
-    /// Dialogue Option 3
-    /// </summary>
-    public TextMeshProUGUI Option3;
-
-    /// <summary>
-    /// Response for button pressed
-    /// </summary>
-    public void Response(TextMeshProUGUI response)
-    {
-        
-    }
-
-    /// <summary>
     /// DO NOT SEND IMAGE HERE
     /// </summary>
-    public SpriteRenderer SpeakerProfile;
+    public Image SpeakerProfile;
 
     [Header("Speech Objects")]
     public GameObject SpeechObjects;
@@ -124,7 +103,26 @@ public class DialogueObjectController : MonoBehaviour
 
     [Header("InterrigationObjects")]
     public GameObject InterrigationObjects;
+
+    /// <summary>
+    /// TextBox For NPC response.
+    /// </summary>
     public TextMeshProUGUI InterrigationTextBox;
+
+    /// <summary>
+    ///  Interrigation Dialogue Option 1
+    /// </summary>
+    public TextMeshProUGUI Option1;
+
+    /// <summary>
+    /// Interrigation Dialogue Option 2
+    /// </summary>
+    public TextMeshProUGUI Option2;
+
+    /// <summary>
+    /// Interrigation Dialogue Option 3
+    /// </summary>
+    public TextMeshProUGUI Option3;
 
     /// <summary>
     /// Summon me to screen
@@ -135,6 +133,15 @@ public class DialogueObjectController : MonoBehaviour
             this.gameObject.SetActive(false);        
         else
             this.gameObject.SetActive(true);
+    }
+
+
+    /// <summary>
+    /// Response for button pressed
+    /// </summary>
+    public void Response(TextMeshProUGUI response)
+    {
+
     }
 
 
