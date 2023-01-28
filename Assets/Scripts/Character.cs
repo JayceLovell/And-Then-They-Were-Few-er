@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-using static UnityEngine.GraphicsBuffer;
+using static Character;
 
 /// <summary>
 /// Character parent class
@@ -111,12 +110,14 @@ public class Character :MonoBehaviour
     }
 
     /// <summary>
-    /// Dialogue For Interrigation
+    /// Dialogue For Interrogation
     /// </summary>
-    public List<DialogueForInterrigation> dialogueForInterrigations;
+    public List<DialogueForInterrogation> DialogueForInterrogations;
+
+
 
     [System.Serializable]
-    public class DialogueForInterrigation
+    public class DialogueForInterrogation
     {
         public bool NoQuestions;
         [TextArea(15, 20)]
@@ -124,19 +125,15 @@ public class Character :MonoBehaviour
         public string Question1;
         public string Question2;
         public Question Question3;
+
+
     }
-    [System.Serializable]
+[System.Serializable]
     public class Question
     {
         public string QuestionText = "No Option";
         public int ElementNextNumber;
-
-        public void OnInspectorGUI()
-        {
-            ElementNextNumber = EditorGUILayout.Popup("Select element to go to.", ElementNextNumber, Enumerable.Range(1, 10).Select(x => x.ToString()).ToArray());
-        }
     }
-
 
     /// <summary>
     /// Interigation Dialog after clue found
@@ -201,7 +198,7 @@ public class Character :MonoBehaviour
         {
             if ((dialogForRegularConvo.Count == _numDialog) || 
                 ((dialogueAfterClue.Count == _numDialog) && InterrigrationMode) ||
-                ((dialogueForInterrigations.Count == _numDialog) && InterrigrationMode))
+                ((DialogueForInterrogations.Count == _numDialog) && InterrigrationMode))
             {
                 InDialog = false;
                 _dialogBox.Display();
@@ -253,14 +250,14 @@ public class Character :MonoBehaviour
                 }
                 else
                 {
-                    if(dialogueForInterrigations[_numDialog].NoQuestions)
-                        _dialogBox.Text = dialogueForInterrigations[_numDialog].Response;
+                    if(DialogueForInterrogations[_numDialog].NoQuestions)
+                        _dialogBox.Text = DialogueForInterrogations[_numDialog].Response;
                     else
                     {
-                        _dialogBox.Text = dialogueForInterrigations[_numDialog].Response;
-                        _dialogBox.Question1 = dialogueForInterrigations[_numDialog].Question1;
-                        _dialogBox.Question2 = dialogueForInterrigations[_numDialog].Question2;
-                       // _dialogBox.Question3 = dialogueForInterrigations[_numDialog].Question3;                       
+                        _dialogBox.Text = DialogueForInterrogations[_numDialog].Response;
+                        _dialogBox.Question1 = DialogueForInterrogations[_numDialog].Question1;
+                        _dialogBox.Question2 = DialogueForInterrogations[_numDialog].Question2;
+                       // _dialogBox.Question3 = DialogueForInterrogations[_numDialog].Question3;                       
                     }
                 }
                 break;

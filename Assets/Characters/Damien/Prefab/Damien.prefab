@@ -185,21 +185,7 @@ MonoBehaviour:
     ImTalking: 1
   - Text: "Haha, yeah will do.\r"
     ImTalking: 0
-  dialogueForInterrigations:
-  - NoQuestions: 0
-    Response: 
-    Question1: 
-    Question2: 
-    Question3:
-      QuestionText: 
-      ElementNextNumber: 0
-  - NoQuestions: 0
-    Response: 
-    Question1: 
-    Question2: 
-    Question3:
-      QuestionText: 
-      ElementNextNumber: 0
+  dialogueForInterrigations: []
   dialogueAfterClue: []
 --- !u!95 &3567300424763006586
 Animator:
