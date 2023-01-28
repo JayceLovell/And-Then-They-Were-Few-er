@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-using static Objects;
+using static UnityEngine.GraphicsBuffer;
 
 /// <summary>
 /// Character parent class
@@ -111,37 +114,62 @@ public class Character :MonoBehaviour
     /// Dialogue For Interrigation
     /// </summary>
     public List<DialogueForInterrigation> dialogueForInterrigations;
+
     [System.Serializable]
     public class DialogueForInterrigation
     {
+        public bool NoQuestions;
         [TextArea(15, 20)]
-        public string Text;
-        public bool ImTalking;
+        public string Response;
+        public string Question1;
+        public string Question2;
+        public Question Question3;
     }
+    [System.Serializable]
+    public class Question
+    {
+        public string QuestionText = "No Option";
+        public int ElementNextNumber;
+
+        public void OnInspectorGUI()
+        {
+            ElementNextNumber = EditorGUILayout.Popup("Select element to go to.", ElementNextNumber, Enumerable.Range(1, 10).Select(x => x.ToString()).ToArray());
+        }
+    }
+
 
     /// <summary>
     /// Interigation Dialog after clue found
     /// </summary>
     public List<DialogueAfterClue> dialogueAfterClue;
+
     [System.Serializable]
     public class DialogueAfterClue
     {
+        public bool NoQuestions;
         [TextArea(15, 20)]
-        public string Text;
-        public bool ImTalking;
+        public string Response;
+        public string Question1;
+        public string Question2;
+        // public Question Question3;
     }
-
-
-
     // Start is called before the first frame update
     void Start()
     {
+        _positionCheck(GameManager.Instance.CurrentScene);
     }
-
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// Check if Object is in correct Position for the scene
+    /// </summary>
+    /// <param name="Scene"></param>
+    private void _positionCheck(string Scene)
     {
-        
+        switch(Scene)
+        {
+            case "InterrogationScene":
+                this.gameObject.transform.position = GameObject.FindGameObjectWithTag("InterrogationController").GetComponent<InterrogationController>().NPCPosition.position;
+                break;
+        }
     }
     public void StartDialogue()
     {
@@ -214,21 +242,25 @@ public class Character :MonoBehaviour
                     yield return new WaitForSeconds(0.02f);
                 }
                 break;
-            case "Interrigation":
+            case "InterrogationScene":
                 if (CorrectClue)
                 {
-                    foreach (char c in dialogueAfterClue[_numDialog].Text.ToCharArray())
-                    {
-                        _dialogBox.Text += c;
-                        yield return new WaitForSeconds(0.02f);
-                    }
+                    //foreach (char c in dialogueAfterClue[_numDialog].Text.ToCharArray())
+                    //{
+                    //    _dialogBox.Text += c;
+                    //    yield return new WaitForSeconds(0.02f);
+                    //}
                 }
                 else
                 {
-                    foreach (char c in dialogueForInterrigations[_numDialog].Text.ToCharArray())
+                    if(dialogueForInterrigations[_numDialog].NoQuestions)
+                        _dialogBox.Text = dialogueForInterrigations[_numDialog].Response;
+                    else
                     {
-                        _dialogBox.Text += c;
-                        yield return new WaitForSeconds(0.02f);
+                        _dialogBox.Text = dialogueForInterrigations[_numDialog].Response;
+                        _dialogBox.Question1 = dialogueForInterrigations[_numDialog].Question1;
+                        _dialogBox.Question2 = dialogueForInterrigations[_numDialog].Question2;
+                       // _dialogBox.Question3 = dialogueForInterrigations[_numDialog].Question3;                       
                     }
                 }
                 break;
@@ -246,14 +278,4 @@ public class Character :MonoBehaviour
     //{
     //    return Name + "trust level is " + TrustLevel+".";
     //}
-    /// <summary>
-    /// use this method by
-    /// StartCoroutine(WaitInSeconds());
-    /// </summary>
-    /// <param name="seconds"></param>
-    /// <returns>no resumes code</returns>
-    IEnumerator WaitInSeconds(float seconds)
-    {
-        yield return new WaitForSeconds(seconds);
-    }
 }

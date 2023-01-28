@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 0
-  Scene: 1
   Name: 1
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: c79b7a2451e629c488f1f9b2a4b6fbaa, type: 3}
@@ -187,44 +186,20 @@ MonoBehaviour:
   - Text: "Haha, yeah will do.\r"
     ImTalking: 0
   dialogueForInterrigations:
-  - Text: "There are members in this household that strongly suspect you of being
-      Nikki\u2019s murderer\r\n\r\n"
-    ImTalking: 0
-  - Text: 'Me?!
-
-
-
-'
-    ImTalking: 1
-  - Text: 'Yes, and I might be inclined to agree! When I found Nikki, there was a
-      pipe in the corner of the room. Did you use this to attack Nikki?
-
-
-
-'
-    ImTalking: 0
-  - Text: "I assure you Detective, I\u2019m the last person here who would want Nikki
-      dead. She\u2019s the only person who was willing to take me in as an apprentice.
-      \r\n\r\n"
-    ImTalking: 1
-  - Text: 'Really? And yet I hear that she was thinking of replacing you!
-
-
-
-'
-    ImTalking: 0
-  - Text: "I don\u2019t know about that. But I do know that Nikki was already stressed
-      over the pressure she was getting from her Mother to abandon her scientific
-      pursuits and follow in the family business.\r\n\r\n"
-    ImTalking: 1
-  - Text: "If I left Nikki she would have had no choice but to close up shop and
-      join her mother\u2019s bakery.\r\n\r\n"
-    ImTalking: 1
-  - Text: "I believed in Nikki and her work here Detective. She is\u2026 was\u2026
-      my friend. \r\n\r\n\n"
-    ImTalking: 1
-  - Text: (Damien starts to sob)
-    ImTalking: 1
+  - NoQuestions: 0
+    Response: 
+    Question1: 
+    Question2: 
+    Question3:
+      QuestionText: 
+      ElementNextNumber: 0
+  - NoQuestions: 0
+    Response: 
+    Question1: 
+    Question2: 
+    Question3:
+      QuestionText: 
+      ElementNextNumber: 0
   dialogueAfterClue: []
 --- !u!95 &3567300424763006586
 Animator:

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 966495018851844531}
   - component: {fileID: -6912090382281659287}
   m_Layer: 0
-  m_Name: Old Crazy Man
+  m_Name: OldCrazyMan
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

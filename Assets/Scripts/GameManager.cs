@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
     private int _currentGameProgress;
     private float _bgMusicVolume;
     private float _sfxVolume;
-    private GameObject _npcToInterrogate;
 
     /// <summary>
     /// 15 mins count down
@@ -36,6 +35,9 @@ public class GameManager : MonoBehaviour
                 IsGameOver = true;
         }
     }
+    /// <summary>
+    /// Is game paused...idk how clearly i can explain this
+    /// </summary>
     public bool IsGamePaused
     {
         get
@@ -47,6 +49,9 @@ public class GameManager : MonoBehaviour
             _isGamePaused = value;
         }
     }
+    /// <summary>
+    /// Players current Progress in the game
+    /// </summary>
     public int CurrentGameProgress
     {
         get {
@@ -58,6 +63,9 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("PlayTextNumber",value);
         }
     }
+    /// <summary>
+    /// Background music volume
+    /// </summary>
     public float BGMusicVolume
     {
         get {
@@ -70,6 +78,9 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+    /// <summary>
+    /// Sound effects background volume
+    /// </summary>
     public float SfxVolume {
         get
         {
@@ -83,20 +94,10 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.Save();
         } 
     }
+
     /// <summary>
-    /// Send npc you want to interrogate here before heading to Interrogating scene.
+    /// So don't have to look for gamemaner everytime just use instance
     /// </summary>
-    public GameObject NPCToInterrogate
-    {
-        get
-        {
-            return _npcToInterrogate;
-        }
-        set
-        {
-            _npcToInterrogate = value;
-        }
-    }
     public static GameManager Instance { 
         get { 
             if(_instance == null)

@@ -285,7 +285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8416419520164428843, guid: 1af331ce313022641a866c6da049faa6, type: 3}
       propertyPath: m_ChunkCullingBounds.y
-      value: 0.25875002
+      value: 0.25937504
       objectReference: {fileID: 0}
     - target: {fileID: 8667784315501695117, guid: 1af331ce313022641a866c6da049faa6, type: 3}
       propertyPath: m_ChunkCullingBounds.y
@@ -808,7 +808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5295276547665168061, guid: 8e9cbc1904710e843bc9c97f84af1cc5, type: 3}
       propertyPath: m_Name
-      value: Old Crazy Man
+      value: OldCrazyMan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e9cbc1904710e843bc9c97f84af1cc5, type: 3}

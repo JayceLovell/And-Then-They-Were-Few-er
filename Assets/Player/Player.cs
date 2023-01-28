@@ -130,8 +130,9 @@ public class Player : MonoBehaviour
                 {
                     _gameController.InInterrogation= true;
                     _gameController.LastPositon = this.gameObject.transform;
-                    _gameController.GameManager.NPCToInterrogate = CurrentNPCToTalkTo;
-                    SceneManager.LoadScene("InterrogationScene");
+
+                    SceneManager.LoadScene("InterrogationScene",LoadSceneMode.Additive);
+                    SceneManager.MoveGameObjectToScene(CurrentNPCToTalkTo, SceneManager.GetSceneByName("InterrogationScene"));                    
                 }
                 else
                 {
@@ -165,29 +166,29 @@ public class Player : MonoBehaviour
     {
         GameManager.Instance.Quit();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "NPC")
-        {
-            CurrentNPCToTalkTo = collision.gameObject;
-            CanTalkToNPC = true;
-            // Wrote this since character isn't animating just static
-            NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
-            //In future use this to grab the interrigation sprite.
-            //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
-            NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
-        }
-    }
-    void OnTriggerStay2D(Collider2D collision)
-    {
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.tag == "NPC")
+    //    {
+    //        CurrentNPCToTalkTo = collision.gameObject;
+    //        CanTalkToNPC = true;
+    //        // Wrote this since character isn't animating just static
+    //        NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
+    //        //In future use this to grab the interrigation sprite.
+    //        //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
+    //        NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
+    //    }
+    //}
+    //void OnTriggerStay2D(Collider2D collision)
+    //{
 
-        if (collision.tag == "Interactable")
-        {
-            CurrentInteractableObject = collision.gameObject;
-            CanInteract = true;
-            PlayerObjectTextBox.SetActive(true);
-        }
-    }
+    //    if (collision.tag == "Interactable")
+    //    {
+    //        CurrentInteractableObject = collision.gameObject;
+    //        CanInteract = true;
+    //        PlayerObjectTextBox.SetActive(true);
+    //    }
+    //}
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "NPC")

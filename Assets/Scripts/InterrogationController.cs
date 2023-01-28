@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Profiling;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class InterrogationController : MonoBehaviour
 {
@@ -21,22 +23,23 @@ public class InterrogationController : MonoBehaviour
         get { return _interrogationNPC;}
         set { _interrogationNPC = value;}
     }
-
-
     // Start is called before the first frame update
     void Start()
     {
         _gameManager = GameManager.Instance;
-        NPC=Instantiate(_gameManager.NPCToInterrogate, NPCPosition);
-    }
-    
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("InterrogationScene"));
+        SceneManager.UnloadSceneAsync("GrandHall");
 
-    public void PlayerTalking()
+        StartCoroutine(WaitForOneSecond());
+
+    }
+
+        public void PlayerTalking()
     {
-        DialogBox.SpeakerName = "Ashlyn";
+        DialogBox.SpeakerName = _playerName;
         DialogBox.SpeakerImage = PlayerProfile;
     }
-    void OnInteract()
+    public void OnInteract()
     {
         if (_npcComponent == null)
         {
@@ -58,8 +61,18 @@ public class InterrogationController : MonoBehaviour
             _npcComponent.GetType().GetMethod("StartDialogue").Invoke(_npcComponent, null);
         }
     }
-    void OnQuit()
+    public void OnQuit()
     {
         GameManager.Instance.Quit();
+    }
+    IEnumerator WaitForOneSecond()
+    {
+        yield return new WaitForSeconds(1f);
+
+        _gameManager.SaveScene();
+
+        NPC = GameObject.FindGameObjectWithTag("NPC");
+        NPC.transform.position = NPCPosition.position;
+        OnInteract();
     }
 }
