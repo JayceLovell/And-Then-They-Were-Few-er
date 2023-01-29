@@ -11,11 +11,26 @@ public class InterrogationController : MonoBehaviour
     private GameManager _gameManager;
     private string _playerName = "Ashlyn";
     private Component _npcComponent=null;
+    private int _nextElementForInterrogating;
 
     public Sprite PlayerProfile;
     public DialogueObjectController DialogBox;
     public Transform NPCPosition;
     public GameObject NPC;
+
+    public int NextElementForInterrogating
+    {
+        get
+        {
+            return _nextElementForInterrogating;
+        }
+        set
+        {
+            _nextElementForInterrogating = value;
+            _npcComponent.GetType().GetProperty("NumDialog").SetValue(_npcComponent, value);
+            _npcComponent.GetType().GetMethod("ContinueDialogue").Invoke(_npcComponent, null);
+        }
+    }
     
 
     public Sprite InterrogationNPC
@@ -34,7 +49,7 @@ public class InterrogationController : MonoBehaviour
 
     }
 
-        public void PlayerTalking()
+    public void PlayerTalking()
     {
         DialogBox.SpeakerName = _playerName;
         DialogBox.SpeakerImage = PlayerProfile;
@@ -57,7 +72,7 @@ public class InterrogationController : MonoBehaviour
             _npcComponent.GetType().GetMethod("ContinueDialogue").Invoke(_npcComponent, null);
         else
         {
-            DialogBox.Display();
+            DialogBox.Display(true);
             _npcComponent.GetType().GetMethod("StartDialogue").Invoke(_npcComponent, null);
         }
     }

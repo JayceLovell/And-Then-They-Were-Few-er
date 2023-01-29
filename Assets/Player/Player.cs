@@ -137,7 +137,7 @@ public class Player : MonoBehaviour
                 else
                 {
                     Talking = true;
-                    DialogBox.Display();
+                    DialogBox.Display(true);
                     CharactersScript.GetType().GetMethod("StartDialogue").Invoke(CharactersScript, null);
                 }
             }
@@ -179,16 +179,16 @@ public class Player : MonoBehaviour
     //        NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
     //    }
     //}
-    //void OnTriggerStay2D(Collider2D collision)
-    //{
+    void OnTriggerStay2D(Collider2D collision)
+    {
 
-    //    if (collision.tag == "Interactable")
-    //    {
-    //        CurrentInteractableObject = collision.gameObject;
-    //        CanInteract = true;
-    //        PlayerObjectTextBox.SetActive(true);
-    //    }
-    //}
+        if (collision.tag == "Interactable")
+        {
+            CurrentInteractableObject = collision.gameObject;
+            CanInteract = true;
+            PlayerObjectTextBox.SetActive(true);
+        }
+    }
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "NPC")

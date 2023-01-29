@@ -185,7 +185,29 @@ MonoBehaviour:
     ImTalking: 1
   - Text: "Haha, yeah will do.\r"
     ImTalking: 0
-  dialogueForInterrigations: []
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    Response: Hi Ashlyn
+    Question1:
+      QuestionText: No Option
+      ElementNextNumber: 0
+    Question2:
+      QuestionText: No Option
+      ElementNextNumber: 0
+    Question3:
+      QuestionText: Do you understand what happen?
+      ElementNextNumber: 1
+  - NoQuestions: 1
+    Response: Yes my poor master got killed!
+    Question1:
+      QuestionText: No Option
+      ElementNextNumber: 0
+    Question2:
+      QuestionText: No Option
+      ElementNextNumber: 0
+    Question3:
+      QuestionText: No Option
+      ElementNextNumber: 0
   dialogueAfterClue: []
 --- !u!95 &3567300424763006586
 Animator:

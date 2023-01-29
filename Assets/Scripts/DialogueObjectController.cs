@@ -14,7 +14,6 @@ public class DialogueObjectController : MonoBehaviour
     private string _speakerName;
     private Sprite _speakerImage;
     private InterrogationController _interrogationController;
-    private string _selectedOption;
 
     /// <summary>
     /// When bool is set.
@@ -25,7 +24,7 @@ public class DialogueObjectController : MonoBehaviour
         get { return _isInterrigation; }
         set { 
             _isInterrigation = value;
-            Display();
+            Display(true);
             if (InterrigationMode)
             {
                 _interrogationController = GameObject.FindGameObjectWithTag("InterrogationController").GetComponent<InterrogationController>();
@@ -46,11 +45,8 @@ public class DialogueObjectController : MonoBehaviour
         get { return _text; }
         set
         {
-            // Justincase
-            Display();
-
             _text = value;
-            if (InterrigationMode)
+            if (InterrigationTextBox.IsActive())
             {
                 InterrigationTextBox.text= value;
             }
@@ -65,7 +61,7 @@ public class DialogueObjectController : MonoBehaviour
         set
         {
             _question1 = value;
-            Option1.text = _question1;
+            QuestionText1.text = _question1;
         }
     }
     public string Question2
@@ -73,7 +69,7 @@ public class DialogueObjectController : MonoBehaviour
         set
         {
             _question2 = value;
-            Option2.text = _question2;
+            QuestionText2.text = _question2;
         }
     }
     public string Question3
@@ -81,7 +77,7 @@ public class DialogueObjectController : MonoBehaviour
         set
         {
             _question3 = value;
-            Option3.text = _question3;
+            QuestionText3.text = _question3;
         }
     }
     
@@ -105,15 +101,6 @@ public class DialogueObjectController : MonoBehaviour
         {
             _speakerImage = value;
             SpeakerProfile.sprite = value;
-        }
-    }
-
-    public string SelectedOption
-    {
-        get { return _selectedOption; }
-        set
-        {
-            _selectedOption = value;
         }
     }
 
@@ -144,33 +131,29 @@ public class DialogueObjectController : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI InterrigationTextBox;
 
-    /// <summary>
-    ///  Leave me
-    /// </summary>
     [SerializeField]
-    private TextMeshProUGUI Option1;
+    private TextMeshProUGUI QuestionText1;
+    [SerializeField]
+    private Button QuestionButton1;
 
-    /// <summary>
-    /// Leave me
-    /// </summary>
-    [SerializeField]
-    private TextMeshProUGUI Option2;
 
-    /// <summary>
-    /// Leave me
-    /// </summary>
     [SerializeField]
-    private TextMeshProUGUI Option3;
+    private TextMeshProUGUI QuestionText2;
+    [SerializeField]
+    private Button QuestionButton2;
+
+
+    [SerializeField]
+    private TextMeshProUGUI QuestionText3;
+    [SerializeField]
+    private Button QuestionButton3;
 
     /// <summary>
     /// Summon me to screen
     /// </summary>
-    public void Display()
+    public void Display(bool State)
     {
-        if (this.gameObject.activeInHierarchy)        
-            this.gameObject.SetActive(false);        
-        else
-            this.gameObject.SetActive(true);
+         this.gameObject.SetActive(State);
     }
     /// <summary>
     /// switches dialog box mode from questioning to regular talking
@@ -180,7 +163,6 @@ public class DialogueObjectController : MonoBehaviour
     {
         if (State)
         {
-
             InterrigationObjects.SetActive(true);
             SpeechObjects.SetActive(false);
         }
@@ -191,12 +173,31 @@ public class DialogueObjectController : MonoBehaviour
         }
     }
     /// <summary>
-    /// SelectOption for button pressed
+    /// Set Up the questions for Dialogue Box
     /// </summary>
-    /// <param name="OptionSelected">The Component so we can get the text from it to compare.</param>
-    public void SelectOption(TextMeshProUGUI OptionSelected)
+    /// <param name="QuestionNumber">the number Question Example 1,2 or 3</param>
+    /// <param name="QuestionText">The String to fill the Question with</param>
+    /// <param name="WhereQuestionGoing">Which element this question goes to.</param>
+    public void SetUpQuestions(int QuestionNumber, string QuestionText, int WhereQuestionGoing)
     {
-        _selectedOption = OptionSelected.text;
+        switch (QuestionNumber)
+        {
+            case 1:
+                Question1= QuestionText;
+                QuestionButton1.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
+                break;
+            case 2:
+                Question2= QuestionText;
+                QuestionButton2.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
+                break;
+            case 3:            
+                Question3= QuestionText;
+                QuestionButton3.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
+                break;
+            default:
+                Debug.LogError("Questioning out of bounds");
+                break;
+        }
     }
 
 

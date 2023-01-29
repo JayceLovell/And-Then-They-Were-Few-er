@@ -18,6 +18,10 @@ public class Character :MonoBehaviour
     private bool _inDialog;
     private InterrogationController _interrogationController;
 
+    public int NumDialog
+    {
+        set { _numDialog = value; }
+    }
     public bool InDialog
     {
         get{
@@ -120,10 +124,10 @@ public class Character :MonoBehaviour
     public class DialogueForInterrogation
     {
         public bool NoQuestions;
-        [TextArea(15, 20)]
+        [TextArea(15, 10)]
         public string Response;
-        public string Question1;
-        public string Question2;
+        public Question Question1;
+        public Question Question2;
         public Question Question3;
 
 
@@ -196,12 +200,13 @@ public class Character :MonoBehaviour
     {
         if (!_isTalking)
         {
+            // MUST FIX THIS IF STATEMENT
             if ((dialogForRegularConvo.Count == _numDialog) || 
                 ((dialogueAfterClue.Count == _numDialog) && InterrigrationMode) ||
                 ((DialogueForInterrogations.Count == _numDialog) && InterrigrationMode))
             {
                 InDialog = false;
-                _dialogBox.Display();
+                _dialogBox.Display(false);
                 _numDialog= 0;
 
                 if(!InterrigrationMode)
@@ -250,14 +255,18 @@ public class Character :MonoBehaviour
                 }
                 else
                 {
-                    if(DialogueForInterrogations[_numDialog].NoQuestions)
+                    if (DialogueForInterrogations[_numDialog].NoQuestions)
+                    {
+                        _dialogBox.SwitchMode(false);
                         _dialogBox.Text = DialogueForInterrogations[_numDialog].Response;
+                    }
                     else
                     {
+                        _dialogBox.SwitchMode(true);
                         _dialogBox.Text = DialogueForInterrogations[_numDialog].Response;
-                        _dialogBox.Question1 = DialogueForInterrogations[_numDialog].Question1;
-                        _dialogBox.Question2 = DialogueForInterrogations[_numDialog].Question2;
-                       // _dialogBox.Question3 = DialogueForInterrogations[_numDialog].Question3;                       
+                        _dialogBox.SetUpQuestions(1, DialogueForInterrogations[_numDialog].Question1.QuestionText, DialogueForInterrogations[_numDialog].Question1.ElementNextNumber);
+                        _dialogBox.SetUpQuestions(2, DialogueForInterrogations[_numDialog].Question2.QuestionText, DialogueForInterrogations[_numDialog].Question2.ElementNextNumber);
+                        _dialogBox.SetUpQuestions(3, DialogueForInterrogations[_numDialog].Question3.QuestionText, DialogueForInterrogations[_numDialog].Question3.ElementNextNumber);
                     }
                 }
                 break;
