@@ -118,12 +118,12 @@ public class Character :MonoBehaviour
     /// </summary>
     public List<DialogueForInterrogation> DialogueForInterrogations;
 
-
-
     [System.Serializable]
     public class DialogueForInterrogation
     {
         public bool NoQuestions;
+        [Tooltip("Set to the number of Dialogue to end! Example if number of dialog is 10 put 9.")]
+        public int NextElementNumber;
         [TextArea(15, 10)]
         public string Response;
         public Question Question1;
@@ -132,11 +132,11 @@ public class Character :MonoBehaviour
 
 
     }
-[System.Serializable]
+    [System.Serializable]
     public class Question
     {
         public string QuestionText = "No Option";
-        public int ElementNextNumber;
+        public int NextElementNumber;
     }
 
     /// <summary>
@@ -194,7 +194,6 @@ public class Character :MonoBehaviour
             _dialogBox.SpeakerImage = Profile;
         }
         StartCoroutine(Talk());
-        _numDialog++;
     }
     public void ContinueDialogue()
     {
@@ -202,15 +201,16 @@ public class Character :MonoBehaviour
         {
             // MUST FIX THIS IF STATEMENT
             if ((dialogForRegularConvo.Count == _numDialog) || 
-                ((dialogueAfterClue.Count == _numDialog) && InterrigrationMode) ||
                 ((DialogueForInterrogations.Count == _numDialog) && InterrigrationMode))
             {
                 InDialog = false;
                 _dialogBox.Display(false);
                 _numDialog= 0;
 
-                if(!InterrigrationMode)
+                if (!InterrigrationMode)
                     GameObject.Find("Player").GetComponent<Player>().Talking = false;
+                else
+                    SceneManager.LoadScene("GrandHall");
             }
             else
             {
@@ -243,6 +243,7 @@ public class Character :MonoBehaviour
                     _dialogBox.Text += c;
                     yield return new WaitForSeconds(0.02f);
                 }
+                _numDialog++;
                 break;
             case "InterrogationScene":
                 if (CorrectClue)
@@ -259,14 +260,15 @@ public class Character :MonoBehaviour
                     {
                         _dialogBox.SwitchMode(false);
                         _dialogBox.Text = DialogueForInterrogations[_numDialog].Response;
+                        _interrogationController.NextElementForInterrogating = DialogueForInterrogations[_numDialog].NextElementNumber;
                     }
                     else
                     {
                         _dialogBox.SwitchMode(true);
                         _dialogBox.Text = DialogueForInterrogations[_numDialog].Response;
-                        _dialogBox.SetUpQuestions(1, DialogueForInterrogations[_numDialog].Question1.QuestionText, DialogueForInterrogations[_numDialog].Question1.ElementNextNumber);
-                        _dialogBox.SetUpQuestions(2, DialogueForInterrogations[_numDialog].Question2.QuestionText, DialogueForInterrogations[_numDialog].Question2.ElementNextNumber);
-                        _dialogBox.SetUpQuestions(3, DialogueForInterrogations[_numDialog].Question3.QuestionText, DialogueForInterrogations[_numDialog].Question3.ElementNextNumber);
+                        _dialogBox.SetUpQuestions(1, DialogueForInterrogations[_numDialog].Question1.QuestionText, DialogueForInterrogations[_numDialog].Question1.NextElementNumber);
+                        _dialogBox.SetUpQuestions(2, DialogueForInterrogations[_numDialog].Question2.QuestionText, DialogueForInterrogations[_numDialog].Question2.NextElementNumber);
+                        _dialogBox.SetUpQuestions(3, DialogueForInterrogations[_numDialog].Question3.QuestionText, DialogueForInterrogations[_numDialog].Question3.NextElementNumber);
                     }
                 }
                 break;

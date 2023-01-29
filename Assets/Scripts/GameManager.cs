@@ -210,11 +210,11 @@ public class GameManager : MonoBehaviour
     /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("Scene Loaded: " + scene.name);
+        SaveScene();        
         switch (scene.name)
         {
             case "Title":
-                SoundManager.StartBackground(SoundManager.BgSound.Title);
+                SoundManager.StartBackground(SoundManager.BgSound.Title);               
                 break;
             case "Text":
                 if (CurrentGameProgress == 6)
@@ -222,7 +222,7 @@ public class GameManager : MonoBehaviour
                 else if (CurrentGameProgress == 7)
                     SoundManager.StartBackground(SoundManager.BgSound.GameWon);
                 else
-                    SoundManager.StartBackground(SoundManager.BgSound.MainMenu);
+                    SoundManager.StartBackground(SoundManager.BgSound.MainMenu);                
                 break;
             case "Entrance":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);

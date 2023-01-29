@@ -187,27 +187,29 @@ MonoBehaviour:
     ImTalking: 0
   DialogueForInterrogations:
   - NoQuestions: 0
+    NextElementNumber: 0
     Response: Hi Ashlyn
     Question1:
       QuestionText: No Option
-      ElementNextNumber: 0
+      NextElementNumber: 0
     Question2:
       QuestionText: No Option
-      ElementNextNumber: 0
+      NextElementNumber: 0
     Question3:
       QuestionText: Do you understand what happen?
-      ElementNextNumber: 1
+      NextElementNumber: 1
   - NoQuestions: 1
+    NextElementNumber: 1
     Response: Yes my poor master got killed!
     Question1:
       QuestionText: No Option
-      ElementNextNumber: 0
+      NextElementNumber: 0
     Question2:
       QuestionText: No Option
-      ElementNextNumber: 0
+      NextElementNumber: 0
     Question3:
       QuestionText: No Option
-      ElementNextNumber: 0
+      NextElementNumber: 0
   dialogueAfterClue: []
 --- !u!95 &3567300424763006586
 Animator:

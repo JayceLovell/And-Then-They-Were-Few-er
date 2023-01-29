@@ -54,7 +54,7 @@ public class InterrogationController : MonoBehaviour
         DialogBox.SpeakerName = _playerName;
         DialogBox.SpeakerImage = PlayerProfile;
     }
-    public void OnInteract()
+    public void OnInterrogate()
     {
         if (_npcComponent == null)
         {
@@ -82,12 +82,18 @@ public class InterrogationController : MonoBehaviour
     }
     IEnumerator WaitForOneSecond()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
 
         _gameManager.SaveScene();
 
         NPC = GameObject.FindGameObjectWithTag("NPC");
         NPC.transform.position = NPCPosition.position;
-        OnInteract();
+
+        //idk why but gotta do this
+        gameObject.GetComponent<PlayerInput>().enabled= false;
+        gameObject.GetComponent<PlayerInput>().enabled = true;
+
+
+        OnInterrogate();
     }
 }
