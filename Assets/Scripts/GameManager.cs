@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
 {
 
 
-    private float _gameTime;
+    //900 is 15 mins    
+    private float _gameTime = 900;
     private bool _timeStart;
     private bool _isGamePaused;
     private bool _isGameLost;
@@ -229,9 +230,6 @@ public class GameManager : MonoBehaviour
                 break;
             case "GrandHall":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
-
-                //900 is 15 mins
-                GameTime = 900;
 
                 _timeStart = true;
                 break;

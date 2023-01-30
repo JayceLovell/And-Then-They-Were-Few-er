@@ -142,7 +142,7 @@ public class UiManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator FindRequiredGameObjects()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
 
         // first do clock
         Clock = GameObject.FindGameObjectWithTag("Clock");
