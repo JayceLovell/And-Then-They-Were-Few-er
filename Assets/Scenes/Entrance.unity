@@ -452,6 +452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frederick
       objectReference: {fileID: 0}
+    - target: {fileID: 5215257166766690043, guid: 4f5a03f006f407444bf3e6c56e86ab24, type: 3}
+      propertyPath: InterrigrationMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5a03f006f407444bf3e6c56e86ab24, type: 3}
 --- !u!1001 &946489818862625271
@@ -591,6 +595,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 708143256368913170, guid: 2d0996937ba96994db88866491cad41b, type: 3}
+      propertyPath: InterrigrationMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2313810901710777598, guid: 2d0996937ba96994db88866491cad41b, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -762,6 +770,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 573935781217503187, guid: 8e9cbc1904710e843bc9c97f84af1cc5, type: 3}
+      propertyPath: InterrigrationMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2186518770987724880, guid: 8e9cbc1904710e843bc9c97f84af1cc5, type: 3}
       propertyPath: m_RootOrder
       value: 8
