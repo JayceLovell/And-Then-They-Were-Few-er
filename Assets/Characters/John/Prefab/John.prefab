@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 764134362915080886}
   - component: {fileID: 2350758372960276004}
   - component: {fileID: 5896879154510377071}
-  - component: {fileID: 8315695848946378719}
   - component: {fileID: 9210974397479087053}
+  - component: {fileID: 1058923430121814224}
   m_Layer: 0
   m_Name: John
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,19 +100,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 0
-  Scene: 0
+  Scene: 2
   Name: 4
   CorrectClue: {fileID: 0}
-  Profile: {fileID: 2800000, guid: c89dfd33993d5164bac729d01f780dca, type: 3}
+  Profile: {fileID: 21300000, guid: c89dfd33993d5164bac729d01f780dca, type: 3}
   InterrigationSprite: {fileID: 0}
-  characterPosition: []
+  characterPosition:
+  - Scene: 1
+    Position: {x: 16.55641, y: -4.087817}
+  - Scene: 2
+    Position: {x: -4.783257, y: 1.649793}
   dialogForRegularConvo:
   - Text: "(Nervous character always searching for his father and fixing the problems
       he causes)\r\n\r"
     ImTalking: 1
   - Text: '(His Dad is the crazy old man)
 
-      
+
 
 '
     ImTalking: 1
@@ -122,7 +126,7 @@ MonoBehaviour:
     ImTalking: 0
   - Text: 'Oh, hello there.
 
-      
+
 
 '
     ImTalking: 1
@@ -137,7 +141,7 @@ MonoBehaviour:
     ImTalking: 0
   - Text: 'Oh Dad...
 
-      
+
 
 '
     ImTalking: 1
@@ -150,7 +154,7 @@ MonoBehaviour:
     ImTalking: 0
   - Text: 'I was in my room.
 
-      
+
 
 '
     ImTalking: 1
@@ -158,13 +162,13 @@ MonoBehaviour:
     ImTalking: 0
   - Text: 'John begins to blush profusely
 
-      
+
 
 '
     ImTalking: 1
   - Text: 'Now tell me, where were you really?
 
-      
+
 
 '
     ImTalking: 0
@@ -172,7 +176,7 @@ MonoBehaviour:
     ImTalking: 1
   - Text: 'I was in the bathroom with my Dad
 
-      
+
 
 '
     ImTalking: 1
@@ -184,14 +188,14 @@ MonoBehaviour:
     ImTalking: 1
   - Text: 'Hm? Do you know who this might have been?
 
-      
+
 
 '
     ImTalking: 0
   - Text: 'No idea. But before they realized it was occupied they tried really hard
       to get in. They must have need to pee really badly
 
-      
+
 
 '
     ImTalking: 1
@@ -204,19 +208,6 @@ MonoBehaviour:
   - Text: "(Ashlyn leaves the room, pondering\r)"
     ImTalking: 0
   dialogueAfterClue: []
---- !u!65 &8315695848946378719
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307733208897063110}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.14071909, y: 0.17351389, z: 0.20000002}
-  m_Center: {x: 0.0185447, y: -0.011801164, z: 0}
 --- !u!95 &9210974397479087053
 Animator:
   serializedVersion: 4
@@ -237,3 +228,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &1058923430121814224
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307733208897063110}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02269961, y: -0.009419702}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.42, y: 0.33}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14155005, y: 0.17049243}
+  m_EdgeRadius: 0

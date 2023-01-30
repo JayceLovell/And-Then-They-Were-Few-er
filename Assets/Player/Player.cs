@@ -130,12 +130,14 @@ public class Player : MonoBehaviour
                 {
                     _gameController.InInterrogation= true;
                     _gameController.LastPositon = this.gameObject.transform;
-                    SceneManager.LoadScene("InterrogationScene");
+
+                    SceneManager.LoadScene("InterrogationScene",LoadSceneMode.Additive);
+                    SceneManager.MoveGameObjectToScene(CurrentNPCToTalkTo, SceneManager.GetSceneByName("InterrogationScene"));                    
                 }
                 else
                 {
                     Talking = true;
-                    DialogBox.Display();
+                    DialogBox.Display(true);
                     CharactersScript.GetType().GetMethod("StartDialogue").Invoke(CharactersScript, null);
                 }
             }
@@ -164,19 +166,19 @@ public class Player : MonoBehaviour
     {
         GameManager.Instance.Quit();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "NPC")
-        {
-            CurrentNPCToTalkTo = collision.gameObject;
-            CanTalkToNPC = true;
-            // Wrote this since character isn't animating just static
-            NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
-            //In future use this to grab the interrigation sprite.
-            //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
-            NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.tag == "NPC")
+    //    {
+    //        CurrentNPCToTalkTo = collision.gameObject;
+    //        CanTalkToNPC = true;
+    //        // Wrote this since character isn't animating just static
+    //        NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
+    //        //In future use this to grab the interrigation sprite.
+    //        //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
+    //        NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
+    //    }
+    //}
     void OnTriggerStay2D(Collider2D collision)
     {
 

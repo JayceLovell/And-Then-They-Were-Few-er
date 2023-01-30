@@ -67,7 +67,7 @@ public class AshlynBigReveal : Character
     /// </summary>
     public void TimeToMakeDecision()
     {
-        DialogBox.Display();
+        DialogBox.Display(false);
         SelectionPanel.SetActive(true);
 
     }

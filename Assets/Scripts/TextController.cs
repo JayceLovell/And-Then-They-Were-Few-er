@@ -2,60 +2,59 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class TextController : MonoBehaviour
 {
-    private GameManager GameManager;
+    private GameManager _gameManager;
 
     public List<TextMeshProUGUI> text;
 
     void Awake()
     {
-        GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        _gameManager = GameManager.Instance;
     }
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(text[GameManager.CurrentGameProgress],GameObject.Find("Canvas").transform);        
+        Instantiate(text[_gameManager.CurrentGameProgress],GameObject.Find("Canvas").transform);        
     }
     public void OnNext()
     {
-        GameManager.SaveScene();
-        switch (GameManager.CurrentGameProgress)
+        _gameManager.SaveScene();
+        switch (_gameManager.CurrentGameProgress)
         {
             case 1:
-                GameManager.CurrentGameProgress++;
+                _gameManager.CurrentGameProgress++;
                 Destroy(GameObject.Find("After Intro 1(Clone)"));
-                Instantiate(text[GameManager.CurrentGameProgress], GameObject.Find("Canvas").transform);
+                Instantiate(text[_gameManager.CurrentGameProgress], GameObject.Find("Canvas").transform);
                 break;
             case 2:
-                GameManager.CurrentGameProgress++;
+                _gameManager.CurrentGameProgress++;
                 Destroy(GameObject.Find("After Intro 2(Clone)"));                
-                Instantiate(text[GameManager.CurrentGameProgress], GameObject.Find("Canvas").transform);
+                Instantiate(text[_gameManager.CurrentGameProgress], GameObject.Find("Canvas").transform);
                 break;
             case 3:
-                GameManager.CurrentGameProgress++;
+                _gameManager.CurrentGameProgress++;
                 Destroy(GameObject.Find("Body Discovery 1(Clone)"));
-                Instantiate(text[GameManager.CurrentGameProgress], GameObject.Find("Canvas").transform);
+                Instantiate(text[_gameManager.CurrentGameProgress], GameObject.Find("Canvas").transform);
                 break;
             case 4:
-                GameManager.CurrentGameProgress++;
+                _gameManager.CurrentGameProgress++;
                 Destroy(GameObject.Find("Body Discovery 2(Clone)"));
-                Instantiate(text[GameManager.CurrentGameProgress], GameObject.Find("Canvas").transform);
+                Instantiate(text[_gameManager.CurrentGameProgress], GameObject.Find("Canvas").transform);
                 break;
             case 5:
-                GameManager.CurrentGameProgress = 5;
+                _gameManager.CurrentGameProgress = 5;
                 SceneManager.LoadScene("Grandhall");
                 break;
             case 6:
             case 7:
-                GameManager.CurrentGameProgress = 0;
+                _gameManager.CurrentGameProgress = 0;
                 SceneManager.LoadScene("Title");
                 break;
             default:
-                GameManager.CurrentGameProgress++;
+                _gameManager.CurrentGameProgress++;
                 SceneManager.LoadScene("Entrance");
                 break;
         }

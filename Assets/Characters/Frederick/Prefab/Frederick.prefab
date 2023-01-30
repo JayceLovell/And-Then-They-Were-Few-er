@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: adf7bc23a578bb444967fe95f2ba8f82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -99,14 +99,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9189f626d8dfb4a9da7d40f91b137b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InterrigrationMode: 0
-  Scene: 1
+  InterrigrationMode: 1
+  Scene: 2
   Name: 2
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: a8e0780d90007084f86fadc8f29a85e8, type: 3}
   InterrigationSprite: {fileID: -1044671358, guid: 4680d3808b8d77c4d92ff377483d4d5d, type: 3}
   characterPosition:
   - Scene: 1
+    Position: {x: -1.88, y: 11.79}
+  - Scene: 2
     Position: {x: -1.88, y: 11.79}
   dialogForRegularConvo:
   - Text: (The corrupt mayor of the town)
@@ -177,7 +179,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.018770702, y: -0.008259043}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -188,5 +190,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.33}
+  m_Size: {x: 0.13919003, y: 0.17232594}
   m_EdgeRadius: 0

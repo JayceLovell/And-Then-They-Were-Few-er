@@ -11,15 +11,12 @@ public class GameManager : MonoBehaviour
 
     private float _gameTime;
     private bool _timeStart;
-    [SerializeField]
     private bool _isGamePaused;
     private bool _isGameLost;
     private bool _isGameWon;
     private static GameManager _instance;
     private int _currentGameProgress;
-    [SerializeField]
     private float _bgMusicVolume;
-    [SerializeField]
     private float _sfxVolume;
 
     /// <summary>
@@ -38,6 +35,9 @@ public class GameManager : MonoBehaviour
                 IsGameOver = true;
         }
     }
+    /// <summary>
+    /// Is game paused...idk how clearly i can explain this
+    /// </summary>
     public bool IsGamePaused
     {
         get
@@ -49,6 +49,9 @@ public class GameManager : MonoBehaviour
             _isGamePaused = value;
         }
     }
+    /// <summary>
+    /// Players current Progress in the game
+    /// </summary>
     public int CurrentGameProgress
     {
         get {
@@ -60,6 +63,9 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("PlayTextNumber",value);
         }
     }
+    /// <summary>
+    /// Background music volume
+    /// </summary>
     public float BGMusicVolume
     {
         get {
@@ -72,6 +78,9 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+    /// <summary>
+    /// Sound effects background volume
+    /// </summary>
     public float SfxVolume {
         get
         {
@@ -85,6 +94,10 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.Save();
         } 
     }
+
+    /// <summary>
+    /// So don't have to look for gamemaner everytime just use instance
+    /// </summary>
     public static GameManager Instance { 
         get { 
             if(_instance == null)
@@ -197,11 +210,11 @@ public class GameManager : MonoBehaviour
     /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("Scene Loaded: " + scene.name);
+        SaveScene();        
         switch (scene.name)
         {
             case "Title":
-                SoundManager.StartBackground(SoundManager.BgSound.Title);
+                SoundManager.StartBackground(SoundManager.BgSound.Title);               
                 break;
             case "Text":
                 if (CurrentGameProgress == 6)
@@ -209,7 +222,7 @@ public class GameManager : MonoBehaviour
                 else if (CurrentGameProgress == 7)
                     SoundManager.StartBackground(SoundManager.BgSound.GameWon);
                 else
-                    SoundManager.StartBackground(SoundManager.BgSound.MainMenu);
+                    SoundManager.StartBackground(SoundManager.BgSound.MainMenu);                
                 break;
             case "Entrance":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);

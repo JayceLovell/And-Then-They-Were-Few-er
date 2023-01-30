@@ -245,12 +245,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 16
   m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 12
+  m_fontSizeMax: 20
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 230440710073486816}
   - component: {fileID: 230440710073486817}
   m_Layer: 5
-  m_Name: Dialog Question Text
+  m_Name: Dialog Response Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,10 +320,10 @@ RectTransform:
   m_Father: {fileID: 578428336756732013}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 229.40955, y: -11.483749}
-  m_SizeDelta: {x: 458.8191, y: 22.967499}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -19.049995}
+  m_SizeDelta: {x: 0, y: 28.099993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &230440710073486816
 CanvasRenderer:
@@ -353,7 +353,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Did you want to ask me anything detective?
+  m_text: 'blank blank blank blank blank blank blank blank blank blank blank blank
+    blank blank blank blank blank blank '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bbc9ba979b8164948b4a6f4afda233ec, type: 2}
   m_sharedMaterial: {fileID: -3450142364218524483, guid: bbc9ba979b8164948b4a6f4afda233ec, type: 2}
@@ -380,7 +381,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
+  m_fontSize: 12
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -435,7 +436,7 @@ GameObject:
   - component: {fileID: 230440710186652372}
   - component: {fileID: 4326559715343165569}
   m_Layer: 5
-  m_Name: Option 2
+  m_Name: Question 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -456,10 +457,10 @@ RectTransform:
   m_Father: {fileID: 1219198715474925549}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 229.40955, y: -49.94625}
-  m_SizeDelta: {x: 358.8191, y: 29.920002}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -44.880005}
+  m_SizeDelta: {x: 0, y: 29.920002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &230440710186652371
 CanvasRenderer:
@@ -489,7 +490,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2. When did you get here?
+  m_text: Question 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bbc9ba979b8164948b4a6f4afda233ec, type: 2}
   m_sharedMaterial: {fileID: -3450142364218524483, guid: bbc9ba979b8164948b4a6f4afda233ec, type: 2}
@@ -601,19 +602,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 230440710186652372}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8655321854663735440}
-        m_TargetAssemblyTypeName: DialogueObjectController, Assembly-CSharp
-        m_MethodName: Response
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 230440710186652372}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &230440710333206789
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +616,7 @@ GameObject:
   - component: {fileID: 230440710333206787}
   - component: {fileID: 6482654695487538013}
   m_Layer: 5
-  m_Name: Option 1
+  m_Name: Question 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -648,10 +637,10 @@ RectTransform:
   m_Father: {fileID: 1219198715474925549}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 229.40955, y: -16.64875}
-  m_SizeDelta: {x: 358.8191, y: 29.920002}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -14.960001}
+  m_SizeDelta: {x: 0, y: 29.920002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &230440710333206786
 CanvasRenderer:
@@ -681,7 +670,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1. How did you meet Nikki
+  m_text: Question 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bbc9ba979b8164948b4a6f4afda233ec, type: 2}
   m_sharedMaterial: {fileID: -3450142364218524483, guid: bbc9ba979b8164948b4a6f4afda233ec, type: 2}
@@ -793,19 +782,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 230440710333206787}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8655321854663735440}
-        m_TargetAssemblyTypeName: DialogueObjectController, Assembly-CSharp
-        m_MethodName: Response
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 230440710333206787}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &230440710681097887
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +872,7 @@ GameObject:
   - component: {fileID: 230440710709755656}
   - component: {fileID: 3880142706047662329}
   m_Layer: 5
-  m_Name: Option 3
+  m_Name: Question 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,10 +893,10 @@ RectTransform:
   m_Father: {fileID: 1219198715474925549}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 229.40955, y: -83.24375}
-  m_SizeDelta: {x: 358.8191, y: 29.920002}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -74.8}
+  m_SizeDelta: {x: 0, y: 29.920002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &230440710709755655
 CanvasRenderer:
@@ -949,7 +926,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3. Some other time (Conclude)
+  m_text: Question 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bbc9ba979b8164948b4a6f4afda233ec, type: 2}
   m_sharedMaterial: {fileID: -3450142364218524483, guid: bbc9ba979b8164948b4a6f4afda233ec, type: 2}
@@ -1061,19 +1038,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 230440710709755656}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8655321854663735440}
-        m_TargetAssemblyTypeName: DialogueObjectController, Assembly-CSharp
-        m_MethodName: Response
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 230440710709755656}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1487601775434848738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1093,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
   m_Spacing: 0
@@ -1228,7 +1193,7 @@ GameObject:
   - component: {fileID: 7079280059007354273}
   - component: {fileID: 1760829511105015408}
   m_Layer: 5
-  m_Name: ResponsePanel
+  m_Name: QuestionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1252,10 +1217,10 @@ RectTransform:
   m_Father: {fileID: 578428336756732013}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 229.40955, y: -72.91375}
-  m_SizeDelta: {x: 458.8191, y: 99.8925}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -77.979996}
+  m_SizeDelta: {x: 0, y: 89.76001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6138052041746460938
 CanvasRenderer:
@@ -1279,7 +1244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1673,9 +1638,12 @@ MonoBehaviour:
   SpeechTextBox: {fileID: 1371061798225658885}
   InterrigationObjects: {fileID: 1487601775434848738}
   InterrigationTextBox: {fileID: 230440710073486817}
-  Option1: {fileID: 230440710333206787}
-  Option2: {fileID: 230440710186652372}
-  Option3: {fileID: 230440710709755656}
+  QuestionText1: {fileID: 230440710333206787}
+  QuestionButton1: {fileID: 6482654695487538013}
+  QuestionText2: {fileID: 230440710186652372}
+  QuestionButton2: {fileID: 4326559715343165569}
+  QuestionText3: {fileID: 230440710709755656}
+  QuestionButton3: {fileID: 3880142706047662329}
 --- !u!1 &9119853912684308150
 GameObject:
   m_ObjectHideFlags: 0
