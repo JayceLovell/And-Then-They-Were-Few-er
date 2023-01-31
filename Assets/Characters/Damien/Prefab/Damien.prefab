@@ -188,7 +188,7 @@ MonoBehaviour:
   DialogueForInterrogations:
   - NoQuestions: 0
     NextElementNumber: 0
-    Response: 
+    Response: Hello
     Question1:
       QuestionText: "There are members in this household that strongly suspect you
         of being Nikki\u2019s murderer"
