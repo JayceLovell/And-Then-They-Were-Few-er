@@ -215,13 +215,22 @@ public class Character :MonoBehaviour
             else
             {
                 _dialogBox.Text = "";
-                if (dialogForRegularConvo[_numDialog].ImTalking)
+
+                if (InterrigrationMode)
                 {
                     _dialogBox.SpeakerName = Name.ToString();
                     _dialogBox.SpeakerImage = Profile;
                 }
                 else
-                    GameObject.Find("Player").GetComponent<Player>().ImTalking();
+                {
+                    if (dialogForRegularConvo[_numDialog].ImTalking)
+                    {
+                        _dialogBox.SpeakerName = Name.ToString();
+                        _dialogBox.SpeakerImage = Profile;
+                    }
+                    else
+                        GameObject.Find("Player").GetComponent<Player>().ImTalking();
+                }
 
                 StartCoroutine(Talk());
                 _numDialog++;
