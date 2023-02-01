@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 0
-  Scene: 2
   Name: 6
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: 74002ac4f7ae36e4a820e9575123920e, type: 3}
@@ -173,87 +172,219 @@ MonoBehaviour:
     ImTalking: 0
   - Text: "(M narrows hers as well)\r"
     ImTalking: 1
-  dialogueForInterrigations:
-  - Text: 'Where were you at the time of the murder?
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: 
+    Question1:
+      QuestionText: Where were you at the time of the murder?
+      NextElementNumber: 1
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "I don\u2019t see why this is any of your business, \u201CDetective\u201D"
+    Question1:
+      QuestionText: "Hey! Don\u2019t tell me you are going to undermine an active
+        murder investigation"
+      NextElementNumber: 2
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: 'Well, last time I checked, you are not the police.
 
 
+      I thought
+      you and our dear Mayor were going to fetch real law enforcement once this storm
+      cleared up'
+    Question1:
+      QuestionText: "I\u2019d just like to know all the facts, before the Mayor and
+        I approach the police."
+      NextElementNumber: 3
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: '(Ashlyn takes a deep breath, trying to control her anger)
+
+
+      Ashlyn
+      then sighs, and her tone changes  from interrogative to mournful
 
 '
-    ImTalking: 0
-  - Text: "I don\u2019t see why this is any of your business, \u201CDetective\u201D\r\n\r\n"
-    ImTalking: 1
-  - Text: "Hey! Don\u2019t tell me you are going to undermine an active murder investigation\r\n\r\n"
-    ImTalking: 0
-  - Text: "Well, last time I checked, you are not the police. \r\n\r\n"
-    ImTalking: 1
-  - Text: 'I thought you and our dear Mayor were going to fetch real law enforcement
-      once this storm cleared up
-
-
-
-'
-    ImTalking: 1
-  - Text: "(Ashlyn takes a deep breath, trying to control her anger\r)\n\r\n"
-    ImTalking: 0
-  - Text: "I\u2019d just like to know all the facts, before the Mayor and I approach
-      the police.\r\n\r\n"
-    ImTalking: 0
-  - Text: '(Ashlyn sighs, and her tone changes  from interrogative to mournful)
-
-
-
-'
-    ImTalking: 0
-  - Text: "There\u2019s a potential murderer on the loose. And Nikki was my best
-      friend. I need to get to the bottom of this\r\n\r\n"
-    ImTalking: 0
-  - Text: "(Mirianne, who had been glaring at Ashlyn, changes her expression somewhat
-      to a look of resentful understanding\r)\n\r\n"
-    ImTalking: 1
-  - Text: "Well, if there\u2019s one thing that hasn\u2019t changed, it\u2019s how
-      much you\u2019re willing to do for your friends\u2026\r\n\r\n"
-    ImTalking: 1
-  - Text: "If you must know, I was in [some room near the lab]. \r\n\r\n"
-    ImTalking: 1
-  - Text: 'Hold on. The Mayor says he saw you in [different room].
-
-
-
-'
-    ImTalking: 0
-  - Text: "(Mirianne stutters for a bit, shocked, but quickly recovers\r)\n\r\n"
-    ImTalking: 1
-  - Text: 'Oh! Pardon me, I seem to have misremembered. Yes I was indeed in that
+    Question1:
+      QuestionText: "There\u2019s a potential murderer on the loose. And Nikki was
+        my best friend. I need to get to the bottom of this"
+      NextElementNumber: 4
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: (Mirianne, who had been glaring at Ashlyn, changes her expression somewhat
+      to a look of resentful understanding)
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 5
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "Well, if there\u2019s one thing that hasn\u2019t changed, it\u2019s
+      how much you\u2019re willing to do for your friends\u2026\r\n"
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 6
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: If you must know, I was in [some room near the lab].
+    Question1:
+      QuestionText: Hold on. The Mayor says he saw you in [different room].
+      NextElementNumber: 7
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: (Miriane stutters for a bit, shocked, but quickly recovers)
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 8
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: Oh! Pardon me, I seem to have misremembered. Yes I was indeed in that
       room.
-
-
-
-'
-    ImTalking: 1
-  - Text: "I could hear two people talking very loudly, but couldn\u2019t make out
-      what they were saying. The storm was too loud\r\n\r\n"
-    ImTalking: 1
-  - Text: "At the time, I heard a very loud sound, which I assumed was the thunder.
-      But now that I think about it\u2026.\r\n\r\n"
-    ImTalking: 1
-  - Text: "(Miriane begins to scowl\r)\n\r\n"
-    ImTalking: 1
-  - Text: "\u2026what?\r\n\r\n\n"
-    ImTalking: 0
-  - Text: "\u2026It may have been a body hitting the ground\u2026\r\n\r\n"
-    ImTalking: 1
-  - Text: "(Miriane\u2019s expression hardens\r)\n\r\n"
-    ImTalking: 1
-  - Text: "I didn\u2019t pay it any mind. Shortly after, I left for my room.\r\n\r\n"
-    ImTalking: 1
-  - Text: "Well, that\u2019s where I was. May I go now, \u201CDetective\u201D?\r\n\r\n"
-    ImTalking: 1
-  - Text: '(Ashlyn nods, deep in thought)
-
-'
-    ImTalking: 0
-  - Text: (Miriane leaves)
-    ImTalking: 1
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 9
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "I could hear two people talking very loudly, but couldn\u2019t make
+      out what they were saying. The storm was too loud."
+    Question1:
+      QuestionText: What happened next?
+      NextElementNumber: 10
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "At the time, I heard a very loud sound, which I assumed was the thunder.
+      But now that I think about it\u2026"
+    Question1:
+      QuestionText: What?
+      NextElementNumber: 11
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "(Miriane begins to scowl\r)\n"
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 12
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "\u2026It may have been a body hitting the ground."
+    Question1:
+      QuestionText: Oh...
+      NextElementNumber: 13
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "(Miriane\u2019s expression hardens)"
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 14
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "I didn\u2019t pay it any mind. Shortly after, I left for my room.\n\nMay
+      I go now, \"Detective\"?"
+    Question1:
+      QuestionText: Yes. And Mirianne, Thank You
+      NextElementNumber: 15
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: Mirianne Leaves
+    Question1:
+      QuestionText: 
+      NextElementNumber: 0
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
   dialogueAfterClue: []
 --- !u!95 &5646326592726193672
 Animator:
