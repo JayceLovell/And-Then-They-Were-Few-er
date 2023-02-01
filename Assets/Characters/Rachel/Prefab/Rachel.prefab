@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 0
-  Scene: 2
   Name: 9
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: c64c5a4788422c34782c47996153549f, type: 3}
@@ -173,59 +172,72 @@ MonoBehaviour:
     ImTalking: 1
   - Text: (Ashlyn turns away, feeling a bit embarrassed)
     ImTalking: 0
-  dialogueForInterrigations:
-  - Text: '(Rachel has her hands in her face, and is crying)
-
-
-
-'
-    ImTalking: 1
-  - Text: "Rachel, I\u2019m so sorry for your loss.\r\n\r\n"
-    ImTalking: 0
-  - Text: "(Rachel lifts her head\r)\n\r\n"
-    ImTalking: 1
-  - Text: "I just can\u2019t believe she\u2019s gone. Who would do this to my poor
-      baby?\r\n\r\n"
-    ImTalking: 1
-  - Text: "(Rachel has tears streaming down her face) \n\n"
-    ImTalking: 1
-  - Text: '(She seems to reach for something in her pocket, gets startled, withdraws
-      and wipes her face with her hands)
-
-
-'
-    ImTalking: 1
-  - Text: "(Ashlyn takes note of this\r)\n\r\n"
-    ImTalking: 0
-  - Text: 'When did you last see Nikki?
-
-
-
-'
-    ImTalking: 0
-  - Text: "After the showcase. Watson and I were helping her to clean up, but I felt
-      a bit faint and went to bed shortly after.\r"
-    ImTalking: 1
-  - Text: "Speaking of Watson, I haven\u2019t seen him all night. Where could he
-      be?\r\n\r\n"
-    ImTalking: 0
-  - Text: (Rachel is a bit startled at this)
-    ImTalking: 1
-  - Text: "Ah, Nikki usually shuts him down for the night before bed. I don\u2019t
-      know where he is kept though. \r\n\r\n"
-    ImTalking: 1
-  - Text: "May I have a moment? I just\u2026.\r\n\r\n"
-    ImTalking: 1
-  - Text: "(Rachel starts to sob into her hands again\r)\n\r\n"
-    ImTalking: 1
-  - Text: 'Of course. Please, let us know if you need anything
-
-
-
-'
-    ImTalking: 0
-  - Text: "(Ashlyn leaves the room, puzzled\r)\n"
-    ImTalking: 0
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: Rachel has her hands in her face, and is crying.
+    Question1:
+      QuestionText: "Rachel, I\u2019m so sorry for your loss."
+      NextElementNumber: 1
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "I just can\u2019t believe she\u2019s gone. Who would do this to my
+      poor baby?"
+    Question1:
+      QuestionText: When did you last see Nikki?
+      NextElementNumber: 2
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: After the showcase. Watson and I were helping her to clean up, but
+      I felt a bit faint and went to bed shortly after.
+    Question1:
+      QuestionText: "Speaking of Watson, I haven\u2019t seen him all night. Where
+        could he be?"
+      NextElementNumber: 3
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: " (a bit startled): Ah, Nikki usually shuts him down for the night
+      before bed. I don\u2019t know where he is kept though."
+    Question1:
+      QuestionText: Hm...
+      NextElementNumber: 4
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 1
+    NextElementNumber: 0
+    Response: "May I have a moment? I just\u2026.\r\n\n(Rachel turns away from Ashlyn,
+      and starts to sob again)"
+    Question1:
+      QuestionText: Of Course
+      NextElementNumber: 0
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
   dialogueAfterClue: []
 --- !u!95 &9179986237464571549
 Animator:
