@@ -248,7 +248,7 @@ public class Character :MonoBehaviour
     IEnumerator Talk()
     {
         _isTalking = true;
-        switch (GameManager.Instance.CurrentScene)
+        switch (SceneManager.GetActiveScene().name)
         {
             case "Entrance":
                 foreach (char c in dialogForRegularConvo[_numDialog].Text.ToCharArray())

@@ -21,7 +21,6 @@ public class TextController : MonoBehaviour
     }
     public void OnNext()
     {
-        _gameManager.SaveScene();
         switch (_gameManager.CurrentGameProgress)
         {
             case 1:

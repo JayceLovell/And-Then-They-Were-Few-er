@@ -87,8 +87,6 @@ public class InterrogationController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
-        _gameManager.SaveScene();
-
         NPC = GameObject.FindGameObjectWithTag("NPC");
         NPC.transform.position = NPCPosition.position;
 

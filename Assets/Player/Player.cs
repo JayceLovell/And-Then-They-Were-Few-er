@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The value which containts the vector2 X/Y input</param>
     void OnMove(InputValue value)
     {
-        if (!_gameController.GameManager.IsGamePaused)
+        if (!_gameController._gameManager.IsGamePaused)
         {
             if (value.Get<Vector2>().x != 0 && value.Get<Vector2>().y == 0)
                 moveInput = value.Get<Vector2>();
@@ -137,7 +137,7 @@ public class Player : MonoBehaviour
                 CharactersScript.GetType().GetMethod("ContinueDialogue").Invoke(CharactersScript, null);
             else
             {
-                if (_gameController.GameManager.CurrentScene == "GrandHall")
+                if (_gameController._gameManager.CurrentScene == "GrandHall")
                 {
                     _gameController.InInterrogation= true;
                     _gameController.LastPositon = this.gameObject.transform;
