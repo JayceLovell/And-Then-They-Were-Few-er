@@ -283,7 +283,7 @@ MonoBehaviour:
     Response: Umm...
     Question1:
       QuestionText: No Option
-      NextElementNumber: 7
+      NextElementNumber: 0
     Question2:
       QuestionText: No Option
       NextElementNumber: 0

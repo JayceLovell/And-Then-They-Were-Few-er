@@ -9,7 +9,6 @@ public class InterrogationController : MonoBehaviour
 {
     private Sprite _interrogationNPC;
     private GameManager _gameManager;
-    private string _playerName = "Ashlyn";
     private Component _npcComponent=null;
     private int _nextElementForInterrogating;
 
@@ -47,13 +46,7 @@ public class InterrogationController : MonoBehaviour
 
         StartCoroutine(WaitForOneSecond());
 
-    }
-
-    public void PlayerTalking()
-    {
-        DialogBox.SpeakerName = _playerName;
-        DialogBox.SpeakerImage = PlayerProfile;
-    }
+    }    
     public void OnInterrogate()
     {
         if (_npcComponent == null)

@@ -122,7 +122,7 @@ public class Character :MonoBehaviour
     public class DialogueForInterrogation
     {
         public bool NoQuestions;
-        [Tooltip("Set to the number of Dialogue to end! Example if number of dialog is 10 put 9.")]
+        public bool EndInterrogation;        
         public int NextElementNumber;
         [TextArea(15, 10)]
         public string Response;
@@ -200,8 +200,8 @@ public class Character :MonoBehaviour
         if (!_isTalking)
         {
             // MUST FIX THIS IF STATEMENT
-            if ((dialogForRegularConvo.Count == _numDialog) || 
-                ((DialogueForInterrogations.Count == _numDialog) && InterrigrationMode))
+            if ((DialogueForInterrogations[_numDialog].EndInterrogation && InterrigrationMode) ||
+                dialogForRegularConvo.Count < _numDialog && !InterrigrationMode)                 
             {
                 InDialog = false;
                 _dialogBox.Display(false);
