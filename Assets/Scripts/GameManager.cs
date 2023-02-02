@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     private bool _isGameWon;
     private static GameManager _instance;
     private int _currentGameProgress;
-    private float _bgMusicVolume;
+    private float _bgmVolume;
     private float _sfxVolume;
 
     /// <summary>
@@ -55,8 +55,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public int CurrentGameProgress
     {
-        get {
-            _currentGameProgress = PlayerPrefs.GetInt("PlayerProgress");
+        get {            
             return _currentGameProgress; 
         }
         set { 
@@ -66,32 +65,26 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Background music volume
     /// </summary>
-    public float BGMusicVolume
+    public float BGMVolume
     {
-        get {
-            _bgMusicVolume = PlayerPrefs.GetFloat("Background Volume");
-            return (_bgMusicVolume);
+        get {            
+            return (_bgmVolume);
         }
         set { 
-            _bgMusicVolume = value;
-            PlayerPrefs.SetFloat("Background Volume", value);
-            PlayerPrefs.Save();
+            _bgmVolume = value;            
         }
     }
     /// <summary>
     /// Sound effects background volume
     /// </summary>
-    public float SfxVolume {
+    public float SFXVolume {
         get
-        {
-            _sfxVolume = PlayerPrefs.GetFloat("Sfx Volume");
+        {         
             return (_sfxVolume);
         }
         set
         {
             _sfxVolume = value;
-            PlayerPrefs.SetFloat("Sfx Volume",value);
-            PlayerPrefs.Save();
         } 
     }
 
@@ -165,21 +158,23 @@ public class GameManager : MonoBehaviour
     {
         IsGameOver = false;
         IsGamePaused = false;
-        CheckPlayerPrefs();
+        _loadPlayerPrefs();
     }
 
-    private void CheckPlayerPrefs()
+    private void _loadPlayerPrefs()
     {
-        if ((PlayerPrefs.GetInt("PlayTextNumber", 0) == 0))
-            CurrentGameProgress = 0;
+        if ((PlayerPrefs.GetFloat("Sfx Volume") == 0))
+            SFXVolume = 50;
+
+        if ((PlayerPrefs.GetFloat("BGM Volume") == 0))
+            BGMVolume = 50;
+        if (PlayerPrefs.GetFloat("Game Time") <= 0)
+            _gameTime = 900;
         else
-            CurrentGameProgress = PlayerPrefs.GetInt("PlayTextNumber");
+            _gameTime = PlayerPrefs.GetFloat("Game Time");
 
-        if ((PlayerPrefs.GetFloat("Sfx Volume", 0) == 0))
-            SfxVolume = 50;
+        _currentGameProgress = PlayerPrefs.GetInt("Player Progress");
 
-        if ((PlayerPrefs.GetFloat("Background Volume", 0) == 0))
-            BGMusicVolume = 50;
     }
 
     // Update is called once per frame
@@ -195,13 +190,18 @@ public class GameManager : MonoBehaviour
     }
     private void _savePlayerPrefs()
     {
-        PlayerPrefs.SetInt("PlayerProgress", _currentGameProgress);
+        PlayerPrefs.SetInt("Player Progress", _currentGameProgress);
+        PlayerPrefs.SetFloat("BGM Volume", _bgmVolume);
+        PlayerPrefs.SetFloat("SFX Volume", _sfxVolume);
+        PlayerPrefs.SetFloat("Game Time", _gameTime);
+
+        PlayerPrefs.Save();
     }
     public void NewGame()
     {
         PlayerPrefs.DeleteKey("LastScene");
         PlayerPrefs.DeleteKey("PlayTextNumber");
-        CheckPlayerPrefs();
+        _loadPlayerPrefs();
     }
     public void SaveScene()
     {
