@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-using static Character;
 
 /// <summary>
 /// Character parent class
@@ -163,6 +163,7 @@ public class Character :MonoBehaviour
     {
         _positionCheck(GameManager.Instance.CurrentScene);
     }
+
     /// <summary>
     /// Check if Object is in correct Position for the scene
     /// </summary>
