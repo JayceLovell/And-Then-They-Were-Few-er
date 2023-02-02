@@ -208,9 +208,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
     Question3:
-      QuestionText: But I suppose that now Nikki is gone, you should have no competition
-        left in Wandermere eh?
-      NextElementNumber: 3
+      QuestionText: 
+      NextElementNumber: 0
   - NoQuestions: 1
     NextElementNumber: 0
     Response: "Now, Nikki and I may have been rivals, but I still had respect for
