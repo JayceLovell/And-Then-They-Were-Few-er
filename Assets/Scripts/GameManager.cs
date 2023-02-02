@@ -1,46 +1,92 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private bool _isGameOver;
+
+
+    //900 is 15 mins    
+    private float _gameTime = 900;
+    private bool _timeStart;
+    private bool _isGamePaused;
+    private bool _isGameLost;
+    private bool _isGameWon;
     private static GameManager _instance;
-    private AudioSource _musicPlayer;
-    private int _currentPlayText;
+    private int _currentGameProgress;
     private float _bgMusicVolume;
     private float _sfxVolume;
 
-    public int CurrentPlayText
+    /// <summary>
+    /// 15 mins count down
+    /// </summary>
+    public float GameTime
+    {
+        get
+        {
+            return _gameTime;
+        }
+        set
+        {
+            _gameTime = value;
+            if (_gameTime == 0)
+                IsGameOver = true;
+        }
+    }
+    /// <summary>
+    /// Is game paused...idk how clearly i can explain this
+    /// </summary>
+    public bool IsGamePaused
+    {
+        get
+        {
+            return _isGamePaused;
+        }
+        set
+        {
+            _isGamePaused = value;
+        }
+    }
+    /// <summary>
+    /// Players current Progress in the game
+    /// </summary>
+    public int CurrentGameProgress
     {
         get {
-            _currentPlayText = PlayerPrefs.GetInt("PlayTextNumber");
-            return _currentPlayText; 
+            _currentGameProgress = PlayerPrefs.GetInt("PlayTextNumber");
+            return _currentGameProgress; 
         }
         set { 
-            _currentPlayText = value;
+            _currentGameProgress = value;
             PlayerPrefs.SetInt("PlayTextNumber",value);
         }
     }
+    /// <summary>
+    /// Background music volume
+    /// </summary>
     public float BGMusicVolume
     {
         get {
             _bgMusicVolume = PlayerPrefs.GetFloat("Background Volume");
-            return (_bgMusicVolume / 100);
+            return (_bgMusicVolume);
         }
         set { 
             _bgMusicVolume = value;
-            _musicPlayer.volume = (_bgMusicVolume / 100);
             PlayerPrefs.SetFloat("Background Volume", value);
             PlayerPrefs.Save();
         }
     }
+    /// <summary>
+    /// Sound effects background volume
+    /// </summary>
     public float SfxVolume {
         get
         {
             _sfxVolume = PlayerPrefs.GetFloat("Sfx Volume");
-            return (_sfxVolume / 100);
+            return (_sfxVolume);
         }
         set
         {
@@ -49,9 +95,10 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.Save();
         } 
     }
-    public AudioClip GameOverMusic;
-    public AudioClip BackgroundMusic;
-    public AudioClip GameWonMusic;
+
+    /// <summary>
+    /// So don't have to look for gamemaner everytime just use instance
+    /// </summary>
     public static GameManager Instance { 
         get { 
             if(_instance == null)
@@ -63,16 +110,40 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// How many Clues for Game Won
-    /// </summary>
-    public int GameWinCondition;
-    /// <summary>
-    /// Will be used to end game
+    /// lost Game
     /// </summary>
     public bool IsGameOver
     {
-        get { return _isGameOver; }
-        set { _isGameOver = value; }
+        get { 
+            return _isGameLost; 
+        }
+        set { 
+            _isGameLost = value;
+            if(_isGameLost)
+            {
+                _timeStart = false;
+                CurrentGameProgress = 6;
+                SceneManager.LoadScene("Text");
+            }
+        }
+    }
+
+    public bool IsGameWon
+    {
+        get
+        {
+            return _isGameWon;
+        }
+        set
+        {
+            _isGameWon = value;
+            if (_isGameWon)
+            {
+                _timeStart = false;
+                CurrentGameProgress = 7;
+                SceneManager.LoadScene("Text");
+            }
+        }
     }
 
     public string CurrentScene;
@@ -87,35 +158,40 @@ public class GameManager : MonoBehaviour
     {
         _instance = this;
         DontDestroyOnLoad(GameManager.Instance);
-        _musicPlayer = GetComponent<AudioSource>();
+        //_musicPlayer = GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        GameWinCondition = 5;
-        IsGameOver = false;        
+        IsGameOver = false;
+        IsGamePaused = false;
         CheckPlayerPrefs();
-        _musicPlayer.volume = BGMusicVolume;
     }
 
     private void CheckPlayerPrefs()
     {
         if ((PlayerPrefs.GetInt("PlayTextNumber", 0) == 0))
-            CurrentPlayText = 0;
+            CurrentGameProgress = 0;
         else
-            CurrentPlayText = PlayerPrefs.GetInt("PlayTextNumber");
+            CurrentGameProgress = PlayerPrefs.GetInt("PlayTextNumber");
 
         if ((PlayerPrefs.GetFloat("Sfx Volume", 0) == 0))
             SfxVolume = 50;
 
-        if ((PlayerPrefs.GetFloat("Background volume", 0) == 0))
+        if ((PlayerPrefs.GetFloat("Background Volume", 0) == 0))
             BGMusicVolume = 50;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!IsGamePaused)
+        {
+            if (_timeStart)
+            {
+                 GameTime -= Time.deltaTime;
+            }
+        }
     }
     public void NewGame()
     {
@@ -130,38 +206,52 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.Save();
     }
     /// <summary>
-    /// Don't forget to add scene stuff here for music
-    /// </summary>
+    /// Calls on sce/summary>
     /// <param name="scene"></param>
     /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("Scene Loaded: " + scene.name);
+        SaveScene();        
         switch (scene.name)
         {
+            case "Title":
+                SoundManager.StartBackground(SoundManager.BgSound.Title);               
+                break;
+            case "Text":
+                if (CurrentGameProgress == 6)
+                    SoundManager.StartBackground(SoundManager.BgSound.GameLost);
+                else if (CurrentGameProgress == 7)
+                    SoundManager.StartBackground(SoundManager.BgSound.GameWon);
+                else
+                    SoundManager.StartBackground(SoundManager.BgSound.MainMenu);                
+                break;
             case "Entrance":
-                _musicPlayer.volume = BGMusicVolume;
-                _musicPlayer.clip = BackgroundMusic;
-                _musicPlayer.Play();
-                _musicPlayer.loop = true;
+                SoundManager.StartBackground(SoundManager.BgSound.Background);
                 break;
             case "GrandHall":
-                _musicPlayer.volume=BGMusicVolume;
-                _musicPlayer.clip = BackgroundMusic;
-                _musicPlayer.Play();
-                _musicPlayer.loop = true;
+                SoundManager.StartBackground(SoundManager.BgSound.Background);
+
+                _timeStart = true;
+                break;
+            case "Big Reveal":
+                SoundManager.StartBackground(SoundManager.BgSound.BigReveal);
                 break;
             default:
-                if (_musicPlayer.isPlaying)
-                {
-                    _musicPlayer.Stop();
-                }             
+                Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
                 break;
         }
     }
+    public void LoadInstructions()
+    {
+        SceneManager.LoadScene("Instructions", LoadSceneMode.Additive);
+    }
+    public void Quit()
+    {
+        Application.Quit();
+    }
     void OnDisable()
     {
-        Debug.Log("OnDisable");
+        Debug.Log("GameManger Disable");
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

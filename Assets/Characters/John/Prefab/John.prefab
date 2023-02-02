@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 764134362915080886}
   - component: {fileID: 2350758372960276004}
   - component: {fileID: 5896879154510377071}
-  - component: {fileID: 8315695848946378719}
   - component: {fileID: 9210974397479087053}
+  - component: {fileID: 1058923430121814224}
   m_Layer: 0
   m_Name: John
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 307733208897063110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 1809650551, guid: 514dec16b6b68a44094d7dc8bf3d0417, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 928eed1e3747c0c4783c8df23ddcbac0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,24 +99,144 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b2e1591d7afd94aa2a4952640ad190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrustLevel: 0
-  Name: John
-  isAlive: 1
-  Profile: {fileID: 2800000, guid: c89dfd33993d5164bac729d01f780dca, type: 3}
-  Positions: []
---- !u!65 &8315695848946378719
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307733208897063110}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.37, y: 0.45, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  InterrigrationMode: 0
+  Name: 4
+  CorrectClue: {fileID: 0}
+  Profile: {fileID: 21300000, guid: c89dfd33993d5164bac729d01f780dca, type: 3}
+  InterrigationSprite: {fileID: 0}
+  characterPosition:
+  - Scene: 1
+    Position: {x: 16.55641, y: -4.087817}
+  - Scene: 2
+    Position: {x: -4.783257, y: 1.649793}
+  dialogForRegularConvo:
+  - Text: "(Nervous character always searching for his father and fixing the problems
+      he causes)\r\n\r"
+    ImTalking: 1
+  - Text: '(His Dad is the crazy old man)
+
+
+
+'
+    ImTalking: 1
+  - Text: 'Hi
+
+'
+    ImTalking: 0
+  - Text: 'Oh, hello there.
+
+
+
+'
+    ImTalking: 1
+  - Text: "Come to see the showcase as well?\r\n\r\n\r"
+    ImTalking: 0
+  - Text: 'Yeah, but I''m worried my Dad might do something to interrupt the show.
+
+'
+    ImTalking: 1
+  - Text: (Both turn to look at the Old Man, who is muttering something loud about
+      gears)
+    ImTalking: 0
+  - Text: 'Oh Dad...
+
+
+
+'
+    ImTalking: 1
+  - Text: (John covers his hands with his face in embarrassment)
+    ImTalking: 1
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: 
+    Question1:
+      QuestionText: Where were you at the time of the murder?
+      NextElementNumber: 1
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: I was in my room.
+    Question1:
+      QuestionText: "Really? Your father says otherwise\u2026"
+      NextElementNumber: 2
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: John begins to blush profusely
+    Question1:
+      QuestionText: Now tell me, where were you really?
+      NextElementNumber: 3
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: I was in the bathroom with my Dad
+    Question1:
+      QuestionText: " (while shaking her head): For God\u2019s ske. Well, at least
+        that provides an alibi for the both of you."
+      NextElementNumber: 4
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "Please don\u2019t tell anyone! I was already scared that we would
+      get caught last night, someone tried to use the bathroom when we were in there!\r\n"
+    Question1:
+      QuestionText: Hm? Do you know who this might have been?
+      NextElementNumber: 5
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: No idea. But before they realized it was occupied they tried really
+      hard to get in. They must have need to pee really badly
+    Question1:
+      QuestionText: "I\u2019ll bet they did\u2026"
+      NextElementNumber: 6
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 1
+    NextElementNumber: 0
+    Response: "After that, it seemed like they went into the next stall. I think
+      I might have heard something hit the floor, but I\u2019m not sure, I didn\u2019t
+      look in to check.\r\n"
+    Question1:
+      QuestionText: "I\u2019ll bet they did\u2026"
+      NextElementNumber: 6
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  dialogueAfterClue: []
 --- !u!95 &9210974397479087053
 Animator:
   serializedVersion: 4
@@ -137,3 +257,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &1058923430121814224
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307733208897063110}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02269961, y: -0.009419702}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.42, y: 0.33}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14155005, y: 0.17049243}
+  m_EdgeRadius: 0

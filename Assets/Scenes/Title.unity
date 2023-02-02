@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: de5f59311c6e10a4084e921608caa7a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa994bf5278fada42a0cef7701afc680, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -292,19 +292,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1980585785}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: set_MusicVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 839368048}
-        m_TargetAssemblyTypeName: TitleController, Assembly-CSharp
-        m_MethodName: VolumeLevel
+        m_MethodName: set_BGMusicVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -531,8 +519,8 @@ MonoBehaviour:
 
     .......'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
+  m_sharedMaterial: {fileID: -8115622975960587479, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -846,8 +834,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Version:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
+  m_sharedMaterial: {fileID: -8115622975960587479, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -871,7 +859,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 19.95
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -981,15 +969,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: And Then They Were Few-er
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 6522f30e342599e4e9dd4cc2cc03c830, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f569fe1ce7c1d048be499be9b9d0f43, type: 2}
+  m_sharedMaterial: {fileID: -2166789695037228806, guid: 8f569fe1ce7c1d048be499be9b9d0f43, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279769112
+  m_fontColor: {r: 0.09433961, g: 0.09389461, b: 0.09389461, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1067,7 +1055,6 @@ GameObject:
   - component: {fileID: 839368049}
   - component: {fileID: 839368048}
   - component: {fileID: 839368050}
-  - component: {fileID: 839368051}
   m_Layer: 0
   m_Name: TitleController
   m_TagString: GameController
@@ -1089,7 +1076,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: Text
   GameManager: {fileID: 0}
-  TitleMusic: {fileID: 8300000, guid: a649324167daa0348bd9febb3343f7da, type: 3}
   VolumeSlider: {fileID: 380856283}
 --- !u!4 &839368049
 Transform:
@@ -1136,102 +1122,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!82 &839368051
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839368047}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a649324167daa0348bd9febb3343f7da, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &860022477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,10 +1238,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 1024, y: 576}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2147,14 +2037,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 742378938523913053, guid: 389729618869cca4992a24e0618a958c, type: 3}
-      propertyPath: m_Volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5128170001880214860, guid: 389729618869cca4992a24e0618a958c, type: 3}
-      propertyPath: _musicVolume
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 5128170001880214861, guid: 389729618869cca4992a24e0618a958c, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -2358,6 +2240,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7744066642869676000, guid: d0524a99853ac7c438a178e62575199e, type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 3161433167506425035, guid: c0cc232a6d54ade489f2631c5c1d0fe9, type: 3}
+    - target: {fileID: 7744066642869676000, guid: d0524a99853ac7c438a178e62575199e, type: 3}
+      propertyPath: PauseMenuPrefab
+      value: 
+      objectReference: {fileID: 3161433167506425035, guid: c0cc232a6d54ade489f2631c5c1d0fe9, type: 3}
     - target: {fileID: 7744066642869676001, guid: d0524a99853ac7c438a178e62575199e, type: 3}
       propertyPath: m_RootOrder
       value: 5

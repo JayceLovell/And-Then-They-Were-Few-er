@@ -9,6 +9,11 @@ TagManager:
   - GameManager
   - NPC
   - UIManager
+  - Canvas
+  - Clock
+  - PauseMenu
+  - DialogBox
+  - InterrogationController
   layers:
   - Default
   - TransparentFX
