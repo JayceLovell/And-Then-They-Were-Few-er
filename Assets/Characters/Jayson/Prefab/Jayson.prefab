@@ -99,7 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 1
-  Scene: 2
   Name: 3
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: bb6796ae590284147a6b95adf39dcb4d, type: 3}
@@ -191,52 +190,19 @@ MonoBehaviour:
     ImTalking: 0
   - Text: Glad to make your acquaintance
     ImTalking: 0
-  dialogueForInterrigations:
-  - Text: '(Ashlyn is frustrated and vents to Jayson)
-
-
-
-
-'
-    ImTalking: 0
-  - Text: '*Says curse word*'
-    ImTalking: 0
-  - Text: "Hey, calm down. I\u2019m sure you can get to the bottom of this.\r\n"
-    ImTalking: 1
-  - Text: '(Jayson tries to smile reassuringly at Ashlyn. She calms down a bit)
-
-
-
-'
-    ImTalking: 1
-  - Text: "Thanks. \r\n\r\n"
-    ImTalking: 0
-  - Text: "I just can\u2019t wrap my head around it. Who would do something like
-      this to Nikki?\r\n\r\n"
-    ImTalking: 0
-  - Text: "A truly horrible person, that\u2019s who\r\n\r\n"
-    ImTalking: 1
-  - Text: "Hey, you don\u2019t think it might have been Karol?\r\n\r\n"
-    ImTalking: 1
-  - Text: 'What makes you suspect her?
-
-'
-    ImTalking: 0
-  - Text: "Well, she was Nikki\u2019s rival, after all. With Nikki gone, she has
-      no competition.\r\n\r\n"
-    ImTalking: 1
-  - Text: "Hm, I don\u2019t think Karol would stoop to murder though\u2026\r\n\r\n"
-    ImTalking: 0
-  - Text: 'Well, to me at least, she seems the most likely suspect
-
-
-
-
-'
-    ImTalking: 1
-  - Text: "(Ashlyn disagrees respectfully and excuses herself from the room, but
-      decides to probe Karol about this)\r"
-    ImTalking: 0
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: 
+    Question1:
+      QuestionText: 
+      NextElementNumber: 0
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
   dialogueAfterClue: []
 --- !u!61 &5565415678146893301
 BoxCollider2D:

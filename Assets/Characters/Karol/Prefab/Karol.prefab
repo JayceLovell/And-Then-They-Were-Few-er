@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 0
-  Scene: 2
   Name: 5
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: cf56f4f7d70b8f34fb0e3d898f74e7c9, type: 3}
@@ -157,54 +156,77 @@ MonoBehaviour:
     ImTalking: 1
   - Text: "Well if you say so. Good luck\u2026 I guess."
     ImTalking: 0
-  dialogueForInterrigations:
-  - Text: 'Where were you at the time of the murder?
-
-
-
-'
-    ImTalking: 0
-  - Text: "I was in my room. I couldn\u2019t sleep of course. \r\n\r\n"
-    ImTalking: 1
-  - Text: 'Oh? And why was that?
-
-
-
-'
-    ImTalking: 0
-  - Text: "Nikki\u2019s Synthesizer! I hate to say it, but it\u2019s the most amazing
-      technology I\u2019ve ever seen! \r\n\r\n"
-    ImTalking: 1
-  - Text: "My brain could just not stop thinking of way\u2019s to one up her designs\r\n\r\n\n"
-    ImTalking: 1
-  - Text: "It\u2019s a shame that now she\u2019s gone, it might never see the light
-      of day\u2026\r\n\r\n"
-    ImTalking: 1
-  - Text: "(Karol, who had excitedly been talking about the invention, has her mood
-      shift from excitement to a more somber mood\r)"
-    ImTalking: 1
-  - Text: 'But I suppose that now Nikki is gone, you should have no competition left
-      in Wandermere eh?
-
-
-
-'
-    ImTalking: 0
-  - Text: "What are you trying to say Detective? \r\n"
-    ImTalking: 1
-  - Text: "(Karol stands up rapidly and gets angry\r)\n\r\n"
-    ImTalking: 1
-  - Text: "Are you trying to suggest that it was me who killed Nikki? That\u2019s
-      a heavy accusation!\r\n\r\n"
-    ImTalking: 1
-  - Text: "Now, Nikki and I may have been rivals, but I still had respect for her!
-      If anything I\u2019d want her to still be alive, to witness me surpass her!\r\n\r\n"
-    ImTalking: 1
-  - Text: "If you want someone to suspect, Detective, I\u2019d suggest looking into
-      Mr. Damien. I heard Nikki was thinking of firing him, maybe he felt threatened.\r\n\r\n\n"
-    ImTalking: 1
-  - Text: "(Karol leaves\r angrily)"
-    ImTalking: 1
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: 
+    Question1:
+      QuestionText: Where were you at the time of the murder?
+      NextElementNumber: 1
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "I was in my room. I couldn\u2019t sleep of course."
+    Question1:
+      QuestionText: Oh? And why was that?
+      NextElementNumber: 2
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "Nikki\u2019s Synthesizer! I hate to say it, but it\u2019s the most
+      amazing technology I\u2019ve ever seen!\n\nMy brain could just not stop thinking
+      of way\u2019s to one up her designs.\n\nIt\u2019s a shame that now she\u2019s
+      gone, it might never see the light of day\u2026"
+    Question1:
+      QuestionText: 
+      NextElementNumber: 2
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: But I suppose that now Nikki is gone, you should have no competition
+        left in Wandermere eh?
+      NextElementNumber: 3
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "What are you trying to say Detective? \n\nAre you trying to suggest
+      that it was me who killed Nikki? That\u2019s a heavy accusation!\n\n\n"
+    Question1:
+      QuestionText: If the glove fits...
+      NextElementNumber: 4
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: But I suppose that now Nikki is gone, you should have no competition
+        left in Wandermere eh?
+      NextElementNumber: 3
+  - NoQuestions: 1
+    NextElementNumber: 0
+    Response: "Now, Nikki and I may have been rivals, but I still had respect for
+      her! If anything I\u2019d want her to still be alive, to witness me surpass
+      her!\r\n\r\nIf you want someone to suspect, Detective, I\u2019d suggest looking
+      into Mr. Damien. I heard Nikki was thinking of firing him, maybe he felt threatened.\r"
+    Question1:
+      QuestionText: 
+      NextElementNumber: 4
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: But I suppose that now Nikki is gone, you should have no competition
+        left in Wandermere eh?
+      NextElementNumber: 3
   dialogueAfterClue: []
 --- !u!95 &396490896115949879
 Animator:

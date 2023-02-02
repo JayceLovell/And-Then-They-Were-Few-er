@@ -188,13 +188,13 @@ MonoBehaviour:
   DialogueForInterrogations:
   - NoQuestions: 0
     NextElementNumber: 0
-    Response: 
+    Response: Hello
     Question1:
       QuestionText: "There are members in this household that strongly suspect you
         of being Nikki\u2019s murderer"
       NextElementNumber: 1
     Question2:
-      QuestionText: What was your relation to Nikki?
+      QuestionText: 
       NextElementNumber: 0
     Question3:
       QuestionText: Where were you at the time of the murder?
@@ -207,7 +207,7 @@ MonoBehaviour:
         was a pipe in the corner of the room. Did you use this to attack Nikki?
       NextElementNumber: 2
     Question2:
-      QuestionText: Potato Test
+      QuestionText: 
       NextElementNumber: 0
     Question3:
       QuestionText: No Option
