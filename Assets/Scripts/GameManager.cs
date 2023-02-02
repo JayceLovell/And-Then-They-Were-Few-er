@@ -197,11 +197,25 @@ public class GameManager : MonoBehaviour
 
         PlayerPrefs.Save();
     }
+    /// <summary>
+    /// Prepares new Game
+    /// </summary>
     public void NewGame()
     {
         PlayerPrefs.DeleteKey("LastScene");
-        PlayerPrefs.DeleteKey("PlayTextNumber");
+        PlayerPrefs.DeleteKey("Player Progress");
+        PlayerPrefs.DeleteKey("Game Time");
         _loadPlayerPrefs();
+        StartGame();
+    }
+    public void StartGame()
+    {
+        if (CurrentGameProgress == 0)
+            SceneManager.LoadScene("Text");
+        else if (CurrentGameProgress > 5)
+            SceneManager.LoadScene("GrandHall");
+        else
+            SceneManager.LoadScene("Entrance");
     }
     public void SaveScene()
     {
