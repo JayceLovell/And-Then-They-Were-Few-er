@@ -11,6 +11,8 @@ public class InterrogationController : MonoBehaviour
     private GameManager _gameManager;
     private Component _npcComponent=null;
     private int _nextElementForInterrogating;
+    [SerializeField]
+    private Sprite Profile;
 
     public Sprite PlayerProfile;
     public DialogueObjectController DialogBox;
@@ -42,6 +44,9 @@ public class InterrogationController : MonoBehaviour
     {
         _gameManager = GameManager.Instance;
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("InterrogationScene"));
+        //Grab profile quick before disappear
+        Profile = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().Profile;
+
         SceneManager.UnloadSceneAsync("GrandHall");
 
         StartCoroutine(WaitForOneSecond());
@@ -68,6 +73,11 @@ public class InterrogationController : MonoBehaviour
             DialogBox.Display(true);
             _npcComponent.GetType().GetMethod("StartDialogue").Invoke(_npcComponent, null);
         }
+    }
+    public void ImTalking()
+    {
+        DialogBox.SpeakerName = "Ashlyn";
+        DialogBox.SpeakerImage = Profile;
     }
     public void OnQuit()
     {

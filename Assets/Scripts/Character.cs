@@ -122,6 +122,7 @@ public class Character :MonoBehaviour
     public class DialogueForInterrogation
     {
         public bool NoQuestions;
+        public bool PlayerTalk;
         public bool EndInterrogation;        
         public int NextElementNumber;
         [TextArea(15, 10)]
@@ -129,7 +130,6 @@ public class Character :MonoBehaviour
         public Question Question1;
         public Question Question2;
         public Question Question3;
-
 
     }
     [System.Serializable]
@@ -148,11 +148,15 @@ public class Character :MonoBehaviour
     public class DialogueAfterClue
     {
         public bool NoQuestions;
-        [TextArea(15, 20)]
+        public bool EndInterrogation;
+        public bool PlayerTalk;
+        [Tooltip("Only if NoQuestions is checked")]
+        public int NextElementNumber;
+        [TextArea(15, 10)]
         public string Response;
-        public string Question1;
-        public string Question2;
-        // public Question Question3;
+        public Question Question1;
+        public Question Question2;
+        public Question Question3;
     }
     // Start is called before the first frame update
     void Start()
@@ -199,7 +203,6 @@ public class Character :MonoBehaviour
     {
         if (!_isTalking)
         {
-            // MUST FIX THIS IF STATEMENT
             if ((DialogueForInterrogations[_numDialog].EndInterrogation && InterrigrationMode) ||
                 dialogForRegularConvo.Count < _numDialog && !InterrigrationMode)                 
             {
