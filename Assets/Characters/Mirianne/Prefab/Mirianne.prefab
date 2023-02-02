@@ -207,12 +207,12 @@ MonoBehaviour:
       you and our dear Mayor were going to fetch real law enforcement once this storm
       cleared up'
     Question1:
+      QuestionText: 
+      NextElementNumber: 0
+    Question2:
       QuestionText: "I\u2019d just like to know all the facts, before the Mayor and
         I approach the police."
       NextElementNumber: 3
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
     Question3:
       QuestionText: 
       NextElementNumber: 0
@@ -226,12 +226,12 @@ MonoBehaviour:
 
 '
     Question1:
+      QuestionText: 
+      NextElementNumber: 0
+    Question2:
       QuestionText: "There\u2019s a potential murderer on the loose. And Nikki was
         my best friend. I need to get to the bottom of this"
       NextElementNumber: 4
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
     Question3:
       QuestionText: 
       NextElementNumber: 0
