@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-using static Character;
 
 /// <summary>
 /// Character parent class
@@ -110,7 +110,7 @@ public class Character :MonoBehaviour
     {
         [TextArea(15, 20)]
         public string Text;
-        public bool ImTalking;
+        public bool NPCTalking;
     }
 
     /// <summary>
@@ -122,14 +122,14 @@ public class Character :MonoBehaviour
     public class DialogueForInterrogation
     {
         public bool NoQuestions;
-        [Tooltip("Set to the number of Dialogue to end! Example if number of dialog is 10 put 9.")]
+        public bool PlayerTalk;
+        public bool EndInterrogation;        
         public int NextElementNumber;
         [TextArea(15, 10)]
         public string Response;
         public Question Question1;
         public Question Question2;
         public Question Question3;
-
 
     }
     [System.Serializable]
@@ -148,17 +148,22 @@ public class Character :MonoBehaviour
     public class DialogueAfterClue
     {
         public bool NoQuestions;
-        [TextArea(15, 20)]
+        public bool EndInterrogation;
+        public bool PlayerTalk;
+        [Tooltip("Only if NoQuestions is checked")]
+        public int NextElementNumber;
+        [TextArea(15, 10)]
         public string Response;
-        public string Question1;
-        public string Question2;
-        // public Question Question3;
+        public Question Question1;
+        public Question Question2;
+        public Question Question3;
     }
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         _positionCheck(GameManager.Instance.CurrentScene);
     }
+
     /// <summary>
     /// Check if Object is in correct Position for the scene
     /// </summary>
@@ -199,9 +204,8 @@ public class Character :MonoBehaviour
     {
         if (!_isTalking)
         {
-            // MUST FIX THIS IF STATEMENT
-            if ((dialogForRegularConvo.Count == _numDialog) || 
-                ((DialogueForInterrogations.Count == _numDialog) && InterrigrationMode))
+            if ((DialogueForInterrogations[_numDialog].EndInterrogation && InterrigrationMode) ||
+                dialogForRegularConvo.Count < _numDialog && !InterrigrationMode)                 
             {
                 InDialog = false;
                 _dialogBox.Display(false);
@@ -223,7 +227,7 @@ public class Character :MonoBehaviour
                 }
                 else
                 {
-                    if (dialogForRegularConvo[_numDialog].ImTalking)
+                    if (dialogForRegularConvo[_numDialog].NPCTalking)
                     {
                         _dialogBox.SpeakerName = Name.ToString();
                         _dialogBox.SpeakerImage = Profile;

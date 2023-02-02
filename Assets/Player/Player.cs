@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
 
     private GameController _gameController;
 
+    public bool PlayWalkSound;
+
     public float PlayerSpeed;
     public bool CanInteract;
     public bool CanTalkToNPC;
@@ -49,6 +51,14 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
+    void Update()
+    {
+        if (PlayWalkSound)
+        {
+            SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
+            PlayWalkSound = false;
+        }
+    }
     void FixedUpdate()
     {
         if(Talking)
@@ -57,6 +67,8 @@ public class Player : MonoBehaviour
         }
 
         _rigidbody.velocity = moveInput * PlayerSpeed;
+        
+
         switch (moveInput.y)
         {
             case 1:
@@ -98,8 +110,7 @@ public class Player : MonoBehaviour
                 moveInput = value.Get<Vector2>();
             else
                 moveInput = Vector2.zero;
-
-            SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
+            
         }
     }
     /// <summary>
@@ -153,6 +164,7 @@ public class Player : MonoBehaviour
         }
 
     }
+
     public void ImTalking()
     {
         DialogBox.SpeakerName = "Ashlyn";

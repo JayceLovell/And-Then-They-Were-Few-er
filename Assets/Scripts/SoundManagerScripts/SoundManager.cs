@@ -33,7 +33,7 @@ public static class SoundManager
         AudioSource audioSource = bgsoundGameObject.AddComponent<AudioSource>();
         audioSource.PlayOneShot(GetBGAudio(bgSound));
         audioSource.loop = true;
-        audioSource.volume= GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().BGMusicVolume;
+        audioSource.volume= GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().BGMVolume;
     }
     /// <summary>
     /// Grabs Enum audio and plays once
@@ -44,7 +44,7 @@ public static class SoundManager
         GameObject soundGameObject = new GameObject("SoundFX");
         AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
         audioSource.PlayOneShot(GetAudio(sound));
-        audioSource.volume = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SfxVolume;
+        audioSource.volume = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SFXVolume;
         soundGameObject.AddComponent<SoundFXLife>().SoundLength=GetAudio(sound).length;
     }
     private static AudioClip GetBGAudio(BgSound sound)
