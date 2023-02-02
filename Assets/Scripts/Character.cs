@@ -110,7 +110,7 @@ public class Character :MonoBehaviour
     {
         [TextArea(15, 20)]
         public string Text;
-        public bool ImTalking;
+        public bool NPCTalking;
     }
 
     /// <summary>
@@ -159,7 +159,7 @@ public class Character :MonoBehaviour
         public Question Question3;
     }
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         _positionCheck(GameManager.Instance.CurrentScene);
     }
@@ -227,7 +227,7 @@ public class Character :MonoBehaviour
                 }
                 else
                 {
-                    if (dialogForRegularConvo[_numDialog].ImTalking)
+                    if (dialogForRegularConvo[_numDialog].NPCTalking)
                     {
                         _dialogBox.SpeakerName = Name.ToString();
                         _dialogBox.SpeakerImage = Profile;

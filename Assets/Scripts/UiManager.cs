@@ -132,7 +132,15 @@ public class UiManager : MonoBehaviour
                 _clockText.text= string.Format("{00:00}:{01:00}", _countDownMinutes,_countDownSeconds);
                 break;
             default:
-                _clockText.text = "00:00";
+                if (_gameManager.CurrentGameProgress > 2)
+                {
+                    _countDownMinutes = Mathf.FloorToInt(_gameManager.GameTime / 60);
+                    _countDownSeconds = Mathf.FloorToInt(_gameManager.GameTime % 60);
+                    _clockText.text = string.Format("{00:00}:{01:00}", _countDownMinutes, _countDownSeconds);
+                }
+                else
+                    // Print time in 12 hr format
+                    _clockText.text = DateTime.Now.ToString("hh:mm");
                 break;
         }        
     }

@@ -56,12 +56,11 @@ public class GameManager : MonoBehaviour
     public int CurrentGameProgress
     {
         get {
-            _currentGameProgress = PlayerPrefs.GetInt("PlayTextNumber");
+            _currentGameProgress = PlayerPrefs.GetInt("PlayerProgress");
             return _currentGameProgress; 
         }
         set { 
-            _currentGameProgress = value;
-            PlayerPrefs.SetInt("PlayTextNumber",value);
+            _currentGameProgress = value;            
         }
     }
     /// <summary>
@@ -153,6 +152,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("GameManager Enabled");
         SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
     void Awake()
     {
@@ -192,6 +192,10 @@ public class GameManager : MonoBehaviour
                  GameTime -= Time.deltaTime;
             }
         }
+    }
+    private void _savePlayerPrefs()
+    {
+        PlayerPrefs.SetInt("PlayerProgress", _currentGameProgress);
     }
     public void NewGame()
     {
@@ -241,6 +245,10 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+    void OnSceneUnloaded(Scene current)
+    {
+        _savePlayerPrefs();
+    }
     public void LoadInstructions()
     {
         SceneManager.LoadScene("Instructions", LoadSceneMode.Additive);
@@ -253,5 +261,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("GameManger Disable");
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 }
