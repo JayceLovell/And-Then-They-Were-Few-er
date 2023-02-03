@@ -113,46 +113,46 @@ MonoBehaviour:
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Ah, you must be Detective Ashlyn. Nikki has told me so much about you.
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'She has? So I would assume you''re Nikki''s apprentice then?
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: 'Oh, pardon me I forgot to introduce myself. I am Damien and yes I am Nikki''s
       apprentice.
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Nikki was so excited to finally meet you again, so please make yourself
       at home.
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Ashlyn begins to blush a little)
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: 'I''m surprised Nikki still cares about me that much considering it''s
       been years since we last talked.
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: 'Of course Nikki still cares. To tell the truth she''s been wanting to
       meet with you again for a while now but has been far too busy to reach out
       until now.
@@ -160,33 +160,35 @@ MonoBehaviour:
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Whoa... I guess it isn''t easy being an inventor.
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: "Sadly it isn't but that's what makes today quite special. \r\n\r\n"
-    ImTalking: 1
+    NPCTalking: 0
   - Text: 'She arranged this whole event so we could celebrate her achievements and
       have a good time.
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 0
   - Text: 'So please enjoy the food and drink and relax.
 
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 0
   - Text: "Haha, yeah will do.\r"
-    ImTalking: 0
+    NPCTalking: 1
   DialogueForInterrogations:
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: Hello
     Question1:
@@ -200,6 +202,8 @@ MonoBehaviour:
       QuestionText: Where were you at the time of the murder?
       NextElementNumber: 3
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 2
     Response: Me?!
     Question1:
@@ -213,6 +217,8 @@ MonoBehaviour:
       QuestionText: No Option
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 4
     Response: "I assure you Detective, I\u2019m the last person here who would want
       Nikki dead. She\u2019s the only person who was willing to take me in as an
@@ -227,6 +233,8 @@ MonoBehaviour:
       QuestionText: No Option
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 5
     Response: I was in the study
     Question1:
@@ -239,6 +247,8 @@ MonoBehaviour:
       QuestionText: No Option
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: "I don\u2019t know about that. But I do know that Nikki was already
       stressed over the pressure she was getting from her Mother to abandon her scientific
@@ -253,6 +263,8 @@ MonoBehaviour:
       QuestionText: No Option
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 6
     Response: Yes, Karol was with me
     Question1:
@@ -265,6 +277,8 @@ MonoBehaviour:
       QuestionText: No Option
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 7
     Response: '*Damien stutters*... Umm, we had struck up a conversation about Nikki''s
       synthesizer.'
@@ -279,6 +293,8 @@ MonoBehaviour:
       QuestionText: No Option
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: Umm...
     Question1:

@@ -116,48 +116,50 @@ MonoBehaviour:
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Hello there. I''m Detective Ashlyn, nice to meet you.
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: "Hello yes, I am Karol. Inventor extraordinaire! I\u2019m sure you\u2019ve
       heard all about me.\r\n\r\n"
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Uh... no sorry, can''t say I have.
 
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: (Karol looks disappointed)
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Oh...
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'W-well, I guess you can''t expect a detective such as yourself to be plugged
       into the world of inventing.
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: "I'll be taking the place of Nikki as the most prolific inventor in Wandermere
       soon enough. \r\n\r\n"
-    ImTalking: 1
+    NPCTalking: 1
   - Text: "Once my latest invention is complete you'll be hearing my name uttered
       from the lips of everyone in town.\r"
-    ImTalking: 1
+    NPCTalking: 1
   - Text: "Well if you say so. Good luck\u2026 I guess."
-    ImTalking: 0
+    NPCTalking: 0
   DialogueForInterrogations:
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: 
     Question1:
@@ -170,6 +172,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: "I was in my room. I couldn\u2019t sleep of course."
     Question1:
@@ -182,6 +186,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: "Nikki\u2019s Synthesizer! I hate to say it, but it\u2019s the most
       amazing technology I\u2019ve ever seen!\n\nMy brain could just not stop thinking
@@ -198,6 +204,8 @@ MonoBehaviour:
         left in Wandermere eh?
       NextElementNumber: 3
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: "What are you trying to say Detective? \n\nAre you trying to suggest
       that it was me who killed Nikki? That\u2019s a heavy accusation!\n\n\n"
@@ -211,6 +219,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 1
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: "Now, Nikki and I may have been rivals, but I still had respect for
       her! If anything I\u2019d want her to still be alive, to witness me surpass

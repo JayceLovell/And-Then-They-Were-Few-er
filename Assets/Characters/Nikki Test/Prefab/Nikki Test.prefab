@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InterrigrationMode: 0
-  Scene: 1
   Name: 0
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: f74ba6833eb82af4b9b2340716a6382f, type: 3}
@@ -117,31 +116,31 @@ MonoBehaviour:
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Nikki, long time no see!
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: "Ashlyn! It\u2019s been so long! I\u2019m so glad you could make it!\r\n\r\n"
-    ImTalking: 1
+    NPCTalking: 1
   - Text: "Well, I couldn\u2019t say no to an invitation from an old friend. Quite
       the fancy to-do you\u2019ve set up.\r\n\r\n"
-    ImTalking: 0
+    NPCTalking: 0
   - Text: "Heh heh, glad you\u2019re impressed. It takes a lot more effort than you
       might think to set up one of these. Almost didn\u2019t want to do it but it\u2019d
       be a shame not to show off my latest invention.\r\n\r\n"
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'What is the invention anyway? You never told anyone, did you?
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: "You\u2019ll just have to wait and see! Can\u2019t spoil the surprise!"
-    ImTalking: 1
-  dialogueForInterrigations: []
+    NPCTalking: 1
+  DialogueForInterrogations: []
   dialogueAfterClue: []
 --- !u!95 &6858053411055140244
 Animator:

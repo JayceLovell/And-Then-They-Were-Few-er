@@ -114,84 +114,86 @@ MonoBehaviour:
       and conspiracies)
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: Good Evening
-    ImTalking: 0
+    NPCTalking: 0
   - Text: (Jayson looks Ashlyn up and down)
-    ImTalking: 1
+    NPCTalking: 1
   - Text: Well, Hello There
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Ashlyn finds Jayson quite attractive, and returns his smile)
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: Well, Hello yourself
-    ImTalking: 0
+    NPCTalking: 0
   - Text: You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's
       hot new detective in the flesh
-    ImTalking: 1
+    NPCTalking: 1
   - Text: So I see my reputation precedes me, eh?
-    ImTalking: 0
+    NPCTalking: 0
   - Text: Do I live up to the stories?
-    ImTalking: 0
-  - Text: '(J grins at A)
+    NPCTalking: 0
+  - Text: '(Jayson grins at Ashlyn)
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'That''s yet to be determined
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: I'm afraid though, that you might have some competition
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Oh? And who might that be?
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: '(Jayson, takes a step closer, but trips and ends up falling on his front)
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Ashlyn laughs, but not in a cruel mocking way, moreso found it cute and
       funny)
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: '(Jayson hurriedly picks himself up hurriedly and stretches out his hand
       to shake Ashlyn''s)
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Winded, still comes off as confident, but clearly a bit embarrassed)
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Jayson Klutsch! I may not have your reputation quite yet, but I do believe
       I''m a force to be reckoned with
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Ashlyn shakes his hand back, still giggling)
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: Glad to make your acquaintance
-    ImTalking: 0
+    NPCTalking: 0
   DialogueForInterrogations:
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: 
     Question1:

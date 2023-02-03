@@ -112,42 +112,44 @@ MonoBehaviour:
   dialogForRegularConvo:
   - Text: "(Nervous character always searching for his father and fixing the problems
       he causes)\r\n\r"
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(His Dad is the crazy old man)
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Hi
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: 'Oh, hello there.
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: "Come to see the showcase as well?\r\n\r\n\r"
-    ImTalking: 0
+    NPCTalking: 0
   - Text: 'Yeah, but I''m worried my Dad might do something to interrupt the show.
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: (Both turn to look at the Old Man, who is muttering something loud about
       gears)
-    ImTalking: 0
+    NPCTalking: 0
   - Text: 'Oh Dad...
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: (John covers his hands with his face in embarrassment)
-    ImTalking: 1
+    NPCTalking: 1
   DialogueForInterrogations:
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: 
     Question1:
@@ -160,6 +162,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: I was in my room.
     Question1:
@@ -172,6 +176,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: John begins to blush profusely
     Question1:
@@ -184,6 +190,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: I was in the bathroom with my Dad
     Question1:
@@ -197,6 +205,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: "Please don\u2019t tell anyone! I was already scared that we would
       get caught last night, someone tried to use the bathroom when we were in there!\r\n"
@@ -210,6 +220,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: No idea. But before they realized it was occupied they tried really
       hard to get in. They must have need to pee really badly
@@ -223,6 +235,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 1
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: "After that, it seemed like they went into the next stall. I think
       I might have heard something hit the floor, but I\u2019m not sure, I didn\u2019t

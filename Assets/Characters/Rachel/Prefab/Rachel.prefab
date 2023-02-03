@@ -115,26 +115,26 @@ MonoBehaviour:
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Ashlyn bumps into Rachel accidentally and causes her to drop her purse)
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: 'Oh!
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Rachel bends over to pick her purse)
 
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Ashlyn notices that a handkerchief has fallen out of the purse, and picks
       it up to hand it back to Rachel)
 
@@ -142,38 +142,40 @@ MonoBehaviour:
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: "Sorry about all this. I\u2019m Ashlyn by the way, nice to meet you\r\n\r\n"
-    ImTalking: 0
+    NPCTalking: 0
   - Text: '(Ashlyn notices that Rachel looks distressed, as though she has something
       else on her mind)
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: "I\u2019m Rachel. Nikki\u2019s Mother\r\n\r\n\n\n\r\n\n\n\r\n"
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Rachel looks like she wants to leave)
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(There is a short, awkward silence)
 
 '
-    ImTalking: 1
+    NPCTalking: 0
   - Text: 'Well, nice to meet you!
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: ...Likewise
-    ImTalking: 1
+    NPCTalking: 1
   - Text: (Rachel's expression, however, remains cold)
-    ImTalking: 1
+    NPCTalking: 1
   - Text: (Ashlyn turns away, feeling a bit embarrassed)
-    ImTalking: 0
+    NPCTalking: 0
   DialogueForInterrogations:
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: Rachel has her hands in her face, and is crying.
     Question1:
@@ -186,6 +188,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: "I just can\u2019t believe she\u2019s gone. Who would do this to my
       poor baby?"
@@ -199,6 +203,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: After the showcase. Watson and I were helping her to clean up, but
       I felt a bit faint and went to bed shortly after.
@@ -213,6 +219,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: " (a bit startled): Ah, Nikki usually shuts him down for the night
       before bed. I don\u2019t know where he is kept though."
@@ -226,6 +234,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 1
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: "May I have a moment? I just\u2026.\r\n\n(Rachel turns away from Ashlyn,
       and starts to sob again)"

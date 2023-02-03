@@ -115,54 +115,56 @@ MonoBehaviour:
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Do you smell it in the air?
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Excuse me? Smell what?
 
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: 'The gears of course! I love the smell of freshly oiled gears!
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: "(The Crazy Old Man has an excited but wild look about him) \n\r\n"
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Well, I can kind of relate. I like the smell of fresh ink and newly printed
       parchment paper
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: 'Ashlyn smiles cheekily
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: 'Ink? Parchment! Now that''s just weird
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: (The Crazy Old Man sticks his tongue out at Ashlyn and starts muttering
       to himself)
-    ImTalking: 1
+    NPCTalking: 1
   - Text: (Ashlyn, mystified, walks away)
-    ImTalking: 0
+    NPCTalking: 0
   DialogueForInterrogations:
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: 
     Question1:
@@ -175,6 +177,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: I was in the bathroom.
     Question1:
@@ -187,6 +191,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: Yes, my son was inside with me.
     Question1:
@@ -199,6 +205,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 1
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: "I always ask him to accompany me so that I have someone to hold my
       gears. Don\u2019t want to drop them in the toilet!"

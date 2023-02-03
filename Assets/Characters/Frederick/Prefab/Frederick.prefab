@@ -111,13 +111,15 @@ MonoBehaviour:
     Position: {x: -1.88, y: 11.79}
   dialogForRegularConvo:
   - Text: (The corrupt mayor of the town)
-    ImTalking: 1
+    NPCTalking: 1
   - Text: Good Evening Mayor
-    ImTalking: 0
+    NPCTalking: 0
   - Text: Good Evening Ms. Hunt
-    ImTalking: 1
+    NPCTalking: 1
   DialogueForInterrogations:
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: 
     Question1:
@@ -130,6 +132,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: I was in [some room near the lab]. I heard a loud noise, and went out
       into the hall to investigate. I walked by the lab, but the door was closed
@@ -145,6 +149,8 @@ MonoBehaviour:
         Nikki
       NextElementNumber: 4
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: 'I had thought it might be thunder. '
     Question1:
@@ -157,6 +163,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: I did see Mirianne, but she was a bit further down the hall and walking
       away from the lab
@@ -170,6 +178,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 0
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: Strange... And the keys to the room were not inside when you discovered
       the body?
@@ -183,6 +193,8 @@ MonoBehaviour:
       QuestionText: 
       NextElementNumber: 0
   - NoQuestions: 1
+    PlayerTalk: 0
+    EndInterrogation: 0
     NextElementNumber: 0
     Response: It might do us some good to look for them
     Question1:
