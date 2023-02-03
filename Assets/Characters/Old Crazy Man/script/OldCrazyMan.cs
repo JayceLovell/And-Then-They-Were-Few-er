@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class OldCrazyMan : Character
-{/*
+{
     void Start()
     {
         base.Start();
-        
+
         //Regular
         //DialogRegularConvo ExampleRegularConvo = new DialogRegularConvo();
         //ExampleRegularConvo.Text = "Example";
@@ -22,11 +23,13 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo.NoQuestions = false;
         ExampleInterrogationConvo.Response = "I was in the bathroom.";
         //Creating a Question
+
+        ExampleInterrogationConvo.Question1 = new Question();
         ExampleInterrogationConvo.Question1.QuestionText = "Where were you at the time of the murder?";
         ExampleInterrogationConvo.Question1.NextElementNumber = 1;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo);
-    }*/
+    }
 }
 
 /* 
