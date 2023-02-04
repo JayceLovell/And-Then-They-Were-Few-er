@@ -190,21 +190,7 @@ MonoBehaviour:
     NPCTalking: 0
   - Text: Glad to make your acquaintance
     NPCTalking: 0
-  DialogueForInterrogations:
-  - NoQuestions: 0
-    PlayerTalk: 0
-    EndInterrogation: 0
-    NextElementNumber: 0
-    Response: 
-    Question1:
-      QuestionText: 
-      NextElementNumber: 0
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
+  DialogueForInterrogations: []
   dialogueAfterClue: []
 --- !u!61 &5565415678146893301
 BoxCollider2D:
