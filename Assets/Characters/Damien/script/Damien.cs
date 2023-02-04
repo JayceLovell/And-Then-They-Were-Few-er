@@ -31,8 +31,8 @@ public class Damien : Character
         ExampleInterrogationConvo.Question1.NextElementNumber = 1;
 
         ExampleInterrogationConvo.Question2 = new Question();
-        ExampleInterrogationConvo.Question2.QuestionText = " ";
-        ExampleInterrogationConvo.Question2.NextElementNumber = 0;
+        ExampleInterrogationConvo.Question2.QuestionText = "Do you know where Watson is?";
+        ExampleInterrogationConvo.Question2.NextElementNumber = 5;
 
         ExampleInterrogationConvo.Question3 = new Question();
         ExampleInterrogationConvo.Question3.QuestionText = " ";
@@ -135,6 +135,30 @@ public class Damien : Character
         ExampleInterrogationConvo4.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo4);
+
+        //Element 5
+
+        DialogueForInterrogation ExampleInterrogationConvo5 = new DialogueForInterrogation();
+        ExampleInterrogationConvo5.NextElementNumber = 1;
+        ExampleInterrogationConvo5.PlayerTalk = false;
+        ExampleInterrogationConvo5.EndInterrogation = false;
+        ExampleInterrogationConvo5.NoQuestions = false;
+        ExampleInterrogationConvo5.Response = "His recharge station should be right next to Rachel's room";
+        //Creating a Question
+
+        ExampleInterrogationConvo5.Question1 = new Question();
+        ExampleInterrogationConvo5.Question1.QuestionText = "Oh really...";
+        ExampleInterrogationConvo5.Question1.NextElementNumber = 0;
+
+        ExampleInterrogationConvo5.Question2 = new Question();
+        ExampleInterrogationConvo5.Question2.QuestionText = " ";
+        ExampleInterrogationConvo5.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo5.Question3 = new Question();
+        ExampleInterrogationConvo5.Question3.QuestionText = " ";
+        ExampleInterrogationConvo5.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo5);
     }
 }
 
