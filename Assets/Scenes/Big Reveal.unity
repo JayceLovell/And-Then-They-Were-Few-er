@@ -1042,6 +1042,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 434275841784699051}
+    - target: {fileID: 3061314198911271966, guid: 7a21c147fbbe8594ca3b7ba4a9f7edcd, type: 3}
+      propertyPath: SpeakerProfile
+      value: 
+      objectReference: {fileID: 2573575185502190621}
     - target: {fileID: 4711017160800352395, guid: 7a21c147fbbe8594ca3b7ba4a9f7edcd, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -1070,6 +1074,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9104865123400293993, guid: 7a21c147fbbe8594ca3b7ba4a9f7edcd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a21c147fbbe8594ca3b7ba4a9f7edcd, type: 3}
 --- !u!114 &2573575185502190620 stripped
@@ -1081,6 +1089,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9698915717fd3545bb47cc7cbbe7208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2573575185502190621 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 236657304515544269, guid: 7a21c147fbbe8594ca3b7ba4a9f7edcd, type: 3}
+  m_PrefabInstance: {fileID: 2573575185502190619}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &5066842050026063993

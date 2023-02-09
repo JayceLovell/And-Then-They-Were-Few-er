@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 5022030404219044078}
   - component: {fileID: 3127461312995875478}
   - component: {fileID: 5345708091527531508}
-  - component: {fileID: 3282730221336518318}
   - component: {fileID: 5646326592726193672}
+  - component: {fileID: -181777302261430544}
   m_Layer: 0
   m_Name: Mirianne
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,25 +99,293 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c579446a620410643aec8157659edca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InterrigrationMode: 0
   Name: 6
-  TrustLevel: 0
-  isAlive: 1
-  Profile: {fileID: 2800000, guid: 74002ac4f7ae36e4a820e9575123920e, type: 3}
+  CorrectClue: {fileID: 0}
+  Profile: {fileID: 21300000, guid: 74002ac4f7ae36e4a820e9575123920e, type: 3}
   InterrigationSprite: {fileID: 0}
-  Positions: []
---- !u!65 &3282730221336518318
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3201545564706949019}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.15140113, y: 0.19169304, z: 0.20000002}
-  m_Center: {x: 0.016569372, y: -0.0016569893, z: 0}
+  characterPosition:
+  - Scene: 1
+    Position: {x: 32.62097, y: -9.561905}
+  - Scene: 2
+    Position: {x: -0.6488919, y: -6.540929}
+  dialogForRegularConvo:
+  - Text: '(Miriane, a vain trend chasing fashion designer. Rich.)
+
+
+
+'
+    ImTalking: 1
+  - Text: 'Oh, so you''re here too, are you?
+
+
+
+'
+    ImTalking: 1
+  - Text: 'Well, hello to you too
+
+
+
+'
+    ImTalking: 0
+  - Text: '(Mirianne stares at Ashlyn in disdain)
+
+
+
+'
+    ImTalking: 1
+  - Text: 'I''m a friend of Nikki''s
+
+
+
+'
+    ImTalking: 0
+  - Text: '(Mirianne continues to stare)
+
+
+
+'
+    ImTalking: 1
+  - Text: 'Ah, I see
+
+
+
+'
+    ImTalking: 1
+  - Text: "I must admit, Nikki's built quite the reputation for herself.  \r\n\r\n"
+    ImTalking: 1
+  - Text: '(Ashlyn grins rogue-ishly)
+
+
+'
+    ImTalking: 0
+  - Text: "Yeah, ol' Nikki's on the up and up \r\n\r\n"
+    ImTalking: 0
+  - Text: 'Well, she might be Wandermere''s hottest new inventor, but I have a feeling
+      that someone else will be taking her spot pretty soon
+
+
+
+'
+    ImTalking: 1
+  - Text: (Ashlyn narrows her eyes at M as she walks away)
+    ImTalking: 0
+  - Text: "(M narrows hers as well)\r"
+    ImTalking: 1
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: 
+    Question1:
+      QuestionText: Where were you at the time of the murder?
+      NextElementNumber: 1
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "I don\u2019t see why this is any of your business, \u201CDetective\u201D"
+    Question1:
+      QuestionText: "Hey! Don\u2019t tell me you are going to undermine an active
+        murder investigation"
+      NextElementNumber: 2
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: 'Well, last time I checked, you are not the police.
+
+
+      I thought
+      you and our dear Mayor were going to fetch real law enforcement once this storm
+      cleared up'
+    Question1:
+      QuestionText: 
+      NextElementNumber: 0
+    Question2:
+      QuestionText: "I\u2019d just like to know all the facts, before the Mayor and
+        I approach the police."
+      NextElementNumber: 3
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: '(Ashlyn takes a deep breath, trying to control her anger)
+
+
+      Ashlyn
+      then sighs, and her tone changes  from interrogative to mournful
+
+'
+    Question1:
+      QuestionText: 
+      NextElementNumber: 0
+    Question2:
+      QuestionText: "There\u2019s a potential murderer on the loose. And Nikki was
+        my best friend. I need to get to the bottom of this"
+      NextElementNumber: 4
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: (Mirianne, who had been glaring at Ashlyn, changes her expression somewhat
+      to a look of resentful understanding)
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 5
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "Well, if there\u2019s one thing that hasn\u2019t changed, it\u2019s
+      how much you\u2019re willing to do for your friends\u2026\r\n"
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 6
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: If you must know, I was in [some room near the lab].
+    Question1:
+      QuestionText: Hold on. The Mayor says he saw you in [different room].
+      NextElementNumber: 7
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: (Miriane stutters for a bit, shocked, but quickly recovers)
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 8
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: Oh! Pardon me, I seem to have misremembered. Yes I was indeed in that
+      room.
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 9
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "I could hear two people talking very loudly, but couldn\u2019t make
+      out what they were saying. The storm was too loud."
+    Question1:
+      QuestionText: What happened next?
+      NextElementNumber: 10
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "At the time, I heard a very loud sound, which I assumed was the thunder.
+      But now that I think about it\u2026"
+    Question1:
+      QuestionText: What?
+      NextElementNumber: 11
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "(Miriane begins to scowl\r)\n"
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 12
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "\u2026It may have been a body hitting the ground."
+    Question1:
+      QuestionText: Oh...
+      NextElementNumber: 13
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "(Miriane\u2019s expression hardens)"
+    Question1:
+      QuestionText: Next
+      NextElementNumber: 14
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "I didn\u2019t pay it any mind. Shortly after, I left for my room.\n\nMay
+      I go now, \"Detective\"?"
+    Question1:
+      QuestionText: Yes. And Mirianne, Thank You
+      NextElementNumber: 15
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: Mirianne Leaves
+    Question1:
+      QuestionText: 
+      NextElementNumber: 0
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  dialogueAfterClue: []
 --- !u!95 &5646326592726193672
 Animator:
   serializedVersion: 4
@@ -138,3 +406,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &-181777302261430544
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201545564706949019}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009535298, y: -0.0012078956}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.42, y: 0.33}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.18936592, y: 0.2159035}
+  m_EdgeRadius: 0

@@ -78,14 +78,14 @@ public class UiManager : MonoBehaviour
     {
         //Set Up Background Volume Slider
         Slider volumeslider = GameObject.Find("BGVolumeSlider").GetComponent<Slider>();
-        volumeslider.value = _gameManager.BGMusicVolume;
-        volumeslider.onValueChanged.AddListener(delegate { _gameManager.BGMusicVolume = volumeslider.value; });
+        volumeslider.value = _gameManager.BGMVolume;
+        volumeslider.onValueChanged.AddListener(delegate { _gameManager.BGMVolume = volumeslider.value; });
         volumeslider.onValueChanged.AddListener(value => SoundManager.MasterVolumeChanged(value));
 
         //Set Up FX Volume Slider
         Slider FXvolumeslider = GameObject.Find("FXVolumeSlider").GetComponent<Slider>();
-        FXvolumeslider.value = _gameManager.BGMusicVolume;
-        FXvolumeslider.onValueChanged.AddListener(delegate { _gameManager.SfxVolume = FXvolumeslider.value; });
+        FXvolumeslider.value = _gameManager.BGMVolume;
+        FXvolumeslider.onValueChanged.AddListener(delegate { _gameManager.SFXVolume = FXvolumeslider.value; });
 
         //Set Up ResumeButton
         Button ResumeButton = GameObject.Find("ResumeButton").GetComponent<Button>();
@@ -106,6 +106,7 @@ public class UiManager : MonoBehaviour
         {
             case "Entrance":
             case "GrandHall":
+            case "InterrogationScene":
                 StartCoroutine(FindRequiredGameObjects());
             break;
         }        
@@ -132,7 +133,15 @@ public class UiManager : MonoBehaviour
                 _clockText.text= string.Format("{00:00}:{01:00}", _countDownMinutes,_countDownSeconds);
                 break;
             default:
-                _clockText.text = "00:00";
+                if (_gameManager.CurrentGameProgress > 2)
+                {
+                    _countDownMinutes = Mathf.FloorToInt(_gameManager.GameTime / 60);
+                    _countDownSeconds = Mathf.FloorToInt(_gameManager.GameTime % 60);
+                    _clockText.text = string.Format("{00:00}:{01:00}", _countDownMinutes, _countDownSeconds);
+                }
+                else
+                    // Print time in 12 hr format
+                    _clockText.text = DateTime.Now.ToString("hh:mm");
                 break;
         }        
     }
@@ -142,7 +151,7 @@ public class UiManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator FindRequiredGameObjects()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
 
         // first do clock
         Clock = GameObject.FindGameObjectWithTag("Clock");

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 282814990967450337}
   m_Layer: 0
   m_Name: Karol
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,12 +99,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85be5d9dc897031449ae0e6bad6b0092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InterrigrationMode: 0
   Name: 5
-  TrustLevel: 0
-  isAlive: 1
-  Profile: {fileID: 2800000, guid: cf56f4f7d70b8f34fb0e3d898f74e7c9, type: 3}
+  CorrectClue: {fileID: 0}
+  Profile: {fileID: 21300000, guid: cf56f4f7d70b8f34fb0e3d898f74e7c9, type: 3}
   InterrigationSprite: {fileID: 0}
-  Positions: []
+  characterPosition:
+  - Scene: 1
+    Position: {x: 28.1636, y: -9.535529}
+  - Scene: 2
+    Position: {x: -0.7659025, y: -2.679589}
+  dialogForRegularConvo:
+  - Text: '(The eccentric and energetic rival inventor to Nikki Test. Is sponsored
+      by Mirianne)
+
+
+
+'
+    ImTalking: 1
+  - Text: 'Hello there. I''m Detective Ashlyn, nice to meet you.
+
+
+
+'
+    ImTalking: 0
+  - Text: "Hello yes, I am Karol. Inventor extraordinaire! I\u2019m sure you\u2019ve
+      heard all about me.\r\n\r\n"
+    ImTalking: 1
+  - Text: 'Uh... no sorry, can''t say I have.
+
+
+
+
+'
+    ImTalking: 0
+  - Text: (Karol looks disappointed)
+    ImTalking: 1
+  - Text: 'Oh...
+
+
+
+'
+    ImTalking: 1
+  - Text: 'W-well, I guess you can''t expect a detective such as yourself to be plugged
+      into the world of inventing.
+
+
+
+'
+    ImTalking: 1
+  - Text: "I'll be taking the place of Nikki as the most prolific inventor in Wandermere
+      soon enough. \r\n\r\n"
+    ImTalking: 1
+  - Text: "Once my latest invention is complete you'll be hearing my name uttered
+      from the lips of everyone in town.\r"
+    ImTalking: 1
+  - Text: "Well if you say so. Good luck\u2026 I guess."
+    ImTalking: 0
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: 
+    Question1:
+      QuestionText: Where were you at the time of the murder?
+      NextElementNumber: 1
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "I was in my room. I couldn\u2019t sleep of course."
+    Question1:
+      QuestionText: Oh? And why was that?
+      NextElementNumber: 2
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "Nikki\u2019s Synthesizer! I hate to say it, but it\u2019s the most
+      amazing technology I\u2019ve ever seen!\n\nMy brain could just not stop thinking
+      of way\u2019s to one up her designs.\n\nIt\u2019s a shame that now she\u2019s
+      gone, it might never see the light of day\u2026"
+    Question1:
+      QuestionText: 
+      NextElementNumber: 2
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: But I suppose that now Nikki is gone, you should have no competition
+        left in Wandermere eh?
+      NextElementNumber: 3
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "What are you trying to say Detective? \n\nAre you trying to suggest
+      that it was me who killed Nikki? That\u2019s a heavy accusation!\n\n\n"
+    Question1:
+      QuestionText: If the glove fits...
+      NextElementNumber: 4
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: But I suppose that now Nikki is gone, you should have no competition
+        left in Wandermere eh?
+      NextElementNumber: 3
+  - NoQuestions: 1
+    NextElementNumber: 0
+    Response: "Now, Nikki and I may have been rivals, but I still had respect for
+      her! If anything I\u2019d want her to still be alive, to witness me surpass
+      her!\r\n\r\nIf you want someone to suspect, Detective, I\u2019d suggest looking
+      into Mr. Damien. I heard Nikki was thinking of firing him, maybe he felt threatened.\r"
+    Question1:
+      QuestionText: 
+      NextElementNumber: 4
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: But I suppose that now Nikki is gone, you should have no competition
+        left in Wandermere eh?
+      NextElementNumber: 3
+  dialogueAfterClue: []
 --- !u!95 &396490896115949879
 Animator:
   serializedVersion: 4

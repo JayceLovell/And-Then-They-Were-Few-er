@@ -12,6 +12,7 @@ TagManager:
   - Canvas
   - Clock
   - PauseMenu
+  - DialogBox
   - InterrogationController
   layers:
   - Default

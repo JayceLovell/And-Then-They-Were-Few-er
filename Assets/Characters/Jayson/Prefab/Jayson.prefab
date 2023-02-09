@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2313810901710777598}
   - component: {fileID: 7628316453212250482}
   - component: {fileID: 708143256368913170}
-  - component: {fileID: 5706456922479725005}
+  - component: {fileID: 5565415678146893301}
   m_Layer: 0
   m_Name: Jayson
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,22 +98,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3362df6245c670047ae7aa455b5df358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InterrigrationMode: 1
   Name: 3
-  TrustLevel: 0
-  isAlive: 0
-  Profile: {fileID: 2800000, guid: bb6796ae590284147a6b95adf39dcb4d, type: 3}
+  CorrectClue: {fileID: 0}
+  Profile: {fileID: 21300000, guid: bb6796ae590284147a6b95adf39dcb4d, type: 3}
   InterrigationSprite: {fileID: 0}
-  Positions: []
---- !u!65 &5706456922479725005
-BoxCollider:
+  characterPosition:
+  - Scene: 1
+    Position: {x: 35.26783, y: -2.433469}
+  - Scene: 2
+    Position: {x: -4.744253, y: -4.863781}
+  dialogForRegularConvo:
+  - Text: '(An attractive but clumsy wannabe detective trying to solve the mystery
+      but ruins clues and makes chaos.Odd character, who is obsessed with mysteries
+      and conspiracies)
+
+'
+    ImTalking: 1
+  - Text: Good Evening
+    ImTalking: 0
+  - Text: (Jayson looks Ashlyn up and down)
+    ImTalking: 1
+  - Text: Well, Hello There
+    ImTalking: 1
+  - Text: '(Ashlyn finds Jayson quite attractive, and returns his smile)
+
+'
+    ImTalking: 0
+  - Text: Well, Hello yourself
+    ImTalking: 0
+  - Text: You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's
+      hot new detective in the flesh
+    ImTalking: 1
+  - Text: So I see my reputation precedes me, eh?
+    ImTalking: 0
+  - Text: Do I live up to the stories?
+    ImTalking: 0
+  - Text: '(J grins at A)
+
+
+
+'
+    ImTalking: 1
+  - Text: 'That''s yet to be determined
+
+
+
+'
+    ImTalking: 1
+  - Text: I'm afraid though, that you might have some competition
+    ImTalking: 1
+  - Text: 'Oh? And who might that be?
+
+'
+    ImTalking: 0
+  - Text: '(Jayson, takes a step closer, but trips and ends up falling on his front)
+
+
+
+'
+    ImTalking: 1
+  - Text: '(Ashlyn laughs, but not in a cruel mocking way, moreso found it cute and
+      funny)
+
+'
+    ImTalking: 0
+  - Text: '(Jayson hurriedly picks himself up hurriedly and stretches out his hand
+      to shake Ashlyn''s)
+
+
+
+'
+    ImTalking: 1
+  - Text: '(Winded, still comes off as confident, but clearly a bit embarrassed)
+
+
+'
+    ImTalking: 1
+  - Text: 'Jayson Klutsch! I may not have your reputation quite yet, but I do believe
+      I''m a force to be reckoned with
+
+
+
+'
+    ImTalking: 1
+  - Text: '(Ashlyn shakes his hand back, still giggling)
+
+
+
+'
+    ImTalking: 0
+  - Text: Glad to make your acquaintance
+    ImTalking: 0
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: 
+    Question1:
+      QuestionText: 
+      NextElementNumber: 0
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  dialogueAfterClue: []
+--- !u!61 &5565415678146893301
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4069851616722528749}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.020364307, y: -0.019798584}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.42, y: 0.33}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.20248179, y: 0.23820452, z: 0.20000002}
-  m_Center: {x: 0.002572298, y: 0.018006107, z: 0}
+  m_Size: {x: 0.14168803, y: 0.14785273}
+  m_EdgeRadius: 0

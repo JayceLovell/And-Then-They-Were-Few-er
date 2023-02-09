@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 2186518770987724880}
   - component: {fileID: 7128339909658033775}
   - component: {fileID: 573935781217503187}
-  - component: {fileID: 7119099243005794523}
   - component: {fileID: 966495018851844531}
+  - component: {fileID: -6912090382281659287}
   m_Layer: 0
-  m_Name: Old Crazy Man
-  m_TagString: Untagged
+  m_Name: OldCrazyMan
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,25 +99,119 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d5c66acca41364884e9d91b9acf3d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InterrigrationMode: 1
   Name: 8
-  TrustLevel: 0
-  isAlive: 0
-  Profile: {fileID: 2800000, guid: 8297ec95d6d9e22439dd4dc270b49de3, type: 3}
+  CorrectClue: {fileID: 0}
+  Profile: {fileID: 21300000, guid: 8297ec95d6d9e22439dd4dc270b49de3, type: 3}
   InterrigationSprite: {fileID: 0}
-  Positions: []
---- !u!65 &7119099243005794523
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5295276547665168061}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.14073849, y: 0.16965072, z: 0.20000002}
-  m_Center: {x: 0.02089135, y: -0.010782719, z: 0}
+  characterPosition:
+  - Scene: 1
+    Position: {x: 7.037209, y: -3.78581}
+  - Scene: 2
+    Position: {x: -5.546519, y: 9.166698}
+  dialogForRegularConvo:
+  - Text: '(The father of John. Very random. Loud and rude)
+
+
+
+'
+    ImTalking: 1
+  - Text: 'Do you smell it in the air?
+
+
+
+'
+    ImTalking: 1
+  - Text: 'Excuse me? Smell what?
+
+
+
+
+'
+    ImTalking: 0
+  - Text: 'The gears of course! I love the smell of freshly oiled gears!
+
+
+
+'
+    ImTalking: 1
+  - Text: "(The Crazy Old Man has an excited but wild look about him) \n\r\n"
+    ImTalking: 1
+  - Text: 'Well, I can kind of relate. I like the smell of fresh ink and newly printed
+      parchment paper
+
+
+
+'
+    ImTalking: 0
+  - Text: 'Ashlyn smiles cheekily
+
+
+
+'
+    ImTalking: 0
+  - Text: 'Ink? Parchment! Now that''s just weird
+
+
+
+'
+    ImTalking: 1
+  - Text: (The Crazy Old Man sticks his tongue out at Ashlyn and starts muttering
+      to himself)
+    ImTalking: 1
+  - Text: (Ashlyn, mystified, walks away)
+    ImTalking: 0
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: 
+    Question1:
+      QuestionText: Where were you at the time of the murder?
+      NextElementNumber: 1
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: I was in the bathroom.
+    Question1:
+      QuestionText: Can anyone verify that you were there?
+      NextElementNumber: 2
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: Yes, my son was inside with me.
+    Question1:
+      QuestionText: Your son was in the stall with you? Why??
+      NextElementNumber: 3
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 1
+    NextElementNumber: 0
+    Response: "I always ask him to accompany me so that I have someone to hold my
+      gears. Don\u2019t want to drop them in the toilet!"
+    Question1:
+      QuestionText: Your son was in the stall with you? Why??
+      NextElementNumber: 4
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  dialogueAfterClue: []
 --- !u!95 &966495018851844531
 Animator:
   serializedVersion: 4
@@ -138,3 +232,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &-6912090382281659287
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5295276547665168061}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.021404527, y: -0.011525631}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.42, y: 0.33}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14009331, y: 0.17193529}
+  m_EdgeRadius: 0

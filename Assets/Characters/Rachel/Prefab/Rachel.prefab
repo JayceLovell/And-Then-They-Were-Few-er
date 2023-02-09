@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 7788250956352414041}
   - component: {fileID: 1981829779909490592}
   - component: {fileID: 251772178004849129}
-  - component: {fileID: 7025145102358804301}
   - component: {fileID: 9179986237464571549}
+  - component: {fileID: -8045946443865020670}
   m_Layer: 0
   m_Name: Rachel
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,25 +99,146 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02b1a26f75913b94ca31c4accdcd1bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InterrigrationMode: 0
   Name: 9
-  TrustLevel: 0
-  isAlive: 1
-  Profile: {fileID: 2800000, guid: c64c5a4788422c34782c47996153549f, type: 3}
+  CorrectClue: {fileID: 0}
+  Profile: {fileID: 21300000, guid: c64c5a4788422c34782c47996153549f, type: 3}
   InterrigationSprite: {fileID: 0}
-  Positions: []
---- !u!65 &7025145102358804301
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2901787032884375440}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.15634021, y: 0.19178677, z: 0.20000002}
-  m_Center: {x: 0.011619603, y: 0, z: 0}
+  characterPosition:
+  - Scene: 1
+    Position: {x: 23.52159, y: 28.28614}
+  - Scene: 2
+    Position: {x: 20.84201, y: 2.390876}
+  dialogForRegularConvo:
+  - Text: '(The over-controlling and overbearing mother of Nikki Test)
+
+
+
+'
+    ImTalking: 1
+  - Text: '(Ashlyn bumps into Rachel accidentally and causes her to drop her purse)
+
+
+
+'
+    ImTalking: 0
+  - Text: 'Oh!
+
+
+
+'
+    ImTalking: 1
+  - Text: '(Rachel bends over to pick her purse)
+
+
+
+
+'
+    ImTalking: 1
+  - Text: '(Ashlyn notices that a handkerchief has fallen out of the purse, and picks
+      it up to hand it back to Rachel)
+
+
+
+
+'
+    ImTalking: 0
+  - Text: "Sorry about all this. I\u2019m Ashlyn by the way, nice to meet you\r\n\r\n"
+    ImTalking: 0
+  - Text: '(Ashlyn notices that Rachel looks distressed, as though she has something
+      else on her mind)
+
+
+
+'
+    ImTalking: 0
+  - Text: "I\u2019m Rachel. Nikki\u2019s Mother\r\n\r\n\n\n\r\n\n\n\r\n"
+    ImTalking: 1
+  - Text: '(Rachel looks like she wants to leave)
+
+'
+    ImTalking: 1
+  - Text: '(There is a short, awkward silence)
+
+'
+    ImTalking: 1
+  - Text: 'Well, nice to meet you!
+
+'
+    ImTalking: 0
+  - Text: ...Likewise
+    ImTalking: 1
+  - Text: (Rachel's expression, however, remains cold)
+    ImTalking: 1
+  - Text: (Ashlyn turns away, feeling a bit embarrassed)
+    ImTalking: 0
+  DialogueForInterrogations:
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: Rachel has her hands in her face, and is crying.
+    Question1:
+      QuestionText: "Rachel, I\u2019m so sorry for your loss."
+      NextElementNumber: 1
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: "I just can\u2019t believe she\u2019s gone. Who would do this to my
+      poor baby?"
+    Question1:
+      QuestionText: When did you last see Nikki?
+      NextElementNumber: 2
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: After the showcase. Watson and I were helping her to clean up, but
+      I felt a bit faint and went to bed shortly after.
+    Question1:
+      QuestionText: "Speaking of Watson, I haven\u2019t seen him all night. Where
+        could he be?"
+      NextElementNumber: 3
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 0
+    NextElementNumber: 0
+    Response: " (a bit startled): Ah, Nikki usually shuts him down for the night
+      before bed. I don\u2019t know where he is kept though."
+    Question1:
+      QuestionText: Hm...
+      NextElementNumber: 4
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  - NoQuestions: 1
+    NextElementNumber: 0
+    Response: "May I have a moment? I just\u2026.\r\n\n(Rachel turns away from Ashlyn,
+      and starts to sob again)"
+    Question1:
+      QuestionText: Of Course
+      NextElementNumber: 0
+    Question2:
+      QuestionText: 
+      NextElementNumber: 0
+    Question3:
+      QuestionText: 
+      NextElementNumber: 0
+  dialogueAfterClue: []
 --- !u!95 &9179986237464571549
 Animator:
   serializedVersion: 4
@@ -138,3 +259,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &-8045946443865020670
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2901787032884375440}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.42, y: 0.33}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.42, y: 0.33}
+  m_EdgeRadius: 0

@@ -106,12 +106,15 @@ MonoBehaviour:
   PlayerSpeed: 5
   CanInteract: 0
   CanTalkToNPC: 0
+  Profile: {fileID: 21300000, guid: cc14d1a5c761fd54ea8e4e63ccc8e1c6, type: 3}
+  InterrigationSprite: {fileID: 0}
   NPCSprite: {fileID: 0}
   NPCDisplay: {fileID: 0}
   CurrentInteractableObject: {fileID: 0}
   CurrentNPCToTalkTo: {fileID: 0}
   PlayerObjectTextBox: {fileID: 0}
   moveInput: {x: 0, y: 0}
+  DialogBox: {fileID: 0}
 --- !u!114 &7216322577158222884
 MonoBehaviour:
   m_ObjectHideFlags: 0

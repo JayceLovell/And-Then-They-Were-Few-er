@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2371517218328731662}
   - component: {fileID: 5781129788191747957}
   - component: {fileID: 6858053411055140244}
+  - component: {fileID: 614554593310986191}
   m_Layer: 0
   m_Name: Nikki Test
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 379050557245956705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 17160183, guid: 62fc21c839c7862488257dc9f0079402, type: 3}
+  m_Sprite: {fileID: 1304023330, guid: 62fc21c839c7862488257dc9f0079402, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,10 +99,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9d00fb2b7737c47b9c9f10c16456e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrustLevel: 0
-  Name: Nikki Test
-  isAlive: 1
-  Positions: []
+  InterrigrationMode: 0
+  Scene: 1
+  Name: 0
+  CorrectClue: {fileID: 0}
+  Profile: {fileID: 21300000, guid: f74ba6833eb82af4b9b2340716a6382f, type: 3}
+  InterrigationSprite: {fileID: 0}
+  characterPosition:
+  - Scene: 1
+    Position: {x: 6.64, y: 26.92}
+  dialogForRegularConvo:
+  - Text: '(Nikki grew up in an impoverished neighborhood. Her father left when she
+      was young, leaving her with her mother with the family business. Too stubborn
+      to follow her mothers wishes and take on the family business she instead used
+      her intelligence to invent the Synthesizer)
+
+
+
+'
+    ImTalking: 1
+  - Text: 'Nikki, long time no see!
+
+
+
+'
+    ImTalking: 0
+  - Text: "Ashlyn! It\u2019s been so long! I\u2019m so glad you could make it!\r\n\r\n"
+    ImTalking: 1
+  - Text: "Well, I couldn\u2019t say no to an invitation from an old friend. Quite
+      the fancy to-do you\u2019ve set up.\r\n\r\n"
+    ImTalking: 0
+  - Text: "Heh heh, glad you\u2019re impressed. It takes a lot more effort than you
+      might think to set up one of these. Almost didn\u2019t want to do it but it\u2019d
+      be a shame not to show off my latest invention.\r\n\r\n"
+    ImTalking: 1
+  - Text: 'What is the invention anyway? You never told anyone, did you?
+
+
+
+'
+    ImTalking: 0
+  - Text: "You\u2019ll just have to wait and see! Can\u2019t spoil the surprise!"
+    ImTalking: 1
+  dialogueForInterrigations: []
+  dialogueAfterClue: []
 --- !u!95 &6858053411055140244
 Animator:
   serializedVersion: 4
@@ -122,3 +163,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &614554593310986191
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379050557245956705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.38, y: 0.47}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.38, y: 0.47}
+  m_EdgeRadius: 0
