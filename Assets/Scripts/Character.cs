@@ -153,10 +153,10 @@ public class Character :MonoBehaviour
         [Tooltip("Only if NoQuestions is checked")]
         public int NextElementNumber;
         [TextArea(15, 10)]
-        public string Response;
-        public Question Question1;
+        public string Text;
+        /*public Question Question1;
         public Question Question2;
-        public Question Question3;
+        public Question Question3;*/
     }
     // Start is called before the first frame update
     public void Start()
@@ -259,13 +259,13 @@ public class Character :MonoBehaviour
                 _numDialog++;
                 break;
             case "InterrogationScene":
-                if (CorrectClue)
+                if (_dialogBox.currentClue == CorrectClue)
                 {
-                    //foreach (char c in dialogueAfterClue[_numDialog].Text.ToCharArray())
-                    //{
-                    //    _dialogBox.Text += c;
-                    //    yield return new WaitForSeconds(0.02f);
-                    //}
+                    foreach (char c in dialogueAfterClue[_numDialog].Text.ToCharArray())
+                    {
+                        _dialogBox.Text += c;
+                        yield return new WaitForSeconds(0.02f);
+                    }
                 }
                 else
                 {
