@@ -910,9 +910,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1580939278427621595, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3899831894831801394, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
       propertyPath: m_Name
       value: Player Essentials Asset
+      objectReference: {fileID: 0}
+    - target: {fileID: 4505114160105021457, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4505114160105021457, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4505114160208548395, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
       propertyPath: clues.Array.size
@@ -922,6 +934,18 @@ PrefabInstance:
       propertyPath: clues.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 0feee72b0abe02847baf8493038391b0, type: 2}
+    - target: {fileID: 4505114160943897584, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4505114160943897584, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4505114160943897584, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8688137780485213214, guid: c1448fad28c88ae44b376696c877cb62, type: 3}
       propertyPath: m_RootOrder
       value: 1

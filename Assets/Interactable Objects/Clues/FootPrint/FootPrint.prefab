@@ -126,3 +126,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 2
   Dialog: Hmm FootPrints
+  clue: {fileID: 11400000, guid: 9ecf3c4ab932f1f4587edfe0d1bf3d8f, type: 2}

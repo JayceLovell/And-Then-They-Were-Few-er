@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class Keyring : Objects
 {
+    public Clue clue;
+
     public override void Use()
     {
         base.Use();
-        SoundManager.PlaySound(SoundManager.SoundFX.Clue);
+        if (!ClueManager.clueManager.clues.Contains(clue))
+        {
+            SoundManager.PlaySound(SoundManager.SoundFX.Clue);
+
+            ClueManager.clueManager.AddClue(clue);
+        }
     }
 }

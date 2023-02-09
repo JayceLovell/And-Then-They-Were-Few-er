@@ -126,3 +126,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 2
   Dialog: Hmm Keyring
+  clue: {fileID: 11400000, guid: fdbfd08d6970ac143995d0d3503a6166, type: 2}

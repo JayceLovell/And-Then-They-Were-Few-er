@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class IronPipe : Objects
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Clue clue;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public override void Use()
     {
         base.Use();
-        SoundManager.PlaySound(SoundManager.SoundFX.Clue);
+        if (!ClueManager.clueManager.clues.Contains(clue))
+        {
+            SoundManager.PlaySound(SoundManager.SoundFX.Clue);
+
+            ClueManager.clueManager.AddClue(clue);
+        }
     }
 }

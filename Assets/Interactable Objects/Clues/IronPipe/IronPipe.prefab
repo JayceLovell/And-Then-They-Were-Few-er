@@ -126,3 +126,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 2
   Dialog: Hmm Pipe
+  clue: {fileID: 11400000, guid: 9e088ef279d18344bb3810deabfb3309, type: 2}

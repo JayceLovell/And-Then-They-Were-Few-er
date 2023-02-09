@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ClueManager : MonoBehaviour
 {
+    public static ClueManager clueManager;
+
     public List<Clue> clues;
 
     public GameObject clueButton;
@@ -11,6 +13,11 @@ public class ClueManager : MonoBehaviour
     public Transform clueListContent;
 
     public GameObject clueMenu;
+
+    private void Awake()
+    {
+        clueManager = this;
+    }
 
     // Start is called before the first frame update
     void Start()
