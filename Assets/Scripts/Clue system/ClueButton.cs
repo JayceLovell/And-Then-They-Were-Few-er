@@ -19,10 +19,12 @@ public class ClueButton : MonoBehaviour
     {
         if (DialogueManager.dialogueManager.inInterrogation)
         {
-            if(clue == DialogueManager.dialogueManager.currentCorrectClue)
+            /*if(clue == DialogueManager.dialogueManager.currentCorrectClue)
             {
                 DialogueManager.dialogueManager.currentDialogueScript.StartPostClueDialogue();
-            }
+            }*/
+
+            DialogueObjectController.dialogueObjectController.currentClue = clue;
         }
     }
 }

@@ -148,6 +148,15 @@ public class DialogueObjectController : MonoBehaviour
     [SerializeField]
     private Button QuestionButton3;
 
+    public Clue currentClue;
+
+    public static DialogueObjectController dialogueObjectController;
+
+    private void Awake()
+    {
+        dialogueObjectController = this;
+    }
+
     /// <summary>
     /// Summon me to screen
     /// </summary>
