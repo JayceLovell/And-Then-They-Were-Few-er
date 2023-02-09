@@ -10,8 +10,18 @@ public class FootPrint : Objects
         base.Use();
         SoundManager.PlaySound(SoundManager.SoundFX.Clue);
 
-        dialogueObjectController.Display(true);
-        dialogueObjectController.InterrigationMode = false;
-        dialogueObjectController.Text = Dialog;
+        _dialogueObjectController.Display(true);
+        _dialogueObjectController.InterrigationMode = false;
+        StartCoroutine(Display());
+               
+    }
+    IEnumerator Display()
+    {
+        foreach (char c in Dialog.ToCharArray())
+        {
+            _dialogueObjectController.Text += c;
+            yield return new WaitForSeconds(0.02f);
+        }
+        GameObject.Find("Player").GetComponent<Player>().Talking = false;
     }
 }

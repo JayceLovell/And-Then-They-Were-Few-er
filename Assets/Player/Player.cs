@@ -157,11 +157,8 @@ public class Player : MonoBehaviour
         else if (CanInteract)
         {
             Talking = true;
-            if (CurrentInteractableObject.tag == "Clue")
-            {
-                CurrentInteractableObject.GetComponent<Objects>().dialogueObjectController = DialogBox;
-                ImTalking();                
-            }
+            CurrentInteractableObject.GetComponent<Objects>().dialogueObjectController = DialogBox;
+            ImTalking();           
             CurrentInteractableObject.GetComponent<Objects>().Use();
 
         }
@@ -235,7 +232,7 @@ public class Player : MonoBehaviour
         CanInteract = false;
         CanTalkToNPC = false;
         PlayerObjectTextBox.SetActive(false);
-        //DialogueManager.dialogueManager.CloseTextBox();
+        DialogBox.Display(false);
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -245,6 +242,6 @@ public class Player : MonoBehaviour
         CanInteract = false;
         CanTalkToNPC = false;
         PlayerObjectTextBox.SetActive(false);
-        //DialogueManager.dialogueManager.CloseTextBox();
+        DialogBox.Display(false);
     }
 }

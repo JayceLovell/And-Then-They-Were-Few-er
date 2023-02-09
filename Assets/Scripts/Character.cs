@@ -204,9 +204,29 @@ public class Character :MonoBehaviour
     {
         if (!_isTalking)
         {
+            // temp holders
+            bool EndInterrogation;
+            bool EndInterrogationForClue;
+            try
+            {
+                EndInterrogation = DialogueForInterrogations[_numDialog].EndInterrogation;
+            }
+            catch
+            {
+                EndInterrogation = false;
+            }
+            try
+            {
+                EndInterrogationForClue = dialogueAfterClue[_numDialog].EndInterrogation;
+            }
+            catch
+            {
+                EndInterrogationForClue= false;
+            }
             // Reminder to fix logic for this statement
-            if (//(DialogueForInterrogations[_numDialog].EndInterrogation && InterrigrationMode) ||
-                dialogForRegularConvo.Count < _numDialog && !InterrigrationMode)                 
+            if ((EndInterrogation && InterrigrationMode) ||
+                dialogForRegularConvo.Count <= _numDialog && !InterrigrationMode ||
+                (EndInterrogationForClue && InterrigrationMode))                 
             {
                 InDialog = false;
                 _dialogBox.Display(false);

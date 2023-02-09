@@ -9,9 +9,20 @@ using UnityEngine;
 public class Objects : MonoBehaviour
 {
     private bool _playerInteracts;
+    protected DialogueObjectController _dialogueObjectController;
     protected GameController _gameController;
 
-    public DialogueObjectController dialogueObjectController;
+    public DialogueObjectController dialogueObjectController
+    {
+        get
+        {
+            return _dialogueObjectController;
+        }
+        set
+        {
+            _dialogueObjectController = value;
+        }
+    }
 
     public enum TypeOfObject
     {
