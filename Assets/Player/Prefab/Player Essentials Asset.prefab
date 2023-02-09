@@ -33,54 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8668089011398921922
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4835894757892914066}
-  - component: {fileID: 6783810604896807242}
-  m_Layer: 0
-  m_Name: Clue Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4835894757892914066
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8668089011398921922}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -468.30957, y: -192.52979, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4505114160685931172}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6783810604896807242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8668089011398921922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b447bbbb38dbc8439408e4a94912ee9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clues: []
-  clueButton: {fileID: 3203519595649341115, guid: 88758607791c5ab459aa2d916fef1257, type: 3}
-  clueListContent: {fileID: 4505114160136854587}
-  clueMenu: {fileID: 1580939278427621595}
 --- !u!1001 &4175169940284470952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -184,21 +136,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1276694116400655886, guid: 887e68d39c2f138489151fe2c4048b4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330599776302615970, guid: 887e68d39c2f138489151fe2c4048b4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 887e68d39c2f138489151fe2c4048b4a, type: 3}
---- !u!1 &1580939278427621595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3171010317634207347, guid: 887e68d39c2f138489151fe2c4048b4a, type: 3}
-  m_PrefabInstance: {fileID: 4175169940284470952}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2969341546889818081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1208115438251563337, guid: 887e68d39c2f138489151fe2c4048b4a, type: 3}
-  m_PrefabInstance: {fileID: 4175169940284470952}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &4505114160136854587 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 537141688951466643, guid: 887e68d39c2f138489151fe2c4048b4a, type: 3}
   m_PrefabInstance: {fileID: 4175169940284470952}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &4505114160685931172 stripped
@@ -206,24 +156,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 537141689485044748, guid: 887e68d39c2f138489151fe2c4048b4a, type: 3}
   m_PrefabInstance: {fileID: 4175169940284470952}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4505114160685931176 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 537141689485044736, guid: 887e68d39c2f138489151fe2c4048b4a, type: 3}
-  m_PrefabInstance: {fileID: 4175169940284470952}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8526262586976069684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4505114160685931176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88e16f69b42118b438da7eefc97f4756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  removeParent: 1
 --- !u!114 &8430201989215393645 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5552717320598774213, guid: 887e68d39c2f138489151fe2c4048b4a, type: 3}
@@ -295,23 +227,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8430201989215393645}
     - target: {fileID: 4147630681081963121, guid: bcd6da8de235d734ebccffc0cb389684, type: 3}
-      propertyPath: NPCDisplay
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4147630681081963121, guid: bcd6da8de235d734ebccffc0cb389684, type: 3}
       propertyPath: PlayerObjectTextBox
       value: 
       objectReference: {fileID: 2969341546889818081}
-    - target: {fileID: 7216322577158222884, guid: bcd6da8de235d734ebccffc0cb389684, type: 3}
-      propertyPath: clueMenu
-      value: 
-      objectReference: {fileID: 1580939278427621595}
-    - target: {fileID: 7216322577158222884, guid: bcd6da8de235d734ebccffc0cb389684, type: 3}
-      propertyPath: clueListContent
-      value: 
-      objectReference: {fileID: 4505114160136854587}
-    m_RemovedComponents:
-    - {fileID: 7216322577158222884, guid: bcd6da8de235d734ebccffc0cb389684, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcd6da8de235d734ebccffc0cb389684, type: 3}
 --- !u!4 &3863220862207097594 stripped
 Transform:

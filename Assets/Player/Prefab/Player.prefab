@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 895587505239095313}
   - component: {fileID: 38948158685868590}
   - component: {fileID: 4147630681081963121}
-  - component: {fileID: 7216322577158222884}
   - component: {fileID: 7690113068498134056}
   - component: {fileID: 8755390500953867856}
   - component: {fileID: 1924112908}
@@ -103,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa1d6fdcdb85aa14a86e01fe0d72d756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayWalkSound: 0
   PlayerSpeed: 5
   CanInteract: 0
   CanTalkToNPC: 0
@@ -115,22 +115,6 @@ MonoBehaviour:
   PlayerObjectTextBox: {fileID: 0}
   moveInput: {x: 0, y: 0}
   DialogBox: {fileID: 0}
---- !u!114 &7216322577158222884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2692539282686698567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b447bbbb38dbc8439408e4a94912ee9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clues: []
-  clueButton: {fileID: 3203519595649341115, guid: 88758607791c5ab459aa2d916fef1257, type: 3}
-  clueListContent: {fileID: 0}
-  clueMenu: {fileID: 0}
 --- !u!95 &7690113068498134056
 Animator:
   serializedVersion: 4

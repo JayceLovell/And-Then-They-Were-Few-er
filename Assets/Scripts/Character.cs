@@ -204,7 +204,8 @@ public class Character :MonoBehaviour
     {
         if (!_isTalking)
         {
-            if ((DialogueForInterrogations[_numDialog].EndInterrogation && InterrigrationMode) ||
+            // Reminder to fix logic for this statement
+            if (//(DialogueForInterrogations[_numDialog].EndInterrogation && InterrigrationMode) ||
                 dialogForRegularConvo.Count < _numDialog && !InterrigrationMode)                 
             {
                 InDialog = false;

@@ -519,8 +519,8 @@ MonoBehaviour:
 
     .......'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
-  m_sharedMaterial: {fileID: -8115622975960587479, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -834,8 +834,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Version:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
-  m_sharedMaterial: {fileID: -8115622975960587479, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1074,8 +1074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96b01b7bb29d6d4ca77937d3f202670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: Text
-  GameManager: {fileID: 0}
   VolumeSlider: {fileID: 380856283}
 --- !u!4 &839368049
 Transform:
@@ -1667,6 +1665,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321076889}
   m_CullTransparentMesh: 1
+--- !u!1001 &1412155333
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -468.30957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -192.52979
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030349870045969388, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826713957082762940, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: m_Name
+      value: Clue Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
 --- !u!1 &1432836350
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,5 +9,9 @@ public class FootPrint : Objects
     {
         base.Use();
         SoundManager.PlaySound(SoundManager.SoundFX.Clue);
+
+        dialogueObjectController.Display(true);
+        dialogueObjectController.InterrigationMode = false;
+        dialogueObjectController.Text = Dialog;
     }
 }

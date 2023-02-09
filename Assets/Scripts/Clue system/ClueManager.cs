@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClueManager : MonoBehaviour
 {
+    private static ClueManager _instance;
+
     public List<Clue> clues;
 
     public GameObject clueButton;
@@ -11,6 +15,31 @@ public class ClueManager : MonoBehaviour
     public Transform clueListContent;
 
     public GameObject clueMenu;
+
+    public static ClueManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                DontDestroyOnLoad(ClueManager.Instance);
+                Debug.LogError("Clue Manager is NULL");
+            }
+            return _instance;
+        }
+    }
+    //CalledFirst
+    void OnEnable()
+    {
+        Debug.Log("Clue Manager Enabled");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void Awake()
+    {
+        _instance = this;
+        DontDestroyOnLoad(ClueManager.Instance);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -50,5 +79,22 @@ public class ClueManager : MonoBehaviour
         clues.Add(clue);
 
         AddClueButton(clue);
+    }
+    // Any stuff the manager has to do for each scene have it be done here
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        switch (scene.name)
+        {
+            case "Entrance":
+            case "GrandHall":
+            case "InterrogationScene":
+               
+                break;
+        }
+    }
+    void OnDisable()
+    {
+        Debug.Log("Clue Manager Disable");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

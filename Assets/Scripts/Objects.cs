@@ -11,6 +11,8 @@ public class Objects : MonoBehaviour
     private bool _playerInteracts;
     protected GameController _gameController;
 
+    public DialogueObjectController dialogueObjectController;
+
     public enum TypeOfObject
     {
         Door,
@@ -56,9 +58,7 @@ public class Objects : MonoBehaviour
     public virtual void Use()
     {
         Debug.Log("Action from object: "+objectType.ToString());
-
-        // putting an output dialog to screen about using the object
-        DialogueManager.dialogueManager.ObjectDiablog(Dialog);
+  
     }
     /// <summary>
     /// @DrCatman

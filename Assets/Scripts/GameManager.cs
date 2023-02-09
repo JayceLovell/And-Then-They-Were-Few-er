@@ -170,7 +170,6 @@ public class GameManager : MonoBehaviour
     {
         _instance = this;
         DontDestroyOnLoad(GameManager.Instance);
-        //_musicPlayer = GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()

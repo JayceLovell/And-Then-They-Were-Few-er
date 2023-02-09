@@ -479,6 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1bb5f252a2e7fb47bd516f6413e1505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Profile: {fileID: 0}
   PlayerProfile: {fileID: 21300000, guid: cc14d1a5c761fd54ea8e4e63ccc8e1c6, type: 3}
   DialogBox: {fileID: 2011862534}
   NPCPosition: {fileID: 1645003647}
