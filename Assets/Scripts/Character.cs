@@ -13,10 +13,19 @@ using UnityEngine.UIElements;
 public class Character :MonoBehaviour
 {
     private DialogueObjectController _dialogBox;
+    private InterrogationController _interrogationController;
+    private Animator _animator;
     private int _numDialog;
     private bool _isTalking;
     private bool _inDialog;
-    private InterrogationController _interrogationController;
+    [SerializeField]
+    private Sprite SpriteUp;
+    [SerializeField]
+    private Sprite SpriteDown;
+    [SerializeField]
+    private Sprite SpriteLeft;
+    [SerializeField]
+    private Sprite SpriteRight;
 
     public int NumDialog
     {
@@ -66,14 +75,6 @@ public class Character :MonoBehaviour
     public CharacterName Name;
 
     public Clue CorrectClue;
-
-
-    ///// <summary>
-    ///// Characters trust level with player
-    ///// </summary>
-    //[Range(0, 10)]
-    //[Tooltip("Characters Trust level")]
-    //public int TrustLevel;
 
     /// <summary>
     /// Characters Image for conversation
@@ -148,19 +149,19 @@ public class Character :MonoBehaviour
     public class DialogueAfterClue
     {
         public bool NoQuestions;
-        public bool EndInterrogation;
         public bool PlayerTalk;
-        [Tooltip("Only if NoQuestions is checked")]
+        public bool EndInterrogation;
         public int NextElementNumber;
         [TextArea(15, 10)]
-        public string Text;
-        /*public Question Question1;
+        public string Response;
+        public Question Question1;
         public Question Question2;
-        public Question Question3;*/
+        public Question Question3;
     }
     // Start is called before the first frame update
-    public void Start()
-    {
+    public virtual void Start()
+    {       
+        _animator=GetComponent<Animator>();
         setUpForScene(GameManager.Instance.CurrentScene);
     }
 
@@ -168,7 +169,7 @@ public class Character :MonoBehaviour
     /// Check if Object is in correct Position for the scene
     /// </summary>
     /// <param name="Scene"></param>
-    private void setUpForScene(string Scene)
+    public virtual void setUpForScene(string Scene)
     {
         switch(Scene)
         {
@@ -180,12 +181,24 @@ public class Character :MonoBehaviour
                 break;
         }
     }
+
+    /// <summary>
+    /// Method for populating the Interrogation Dialogue List
+    /// </summary>
+    public virtual void SetInterrogationConvo()
+    {
+
+    }
+    /// <summary>
+    /// Start talking
+    /// </summary>
     public void StartDialogue()
     {
         _dialogBox = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<DialogueObjectController>();
 
         InDialog = true;
 
+        LookAtPlayer(GameObject.FindGameObjectWithTag("Player"));
 
         if (InterrigrationMode)
         {
@@ -203,6 +216,9 @@ public class Character :MonoBehaviour
         }
         StartCoroutine(Talk());
     }
+    /// <summary>
+    /// Continue talking
+    /// </summary>
     public void ContinueDialogue()
     {
         if (!_isTalking)
@@ -236,7 +252,13 @@ public class Character :MonoBehaviour
                 _numDialog= 0;
 
                 if (!InterrigrationMode)
+                {
                     GameObject.Find("Player").GetComponent<Player>().Talking = false;
+                    _animator.SetBool("Up", false);
+                    _animator.SetBool("Down", false);
+                    _animator.SetBool("Left", false);
+                    _animator.SetBool("Right", false);
+                }
                 else
                     SceneManager.LoadScene("GrandHall");
             }
@@ -265,6 +287,44 @@ public class Character :MonoBehaviour
             }
         }        
     }
+    private void LookAtPlayer(GameObject Player)
+    {
+        Vector2 direction = Player.transform.position - transform.position;
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        {
+            if (direction.x > 0)
+            {
+                _animator.SetBool("Up", false);
+                _animator.SetBool("Down", false);
+                _animator.SetBool("Left", false);
+                _animator.SetBool("Right", true);                
+            }
+            else
+            {
+                _animator.SetBool("Up", false);
+                _animator.SetBool("Down", false);
+                _animator.SetBool("Left", true);
+                _animator.SetBool("Right", false);
+            }
+        }
+        else
+        {
+            if (direction.y > 0)
+            {
+                _animator.SetBool("Up", true);
+                _animator.SetBool("Down", false);
+                _animator.SetBool("Left", false);
+                _animator.SetBool("Right", false);
+            }
+            else
+            {
+                _animator.SetBool("Up", false);
+                _animator.SetBool("Down", true);
+                _animator.SetBool("Left", false);
+                _animator.SetBool("Right", false);
+            }
+        }
+    }
     /// <summary>
     /// hold up one at a time
     /// </summary>
@@ -285,7 +345,7 @@ public class Character :MonoBehaviour
             case "InterrogationScene":
                 if (_dialogBox.currentClue == CorrectClue)
                 {
-                    foreach (char c in dialogueAfterClue[_numDialog].Text.ToCharArray())
+                    foreach (char c in dialogueAfterClue[_numDialog].Response.ToCharArray())
                     {
                         _dialogBox.Text += c;
                         yield return new WaitForSeconds(0.02f);
@@ -315,12 +375,4 @@ public class Character :MonoBehaviour
         }
         _isTalking = false;
     }
-    ///// <summary>
-    ///// returns a string of the characters name and trust level.
-    ///// </summary>
-    ///// <returns>string</returns>
-    //public string Trust()
-    //{
-    //    return Name + "trust level is " + TrustLevel+".";
-    //}
 }

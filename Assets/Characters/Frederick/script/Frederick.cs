@@ -1,11 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class Frederick : Character
 {
-    void Start()
+    public override void Start()
     {
         base.Start();
 
@@ -17,6 +19,13 @@ public class Frederick : Character
 
         //Interrogation
         //Element 0
+
+        SetInterrogationConvo();
+    }
+
+    public override void SetInterrogationConvo()
+    {
+        base.SetInterrogationConvo();
 
         DialogueForInterrogation ExampleInterrogationConvo = new DialogueForInterrogation();
         ExampleInterrogationConvo.NextElementNumber = 1;
