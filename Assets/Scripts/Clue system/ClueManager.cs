@@ -19,12 +19,7 @@ public class ClueManager : MonoBehaviour
     public static ClueManager Instance
     {
         get
-        {
-            if (_instance == null)
-            {
-                DontDestroyOnLoad(ClueManager.Instance);
-                Debug.LogError("Clue Manager is NULL");
-            }
+        {            
             return _instance;
         }
     }

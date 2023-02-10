@@ -122,6 +122,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Game Won
+    /// </summary>
     public bool IsGameWon
     {
         get
@@ -140,6 +143,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// The Name of the CurrentScene we are in at runtime
+    /// </summary>
     public string CurrentScene
     {
         get
@@ -147,6 +153,9 @@ public class GameManager : MonoBehaviour
             return _currentScene;
         }        
     }
+    /// <summary>
+    /// Previous Scene player was in
+    /// </summary>
     public string LastScene
     {
         get
@@ -215,6 +224,9 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetFloat("Game Time", _gameTime);
         PlayerPrefs.SetString("Current Scene", _currentScene);
         PlayerPrefs.SetString("Last Scene",_lastScene);
+
+        string cluesJson = JsonUtility.ToJson(ClueManager.Instance.clues);
+        PlayerPrefs.SetString("Clues", cluesJson);
 
         PlayerPrefs.Save();
     }

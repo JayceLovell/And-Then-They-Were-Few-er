@@ -1716,6 +1716,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1402003614120159540, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: clues.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1402003614120159540, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
+      propertyPath: clues.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 51ff8f67402a1734587c0395ff834e48, type: 2}
     - target: {fileID: 3826713957082762940, guid: e637f416f8f6f5c4c98a4a55c77975ca, type: 3}
       propertyPath: m_Name
       value: Clue Manager
