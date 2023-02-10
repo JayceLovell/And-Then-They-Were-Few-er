@@ -102,7 +102,7 @@ MonoBehaviour:
   InterrigrationMode: 0
   Name: 4
   CorrectClue: {fileID: 0}
-  Profile: {fileID: 21300000, guid: c89dfd33993d5164bac729d01f780dca, type: 3}
+  Profile: {fileID: 21300000, guid: c966b7f6359547b41b33317f0660b84d, type: 3}
   InterrigationSprite: {fileID: 0}
   characterPosition:
   - Scene: 1

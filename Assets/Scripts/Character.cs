@@ -161,17 +161,20 @@ public class Character :MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        _positionCheck(GameManager.Instance.CurrentScene);
+        setUpForScene(GameManager.Instance.CurrentScene);
     }
 
     /// <summary>
     /// Check if Object is in correct Position for the scene
     /// </summary>
     /// <param name="Scene"></param>
-    private void _positionCheck(string Scene)
+    private void setUpForScene(string Scene)
     {
         switch(Scene)
         {
+            case "GrandHall":
+                InterrigrationMode = true;
+                break;
             case "InterrogationScene":
                 this.gameObject.transform.position = GameObject.FindGameObjectWithTag("InterrogationController").GetComponent<InterrogationController>().NPCPosition.position;
                 break;

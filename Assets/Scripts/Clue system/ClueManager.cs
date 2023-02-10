@@ -37,7 +37,10 @@ public class ClueManager : MonoBehaviour
 
     void Awake()
     {
-        _instance = this;
+        if (ClueManager.Instance == null)
+            _instance = this;
+        else
+            Destroy(this.gameObject);
         DontDestroyOnLoad(ClueManager.Instance);
     }
 
