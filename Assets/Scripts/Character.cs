@@ -344,13 +344,13 @@ public class Character :MonoBehaviour
                 }
                 break;
             case "InterrogationScene":
-                if (_dialogBox.currentClue == CorrectClue)
+                if (false)//_dialogBox.currentClue == CorrectClue)
                 {
-                    foreach (char c in dialogueAfterClue[_numDialog].Response.ToCharArray())
-                    {
-                        _dialogBox.Text += c;
-                        yield return new WaitForSeconds(0.02f);
-                    }
+                    //foreach (char c in dialogueAfterClue[_numDialog].Response.ToCharArray())
+                    //{
+                    //    _dialogBox.Text += c;
+                    //    yield return new WaitForSeconds(0.02f);
+                    //}
                 }
                 else
                 {
