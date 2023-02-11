@@ -18,14 +18,7 @@ public class Character :MonoBehaviour
     private int _numDialog;
     private bool _isTalking;
     private bool _inDialog;
-    [SerializeField]
-    private Sprite SpriteUp;
-    [SerializeField]
-    private Sprite SpriteDown;
-    [SerializeField]
-    private Sprite SpriteLeft;
-    [SerializeField]
-    private Sprite SpriteRight;
+    private bool _interrigrationMode;
 
     public int NumDialog
     {
@@ -41,7 +34,14 @@ public class Character :MonoBehaviour
         }
     }
 
-    public bool InterrigrationMode;
+    public bool InterrigrationMode
+    {
+        get
+        {
+            return _interrigrationMode;
+        }
+        set { _interrigrationMode = value;}
+    }
 
     /// <summary>
     /// List of Scenes
@@ -210,11 +210,14 @@ public class Character :MonoBehaviour
         }
         else
         {
+            _dialogBox.Display(true);
+            _dialogBox.Text = "";
             _dialogBox.InterrigationMode = false;
             _dialogBox.SpeakerName = Name.ToString();
             _dialogBox.SpeakerImage = Profile;
         }
         StartCoroutine(Talk());
+        _numDialog++;
     }
     /// <summary>
     /// Continue talking
@@ -242,7 +245,6 @@ public class Character :MonoBehaviour
             {
                 EndInterrogationForClue= false;
             }
-            // Reminder to fix logic for this statement
             if ((EndInterrogation && InterrigrationMode) ||
                 dialogForRegularConvo.Count <= _numDialog && !InterrigrationMode ||
                 (EndInterrogationForClue && InterrigrationMode))                 
@@ -340,7 +342,6 @@ public class Character :MonoBehaviour
                     _dialogBox.Text += c;
                     yield return new WaitForSeconds(0.02f);
                 }
-                _numDialog++;
                 break;
             case "InterrogationScene":
                 if (_dialogBox.currentClue == CorrectClue)

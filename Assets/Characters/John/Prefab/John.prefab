@@ -99,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b2e1591d7afd94aa2a4952640ad190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InterrigrationMode: 0
   Name: 4
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: c966b7f6359547b41b33317f0660b84d, type: 3}
@@ -158,7 +157,7 @@ Animator:
   m_GameObject: {fileID: 307733208897063110}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 925f65820e16e944cac88ca3782eb741, type: 2}
+  m_Controller: {fileID: 9100000, guid: d9b928ddeca3a45499b736335d1f8dae, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

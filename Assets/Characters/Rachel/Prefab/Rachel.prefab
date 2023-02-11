@@ -99,7 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02b1a26f75913b94ca31c4accdcd1bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InterrigrationMode: 0
+  SpriteUp: {fileID: 0}
+  SpriteDown: {fileID: 0}
+  SpriteLeft: {fileID: 0}
+  SpriteRight: {fileID: 0}
   Name: 9
   CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: e973213e9d1a61a42a55b67b51f11ecd, type: 3}
@@ -184,7 +187,7 @@ Animator:
   m_GameObject: {fileID: 2901787032884375440}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 28c408a4a3d4e0e499bf196ff007b920, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1edc685a81650b64e85971c56c7bc645, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

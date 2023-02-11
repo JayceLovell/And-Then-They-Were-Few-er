@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7628316453212250482}
   - component: {fileID: 708143256368913170}
   - component: {fileID: 5565415678146893301}
+  - component: {fileID: 6151867337395962191}
   m_Layer: 0
   m_Name: Jayson
   m_TagString: NPC
@@ -98,6 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3362df6245c670047ae7aa455b5df358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpriteUp: {fileID: 0}
+  SpriteDown: {fileID: 0}
+  SpriteLeft: {fileID: 0}
+  SpriteRight: {fileID: 0}
   InterrigrationMode: 1
   Name: 3
   CorrectClue: {fileID: 0}
@@ -218,3 +223,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14168803, y: 0.14785273}
   m_EdgeRadius: 0
+--- !u!95 &6151867337395962191
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4069851616722528749}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ae076daf651740408f01c009186f704, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
