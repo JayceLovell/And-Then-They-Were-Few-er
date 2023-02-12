@@ -79,6 +79,10 @@ public class InterrogationController : MonoBehaviour
         DialogBox.SpeakerName = "Ashlyn";
         DialogBox.SpeakerImage = Profile;
     }
+    public void PresentClueToNPC(Clue clue)
+    {
+        _npcComponent.GetType().GetMethod("PresentClue").Invoke(_npcComponent, new object[] { clue });
+    }
     void OnBringUpClues()
     {
         ClueManager.Instance.ToggleMenu();
