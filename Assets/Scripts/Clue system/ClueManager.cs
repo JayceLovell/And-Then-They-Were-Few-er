@@ -3,18 +3,26 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ClueManager : MonoBehaviour
 {
     private static ClueManager _instance;
 
-    public List<Clue> clues;
+    public List<Clue> Clues;
 
     public GameObject clueButton;
 
-    public Transform clueListContent;
+    [SerializeField]
+    private ScrollRect clueListContent;
 
-    public GameObject clueMenu;
+    [SerializeField]
+    private GameObject _clueMenu;
+
+    public GameObject ClueMenu
+    {
+        get { return _clueMenu; }
+    }
 
     public static ClueManager Instance
     {
@@ -42,39 +50,31 @@ public class ClueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < clues.Count; i++)
+        for (int i = 0; i < Clues.Count; i++)
         {
-            AddClueButton(clues[i]);
+            AddClueButton(Clues[i]);
         }
     }
-
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// Either display or remove Menu
+    /// </summary>
+    public void ToggleMenu()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            if (clueMenu.activeSelf)
-            {
-                clueMenu.SetActive(false);
-            }
-            else
-            {
-                clueMenu.SetActive(true);
-            }
-        }
+        if (_clueMenu.activeInHierarchy)      
+            _clueMenu.SetActive(false);
+        else
+            _clueMenu.SetActive(true);
     }
-
     public void AddClueButton(Clue clue)
     {
-        ClueButton button = Instantiate(clueButton, clueListContent).GetComponent<ClueButton>();
+        ClueButton button = Instantiate(clueButton, clueListContent.content).GetComponent<ClueButton>();
 
-        button.clueManager = this;
         button.clue = clue;
     }
 
     public void AddClue(Clue clue)
     {
-        clues.Add(clue);
+        Clues.Add(clue);
 
         AddClueButton(clue);
     }
@@ -86,9 +86,53 @@ public class ClueManager : MonoBehaviour
             case "Entrance":
             case "GrandHall":
             case "InterrogationScene":
-               
+                StartCoroutine(WaitToGrabRequired());                
+                break;
+            default:
                 break;
         }
+    }
+    IEnumerator WaitToGrabRequired()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        Transform canvasTransform = GameObject.Find("Canvas").transform;
+
+        for (int i = 0; i < canvasTransform.childCount; i++)
+        {
+            Transform child = canvasTransform.GetChild(i);
+
+            if (child.name == "Clue Menu Prefab")
+            {
+                _clueMenu = child.gameObject;
+                break;
+            }
+        } 
+        
+        if(_clueMenu==null)
+            StartCoroutine(WaitToGrabRequired());
+        else
+        {
+            for (int i = 0; i < _clueMenu.transform.childCount; i++)
+            {
+                Transform child = _clueMenu.transform.GetChild(i);
+
+                if (child.name == "Clues")
+                {
+                    clueListContent = child.gameObject.GetComponent<ScrollRect>();
+                    break;
+                }
+            }
+        }
+
+        if (Clues.Count > 0)
+        {
+            foreach (Clue clue in Clues)
+            {
+                AddClueButton(clue);
+            }
+        }
+
     }
     void OnDisable()
     {

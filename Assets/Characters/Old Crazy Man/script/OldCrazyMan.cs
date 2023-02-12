@@ -5,22 +5,13 @@ using UnityEngine;
 
 public class OldCrazyMan : Character
 {
-    void Start()
+    public override void SetInterrogationConvo()
     {
-        base.Start();
-
-        //Regular
-        //DialogRegularConvo ExampleRegularConvo = new DialogRegularConvo();
-        //ExampleRegularConvo.Text = "Example";
-        //ExampleRegularConvo.NPCTalking = true;
-        //dialogForRegularConvo.Add(ExampleRegularConvo);
-
-        //Interrogation
-        //Element 0
+        base.SetInterrogationConvo();
 
         DialogueForInterrogation ExampleInterrogationConvo = new DialogueForInterrogation();
         ExampleInterrogationConvo.NextElementNumber = 1;
-        ExampleInterrogationConvo.PlayerTalk = false;
+        ExampleInterrogationConvo.NPCTalking = false;
         ExampleInterrogationConvo.EndInterrogation = false;
         ExampleInterrogationConvo.NoQuestions = false;
         ExampleInterrogationConvo.Response = " ";
@@ -44,7 +35,7 @@ public class OldCrazyMan : Character
 
         DialogueForInterrogation ExampleInterrogationConvo1 = new DialogueForInterrogation();
         ExampleInterrogationConvo1.NextElementNumber = 1;
-        ExampleInterrogationConvo1.PlayerTalk = false;
+        ExampleInterrogationConvo1.NPCTalking = false;
         ExampleInterrogationConvo1.EndInterrogation = false;
         ExampleInterrogationConvo1.NoQuestions = false;
         ExampleInterrogationConvo1.Response = "I was in the bathroom.";
@@ -68,7 +59,7 @@ public class OldCrazyMan : Character
 
         DialogueForInterrogation ExampleInterrogationConvo2 = new DialogueForInterrogation();
         ExampleInterrogationConvo2.NextElementNumber = 1;
-        ExampleInterrogationConvo2.PlayerTalk = false;
+        ExampleInterrogationConvo2.NPCTalking = false;
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
         ExampleInterrogationConvo2.Response = "Yes, my son was inside with me.";
@@ -92,7 +83,7 @@ public class OldCrazyMan : Character
 
         DialogueForInterrogation ExampleInterrogationConvo3 = new DialogueForInterrogation();
         ExampleInterrogationConvo3.NextElementNumber = 1;
-        ExampleInterrogationConvo3.PlayerTalk = false;
+        ExampleInterrogationConvo3.NPCTalking = false;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
         ExampleInterrogationConvo3.Response = "I always ask him to accompany me so that I have someone to hold my gears. Don’t want to drop them in the toilet!";

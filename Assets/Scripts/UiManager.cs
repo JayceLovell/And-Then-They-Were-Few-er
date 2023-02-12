@@ -78,14 +78,14 @@ public class UiManager : MonoBehaviour
     {
         //Set Up Background Volume Slider
         Slider volumeslider = GameObject.Find("BGVolumeSlider").GetComponent<Slider>();
-        volumeslider.value = _gameManager.BGMVolume;
-        volumeslider.onValueChanged.AddListener(delegate { _gameManager.BGMVolume = volumeslider.value; });
+        volumeslider.value = _gameManager.BgmVolume;
+        volumeslider.onValueChanged.AddListener(delegate { _gameManager.BgmVolume = volumeslider.value; });
         volumeslider.onValueChanged.AddListener(value => SoundManager.MasterVolumeChanged(value));
 
         //Set Up FX Volume Slider
         Slider FXvolumeslider = GameObject.Find("FXVolumeSlider").GetComponent<Slider>();
-        FXvolumeslider.value = _gameManager.BGMVolume;
-        FXvolumeslider.onValueChanged.AddListener(delegate { _gameManager.SFXVolume = FXvolumeslider.value; });
+        FXvolumeslider.value = _gameManager.BgmVolume;
+        FXvolumeslider.onValueChanged.AddListener(delegate { _gameManager.SfxVolume = FXvolumeslider.value; });
 
         //Set Up ResumeButton
         Button ResumeButton = GameObject.Find("ResumeButton").GetComponent<Button>();

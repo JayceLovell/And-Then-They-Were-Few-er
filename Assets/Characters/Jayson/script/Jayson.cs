@@ -5,22 +5,18 @@ using UnityEngine;
 
 public class Jayson : Character
 {
-    void Start()
+    public override void SetRegularConvo()
     {
-        base.Start();
+        base.SetRegularConvo();
+    }
 
-        //Regular
-        //DialogRegularConvo ExampleRegularConvo = new DialogRegularConvo();
-        //ExampleRegularConvo.Text = "Example";
-        //ExampleRegularConvo.NPCTalking = true;
-        //dialogForRegularConvo.Add(ExampleRegularConvo);
-
-        //Interrogation
-        //Element 0
+    public override void SetInterrogationConvo()
+    {
+        base.SetInterrogationConvo();
 
         DialogueForInterrogation ExampleInterrogationConvo = new DialogueForInterrogation();
         ExampleInterrogationConvo.NextElementNumber = 1;
-        ExampleInterrogationConvo.PlayerTalk = false;
+        ExampleInterrogationConvo.NPCTalking = false;
         ExampleInterrogationConvo.EndInterrogation = false;
         ExampleInterrogationConvo.NoQuestions = false;
         ExampleInterrogationConvo.Response = " ";
@@ -44,7 +40,7 @@ public class Jayson : Character
 
         DialogueForInterrogation ExampleInterrogationConvo1 = new DialogueForInterrogation();
         ExampleInterrogationConvo1.NextElementNumber = 1;
-        ExampleInterrogationConvo1.PlayerTalk = false;
+        ExampleInterrogationConvo1.NPCTalking = false;
         ExampleInterrogationConvo1.EndInterrogation = false;
         ExampleInterrogationConvo1.NoQuestions = false;
         ExampleInterrogationConvo1.Response = "Oh I was fast asleep! I was out like a lamp.";
@@ -68,7 +64,7 @@ public class Jayson : Character
 
         DialogueForInterrogation ExampleInterrogationConvo2 = new DialogueForInterrogation();
         ExampleInterrogationConvo2.NextElementNumber = 1;
-        ExampleInterrogationConvo2.PlayerTalk = false;
+        ExampleInterrogationConvo2.NPCTalking = false;
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
         ExampleInterrogationConvo2.Response = "Sure it does! I mean, once you turn off a lamp it's out.";
@@ -92,7 +88,7 @@ public class Jayson : Character
 
         DialogueForInterrogation ExampleInterrogationConvo3 = new DialogueForInterrogation();
         ExampleInterrogationConvo3.NextElementNumber = 1;
-        ExampleInterrogationConvo3.PlayerTalk = true;
+        ExampleInterrogationConvo3.NPCTalking = true;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
         ExampleInterrogationConvo3.Response = "(Laughs) Point is, I was asleep.";
@@ -116,10 +112,12 @@ public class Jayson : Character
 
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
-        ExampleInterrogationConvo4.PlayerTalk = false;
+        ExampleInterrogationConvo4.NPCTalking = false;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
-        ExampleInterrogationConvo4.Response = "I didn't know her personally, it's Damien that invited me to the event";
+        ExampleInterrogationConvo4.Response = "I didn't know her personally, it's Damien that invited me to the event";
+
+
 
         //Creating a Question
 
@@ -141,11 +139,13 @@ public class Jayson : Character
 
         DialogueForInterrogation ExampleInterrogationConvo5 = new DialogueForInterrogation();
         ExampleInterrogationConvo5.NextElementNumber = 1;
-        ExampleInterrogationConvo5.PlayerTalk = false;
+        ExampleInterrogationConvo5.NPCTalking = false;
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "Him and I go waaay back. Plus I wanted to make sure he was doing ok, " +
-            "he had been a bit sad the past few days";
+            "he had been a bit sad the past few days";
+
+
 
         //Creating a Question
 
@@ -167,10 +167,12 @@ public class Jayson : Character
 
         DialogueForInterrogation ExampleInterrogationConvo6 = new DialogueForInterrogation();
         ExampleInterrogationConvo6.NextElementNumber = 1;
-        ExampleInterrogationConvo6.PlayerTalk = false;
+        ExampleInterrogationConvo6.NPCTalking = false;
         ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
-        ExampleInterrogationConvo6.Response = "Well, I really shouldn't say...";
+        ExampleInterrogationConvo6.Response = "Well, I really shouldn't say...";
+
+
 
         //Creating a Question
 
@@ -192,10 +194,12 @@ public class Jayson : Character
 
         DialogueForInterrogation ExampleInterrogationConvo7 = new DialogueForInterrogation();
         ExampleInterrogationConvo7.NextElementNumber = 1;
-        ExampleInterrogationConvo7.PlayerTalk = false;
+        ExampleInterrogationConvo7.NPCTalking = false;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
-        ExampleInterrogationConvo7.Response = "Alright, I'll spill! Damien and Karol had a thing";
+        ExampleInterrogationConvo7.Response = "Alright, I'll spill! Damien and Karol had a thing";
+
+
 
         //Creating a Question
 
@@ -217,11 +221,13 @@ public class Jayson : Character
 
         DialogueForInterrogation ExampleInterrogationConvo8 = new DialogueForInterrogation();
         ExampleInterrogationConvo8.NextElementNumber = 1;
-        ExampleInterrogationConvo8.PlayerTalk = false;
+        ExampleInterrogationConvo8.NPCTalking = false;
         ExampleInterrogationConvo8.EndInterrogation = false;
         ExampleInterrogationConvo8.NoQuestions = false;
         ExampleInterrogationConvo8.Response = "Well, kinda, but it had to be secret. " +
-            "You know, what with Nikki being Karol's competition and all that.";
+            "You know, what with Nikki being Karol's competition and all that.";
+
+
 
         //Creating a Question
 
@@ -243,11 +249,13 @@ public class Jayson : Character
 
         DialogueForInterrogation ExampleInterrogationConvo9 = new DialogueForInterrogation();
         ExampleInterrogationConvo9.NextElementNumber = 1;
-        ExampleInterrogationConvo9.PlayerTalk = false;
+        ExampleInterrogationConvo9.NPCTalking = false;
         ExampleInterrogationConvo9.EndInterrogation = false;
         ExampleInterrogationConvo9.NoQuestions = false;
         ExampleInterrogationConvo9.Response = "He wouldn't tell me, but I just have a feeling it had something to do with Karol. " +
-            "I know he felt guilty about keeping it hidden from Nikki.";
+            "I know he felt guilty about keeping it hidden from Nikki.";
+
+
 
         //Creating a Question
 
@@ -269,10 +277,12 @@ public class Jayson : Character
 
         DialogueForInterrogation ExampleInterrogationConvo10 = new DialogueForInterrogation();
         ExampleInterrogationConvo10.NextElementNumber = 1;
-        ExampleInterrogationConvo10.PlayerTalk = false;
+        ExampleInterrogationConvo10.NPCTalking = false;
         ExampleInterrogationConvo10.EndInterrogation = false;
         ExampleInterrogationConvo10.NoQuestions = false;
-        ExampleInterrogationConvo10.Response = "It's certainly a doozy, I'll give you that!";
+        ExampleInterrogationConvo10.Response = "It's certainly a doozy, I'll give you that!";
+
+
 
         //Creating a Question
 
@@ -289,8 +299,6 @@ public class Jayson : Character
         ExampleInterrogationConvo10.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo10);
-
-        
     }
 }
 

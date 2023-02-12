@@ -168,6 +168,10 @@ public class Player : MonoBehaviour
         }
 
     }
+    void OnBringUpClues()
+    {
+        ClueManager.Instance.ToggleMenu();
+    }
 
     public void ImTalking()
     {
@@ -182,19 +186,6 @@ public class Player : MonoBehaviour
     {
         GameManager.Instance.Quit();
     }
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.tag == "NPC")
-    //    {
-    //        CurrentNPCToTalkTo = collision.gameObject;
-    //        CanTalkToNPC = true;
-    //        // Wrote this since character isn't animating just static
-    //        NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
-    //        //In future use this to grab the interrigation sprite.
-    //        //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
-    //        NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
-    //    }
-    //}
     void OnTriggerStay2D(Collider2D collision)
     {
 

@@ -199,6 +199,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1154058452342723377, guid: 1af331ce313022641a866c6da049faa6, type: 3}
+      propertyPath: ClueStatementText
+      value: Bloody footprints found near bathroom room in Entrance area.
+      objectReference: {fileID: 0}
     - target: {fileID: 3841429615764234770, guid: 1af331ce313022641a866c6da049faa6, type: 3}
       propertyPath: m_TileSpriteArray.Array.size
       value: 6

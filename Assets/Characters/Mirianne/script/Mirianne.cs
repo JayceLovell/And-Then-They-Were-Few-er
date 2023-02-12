@@ -5,22 +5,13 @@ using UnityEngine;
 
 public class Mirianne : Character
 {
-    void Start()
+    public override void SetInterrogationConvo()
     {
-        base.Start();
-
-        //Regular
-        //DialogRegularConvo ExampleRegularConvo = new DialogRegularConvo();
-        //ExampleRegularConvo.Text = "Example";
-        //ExampleRegularConvo.NPCTalking = true;
-        //dialogForRegularConvo.Add(ExampleRegularConvo);
-
-        //Interrogation
-        //Element 0
-
+        base.SetInterrogationConvo();
+    
         DialogueForInterrogation ExampleInterrogationConvo = new DialogueForInterrogation();
         ExampleInterrogationConvo.NextElementNumber = 1;
-        ExampleInterrogationConvo.PlayerTalk = false;
+        ExampleInterrogationConvo.NPCTalking = false;
         ExampleInterrogationConvo.EndInterrogation = false;
         ExampleInterrogationConvo.NoQuestions = false;
         ExampleInterrogationConvo.Response = " ";
@@ -44,7 +35,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo1 = new DialogueForInterrogation();
         ExampleInterrogationConvo1.NextElementNumber = 1;
-        ExampleInterrogationConvo1.PlayerTalk = false;
+        ExampleInterrogationConvo1.NPCTalking = false;
         ExampleInterrogationConvo1.EndInterrogation = false;
         ExampleInterrogationConvo1.NoQuestions = false;
         ExampleInterrogationConvo1.Response = "I don’t see why this is any of your business, “Detective”";
@@ -68,7 +59,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo2 = new DialogueForInterrogation();
         ExampleInterrogationConvo2.NextElementNumber = 1;
-        ExampleInterrogationConvo2.PlayerTalk = false;
+        ExampleInterrogationConvo2.NPCTalking = false;
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
         ExampleInterrogationConvo2.Response = "Well, last time I checked, you are not the police." +
@@ -93,7 +84,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo3 = new DialogueForInterrogation();
         ExampleInterrogationConvo3.NextElementNumber = 1;
-        ExampleInterrogationConvo3.PlayerTalk = true;
+        ExampleInterrogationConvo3.NPCTalking = true;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
         ExampleInterrogationConvo3.Response = "(Ashlyn takes a deep breath, trying to control her anger)" +
@@ -119,7 +110,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
-        ExampleInterrogationConvo4.PlayerTalk = false;
+        ExampleInterrogationConvo4.NPCTalking = false;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
         ExampleInterrogationConvo4.Response = " (Mirianne, who had been glaring at Ashlyn, " +
@@ -145,7 +136,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo5 = new DialogueForInterrogation();
         ExampleInterrogationConvo5.NextElementNumber = 1;
-        ExampleInterrogationConvo5.PlayerTalk = false;
+        ExampleInterrogationConvo5.NPCTalking = false;
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "Well, if there’s one thing that hasn’t changed, it’s how much you’re willing to do for your friends…";
@@ -170,7 +161,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo6 = new DialogueForInterrogation();
         ExampleInterrogationConvo6.NextElementNumber = 1;
-        ExampleInterrogationConvo6.PlayerTalk = false;
+        ExampleInterrogationConvo6.NPCTalking = false;
         ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
         ExampleInterrogationConvo6.Response = "If you must know, I was in [some room near the lab].";
@@ -195,7 +186,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo7 = new DialogueForInterrogation();
         ExampleInterrogationConvo7.NextElementNumber = 1;
-        ExampleInterrogationConvo7.PlayerTalk = false;
+        ExampleInterrogationConvo7.NPCTalking = false;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
         ExampleInterrogationConvo7.Response = "(Mirianne stutters for a bit, shocked, but quickly recovers)";
@@ -220,7 +211,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo8 = new DialogueForInterrogation();
         ExampleInterrogationConvo8.NextElementNumber = 1;
-        ExampleInterrogationConvo8.PlayerTalk = false;
+        ExampleInterrogationConvo8.NPCTalking = false;
         ExampleInterrogationConvo8.EndInterrogation = false;
         ExampleInterrogationConvo8.NoQuestions = false;
         ExampleInterrogationConvo8.Response = "Oh! Pardon me, I seem to have misremembered. Yes I was indeed in that room.";
@@ -245,7 +236,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo9 = new DialogueForInterrogation();
         ExampleInterrogationConvo9.NextElementNumber = 1;
-        ExampleInterrogationConvo9.PlayerTalk = false;
+        ExampleInterrogationConvo9.NPCTalking = false;
         ExampleInterrogationConvo9.EndInterrogation = false;
         ExampleInterrogationConvo9.NoQuestions = false;
         ExampleInterrogationConvo9.Response = "I could hear two people talking very loudly, but couldn’t make out what they were saying." +
@@ -271,7 +262,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo10 = new DialogueForInterrogation();
         ExampleInterrogationConvo10.NextElementNumber = 1;
-        ExampleInterrogationConvo10.PlayerTalk = false;
+        ExampleInterrogationConvo10.NPCTalking = false;
         ExampleInterrogationConvo10.EndInterrogation = false;
         ExampleInterrogationConvo10.NoQuestions = false;
         ExampleInterrogationConvo10.Response = "At the time, I heard a very loud sound, which I assumed was the thunder." +
@@ -297,7 +288,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo11 = new DialogueForInterrogation();
         ExampleInterrogationConvo11.NextElementNumber = 1;
-        ExampleInterrogationConvo11.PlayerTalk = false;
+        ExampleInterrogationConvo11.NPCTalking = false;
         ExampleInterrogationConvo11.EndInterrogation = false;
         ExampleInterrogationConvo11.NoQuestions = false;
         ExampleInterrogationConvo11.Response = "(Miriane begins to scowl)";
@@ -322,7 +313,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo12 = new DialogueForInterrogation();
         ExampleInterrogationConvo12.NextElementNumber = 1;
-        ExampleInterrogationConvo12.PlayerTalk = false;
+        ExampleInterrogationConvo12.NPCTalking = false;
         ExampleInterrogationConvo12.EndInterrogation = false;
         ExampleInterrogationConvo12.NoQuestions = false;
         ExampleInterrogationConvo12.Response = "…It may have been a body hitting the ground.";
@@ -347,7 +338,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo13 = new DialogueForInterrogation();
         ExampleInterrogationConvo13.NextElementNumber = 1;
-        ExampleInterrogationConvo13.PlayerTalk = false;
+        ExampleInterrogationConvo13.NPCTalking = false;
         ExampleInterrogationConvo13.EndInterrogation = false;
         ExampleInterrogationConvo13.NoQuestions = false;
         ExampleInterrogationConvo13.Response = "(Miriane’s expression hardens)";
@@ -372,7 +363,7 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo14 = new DialogueForInterrogation();
         ExampleInterrogationConvo14.NextElementNumber = 1;
-        ExampleInterrogationConvo14.PlayerTalk = false;
+        ExampleInterrogationConvo14.NPCTalking = false;
         ExampleInterrogationConvo14.EndInterrogation = false;
         ExampleInterrogationConvo14.NoQuestions = false;
         ExampleInterrogationConvo14.Response = "I didn’t pay it any mind. Shortly after, I left for my room." +            "May I go now, “Detective”?";

@@ -34,7 +34,7 @@ public class TitleController : MonoBehaviour
         {
             VolumeSlider.SetActive(true);
             _isVolumeDisplayed = true;
-            VolumeSlider.GetComponent<Slider>().value = _gameManager.BGMVolume;
+            VolumeSlider.GetComponent<Slider>().value = _gameManager.BgmVolume;
         }
         else
         {

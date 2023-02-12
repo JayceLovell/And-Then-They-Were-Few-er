@@ -5,22 +5,13 @@ using UnityEngine;
 
 public class Rachel : Character
 {
-    void Start()
+    public override void SetInterrogationConvo()
     {
-        base.Start();
-
-        //Regular
-        //DialogRegularConvo ExampleRegularConvo = new DialogRegularConvo();
-        //ExampleRegularConvo.Text = "Example";
-        //ExampleRegularConvo.NPCTalking = true;
-        //dialogForRegularConvo.Add(ExampleRegularConvo);
-
-        //Interrogation
-        //Element 0
+        base.SetInterrogationConvo();
 
         DialogueForInterrogation ExampleInterrogationConvo = new DialogueForInterrogation();
         ExampleInterrogationConvo.NextElementNumber = 1;
-        ExampleInterrogationConvo.PlayerTalk = false;
+        ExampleInterrogationConvo.NPCTalking = false;
         ExampleInterrogationConvo.EndInterrogation = false;
         ExampleInterrogationConvo.NoQuestions = false;
         ExampleInterrogationConvo.Response = "(Rachel has her hands in her face, and is crying)";
@@ -44,7 +35,7 @@ public class Rachel : Character
 
         DialogueForInterrogation ExampleInterrogationConvo1 = new DialogueForInterrogation();
         ExampleInterrogationConvo1.NextElementNumber = 1;
-        ExampleInterrogationConvo1.PlayerTalk = false;
+        ExampleInterrogationConvo1.NPCTalking = false;
         ExampleInterrogationConvo1.EndInterrogation = false;
         ExampleInterrogationConvo1.NoQuestions = false;
         ExampleInterrogationConvo1.Response = "I just can’t believe she’s gone. Who would do this to my poor baby?";
@@ -68,7 +59,7 @@ public class Rachel : Character
 
         DialogueForInterrogation ExampleInterrogationConvo2 = new DialogueForInterrogation();
         ExampleInterrogationConvo2.NextElementNumber = 1;
-        ExampleInterrogationConvo2.PlayerTalk = false;
+        ExampleInterrogationConvo2.NPCTalking = false;
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
         ExampleInterrogationConvo2.Response = "After the showcase. Watson and I were helping her to clean up, " +
@@ -93,7 +84,7 @@ public class Rachel : Character
 
         DialogueForInterrogation ExampleInterrogationConvo3 = new DialogueForInterrogation();
         ExampleInterrogationConvo3.NextElementNumber = 1;
-        ExampleInterrogationConvo3.PlayerTalk = false;
+        ExampleInterrogationConvo3.NPCTalking = false;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
         ExampleInterrogationConvo3.Response = " (a bit startled): Ah, Nikki usually shuts him down for the night before bed. " +
@@ -118,7 +109,7 @@ public class Rachel : Character
 
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
-        ExampleInterrogationConvo4.PlayerTalk = false;
+        ExampleInterrogationConvo4.NPCTalking = false;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
         ExampleInterrogationConvo4.Response = "May I have a moment? I just..." +
@@ -144,7 +135,7 @@ public class Rachel : Character
 
         DialogueForInterrogation ExampleInterrogationConvo5 = new DialogueForInterrogation();
         ExampleInterrogationConvo5.NextElementNumber = 1;
-        ExampleInterrogationConvo5.PlayerTalk = false;
+        ExampleInterrogationConvo5.NPCTalking = false;
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "No thank you, I have my handkerchief.";
@@ -169,7 +160,7 @@ public class Rachel : Character
 
         DialogueForInterrogation ExampleInterrogationConvo6 = new DialogueForInterrogation();
         ExampleInterrogationConvo6.NextElementNumber = 1;
-        ExampleInterrogationConvo6.PlayerTalk = false;
+        ExampleInterrogationConvo6.NPCTalking = false;
         ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
         ExampleInterrogationConvo6.Response = "(Rachel reaches into her handbag, but can't seem to find it)";
@@ -194,7 +185,7 @@ public class Rachel : Character
 
         DialogueForInterrogation ExampleInterrogationConvo7 = new DialogueForInterrogation();
         ExampleInterrogationConvo7.NextElementNumber = 1;
-        ExampleInterrogationConvo7.PlayerTalk = false;
+        ExampleInterrogationConvo7.NPCTalking = false;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
         ExampleInterrogationConvo7.Response = "Oh, I must have dropped it somewhere";

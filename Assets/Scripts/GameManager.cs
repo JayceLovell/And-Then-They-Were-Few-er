@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Background music volume
     /// </summary>
-    public float BGMVolume
+    public float BgmVolume
     {
         get {            
             return (_bgmVolume);
@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Sound effects background volume
     /// </summary>
-    public float SFXVolume {
+    public float SfxVolume {
         get
         {         
             return (_sfxVolume);
@@ -201,20 +201,41 @@ public class GameManager : MonoBehaviour
     }
     private void _loadPlayerPrefs()
     {
-        if ((PlayerPrefs.GetFloat("Sfx Volume") == 0))
-            SFXVolume = 50;
+        if (PlayerPrefs.GetFloat("Sfx Volume") == 0)
+            SfxVolume = 50;
+        else
+            SfxVolume = PlayerPrefs.GetFloat("Sfx Volume");
 
-        if ((PlayerPrefs.GetFloat("BGM Volume") == 0))
-            BGMVolume = 50;
+        if (PlayerPrefs.GetFloat("BGM Volume") == 0)
+            BgmVolume = 50;
+        else
+            BgmVolume = PlayerPrefs.GetFloat("BGM Volume");
+
         if (PlayerPrefs.GetFloat("Game Time") <= 0)
             _gameTime = 900;
         else
             _gameTime = PlayerPrefs.GetFloat("Game Time");
 
-        _lastScene = PlayerPrefs.GetString("Last Scene");
-        _currentScene = PlayerPrefs.GetString("Current Scene");
-        _currentGameProgress = PlayerPrefs.GetInt("Player Progress");
+        _lastScene = PlayerPrefs.GetString("Last Scene","");
+        _currentScene = PlayerPrefs.GetString("Current Scene","");
+        _currentGameProgress = PlayerPrefs.GetInt("Player Progress",0);
 
+        string cluesString = PlayerPrefs.GetString("Clues", "");
+        string pickedUpString = PlayerPrefs.GetString("Clues Picked Up", "");
+        string[] cluesArray = cluesString.Split(',');
+        string[] pickedUpArray = pickedUpString.Split(',');
+        List<Clue> clues = new List<Clue>();
+        for (int i = 0; i < cluesArray.Length; i++)
+        {
+            if (cluesArray[i] != "")
+            {
+                Clue clue = new Clue();
+                clue.ClueText = cluesArray[i];
+                clue.PickedUp = (pickedUpArray[i] == "1");
+                clues.Add(clue);
+            }
+        }
+        ClueManager.Instance.Clues = clues;
     }
     private void _savePlayerPrefs()
     {
@@ -225,8 +246,17 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("Current Scene", _currentScene);
         PlayerPrefs.SetString("Last Scene",_lastScene);
 
-        string cluesJson = JsonUtility.ToJson(ClueManager.Instance.clues);
-        PlayerPrefs.SetString("Clues", cluesJson);
+        string CluesString = "";
+        string PickedUpString = "";
+
+        foreach (Clue clue in ClueManager.Instance.Clues)
+        {
+            CluesString += clue.ClueText + ",";
+            PickedUpString += clue.PickedUp ? "1," : "0,";
+        }
+
+        PlayerPrefs.SetString("Clues", CluesString);
+        PlayerPrefs.SetString("Clues Picked Up", PickedUpString);
 
         PlayerPrefs.Save();
     }
@@ -235,11 +265,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void NewGame()
     {
-        PlayerPrefs.DeleteKey("LastScene");
-        PlayerPrefs.DeleteKey("Player Progress");
-        PlayerPrefs.DeleteKey("Game Time");
-        PlayerPrefs.DeleteKey("Last Scene");
-        PlayerPrefs.DeleteKey("Current Scene");
+        PlayerPrefs.DeleteAll();
         _loadPlayerPrefs();
         StartGame();
     }

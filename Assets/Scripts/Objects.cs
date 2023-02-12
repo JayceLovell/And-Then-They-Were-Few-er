@@ -56,11 +56,7 @@ public class Objects : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _gameController = GameObject.Find("GameController").GetComponent<GameController>();
-                
-        if (GameManager.Instance.CurrentGameProgress <= 3)
-            if (objectType == TypeOfObject.Clue)
-                this.gameObject.SetActive(false);
+        _gameController = GameObject.Find("GameController").GetComponent<GameController>();                        
         
     }
     /// <summary>

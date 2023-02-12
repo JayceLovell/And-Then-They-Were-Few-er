@@ -74,10 +74,14 @@ public class InterrogationController : MonoBehaviour
             _npcComponent.GetType().GetMethod("StartDialogue").Invoke(_npcComponent, null);
         }
     }
-    public void ImTalking()
+    public void PlayerTalking()
     {
         DialogBox.SpeakerName = "Ashlyn";
         DialogBox.SpeakerImage = Profile;
+    }
+    void OnBringUpClues()
+    {
+        ClueManager.Instance.ToggleMenu();
     }
     public void OnQuit()
     {
