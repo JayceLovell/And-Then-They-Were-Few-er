@@ -63,6 +63,7 @@ public class UiManager : MonoBehaviour
         {
             if(_isPauseActive)
             {
+                GameManager.Instance.SavePlayerPrefs();
                 Destroy(_pauseMenu);
                 _isPauseActive = false;
             }                

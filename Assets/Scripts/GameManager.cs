@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
             return (_bgmVolume);
         }
         set { 
-            _bgmVolume = value;            
+            _bgmVolume = value;
         }
     }
     /// <summary>
@@ -237,7 +237,7 @@ public class GameManager : MonoBehaviour
         }
         ClueManager.Instance.Clues = clues;
     }
-    private void _savePlayerPrefs()
+    public void SavePlayerPrefs()
     {
         PlayerPrefs.SetInt("Player Progress", _currentGameProgress);
         PlayerPrefs.SetFloat("BGM Volume", _bgmVolume);
@@ -301,16 +301,16 @@ public class GameManager : MonoBehaviour
                 break;
             case "Entrance":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
-                _savePlayerPrefs();
+                SavePlayerPrefs();
                 break;
             case "GrandHall":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
                 _timeStart = true;
-                _savePlayerPrefs();
+                SavePlayerPrefs();
                 break;
             case "Big Reveal":
                 SoundManager.StartBackground(SoundManager.BgSound.BigReveal);
-                _savePlayerPrefs();
+                SavePlayerPrefs();
                 break;
             default:
                 Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
@@ -319,7 +319,7 @@ public class GameManager : MonoBehaviour
     }
     void OnSceneUnloaded(Scene current)
     {
-        _savePlayerPrefs();
+        SavePlayerPrefs();
     }
     public void LoadInstructions()
     {
@@ -328,7 +328,7 @@ public class GameManager : MonoBehaviour
     public void Quit()
     {
         _lastScene = _currentScene;
-        _savePlayerPrefs();
+        SavePlayerPrefs();
         Application.Quit();
     }
     void OnDisable()
