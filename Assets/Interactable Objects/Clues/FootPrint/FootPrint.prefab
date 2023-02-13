@@ -127,4 +127,4 @@ MonoBehaviour:
   objectType: 2
   Dialog: Hmm FootPrints
   ClueStatementText: Foot Print
-  ClueStatement: {fileID: 11400000, guid: debbe990441971642a883e861e2a2621, type: 2}
+  ClueStatement: {fileID: 11400000, guid: 13a1f4328318e424e84d29cb269ff938, type: 2}

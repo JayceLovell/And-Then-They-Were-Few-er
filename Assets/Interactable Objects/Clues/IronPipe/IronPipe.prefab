@@ -126,5 +126,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 2
   Dialog: Hmm Pipe
-  ClueStatementText: Pipe
-  ClueStatement: {fileID: 11400000, guid: debbe990441971642a883e861e2a2621, type: 2}
+  ClueStatementText: Pipe in lab.
+  ClueStatement: {fileID: 11400000, guid: 9db6be187c443654aa16b08d4ce16a9b, type: 2}
