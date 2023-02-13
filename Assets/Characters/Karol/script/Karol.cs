@@ -5,6 +5,18 @@ using UnityEngine;
 
 public class Karol : Character
 {
+    public override void SetRegularConvo()
+    {
+        base.SetRegularConvo();
+        if (GameManager.Instance.CurrentGameProgress <= 3)
+        {
+
+            DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
+            ExampleForAfterMurder.NPCTalking = true;
+            ExampleForAfterMurder.Text = "With the atmosphere in here, and the storm out there, this has turned into quite a depressing night.";
+            dialogForRegularConvo.Add(ExampleForAfterMurder);
+        }
+    }
     void Start()
     {
 
@@ -143,6 +155,15 @@ public class Karol : Character
         DialogueForInterrogations.Add(ExampleInterrogationConvo4);
 
         
+    }
+
+    public override void SetAfterClueConvo()
+    {
+        base.SetAfterClueConvo();
+        DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
+        ExampledialogueAfterClue.Response = "*Looks nervous* ";
+        DialogueAfterClues.Add(ExampledialogueAfterClue);
+
     }
 }
 

@@ -8,6 +8,14 @@ public class Jayson : Character
     public override void SetRegularConvo()
     {
         base.SetRegularConvo();
+        if (GameManager.Instance.CurrentGameProgress <= 3)
+        {
+
+            DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
+            ExampleForAfterMurder.NPCTalking = true;
+            ExampleForAfterMurder.Text = "We've got to get to the bottom of this!";
+            dialogForRegularConvo.Add(ExampleForAfterMurder);
+        }
     }
 
     public override void SetInterrogationConvo()
@@ -299,6 +307,14 @@ public class Jayson : Character
         ExampleInterrogationConvo10.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo10);
+    }
+    public override void SetAfterClueConvo()
+    {
+        base.SetAfterClueConvo();
+        DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
+        ExampledialogueAfterClue.Response = "Intriguing...";
+        DialogueAfterClues.Add(ExampledialogueAfterClue);
+
     }
 }
 

@@ -7,15 +7,27 @@ using UnityEngine;
 
 public class Frederick : Character
 {
-        //Regular
-        //DialogRegularConvo ExampleRegularConvo = new DialogRegularConvo();
-        //ExampleRegularConvo.Text = "Example";
-        //ExampleRegularConvo.NPCTalking = true;
-        //dialogForRegularConvo.Add(ExampleRegularConvo);
+    //Regular
+    //DialogRegularConvo ExampleRegularConvo = new DialogRegularConvo();
+    //ExampleRegularConvo.Text = "Example";
+    //ExampleRegularConvo.NPCTalking = true;
+    //dialogForRegularConvo.Add(ExampleRegularConvo);
 
+    public override void SetRegularConvo()
+    {
+        base.SetRegularConvo();
+        if (GameManager.Instance.CurrentGameProgress <= 3)
+        {
 
+            DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
+            ExampleForAfterMurder.NPCTalking = true;
+            ExampleForAfterMurder.Text = "Such a tragedy... How shall I ever explain this to the press?";
+            dialogForRegularConvo.Add(ExampleForAfterMurder);
+        }
+    }
     public override void SetInterrogationConvo()
     {
+
         base.SetInterrogationConvo();
 
         DialogueForInterrogation ExampleInterrogationConvo = new DialogueForInterrogation();
@@ -160,6 +172,15 @@ public class Frederick : Character
         ExampleInterrogationConvo5.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo5);
+    }
+
+    public override void SetAfterClueConvo()
+    {
+        base.SetAfterClueConvo();
+        DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
+        ExampledialogueAfterClue.Response = "A very interesting object indeed!";
+        DialogueAfterClues.Add(ExampledialogueAfterClue);
+
     }
 }
 

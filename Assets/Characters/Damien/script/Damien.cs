@@ -18,7 +18,7 @@ public class Damien : Character
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
-            ExampleForAfterMurder.Text = "I can't beleive what just happened";
+            ExampleForAfterMurder.Text = "Poor Nikki...";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
@@ -171,7 +171,7 @@ public class Damien : Character
     {
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
-
+        ExampledialogueAfterClue.Response  = "I don't know anything about that, unfortunately";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
     }

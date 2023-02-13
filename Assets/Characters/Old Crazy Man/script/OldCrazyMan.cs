@@ -5,6 +5,19 @@ using UnityEngine;
 
 public class OldCrazyMan : Character
 {
+
+    public override void SetRegularConvo()
+    {
+        base.SetRegularConvo();
+        if (GameManager.Instance.CurrentGameProgress <= 3)
+        {
+
+            DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
+            ExampleForAfterMurder.NPCTalking = true;
+            ExampleForAfterMurder.Text = "Precious....My precious gears, are they safe?";
+            dialogForRegularConvo.Add(ExampleForAfterMurder);
+        }
+    }
     public override void SetInterrogationConvo()
     {
         base.SetInterrogationConvo();
@@ -102,6 +115,14 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo3.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo3);
+    }
+    public override void SetAfterClueConvo()
+    {
+        base.SetAfterClueConvo();
+        DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
+        ExampledialogueAfterClue.Response = "I'm sorry, if it's not a gear bit, I don't wanna hear about it.";
+        DialogueAfterClues.Add(ExampledialogueAfterClue);
+
     }
 }
 

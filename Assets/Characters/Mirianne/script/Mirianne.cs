@@ -5,6 +5,19 @@ using UnityEngine;
 
 public class Mirianne : Character
 {
+    public override void SetRegularConvo()
+    {
+        base.SetRegularConvo();
+        if (GameManager.Instance.CurrentGameProgress <= 3)
+        {
+
+            DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
+            ExampleForAfterMurder.NPCTalking = true;
+            ExampleForAfterMurder.Text = "I can't wait for this storm to end so I can leave this wretched mansion";
+            dialogForRegularConvo.Add(ExampleForAfterMurder);
+        }
+    }
+
     public override void SetInterrogationConvo()
     {
         base.SetInterrogationConvo();
@@ -384,6 +397,14 @@ public class Mirianne : Character
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo14);
 
+
+    }
+    public override void SetAfterClueConvo()
+    {
+        base.SetAfterClueConvo();
+        DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
+        ExampledialogueAfterClue.Response = "Do I look like I know?";
+        DialogueAfterClues.Add(ExampledialogueAfterClue);
 
     }
 }

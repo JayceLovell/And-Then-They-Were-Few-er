@@ -5,6 +5,18 @@ using UnityEngine;
 
 public class John : Character
 {
+    public override void SetRegularConvo()
+    {
+        base.SetRegularConvo();
+        if (GameManager.Instance.CurrentGameProgress <= 3)
+        {
+
+            DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
+            ExampleForAfterMurder.NPCTalking = true;
+            ExampleForAfterMurder.Text = "I just want to go home...";
+            dialogForRegularConvo.Add(ExampleForAfterMurder);
+        }
+    }
     void Start()
     {
 
@@ -13,6 +25,8 @@ public class John : Character
         //ExampleRegularConvo.Text = "Example";
         //ExampleRegularConvo.NPCTalking = true;
         //dialogForRegularConvo.Add(ExampleRegularConvo);
+
+
 
         //Interrogation
         //Element 0
@@ -259,6 +273,14 @@ public class John : Character
         ExampleInterrogationConvo9.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo9);
+    }
+    public override void SetAfterClueConvo()
+    {
+        base.SetAfterClueConvo();
+        DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
+        ExampledialogueAfterClue.Response = "I don't know!";
+        DialogueAfterClues.Add(ExampledialogueAfterClue);
+
     }
 }
 
