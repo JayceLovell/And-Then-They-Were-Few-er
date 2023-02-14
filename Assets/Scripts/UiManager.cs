@@ -85,7 +85,7 @@ public class UiManager : MonoBehaviour
 
         //Set Up FX Volume Slider
         Slider FXvolumeslider = GameObject.Find("FXVolumeSlider").GetComponent<Slider>();
-        FXvolumeslider.value = _gameManager.BgmVolume;
+        FXvolumeslider.value = _gameManager.SfxVolume;
         FXvolumeslider.onValueChanged.AddListener(delegate { _gameManager.SfxVolume = FXvolumeslider.value; });
 
         //Set Up ResumeButton

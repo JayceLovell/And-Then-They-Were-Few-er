@@ -51,14 +51,14 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
-    void Update()
-    {
-        if (PlayWalkSound)
-        {
-            SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
-            PlayWalkSound = false;
-        }
-    }
+    //void Update()
+    //{
+    //    if (PlayWalkSound)
+    //    {
+    //        SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
+    //        PlayWalkSound = false;
+    //    }
+    //}
     void FixedUpdate()
     {
         if(Talking)

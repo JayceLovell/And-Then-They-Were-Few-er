@@ -179,13 +179,13 @@ public class GameManager : MonoBehaviour
     {
         _instance = this;
         DontDestroyOnLoad(GameManager.Instance);
+        _loadPlayerPrefs();
     }
     // Start is called before the first frame update
     void Start()
     {
         IsGameOver = false;
-        IsGamePaused = false;
-        _loadPlayerPrefs();
+        IsGamePaused = false;       
     }
 
     // Update is called once per frame
@@ -201,12 +201,12 @@ public class GameManager : MonoBehaviour
     }
     private void _loadPlayerPrefs()
     {
-        if (PlayerPrefs.GetFloat("Sfx Volume") == 0)
+        if(!PlayerPrefs.HasKey("SFX Volume"))        
             SfxVolume = 50;
         else
-            SfxVolume = PlayerPrefs.GetFloat("Sfx Volume");
+            SfxVolume = PlayerPrefs.GetFloat("SFX Volume");
 
-        if (PlayerPrefs.GetFloat("BGM Volume") == 0)
+        if (!PlayerPrefs.HasKey("BGM Volume"))
             BgmVolume = 50;
         else
             BgmVolume = PlayerPrefs.GetFloat("BGM Volume");

@@ -5,8 +5,29 @@ using UnityEngine.Rendering;
 
 public class SoundBGVolume : MonoBehaviour
 {
-    void Update()
+    private AudioSource audioSource;
+    void Start()
     {
-        GetComponent<AudioSource>().volume = (GameManager.Instance.BgmVolume/100);
+       audioSource = this.GetComponent<AudioSource>(); 
+    }
+
+    public void LowerVolume(float duration)
+    {
+        StartCoroutine(LowerVolumeOverTime(duration));
+    }
+
+    private IEnumerator LowerVolumeOverTime(float duration)
+    {
+        float elapsedTime = 0;
+        float startVolume = audioSource.volume;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(startVolume, 0f, elapsedTime / duration);
+            yield return null;
+        }
+
+        audioSource.Stop();
     }
 }
