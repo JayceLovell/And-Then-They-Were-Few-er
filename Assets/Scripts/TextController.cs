@@ -51,6 +51,7 @@ public class TextController : MonoBehaviour
             case 7:
                 _gameManager.CurrentGameProgress = 0;
                 SceneManager.LoadScene("Title");
+                PlayerPrefs.DeleteAll();
                 break;
             default:
                 _gameManager.CurrentGameProgress++;
