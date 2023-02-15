@@ -10,6 +10,58 @@ public class Karol : Character
         base.SetRegularConvo();
         if (GameManager.Instance.CurrentGameProgress <= 3)
         {
+            DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
+            ExampleForBeforeMurder.NPCTalking = true;
+            ExampleForBeforeMurder.Text = "(The eccentric and energetic rival inventor to Nikki Test. She is sponsored by Mirianne)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder);
+
+            DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
+            ExampleForBeforeMurder1.NPCTalking = false;
+            ExampleForBeforeMurder1.Text = "Hello, I'm Ashlyn. Nice to meet you.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder1);
+
+            DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
+            ExampleForBeforeMurder2.NPCTalking = true;
+            ExampleForBeforeMurder2.Text = "Hello yes, I am Karol. Inventor extraordinaire! I’m sure you’ve heard all about me.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder2);
+
+            DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
+            ExampleForBeforeMurder3.NPCTalking = false;
+            ExampleForBeforeMurder3.Text = "Uh... no sorry, can't say I have";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder3);
+
+            DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
+            ExampleForBeforeMurder4.NPCTalking = true;
+            ExampleForBeforeMurder4.Text = "(Karol looks disappointed)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder4);
+
+            DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
+            ExampleForBeforeMurder5.NPCTalking = true;
+            ExampleForBeforeMurder5.Text = "Oh...";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder5);
+
+            DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
+            ExampleForBeforeMurder6.NPCTalking = true;
+            ExampleForBeforeMurder6.Text = " W-well, I guess you can't expect a detective such as yourself to be plugged into the world of inventing.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder6);
+
+            DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
+            ExampleForBeforeMurder7.NPCTalking = true;
+            ExampleForBeforeMurder7.Text = "I'll be taking the place of Nikki as the most prolific inventor in Wandermere soon enough.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder7);
+
+            DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
+            ExampleForBeforeMurder8.NPCTalking = true;
+            ExampleForBeforeMurder8.Text = "Once my latest invention is complete you'll be hearing my name uttered from the lips of everyone in town.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder8);
+
+            DialogRegularConvo ExampleForBeforeMurder9 = new DialogRegularConvo();
+            ExampleForBeforeMurder9.NPCTalking = false;
+            ExampleForBeforeMurder9.Text = "Well if you say so. Good luck… I guess.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder9);
+        }
+        else
+        {
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
@@ -131,7 +183,7 @@ public class Karol : Character
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
         ExampleInterrogationConvo4.NPCTalking = false;
-        ExampleInterrogationConvo4.EndInterrogation = false;
+        ExampleInterrogationConvo4.EndInterrogation = true;
         ExampleInterrogationConvo4.NoQuestions = true;
         ExampleInterrogationConvo4.Response = " Now, Nikki and I may have been rivals, but I still had respect for her! " +
             "If anything I’d want her to still be alive, to witness me surpass her!" +

@@ -10,6 +10,108 @@ public class Jayson : Character
         base.SetRegularConvo();
         if (GameManager.Instance.CurrentGameProgress <= 3)
         {
+            DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
+            ExampleForBeforeMurder.NPCTalking = true;
+            ExampleForBeforeMurder.Text = "(An attractive, but clumsy amateur detective)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder);
+
+            DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
+            ExampleForBeforeMurder1.NPCTalking = false;
+            ExampleForBeforeMurder1.Text = "Good Evening";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder1);
+
+            DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
+            ExampleForBeforeMurder2.NPCTalking = true;
+            ExampleForBeforeMurder2.Text = "(Jayson smiles at Ashlyn)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder2);
+
+            DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
+            ExampleForBeforeMurder3.NPCTalking = true;
+            ExampleForBeforeMurder3.Text = "Well, hello there";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder3);
+
+            DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
+            ExampleForBeforeMurder4.NPCTalking = false;
+            ExampleForBeforeMurder4.Text = "(Ashlyn returns Jayson’s smile)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder4);
+
+            DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
+            ExampleForBeforeMurder5.NPCTalking = false;
+            ExampleForBeforeMurder5.Text = "Well, hello yourself";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder5);
+
+            DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
+            ExampleForBeforeMurder6.NPCTalking = true;
+            ExampleForBeforeMurder6.Text = "You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's hot new detective in the flesh";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder6);
+
+            DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
+            ExampleForBeforeMurder7.NPCTalking = false;
+            ExampleForBeforeMurder7.Text = "So I see my reputation precedes me, eh?";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder7);
+
+            DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
+            ExampleForBeforeMurder8.NPCTalking = false;
+            ExampleForBeforeMurder8.Text = "Do I live up to the stories?";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder8);
+
+            DialogRegularConvo ExampleForBeforeMurder9 = new DialogRegularConvo();
+            ExampleForBeforeMurder9.NPCTalking = true;
+            ExampleForBeforeMurder9.Text = "(Jayson grins at Ashlyn)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder9);
+
+            DialogRegularConvo ExampleForBeforeMurder10 = new DialogRegularConvo();
+            ExampleForBeforeMurder10.NPCTalking = true;
+            ExampleForBeforeMurder10.Text = "That's yet to be determined";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder10);
+
+            DialogRegularConvo ExampleForBeforeMurder11 = new DialogRegularConvo();
+            ExampleForBeforeMurder11.NPCTalking = true;
+            ExampleForBeforeMurder11.Text = "I'm afraid though, that you might have some competition";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder11);
+
+            DialogRegularConvo ExampleForBeforeMurder12 = new DialogRegularConvo();
+            ExampleForBeforeMurder12.NPCTalking = false;
+            ExampleForBeforeMurder12.Text = "Oh? And who might that be?";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder12);
+
+            DialogRegularConvo ExampleForBeforeMurder13 = new DialogRegularConvo();
+            ExampleForBeforeMurder13.NPCTalking = true;
+            ExampleForBeforeMurder13.Text = "(Jayson, takes a step closer, but trips and ends up falling on his front)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder13);
+
+            DialogRegularConvo ExampleForBeforeMurder14 = new DialogRegularConvo();
+            ExampleForBeforeMurder14.NPCTalking = false;
+            ExampleForBeforeMurder14.Text = "(Ashlyn laughs, but not in a cruel mocking way, moreso found it cute and funny)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder14);
+
+            DialogRegularConvo ExampleForBeforeMurder15 = new DialogRegularConvo();
+            ExampleForBeforeMurder15.NPCTalking = true;
+            ExampleForBeforeMurder15.Text = "(Jayson hurriedly picks himself up hurriedly, and stretches out his hand to shake Ashlyn's)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder15);
+
+            DialogRegularConvo ExampleForBeforeMurder16 = new DialogRegularConvo();
+            ExampleForBeforeMurder16.NPCTalking = true;
+            ExampleForBeforeMurder16.Text = "(Jayson is winded, still comes off as confident, but clearly a bit embarrassed)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder16);
+
+            DialogRegularConvo ExampleForBeforeMurder17 = new DialogRegularConvo();
+            ExampleForBeforeMurder17.NPCTalking = true;
+            ExampleForBeforeMurder17.Text = "Jayson Klutsch! I may not have your reputation quite yet, but I do believe I'm a force to be reckoned with";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder17);
+
+            DialogRegularConvo ExampleForBeforeMurder18 = new DialogRegularConvo();
+            ExampleForBeforeMurder18.NPCTalking = false;
+            ExampleForBeforeMurder18.Text = "(Ashlyn shakes his hand back, still giggling)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder18);
+
+            DialogRegularConvo ExampleForBeforeMurder19 = new DialogRegularConvo();
+            ExampleForBeforeMurder19.NPCTalking = false;
+            ExampleForBeforeMurder19.Text = "Glad to make your acquaintance";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder19);
+        }
+        else
+        {
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
@@ -258,7 +360,7 @@ public class Jayson : Character
         DialogueForInterrogation ExampleInterrogationConvo9 = new DialogueForInterrogation();
         ExampleInterrogationConvo9.NextElementNumber = 1;
         ExampleInterrogationConvo9.NPCTalking = false;
-        ExampleInterrogationConvo9.EndInterrogation = false;
+        ExampleInterrogationConvo9.EndInterrogation = true;
         ExampleInterrogationConvo9.NoQuestions = false;
         ExampleInterrogationConvo9.Response = "He wouldn't tell me, but I just have a feeling it had something to do with Karol. " +
             "I know he felt guilty about keeping it hidden from Nikki.";
@@ -286,7 +388,7 @@ public class Jayson : Character
         DialogueForInterrogation ExampleInterrogationConvo10 = new DialogueForInterrogation();
         ExampleInterrogationConvo10.NextElementNumber = 1;
         ExampleInterrogationConvo10.NPCTalking = false;
-        ExampleInterrogationConvo10.EndInterrogation = false;
+        ExampleInterrogationConvo10.EndInterrogation = true;
         ExampleInterrogationConvo10.NoQuestions = false;
         ExampleInterrogationConvo10.Response = "It's certainly a doozy, I'll give you that!";
 

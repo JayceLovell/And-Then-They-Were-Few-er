@@ -19,15 +19,75 @@ public class Damien : Character
 
             DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
             ExampleForBeforeMurder.NPCTalking = true;
-            ExampleForBeforeMurder.Text = "Hi Ashlyn";
+            ExampleForBeforeMurder.Text = "(The young apprentice of Nikki Test)";
             dialogForRegularConvo.Add(ExampleForBeforeMurder);
+
+            DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
+            ExampleForBeforeMurder1.NPCTalking = true;
+            ExampleForBeforeMurder1.Text = "Ah, you must be Detective Ashlyn. Nikki has told me so much about you.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder1);
+
+            DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
+            ExampleForBeforeMurder2.NPCTalking = false;
+            ExampleForBeforeMurder2.Text = " She has? So I would assume you're Nikki's apprentice then?";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder2);
+
+            DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
+            ExampleForBeforeMurder3.NPCTalking = true;
+            ExampleForBeforeMurder3.Text = " Oh, pardon me I forgot to introduce myself. I am Damien and yes I am Nikki's apprentice.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder3);
+
+            DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
+            ExampleForBeforeMurder4.NPCTalking = true;
+            ExampleForBeforeMurder4.Text = " Nikki was so excited to finally meet you again, so please make yourself at home.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder4);
+
+            DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
+            ExampleForBeforeMurder5.NPCTalking = false;
+            ExampleForBeforeMurder5.Text = "(Ashlyn begins to blush a little)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder5);
+
+            DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
+            ExampleForBeforeMurder6.NPCTalking = false;
+            ExampleForBeforeMurder6.Text = "I'm surprised Nikki still cares about me that much considering it's been years since we last talked.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder6);
+
+            DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
+            ExampleForBeforeMurder7.NPCTalking = true;
+            ExampleForBeforeMurder7.Text = "Of course Nikki still cares. To tell the truth she's been wanting to meet with you again for a while now but has been far too busy to reach out until now.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder7);
+
+            DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
+            ExampleForBeforeMurder8.NPCTalking = false;
+            ExampleForBeforeMurder8.Text = " Whoa... I guess it isn't easy being an inventor.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder8);
+
+            DialogRegularConvo ExampleForBeforeMurder9 = new DialogRegularConvo();
+            ExampleForBeforeMurder9.NPCTalking = true;
+            ExampleForBeforeMurder9.Text = " Sadly it isn't but that's what makes today quite special.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder9);
+
+            DialogRegularConvo ExampleForBeforeMurder10 = new DialogRegularConvo();
+            ExampleForBeforeMurder10.NPCTalking = true;
+            ExampleForBeforeMurder10.Text = "She arranged this whole event so we could celebrate her achievements and have a good time.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder10);
+
+            DialogRegularConvo ExampleForBeforeMurder11 = new DialogRegularConvo();
+            ExampleForBeforeMurder11.NPCTalking = true;
+            ExampleForBeforeMurder11.Text = "So please enjoy the food and drink and relax.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder11);
+
+            DialogRegularConvo ExampleForBeforeMurder12 = new DialogRegularConvo();
+            ExampleForBeforeMurder12.NPCTalking = false;
+            ExampleForBeforeMurder12.Text = "Haha, yeah will do.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder12);
         }
         else
         {
             // Create convo after Murder
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
-            ExampleForAfterMurder.Text = "I can't bevlieve what happens";
+            ExampleForAfterMurder.Text = "Poor Nikki";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
@@ -132,7 +192,7 @@ public class Damien : Character
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
         ExampleInterrogationConvo4.NPCTalking = false;
-        ExampleInterrogationConvo4.EndInterrogation = false;
+        ExampleInterrogationConvo4.EndInterrogation = true;
         ExampleInterrogationConvo4.NoQuestions = false;
         ExampleInterrogationConvo4.Response = "*Damien gets defensive* I don't see anything wrong with that";
         //Creating a Question
@@ -156,7 +216,7 @@ public class Damien : Character
         DialogueForInterrogation ExampleInterrogationConvo5 = new DialogueForInterrogation();
         ExampleInterrogationConvo5.NextElementNumber = 1;
         ExampleInterrogationConvo5.NPCTalking = false;
-        ExampleInterrogationConvo5.EndInterrogation = false;
+        ExampleInterrogationConvo5.EndInterrogation = true;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "His recharge station should be right next to Rachel's room";
         //Creating a Question

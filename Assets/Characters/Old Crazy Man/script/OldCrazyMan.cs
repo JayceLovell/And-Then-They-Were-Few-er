@@ -10,6 +10,54 @@ public class OldCrazyMan : Character
     {
         base.SetRegularConvo();
         if (GameManager.Instance.CurrentGameProgress <= 3)
+
+        {
+            DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
+            ExampleForBeforeMurder.NPCTalking = true;
+            ExampleForBeforeMurder.Text = "(The father of John. Very random, loud and rude)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder);
+
+            DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
+            ExampleForBeforeMurder1.NPCTalking = true;
+            ExampleForBeforeMurder1.Text = "Do you smell it in the air?";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder1);
+
+            DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
+            ExampleForBeforeMurder2.NPCTalking = false;
+            ExampleForBeforeMurder2.Text = "Excuse me? Smell what?";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder2);
+
+            DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
+            ExampleForBeforeMurder3.NPCTalking = true;
+            ExampleForBeforeMurder3.Text = "The gears of course! I love the smell of freshly oiled gears!";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder3);
+
+            DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
+            ExampleForBeforeMurder4.NPCTalking = true;
+            ExampleForBeforeMurder4.Text = "(The Crazy Old Man has an excited but wild look about him)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder4);
+
+            DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
+            ExampleForBeforeMurder5.NPCTalking = false;
+            ExampleForBeforeMurder5.Text = "Well, I can kind of relate. I like the smell of fresh ink and newly printed parchment paper";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder5);
+
+            DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
+            ExampleForBeforeMurder6.NPCTalking = false;
+            ExampleForBeforeMurder6.Text = "(Ashlyn smiles cheekily)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder6);
+
+            DialogRegularConvo ExampleForBeforeMurder7= new DialogRegularConvo();
+            ExampleForBeforeMurder7.NPCTalking = true;
+            ExampleForBeforeMurder7.Text = "Ink? Parchment! Now that's just weird";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder7);
+
+            DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
+            ExampleForBeforeMurder8.NPCTalking = true;
+            ExampleForBeforeMurder8.Text = "The Crazy Old Man sticks his tongue out at Ashlyn and starts muttering to himself as Ashlyn walks away)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder8);
+        }
+        else
         {
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
@@ -97,7 +145,7 @@ public class OldCrazyMan : Character
         DialogueForInterrogation ExampleInterrogationConvo3 = new DialogueForInterrogation();
         ExampleInterrogationConvo3.NextElementNumber = 1;
         ExampleInterrogationConvo3.NPCTalking = false;
-        ExampleInterrogationConvo3.EndInterrogation = false;
+        ExampleInterrogationConvo3.EndInterrogation = true;
         ExampleInterrogationConvo3.NoQuestions = false;
         ExampleInterrogationConvo3.Response = "I always ask him to accompany me so that I have someone to hold my gears. Don’t want to drop them in the toilet!";
         //Creating a Question

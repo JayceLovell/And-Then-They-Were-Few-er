@@ -10,6 +10,53 @@ public class John : Character
         base.SetRegularConvo();
         if (GameManager.Instance.CurrentGameProgress <= 3)
         {
+            DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
+            ExampleForBeforeMurder.NPCTalking = true;
+            ExampleForBeforeMurder.Text = "(A nervous young man)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder);
+
+            DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
+            ExampleForBeforeMurder1.NPCTalking = true;
+            ExampleForBeforeMurder1.Text = "(His Dad is the Crazy Old Man)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder1);
+
+            DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
+            ExampleForBeforeMurder2.NPCTalking = false;
+            ExampleForBeforeMurder2.Text = "Hi";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder2);
+
+            DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
+            ExampleForBeforeMurder3.NPCTalking = true;
+            ExampleForBeforeMurder3.Text = "Oh, hello there.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder3);
+
+            DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
+            ExampleForBeforeMurder4.NPCTalking = false;
+            ExampleForBeforeMurder4.Text = "Come to see the showcase as well?";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder4);
+
+            DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
+            ExampleForBeforeMurder5.NPCTalking = true;
+            ExampleForBeforeMurder5.Text = "Yeah, but I'm worried my dad might do something to interrupt the show.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder5);
+
+            DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
+            ExampleForBeforeMurder6.NPCTalking = true;
+            ExampleForBeforeMurder6.Text = "(Both turn to look at The Crazy Old Man, who is muttering something loud about gears)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder6);
+
+            DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
+            ExampleForBeforeMurder7.NPCTalking = true;
+            ExampleForBeforeMurder7.Text = "Oh Dad...";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder7);
+
+            DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
+            ExampleForBeforeMurder8.NPCTalking = true;
+            ExampleForBeforeMurder8.Text = "(John covers his hands with his face in embarrassment)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder8);
+        }
+        else
+        {
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
@@ -181,7 +228,7 @@ public class John : Character
         DialogueForInterrogation ExampleInterrogationConvo6 = new DialogueForInterrogation();
         ExampleInterrogationConvo6.NextElementNumber = 1;
         ExampleInterrogationConvo6.NPCTalking = false;
-        ExampleInterrogationConvo6.EndInterrogation = false;
+        ExampleInterrogationConvo6.EndInterrogation = true;
         ExampleInterrogationConvo6.NoQuestions = false;
         ExampleInterrogationConvo6.Response = "After that, it seemed like they went into the next stall. " +
             "I think I might have heard something hit the floor, but I’m not sure, I didn’t look in to check.";

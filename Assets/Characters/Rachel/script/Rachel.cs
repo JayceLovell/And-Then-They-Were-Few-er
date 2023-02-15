@@ -10,6 +10,78 @@ public class Rachel : Character
         base.SetRegularConvo();
         if (GameManager.Instance.CurrentGameProgress <= 3)
         {
+            DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
+            ExampleForBeforeMurder.NPCTalking = true;
+            ExampleForBeforeMurder.Text = "(The over-controlling and overbearing mother of Nikki Test)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder);
+
+            DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
+            ExampleForBeforeMurder1.NPCTalking = false;
+            ExampleForBeforeMurder1.Text = "(Ashlyn bumps into Rachel accidentally and causes her to drop her purse)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder1);
+
+            DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
+            ExampleForBeforeMurder2.NPCTalking = true;
+            ExampleForBeforeMurder2.Text = "Oh!";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder2);
+
+            DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
+            ExampleForBeforeMurder3.NPCTalking = true;
+            ExampleForBeforeMurder3.Text = "(Rachel bends over to pick her purse)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder3);
+
+            DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
+            ExampleForBeforeMurder4.NPCTalking = false;
+            ExampleForBeforeMurder4.Text = "(Ashlyn notices that a handkerchief has fallen out of the purse, and picks it up to hand it back to Rachel)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder4);
+
+            DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
+            ExampleForBeforeMurder5.NPCTalking = false;
+            ExampleForBeforeMurder5.Text = "Sorry about all this. I’m Ashlyn by the way, nice to meet you.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder5);
+
+            DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
+            ExampleForBeforeMurder6.NPCTalking = false;
+            ExampleForBeforeMurder6.Text = "(Ashlyn notices that Rachel looks distressed, as though she has something else on her mind)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder6);
+
+            DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
+            ExampleForBeforeMurder7.NPCTalking = true;
+            ExampleForBeforeMurder7.Text = "I’m Rachel. Nikki’s Mother.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder7);
+
+            DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
+            ExampleForBeforeMurder8.NPCTalking = true;
+            ExampleForBeforeMurder8.Text = "(Rachel looks like she wants to leave)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder8);
+
+            DialogRegularConvo ExampleForBeforeMurder9 = new DialogRegularConvo();
+            ExampleForBeforeMurder9.NPCTalking = false;
+            ExampleForBeforeMurder9.Text = "(There is a short, awkward silence)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder9);
+
+            DialogRegularConvo ExampleForBeforeMurder10 = new DialogRegularConvo();
+            ExampleForBeforeMurder10.NPCTalking = false;
+            ExampleForBeforeMurder10.Text = "Well, nice to meet you!";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder10);
+
+            DialogRegularConvo ExampleForBeforeMurder11 = new DialogRegularConvo();
+            ExampleForBeforeMurder11.NPCTalking = true;
+            ExampleForBeforeMurder11.Text = "…Likewise.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder11);
+
+            DialogRegularConvo ExampleForBeforeMurder12 = new DialogRegularConvo();
+            ExampleForBeforeMurder12.NPCTalking = true;
+            ExampleForBeforeMurder12.Text = "(Rachel's expression, however, remains cold)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder12);
+
+            DialogRegularConvo ExampleForBeforeMurder13 = new DialogRegularConvo();
+            ExampleForBeforeMurder13.NPCTalking = false;
+            ExampleForBeforeMurder13.Text = "(Ashlyn turns away, feeling a bit embarrassed)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder13);
+        }
+        else
+        {
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
@@ -122,7 +194,7 @@ public class Rachel : Character
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
         ExampleInterrogationConvo4.NPCTalking = false;
-        ExampleInterrogationConvo4.EndInterrogation = false;
+        ExampleInterrogationConvo4.EndInterrogation = true;
         ExampleInterrogationConvo4.NoQuestions = false;
         ExampleInterrogationConvo4.Response = "May I have a moment? I just..." +
             "(Rachel turns away from Ashlyn, and starts to sob again)";

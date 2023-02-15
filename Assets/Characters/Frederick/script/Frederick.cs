@@ -18,6 +18,24 @@ public class Frederick : Character
         base.SetRegularConvo();
         if (GameManager.Instance.CurrentGameProgress <= 3)
         {
+            DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
+            ExampleForBeforeMurder.NPCTalking = true;
+            ExampleForBeforeMurder.Text = "(The corrupt mayor of the town)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder);
+
+            DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
+            ExampleForBeforeMurder1.NPCTalking = false;
+            ExampleForBeforeMurder1.Text = "Good Evening Mayor";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder1);
+
+            DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
+            ExampleForBeforeMurder2.NPCTalking = true;
+            ExampleForBeforeMurder2.Text = "Good Evening Ms. Hunt";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder2);
+
+        }
+        else
+        {
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
@@ -154,7 +172,7 @@ public class Frederick : Character
         DialogueForInterrogation ExampleInterrogationConvo5 = new DialogueForInterrogation();
         ExampleInterrogationConvo5.NextElementNumber = 1;
         ExampleInterrogationConvo5.NPCTalking = false;
-        ExampleInterrogationConvo5.EndInterrogation = false;
+        ExampleInterrogationConvo5.EndInterrogation = true;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "It might do us some good to look for them";
         //Creating a Question

@@ -10,6 +10,68 @@ public class Mirianne : Character
         base.SetRegularConvo();
         if (GameManager.Instance.CurrentGameProgress <= 3)
         {
+            DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
+            ExampleForBeforeMurder.NPCTalking = true;
+            ExampleForBeforeMurder.Text = "(Miriane, a wealthy but vain trend chasing fashion designer)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder);
+
+            DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
+            ExampleForBeforeMurder1.NPCTalking = true;
+            ExampleForBeforeMurder1.Text = "Oh, so you're here too, are you?";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder1);
+
+            DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
+            ExampleForBeforeMurder2.NPCTalking = false;
+            ExampleForBeforeMurder2.Text = "Well, hello to you too";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder2);
+
+            DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
+            ExampleForBeforeMurder3.NPCTalking = true;
+            ExampleForBeforeMurder3.Text = "(Mirianne stares at Ashlyn in disdain)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder3);
+
+            DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
+            ExampleForBeforeMurder4.NPCTalking = false;
+            ExampleForBeforeMurder4.Text = "I'm a friend of Nikki's";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder4);
+
+            DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
+            ExampleForBeforeMurder5.NPCTalking = true;
+            ExampleForBeforeMurder5.Text = "(Mirianne continues to stare)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder5);
+
+            DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
+            ExampleForBeforeMurder6.NPCTalking = true;
+            ExampleForBeforeMurder6.Text = "Ah, I see";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder6);
+
+            DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
+            ExampleForBeforeMurder7.NPCTalking = true;
+            ExampleForBeforeMurder7.Text = "Well I must admit, Nikki's built quite the reputation for herself.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder7);
+
+            DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
+            ExampleForBeforeMurder8.NPCTalking = false;
+            ExampleForBeforeMurder8.Text = "(Ashlyn grins rogue-ishly)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder8);
+
+            DialogRegularConvo ExampleForBeforeMurder9 = new DialogRegularConvo();
+            ExampleForBeforeMurder9.NPCTalking = false;
+            ExampleForBeforeMurder9.Text = "Yeah, ol' Nikki's on the up and up";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder9);
+
+            DialogRegularConvo ExampleForBeforeMurder10 = new DialogRegularConvo();
+            ExampleForBeforeMurder10.NPCTalking = true;
+            ExampleForBeforeMurder10.Text = "Well, she might be Wandermere's hottest new inventor, but I have a feeling that someone else will be taking her spot pretty soon...";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder10);
+
+            DialogRegularConvo ExampleForBeforeMurder11 = new DialogRegularConvo();
+            ExampleForBeforeMurder11.NPCTalking = true;
+            ExampleForBeforeMurder11.Text = "(Ashlyn narrows her eyes at Mirianne as she walks away. Mirianne narrows hers as well )";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder11);
+        }
+        else
+        {
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
@@ -377,7 +439,7 @@ public class Mirianne : Character
         DialogueForInterrogation ExampleInterrogationConvo14 = new DialogueForInterrogation();
         ExampleInterrogationConvo14.NextElementNumber = 1;
         ExampleInterrogationConvo14.NPCTalking = false;
-        ExampleInterrogationConvo14.EndInterrogation = false;
+        ExampleInterrogationConvo14.EndInterrogation = true;
         ExampleInterrogationConvo14.NoQuestions = false;
         ExampleInterrogationConvo14.Response = "I didn’t pay it any mind. Shortly after, I left for my room." +            "May I go now, “Detective”?";
 
