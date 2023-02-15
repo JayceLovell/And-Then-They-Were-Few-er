@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rachel_Walk_Right
+  m_Name: Walk Right
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1171462051, guid: 44489c5ec4352ee4fb87033bf850b34b, type: 3}
+      value: {fileID: -1089224148, guid: f1def6674aa416141832abf492f5fc91, type: 3}
     - time: 0.083333336
-      value: {fileID: -13791844, guid: 44489c5ec4352ee4fb87033bf850b34b, type: 3}
+      value: {fileID: -1821353094, guid: f1def6674aa416141832abf492f5fc91, type: 3}
     - time: 0.16666667
-      value: {fileID: 1113937304, guid: 44489c5ec4352ee4fb87033bf850b34b, type: 3}
+      value: {fileID: 1740749396, guid: f1def6674aa416141832abf492f5fc91, type: 3}
+    - time: 0.25
+      value: {fileID: 2003573532, guid: f1def6674aa416141832abf492f5fc91, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,15 +46,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1171462051, guid: 44489c5ec4352ee4fb87033bf850b34b, type: 3}
-    - {fileID: -13791844, guid: 44489c5ec4352ee4fb87033bf850b34b, type: 3}
-    - {fileID: 1113937304, guid: 44489c5ec4352ee4fb87033bf850b34b, type: 3}
+    - {fileID: -1089224148, guid: f1def6674aa416141832abf492f5fc91, type: 3}
+    - {fileID: -1821353094, guid: f1def6674aa416141832abf492f5fc91, type: 3}
+    - {fileID: 1740749396, guid: f1def6674aa416141832abf492f5fc91, type: 3}
+    - {fileID: 2003573532, guid: f1def6674aa416141832abf492f5fc91, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.33333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

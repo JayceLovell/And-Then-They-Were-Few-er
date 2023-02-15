@@ -109,7 +109,7 @@ public class Character :MonoBehaviour
     /// If you want the character to spawn in a specifc spot for a scene put it here
     /// Depending on scene
     /// </summary>
-    [Tooltip("If you want the character to spawn in a specifc spot for a scene put it here.")]
+    [Tooltip("If you want the character to spawn in a specifc spot for a scene put it here. And other Setup Information")]
     public List<CharacterSetUp> CharacterSetUps;
 
     /// <summary>
@@ -247,6 +247,9 @@ public class Character :MonoBehaviour
             case "InterrogationScene":
                 _correctCluePresented= false;
                 this.gameObject.transform.position = GameObject.FindGameObjectWithTag("InterrogationController").GetComponent<InterrogationController>().NPCPosition.position;
+                InterrogationMode = true;
+                SetInterrogationConvo();
+                SetAfterClueConvo();
                 break;
             default:
                 Debug.LogError("No setup written for this scene in Character Class");

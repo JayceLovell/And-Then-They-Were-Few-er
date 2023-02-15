@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2901787032884375440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 55a591c7b9b5862418c2c2064897c32a, type: 3}
+  m_Sprite: {fileID: 1887985970, guid: 162e3c45f9cb5aa4bb20762dd844301c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.73, y: 0.95}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,19 +99,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02b1a26f75913b94ca31c4accdcd1bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpriteUp: {fileID: 0}
-  SpriteDown: {fileID: 0}
-  SpriteLeft: {fileID: 0}
-  SpriteRight: {fileID: 0}
+  DeadSprite: {fileID: 0}
+  correctClue: {fileID: 0}
   Name: 9
-  CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: e973213e9d1a61a42a55b67b51f11ecd, type: 3}
-  InterrigationSprite: {fileID: 0}
-  characterPosition:
-  - Scene: 1
-    Position: {x: 23.52159, y: 28.28614}
-  - Scene: 2
-    Position: {x: 20.84201, y: 2.390876}
+  InterrigationSprite: {fileID: 1887985970, guid: 162e3c45f9cb5aa4bb20762dd844301c, type: 3}
+  CharacterSetUps: []
   dialogForRegularConvo:
   - Text: '(The over-controlling and overbearing mother of Nikki Test)
 
@@ -176,7 +169,7 @@ MonoBehaviour:
   - Text: (Ashlyn turns away, feeling a bit embarrassed)
     NPCTalking: 0
   DialogueForInterrogations: []
-  dialogueAfterClue: []
+  DialogueAfterClues: []
 --- !u!95 &9179986237464571549
 Animator:
   serializedVersion: 4
@@ -214,8 +207,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.42, y: 0.33}
-    newSize: {x: 1, y: 2}
+    oldSize: {x: 0.73, y: 0.95}
+    newSize: {x: 0.73, y: 0.95}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

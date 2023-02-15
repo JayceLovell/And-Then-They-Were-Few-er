@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f1def6674aa416141832abf492f5fc91
+guid: 162e3c45f9cb5aa4bb20762dd844301c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CrazyOldManSprite-0003_0
+      name: Rachel Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 390
-        width: 82
-        height: 93
+        x: 61
+        y: 389
+        width: 74
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b92621cffff3ed4ab6066a77942c55d
-      internalID: 1080553974
+      spriteID: 485db032cebd7cc439fe22491637a3d7
+      internalID: 1154048526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrazyOldManSprite-0003_1
+      name: Rachel Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 390
-        width: 60
-        height: 94
+        x: 150
+        y: 389
+        width: 74
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c3356fcdbc282843b443e0a3d00e41e
-      internalID: 381864937
+      spriteID: 586282f587923734390a199bff895e35
+      internalID: 1134733953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrazyOldManSprite-0003_2
+      name: Rachel Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 244
-        y: 392
-        width: 82
-        height: 93
+        x: 241
+        y: 389
+        width: 74
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cca3d1c8d1cb3d4197195b82a70499c
-      internalID: 878943533
+      spriteID: 2bb5ad116199e6946b2efe7611e0d227
+      internalID: 630799107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrazyOldManSprite-0003_3
+      name: Rachel Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 351
-        y: 391
-        width: 60
-        height: 94
+        x: 345
+        y: 389
+        width: 74
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,103 +194,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 473218743bdacf441b819dadc8351f3d
-      internalID: 1826304798
+      spriteID: b0854723b05a3794da9b8f45e301d966
+      internalID: -713802629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrazyOldManSprite-0003_4
+      name: Rachel Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 55
-        y: 282
-        width: 64
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6385ee607e344a4cbb5781d6c50e579
-      internalID: -1089224148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrazyOldManSprite-0003_5
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 281
-        width: 55
-        height: 93
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b52df051c11ab74481f2b468649e1ec
-      internalID: -1821353094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrazyOldManSprite-0003_6
-      rect:
-        serializedVersion: 2
-        x: 247
-        y: 280
-        width: 58
-        height: 93
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 842bda03f171b884ab0f8076966c3bd7
-      internalID: 1740749396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrazyOldManSprite-0003_7
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 280
-        width: 56
-        height: 93
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 195f0c48f47c44348b5f79156bd25506
-      internalID: 2003573532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrazyOldManSprite-0003_8
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 159
-        width: 75
+        x: 61
+        y: 274
+        width: 73
         height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -299,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bd93e0f3e8461f44b273d0a4aee140d
-      internalID: 2037709385
+      spriteID: 32ca2e6752ac5c34a93f679bc1ec8d42
+      internalID: -1899737348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrazyOldManSprite-0003_9
+      name: Rachel Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 144
-        y: 159
-        width: 70
+        x: 156
+        y: 273
+        width: 73
         height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -320,19 +236,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdde753a48f81d8438a8a67dc5c94568
-      internalID: 527457363
+      spriteID: 8fcf50420a84a6342a4570cec06914e6
+      internalID: 1784321342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrazyOldManSprite-0003_10
+      name: Rachel Sprite Sheet_6
       rect:
         serializedVersion: 2
-        x: 240
-        y: 159
-        width: 76
+        x: 250
+        y: 273
+        width: 73
         height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -341,19 +257,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a04cc6c8907106a49bd145d98788582a
-      internalID: 1335093702
+      spriteID: 9e62243301a3f3745a5d99b6c2a42db6
+      internalID: 1604837752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrazyOldManSprite-0003_11
+      name: Rachel Sprite Sheet_7
       rect:
         serializedVersion: 2
-        x: 333
-        y: 159
-        width: 70
+        x: 339
+        y: 273
+        width: 74
         height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -362,82 +278,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b63655730474b949a1cac03d1c163ec
-      internalID: -582087901
+      spriteID: 8c51b67f424c69b49b7a35e23b5258fb
+      internalID: -1799447854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrazyOldManSprite-0003_12
+      name: Rachel Sprite Sheet_8
       rect:
         serializedVersion: 2
-        x: 62
-        y: 35
-        width: 59
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 426c79589015b344ebc18e464d81586e
-      internalID: 646217743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrazyOldManSprite-0003_13
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 35
-        width: 62
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8d535bd46bf58342abc13a928178d18
-      internalID: -990681616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrazyOldManSprite-0003_14
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 36
-        width: 59
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd39b677c549f4e449e48c0d08aead49
-      internalID: -876581839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrazyOldManSprite-0003_15
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 37
-        width: 68
+        x: 71
+        y: 155
+        width: 73
         height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -446,8 +299,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a72eefdae77de742ac1e607e7bf5f0d
-      internalID: -1650425868
+      spriteID: b903ec31004c7fd4fb4ae53bec53b6e8
+      internalID: 1887985970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rachel Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 155
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f095da9268899b64f99ee9452b74710f
+      internalID: -963080908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rachel Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 155
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93607c4272b52b2418530b903fa59aaf
+      internalID: -463728788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rachel Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 155
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e90b20b2bc90ed4fb2fd0abf2ce24d1
+      internalID: 830088345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rachel Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 24
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549458654f17b4540a76d773863cb45b
+      internalID: -42126347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rachel Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 24
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636cf1fb33aaac240854a0a07a6ffdf7
+      internalID: 343461170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rachel Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 24
+        width: 73
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26732577e84b17488878e071e5df582
+      internalID: -506511039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rachel Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 25
+        width: 73
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b6c1442216dbe4b9394d557ed474a2
+      internalID: 339011246
       vertices: []
       indices: 
       edges: []
@@ -463,22 +463,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CrazyOldManSprite-0003_6: 1740749396
-      CrazyOldManSprite-0003_15: -1650425868
-      CrazyOldManSprite-0003_4: -1089224148
-      CrazyOldManSprite-0003_1: 381864937
-      CrazyOldManSprite-0003_14: -876581839
-      CrazyOldManSprite-0003_8: 2037709385
-      CrazyOldManSprite-0003_3: 1826304798
-      CrazyOldManSprite-0003_9: 527457363
-      CrazyOldManSprite-0003_7: 2003573532
-      CrazyOldManSprite-0003_10: 1335093702
-      CrazyOldManSprite-0003_2: 878943533
-      CrazyOldManSprite-0003_12: 646217743
-      CrazyOldManSprite-0003_5: -1821353094
-      CrazyOldManSprite-0003_13: -990681616
-      CrazyOldManSprite-0003_11: -582087901
-      CrazyOldManSprite-0003_0: 1080553974
+      Rachel Sprite Sheet_13: 343461170
+      Rachel Sprite Sheet_3: -713802629
+      Rachel Sprite Sheet_4: -1899737348
+      Rachel Sprite Sheet_1: 1134733953
+      Rachel Sprite Sheet_15: 339011246
+      Rachel Sprite Sheet_8: 1887985970
+      Rachel Sprite Sheet_12: -42126347
+      Rachel Sprite Sheet_2: 630799107
+      Rachel Sprite Sheet_5: 1784321342
+      Rachel Sprite Sheet_6: 1604837752
+      Rachel Sprite Sheet_0: 1154048526
+      Rachel Sprite Sheet_14: -506511039
+      Rachel Sprite Sheet_11: 830088345
+      Rachel Sprite Sheet_7: -1799447854
+      Rachel Sprite Sheet_9: -963080908
+      Rachel Sprite Sheet_10: -463728788
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
