@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4b8c0379812e4b94ea88fbf617d01677
+guid: ef1b7c41e624b224082b4bdb9e859449
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,257 +101,353 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nikki-down_0
+      name: Nikki Test Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 336
-        width: 30
-        height: 47
+        x: 62
+        y: 377
+        width: 82
+        height: 116
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfd1426dc47edea40a8e7f09cf549e36
-      internalID: 17160183
+      spriteID: 36f9819028789094399b017660322b82
+      internalID: -1448386260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-down_1
+      name: Nikki Test Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 379
+        width: 82
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725ea93ac0758094493d95eb424a19cb
+      internalID: -1693966025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nikki Test Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 379
+        width: 82
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d4116a2d5fdc843b893f20f2ff5167
+      internalID: -652877729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nikki Test Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 379
+        width: 82
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842fcc84c98c55a4b9a4ff4e6a9e508f
+      internalID: -842328811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nikki Test Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 268
+        width: 79
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa3b1eb12607f149906e054ea9ec86d
+      internalID: -1345591206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nikki Test Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 267
+        width: 79
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e6303f7ce6cf348a5deb9a45242e96
+      internalID: -1411032309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nikki Test Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 267
+        width: 79
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6bebeec9a0ed845bee64eb4c1dc757
+      internalID: 2037638962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nikki Test Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 268
+        width: 79
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a68ad1527f21554b83e016861ed9059
+      internalID: -1776352272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nikki Test Sprite Sheet_8
       rect:
         serializedVersion: 2
         x: 56
-        y: 336
-        width: 31
-        height: 48
+        y: 146
+        width: 85
+        height: 108
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b23444604da5a84ebaccb642908f103
-      internalID: 2113903081
+      spriteID: 67691f593dc8d95438f43abc6e2d5c54
+      internalID: 1199566372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-down_2
+      name: Nikki Test Sprite Sheet_9
       rect:
         serializedVersion: 2
-        x: 105
-        y: 336
-        width: 30
-        height: 47
+        x: 150
+        y: 143
+        width: 84
+        height: 109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adeb0ec5ce2fe27448e8266cda4e0959
-      internalID: 2027043927
+      spriteID: 41e05a93cf6c47e458c09ad08c701a43
+      internalID: -45913039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-left_3
+      name: Nikki Test Sprite Sheet_10
       rect:
         serializedVersion: 2
-        x: 8
-        y: 288
-        width: 39
-        height: 46
+        x: 238
+        y: 147
+        width: 85
+        height: 108
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 180e9118b0c7bb543ae14cd56ee5aba4
-      internalID: -211257233
+      spriteID: dcd36d5e6decd4741a06ed0ce936e7bf
+      internalID: -1360059532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-left_4
+      name: Nikki Test Sprite Sheet_11
       rect:
         serializedVersion: 2
-        x: 56
-        y: 288
-        width: 38
-        height: 47
+        x: 340
+        y: 146
+        width: 84
+        height: 109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b085233b6d597a41a4fecdd799b6930
-      internalID: -1719403356
+      spriteID: cefe6cf94ffd9934aa0bdfe9f898123a
+      internalID: -2017208747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-left_5
+      name: Nikki Test Sprite Sheet_12
       rect:
         serializedVersion: 2
-        x: 104
-        y: 288
-        width: 37
-        height: 46
+        x: 65
+        y: 17
+        width: 79
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 890c89de11fdc1742ab3be7f9ff62aef
-      internalID: 1226856242
+      spriteID: c786e9f848f00194fade340992fbc69f
+      internalID: -110222734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-right_6
+      name: Nikki Test Sprite Sheet_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 240
-        width: 39
-        height: 46
+        x: 155
+        y: 17
+        width: 79
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e459ec059528f5f429a51763945f00a9
-      internalID: -1432150796
+      spriteID: 07da84588358fc241a9ad6987c4ccb62
+      internalID: 1701131762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-right_7
+      name: Nikki Test Sprite Sheet_14
       rect:
         serializedVersion: 2
-        x: 49
-        y: 240
-        width: 38
-        height: 47
+        x: 246
+        y: 17
+        width: 79
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad9ce77b3f0fad14f80644b88d3a53b4
-      internalID: 1304023330
+      spriteID: ad081538ae0b72046a01052049fecd58
+      internalID: 1474833842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nikki-right_8
+      name: Nikki Test Sprite Sheet_15
       rect:
         serializedVersion: 2
-        x: 98
-        y: 240
-        width: 37
-        height: 46
+        x: 330
+        y: 18
+        width: 79
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab5b3c6c10d878740ac6940bb5a15a73
-      internalID: -399305904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nikki-up_9
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 192
-        width: 31
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 286abd05e4dcf704f997bfdd24bad9cb
-      internalID: -1068163235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nikki-up_10
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 192
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b40678b58bec0a145bd4073dbdc779d0
-      internalID: 1330376317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nikki-up_11
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 192
-        width: 31
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f822aff05cd45c40a083658a829844e
-      internalID: 2051034293
+      spriteID: 64b11a24ec9a63543a20d606028aa952
+      internalID: -1915512025
       vertices: []
       indices: 
       edges: []
@@ -367,18 +463,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nikki-up_9: -1068163235
-      nikki-up_10: 1330376317
-      nikki-down_1: 2113903081
-      nikki-up_11: 2051034293
-      nikki-down_0: 17160183
-      nikki-left_3: -211257233
-      nikki-left_5: 1226856242
-      nikki-right_8: -399305904
-      nikki-right_6: -1432150796
-      nikki-right_7: 1304023330
-      nikki-down_2: 2027043927
-      nikki-left_4: -1719403356
+      Nikki Test Sprite Sheet_6: 2037638962
+      Nikki Test Sprite Sheet_7: -1776352272
+      Nikki Test Sprite Sheet_10: -1360059532
+      Nikki Test Sprite Sheet_5: -1411032309
+      Nikki Test Sprite Sheet_15: -1915512025
+      Nikki Test Sprite Sheet_4: -1345591206
+      Nikki Test Sprite Sheet_11: -2017208747
+      Nikki Test Sprite Sheet_3: -842328811
+      Nikki Test Sprite Sheet_8: 1199566372
+      Nikki Test Sprite Sheet_13: 1701131762
+      Nikki Test Sprite Sheet_0: -1448386260
+      Nikki Test Sprite Sheet_2: -652877729
+      Nikki Test Sprite Sheet_12: -110222734
+      Nikki Test Sprite Sheet_1: -1693966025
+      Nikki Test Sprite Sheet_14: 1474833842
+      Nikki Test Sprite Sheet_9: -45913039
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

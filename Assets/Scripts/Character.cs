@@ -15,6 +15,9 @@ public class Character :MonoBehaviour
     private DialogueObjectController _dialogBox;
     private InterrogationController _interrogationController;
     private Animator _animator;
+    private bool imDead;
+    [SerializeField]
+    private Sprite DeadSprite;
     private int _numDialog;
     private bool _isTalking;
     private bool _inDialog;
@@ -107,13 +110,13 @@ public class Character :MonoBehaviour
     /// Depending on scene
     /// </summary>
     [Tooltip("If you want the character to spawn in a specifc spot for a scene put it here.")]
-    public List<CharacterPosition> characterPosition;
+    public List<CharacterSetUp> CharacterSetUps;
 
     /// <summary>
     /// To make sure a character spawns in the position for the scene you can hard code it and save here.
     /// </summary>
     [System.Serializable]
-    public class CharacterPosition
+    public class CharacterSetUp
     {
         /// <summary>
         /// Scene the position to take effect in.
@@ -123,6 +126,10 @@ public class Character :MonoBehaviour
         /// Position the character to be in for the scene
         /// </summary>
         public Vector2 Position;
+        /// <summary>
+        /// If Character is dead in the scene or not
+        /// </summary>
+        public bool IsDead;
     }
 
     /// <summary>

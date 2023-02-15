@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 35a7e203d3684d7418ff5e3219a1f69b
+guid: 9e3d5ffd0fe81004dbf8d4c44e1f0a0c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,202 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jayson Sprite Sheet_0
+      name: Mirianne Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 390
-        width: 82
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 139d0be55e67049469aa8d16286d6dbd
-      internalID: 1476961364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jayson Sprite Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 390
-        width: 62
-        height: 103
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa873c329d7fe144f9f56503adb47abc
-      internalID: -441582214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jayson Sprite Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 244
-        y: 392
-        width: 82
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fb1c9c79fbcd2e439ce5eb828304625
-      internalID: 1065092196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jayson Sprite Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 351
+        x: 40
         y: 391
-        width: 60
-        height: 103
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f1e5fa02baabe346a459683c2b2c3e3
-      internalID: -889413736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jayson Sprite Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 279
-        width: 80
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad1196d8351221545b54b57b4d246e9b
-      internalID: -161099828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jayson Sprite Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 278
-        width: 80
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d57c11f9745201845a09b23cffeb1065
-      internalID: 1137196440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jayson Sprite Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 277
-        width: 80
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 436d72f1ce268bb40a146d2ff13eee50
-      internalID: -2085851785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jayson Sprite Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 357
-        y: 277
-        width: 80
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40c7edbf1bd6d9c4b9865b071995c6d1
-      internalID: -1272775037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jayson Sprite Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 159
-        width: 75
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f62763508f236014193c5074f0517401
-      internalID: 1774148793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jayson Sprite Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 159
         width: 70
-        height: 104
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,19 +131,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9dd8c6ddfc2494488768fe86753ecd5
-      internalID: -1172096985
+      spriteID: 7f9e9e1845a404142857db0a3cb6c040
+      internalID: 701246430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson Sprite Sheet_10
+      name: Mirianne Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 257
-        y: 159
-        width: 75
+        x: 130
+        y: 391
+        width: 65
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e7ba5ce1d9597478b07b740e7e9168
+      internalID: -1284038934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 391
+        width: 70
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025e3eace46754142a7c499c532be565
+      internalID: 65798929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 391
+        width: 63
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89990d0067168b478c8241f7a158a7e
+      internalID: -1542544002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 276
+        width: 80
         height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -341,19 +215,166 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6fb42f8dfd1dbe4ebd1729bfca4e803
-      internalID: -1765482670
+      spriteID: 08150247d9752d2488f1de3f95ac6e58
+      internalID: 954759268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson Sprite Sheet_11
+      name: Mirianne Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 348
-        y: 160
-        width: 69
+        x: 127
+        y: 276
+        width: 80
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8658dbb168f49e4a97946193234d144
+      internalID: 1274063363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 275
+        width: 80
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8994828b0f91fb1499e733a6f93b76d2
+      internalID: -997302686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 275
+        width: 82
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b1db151d8f9eb41b83dbcdbde6e701
+      internalID: 1866267146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 157
+        width: 70
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bce09d77e6c604ab20ee4a4f12e7eb
+      internalID: 1676541690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 157
+        width: 64
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67a84e7dab13aa418929d32fabde5ac
+      internalID: 1267751422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 157
+        width: 70
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9bd2316f71b644780b4b857956f73f
+      internalID: -226190042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 157
+        width: 65
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c585f272a82d0c4dbb24fb129da32ad
+      internalID: 410135945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 26
+        width: 78
         height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -362,20 +383,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5509d860a38b4148a68bb05698a33e3
-      internalID: -233394126
+      spriteID: be6b28d657161424eaced6c4752b1d91
+      internalID: 1691604891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson Sprite Sheet_12
+      name: Mirianne Sprite Sheet_13
       rect:
         serializedVersion: 2
-        x: 67
-        y: 35
-        width: 80
-        height: 98
+        x: 111
+        y: 26
+        width: 77
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,20 +404,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9efd79d51d9bb1a46ab5a156264657f0
-      internalID: 769269128
+      spriteID: 95158834f3b4c5742b94caf886fcd946
+      internalID: 1002340392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson Sprite Sheet_13
+      name: Mirianne Sprite Sheet_14
       rect:
         serializedVersion: 2
-        x: 160
-        y: 35
-        width: 80
-        height: 98
+        x: 206
+        y: 26
+        width: 77
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,20 +425,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c53d581277120024a86655bf0f897e05
-      internalID: 1832695137
+      spriteID: 4403f04fb93ee324d8338825393e2b3d
+      internalID: 369873349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson Sprite Sheet_14
+      name: Mirianne Sprite Sheet_15
       rect:
         serializedVersion: 2
-        x: 270
-        y: 36
-        width: 80
-        height: 98
+        x: 301
+        y: 27
+        width: 77
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,29 +446,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7252217a6d40cc4791de4f9d471eb2f
-      internalID: -1297543358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jayson Sprite Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 362
-        y: 37
-        width: 80
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0621740d22f05bd4f9473285758ee7ad
-      internalID: -2005787197
+      spriteID: 563f1ba6fdb537040bff7c42b4f049ca
+      internalID: 272490645
       vertices: []
       indices: 
       edges: []
@@ -463,22 +463,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jayson Sprite Sheet_8: 1774148793
-      Jayson Sprite Sheet_15: -2005787197
-      Jayson Sprite Sheet_13: 1832695137
-      Jayson Sprite Sheet_9: -1172096985
-      Jayson Sprite Sheet_10: -1765482670
-      Jayson Sprite Sheet_7: -1272775037
-      Jayson Sprite Sheet_1: -441582214
-      Jayson Sprite Sheet_4: -161099828
-      Jayson Sprite Sheet_3: -889413736
-      Jayson Sprite Sheet_14: -1297543358
-      Jayson Sprite Sheet_5: 1137196440
-      Jayson Sprite Sheet_12: 769269128
-      Jayson Sprite Sheet_0: 1476961364
-      Jayson Sprite Sheet_11: -233394126
-      Jayson Sprite Sheet_6: -2085851785
-      Jayson Sprite Sheet_2: 1065092196
+      Mirianne Sprite Sheet_2: 65798929
+      Mirianne Sprite Sheet_1: -1284038934
+      Mirianne Sprite Sheet_14: 369873349
+      Mirianne Sprite Sheet_4: 954759268
+      Mirianne Sprite Sheet_8: 1676541690
+      Mirianne Sprite Sheet_6: -997302686
+      Mirianne Sprite Sheet_13: 1002340392
+      Mirianne Sprite Sheet_12: 1691604891
+      Mirianne Sprite Sheet_5: 1274063363
+      Mirianne Sprite Sheet_3: -1542544002
+      Mirianne Sprite Sheet_7: 1866267146
+      Mirianne Sprite Sheet_11: 410135945
+      Mirianne Sprite Sheet_0: 701246430
+      Mirianne Sprite Sheet_10: -226190042
+      Mirianne Sprite Sheet_9: 1267751422
+      Mirianne Sprite Sheet_15: 272490645
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
