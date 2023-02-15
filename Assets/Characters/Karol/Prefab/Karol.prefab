@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2473895939327188018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: b1ea3ac097ec37e4fbde52db24b3384a, type: 3}
+  m_Sprite: {fileID: 1017100266, guid: c06d4c882c831c04384ed6fc2bf112e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.75, y: 1.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,10 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85be5d9dc897031449ae0e6bad6b0092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctClue: {fileID: 0}
   Name: 5
-  CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: c6a736f76c553114491d91a11312b44a, type: 3}
-  InterrigationSprite: {fileID: 0}
+  InterrigationSprite: {fileID: 1017100266, guid: c06d4c882c831c04384ed6fc2bf112e0, type: 3}
   characterPosition:
   - Scene: 1
     Position: {x: 28.1636, y: -9.535529}
@@ -156,7 +156,7 @@ MonoBehaviour:
   - Text: "Well if you say so. Good luck\u2026 I guess."
     NPCTalking: 0
   DialogueForInterrogations: []
-  dialogueAfterClue: []
+  DialogueAfterClues: []
 --- !u!95 &396490896115949879
 Animator:
   serializedVersion: 4
@@ -190,16 +190,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000014901161, y: -0.002479758}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.42, y: 0.33}
-    newSize: {x: 1, y: 2}
+    oldSize: {x: 0.75, y: 1.02}
+    newSize: {x: 0.75, y: 1.02}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13895115, y: 0.1696369}
+  m_Size: {x: 0.75, y: 1.02}
   m_EdgeRadius: 0
