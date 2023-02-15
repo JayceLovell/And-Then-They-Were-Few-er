@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7420325784597776071}
   - component: {fileID: 5215257166766690043}
   - component: {fileID: 6237777029506226020}
-  - component: {fileID: 6570526499320387797}
+  - component: {fileID: 1667521634960085995}
   m_Layer: 0
   m_Name: Frederick
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4319462649502943227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: adf7bc23a578bb444967fe95f2ba8f82, type: 3}
+  m_Sprite: {fileID: 1312578521, guid: f9a45caddfae4924f8cf463a39bab0f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.71, y: 0.89}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,12 +99,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9189f626d8dfb4a9da7d40f91b137b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeadSprite: {fileID: 0}
+  correctClue: {fileID: 0}
   Name: 2
-  TrustLevel: 0
-  isAlive: 1
-  Profile: {fileID: 2800000, guid: a8e0780d90007084f86fadc8f29a85e8, type: 3}
-  InterrigationSprite: {fileID: 0}
-  Positions: []
+  Profile: {fileID: 21300000, guid: 873b9ce669533af4eb19076d1ea44dc0, type: 3}
+  InterrigationSprite: {fileID: 246210415, guid: f9a45caddfae4924f8cf463a39bab0f7, type: 3}
+  CharacterSetUps:
+  - Scene: 1
+    Position: {x: -1.88, y: 11.79}
+    IsDead: 0
+  - Scene: 2
+    Position: {x: 7.580847, y: 1.37678}
+    IsDead: 0
+  dialogForRegularConvo: []
+  DialogueForInterrogations: []
+  DialogueAfterClues: []
 --- !u!95 &6237777029506226020
 Animator:
   serializedVersion: 4
@@ -125,16 +134,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &6570526499320387797
-BoxCollider:
+--- !u!61 &1667521634960085995
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4319462649502943227}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.71, y: 0.89}
+    newSize: {x: 0.71, y: 0.89}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1463032, y: 0.16789412, z: 0.20000002}
-  m_Center: {x: 0.020528143, y: -0.008968632, z: 0}
+  m_Size: {x: 0.71, y: 0.89}
+  m_EdgeRadius: 0

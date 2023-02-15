@@ -23,14 +23,18 @@ public static class SoundManager
         Interigation,
         BigReveal
     }
-
+    public static void MasterVolumeChanged(float value)
+    {
+        AudioListener.volume = value;
+    }
     public static void StartBackground(BgSound bgSound)
     {
         GameObject bgsoundGameObject = new GameObject("BgSound");
         AudioSource audioSource = bgsoundGameObject.AddComponent<AudioSource>();
         audioSource.PlayOneShot(GetBGAudio(bgSound));
         audioSource.loop = true;
-        audioSource.volume= GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().BGMusicVolume;
+        audioSource.volume= GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().BgmVolume;
+        bgsoundGameObject.AddComponent<SoundBGVolume>();
     }
     /// <summary>
     /// Grabs Enum audio and plays once

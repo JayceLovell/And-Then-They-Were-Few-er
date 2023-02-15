@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 895587505239095313}
   - component: {fileID: 38948158685868590}
   - component: {fileID: 4147630681081963121}
-  - component: {fileID: 7216322577158222884}
   - component: {fileID: 7690113068498134056}
   - component: {fileID: 8755390500953867856}
   - component: {fileID: 1924112908}
@@ -80,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -427323525, guid: 458edf7f084d827498b76ea066d4d5ec, type: 3}
+  m_Sprite: {fileID: 1284031153, guid: 0aba37f79de167342b372863a0734a6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,31 +102,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa1d6fdcdb85aa14a86e01fe0d72d756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayWalkSound: 0
   PlayerSpeed: 5
   CanInteract: 0
   CanTalkToNPC: 0
+  Profile: {fileID: 21300000, guid: 2e46acb10b7ce4142a6b035c77a50a32, type: 3}
+  InterrigationSprite: {fileID: -1445255604, guid: 0aba37f79de167342b372863a0734a6e, type: 3}
   NPCSprite: {fileID: 0}
   NPCDisplay: {fileID: 0}
   CurrentInteractableObject: {fileID: 0}
   CurrentNPCToTalkTo: {fileID: 0}
   PlayerObjectTextBox: {fileID: 0}
   moveInput: {x: 0, y: 0}
---- !u!114 &7216322577158222884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2692539282686698567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b447bbbb38dbc8439408e4a94912ee9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clues: []
-  clueButton: {fileID: 3203519595649341115, guid: 88758607791c5ab459aa2d916fef1257, type: 3}
-  clueListContent: {fileID: 0}
-  clueMenu: {fileID: 0}
+  DialogBox: {fileID: 0}
 --- !u!95 &7690113068498134056
 Animator:
   serializedVersion: 4
@@ -138,7 +125,7 @@ Animator:
   m_GameObject: {fileID: 2692539282686698567}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ecc7a95ba510ef04c80af8ba8403523d, type: 2}
+  m_Controller: {fileID: 9100000, guid: b84b028e66244be4094cdaf05d5855e5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
