@@ -51,20 +51,23 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
-    void Update()
-    {
-        if (PlayWalkSound)
-        {
-            SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
-            PlayWalkSound = false;
-        }
-    }
+    //void Update()
+    //{
+    //    if (PlayWalkSound)
+    //    {
+    //        SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
+    //        PlayWalkSound = false;
+    //    }
+    //}
     void FixedUpdate()
     {
         if(Talking)
         {
             moveInput = Vector2.zero;
+            _animator.SetBool("Moving", false);
         }
+        else
+            _animator.SetBool("Moving", true);
 
         _rigidbody.velocity = moveInput * PlayerSpeed;
         
@@ -95,6 +98,9 @@ public class Player : MonoBehaviour
                 _animator.SetBool("Right", false);
                 break;
         }
+
+        if(moveInput == Vector2.zero)
+            _animator.SetBool("Moving", false);
     }
     /// <summary>
     /// Responds to input system on move event

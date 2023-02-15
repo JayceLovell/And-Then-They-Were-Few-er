@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 379050557245956705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1304023330, guid: 62fc21c839c7862488257dc9f0079402, type: 3}
+  m_Sprite: {fileID: 1199566372, guid: ef1b7c41e624b224082b4bdb9e859449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,48 +99,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9d00fb2b7737c47b9c9f10c16456e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeadSprite: {fileID: 21300000, guid: cd5015dfe9c6b0a49a28af5ce051ad0c, type: 3}
+  correctClue: {fileID: 0}
   Name: 0
-  CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: de47a22c972e4904da60abaa08400235, type: 3}
-  InterrigationSprite: {fileID: 0}
-  characterPosition:
+  InterrigationSprite: {fileID: 1199566372, guid: ef1b7c41e624b224082b4bdb9e859449, type: 3}
+  CharacterSetUps:
   - Scene: 1
     Position: {x: 6.64, y: 26.92}
-  dialogForRegularConvo:
-  - Text: '(Nikki grew up in an impoverished neighborhood. Her father left when she
-      was young, leaving her with her mother with the family business. Too stubborn
-      to follow her mothers wishes and take on the family business she instead used
-      her intelligence to invent the Synthesizer)
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Nikki, long time no see!
-
-
-
-'
-    NPCTalking: 0
-  - Text: "Ashlyn! It\u2019s been so long! I\u2019m so glad you could make it!\r\n\r\n"
-    NPCTalking: 1
-  - Text: "Well, I couldn\u2019t say no to an invitation from an old friend. Quite
-      the fancy to-do you\u2019ve set up.\r\n\r\n"
-    NPCTalking: 0
-  - Text: "Heh heh, glad you\u2019re impressed. It takes a lot more effort than you
-      might think to set up one of these. Almost didn\u2019t want to do it but it\u2019d
-      be a shame not to show off my latest invention.\r\n\r\n"
-    NPCTalking: 1
-  - Text: 'What is the invention anyway? You never told anyone, did you?
-
-
-
-'
-    NPCTalking: 0
-  - Text: "You\u2019ll just have to wait and see! Can\u2019t spoil the surprise!"
-    NPCTalking: 1
+    IsDead: 0
+  - Scene: 2
+    Position: {x: 19.99, y: 14.82}
+    IsDead: 1
+  dialogForRegularConvo: []
   DialogueForInterrogations: []
-  dialogueAfterClue: []
+  DialogueAfterClues: []
 --- !u!95 &6858053411055140244
 Animator:
   serializedVersion: 4
@@ -178,12 +151,12 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.38, y: 0.47}
+    oldSize: {x: 0.85, y: 1.08}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.38, y: 0.47}
+  m_Size: {x: 0.85, y: 1.08}
   m_EdgeRadius: 0

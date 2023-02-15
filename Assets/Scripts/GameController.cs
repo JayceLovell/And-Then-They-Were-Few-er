@@ -30,6 +30,9 @@ public class GameController : MonoBehaviour
             _inInterrogation = value;
         }
     }
+    /// <summary>
+    /// Hold the position of the player before going to interrogation room
+    /// </summary>
     public Transform LastPositon
     {
         get { return _lastPosition; }

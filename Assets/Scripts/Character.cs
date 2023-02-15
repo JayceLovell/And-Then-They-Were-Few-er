@@ -15,6 +15,9 @@ public class Character :MonoBehaviour
     private DialogueObjectController _dialogBox;
     private InterrogationController _interrogationController;
     private Animator _animator;
+    private bool imDead;
+    [SerializeField]
+    private Sprite DeadSprite;
     private int _numDialog;
     private bool _isTalking;
     private bool _inDialog;
@@ -106,14 +109,14 @@ public class Character :MonoBehaviour
     /// If you want the character to spawn in a specifc spot for a scene put it here
     /// Depending on scene
     /// </summary>
-    [Tooltip("If you want the character to spawn in a specifc spot for a scene put it here.")]
-    public List<CharacterPosition> characterPosition;
+    [Tooltip("If you want the character to spawn in a specifc spot for a scene put it here. And other Setup Information")]
+    public List<CharacterSetUp> CharacterSetUps;
 
     /// <summary>
     /// To make sure a character spawns in the position for the scene you can hard code it and save here.
     /// </summary>
     [System.Serializable]
-    public class CharacterPosition
+    public class CharacterSetUp
     {
         /// <summary>
         /// Scene the position to take effect in.
@@ -123,6 +126,10 @@ public class Character :MonoBehaviour
         /// Position the character to be in for the scene
         /// </summary>
         public Vector2 Position;
+        /// <summary>
+        /// If Character is dead in the scene or not
+        /// </summary>
+        public bool IsDead;
     }
 
     /// <summary>
@@ -218,31 +225,56 @@ public class Character :MonoBehaviour
     void Start()
     {       
         _animator=GetComponent<Animator>();
-        setUpForScene(GameManager.Instance.CurrentScene);        
+        SetUpForScene(GameManager.Instance.CurrentScene);        
     }
 
     /// <summary>
     /// Check if Object is in correct Position for the scene
     /// </summary>
     /// <param name="Scene"></param>
-    private void setUpForScene(string Scene)
+    private void SetUpForScene(string Scene)
     {
         switch(Scene)
         {
             case "Entrance":
                 InterrogationMode = false;
                 SetRegularConvo();
+                try
+                {
+                    CharacterSetUp thisSetup = CharacterSetUps.FirstOrDefault(cs => cs.Scene.ToString() == Scene);
+                    this.transform.position = thisSetup.Position;
+                    imDead = thisSetup.IsDead;
+                    _animator.SetBool("Dead", imDead);
+                }
+                catch
+                {
+                    Debug.Log("Error in Character script at setUpForScene");
+                }                
                 break;
             case "GrandHall":
                 InterrogationMode = true;
                 SetInterrogationConvo();
+                try
+                {
+                    CharacterSetUp thisSetup = CharacterSetUps.FirstOrDefault(cs => cs.Scene.ToString() == Scene);
+                    this.transform.position = thisSetup.Position;
+                    imDead = thisSetup.IsDead;
+                    _animator.SetBool("Dead", imDead);
+                }
+                catch
+                {
+                    Debug.Log("Error in Character script at setUpForScene");
+                }
                 break;
             case "InterrogationScene":
                 _correctCluePresented= false;
                 this.gameObject.transform.position = GameObject.FindGameObjectWithTag("InterrogationController").GetComponent<InterrogationController>().NPCPosition.position;
+                InterrogationMode = true;
+                SetInterrogationConvo();
+                SetAfterClueConvo();
                 break;
             default:
-                Debug.LogError("No setup written for this scene in Character Class");
+                Debug.LogError("No setup written for "+Scene+" in Character Class");
                 break;
         }
     }
@@ -273,29 +305,36 @@ public class Character :MonoBehaviour
     /// </summary>
     public void StartDialogue()
     {
-        _dialogBox = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<DialogueObjectController>();
-
-        InDialog = true;        
-
-        if (InterrogationMode)
+        if (imDead)
         {
-            _interrogationController = GameObject.FindGameObjectWithTag("InterrogationController").GetComponent<InterrogationController>();
-            _dialogBox.InterrigationMode = true;
-            _dialogBox.SpeakerName = Name.ToString();
-            _dialogBox.SpeakerImage = Profile;
 
         }
         else
         {
-            LookAtPlayer(GameObject.FindGameObjectWithTag("Player"));
-            _dialogBox.Display(true);
-            _dialogBox.Text = "";
-            _dialogBox.InterrigationMode = false;
-            _dialogBox.SpeakerName = Name.ToString();
-            _dialogBox.SpeakerImage = Profile;
+            _dialogBox = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<DialogueObjectController>();
+
+            InDialog = true;
+
+            if (InterrogationMode)
+            {
+                _interrogationController = GameObject.FindGameObjectWithTag("InterrogationController").GetComponent<InterrogationController>();
+                _dialogBox.InterrigationMode = true;
+                _dialogBox.SpeakerName = Name.ToString();
+                _dialogBox.SpeakerImage = Profile;
+
+            }
+            else
+            {
+                LookAtPlayer(GameObject.FindGameObjectWithTag("Player"));
+                _dialogBox.Display(true);
+                _dialogBox.Text = "";
+                _dialogBox.InterrigationMode = false;
+                _dialogBox.SpeakerName = Name.ToString();
+                _dialogBox.SpeakerImage = Profile;
+            }
+            StartCoroutine(Talk());
+            _numDialog++;
         }
-        StartCoroutine(Talk());
-        _numDialog++;
     }
     /// <summary>
     /// Continue talking

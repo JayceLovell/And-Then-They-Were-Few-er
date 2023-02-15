@@ -90,8 +90,6 @@ GameObject:
   - component: {fileID: 537141689485044739}
   - component: {fileID: 537141689485044738}
   - component: {fileID: 537141689485044737}
-  - component: {fileID: 958445746}
-  - component: {fileID: 958445747}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Canvas
@@ -157,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
@@ -185,62 +183,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &958445746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537141689485044736}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f32eca6b0cbeb94a96cf7c7dd3d3751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textbox: {fileID: 0}
-  text: {fileID: 0}
-  playableDirector: {fileID: 958445747}
-  interogationArea: {fileID: 0}
-  MainCam: {fileID: 0}
-  inDialogue: 0
-  inCutscene: 0
-  inInterrogation: 0
-  textSpeed: 0.05
-  currentDialogueScript: {fileID: 0}
-  currentDialogue: []
-  index: 0
-  currentCorrectClue: {fileID: 0}
---- !u!320 &958445747
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537141689485044736}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 3bfea90eb7ade684197dd85403eee0c2, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 2380144866443419889, guid: b761e3866e14b8048b47d4138874ecd1, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -1624962072649654203, guid: b761e3866e14b8048b47d4138874ecd1, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -8357148837668106694, guid: b761e3866e14b8048b47d4138874ecd1, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 8508915797360807710, guid: 3bfea90eb7ade684197dd85403eee0c2, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -4995242998576871294, guid: 3bfea90eb7ade684197dd85403eee0c2, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 5832665812794499643, guid: 3bfea90eb7ade684197dd85403eee0c2, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 4046630067578054050, guid: 3bfea90eb7ade684197dd85403eee0c2, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1208115438251563337
 GameObject:
   m_ObjectHideFlags: 0
