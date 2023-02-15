@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 69825cef502aac548944bb8adb3899e6
+guid: cfe7656a1a0642242ae321dceeef9116
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,7 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_0
+      name: Damian SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 58
-        width: 13
-        height: 16
+        x: 56
+        y: 400
+        width: 70
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30639b73903eb164298963243cc0a833
-      internalID: -605114441
+      spriteID: 72bba74151e523f49ba5e5024079eaa1
+      internalID: -1199230233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_1
+      name: Damian SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 59
-        width: 14
-        height: 16
+        x: 156
+        y: 401
+        width: 64
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2262e313de29f0e43b84df57ccd896b9
-      internalID: -308599884
+      spriteID: e645ae50905570b4cb4bba2e4e21fbfd
+      internalID: 297797383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_2
+      name: Damian SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 42
-        y: 58
-        width: 14
-        height: 16
+        x: 245
+        y: 400
+        width: 71
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ebd3b1f55654a94d97f4c08499b4cfd
-      internalID: -1685384786
+      spriteID: a4a5ada0a45c24d41b7cde5e28a57d3a
+      internalID: 601348231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_3
+      name: Damian SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 9
-        y: 40
-        width: 12
-        height: 17
+        x: 329
+        y: 399
+        width: 67
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bc6cfd1abaeccd45bc155bbdcfc365f
-      internalID: -251739969
+      spriteID: 3bb14445cedd59048a08650b6b5cc29e
+      internalID: -1558143203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_4
+      name: Damian SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 25
-        y: 41
-        width: 10
-        height: 17
+        x: 47
+        y: 291
+        width: 65
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37221956e5d80d34bbd31cbda01d3743
-      internalID: -1808547076
+      spriteID: 34421022c98b3b648b5100a0d6012c4a
+      internalID: 803941046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_5
+      name: Damian SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 41
-        y: 40
-        width: 11
-        height: 17
+        x: 146
+        y: 292
+        width: 68
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb75f17cf1f916048902e0c402e9c384
-      internalID: 1771675764
+      spriteID: 372f106c243b8674dbfe5105e40d5866
+      internalID: 1475932274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_6
+      name: Damian SpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 22
-        width: 13
-        height: 17
+        x: 238
+        y: 292
+        width: 64
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e29897e086751d48a522791e33614e1
-      internalID: 864182402
+      spriteID: 01b237f3351b42540a318ed07e22f0ca
+      internalID: 740671932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_7
+      name: Damian SpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 25
-        y: 23
-        width: 14
-        height: 17
+        x: 325
+        y: 291
+        width: 70
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +278,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ba2d9d2dc84ea143bd84eec17e2a536
-      internalID: 1176520706
+      spriteID: c69ef4ec1afefa54e9563cfe2049de1a
+      internalID: 452939897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_8
+      name: Damian SpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 42
-        y: 22
-        width: 13
-        height: 17
+        x: 66
+        y: 162
+        width: 74
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +299,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 078aab48269423140a66b35b37df5921
-      internalID: 120711153
+      spriteID: c10c66cb4a3d0f44b94b6d5f71550dbb
+      internalID: -1112354176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_9
+      name: Damian SpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 12
-        y: 4
-        width: 11
-        height: 17
+        x: 161
+        y: 160
+        width: 66
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,20 +320,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e810e9b488cccb04eaba2945916911d5
-      internalID: 163864177
+      spriteID: 4d23832ef96676748a5525865b4237e6
+      internalID: 1691585406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_10
+      name: Damian SpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 29
-        y: 5
-        width: 10
-        height: 17
+        x: 250
+        y: 162
+        width: 74
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,20 +341,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d71e3cdfbe592044f9c7c48c09a23811
-      internalID: 1156659713
+      spriteID: 8f6b10590bc9b9f4b8405d54c2cc5b4a
+      internalID: 943217419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damian_Sprite_Sheet_11
+      name: Damian SpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 43
-        y: 4
-        width: 12
-        height: 17
+        x: 341
+        y: 159
+        width: 66
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,8 +362,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7533fab4804dfd146b723d97c71ca76a
-      internalID: 552066305
+      spriteID: f61e70f5e0ae05345af3daefa2b70ba1
+      internalID: 1146623318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damian SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 29
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3ad68eccb10054aacf5f8ee22dcf27
+      internalID: 1101010097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damian SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 29
+        width: 67
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9924646d81680fc418050c952379df5f
+      internalID: 2112508266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damian SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 29
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44d164a52a0cf04b890a20bda8c71f8
+      internalID: -1383822010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damian SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 30
+        width: 69
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e575872053a987e4c8774755aabfd9fe
+      internalID: 693293493
       vertices: []
       indices: 
       edges: []
@@ -379,18 +463,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Damian_Sprite_Sheet_3: -251739969
-      Damian_Sprite_Sheet_4: -1808547076
-      Damian_Sprite_Sheet_9: 163864177
-      Damian_Sprite_Sheet_0: -605114441
-      Damian_Sprite_Sheet_5: 1771675764
-      Damian_Sprite_Sheet_7: 1176520706
-      Damian_Sprite_Sheet_11: 552066305
-      Damian_Sprite_Sheet_8: 120711153
-      Damian_Sprite_Sheet_6: 864182402
-      Damian_Sprite_Sheet_1: -308599884
-      Damian_Sprite_Sheet_10: 1156659713
-      Damian_Sprite_Sheet_2: -1685384786
+      Damian SpriteSheet_7: 452939897
+      Damian SpriteSheet_4: 803941046
+      Damian SpriteSheet_8: -1112354176
+      Damian SpriteSheet_2: 601348231
+      Damian SpriteSheet_3: -1558143203
+      Damian SpriteSheet_0: -1199230233
+      Damian SpriteSheet_10: 943217419
+      Damian SpriteSheet_15: 693293493
+      Damian SpriteSheet_12: 1101010097
+      Damian SpriteSheet_13: 2112508266
+      Damian SpriteSheet_5: 1475932274
+      Damian SpriteSheet_9: 1691585406
+      Damian SpriteSheet_11: 1146623318
+      Damian SpriteSheet_14: -1383822010
+      Damian SpriteSheet_1: 297797383
+      Damian SpriteSheet_6: 740671932
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
