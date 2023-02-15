@@ -102,7 +102,7 @@ MonoBehaviour:
   correctClue: {fileID: 0}
   Name: 1
   Profile: {fileID: 21300000, guid: aa82be60ec96972418a30364e3a3858e, type: 3}
-  InterrigationSprite: {fileID: 1176520706, guid: a01b8ceadbab47441b62ce6bdb864c25, type: 3}
+  InterrigationSprite: {fileID: -1112354176, guid: cfe7656a1a0642242ae321dceeef9116, type: 3}
   characterPosition: []
   dialogForRegularConvo:
   - Text: '(A young apprentice of Nikki Test)
