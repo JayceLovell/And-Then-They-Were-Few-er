@@ -104,70 +104,14 @@ MonoBehaviour:
   Name: 9
   Profile: {fileID: 21300000, guid: e973213e9d1a61a42a55b67b51f11ecd, type: 3}
   InterrigationSprite: {fileID: 1887985970, guid: 162e3c45f9cb5aa4bb20762dd844301c, type: 3}
-  CharacterSetUps: []
-  dialogForRegularConvo:
-  - Text: '(The over-controlling and overbearing mother of Nikki Test)
-
-
-
-'
-    NPCTalking: 1
-  - Text: '(Ashlyn bumps into Rachel accidentally and causes her to drop her purse)
-
-
-
-'
-    NPCTalking: 0
-  - Text: 'Oh!
-
-
-
-'
-    NPCTalking: 1
-  - Text: '(Rachel bends over to pick her purse)
-
-
-
-
-'
-    NPCTalking: 1
-  - Text: '(Ashlyn notices that a handkerchief has fallen out of the purse, and picks
-      it up to hand it back to Rachel)
-
-
-
-
-'
-    NPCTalking: 0
-  - Text: "Sorry about all this. I\u2019m Ashlyn by the way, nice to meet you\r\n\r\n"
-    NPCTalking: 0
-  - Text: '(Ashlyn notices that Rachel looks distressed, as though she has something
-      else on her mind)
-
-
-
-'
-    NPCTalking: 0
-  - Text: "I\u2019m Rachel. Nikki\u2019s Mother\r\n\r\n\n\n\r\n\n\n\r\n"
-    NPCTalking: 1
-  - Text: '(Rachel looks like she wants to leave)
-
-'
-    NPCTalking: 1
-  - Text: '(There is a short, awkward silence)
-
-'
-    NPCTalking: 0
-  - Text: 'Well, nice to meet you!
-
-'
-    NPCTalking: 0
-  - Text: ...Likewise
-    NPCTalking: 1
-  - Text: (Rachel's expression, however, remains cold)
-    NPCTalking: 1
-  - Text: (Ashlyn turns away, feeling a bit embarrassed)
-    NPCTalking: 0
+  CharacterSetUps:
+  - Scene: 1
+    Position: {x: 23.52159, y: 28.28614}
+    IsDead: 0
+  - Scene: 2
+    Position: {x: 20.84201, y: 2.390876}
+    IsDead: 0
+  dialogForRegularConvo: []
   DialogueForInterrogations: []
   DialogueAfterClues: []
 --- !u!95 &9179986237464571549
@@ -214,5 +158,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.33}
+  m_Size: {x: 0.73, y: 0.95}
   m_EdgeRadius: 0

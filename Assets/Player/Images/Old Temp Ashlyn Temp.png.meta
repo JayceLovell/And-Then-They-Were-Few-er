@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 514dec16b6b68a44094d7dc8bf3d0417
+guid: 458edf7f084d827498b76ea066d4d5ec
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,6 +102,18 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -117,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: John_walk_0
+      name: Ashlyn_Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 144
-        width: 37
-        height: 44
+        x: 1
+        y: 54
+        width: 13
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7dd05fe0207ae54daaa88ac9748729e
-      internalID: 822563170
+      spriteID: a4cef14066e5f9f4f87a60e32d93684e
+      internalID: 2240845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_1
+      name: Ashlyn_Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 144
-        width: 37
-        height: 45
+        x: 17
+        y: 55
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44fc9f31a065d754292fd42b3168e8c3
-      internalID: 1809650551
+      spriteID: 5f03b573c4931e24b9d725ab621e82ed
+      internalID: 2085040828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_2
+      name: Ashlyn_Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 101
-        y: 144
-        width: 36
-        height: 44
+        x: 34
+        y: 54
+        width: 13
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 150cd98c94aa234439270746ae484eb6
-      internalID: -574712063
+      spriteID: c1d86e5519589464c8183fccfd43d38b
+      internalID: -1248875890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_3
+      name: Ashlyn_Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 5
-        y: 96
-        width: 38
-        height: 44
+        x: 50
+        y: 54
+        width: 11
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1111917ba0de0374cb89b702d575ee35
-      internalID: 345051574
+      spriteID: 1697c6a8eebdbc041ac1e6040b7ccf4d
+      internalID: 678681982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_4
+      name: Ashlyn_Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 54
-        y: 96
-        width: 37
-        height: 45
+        x: 2
+        y: 36
+        width: 11
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed26db1cb00e98a409a07672f3713970
-      internalID: -173144550
+      spriteID: c8918ae3d81b22145bca8c39a7f32e1e
+      internalID: 226294578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_5
+      name: Ashlyn_Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 103
-        y: 96
-        width: 34
-        height: 44
+        x: 19
+        y: 37
+        width: 10
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +248,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28b5e06d26f141e47bc971a3b6c099ba
-      internalID: 737607560
+      spriteID: 6451e9dd4ececa0498e5d1befbd576d4
+      internalID: -1762401584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_6
+      name: Ashlyn_Sprite Sheet_6
       rect:
         serializedVersion: 2
-        x: 4
-        y: 48
-        width: 38
-        height: 44
+        x: 35
+        y: 36
+        width: 10
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a73f3d773ca7fa4479cedacb59f3053d
-      internalID: 1308083127
+      spriteID: d02d35aaa7eae824fade43adf4b016f4
+      internalID: -1494141577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_7
+      name: Ashlyn_Sprite Sheet_7
       rect:
         serializedVersion: 2
-        x: 52
-        y: 48
-        width: 37
-        height: 45
+        x: 50
+        y: 36
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +290,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c39dc5e0d259e1940a5564601d32ff91
-      internalID: 397306488
+      spriteID: ff4655a2f0b8f904fa210f93c82f7cf0
+      internalID: 1431686283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_8
+      name: Ashlyn_Sprite Sheet_8
       rect:
         serializedVersion: 2
-        x: 100
-        y: 48
-        width: 36
-        height: 44
+        x: 1
+        y: 18
+        width: 13
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +311,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65f927303517c1748bfb87804c7ac9db
-      internalID: -1924032231
+      spriteID: e41692200d668294c972b9e9fb334fe1
+      internalID: -46789259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_9
+      name: Ashlyn_Sprite Sheet_9
       rect:
         serializedVersion: 2
-        x: 5
+        x: 17
+        y: 19
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e058a4ffb90e1846bebf817d62324be
+      internalID: -427323525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ashlyn_Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 18
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbb030dd1b611342b5d43a26fc016df
+      internalID: -1926814347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ashlyn_Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 18
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906221df9f8c66949a7c6ba65d88cbf6
+      internalID: 104390884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ashlyn_Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3
         y: 0
-        width: 37
-        height: 44
+        width: 10
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,20 +395,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cbd1f812085ff542b66b6ee86d49960
-      internalID: -444828295
+      spriteID: a8490e94b9b149140becfd178fd81080
+      internalID: 910479881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_10
+      name: Ashlyn_Sprite Sheet_13
       rect:
         serializedVersion: 2
-        x: 53
-        y: 0
-        width: 37
-        height: 45
+        x: 21
+        y: 1
+        width: 8
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,20 +416,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39a0c7aec31991c419fecaaba5a72a81
-      internalID: 60667036
+      spriteID: f99f704b1e7855c439ced0aa1df22cc5
+      internalID: 730338772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: John_walk_11
+      name: Ashlyn_Sprite Sheet_14
       rect:
         serializedVersion: 2
-        x: 101
+        x: 35
         y: 0
-        width: 36
-        height: 44
+        width: 11
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,8 +437,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3234fbde49fef3147a67664a816d2ab9
-      internalID: 61590600
+      spriteID: bf53e7d292914eb408ccc3e5789eeeab
+      internalID: -994524287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ashlyn_Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4367ede1224978449ba09c4660c35bad
+      internalID: 107158413
       vertices: []
       indices: 
       edges: []
@@ -379,18 +475,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      John_walk_11: 61590600
-      John_walk_7: 397306488
-      John_walk_2: -574712063
-      John_walk_4: -173144550
-      John_walk_9: -444828295
-      John_walk_5: 737607560
-      John_walk_0: 822563170
-      John_walk_8: -1924032231
-      John_walk_3: 345051574
-      John_walk_10: 60667036
-      John_walk_1: 1809650551
-      John_walk_6: 1308083127
+      Ashlyn_Sprite Sheet_1: 2085040828
+      Ashlyn_Sprite Sheet_7: 1431686283
+      Ashlyn_Sprite Sheet_6: -1494141577
+      Ashlyn_Sprite Sheet_0: 2240845
+      Ashlyn_Sprite Sheet_14: -994524287
+      Ashlyn_Sprite Sheet_9: -427323525
+      Ashlyn_Sprite Sheet_3: 678681982
+      Ashlyn_Sprite Sheet_2: -1248875890
+      Ashlyn_Sprite Sheet_4: 226294578
+      Ashlyn_Sprite Sheet_5: -1762401584
+      Ashlyn_Sprite Sheet_8: -46789259
+      Ashlyn_Sprite Sheet_12: 910479881
+      Ashlyn_Sprite Sheet_10: -1926814347
+      Ashlyn_Sprite Sheet_11: 104390884
+      Ashlyn_Sprite Sheet_15: 107158413
+      Ashlyn_Sprite Sheet_13: 730338772
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

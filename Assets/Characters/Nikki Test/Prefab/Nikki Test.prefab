@@ -104,40 +104,14 @@ MonoBehaviour:
   Name: 0
   Profile: {fileID: 21300000, guid: de47a22c972e4904da60abaa08400235, type: 3}
   InterrigationSprite: {fileID: 1199566372, guid: ef1b7c41e624b224082b4bdb9e859449, type: 3}
-  CharacterSetUps: []
-  dialogForRegularConvo:
-  - Text: '(Nikki grew up in an impoverished neighborhood. Her father left when she
-      was young, leaving her with her mother with the family business. Too stubborn
-      to follow her mothers wishes and take on the family business she instead used
-      her intelligence to invent the Synthesizer)
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Nikki, long time no see!
-
-
-
-'
-    NPCTalking: 0
-  - Text: "Ashlyn! It\u2019s been so long! I\u2019m so glad you could make it!\r\n\r\n"
-    NPCTalking: 1
-  - Text: "Well, I couldn\u2019t say no to an invitation from an old friend. Quite
-      the fancy to-do you\u2019ve set up.\r\n\r\n"
-    NPCTalking: 0
-  - Text: "Heh heh, glad you\u2019re impressed. It takes a lot more effort than you
-      might think to set up one of these. Almost didn\u2019t want to do it but it\u2019d
-      be a shame not to show off my latest invention.\r\n\r\n"
-    NPCTalking: 1
-  - Text: 'What is the invention anyway? You never told anyone, did you?
-
-
-
-'
-    NPCTalking: 0
-  - Text: "You\u2019ll just have to wait and see! Can\u2019t spoil the surprise!"
-    NPCTalking: 1
+  CharacterSetUps:
+  - Scene: 1
+    Position: {x: 6.64, y: 26.92}
+    IsDead: 0
+  - Scene: 2
+    Position: {x: 19.99, y: 14.82}
+    IsDead: 1
+  dialogForRegularConvo: []
   DialogueForInterrogations: []
   DialogueAfterClues: []
 --- !u!95 &6858053411055140244

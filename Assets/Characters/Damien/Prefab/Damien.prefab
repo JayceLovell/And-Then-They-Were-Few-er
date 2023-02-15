@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1112354176, guid: cfe7656a1a0642242ae321dceeef9116, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -99,91 +99,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca888270c82497b4ea76be7391269b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeadSprite: {fileID: 0}
   correctClue: {fileID: 0}
   Name: 1
   Profile: {fileID: 21300000, guid: aa82be60ec96972418a30364e3a3858e, type: 3}
   InterrigationSprite: {fileID: -1112354176, guid: cfe7656a1a0642242ae321dceeef9116, type: 3}
-  characterPosition: []
-  dialogForRegularConvo:
-  - Text: '(A young apprentice of Nikki Test)
-
-
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Ah, you must be Detective Ashlyn. Nikki has told me so much about you.
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'She has? So I would assume you''re Nikki''s apprentice then?
-
-
-
-'
-    NPCTalking: 0
-  - Text: 'Oh, pardon me I forgot to introduce myself. I am Damien and yes I am Nikki''s
-      apprentice.
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Nikki was so excited to finally meet you again, so please make yourself
-      at home.
-
-
-
-'
-    NPCTalking: 1
-  - Text: '(Ashlyn begins to blush a little)
-
-
-
-'
-    NPCTalking: 0
-  - Text: 'I''m surprised Nikki still cares about me that much considering it''s
-      been years since we last talked.
-
-
-
-'
-    NPCTalking: 0
-  - Text: 'Of course Nikki still cares. To tell the truth she''s been wanting to
-      meet with you again for a while now but has been far too busy to reach out
-      until now.
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Whoa... I guess it isn''t easy being an inventor.
-
-
-
-'
-    NPCTalking: 0
-  - Text: "Sadly it isn't but that's what makes today quite special. \r\n\r\n"
-    NPCTalking: 0
-  - Text: 'She arranged this whole event so we could celebrate her achievements and
-      have a good time.
-
-
-
-'
-    NPCTalking: 0
-  - Text: 'So please enjoy the food and drink and relax.
-
-
-
-
-'
-    NPCTalking: 0
-  - Text: "Haha, yeah will do.\r"
-    NPCTalking: 1
+  CharacterSetUps:
+  - Scene: 1
+    Position: {x: 29.65184, y: 9.091576}
+    IsDead: 0
+  - Scene: 2
+    Position: {x: -0.6488919, y: 5.316116}
+    IsDead: 0
+  dialogForRegularConvo: []
   DialogueForInterrogations: []
   DialogueAfterClues: []
 --- !u!95 &3567300424763006586

@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -1765482670, guid: 35a7e203d3684d7418ff5e3219a1f69b, type: 3}
+  m_Sprite: {fileID: -681546392, guid: 2bf778bc965ee874589f87cd59adcd73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,15 +99,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3362df6245c670047ae7aa455b5df358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeadSprite: {fileID: 0}
   correctClue: {fileID: 0}
   Name: 3
   Profile: {fileID: 21300000, guid: bb6796ae590284147a6b95adf39dcb4d, type: 3}
-  InterrigationSprite: {fileID: 1774148793, guid: 35a7e203d3684d7418ff5e3219a1f69b, type: 3}
-  characterPosition:
+  InterrigationSprite: {fileID: -681546392, guid: 2bf778bc965ee874589f87cd59adcd73, type: 3}
+  CharacterSetUps:
   - Scene: 1
     Position: {x: 35.26783, y: -2.433469}
+    IsDead: 0
   - Scene: 2
     Position: {x: -4.744253, y: -4.863781}
+    IsDead: 0
   dialogForRegularConvo:
   - Text: '(An attractive but clumsy wannabe detective trying to solve the mystery
       but ruins clues and makes chaos.Odd character, who is obsessed with mysteries

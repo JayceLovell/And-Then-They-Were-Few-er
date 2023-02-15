@@ -99,78 +99,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c579446a620410643aec8157659edca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeadSprite: {fileID: 0}
   correctClue: {fileID: 0}
   Name: 6
   Profile: {fileID: 21300000, guid: 8f409be6d0224f447b0a4a36ff0c980f, type: 3}
   InterrigationSprite: {fileID: 1676541690, guid: 9e3d5ffd0fe81004dbf8d4c44e1f0a0c, type: 3}
-  characterPosition:
+  CharacterSetUps:
   - Scene: 1
     Position: {x: 32.62097, y: -9.561905}
+    IsDead: 0
   - Scene: 2
     Position: {x: -0.6488919, y: -6.540929}
-  dialogForRegularConvo:
-  - Text: '(Miriane, a vain trend chasing fashion designer. Rich.)
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Oh, so you''re here too, are you?
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Well, hello to you too
-
-
-
-'
-    NPCTalking: 0
-  - Text: '(Mirianne stares at Ashlyn in disdain)
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'I''m a friend of Nikki''s
-
-
-
-'
-    NPCTalking: 0
-  - Text: '(Mirianne continues to stare)
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Ah, I see
-
-
-
-'
-    NPCTalking: 1
-  - Text: "I must admit, Nikki's built quite the reputation for herself.  \r\n\r\n"
-    NPCTalking: 1
-  - Text: '(Ashlyn grins rogue-ishly)
-
-
-'
-    NPCTalking: 0
-  - Text: "Yeah, ol' Nikki's on the up and up \r\n\r\n"
-    NPCTalking: 0
-  - Text: 'Well, she might be Wandermere''s hottest new inventor, but I have a feeling
-      that someone else will be taking her spot pretty soon
-
-
-
-'
-    NPCTalking: 1
-  - Text: (Ashlyn narrows her eyes at Mirianne as she walks away)
-    NPCTalking: 0
-  - Text: "(Mirianne narrows her eyes as well)\r"
-    NPCTalking: 1
+    IsDead: 0
+  dialogForRegularConvo: []
   DialogueForInterrogations: []
   DialogueAfterClues: []
 --- !u!95 &5646326592726193672

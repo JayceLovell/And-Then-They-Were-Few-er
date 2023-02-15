@@ -99,29 +99,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9189f626d8dfb4a9da7d40f91b137b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpriteUp: {fileID: -1349184845, guid: f9a45caddfae4924f8cf463a39bab0f7, type: 3}
-  SpriteDown: {fileID: 1312578521, guid: f9a45caddfae4924f8cf463a39bab0f7, type: 3}
-  SpriteLeft: {fileID: -690073028, guid: f9a45caddfae4924f8cf463a39bab0f7, type: 3}
-  SpriteRight: {fileID: -2098222025, guid: f9a45caddfae4924f8cf463a39bab0f7, type: 3}
-  InterrigrationMode: 0
+  DeadSprite: {fileID: 0}
+  correctClue: {fileID: 0}
   Name: 2
-  CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: 873b9ce669533af4eb19076d1ea44dc0, type: 3}
   InterrigationSprite: {fileID: 246210415, guid: f9a45caddfae4924f8cf463a39bab0f7, type: 3}
-  characterPosition:
+  CharacterSetUps:
   - Scene: 1
     Position: {x: -1.88, y: 11.79}
+    IsDead: 0
   - Scene: 2
-    Position: {x: -1.88, y: 11.79}
-  dialogForRegularConvo:
-  - Text: (The corrupt mayor of the town)
-    NPCTalking: 1
-  - Text: Good Evening Mayor
-    NPCTalking: 0
-  - Text: Good Evening Ms. Hunt
-    NPCTalking: 1
+    Position: {x: 7.580847, y: 1.37678}
+    IsDead: 0
+  dialogForRegularConvo: []
   DialogueForInterrogations: []
-  dialogueAfterClue: []
+  DialogueAfterClues: []
 --- !u!95 &6237777029506226020
 Animator:
   serializedVersion: 4

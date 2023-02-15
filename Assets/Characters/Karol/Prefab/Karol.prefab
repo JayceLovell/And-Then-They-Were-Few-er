@@ -99,62 +99,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85be5d9dc897031449ae0e6bad6b0092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeadSprite: {fileID: 0}
   correctClue: {fileID: 0}
   Name: 5
   Profile: {fileID: 21300000, guid: c6a736f76c553114491d91a11312b44a, type: 3}
   InterrigationSprite: {fileID: 1017100266, guid: c06d4c882c831c04384ed6fc2bf112e0, type: 3}
-  characterPosition:
+  CharacterSetUps:
   - Scene: 1
     Position: {x: 28.1636, y: -9.535529}
+    IsDead: 0
   - Scene: 2
     Position: {x: -0.7659025, y: -2.679589}
-  dialogForRegularConvo:
-  - Text: '(The eccentric and energetic rival inventor to Nikki Test. Is sponsored
-      by Mirianne)
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Hello there. I''m Detective Ashlyn, nice to meet you.
-
-
-
-'
-    NPCTalking: 0
-  - Text: "Hello yes, I am Karol. Inventor extraordinaire! I\u2019m sure you\u2019ve
-      heard all about me.\r\n\r\n"
-    NPCTalking: 1
-  - Text: 'Uh... no sorry, can''t say I have.
-
-
-
-
-'
-    NPCTalking: 0
-  - Text: (Karol looks disappointed)
-    NPCTalking: 1
-  - Text: 'Oh...
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'W-well, I guess you can''t expect a detective such as yourself to be plugged
-      into the world of inventing.
-
-
-
-'
-    NPCTalking: 1
-  - Text: "I'll be taking the place of Nikki as the most prolific inventor in Wandermere
-      soon enough. \r\n\r\n"
-    NPCTalking: 1
-  - Text: "Once my latest invention is complete you'll be hearing my name uttered
-      from the lips of everyone in town.\r"
-    NPCTalking: 1
-  - Text: "Well if you say so. Good luck\u2026 I guess."
-    NPCTalking: 0
+    IsDead: 0
+  dialogForRegularConvo: []
   DialogueForInterrogations: []
   DialogueAfterClues: []
 --- !u!95 &396490896115949879

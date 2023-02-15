@@ -193,7 +193,7 @@ public class GameManager : MonoBehaviour
     {
         if (!IsGamePaused)
         {
-            if (_timeStart)
+            if (_timeStart||_currentGameProgress>3)
             {
                  GameTime -= Time.deltaTime;
             }

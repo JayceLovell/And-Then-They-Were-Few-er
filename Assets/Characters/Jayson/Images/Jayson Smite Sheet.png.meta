@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 458edf7f084d827498b76ea066d4d5ec
+guid: 2bf778bc965ee874589f87cd59adcd73
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,7 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_0
+      name: Jayson Smite Sheet_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 54
-        width: 13
-        height: 16
+        x: 57
+        y: 390
+        width: 82
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4cef14066e5f9f4f87a60e32d93684e
-      internalID: 2240845
+      spriteID: 094e956589303114fbdbe152558a1069
+      internalID: 145465726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_1
+      name: Jayson Smite Sheet_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 55
-        width: 14
-        height: 16
+        x: 160
+        y: 390
+        width: 62
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f03b573c4931e24b9d725ab621e82ed
-      internalID: 2085040828
+      spriteID: 7935108a26a955a4da33ba99709c3caf
+      internalID: -208692289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_2
+      name: Jayson Smite Sheet_2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 54
-        width: 13
-        height: 16
+        x: 244
+        y: 392
+        width: 82
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1d86e5519589464c8183fccfd43d38b
-      internalID: -1248875890
+      spriteID: b4b99b3b7743e144fb570ccdc09ee2f4
+      internalID: 1081989815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_3
+      name: Jayson Smite Sheet_3
       rect:
         serializedVersion: 2
-        x: 50
-        y: 54
-        width: 11
-        height: 18
+        x: 351
+        y: 391
+        width: 60
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,230 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1697c6a8eebdbc041ac1e6040b7ccf4d
-      internalID: 678681982
+      spriteID: 5f93ea1fcaa9cd545b088382cc2dd8c0
+      internalID: 1789845968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_4
+      name: Jayson Smite Sheet_4
       rect:
         serializedVersion: 2
-        x: 2
+        x: 62
+        y: 279
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94b2c1e58b6a3f44b0a5309ac0a3f1e
+      internalID: -1912175975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jayson Smite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 278
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f064193e2f4b440914e5860a29257b
+      internalID: 411574881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jayson Smite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 277
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28d6d8cdd1556d4a9b1ca51d0ac7412
+      internalID: -1191118307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jayson Smite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 277
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cde60400c27354dad530488894aa34
+      internalID: 152532834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jayson Smite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 159
+        width: 75
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3805865601e0bc40b3dcf85f2d1d32c
+      internalID: -681546392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jayson Smite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 159
+        width: 70
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad7f178af0c5bc42a5b72e236db97fc
+      internalID: 203354777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jayson Smite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 159
+        width: 75
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d23d2500a9273243a1c56b478a5f4d3
+      internalID: 1687911686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jayson Smite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 160
+        width: 69
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c52b5c751fe404ca9988d6749cff35
+      internalID: 1788573116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jayson Smite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 35
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caefb9122e963fd44a00c6e3fb42566f
+      internalID: 1046892869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jayson Smite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 35
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da57902ff31f2ba4aa4a9cf532018f78
+      internalID: -94728089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jayson Smite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 270
         y: 36
-        width: 11
-        height: 16
+        width: 80
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +425,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8918ae3d81b22145bca8c39a7f32e1e
-      internalID: 226294578
+      spriteID: b938d80c5cc5fa34da7d2e389201c316
+      internalID: 842053338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_5
+      name: Jayson Smite Sheet_15
       rect:
         serializedVersion: 2
-        x: 19
+        x: 362
         y: 37
-        width: 10
-        height: 16
+        width: 80
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,218 +446,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6451e9dd4ececa0498e5d1befbd576d4
-      internalID: -1762401584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 36
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d02d35aaa7eae824fade43adf4b016f4
-      internalID: -1494141577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 36
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff4655a2f0b8f904fa210f93c82f7cf0
-      internalID: 1431686283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 18
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e41692200d668294c972b9e9fb334fe1
-      internalID: -46789259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 19
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e058a4ffb90e1846bebf817d62324be
-      internalID: -427323525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 18
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdbb030dd1b611342b5d43a26fc016df
-      internalID: -1926814347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 18
-        width: 11
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 906221df9f8c66949a7c6ba65d88cbf6
-      internalID: 104390884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 0
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8490e94b9b149140becfd178fd81080
-      internalID: 910479881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 1
-        width: 8
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f99f704b1e7855c439ced0aa1df22cc5
-      internalID: 730338772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf53e7d292914eb408ccc3e5789eeeab
-      internalID: -994524287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ashlyn_Sprite Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4367ede1224978449ba09c4660c35bad
-      internalID: 107158413
+      spriteID: 68e1f3c00ec310946af62382b43dff51
+      internalID: -1114367877
       vertices: []
       indices: 
       edges: []
@@ -463,22 +463,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ashlyn_Sprite Sheet_1: 2085040828
-      Ashlyn_Sprite Sheet_7: 1431686283
-      Ashlyn_Sprite Sheet_6: -1494141577
-      Ashlyn_Sprite Sheet_0: 2240845
-      Ashlyn_Sprite Sheet_14: -994524287
-      Ashlyn_Sprite Sheet_9: -427323525
-      Ashlyn_Sprite Sheet_3: 678681982
-      Ashlyn_Sprite Sheet_2: -1248875890
-      Ashlyn_Sprite Sheet_4: 226294578
-      Ashlyn_Sprite Sheet_5: -1762401584
-      Ashlyn_Sprite Sheet_8: -46789259
-      Ashlyn_Sprite Sheet_12: 910479881
-      Ashlyn_Sprite Sheet_10: -1926814347
-      Ashlyn_Sprite Sheet_11: 104390884
-      Ashlyn_Sprite Sheet_15: 107158413
-      Ashlyn_Sprite Sheet_13: 730338772
+      Jayson Smite Sheet_11: 1788573116
+      Jayson Smite Sheet_3: 1789845968
+      Jayson Smite Sheet_13: -94728089
+      Jayson Smite Sheet_14: 842053338
+      Jayson Smite Sheet_5: 411574881
+      Jayson Smite Sheet_7: 152532834
+      Jayson Smite Sheet_10: 1687911686
+      Jayson Smite Sheet_12: 1046892869
+      Jayson Smite Sheet_6: -1191118307
+      Jayson Smite Sheet_1: -208692289
+      Jayson Smite Sheet_9: 203354777
+      Jayson Smite Sheet_2: 1081989815
+      Jayson Smite Sheet_0: 145465726
+      Jayson Smite Sheet_15: -1114367877
+      Jayson Smite Sheet_8: -681546392
+      Jayson Smite Sheet_4: -1912175975
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

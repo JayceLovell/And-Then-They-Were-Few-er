@@ -13,12 +13,21 @@ public class Damien : Character
     public override void SetRegularConvo()
     {
         base.SetRegularConvo();
+        // Create convo before Murder
         if (GameManager.Instance.CurrentGameProgress <= 3)
         {
 
+            DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
+            ExampleForBeforeMurder.NPCTalking = true;
+            ExampleForBeforeMurder.Text = "Hi Ashlyn";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder);
+        }
+        else
+        {
+            // Create convo after Murder
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
-            ExampleForAfterMurder.Text = "I can't beleive what just happened";
+            ExampleForAfterMurder.Text = "I can't bevlieve what happens";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
@@ -170,6 +179,7 @@ public class Damien : Character
     public override void SetAfterClueConvo()
     {
         base.SetAfterClueConvo();
+        // After clue Dialogue is created the same way as Interrogation Dialogue same properties no confusion
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
 
         DialogueAfterClues.Add(ExampledialogueAfterClue);

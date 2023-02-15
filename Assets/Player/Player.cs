@@ -64,7 +64,10 @@ public class Player : MonoBehaviour
         if(Talking)
         {
             moveInput = Vector2.zero;
+            _animator.SetBool("Moving", false);
         }
+        else
+            _animator.SetBool("Moving", true);
 
         _rigidbody.velocity = moveInput * PlayerSpeed;
         
@@ -95,6 +98,9 @@ public class Player : MonoBehaviour
                 _animator.SetBool("Right", false);
                 break;
         }
+
+        if(moveInput == Vector2.zero)
+            _animator.SetBool("Moving", false);
     }
     /// <summary>
     /// Responds to input system on move event

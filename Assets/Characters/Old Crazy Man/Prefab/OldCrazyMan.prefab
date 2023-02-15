@@ -104,59 +104,14 @@ MonoBehaviour:
   Name: 8
   Profile: {fileID: 21300000, guid: 4f9c3737e7c6a9b49b6eefd01d49af35, type: 3}
   InterrigationSprite: {fileID: 2037709385, guid: f1def6674aa416141832abf492f5fc91, type: 3}
-  CharacterSetUps: []
-  dialogForRegularConvo:
-  - Text: '(The father of John. Very random. Loud and rude)
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Do you smell it in the air?
-
-
-
-'
-    NPCTalking: 1
-  - Text: 'Excuse me? Smell what?
-
-
-
-
-'
-    NPCTalking: 0
-  - Text: 'The gears of course! I love the smell of freshly oiled gears!
-
-
-
-'
-    NPCTalking: 1
-  - Text: "(The Crazy Old Man has an excited but wild look about him) \n\r\n"
-    NPCTalking: 1
-  - Text: 'Well, I can kind of relate. I like the smell of fresh ink and newly printed
-      parchment paper
-
-
-
-'
-    NPCTalking: 0
-  - Text: 'Ashlyn smiles cheekily
-
-
-
-'
-    NPCTalking: 0
-  - Text: 'Ink? Parchment! Now that''s just weird
-
-
-
-'
-    NPCTalking: 1
-  - Text: (The Crazy Old Man sticks his tongue out at Ashlyn and starts muttering
-      to himself)
-    NPCTalking: 1
-  - Text: (Ashlyn, mystified, walks away)
-    NPCTalking: 0
+  CharacterSetUps:
+  - Scene: 1
+    Position: {x: 7.037209, y: -3.78581}
+    IsDead: 0
+  - Scene: 2
+    Position: {x: -5.546519, y: 9.166698}
+    IsDead: 0
+  dialogForRegularConvo: []
   DialogueForInterrogations: []
   DialogueAfterClues: []
 --- !u!95 &966495018851844531

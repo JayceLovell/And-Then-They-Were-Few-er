@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: df8e3f9a2342f6544a209ceb510b84b0
+guid: 0aba37f79de167342b372863a0734a6e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,6 +101,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -108,10 +120,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 379
-        width: 84
-        height: 120
+        x: 61
+        y: 389
+        width: 74
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2f3aa6db8a2fc846851e0dda3b60d2f
-      internalID: 1914010902
+      spriteID: 2c45d8f6a675b454f8d1b55afb44b65d
+      internalID: -1445255604
       vertices: []
       indices: 
       edges: []
@@ -129,10 +141,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 143
-        y: 379
-        width: 84
-        height: 120
+        x: 151
+        y: 389
+        width: 74
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 527891418a222dd40899ed478909b1e3
-      internalID: 1158733481
+      spriteID: 0028ce5b436af744787be395079cf936
+      internalID: -961123273
       vertices: []
       indices: 
       edges: []
@@ -150,10 +162,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 268
-        y: 379
-        width: 83
-        height: 120
+        x: 242
+        y: 389
+        width: 74
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b0a816e8c23f964d822ec3a7b1b4ea4
-      internalID: 1257791939
+      spriteID: 6d2cb9fe5145cec458c01433cbaacf7b
+      internalID: -1399350402
       vertices: []
       indices: 
       edges: []
@@ -171,10 +183,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 11
-        y: 254
-        width: 88
-        height: 118
+        x: 345
+        y: 389
+        width: 74
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ae8bf8d3715af64b9c918a77d4a8a92
-      internalID: 2141031607
+      spriteID: e5ea083dbc451894bba5d9fce0b3c98b
+      internalID: 1483678820
       vertices: []
       indices: 
       edges: []
@@ -192,10 +204,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 135
-        y: 254
-        width: 89
-        height: 121
+        x: 63
+        y: 267
+        width: 77
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f13ded13db62b7444936167902719d5d
-      internalID: 794844282
+      spriteID: 86e7a17cf5024314cbb161ee83e79132
+      internalID: -1741219181
       vertices: []
       indices: 
       edges: []
@@ -213,10 +225,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 260
-        y: 254
-        width: 91
-        height: 118
+        x: 152
+        y: 268
+        width: 74
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c56708d127fe6542ba04baa49e5cdee
-      internalID: 1470293844
+      spriteID: 8c56fa0aaba909c408e4897fbba16781
+      internalID: -1334890151
       vertices: []
       indices: 
       edges: []
@@ -234,10 +246,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_6
       rect:
         serializedVersion: 2
-        x: 15
-        y: 129
-        width: 87
-        height: 118
+        x: 246
+        y: 266
+        width: 74
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec5481b65b20e274695d05dee5a6ba06
-      internalID: 1482540259
+      spriteID: a1f96527ca903b842beedddef2c97f7a
+      internalID: 43829099
       vertices: []
       indices: 
       edges: []
@@ -255,10 +267,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_7
       rect:
         serializedVersion: 2
-        x: 140
-        y: 129
-        width: 87
-        height: 121
+        x: 329
+        y: 266
+        width: 74
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57fe70be5645fcd48a264d8e5f3b84d4
-      internalID: -1620558775
+      spriteID: 274694e8b91e74a4cad95c550145ab10
+      internalID: -374380819
       vertices: []
       indices: 
       edges: []
@@ -276,10 +288,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_8
       rect:
         serializedVersion: 2
-        x: 265
-        y: 129
-        width: 86
-        height: 118
+        x: 71
+        y: 155
+        width: 73
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,8 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7acf5537c8029c04c8fdb9a9fa9d599d
-      internalID: 1476312692
+      spriteID: 1140d9eb61edc4346a1c61cf4e8e1e89
+      internalID: 1284031153
       vertices: []
       indices: 
       edges: []
@@ -297,10 +309,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_9
       rect:
         serializedVersion: 2
-        x: 18
-        y: 6
-        width: 81
-        height: 116
+        x: 160
+        y: 155
+        width: 73
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,8 +320,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9b05b65db5d0cb468c0f6d777d7de88
-      internalID: 1355783399
+      spriteID: fb26d0516b2eae843a35332f09ccedc4
+      internalID: -1204036630
       vertices: []
       indices: 
       edges: []
@@ -318,10 +330,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_10
       rect:
         serializedVersion: 2
-        x: 143
-        y: 6
-        width: 81
-        height: 119
+        x: 251
+        y: 155
+        width: 73
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,8 +341,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5f7c74360deddf4788cbd8eb5f06057
-      internalID: 1461521663
+      spriteID: 42577911cb808a8428919c42440014aa
+      internalID: 1701064966
       vertices: []
       indices: 
       edges: []
@@ -339,10 +351,10 @@ TextureImporter:
       name: Ashlyn Sprite Sheet_11
       rect:
         serializedVersion: 2
-        x: 268
-        y: 6
-        width: 83
-        height: 116
+        x: 347
+        y: 156
+        width: 76
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,8 +362,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 245dd3aec5ed99a4298cb405163ebeca
-      internalID: 1314754637
+      spriteID: fb0ab91625347024e85fa2f38081e4d7
+      internalID: 1144875023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ashlyn Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 27
+        width: 73
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35833241282b93409178a4b350d058d
+      internalID: -197088389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ashlyn Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 27
+        width: 73
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e79821710691e449d6eb9d99323da2
+      internalID: -98675596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ashlyn Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 28
+        width: 73
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e652137a6d3bb445b6867ad342150b0
+      internalID: 1624343537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ashlyn Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 29
+        width: 73
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622165b6cf710074f90a0805d06b8607
+      internalID: -971462276
       vertices: []
       indices: 
       edges: []
@@ -367,18 +463,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ashlyn Sprite Sheet_0: 1914010902
-      Ashlyn Sprite Sheet_9: 1355783399
-      Ashlyn Sprite Sheet_7: -1620558775
-      Ashlyn Sprite Sheet_4: 794844282
-      Ashlyn Sprite Sheet_8: 1476312692
-      Ashlyn Sprite Sheet_1: 1158733481
-      Ashlyn Sprite Sheet_3: 2141031607
-      Ashlyn Sprite Sheet_11: 1314754637
-      Ashlyn Sprite Sheet_5: 1470293844
-      Ashlyn Sprite Sheet_10: 1461521663
-      Ashlyn Sprite Sheet_6: 1482540259
-      Ashlyn Sprite Sheet_2: 1257791939
+      Ashlyn Sprite Sheet_0: -1445255604
+      Ashlyn Sprite Sheet_12: -197088389
+      Ashlyn Sprite Sheet_9: -1204036630
+      Ashlyn Sprite Sheet_7: -374380819
+      Ashlyn Sprite Sheet_15: -971462276
+      Ashlyn Sprite Sheet_4: -1741219181
+      Ashlyn Sprite Sheet_13: -98675596
+      Ashlyn Sprite Sheet_8: 1284031153
+      Ashlyn Sprite Sheet_1: -961123273
+      Ashlyn Sprite Sheet_14: 1624343537
+      Ashlyn Sprite Sheet_3: 1483678820
+      Ashlyn Sprite Sheet_11: 1144875023
+      Ashlyn Sprite Sheet_5: -1334890151
+      Ashlyn Sprite Sheet_10: 1701064966
+      Ashlyn Sprite Sheet_6: 43829099
+      Ashlyn Sprite Sheet_2: -1399350402
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
