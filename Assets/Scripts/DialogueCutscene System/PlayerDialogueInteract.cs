@@ -6,9 +6,6 @@ public class PlayerDialogueInteract : MonoBehaviour
 {
     Collider2D currentNPC;
 
-    public Sprite NPCSprite;
-    public GameObject NPCDisplay;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +17,7 @@ public class PlayerDialogueInteract : MonoBehaviour
     {
         if (currentNPC && Input.GetKeyDown(KeyCode.E) && DialogueManager.dialogueManager.inDialogue == false)
         {
-            currentNPC.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();           
+            currentNPC.transform.GetComponentInParent<Dialogue>().StartDialogueSequence();
         }
     }
 
@@ -29,12 +26,6 @@ public class PlayerDialogueInteract : MonoBehaviour
         if (collision.transform.tag == "NPC" && DialogueManager.dialogueManager.inDialogue == false)
         {
             currentNPC = collision;
-
-            // Wrote this since character isn't animating just static
-            NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
-            //In future use this to grab the interrigation sprite.
-            //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
-            NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
         }
     }
 

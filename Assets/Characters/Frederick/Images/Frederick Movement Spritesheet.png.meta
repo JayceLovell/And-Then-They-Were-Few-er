@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: 1d5eb414bcbbe0942b34789d56de5fa9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 398
+        width: 70
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f6c7a970006504abc5ceb6a8db863b
+      internalID: 1877080040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 399
+        width: 66
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d825de9bc2abb7e46af9a68bf24bae60
+      internalID: -14261996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_2
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 400
+        width: 70
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36338638d2d871c47a8f8b378a41217c
+      internalID: 1381067625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 401
+        width: 62
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faef842576d0a0943a8bda59e11aaae6
+      internalID: -913934027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 283
+        width: 60
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f995cec68967af41b57f5fedfe3b2ef
+      internalID: -579834008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 284
+        width: 66
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e33f5c1076eba24483ca37cc09bdd0b
+      internalID: -69857747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_6
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 283
+        width: 60
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5a142a32bbb974ab0f375ba69f6145
+      internalID: 577872102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_7
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 284
+        width: 60
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24d7b1cc1d3c0c4a84bcaebd4befbe2
+      internalID: -1417284497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_8
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 166
+        width: 76
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25126cbf30ec861458d4d194e2df3b7e
+      internalID: 915407358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 166
+        width: 70
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1eea71a1dfe7a746b20bf82709fba00
+      internalID: 428046203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_10
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 166
+        width: 76
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c015bb377ab92a47acfebd383fbcb9a
+      internalID: -1287640343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_11
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 166
+        width: 70
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3221cda74910c8c41b3e4e73d9c7c6a0
+      internalID: 1865057875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_12
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 36
+        width: 59
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daeb8946c41ca324cae102ef480a9453
+      internalID: 1433618829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_13
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 36
+        width: 59
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdbdfaf84970634e8549f59dbd79d4f
+      internalID: -1970586867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 37
+        width: 59
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d122c51ad926abf4a8731ecd5cdc52cc
+      internalID: 793034947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frederick_spritesheet-Sheet-expor1t-export_15
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 38
+        width: 65
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c2467b1be725c40a9da0d1859cd666
+      internalID: 209247736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      frederick_spritesheet-Sheet-expor1t-export_15: 209247736
+      frederick_spritesheet-Sheet-expor1t-export_12: 1433618829
+      frederick_spritesheet-Sheet-expor1t-export_6: 577872102
+      frederick_spritesheet-Sheet-expor1t-export_0: 1877080040
+      frederick_spritesheet-Sheet-expor1t-export_7: -1417284497
+      frederick_spritesheet-Sheet-expor1t-export_14: 793034947
+      frederick_spritesheet-Sheet-expor1t-export_10: -1287640343
+      frederick_spritesheet-Sheet-expor1t-export_1: -14261996
+      frederick_spritesheet-Sheet-expor1t-export_11: 1865057875
+      frederick_spritesheet-Sheet-expor1t-export_4: -579834008
+      frederick_spritesheet-Sheet-expor1t-export_8: 915407358
+      frederick_spritesheet-Sheet-expor1t-export_13: -1970586867
+      frederick_spritesheet-Sheet-expor1t-export_5: -69857747
+      frederick_spritesheet-Sheet-expor1t-export_2: 1381067625
+      frederick_spritesheet-Sheet-expor1t-export_3: -913934027
+      frederick_spritesheet-Sheet-expor1t-export_9: 428046203
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

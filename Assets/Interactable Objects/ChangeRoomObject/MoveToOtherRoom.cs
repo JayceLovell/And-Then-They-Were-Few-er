@@ -4,21 +4,27 @@ using UnityEngine;
 
 public class MoveToOtherRoom : Objects
 {
-    public GameController controller;
     public string NameOfRoom;
-    void Start()
-    {
-        controller = GameObject.Find("GameController").GetComponent<GameController>();
-    }
+    private SoundBGVolume soundBGVolume;
+
     public override void Use()
-    {
+    {        
         base.Use();
+        soundBGVolume = GameObject.FindObjectOfType<SoundBGVolume>();
+        soundBGVolume.LowerVolume(1f);
+        StartCoroutine(littleWaitBefore());
+    }
+    IEnumerator littleWaitBefore()
+    {
+        yield return new WaitForSeconds(2);
         //Story Guide
-        if (controller.GameManager.CurrentPlayText == 1)
+        if (_gameController._gameManager.CurrentGameProgress == 1)
         {
-            controller.MoveToScene("Text");
+            _gameController.MoveToScene("Text");
         }
         else
-            controller.MoveToScene(NameOfRoom);
+        {
+            _gameController.MoveToScene(NameOfRoom);
+        }
     }
 }

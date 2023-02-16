@@ -4,16 +4,53 @@ using UnityEngine;
 
 public class Nikki : Character
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void SetRegularConvo()
     {
-        
-    }
+        base.SetRegularConvo();
+        if (GameManager.Instance.CurrentGameProgress <= 3)
+        {
+            DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
+            ExampleForBeforeMurder.NPCTalking = true;
+            ExampleForBeforeMurder.Text = "(Nikki grew up in an impoverished neighborhood. Her father left when she was young, leaving her with her mother with the family business. Too stubborn to follow her mothers wishes and take on the family business she instead used her intelligence to invent the Synthesizer)";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
+            ExampleForBeforeMurder1.NPCTalking = false;
+            ExampleForBeforeMurder1.Text = "Nikki, long time no see!";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder1);
+
+            DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
+            ExampleForBeforeMurder2.NPCTalking = true;
+            ExampleForBeforeMurder2.Text = "Ashlyn! It’s been so long! I’m so glad you could make it!";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder2);
+
+            DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
+            ExampleForBeforeMurder3.NPCTalking = false;
+            ExampleForBeforeMurder3.Text = "Well, I couldn’t say no to an invitation from an old friend. Quite the fancy to-do you’ve set up.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder3);
+
+            DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
+            ExampleForBeforeMurder4.NPCTalking = true;
+            ExampleForBeforeMurder4.Text = "Hehe, glad you’re impressed. It takes a lot more effort than you might think to set up one of these. Almost didn’t want to do it but it’d be a shame not to show off my latest invention.";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder4);
+
+            DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
+            ExampleForBeforeMurder5.NPCTalking = false;
+            ExampleForBeforeMurder5.Text = "What is the invention anyway? You never told anyone, did you?";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder5);
+
+            DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
+            ExampleForBeforeMurder6.NPCTalking = true;
+            ExampleForBeforeMurder6.Text = "You’ll just have to wait and see! Can’t spoil the surprise!";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder6);
+        }
+        else
+        {
+            // Create convo after Murder
+            DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
+            ExampleForAfterMurder.NPCTalking = true;
+            ExampleForAfterMurder.Text = "*A Hologram of Nikki*";
+            dialogForRegularConvo.Add(ExampleForAfterMurder);
+        }
     }
-    
 }

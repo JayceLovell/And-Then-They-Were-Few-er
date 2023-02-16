@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 5022030404219044078}
   - component: {fileID: 3127461312995875478}
   - component: {fileID: 5345708091527531508}
-  - component: {fileID: 3282730221336518318}
   - component: {fileID: 5646326592726193672}
+  - component: {fileID: -181777302261430544}
   m_Layer: 0
   m_Name: Mirianne
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,13 +75,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -656256226, guid: e445ebea42673f94b8253c3a01eb981f, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 1676541690, guid: 9e3d5ffd0fe81004dbf8d4c44e1f0a0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.7, y: 1.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,24 +99,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c579446a620410643aec8157659edca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrustLevel: 0
-  Name: Mirianne
-  isAlive: 1
-  Profile: {fileID: 2800000, guid: 74002ac4f7ae36e4a820e9575123920e, type: 3}
-  Positions: []
---- !u!65 &3282730221336518318
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3201545564706949019}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.39, y: 0.48, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  DeadSprite: {fileID: 0}
+  correctClue: {fileID: 0}
+  Name: 6
+  Profile: {fileID: 21300000, guid: 8f409be6d0224f447b0a4a36ff0c980f, type: 3}
+  InterrigationSprite: {fileID: 1676541690, guid: 9e3d5ffd0fe81004dbf8d4c44e1f0a0c, type: 3}
+  CharacterSetUps:
+  - Scene: 1
+    Position: {x: 32.62097, y: -9.561905}
+    IsDead: 0
+  - Scene: 2
+    Position: {x: -0.6488919, y: -6.540929}
+    IsDead: 0
+  dialogForRegularConvo: []
+  DialogueForInterrogations: []
+  DialogueAfterClues: []
 --- !u!95 &5646326592726193672
 Animator:
   serializedVersion: 4
@@ -127,7 +124,7 @@ Animator:
   m_GameObject: {fileID: 3201545564706949019}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6a934c53a528cd342bcd0c3f9f696d35, type: 2}
+  m_Controller: {fileID: 9100000, guid: b32f1955a639a894e80f95d7373dc542, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -137,3 +134,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &-181777302261430544
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201545564706949019}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.7, y: 1.07}
+    newSize: {x: 0.7, y: 1.07}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 1.07}
+  m_EdgeRadius: 0

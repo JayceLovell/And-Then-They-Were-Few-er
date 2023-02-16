@@ -5,18 +5,20 @@ using TMPro;
 
 public class ClueButton : MonoBehaviour
 {
-    public ClueManager clueManager;
     public Clue clue;
 
     public TextMeshProUGUI text;
 
     private void Start()
     {
-        text.text = clue.clueText;
+        text.text = clue.ClueText;
     }
 
     public void OnClick()
     {
-        
+        if (GameManager.Instance.CurrentScene=="InterrogationScene")
+        {
+            GameObject.FindGameObjectWithTag("interrogationController").GetComponent<InterrogationController>().PresentClueToNPC(clue);
+        }
     }
 }

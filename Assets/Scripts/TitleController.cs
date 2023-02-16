@@ -7,49 +7,30 @@ using UnityEngine.UI;
 
 public class TitleController : MonoBehaviour
 {
-    public string SceneToLoad;
-    public GameManager GameManager;
-    public AudioClip TitleMusic;
+    private GameManager _gameManager;
     public GameObject VolumeSlider;
 
-    private AudioSource _titleMusicPlayer;
     private bool _isVolumeDisplayed;
     public bool IsVolumeDisplayed
     {
         get { return _isVolumeDisplayed; }
         set { _isVolumeDisplayed = value; }
     }
-    void Awake()
-    {
-        GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-    }
-    // Start is called before the first frame update
     void Start()
     {
-        _titleMusicPlayer = GetComponent<AudioSource>();
-        MusicPlayer();
+        _gameManager = GameManager.Instance;
     }
-
-    private void MusicPlayer()
+    void OnQuit()
     {
-        _titleMusicPlayer.clip = TitleMusic;
-        _titleMusicPlayer.volume = GameManager.BGMusicVolume;
-        _titleMusicPlayer.Play();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
- 
+        _gameManager.Quit();
     }
     public void OnStart()
     {
-        SceneManager.LoadScene(SceneToLoad);
+        _gameManager.StartGame();
     }
     public void NewGame()
     {
-        GameManager.NewGame();
-        SceneManager.LoadScene(SceneToLoad);
+        _gameManager.NewGame();
     }
     public void DisplayVolume()
     {
@@ -57,16 +38,12 @@ public class TitleController : MonoBehaviour
         {
             VolumeSlider.SetActive(true);
             _isVolumeDisplayed = true;
-            VolumeSlider.GetComponent<Slider>().value = GameManager.BGMusicVolume;
+            VolumeSlider.GetComponent<Slider>().value = _gameManager.BgmVolume;
         }
         else
         {
             VolumeSlider.SetActive(false);
             _isVolumeDisplayed=false;
         }
-    }
-    public void VolumeLevel(float volume)
-    {
-        _titleMusicPlayer.volume = volume / 100;
     }
 }

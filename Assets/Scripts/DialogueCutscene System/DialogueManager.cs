@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
 
 
     public GameObject interogationArea;
-    public Camera mainCam;
+    public GameObject MainCam;
 
     public bool inDialogue;
     public bool inCutscene;
@@ -23,10 +23,14 @@ public class DialogueManager : MonoBehaviour
 
     public float textSpeed = 0.05f;
 
+    public Dialogue currentDialogueScript;
+
     [TextArea(15, 20)]
-    public string[] currentDialogue;
+    public List<string> currentDialogue;
 
     public int index;
+
+    public Clue currentCorrectClue;
 
     private void Awake()
     {
@@ -42,31 +46,28 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DialogueManager.dialogueManager.inDialogue)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                if (DialogueManager.dialogueManager.text.text == currentDialogue[index])
-                {
-                    NextLine();
-                }
-                else
-                {
-                    StopAllCoroutines();
-                    DialogueManager.dialogueManager.text.text = currentDialogue[index];
-                }
-            }
-        }
 
         if (inInterrogation)
         {
-            mainCam.enabled = false;
+            MainCam.SetActive(false);
             interogationArea.SetActive(true);
         }
         else
         {
-            mainCam.enabled = true;
+            MainCam.SetActive(true);
             interogationArea.SetActive(false);
+        }
+    }
+    public void ContinueDialog()
+    {
+        if (DialogueManager.dialogueManager.text.text == currentDialogue[index])
+        {
+            NextLine();
+        }
+        else
+        {
+            StopAllCoroutines();
+            DialogueManager.dialogueManager.text.text = currentDialogue[index];
         }
     }
 
@@ -74,7 +75,17 @@ public class DialogueManager : MonoBehaviour
     {
         inCutscene = false;
     }
-
+    /// <summary>
+    /// For Objects to put their text in Dialog
+    /// </summary>
+    /// <param name="Dialog"></param>
+    public void ObjectDiablog(string Dialog)
+    {
+        text.text = "";
+        textbox.SetActive(true);
+        text.text = Dialog;
+        StartCoroutine(TurnOffDialogue());
+    }
     public void OpenTextBox()
     {
         inDialogue = true;
@@ -88,6 +99,10 @@ public class DialogueManager : MonoBehaviour
         textbox.SetActive(false);
         text.text = "";
 
+        index = 0;
+
+        currentDialogue = null;
+
         if (inCutscene)
         {
             playableDirector.Resume();
@@ -97,29 +112,15 @@ public class DialogueManager : MonoBehaviour
         if (inInterrogation)
         {
             inInterrogation = false;
+            currentCorrectClue = null;
         }
 
         StartCoroutine(TurnOffDialogue());
     }
 
-    IEnumerator TurnOffDialogue()
-    {
-        yield return new WaitForSeconds(0.3f);
-        inDialogue = false;
-    }
-
-    IEnumerator TypeLine()
-    {
-        foreach (char c in currentDialogue[index].ToCharArray())
-        {
-            DialogueManager.dialogueManager.text.text += c;
-            yield return new WaitForSeconds(DialogueManager.dialogueManager.textSpeed);
-        }
-    }
-
     void NextLine()
     {
-        if (index < currentDialogue.Length - 1)
+        if (index < currentDialogue.Count - 1)
         {
             index++;
             DialogueManager.dialogueManager.text.text = "";
@@ -128,6 +129,19 @@ public class DialogueManager : MonoBehaviour
         else
         {
             DialogueManager.dialogueManager.CloseTextBox();
+        }
+    }
+    IEnumerator TurnOffDialogue()
+    {
+        yield return new WaitForSeconds(0.3f);
+        inDialogue = false;
+    }
+    IEnumerator TypeLine()
+    {
+        foreach (char c in currentDialogue[index].ToCharArray())
+        {
+            DialogueManager.dialogueManager.text.text += c;
+            yield return new WaitForSeconds(DialogueManager.dialogueManager.textSpeed);
         }
     }
 }
