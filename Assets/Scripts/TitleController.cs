@@ -20,6 +20,10 @@ public class TitleController : MonoBehaviour
     {
         _gameManager = GameManager.Instance;
     }
+    void OnQuit()
+    {
+        _gameManager.Quit();
+    }
     public void OnStart()
     {
         _gameManager.StartGame();

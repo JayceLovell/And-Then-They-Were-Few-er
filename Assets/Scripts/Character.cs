@@ -555,7 +555,7 @@ public class Character :MonoBehaviour
                 _dialogBox.SetUpQuestions(3, DialogueForInterrogations[_numDialog].Question3.QuestionText, DialogueForInterrogations[_numDialog].Question3.NextElementNumber);
             }
         }
-        yield return new WaitForSeconds(0.07f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("GrandHall");
     }
 }
