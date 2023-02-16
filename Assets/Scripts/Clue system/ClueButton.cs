@@ -5,24 +5,20 @@ using TMPro;
 
 public class ClueButton : MonoBehaviour
 {
-    public ClueManager clueManager;
     public Clue clue;
 
     public TextMeshProUGUI text;
 
     private void Start()
     {
-        text.text = clue.clueText;
+        text.text = clue.ClueText;
     }
 
     public void OnClick()
     {
-        if (DialogueManager.dialogueManager.inInterrogation)
+        if (GameManager.Instance.CurrentScene=="InterrogationScene")
         {
-            if(clue == DialogueManager.dialogueManager.currentCorrectClue)
-            {
-                DialogueManager.dialogueManager.currentDialogueScript.StartPostClueDialogue();
-            }
+            GameObject.FindGameObjectWithTag("interrogationController").GetComponent<InterrogationController>().PresentClueToNPC(clue);
         }
     }
 }

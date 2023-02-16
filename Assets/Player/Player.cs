@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
 
     private GameController _gameController;
 
+    public bool PlayWalkSound;
+
     public float PlayerSpeed;
     public bool CanInteract;
     public bool CanTalkToNPC;
@@ -49,14 +51,27 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
+    //void Update()
+    //{
+    //    if (PlayWalkSound)
+    //    {
+    //        SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
+    //        PlayWalkSound = false;
+    //    }
+    //}
     void FixedUpdate()
     {
         if(Talking)
         {
             moveInput = Vector2.zero;
+            _animator.SetBool("Moving", false);
         }
+        else
+            _animator.SetBool("Moving", true);
 
         _rigidbody.velocity = moveInput * PlayerSpeed;
+        
+
         switch (moveInput.y)
         {
             case 1:
@@ -83,6 +98,9 @@ public class Player : MonoBehaviour
                 _animator.SetBool("Right", false);
                 break;
         }
+
+        if(moveInput == Vector2.zero)
+            _animator.SetBool("Moving", false);
     }
     /// <summary>
     /// Responds to input system on move event
@@ -90,7 +108,7 @@ public class Player : MonoBehaviour
     /// <param name="value">The value which containts the vector2 X/Y input</param>
     void OnMove(InputValue value)
     {
-        if (!_gameController.GameManager.IsGamePaused)
+        if (!_gameController._gameManager.IsGamePaused)
         {
             if (value.Get<Vector2>().x != 0 && value.Get<Vector2>().y == 0)
                 moveInput = value.Get<Vector2>();
@@ -98,8 +116,7 @@ public class Player : MonoBehaviour
                 moveInput = value.Get<Vector2>();
             else
                 moveInput = Vector2.zero;
-
-            SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
+            
         }
     }
     /// <summary>
@@ -126,7 +143,7 @@ public class Player : MonoBehaviour
                 CharactersScript.GetType().GetMethod("ContinueDialogue").Invoke(CharactersScript, null);
             else
             {
-                if (_gameController.GameManager.CurrentScene == "GrandHall")
+                if (_gameController._gameManager.CurrentScene == "GrandHall")
                 {
                     _gameController.InInterrogation= true;
                     _gameController.LastPositon = this.gameObject.transform;
@@ -145,7 +162,11 @@ public class Player : MonoBehaviour
         // Interacting with object
         else if (CanInteract)
         {
+            Talking = true;
+            CurrentInteractableObject.GetComponent<Objects>().dialogueObjectController = DialogBox;
+            ImTalking();           
             CurrentInteractableObject.GetComponent<Objects>().Use();
+
         }
         else
         {
@@ -153,6 +174,11 @@ public class Player : MonoBehaviour
         }
 
     }
+    void OnBringUpClues()
+    {
+        ClueManager.Instance.ToggleMenu();
+    }
+
     public void ImTalking()
     {
         DialogBox.SpeakerName = "Ashlyn";
@@ -166,19 +192,6 @@ public class Player : MonoBehaviour
     {
         GameManager.Instance.Quit();
     }
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.tag == "NPC")
-    //    {
-    //        CurrentNPCToTalkTo = collision.gameObject;
-    //        CanTalkToNPC = true;
-    //        // Wrote this since character isn't animating just static
-    //        NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
-    //        //In future use this to grab the interrigation sprite.
-    //        //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
-    //        NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
-    //    }
-    //}
     void OnTriggerStay2D(Collider2D collision)
     {
 
@@ -216,7 +229,7 @@ public class Player : MonoBehaviour
         CanInteract = false;
         CanTalkToNPC = false;
         PlayerObjectTextBox.SetActive(false);
-        DialogueManager.dialogueManager.CloseTextBox();
+        DialogBox.Display(false);
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -226,6 +239,6 @@ public class Player : MonoBehaviour
         CanInteract = false;
         CanTalkToNPC = false;
         PlayerObjectTextBox.SetActive(false);
-        DialogueManager.dialogueManager.CloseTextBox();
+        DialogBox.Display(false);
     }
 }

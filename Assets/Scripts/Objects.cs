@@ -9,7 +9,20 @@ using UnityEngine;
 public class Objects : MonoBehaviour
 {
     private bool _playerInteracts;
+    protected DialogueObjectController _dialogueObjectController;
     protected GameController _gameController;
+
+    public DialogueObjectController dialogueObjectController
+    {
+        get
+        {
+            return _dialogueObjectController;
+        }
+        set
+        {
+            _dialogueObjectController = value;
+        }
+    }
 
     public enum TypeOfObject
     {
@@ -43,11 +56,7 @@ public class Objects : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _gameController = GameObject.Find("GameController").GetComponent<GameController>();
-                
-        if (GameManager.Instance.CurrentGameProgress <= 3)
-            if (objectType == TypeOfObject.Clue)
-                this.gameObject.SetActive(false);
+        _gameController = GameObject.Find("GameController").GetComponent<GameController>();                        
         
     }
     /// <summary>
@@ -56,9 +65,7 @@ public class Objects : MonoBehaviour
     public virtual void Use()
     {
         Debug.Log("Action from object: "+objectType.ToString());
-
-        // putting an output dialog to screen about using the object
-        DialogueManager.dialogueManager.ObjectDiablog(Dialog);
+  
     }
     /// <summary>
     /// @DrCatman

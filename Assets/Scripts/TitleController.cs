@@ -7,8 +7,7 @@ using UnityEngine.UI;
 
 public class TitleController : MonoBehaviour
 {
-    public string SceneToLoad;
-    public GameManager GameManager;
+    private GameManager _gameManager;
     public GameObject VolumeSlider;
 
     private bool _isVolumeDisplayed;
@@ -17,18 +16,17 @@ public class TitleController : MonoBehaviour
         get { return _isVolumeDisplayed; }
         set { _isVolumeDisplayed = value; }
     }
-    void Awake()
+    void Start()
     {
-        GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        _gameManager = GameManager.Instance;
     }
     public void OnStart()
     {
-        SceneManager.LoadScene(SceneToLoad);
+        _gameManager.StartGame();
     }
     public void NewGame()
     {
-        GameManager.NewGame();
-        SceneManager.LoadScene(SceneToLoad);
+        _gameManager.NewGame();
     }
     public void DisplayVolume()
     {
@@ -36,7 +34,7 @@ public class TitleController : MonoBehaviour
         {
             VolumeSlider.SetActive(true);
             _isVolumeDisplayed = true;
-            VolumeSlider.GetComponent<Slider>().value = GameManager.BGMusicVolume;
+            VolumeSlider.GetComponent<Slider>().value = _gameManager.BgmVolume;
         }
         else
         {

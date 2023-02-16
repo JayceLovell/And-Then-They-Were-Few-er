@@ -17,8 +17,10 @@ public class GameManager : MonoBehaviour
     private bool _isGameWon;
     private static GameManager _instance;
     private int _currentGameProgress;
-    private float _bgMusicVolume;
+    private float _bgmVolume;
     private float _sfxVolume;
+    private string _currentScene;
+    private string _lastScene;
 
     /// <summary>
     /// 15 mins count down
@@ -55,28 +57,23 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public int CurrentGameProgress
     {
-        get {
-            _currentGameProgress = PlayerPrefs.GetInt("PlayTextNumber");
+        get {            
             return _currentGameProgress; 
         }
         set { 
-            _currentGameProgress = value;
-            PlayerPrefs.SetInt("PlayTextNumber",value);
+            _currentGameProgress = value;            
         }
     }
     /// <summary>
     /// Background music volume
     /// </summary>
-    public float BGMusicVolume
+    public float BgmVolume
     {
-        get {
-            _bgMusicVolume = PlayerPrefs.GetFloat("Background Volume");
-            return (_bgMusicVolume);
+        get {            
+            return (_bgmVolume);
         }
         set { 
-            _bgMusicVolume = value;
-            PlayerPrefs.SetFloat("Background Volume", value);
-            PlayerPrefs.Save();
+            _bgmVolume = value;
         }
     }
     /// <summary>
@@ -84,15 +81,12 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public float SfxVolume {
         get
-        {
-            _sfxVolume = PlayerPrefs.GetFloat("Sfx Volume");
+        {         
             return (_sfxVolume);
         }
         set
         {
             _sfxVolume = value;
-            PlayerPrefs.SetFloat("Sfx Volume",value);
-            PlayerPrefs.Save();
         } 
     }
 
@@ -128,6 +122,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Game Won
+    /// </summary>
     public bool IsGameWon
     {
         get
@@ -146,40 +143,49 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public string CurrentScene;
+    /// <summary>
+    /// The Name of the CurrentScene we are in at runtime
+    /// </summary>
+    public string CurrentScene
+    {
+        get
+        {
+            return _currentScene;
+        }        
+    }
+    /// <summary>
+    /// Previous Scene player was in
+    /// </summary>
+    public string LastScene
+    {
+        get
+        {
+            return _lastScene;
+        }
+        set
+        {
+            _lastScene = value;
+        }
+    }
 
     //CalledFirst
     void OnEnable()
     {
         Debug.Log("GameManager Enabled");
         SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
     void Awake()
     {
         _instance = this;
         DontDestroyOnLoad(GameManager.Instance);
-        //_musicPlayer = GetComponent<AudioSource>();
+        _loadPlayerPrefs();
     }
     // Start is called before the first frame update
     void Start()
     {
         IsGameOver = false;
-        IsGamePaused = false;
-        CheckPlayerPrefs();
-    }
-
-    private void CheckPlayerPrefs()
-    {
-        if ((PlayerPrefs.GetInt("PlayTextNumber", 0) == 0))
-            CurrentGameProgress = 0;
-        else
-            CurrentGameProgress = PlayerPrefs.GetInt("PlayTextNumber");
-
-        if ((PlayerPrefs.GetFloat("Sfx Volume", 0) == 0))
-            SfxVolume = 50;
-
-        if ((PlayerPrefs.GetFloat("Background Volume", 0) == 0))
-            BGMusicVolume = 50;
+        IsGamePaused = false;       
     }
 
     // Update is called once per frame
@@ -187,23 +193,91 @@ public class GameManager : MonoBehaviour
     {
         if (!IsGamePaused)
         {
-            if (_timeStart)
+            if (_timeStart||_currentGameProgress>3)
             {
                  GameTime -= Time.deltaTime;
             }
         }
     }
+    private void _loadPlayerPrefs()
+    {
+        if(!PlayerPrefs.HasKey("SFX Volume"))        
+            SfxVolume = 50;
+        else
+            SfxVolume = PlayerPrefs.GetFloat("SFX Volume");
+
+        if (!PlayerPrefs.HasKey("BGM Volume"))
+            BgmVolume = 50;
+        else
+            BgmVolume = PlayerPrefs.GetFloat("BGM Volume");
+
+        if (PlayerPrefs.GetFloat("Game Time") <= 0)
+            _gameTime = 900;
+        else
+            _gameTime = PlayerPrefs.GetFloat("Game Time");
+
+        _lastScene = PlayerPrefs.GetString("Last Scene","");
+        _currentScene = PlayerPrefs.GetString("Current Scene","");
+        _currentGameProgress = PlayerPrefs.GetInt("Player Progress",0);
+
+        string cluesString = PlayerPrefs.GetString("Clues", "");
+        string pickedUpString = PlayerPrefs.GetString("Clues Picked Up", "");
+        string[] cluesArray = cluesString.Split(',');
+        string[] pickedUpArray = pickedUpString.Split(',');
+        List<Clue> clues = new List<Clue>();
+        for (int i = 0; i < cluesArray.Length; i++)
+        {
+            if (cluesArray[i] != "")
+            {
+                Clue clue = new Clue();
+                clue.ClueText = cluesArray[i];
+                clue.PickedUp = (pickedUpArray[i] == "1");
+                clues.Add(clue);
+            }
+        }
+        ClueManager.Instance.Clues = clues;
+    }
+    public void SavePlayerPrefs()
+    {
+        PlayerPrefs.SetInt("Player Progress", _currentGameProgress);
+        PlayerPrefs.SetFloat("BGM Volume", _bgmVolume);
+        PlayerPrefs.SetFloat("SFX Volume", _sfxVolume);
+        PlayerPrefs.SetFloat("Game Time", _gameTime);
+        PlayerPrefs.SetString("Current Scene", _currentScene);
+        PlayerPrefs.SetString("Last Scene",_lastScene);
+
+        string CluesString = "";
+        string PickedUpString = "";
+
+        foreach (Clue clue in ClueManager.Instance.Clues)
+        {
+            CluesString += clue.ClueText + ",";
+            PickedUpString += clue.PickedUp ? "1," : "0,";
+        }
+
+        PlayerPrefs.SetString("Clues", CluesString);
+        PlayerPrefs.SetString("Clues Picked Up", PickedUpString);
+
+        PlayerPrefs.Save();
+    }
+    /// <summary>
+    /// Prepares new Game
+    /// </summary>
     public void NewGame()
     {
-        PlayerPrefs.DeleteKey("LastScene");
-        PlayerPrefs.DeleteKey("PlayTextNumber");
-        CheckPlayerPrefs();
+        PlayerPrefs.DeleteAll();
+        _loadPlayerPrefs();
+        StartGame();
     }
-    public void SaveScene()
+    public void StartGame()
     {
-        CurrentScene = SceneManager.GetActiveScene().name;
-        PlayerPrefs.SetString("LastScene", CurrentScene);
-        PlayerPrefs.Save();
+        _lastScene = _currentScene;
+        if (CurrentGameProgress == 0)
+            SceneManager.LoadScene("Text");
+        else if (CurrentGameProgress > 5)
+            SceneManager.LoadScene("GrandHall");
+        else
+            SceneManager.LoadScene("Entrance");
     }
     /// <summary>
     /// Calls on sce/summary>
@@ -211,7 +285,7 @@ public class GameManager : MonoBehaviour
     /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        SaveScene();        
+        _currentScene = SceneManager.GetActiveScene().name;
         switch (scene.name)
         {
             case "Title":
@@ -227,19 +301,25 @@ public class GameManager : MonoBehaviour
                 break;
             case "Entrance":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
+                SavePlayerPrefs();
                 break;
             case "GrandHall":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
-
                 _timeStart = true;
+                SavePlayerPrefs();
                 break;
             case "Big Reveal":
                 SoundManager.StartBackground(SoundManager.BgSound.BigReveal);
+                SavePlayerPrefs();
                 break;
             default:
                 Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
                 break;
-        }
+        }        
+    }
+    void OnSceneUnloaded(Scene current)
+    {
+        SavePlayerPrefs();
     }
     public void LoadInstructions()
     {
@@ -247,11 +327,14 @@ public class GameManager : MonoBehaviour
     }
     public void Quit()
     {
+        _lastScene = _currentScene;
+        SavePlayerPrefs();
         Application.Quit();
     }
     void OnDisable()
     {
         Debug.Log("GameManger Disable");
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 }

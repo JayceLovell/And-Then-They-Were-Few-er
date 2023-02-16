@@ -20,15 +20,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instructions.unity
     guid: 1e45dc1ed6aadbc4a915a721c5ce9d8f
-  - enabled: 1
-    path: Assets/Scenes/InterrogationScene.unity
-    guid: 09a74e909f83cc040878dc4ad7a47cfa
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Entrance.unity
     guid: c4e301320e20acb4181d96514f7b7ef5
   - enabled: 1
     path: Assets/Scenes/GrandHall.unity
     guid: dc8b91af3e76ead4a867cf781fdc2941
+  - enabled: 1
+    path: Assets/Scenes/InterrogationScene.unity
+    guid: f755d9eed42cee14ead5a8ac78b28cca
   - enabled: 1
     path: Assets/Scenes/Big Reveal.unity
     guid: 615f6e7871c70764a8e4f418153c8da8

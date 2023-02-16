@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 307733208897063110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 928eed1e3747c0c4783c8df23ddcbac0, type: 3}
+  m_Sprite: {fileID: 1431148607, guid: fd81d90abea5f3845986eafd61ab414f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.76, y: 0.9}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,144 +99,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b2e1591d7afd94aa2a4952640ad190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InterrigrationMode: 0
+  DeadSprite: {fileID: 0}
+  correctClue: {fileID: 0}
   Name: 4
-  CorrectClue: {fileID: 0}
-  Profile: {fileID: 21300000, guid: c89dfd33993d5164bac729d01f780dca, type: 3}
-  InterrigationSprite: {fileID: 0}
-  characterPosition:
+  Profile: {fileID: 21300000, guid: c966b7f6359547b41b33317f0660b84d, type: 3}
+  InterrigationSprite: {fileID: 1431148607, guid: fd81d90abea5f3845986eafd61ab414f, type: 3}
+  CharacterSetUps:
   - Scene: 1
     Position: {x: 16.55641, y: -4.087817}
+    IsDead: 0
   - Scene: 2
     Position: {x: -4.783257, y: 1.649793}
-  dialogForRegularConvo:
-  - Text: "(Nervous character always searching for his father and fixing the problems
-      he causes)\r\n\r"
-    ImTalking: 1
-  - Text: '(His Dad is the crazy old man)
-
-
-
-'
-    ImTalking: 1
-  - Text: 'Hi
-
-'
-    ImTalking: 0
-  - Text: 'Oh, hello there.
-
-
-
-'
-    ImTalking: 1
-  - Text: "Come to see the showcase as well?\r\n\r\n\r"
-    ImTalking: 0
-  - Text: 'Yeah, but I''m worried my Dad might do something to interrupt the show.
-
-'
-    ImTalking: 1
-  - Text: (Both turn to look at the Old Man, who is muttering something loud about
-      gears)
-    ImTalking: 0
-  - Text: 'Oh Dad...
-
-
-
-'
-    ImTalking: 1
-  - Text: (John covers his hands with his face in embarrassment)
-    ImTalking: 1
-  DialogueForInterrogations:
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: 
-    Question1:
-      QuestionText: Where were you at the time of the murder?
-      NextElementNumber: 1
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: I was in my room.
-    Question1:
-      QuestionText: "Really? Your father says otherwise\u2026"
-      NextElementNumber: 2
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: John begins to blush profusely
-    Question1:
-      QuestionText: Now tell me, where were you really?
-      NextElementNumber: 3
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: I was in the bathroom with my Dad
-    Question1:
-      QuestionText: " (while shaking her head): For God\u2019s ske. Well, at least
-        that provides an alibi for the both of you."
-      NextElementNumber: 4
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: "Please don\u2019t tell anyone! I was already scared that we would
-      get caught last night, someone tried to use the bathroom when we were in there!\r\n"
-    Question1:
-      QuestionText: Hm? Do you know who this might have been?
-      NextElementNumber: 5
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: No idea. But before they realized it was occupied they tried really
-      hard to get in. They must have need to pee really badly
-    Question1:
-      QuestionText: "I\u2019ll bet they did\u2026"
-      NextElementNumber: 6
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  - NoQuestions: 1
-    NextElementNumber: 0
-    Response: "After that, it seemed like they went into the next stall. I think
-      I might have heard something hit the floor, but I\u2019m not sure, I didn\u2019t
-      look in to check.\r\n"
-    Question1:
-      QuestionText: "I\u2019ll bet they did\u2026"
-      NextElementNumber: 6
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  dialogueAfterClue: []
+    IsDead: 0
+  dialogForRegularConvo: []
+  DialogueForInterrogations: []
+  DialogueAfterClues: []
 --- !u!95 &9210974397479087053
 Animator:
   serializedVersion: 4
@@ -247,7 +124,7 @@ Animator:
   m_GameObject: {fileID: 307733208897063110}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 925f65820e16e944cac88ca3782eb741, type: 2}
+  m_Controller: {fileID: 9100000, guid: d9b928ddeca3a45499b736335d1f8dae, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -270,16 +147,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02269961, y: -0.009419702}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.42, y: 0.33}
-    newSize: {x: 1, y: 2}
+    oldSize: {x: 0.76, y: 0.9}
+    newSize: {x: 0.76, y: 0.9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14155005, y: 0.17049243}
+  m_Size: {x: 0.76, y: 0.9}
   m_EdgeRadius: 0

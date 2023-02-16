@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7628316453212250482}
   - component: {fileID: 708143256368913170}
   - component: {fileID: 5565415678146893301}
+  - component: {fileID: 6151867337395962191}
   m_Layer: 0
   m_Name: Jayson
   m_TagString: NPC
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4069851616722528749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 89b9d8b039b42fd48971b710f0db54ba, type: 3}
+  m_Sprite: {fileID: -681546392, guid: 2bf778bc965ee874589f87cd59adcd73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.75, y: 1.05}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -98,112 +99,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3362df6245c670047ae7aa455b5df358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InterrigrationMode: 1
+  DeadSprite: {fileID: 0}
+  correctClue: {fileID: 0}
   Name: 3
-  CorrectClue: {fileID: 0}
   Profile: {fileID: 21300000, guid: bb6796ae590284147a6b95adf39dcb4d, type: 3}
-  InterrigationSprite: {fileID: 0}
-  characterPosition:
+  InterrigationSprite: {fileID: -681546392, guid: 2bf778bc965ee874589f87cd59adcd73, type: 3}
+  CharacterSetUps:
   - Scene: 1
     Position: {x: 35.26783, y: -2.433469}
+    IsDead: 0
   - Scene: 2
     Position: {x: -4.744253, y: -4.863781}
+    IsDead: 0
   dialogForRegularConvo:
   - Text: '(An attractive but clumsy wannabe detective trying to solve the mystery
       but ruins clues and makes chaos.Odd character, who is obsessed with mysteries
       and conspiracies)
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: Good Evening
-    ImTalking: 0
+    NPCTalking: 0
   - Text: (Jayson looks Ashlyn up and down)
-    ImTalking: 1
+    NPCTalking: 1
   - Text: Well, Hello There
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Ashlyn finds Jayson quite attractive, and returns his smile)
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: Well, Hello yourself
-    ImTalking: 0
+    NPCTalking: 0
   - Text: You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's
       hot new detective in the flesh
-    ImTalking: 1
+    NPCTalking: 1
   - Text: So I see my reputation precedes me, eh?
-    ImTalking: 0
+    NPCTalking: 0
   - Text: Do I live up to the stories?
-    ImTalking: 0
-  - Text: '(J grins at A)
+    NPCTalking: 0
+  - Text: '(Jayson grins at Ashlyn)
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'That''s yet to be determined
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: I'm afraid though, that you might have some competition
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Oh? And who might that be?
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: '(Jayson, takes a step closer, but trips and ends up falling on his front)
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Ashlyn laughs, but not in a cruel mocking way, moreso found it cute and
       funny)
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: '(Jayson hurriedly picks himself up hurriedly and stretches out his hand
       to shake Ashlyn''s)
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Winded, still comes off as confident, but clearly a bit embarrassed)
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: 'Jayson Klutsch! I may not have your reputation quite yet, but I do believe
       I''m a force to be reckoned with
 
 
 
 '
-    ImTalking: 1
+    NPCTalking: 1
   - Text: '(Ashlyn shakes his hand back, still giggling)
 
 
 
 '
-    ImTalking: 0
+    NPCTalking: 0
   - Text: Glad to make your acquaintance
-    ImTalking: 0
-  DialogueForInterrogations:
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: 
-    Question1:
-      QuestionText: 
-      NextElementNumber: 0
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  dialogueAfterClue: []
+    NPCTalking: 0
+  DialogueForInterrogations: []
+  DialogueAfterClues: []
 --- !u!61 &5565415678146893301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -217,16 +208,36 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.020364307, y: -0.019798584}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.42, y: 0.33}
-    newSize: {x: 1, y: 2}
+    oldSize: {x: 0.75, y: 1.05}
+    newSize: {x: 0.75, y: 1.05}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14168803, y: 0.14785273}
+  m_Size: {x: 0.75, y: 1.05}
   m_EdgeRadius: 0
+--- !u!95 &6151867337395962191
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4069851616722528749}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ae076daf651740408f01c009186f704, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

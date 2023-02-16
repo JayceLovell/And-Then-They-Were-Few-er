@@ -74,10 +74,18 @@ public class InterrogationController : MonoBehaviour
             _npcComponent.GetType().GetMethod("StartDialogue").Invoke(_npcComponent, null);
         }
     }
-    public void ImTalking()
+    public void PlayerTalking()
     {
         DialogBox.SpeakerName = "Ashlyn";
         DialogBox.SpeakerImage = Profile;
+    }
+    public void PresentClueToNPC(Clue clue)
+    {
+        _npcComponent.GetType().GetMethod("PresentClue").Invoke(_npcComponent, new object[] { clue });
+    }
+    void OnBringUpClues()
+    {
+        ClueManager.Instance.ToggleMenu();
     }
     public void OnQuit()
     {
@@ -86,8 +94,6 @@ public class InterrogationController : MonoBehaviour
     IEnumerator WaitForOneSecond()
     {
         yield return new WaitForSeconds(0.5f);
-
-        _gameManager.SaveScene();
 
         NPC = GameObject.FindGameObjectWithTag("NPC");
         NPC.transform.position = NPCPosition.position;

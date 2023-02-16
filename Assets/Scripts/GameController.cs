@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     private bool _inInterrogation;
     private Transform _lastPosition;
 
-    public GameManager GameManager;
+    public GameManager _gameManager;
     public GameObject PlayerPrefab;
     public Transform DefaultSpawnLocation;
     public List<String> ExitLocationsName;
@@ -30,6 +30,9 @@ public class GameController : MonoBehaviour
             _inInterrogation = value;
         }
     }
+    /// <summary>
+    /// Hold the position of the player before going to interrogation room
+    /// </summary>
     public Transform LastPositon
     {
         get { return _lastPosition; }
@@ -56,7 +59,7 @@ public class GameController : MonoBehaviour
 
     void Awake()
     {
-        GameManager = GameManager.Instance;
+        _gameManager = GameManager.Instance;
     }
     // Start is called before the first frame update
     void Start()
@@ -64,16 +67,17 @@ public class GameController : MonoBehaviour
         if(InInterrogation)
         {
             Instantiate(PlayerPrefab,LastPositon.position,Quaternion.identity);
+            InInterrogation=false;
         }
         else
         {
-        string lastScene = PlayerPrefs.GetString("LastScene", null);
+            string lastScene = _gameManager.LastScene;
 
             for(int i = 0; i < ExitLocationsName.Count; i++)
             {
-                if(lastScene == ExitLocationsName[i])
+                 if(lastScene == ExitLocationsName[i])
                 {
-                NewPos = ExitLocationsPoint[i];
+                    NewPos = ExitLocationsPoint[i];
                     Instantiate(PlayerPrefab, NewPos.position,Quaternion.identity);
                     break;
                 }
@@ -83,7 +87,6 @@ public class GameController : MonoBehaviour
         //play door sound
         SoundManager.PlaySound(SoundManager.SoundFX.UseDoor);
         }
-        GameManager.SaveScene();
     }
 
     // Update is called once per frame
@@ -97,7 +100,7 @@ public class GameController : MonoBehaviour
     /// <param name="SceneName"></param>
     public void MoveToScene(String SceneName)
     {
-        GameManager.SaveScene();
+        _gameManager.LastScene = _gameManager.CurrentScene;
         SceneManager.LoadScene(SceneName);
     }
 }

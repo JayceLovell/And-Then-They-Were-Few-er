@@ -2,11 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Keyring : Objects
+public class Keyring : Clues
 {
-    public override void Use()
-    {
-        base.Use();
-        SoundManager.PlaySound(SoundManager.SoundFX.Clue);
-    }
+
 }
