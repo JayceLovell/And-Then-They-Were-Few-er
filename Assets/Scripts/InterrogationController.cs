@@ -89,7 +89,7 @@ public class InterrogationController : MonoBehaviour
     }
     public void OnQuit()
     {
-        GameManager.Instance.Quit();
+        SceneManager.LoadScene("GrandHall");
     }
     IEnumerator WaitForOneSecond()
     {
