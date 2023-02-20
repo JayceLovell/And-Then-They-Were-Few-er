@@ -180,8 +180,8 @@ public class Rachel : Character
         ExampleInterrogationConvo3.Question1.NextElementNumber = 4;
 
         ExampleInterrogationConvo3.Question2 = new Question();
-        ExampleInterrogationConvo3.Question2.QuestionText = " ";
-        ExampleInterrogationConvo3.Question2.NextElementNumber = 0;
+        ExampleInterrogationConvo3.Question2.QuestionText = "Who might know where he is?";
+        ExampleInterrogationConvo3.Question2.NextElementNumber = 8;
 
         ExampleInterrogationConvo3.Question3 = new Question();
         ExampleInterrogationConvo3.Question3.QuestionText = " ";
@@ -297,6 +297,33 @@ public class Rachel : Character
         ExampleInterrogationConvo7.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo7);
+
+        //Element 8
+
+        DialogueForInterrogation ExampleInterrogationConvo8 = new DialogueForInterrogation();
+        ExampleInterrogationConvo8.NextElementNumber = 1;
+        ExampleInterrogationConvo8.NPCTalking = false;
+        ExampleInterrogationConvo8.EndInterrogation = true;
+        ExampleInterrogationConvo8.NoQuestions = false;
+        ExampleInterrogationConvo8.Response = "Hm, perhaps Damien?";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo8.Question1 = new Question();
+        ExampleInterrogationConvo8.Question1.QuestionText = "I'll make sure to ask him";
+        ExampleInterrogationConvo8.Question1.NextElementNumber = 1;
+
+        ExampleInterrogationConvo8.Question2 = new Question();
+        ExampleInterrogationConvo8.Question2.QuestionText = " ";
+        ExampleInterrogationConvo8.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo8.Question3 = new Question();
+        ExampleInterrogationConvo8.Question3.QuestionText = " ";
+        ExampleInterrogationConvo8.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo8);
 
     }
     public override void SetAfterClueConvo()
