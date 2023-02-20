@@ -385,7 +385,7 @@ public class Damien : Character
         ExampledialogueAfterClue1.Question1.QuestionText = "I found it in your room. Care to explain? ";
         ExampledialogueAfterClue1.Question1.NextElementNumber = 1;
 
-        ExampledialogueAfterClue1 = new Question();
+        ExampledialogueAfterClue1.Question2 = new Question();
         ExampledialogueAfterClue1.Question2.QuestionText = " ";
         ExampledialogueAfterClue1.Question2.NextElementNumber = 0;
 
@@ -410,7 +410,7 @@ public class Damien : Character
         ExampledialogueAfterClue2.Question1.QuestionText = "And what are the contents of this letter?";
         ExampledialogueAfterClue2.Question1.NextElementNumber = 2;
 
-        ExampledialogueAfterClue2 = new Question();
+        ExampledialogueAfterClue2.Question2 = new Question();
         ExampledialogueAfterClue2.Question2.QuestionText = "Why keep this hidden?";
         ExampledialogueAfterClue2.Question2.NextElementNumber = 6;
 
@@ -435,7 +435,7 @@ public class Damien : Character
         ExampledialogueAfterClue3.Question1.QuestionText = "Your relationship? You two are together?";
         ExampledialogueAfterClue3.Question1.NextElementNumber = 3;
 
-        ExampledialogueAfterClue3 = new Question();
+        ExampledialogueAfterClue3.Question2 = new Question();
         ExampledialogueAfterClue3.Question2.QuestionText = " ";
         ExampledialogueAfterClue3.Question2.NextElementNumber = 0;
 
@@ -460,7 +460,7 @@ public class Damien : Character
         ExampledialogueAfterClue4.Question1.QuestionText = "Why?";
         ExampledialogueAfterClue4.Question1.NextElementNumber = 4;
 
-        ExampledialogueAfterClue4 = new Question();
+        ExampledialogueAfterClue4.Question2 = new Question();
         ExampledialogueAfterClue4.Question2.QuestionText = "And is this the real reason that you and Karol were in the study together? ";
         ExampledialogueAfterClue4.Question2.NextElementNumber = 5;
 
@@ -485,7 +485,7 @@ public class Damien : Character
         ExampledialogueAfterClue5.Question1.QuestionText = "I see";
         ExampledialogueAfterClue5.Question1.NextElementNumber = 3;
 
-        ExampledialogueAfterClue5 = new Question();
+        ExampledialogueAfterClue5.Question2 = new Question();
         ExampledialogueAfterClue5.Question2.QuestionText = " ";
         ExampledialogueAfterClue5.Question2.NextElementNumber = 0;
 
@@ -510,7 +510,7 @@ public class Damien : Character
         ExampledialogueAfterClue6.Question1.QuestionText = "Hmm";
         ExampledialogueAfterClue6.Question1.NextElementNumber = 3;
 
-        ExampledialogueAfterClue6 = new Question();
+        ExampledialogueAfterClue6.Question2 = new Question();
         ExampledialogueAfterClue6.Question2.QuestionText = " ";
         ExampledialogueAfterClue6.Question2.NextElementNumber = 0;
 
@@ -535,7 +535,7 @@ public class Damien : Character
         ExampledialogueAfterClue7.Question1.QuestionText = "*sternly* Don't be a smart ass. Explain";
         ExampledialogueAfterClue7.Question1.NextElementNumber = 2;
 
-        ExampledialogueAfterClue7 = new Question();
+        ExampledialogueAfterClue7.Question2 = new Question();
         ExampledialogueAfterClue7.Question2.QuestionText = " ";
         ExampledialogueAfterClue7.Question2.NextElementNumber = 0;
 
