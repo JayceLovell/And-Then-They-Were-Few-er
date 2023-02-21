@@ -196,8 +196,20 @@ public class Frederick : Character
     {
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
-        ExampledialogueAfterClue.Response = "A very interesting object indeed!";
+        ExampledialogueAfterClue.CorrectClue = false;
+        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.NoQuestions = true;
+        ExampledialogueAfterClue.NPCTalking = true;
+        ExampledialogueAfterClue.Response = " I don't know what that is ";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
+
+        DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
+        ExampledialogueAfterClue1.CorrectClue = true;
+        ExampledialogueAfterClue1.EndInterrogation = false;
+        ExampledialogueAfterClue1.NoQuestions = true;
+        ExampledialogueAfterClue1.NPCTalking = true;
+        ExampledialogueAfterClue1.Response = " *looks nervous* ";
+        DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
     }
 }

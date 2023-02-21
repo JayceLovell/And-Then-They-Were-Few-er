@@ -334,16 +334,134 @@ public class Rachel : Character
         ExampledialogueAfterClue.EndInterrogation = true;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking=true;       
-        ExampledialogueAfterClue.Response = " i don't know what that is. ";
+        ExampledialogueAfterClue.Response = "*Stares Blankly*";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
+        //Right Clue Dialogue
+        //Element 0
         DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
         ExampledialogueAfterClue1.CorrectClue = true;
-        ExampledialogueAfterClue1.EndInterrogation=true;
-        ExampledialogueAfterClue1.NoQuestions= true;
-        ExampledialogueAfterClue1.NPCTalking=true;
-        ExampledialogueAfterClue1.Response = " *looks nervous* ";
+        ExampledialogueAfterClue1.EndInterrogation = false;
+        ExampledialogueAfterClue1.NoQuestions = false;
+        ExampledialogueAfterClue1.NPCTalking = true;
+        ExampledialogueAfterClue1.Response = "Oh no, Watson!";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue1.Question1 = new Question();
+        ExampledialogueAfterClue1.Question1.QuestionText = "We found him out in the courtyard";
+        ExampledialogueAfterClue1.Question1.NextElementNumber = 4;
+
+        ExampledialogueAfterClue1.Question2 = new Question();
+        ExampledialogueAfterClue1.Question2.QuestionText = "Who do you think did this to him?";
+        ExampledialogueAfterClue1.Question2.NextElementNumber = 3;
+
+        ExampledialogueAfterClue1.Question3 = new Question();
+        ExampledialogueAfterClue1.Question3.QuestionText = "Why wasn't he at his recharge station? Damien had told me he charges next to your room";
+        ExampledialogueAfterClue1.Question3.NextElementNumber = 1;
+        //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Element 1
+        DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
+        ExampledialogueAfterClue2.CorrectClue = true;
+        ExampledialogueAfterClue2.EndInterrogation = true;
+        ExampledialogueAfterClue2.NoQuestions = false;
+        ExampledialogueAfterClue2.NPCTalking = true;
+        ExampledialogueAfterClue2.Response = "I-I don't know. Like I told you earlier I left him tidying up in the main hall!";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue2.Question1 = new Question();
+        ExampledialogueAfterClue2.Question1.QuestionText = "But you were the last person to see him Rachel. You're sure no one else was there, besides the two of you?";
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 2;
+
+        ExampledialogueAfterClue2.Question2 = new Question();
+        ExampledialogueAfterClue2.Question2.QuestionText = " ";
+        ExampledialogueAfterClue2.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue2.Question3 = new Question();
+        ExampledialogueAfterClue2.Question3.QuestionText = " ";
+        ExampledialogueAfterClue2.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue2);
+
+        //Element 2
+        DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
+        ExampledialogueAfterClue3.CorrectClue = true;
+        ExampledialogueAfterClue3.EndInterrogation = true;
+        ExampledialogueAfterClue3.NoQuestions = false;
+        ExampledialogueAfterClue3.NPCTalking = true;
+        ExampledialogueAfterClue3.Response = "*shaking* I'm certain";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue3.Question1 = new Question();
+        ExampledialogueAfterClue3.Question1.QuestionText = "I see";
+        ExampledialogueAfterClue3.Question1.NextElementNumber = 0;
+
+        ExampledialogueAfterClue3.Question2 = new Question();
+        ExampledialogueAfterClue3.Question2.QuestionText = " ";
+        ExampledialogueAfterClue3.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue3.Question3 = new Question();
+        ExampledialogueAfterClue3.Question3.QuestionText = " ";
+        ExampledialogueAfterClue3.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue3);
+
+        //Element 3
+        DialogueAfterClue ExampledialogueAfterClue4 = new DialogueAfterClue();
+        ExampledialogueAfterClue4.CorrectClue = true;
+        ExampledialogueAfterClue4.EndInterrogation = false;
+        ExampledialogueAfterClue4.NoQuestions = false;
+        ExampledialogueAfterClue4.NPCTalking = true;
+        ExampledialogueAfterClue4.Response = "Anti-Robot Enthusiasts? How would I know??";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue4.Question1 = new Question();
+        ExampledialogueAfterClue4.Question1.QuestionText = "Hmm";
+        ExampledialogueAfterClue4.Question1.NextElementNumber = 0;
+
+        ExampledialogueAfterClue4.Question2 = new Question();
+        ExampledialogueAfterClue4.Question2.QuestionText = " ";
+        ExampledialogueAfterClue4.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue4.Question3 = new Question();
+        ExampledialogueAfterClue4.Question3.QuestionText = " ";
+        ExampledialogueAfterClue4.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue4);
+
+        //Element 4
+        DialogueAfterClue ExampledialogueAfterClue5 = new DialogueAfterClue();
+        ExampledialogueAfterClue5.CorrectClue = true;
+        ExampledialogueAfterClue5.EndInterrogation = false;
+        ExampledialogueAfterClue5.NoQuestions = false;
+        ExampledialogueAfterClue5.NPCTalking = true;
+        ExampledialogueAfterClue5.Response = "*avoids eye contact* What a strange place for him to be...";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue5.Question1 = new Question();
+        ExampledialogueAfterClue5.Question1.QuestionText = "Hmmm";
+        ExampledialogueAfterClue5.Question1.NextElementNumber = 0;
+
+        ExampledialogueAfterClue5.Question2 = new Question();
+        ExampledialogueAfterClue5.Question2.QuestionText = " ";
+        ExampledialogueAfterClue5.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue5.Question3 = new Question();
+        ExampledialogueAfterClue5.Question3.QuestionText = " ";
+        ExampledialogueAfterClue5.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue5);
 
     }
 }

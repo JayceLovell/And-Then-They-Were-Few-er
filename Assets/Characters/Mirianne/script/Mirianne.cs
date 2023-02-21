@@ -463,13 +463,266 @@ public class Mirianne : Character
     }
     public override void SetAfterClueConvo()
     {
+        // After clue Dialogue is created the same way as Interrogation Dialogue same properties no confusion
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
-        ExampledialogueAfterClue.Response = "Do I look like I know?";
-        ExampledialogueAfterClue.NPCTalking = true;
+        ExampledialogueAfterClue.CorrectClue = false;
+        ExampledialogueAfterClue.EndInterrogation = true;
         ExampledialogueAfterClue.NoQuestions = true;
-        ExampledialogueAfterClue.EndInterrogation = true;      
+        ExampledialogueAfterClue.NPCTalking = true;
+        ExampledialogueAfterClue.Response = "Do I look like I know?";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
+
+        //Right Clue Dialogue
+        //Element 0
+        DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
+        ExampledialogueAfterClue1.CorrectClue = true;
+        ExampledialogueAfterClue1.EndInterrogation = false;
+        ExampledialogueAfterClue1.NoQuestions = false;
+        ExampledialogueAfterClue1.NPCTalking = true;
+        ExampledialogueAfterClue1.Response = "*stares at the handkerchief in shock*";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue1.Question1 = new Question();
+        ExampledialogueAfterClue1.Question1.QuestionText = "Look familiar?";
+        ExampledialogueAfterClue1.Question1.NextElementNumber = 1;
+
+        ExampledialogueAfterClue1.Question2 = new Question();
+        ExampledialogueAfterClue1.Question2.QuestionText = "Oh, no need to worry this is just ketchup!";
+        ExampledialogueAfterClue1.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue1.Question3 = new Question();
+        ExampledialogueAfterClue1.Question3.QuestionText = " ";
+        ExampledialogueAfterClue1.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Element 1
+        DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
+        ExampledialogueAfterClue2.CorrectClue = true;
+        ExampledialogueAfterClue2.EndInterrogation = false;
+        ExampledialogueAfterClue2.NoQuestions = false;
+        ExampledialogueAfterClue2.NPCTalking = true;
+        ExampledialogueAfterClue2.Response = "*starts to shift uncomfortably* I... er... um";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue2.Question1 = new Question();
+        ExampledialogueAfterClue2.Question1.QuestionText = "What?";
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 2;
+
+        ExampledialogueAfterClue2.Question2 = new Question();
+        ExampledialogueAfterClue2.Question2.QuestionText = " ";
+        ExampledialogueAfterClue2.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue2.Question3 = new Question();
+        ExampledialogueAfterClue2.Question3.QuestionText = " ";
+        ExampledialogueAfterClue2.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue2);
+
+        //Element 2
+        DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
+        ExampledialogueAfterClue3.CorrectClue = true;
+        ExampledialogueAfterClue3.EndInterrogation = false;
+        ExampledialogueAfterClue3.NoQuestions = false;
+        ExampledialogueAfterClue3.NPCTalking = true;
+        ExampledialogueAfterClue3.Response = "*Takes a deep breath and closes her eyes* ...I was in the room after she had been killed";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue3.Question1 = new Question();
+        ExampledialogueAfterClue3.Question1.QuestionText = "What?!";
+        ExampledialogueAfterClue3.Question1.NextElementNumber = 3;
+
+        ExampledialogueAfterClue3.Question2 = new Question();
+        ExampledialogueAfterClue3.Question2.QuestionText = "Why?!";
+        ExampledialogueAfterClue3.Question2.NextElementNumber = 4;
+
+        ExampledialogueAfterClue3.Question3 = new Question();
+        ExampledialogueAfterClue3.Question3.QuestionText = " ";
+        ExampledialogueAfterClue3.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue3);
+
+        //Element 3
+        DialogueAfterClue ExampledialogueAfterClue4 = new DialogueAfterClue();
+        ExampledialogueAfterClue4.CorrectClue = true;
+        ExampledialogueAfterClue4.EndInterrogation = false;
+        ExampledialogueAfterClue4.NoQuestions = false;
+        ExampledialogueAfterClue4.NPCTalking = true;
+        ExampledialogueAfterClue4.Response = "*A tear streaks down Mirianne's face*";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue4.Question1 = new Question();
+        ExampledialogueAfterClue4.Question1.QuestionText = "Previous Screen";
+        ExampledialogueAfterClue4.Question1.NextElementNumber = 2;
+
+        ExampledialogueAfterClue4.Question2 = new Question();
+        ExampledialogueAfterClue4.Question2.QuestionText = " ";
+        ExampledialogueAfterClue4.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue4.Question3 = new Question();
+        ExampledialogueAfterClue4.Question3.QuestionText = " ";
+        ExampledialogueAfterClue4.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue4);
+
+        //Element 4
+        DialogueAfterClue ExampledialogueAfterClue5 = new DialogueAfterClue();
+        ExampledialogueAfterClue5.CorrectClue = true;
+        ExampledialogueAfterClue5.EndInterrogation = false;
+        ExampledialogueAfterClue5.NoQuestions = false;
+        ExampledialogueAfterClue5.NPCTalking = true;
+        ExampledialogueAfterClue5.Response = "Well, after I heard the two voices arguing, I went to investigate";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue5.Question1 = new Question();
+        ExampledialogueAfterClue5.Question1.QuestionText = "Next";
+        ExampledialogueAfterClue5.Question1.NextElementNumber = 5;
+
+        ExampledialogueAfterClue5.Question2 = new Question();
+        ExampledialogueAfterClue5.Question2.QuestionText = " ";
+        ExampledialogueAfterClue5.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue5.Question3 = new Question();
+        ExampledialogueAfterClue5.Question3.QuestionText = " ";
+        ExampledialogueAfterClue5.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue5);
+
+        //Element 5
+        DialogueAfterClue ExampledialogueAfterClue6 = new DialogueAfterClue();
+        ExampledialogueAfterClue6.CorrectClue = true;
+        ExampledialogueAfterClue6.EndInterrogation = false;
+        ExampledialogueAfterClue6.NoQuestions = false;
+        ExampledialogueAfterClue6.NPCTalking = true;
+        ExampledialogueAfterClue6.Response = "I'd thought I heard them coming from the lab, and that's where I went to check. When I entered, Nikki was lying on the floor, bleeding";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue6.Question1 = new Question();
+        ExampledialogueAfterClue6.Question1.QuestionText = "Next";
+        ExampledialogueAfterClue6.Question1.NextElementNumber = 6;
+
+        ExampledialogueAfterClue6.Question2 = new Question();
+        ExampledialogueAfterClue6.Question2.QuestionText = " ";
+        ExampledialogueAfterClue6.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue6.Question3 = new Question();
+        ExampledialogueAfterClue6.Question3.QuestionText = " ";
+        ExampledialogueAfterClue6.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue6);
+
+        //Element 6
+        DialogueAfterClue ExampledialogueAfterClue7 = new DialogueAfterClue();
+        ExampledialogueAfterClue7.CorrectClue = true;
+        ExampledialogueAfterClue7.EndInterrogation = false;
+        ExampledialogueAfterClue7.NoQuestions = false;
+        ExampledialogueAfterClue7.NPCTalking = true;
+        ExampledialogueAfterClue7.Response = "I rushed to her body to check to see if she was ok. That handkerchief was next to her, and I applied it to her wound to see if I could stop the bleeding, but it was too late. She was already dead";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue7.Question1 = new Question();
+        ExampledialogueAfterClue7.Question1.QuestionText = "Next";
+        ExampledialogueAfterClue7.Question1.NextElementNumber = 7;
+
+        ExampledialogueAfterClue7.Question2 = new Question();
+        ExampledialogueAfterClue7.Question2.QuestionText = " ";
+        ExampledialogueAfterClue7.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue7.Question3 = new Question();
+        ExampledialogueAfterClue7.Question3.QuestionText = " ";
+        ExampledialogueAfterClue7.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue7);
+
+        //Element 7
+        DialogueAfterClue ExampledialogueAfterClue8 = new DialogueAfterClue();
+        ExampledialogueAfterClue8.CorrectClue = true;
+        ExampledialogueAfterClue8.EndInterrogation = false;
+        ExampledialogueAfterClue8.NoQuestions = false;
+        ExampledialogueAfterClue8.NPCTalking = true;
+        ExampledialogueAfterClue8.Response = "I thought about calling for help, but I panicked. I just didn't know how to explain myself without looking suspicious";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue8.Question1 = new Question();
+        ExampledialogueAfterClue8.Question1.QuestionText = "No kidding";
+        ExampledialogueAfterClue8.Question1.NextElementNumber = 8;
+
+        ExampledialogueAfterClue8.Question2 = new Question();
+        ExampledialogueAfterClue8.Question2.QuestionText = "But this makes you look even more suspicious! ";
+        ExampledialogueAfterClue8.Question2.NextElementNumber = 9;
+
+        ExampledialogueAfterClue8.Question3 = new Question();
+        ExampledialogueAfterClue8.Question3.QuestionText = " ";
+        ExampledialogueAfterClue8.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue8);
+
+        //Element 8
+        DialogueAfterClue ExampledialogueAfterClue9 = new DialogueAfterClue();
+        ExampledialogueAfterClue9.CorrectClue = true;
+        ExampledialogueAfterClue9.EndInterrogation = false;
+        ExampledialogueAfterClue9.NoQuestions = false;
+        ExampledialogueAfterClue9.NPCTalking = true;
+        ExampledialogueAfterClue9.Response = "What choice did I have? Tell me, 'Detective', what would you have done in my place?";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue9.Question1 = new Question();
+        ExampledialogueAfterClue9.Question1.QuestionText = "*remain silent*";
+        ExampledialogueAfterClue9.Question1.NextElementNumber = 9;
+
+        ExampledialogueAfterClue9.Question2 = new Question();
+        ExampledialogueAfterClue9.Question2.QuestionText = "*shakes head in exasparation* I wouldn't hide evidence! Really Mirianne?";
+        ExampledialogueAfterClue9.Question2.NextElementNumber = 9;
+
+        ExampledialogueAfterClue9.Question3 = new Question();
+        ExampledialogueAfterClue9.Question3.QuestionText = " ";
+        ExampledialogueAfterClue9.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue9);
+
+        //Element 9
+        DialogueAfterClue ExampledialogueAfterClue10 = new DialogueAfterClue();
+        ExampledialogueAfterClue10.CorrectClue = true;
+        ExampledialogueAfterClue10.EndInterrogation = true;
+        ExampledialogueAfterClue10.NoQuestions = false;
+        ExampledialogueAfterClue10.NPCTalking = true;
+        ExampledialogueAfterClue10.Response = "Ashlyn, I know you and I have our issues, but you have to believe me, I didn't kill Nikki";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue10.Question1 = new Question();
+        ExampledialogueAfterClue10.Question1.QuestionText = " ";
+        ExampledialogueAfterClue10.Question1.NextElementNumber = 0;
+
+        ExampledialogueAfterClue10.Question2 = new Question();
+        ExampledialogueAfterClue10.Question2.QuestionText = " ";
+        ExampledialogueAfterClue10.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue10.Question3 = new Question();
+        ExampledialogueAfterClue10.Question3.QuestionText = " ";
+        ExampledialogueAfterClue10.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue10);
 
     }
 }
