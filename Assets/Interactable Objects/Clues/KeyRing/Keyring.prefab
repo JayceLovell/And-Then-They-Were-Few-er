@@ -126,5 +126,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectType: 2
   Dialog: Hmm Keyring
-  ClueStatementText: KeyRing in bathroom.
+  ClueStatementText: KeyRing found in bathroom.
   ClueStatement: {fileID: 11400000, guid: 7087b5c05d2005f4da16952f4cb1ab28, type: 2}

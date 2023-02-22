@@ -34,8 +34,11 @@ public class GameManager : MonoBehaviour
         set
         {
             _gameTime = value;
-            if (_gameTime == 0)
-                IsGameOver = true;
+            if (_gameTime <= 0)
+            {
+                CurrentGameProgress = 8;
+                SceneManager.LoadScene("Text");
+            }                
         }
     }
     /// <summary>
@@ -191,7 +194,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!IsGamePaused)
+        if (!IsGamePaused||!IsGameOver||!IsGameWon||_gameTime>0)
         {
             if (_timeStart||_currentGameProgress>3)
             {
@@ -220,8 +223,11 @@ public class GameManager : MonoBehaviour
         _currentScene = PlayerPrefs.GetString("Current Scene","");
         _currentGameProgress = PlayerPrefs.GetInt("Player Progress",0);
 
+        string cluesNameString = PlayerPrefs.GetString("Clues Name", "");
         string cluesString = PlayerPrefs.GetString("Clues", "");
         string pickedUpString = PlayerPrefs.GetString("Clues Picked Up", "");
+
+        string[] cluesName = cluesNameString.Split(',');
         string[] cluesArray = cluesString.Split(',');
         string[] pickedUpArray = pickedUpString.Split(',');
         List<Clue> clues = new List<Clue>();
@@ -230,6 +236,7 @@ public class GameManager : MonoBehaviour
             if (cluesArray[i] != "")
             {
                 Clue clue = new Clue();
+                clue.name = cluesName[i];
                 clue.ClueText = cluesArray[i];
                 clue.PickedUp = (pickedUpArray[i] == "1");
                 clues.Add(clue);
@@ -246,18 +253,31 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("Current Scene", _currentScene);
         PlayerPrefs.SetString("Last Scene",_lastScene);
 
+        string ClueName = "";
         string CluesString = "";
         string PickedUpString = "";
 
         foreach (Clue clue in ClueManager.Instance.Clues)
         {
+            ClueName += clue.name + ",";
             CluesString += clue.ClueText + ",";
             PickedUpString += clue.PickedUp ? "1," : "0,";
         }
 
+        PlayerPrefs.SetString("Clues Name", ClueName);
         PlayerPrefs.SetString("Clues", CluesString);
         PlayerPrefs.SetString("Clues Picked Up", PickedUpString);
 
+        switch (CurrentScene)
+        {
+            case "Entrance":
+            case "GrandHall":
+                StartCoroutine(UiManager.Instance.ShowSaving());
+                break;
+            default: 
+                break;
+        }
+        
         PlayerPrefs.Save();
     }
     /// <summary>
@@ -319,6 +339,7 @@ public class GameManager : MonoBehaviour
     }
     void OnSceneUnloaded(Scene current)
     {
+        _currentScene = SceneManager.GetActiveScene().name;
         SavePlayerPrefs();
     }
     public void LoadInstructions()

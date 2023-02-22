@@ -102,7 +102,7 @@ public class Mirianne : Character
 
         ExampleInterrogationConvo.Question3 = new Question();
         ExampleInterrogationConvo.Question3.QuestionText = " ";
-        ExampleInterrogationConvo.Question3.NextElementNumber = 0;
+        ExampleInterrogationConvo.Question3.NextElementNumber = 0;        
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo);
 
@@ -466,6 +466,9 @@ public class Mirianne : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.Response = "Do I look like I know?";
+        ExampledialogueAfterClue.NPCTalking = true;
+        ExampledialogueAfterClue.NoQuestions = true;
+        ExampledialogueAfterClue.EndInterrogation = true;      
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
     }

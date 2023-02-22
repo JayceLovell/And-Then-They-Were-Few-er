@@ -19,6 +19,8 @@ public class TitleController : MonoBehaviour
     void Start()
     {
         _gameManager = GameManager.Instance;
+        Button HelpButton = GameObject.Find("HelpButton").GetComponent<Button>();
+        HelpButton.onClick.AddListener(delegate { _gameManager.LoadInstructions(); });
     }
     void OnQuit()
     {

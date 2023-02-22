@@ -197,7 +197,9 @@ public class Rachel : Character
         ExampleInterrogationConvo4.EndInterrogation = true;
         ExampleInterrogationConvo4.NoQuestions = false;
         ExampleInterrogationConvo4.Response = "May I have a moment? I just..." +
-            "(Rachel turns away from Ashlyn, and starts to sob again)";
+            "(Rachel turns away from Ashlyn, and starts to sob again)";
+
+
 
         //Creating a Question
 
@@ -222,7 +224,9 @@ public class Rachel : Character
         ExampleInterrogationConvo5.NPCTalking = false;
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
-        ExampleInterrogationConvo5.Response = "No thank you, I have my handkerchief.";
+        ExampleInterrogationConvo5.Response = "No thank you, I have my handkerchief.";
+
+
 
         //Creating a Question
 
@@ -247,7 +251,9 @@ public class Rachel : Character
         ExampleInterrogationConvo6.NPCTalking = false;
         ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
-        ExampleInterrogationConvo6.Response = "(Rachel reaches into her handbag, but can't seem to find it)";
+        ExampleInterrogationConvo6.Response = "(Rachel reaches into her handbag, but can't seem to find it)";
+
+
 
         //Creating a Question
 
@@ -272,7 +278,9 @@ public class Rachel : Character
         ExampleInterrogationConvo7.NPCTalking = false;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
-        ExampleInterrogationConvo7.Response = "Oh, I must have dropped it somewhere";
+        ExampleInterrogationConvo7.Response = "Oh, I must have dropped it somewhere";
+
+
 
         //Creating a Question
 
@@ -295,8 +303,20 @@ public class Rachel : Character
     {
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
-        ExampledialogueAfterClue.Response = " *looks nervous* ";
+        ExampledialogueAfterClue.CorrectClue = false;
+        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.NoQuestions = true;
+        ExampledialogueAfterClue.NPCTalking=true;       
+        ExampledialogueAfterClue.Response = " i don't know what that is. ";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
+
+        DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
+        ExampledialogueAfterClue1.CorrectClue = true;
+        ExampledialogueAfterClue1.EndInterrogation=true;
+        ExampledialogueAfterClue1.NoQuestions= true;
+        ExampledialogueAfterClue1.NPCTalking=true;
+        ExampledialogueAfterClue1.Response = " *looks nervous* ";
+        DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
     }
 }
