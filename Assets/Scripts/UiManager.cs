@@ -9,6 +9,7 @@ public class UiManager : MonoBehaviour
 {
     public GameObject Clock;
     public GameObject PauseMenuPrefab;
+    public GameObject SaveIcon;
 
     private GameObject _pauseMenu;
     private TextMeshProUGUI _clockText;
@@ -20,6 +21,7 @@ public class UiManager : MonoBehaviour
     private bool _isPauseActive;
     private GameManager _gameManager;
     private static UiManager _instance;
+   
     public static UiManager Instance
     {
         get
@@ -96,6 +98,10 @@ public class UiManager : MonoBehaviour
         Button HelpButton = GameObject.Find("HelpButton").GetComponent<Button>();
             HelpButton.onClick.AddListener(delegate { _gameManager.LoadInstructions(); });
 
+        //Set Up SaveButton
+        Button SaveButton = GameObject.Find("SaveButton").GetComponent<Button>();
+        SaveButton.onClick.AddListener(delegate{ _gameManager.SavePlayerPrefs(); });
+
         //Set Up QuitButton
         Button QuitButton = GameObject.Find("QuitButton").GetComponent<Button>();
         QuitButton.onClick.AddListener(delegate { _gameManager.Quit(); });
@@ -147,6 +153,16 @@ public class UiManager : MonoBehaviour
         }        
     }
     /// <summary>
+    /// Shows Saving Icon
+    /// </summary>
+    public IEnumerator ShowSaving()
+    {
+        yield return new WaitForSeconds(1);
+        GameObject Saving = Instantiate(SaveIcon, GameObject.FindGameObjectWithTag("Canvas").transform);
+        yield return new WaitForSeconds(5);
+        Destroy(Saving);
+    }
+    /// <summary>
     /// Reason for delay check is because the order of objects spawn in scene
     /// </summary>
     /// <returns></returns>
@@ -163,6 +179,7 @@ public class UiManager : MonoBehaviour
         _isClockActive = true;
 
     }
+
     void OnDisable()
     {
         Debug.Log("UiManager Disable");

@@ -268,6 +268,16 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("Clues", CluesString);
         PlayerPrefs.SetString("Clues Picked Up", PickedUpString);
 
+        switch (CurrentScene)
+        {
+            case "Entrance":
+            case "GrandHall":
+                StartCoroutine(UiManager.Instance.ShowSaving());
+                break;
+            default: 
+                break;
+        }
+        
         PlayerPrefs.Save();
     }
     /// <summary>
