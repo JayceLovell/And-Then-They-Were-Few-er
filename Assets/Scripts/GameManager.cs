@@ -34,8 +34,11 @@ public class GameManager : MonoBehaviour
         set
         {
             _gameTime = value;
-            if (_gameTime == 0)
-                IsGameOver = true;
+            if (_gameTime <= 0)
+            {
+                CurrentGameProgress = 8;
+                SceneManager.LoadScene("Text");
+            }                
         }
     }
     /// <summary>
@@ -191,7 +194,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!IsGamePaused)
+        if (!IsGamePaused||!IsGameOver||!IsGameWon||_gameTime>0)
         {
             if (_timeStart||_currentGameProgress>3)
             {
