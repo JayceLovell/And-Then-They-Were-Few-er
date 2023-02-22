@@ -70,7 +70,7 @@ MonoBehaviour:
     is able to display her invention, the synthesizer, and everyone is impressed.\n\r\nLater
     on, after the showcase\u2026\r\n\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bbc9ba979b8164948b4a6f4afda233ec, type: 2}
   m_sharedMaterial: {fileID: -8115622975960587479, guid: c101b7c1ad0214f4b99e86e3709fe66b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -134,6 +134,6 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
