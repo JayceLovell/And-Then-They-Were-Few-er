@@ -755,6 +755,50 @@ PrefabInstance:
       propertyPath: m_ChunkCullingBounds.y
       value: 0.25937504
       objectReference: {fileID: 0}
+    - target: {fileID: 3218802190964764810, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_Size.x
+      value: 2.9257143
+      objectReference: {fileID: 0}
+    - target: {fileID: 3218802190964764810, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_Size.y
+      value: 2.925714
+      objectReference: {fileID: 0}
+    - target: {fileID: 3218802190964764810, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3218802190964764810, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.7606856
+      objectReference: {fileID: 0}
+    - target: {fileID: 3218802190964764810, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3218802190964764810, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.9257143
+      objectReference: {fileID: 0}
+    - target: {fileID: 3218802190964764810, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.9257143
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080706648857476254, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080706648857476254, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360901924961509969, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 913c6127a1589114d92e874c5886daae, type: 3}
+    - target: {fileID: 6114598051593611201, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7264302838726037996, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
       propertyPath: m_RootOrder
       value: 11
