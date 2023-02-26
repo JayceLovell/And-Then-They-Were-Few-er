@@ -74,7 +74,7 @@ public class Frederick : Character
 
         DialogueForInterrogation ExampleInterrogationConvo1 = new DialogueForInterrogation();
         ExampleInterrogationConvo1.NextElementNumber = 1;
-        ExampleInterrogationConvo1.NPCTalking = false;
+        ExampleInterrogationConvo1.NPCTalking = true;
         ExampleInterrogationConvo1.EndInterrogation = false;
         ExampleInterrogationConvo1.NoQuestions = false;
         ExampleInterrogationConvo1.Response = "I was in [some room near the lab]. " +
@@ -99,7 +99,7 @@ public class Frederick : Character
 
         DialogueForInterrogation ExampleInterrogationConvo2 = new DialogueForInterrogation();
         ExampleInterrogationConvo2.NextElementNumber = 1;
-        ExampleInterrogationConvo2.NPCTalking = false;
+        ExampleInterrogationConvo2.NPCTalking = true;
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
         ExampleInterrogationConvo2.Response = "I had thought it might be thunder.";
@@ -123,7 +123,7 @@ public class Frederick : Character
 
         DialogueForInterrogation ExampleInterrogationConvo3 = new DialogueForInterrogation();
         ExampleInterrogationConvo3.NextElementNumber = 1;
-        ExampleInterrogationConvo3.NPCTalking = false;
+        ExampleInterrogationConvo3.NPCTalking = true;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
         ExampleInterrogationConvo3.Response = "I did see Mirianne, but she was a bit further down the hall and walking away from the lab.";
@@ -147,7 +147,7 @@ public class Frederick : Character
 
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
-        ExampleInterrogationConvo4.NPCTalking = false;
+        ExampleInterrogationConvo4.NPCTalking = true;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
         ExampleInterrogationConvo4.Response = "Strange... And the keys to the room were not inside when you discovered the body?";
@@ -171,7 +171,7 @@ public class Frederick : Character
 
         DialogueForInterrogation ExampleInterrogationConvo5 = new DialogueForInterrogation();
         ExampleInterrogationConvo5.NextElementNumber = 1;
-        ExampleInterrogationConvo5.NPCTalking = false;
+        ExampleInterrogationConvo5.NPCTalking = true;
         ExampleInterrogationConvo5.EndInterrogation = true;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "It might do us some good to look for them";
@@ -196,8 +196,20 @@ public class Frederick : Character
     {
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
-        ExampledialogueAfterClue.Response = "A very interesting object indeed!";
+        ExampledialogueAfterClue.CorrectClue = false;
+        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.NoQuestions = true;
+        ExampledialogueAfterClue.NPCTalking = true;
+        ExampledialogueAfterClue.Response = " I don't know what that is ";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
+
+        DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
+        ExampledialogueAfterClue1.CorrectClue = true;
+        ExampledialogueAfterClue1.EndInterrogation = false;
+        ExampledialogueAfterClue1.NoQuestions = true;
+        ExampledialogueAfterClue1.NPCTalking = true;
+        ExampledialogueAfterClue1.Response = " *looks nervous* ";
+        DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
     }
 }
