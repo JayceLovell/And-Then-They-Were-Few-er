@@ -49,7 +49,7 @@ public class Nikki : Character
             // Create convo after Murder
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
-            ExampleForAfterMurder.Text = "*A Hologram of Nikki*";
+            ExampleForAfterMurder.Text = "*A Hologram of Nikki, coincidentally standing in the same spot that she was in when she was alive*";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
