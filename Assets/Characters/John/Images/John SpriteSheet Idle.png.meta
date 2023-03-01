@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,427 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 388
+        width: 74
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1a16f4e93acd648827eb65343fcf00
+      internalID: -1334838071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 388
+        width: 74
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d027e0c116bf4a4cbe1df55247604ea
+      internalID: 309508887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_2
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 388
+        width: 74
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef45b6864a705f541876e01247125278
+      internalID: 389117931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_3
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 388
+        width: 74
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d564ae30dc665b4580e446a13785193
+      internalID: 1303951536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_4
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 388
+        width: 74
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6273217e571d440a2deb787046923a
+      internalID: 555638111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 260
+        width: 66
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c41e2c918326e0418a5293b4cf91c5f
+      internalID: 1111912317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_6
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 260
+        width: 66
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675415c91cb3b11469d64b100893fb1d
+      internalID: 1813131489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_7
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 260
+        width: 66
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421df8e1c8bfe704aa29f0d91d4d4cca
+      internalID: 243220091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_8
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 260
+        width: 66
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584fdd351059c574fbdbe31a58132cb0
+      internalID: 772842486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_9
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 260
+        width: 66
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8509774a05bade49b46f36b7cb07779
+      internalID: 334604123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 148
+        width: 76
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910a8c5608b57d34188dac86b371de8e
+      internalID: 1585661371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_11
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 148
+        width: 76
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031a875b8db54d343a0d44dc8952d135
+      internalID: 2103195447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_12
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 148
+        width: 76
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ca2dc14c9af884998823d3aba8af46
+      internalID: 1230147178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_13
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 148
+        width: 76
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34b401048937dc40a58c020a226d369
+      internalID: -663030087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_14
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 148
+        width: 76
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d392e75be6716e4493e5d2cb17481e6
+      internalID: 920318239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_15
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 20
+        width: 60
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74e3fbf1e3847c478bf5a0940c30b56
+      internalID: 753325864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_16
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 20
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba5d18e2ae27e34cb9bbde55abe44f1
+      internalID: 648413278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_17
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 20
+        width: 60
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c309246b05c6bb4888f213aa8af9146
+      internalID: 792806299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_18
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 19
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9cfc1b72236d4489b135471bf00416
+      internalID: -683233445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: John SpriteSheet Idle_19
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 20
+        width: 60
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a5e5d44fbcdba45aafa58d992b9797
+      internalID: 537919247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +546,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      John SpriteSheet Idle_3: 1303951536
+      John SpriteSheet Idle_15: 753325864
+      John SpriteSheet Idle_5: 1111912317
+      John SpriteSheet Idle_4: 555638111
+      John SpriteSheet Idle_7: 243220091
+      John SpriteSheet Idle_11: 2103195447
+      John SpriteSheet Idle_17: 792806299
+      John SpriteSheet Idle_8: 772842486
+      John SpriteSheet Idle_13: -663030087
+      John SpriteSheet Idle_2: 389117931
+      John SpriteSheet Idle_6: 1813131489
+      John SpriteSheet Idle_12: 1230147178
+      John SpriteSheet Idle_9: 334604123
+      John SpriteSheet Idle_19: 537919247
+      John SpriteSheet Idle_18: -683233445
+      John SpriteSheet Idle_14: 920318239
+      John SpriteSheet Idle_16: 648413278
+      John SpriteSheet Idle_10: 1585661371
+      John SpriteSheet Idle_0: -1334838071
+      John SpriteSheet Idle_1: 309508887
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

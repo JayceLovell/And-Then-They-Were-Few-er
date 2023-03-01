@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,427 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 388
+        width: 70
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ebebeab4a356347a630d9d72c49c44
+      internalID: -73095489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 388
+        width: 70
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939f3a1d97f8f4c4db535a1e88e78952
+      internalID: -1126368619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_2
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 388
+        width: 70
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05599a395e2a967418b75d8a85631a31
+      internalID: -1965999896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_3
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 387
+        width: 70
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e62ad68438fe374a88dbfd527cc01ba
+      internalID: 1536231435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_4
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 388
+        width: 70
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d02996d13c8184f89e6322d49a37f3
+      internalID: -1902270765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 260
+        width: 80
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c468f50ca75b0584eb29918967c26854
+      internalID: -582293530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_6
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 260
+        width: 80
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033c2a8980de0964c90641ca76f9c00d
+      internalID: -634550829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_7
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 260
+        width: 80
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bfe3da1019683498af8bdeca2d163d
+      internalID: -795590013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 262
+        width: 80
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe84564af8491748930960614aa9a17
+      internalID: -1710258144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_9
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 260
+        width: 80
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b31983c9f642143a3f667737c26473
+      internalID: -1170190537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 132
+        width: 70
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2eb88bef42ab04d8c284f131c5d270
+      internalID: 518307565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_11
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 132
+        width: 70
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5578c14e16a1b14d8dd1c241de49344
+      internalID: 748556719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_12
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 132
+        width: 70
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea8065f19f5e8349ba3546b05fbfdfc
+      internalID: 1441331014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_13
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 132
+        width: 70
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e913813548c0f6348bcb31e77b26034f
+      internalID: 617597197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_14
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 132
+        width: 70
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec1d7fe19e5e6a40b70fa61589da2dd
+      internalID: 1637958263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_15
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 4
+        width: 78
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f40eb30645999428420cf3db1c6015
+      internalID: 278719835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_16
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 4
+        width: 78
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9aab6d49ff2a14f850b6e9d0475a8e
+      internalID: -1471495445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_17
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 4
+        width: 78
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9514dbdfd70614d847bdf09ff40a0f
+      internalID: 1191705451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_18
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 4
+        width: 78
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cff1daf105e274685122154c1198e3
+      internalID: -336907583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mirianne SpriteSheet Idle_19
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 4
+        width: 78
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f90b88dc46d8347ad65d1b4fcb9799
+      internalID: -2084658046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +546,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mirianne SpriteSheet Idle_17: 1191705451
+      Mirianne SpriteSheet Idle_2: -1965999896
+      Mirianne SpriteSheet Idle_15: 278719835
+      Mirianne SpriteSheet Idle_8: -1710258144
+      Mirianne SpriteSheet Idle_10: 518307565
+      Mirianne SpriteSheet Idle_6: -634550829
+      Mirianne SpriteSheet Idle_3: 1536231435
+      Mirianne SpriteSheet Idle_7: -795590013
+      Mirianne SpriteSheet Idle_14: 1637958263
+      Mirianne SpriteSheet Idle_0: -73095489
+      Mirianne SpriteSheet Idle_16: -1471495445
+      Mirianne SpriteSheet Idle_1: -1126368619
+      Mirianne SpriteSheet Idle_19: -2084658046
+      Mirianne SpriteSheet Idle_11: 748556719
+      Mirianne SpriteSheet Idle_5: -582293530
+      Mirianne SpriteSheet Idle_13: 617597197
+      Mirianne SpriteSheet Idle_12: 1441331014
+      Mirianne SpriteSheet Idle_18: -336907583
+      Mirianne SpriteSheet Idle_9: -1170190537
+      Mirianne SpriteSheet Idle_4: -1902270765
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
