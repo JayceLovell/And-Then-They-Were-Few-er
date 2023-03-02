@@ -299,6 +299,10 @@ public class GameManager : MonoBehaviour
         else
             SceneManager.LoadScene("Entrance");
     }
+    public void GameOver(string Chosen)
+    {
+        IsGameOver= true;
+    }
     /// <summary>
     /// Calls on sce/summary>
     /// <param name="scene"></param>

@@ -10,6 +10,14 @@ public class TextController : MonoBehaviour
 
     public List<TextMeshProUGUI> text;
 
+    public List<GameOverText> GameOverTexts;
+
+    public class GameOverText
+    {
+        public string SelectCharacterName;
+        public TextMeshProUGUI text;
+    }
+
     void Awake()
     {
         _gameManager = GameManager.Instance;
@@ -17,7 +25,12 @@ public class TextController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(text[_gameManager.CurrentGameProgress],GameObject.Find("Canvas").transform);        
+        if(!_gameManager.IsGameOver)
+            Instantiate(text[_gameManager.CurrentGameProgress],GameObject.Find("Canvas").transform);
+        else
+        {
+
+        }
     }
     public void OnNext()
     {
