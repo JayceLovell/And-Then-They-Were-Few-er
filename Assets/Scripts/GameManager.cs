@@ -246,6 +246,8 @@ public class GameManager : MonoBehaviour
             }
         }
         ClueManager.Instance.Clues = clues;
+
+        PlayerPrefs.SetString("Playing", "Playing");
     }
     public void SavePlayerPrefs()
     {

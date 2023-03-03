@@ -44,11 +44,8 @@ public class TextController : MonoBehaviour
                 _gameManager.PlayerProgress = GameManager.GameState.BeforeMurder;
                 break;
             case GameManager.GameState.BeforeMurder:
-                StartCoroutine(PrintText(BeforeMurderText[_numTextToDisplay]));               
-                _numTextToDisplay++;
-                break;
-            case GameManager.GameState.AfterMurder:
                 StartCoroutine(PrintText(AfterMurderText[_numTextToDisplay]));
+                _gameManager.PlayerProgress = GameManager.GameState.AfterMurder;
                 _numTextToDisplay++;
                 break;
             case GameManager.GameState.GameWon:
