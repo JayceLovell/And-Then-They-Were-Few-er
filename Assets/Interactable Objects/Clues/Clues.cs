@@ -12,7 +12,7 @@ public class Clues : Objects
         //if (ClueStatement.PickedUp)
         //    Destroy(this.gameObject);
 
-        if (GameManager.Instance.CurrentGameProgress <= 3)
+        if (GameManager.Instance.PlayerProgress == GameManager.GameState.BeforeMurder)
             if (objectType == TypeOfObject.Clue)
                 this.gameObject.SetActive(false);
     }

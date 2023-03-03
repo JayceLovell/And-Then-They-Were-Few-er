@@ -7,7 +7,7 @@ public class Nikki : Character
     public override void SetRegularConvo()
     {
         base.SetRegularConvo();
-        if (GameManager.Instance.CurrentGameProgress <= 3)
+        if (GameManager.Instance.PlayerProgress==GameManager.GameState.BeforeMurder)
         {
             DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
             ExampleForBeforeMurder.NPCTalking = true;

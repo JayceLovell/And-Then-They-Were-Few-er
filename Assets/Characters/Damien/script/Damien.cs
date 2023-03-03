@@ -14,7 +14,7 @@ public class Damien : Character
     {
         base.SetRegularConvo();
         // Create convo before Murder
-        if (GameManager.Instance.CurrentGameProgress <= 3)
+        if (GameManager.Instance.PlayerProgress == GameManager.GameState.BeforeMurder)
         {
 
             DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();

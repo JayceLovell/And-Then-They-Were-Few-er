@@ -123,7 +123,7 @@ public class UiManager : MonoBehaviour
         switch (_gameManager.CurrentScene)
         {
             case "Entrance":
-                if (_gameManager.CurrentGameProgress > 2)
+                if (_gameManager.PlayerProgress == GameManager.GameState.AfterMurder)
                 {
                     _countDownMinutes = Mathf.FloorToInt(_gameManager.GameTime / 60);
                     _countDownSeconds = Mathf.FloorToInt(_gameManager.GameTime % 60);
@@ -140,7 +140,7 @@ public class UiManager : MonoBehaviour
                 _clockText.text= string.Format("{00:00}:{01:00}", _countDownMinutes,_countDownSeconds);
                 break;
             default:
-                if (_gameManager.CurrentGameProgress > 2)
+                if (GameManager.Instance.PlayerProgress == GameManager.GameState.BeforeMurder)
                 {
                     _countDownMinutes = Mathf.FloorToInt(_gameManager.GameTime / 60);
                     _countDownSeconds = Mathf.FloorToInt(_gameManager.GameTime % 60);

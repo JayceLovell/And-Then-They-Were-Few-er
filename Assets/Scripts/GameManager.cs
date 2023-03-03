@@ -16,11 +16,27 @@ public class GameManager : MonoBehaviour
     private bool _isGameLost;
     private bool _isGameWon;
     private static GameManager _instance;
-    private int _currentGameProgress;
     private float _bgmVolume;
     private float _sfxVolume;
     private string _currentScene;
     private string _lastScene;
+
+    public Character.CharacterName Chosen;
+
+    /// <summary>
+    /// Players State in game
+    /// </summary>
+    public enum GameState
+    {
+        NewGame,
+        BeforeMurder,
+        AfterMurder,
+        GameWon,
+        TimeOut,
+        WrongPerson
+    }
+
+    public GameState PlayerProgress;
 
     /// <summary>
     /// 15 mins count down
@@ -36,8 +52,8 @@ public class GameManager : MonoBehaviour
             _gameTime = value;
             if (_gameTime <= 0)
             {
-                CurrentGameProgress = 8;
-                SceneManager.LoadScene("Text");
+                PlayerProgress = GameState.TimeOut;
+                IsGameOver = true;
             }                
         }
     }
@@ -53,18 +69,6 @@ public class GameManager : MonoBehaviour
         set
         {
             _isGamePaused = value;
-        }
-    }
-    /// <summary>
-    /// Players current Progress in the game
-    /// </summary>
-    public int CurrentGameProgress
-    {
-        get {            
-            return _currentGameProgress; 
-        }
-        set { 
-            _currentGameProgress = value;            
         }
     }
     /// <summary>
@@ -118,8 +122,7 @@ public class GameManager : MonoBehaviour
             _isGameLost = value;
             if(_isGameLost)
             {
-                _timeStart = false;
-                CurrentGameProgress = 6;
+                _timeStart = false;                
                 SceneManager.LoadScene("Text");
             }
         }
@@ -140,7 +143,7 @@ public class GameManager : MonoBehaviour
             if (_isGameWon)
             {
                 _timeStart = false;
-                CurrentGameProgress = 7;
+                PlayerProgress = GameState.GameWon;
                 SceneManager.LoadScene("Text");
             }
         }
@@ -196,7 +199,7 @@ public class GameManager : MonoBehaviour
     {
         if (!IsGamePaused||!IsGameOver||!IsGameWon||_gameTime>0)
         {
-            if (_timeStart||_currentGameProgress>3)
+            if (_timeStart||PlayerProgress==GameState.AfterMurder)
             {
                  GameTime -= Time.deltaTime;
             }
@@ -221,7 +224,7 @@ public class GameManager : MonoBehaviour
 
         _lastScene = PlayerPrefs.GetString("Last Scene","");
         _currentScene = PlayerPrefs.GetString("Current Scene","");
-        _currentGameProgress = PlayerPrefs.GetInt("Player Progress",0);
+        PlayerProgress = (GameState)Enum.ToObject(typeof(GameState),PlayerPrefs.GetInt("Player Progress"));
 
         string cluesNameString = PlayerPrefs.GetString("Clues Name", "");
         string cluesString = PlayerPrefs.GetString("Clues", "");
@@ -246,7 +249,8 @@ public class GameManager : MonoBehaviour
     }
     public void SavePlayerPrefs()
     {
-        PlayerPrefs.SetInt("Player Progress", _currentGameProgress);
+        int gameStateInt = Convert.ToInt32(PlayerProgress);
+        PlayerPrefs.SetInt("Player Progress", gameStateInt);
         PlayerPrefs.SetFloat("BGM Volume", _bgmVolume);
         PlayerPrefs.SetFloat("SFX Volume", _sfxVolume);
         PlayerPrefs.SetFloat("Game Time", _gameTime);
@@ -287,24 +291,35 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         _loadPlayerPrefs();
+        PlayerProgress = GameState.NewGame;
         StartGame();
     }
     public void StartGame()
     {
-        _lastScene = _currentScene;
-        if (CurrentGameProgress == 0)
-            SceneManager.LoadScene("Text");
-        else if (CurrentGameProgress > 5)
-            SceneManager.LoadScene("GrandHall");
+        //check if player is new
+        if(PlayerPrefs.HasKey("Playing"))
+        {
+            _lastScene = _currentScene;
+            if (PlayerProgress == GameState.NewGame)
+                SceneManager.LoadScene("Text");
+            else if (PlayerProgress == GameState.AfterMurder)
+                SceneManager.LoadScene("GrandHall");
+            else if (PlayerProgress == GameState.BeforeMurder)
+                SceneManager.LoadScene("Entrance");
+
+            PlayerPrefs.SetString("Playing", "Playing");
+        }
         else
-            SceneManager.LoadScene("Entrance");
+            // Run game as new player
+            NewGame();        
     }
-    public void GameOver(string Chosen)
+    public void GameOver(Character.CharacterName Chosen)
     {
+        this.Chosen = Chosen;
         IsGameOver= true;
     }
     /// <summary>
-    /// Calls on sce/summary>
+    /// Calls on scene/summary>
     /// <param name="scene"></param>
     /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -316,9 +331,9 @@ public class GameManager : MonoBehaviour
                 SoundManager.StartBackground(SoundManager.BgSound.Title);               
                 break;
             case "Text":
-                if (CurrentGameProgress == 6)
+                if (PlayerProgress == GameState.TimeOut || PlayerProgress == GameState.WrongPerson)
                     SoundManager.StartBackground(SoundManager.BgSound.GameLost);
-                else if (CurrentGameProgress == 7)
+                else if (PlayerProgress == GameState.GameWon)
                     SoundManager.StartBackground(SoundManager.BgSound.GameWon);
                 else
                     SoundManager.StartBackground(SoundManager.BgSound.MainMenu);                
