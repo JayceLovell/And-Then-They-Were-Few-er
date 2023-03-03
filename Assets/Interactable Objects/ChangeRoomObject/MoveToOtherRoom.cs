@@ -18,7 +18,7 @@ public class MoveToOtherRoom : Objects
     {
         yield return new WaitForSeconds(2);
         //Story Guide
-        if (_gameController._gameManager.CurrentGameProgress == 1)
+        if (GameManager.Instance.PlayerProgress ==  GameManager.GameState.BeforeMurder)
         {
             _gameController.MoveToScene("Text");
         }

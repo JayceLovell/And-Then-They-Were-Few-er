@@ -199,45 +199,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1154058452342723377, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: ClueStatementText
-      value: Bloody footprints found near bathroom room in Entrance area.
+    - target: {fileID: 2842891227614736335, guid: 1af331ce313022641a866c6da049faa6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.4
       objectReference: {fileID: 0}
-    - target: {fileID: 3841429615764234770, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_TileSpriteArray.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3841429615764234770, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[0].m_Data
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3841429615764234770, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[5].m_Data
-      value: 
-      objectReference: {fileID: 21300000, guid: 913c6127a1589114d92e874c5886daae, type: 3}
-    - target: {fileID: 3841429615764234770, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[0].m_RefCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3841429615764234770, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[5].m_RefCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3841429615764234770, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_Tiles.Array.data[0].second.m_TileSpriteIndex
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3841429615764234770, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_Tiles.Array.data[1].second.m_TileSpriteIndex
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3841429615764234770, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_Tiles.Array.data[6].second.m_TileSpriteIndex
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3841429615764234770, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_Tiles.Array.data[7].second.m_TileSpriteIndex
-      value: 5
+    - target: {fileID: 2842891227614736335, guid: 1af331ce313022641a866c6da049faa6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.43
       objectReference: {fileID: 0}
     - target: {fileID: 8410252350600298405, guid: 1af331ce313022641a866c6da049faa6, type: 3}
       propertyPath: m_RootOrder
@@ -286,14 +254,6 @@ PrefabInstance:
     - target: {fileID: 8410252350600298406, guid: 1af331ce313022641a866c6da049faa6, type: 3}
       propertyPath: m_Name
       value: Entrance
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416419520164428843, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_ChunkCullingBounds.y
-      value: 0.25937504
-      objectReference: {fileID: 0}
-    - target: {fileID: 8667784315501695117, guid: 1af331ce313022641a866c6da049faa6, type: 3}
-      propertyPath: m_ChunkCullingBounds.y
-      value: 1.7235427
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af331ce313022641a866c6da049faa6, type: 3}

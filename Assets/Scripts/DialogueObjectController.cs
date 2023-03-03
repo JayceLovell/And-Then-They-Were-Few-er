@@ -103,11 +103,10 @@ public class DialogueObjectController : MonoBehaviour
             SpeakerProfile.sprite = value;
         }
     }
-
-    [Header("Who is talking?")]
     /// <summary>
     /// DO NOT SEND NAME HERE
     /// </summary>
+    [Header("Who is talking?")]
     [SerializeField]
     private TextMeshProUGUI SpeakerLabel;
 
@@ -170,6 +169,7 @@ public class DialogueObjectController : MonoBehaviour
     /// <param name="State">True for Interrogation false for regular speech</param>
     public void SwitchMode(bool State)
     {
+        Text = "";
         if (State)
         {
             InterrigationObjects.SetActive(true);
@@ -187,21 +187,31 @@ public class DialogueObjectController : MonoBehaviour
     /// <param name="QuestionNumber">the number Question Example 1,2 or 3</param>
     /// <param name="QuestionText">The String to fill the Question with</param>
     /// <param name="WhereQuestionGoing">Which element this question goes to.</param>
-    public void SetUpQuestions(int QuestionNumber, string QuestionText, int WhereQuestionGoing)
+    /// <param name="End">True for when this option ends interrogation</param>
+    public void SetUpQuestions(int QuestionNumber, string QuestionText, int WhereQuestionGoing,bool End)
     {
         switch (QuestionNumber)
         {
             case 1:
                 Question1= QuestionText;
-                QuestionButton1.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
+                if(End)
+                    QuestionButton1.onClick.AddListener(()=>_interrogationController.OnQuit());
+                else
+                    QuestionButton1.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
                 break;
             case 2:
                 Question2= QuestionText;
-                QuestionButton2.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
+                if(End)
+                    QuestionButton2.onClick.AddListener(() => _interrogationController.OnQuit());
+                else
+                    QuestionButton2.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
                 break;
             case 3:            
                 Question3= QuestionText;
-                QuestionButton3.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
+                if (End)
+                    QuestionButton3.onClick.AddListener(() => _interrogationController.OnQuit());
+                else
+                    QuestionButton3.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
                 break;
             default:
                 Debug.LogError("Questioning out of bounds");

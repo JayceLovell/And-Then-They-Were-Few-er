@@ -743,18 +743,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 353765084658912379, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
-      propertyPath: ClueStatement
-      value: 
-      objectReference: {fileID: 11400000, guid: e2f35daab5316d14991785e6c7b0afe6, type: 2}
-    - target: {fileID: 353765084658912379, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
-      propertyPath: ClueStatementText
-      value: Footprints leading from lab.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2964933105551642986, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
-      propertyPath: m_ChunkCullingBounds.y
-      value: 0.25937504
-      objectReference: {fileID: 0}
     - target: {fileID: 7264302838726037996, guid: 0d660317ab21ad04491e80b6dd0f708b, type: 3}
       propertyPath: m_RootOrder
       value: 11

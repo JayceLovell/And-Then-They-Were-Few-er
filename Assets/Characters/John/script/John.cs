@@ -8,7 +8,7 @@ public class John : Character
     public override void SetRegularConvo()
     {
         base.SetRegularConvo();
-        if (GameManager.Instance.CurrentGameProgress <= 3)
+        if (GameManager.Instance.PlayerProgress == GameManager.GameState.BeforeMurder)
         {
             DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
             ExampleForBeforeMurder.NPCTalking = true;
@@ -104,7 +104,7 @@ public class John : Character
 
         DialogueForInterrogation ExampleInterrogationConvo1 = new DialogueForInterrogation();
         ExampleInterrogationConvo1.NextElementNumber = 1;
-        ExampleInterrogationConvo1.NPCTalking = false;
+        ExampleInterrogationConvo1.NPCTalking = true;
         ExampleInterrogationConvo1.EndInterrogation = false;
         ExampleInterrogationConvo1.NoQuestions = false;
         ExampleInterrogationConvo1.Response = "I was in my room.";
@@ -128,7 +128,7 @@ public class John : Character
 
         DialogueForInterrogation ExampleInterrogationConvo2 = new DialogueForInterrogation();
         ExampleInterrogationConvo2.NextElementNumber = 1;
-        ExampleInterrogationConvo2.NPCTalking = false;
+        ExampleInterrogationConvo2.NPCTalking = true;
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
         ExampleInterrogationConvo2.Response = "(John begins to blush profusely)";
@@ -152,7 +152,7 @@ public class John : Character
 
         DialogueForInterrogation ExampleInterrogationConvo3 = new DialogueForInterrogation();
         ExampleInterrogationConvo3.NextElementNumber = 1;
-        ExampleInterrogationConvo3.NPCTalking = false;
+        ExampleInterrogationConvo3.NPCTalking = true;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
         ExampleInterrogationConvo3.Response = "I was in the bathroom with my Dad";
@@ -176,7 +176,7 @@ public class John : Character
 
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
-        ExampleInterrogationConvo4.NPCTalking = false;
+        ExampleInterrogationConvo4.NPCTalking = true;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
         ExampleInterrogationConvo4.Response = "Please don’t tell anyone! I was already scared that we would get caught last night, " +
@@ -202,7 +202,7 @@ public class John : Character
 
         DialogueForInterrogation ExampleInterrogationConvo5 = new DialogueForInterrogation();
         ExampleInterrogationConvo5.NextElementNumber = 1;
-        ExampleInterrogationConvo5.NPCTalking = false;
+        ExampleInterrogationConvo5.NPCTalking = true;
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "No idea. But before they realized it was occupied they tried really hard to get in. " +
@@ -227,7 +227,7 @@ public class John : Character
 
         DialogueForInterrogation ExampleInterrogationConvo6 = new DialogueForInterrogation();
         ExampleInterrogationConvo6.NextElementNumber = 1;
-        ExampleInterrogationConvo6.NPCTalking = false;
+        ExampleInterrogationConvo6.NPCTalking = true;
         ExampleInterrogationConvo6.EndInterrogation = true;
         ExampleInterrogationConvo6.NoQuestions = false;
         ExampleInterrogationConvo6.Response = "After that, it seemed like they went into the next stall. " +
@@ -252,7 +252,7 @@ public class John : Character
 
         DialogueForInterrogation ExampleInterrogationConvo7 = new DialogueForInterrogation();
         ExampleInterrogationConvo7.NextElementNumber = 1;
-        ExampleInterrogationConvo7.NPCTalking = false;
+        ExampleInterrogationConvo7.NPCTalking = true;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
         ExampleInterrogationConvo7.Response = "Well, we kinda crashed the party...";
@@ -276,7 +276,7 @@ public class John : Character
 
         DialogueForInterrogation ExampleInterrogationConvo8 = new DialogueForInterrogation();
         ExampleInterrogationConvo8.NextElementNumber = 1;
-        ExampleInterrogationConvo8.NPCTalking = false;
+        ExampleInterrogationConvo8.NPCTalking = true;
         ExampleInterrogationConvo8.EndInterrogation = false;
         ExampleInterrogationConvo8.NoQuestions = false;
         ExampleInterrogationConvo8.Response = "My Dad wandered in! I tried to grab him and run back out, " +
@@ -301,7 +301,7 @@ public class John : Character
 
         DialogueForInterrogation ExampleInterrogationConvo9 = new DialogueForInterrogation();
         ExampleInterrogationConvo9.NextElementNumber = 1;
-        ExampleInterrogationConvo9.NPCTalking = false;
+        ExampleInterrogationConvo9.NPCTalking = true;
         ExampleInterrogationConvo9.EndInterrogation = false;
         ExampleInterrogationConvo9.NoQuestions = false;
         ExampleInterrogationConvo9.Response = "Right? Luckily Nikki just found it all amusing and asked us to stay for the showcase.";

@@ -14,6 +14,7 @@ public class InterrogationController : MonoBehaviour
     [SerializeField]
     private Sprite Profile;
 
+    public Material ShadowMaterial;
     public Sprite PlayerProfile;
     public DialogueObjectController DialogBox;
     public Transform NPCPosition;
@@ -54,6 +55,7 @@ public class InterrogationController : MonoBehaviour
     }    
     public void OnInterrogate()
     {
+
         if (_npcComponent == null)
         {
             Component[] components = NPC.GetComponents(typeof(Component));
@@ -65,6 +67,13 @@ public class InterrogationController : MonoBehaviour
                     break;
                 }
             }
+
+            //sets up the shadows of npcs
+            _npcComponent.GetComponent<Renderer>().shadowCastingMode= UnityEngine.Rendering.ShadowCastingMode.On;
+            _npcComponent.GetComponent<Renderer>().receiveShadows = true;
+            _npcComponent.GetComponent<Renderer>().material = ShadowMaterial;
+            
+
         }
         if ((bool)_npcComponent.GetType().GetProperty("InDialog").GetValue(_npcComponent))
             _npcComponent.GetType().GetMethod("ContinueDialogue").Invoke(_npcComponent, null);
@@ -89,7 +98,7 @@ public class InterrogationController : MonoBehaviour
     }
     public void OnQuit()
     {
-        GameManager.Instance.Quit();
+        SceneManager.LoadScene("GrandHall");
     }
     IEnumerator WaitForOneSecond()
     {

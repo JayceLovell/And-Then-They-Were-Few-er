@@ -49,11 +49,7 @@ public class ClueManager : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        for (int i = 0; i < Clues.Count; i++)
-        {
-            AddClueButton(Clues[i]);
-        }
+    {        
     }
     /// <summary>
     /// Either display or remove Menu
@@ -86,7 +82,11 @@ public class ClueManager : MonoBehaviour
             case "Entrance":
             case "GrandHall":
             case "InterrogationScene":
-                StartCoroutine(WaitToGrabRequired());                
+                StartCoroutine(WaitToGrabRequired());
+                for (int i = 0; i < Clues.Count; i++)
+                {
+                    AddClueButton(Clues[i]);
+                }
                 break;
             default:
                 break;

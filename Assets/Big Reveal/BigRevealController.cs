@@ -18,7 +18,7 @@ public class BigRevealController : MonoBehaviour
             case Character.CharacterName.Mirianne:            
             case Character.CharacterName.Nikki:
             case Character.CharacterName.OldCrazyMan:
-                GameManager.Instance.IsGameOver = true;
+                GameManager.Instance.GameOver(characterName);
                 break;
             case Character.CharacterName.Rachel:
                 GameManager.Instance.IsGameWon = true;
