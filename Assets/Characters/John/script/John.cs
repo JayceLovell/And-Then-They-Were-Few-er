@@ -64,7 +64,7 @@ public class John : Character
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
-    void Start()
+    public override void SetInterrogationConvo()
     {
 
         //Regular
@@ -73,7 +73,7 @@ public class John : Character
         //ExampleRegularConvo.NPCTalking = true;
         //dialogForRegularConvo.Add(ExampleRegularConvo);
 
-
+		base.SetInterrogationConvo();
 
         //Interrogation
         //Element 0

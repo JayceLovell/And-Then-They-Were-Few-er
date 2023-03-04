@@ -69,7 +69,7 @@ public class Karol : Character
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
-    void Start()
+    public override void SetInterrogationConvo()
     {
 
         //Regular
@@ -77,7 +77,7 @@ public class Karol : Character
         //ExampleRegularConvo.Text = "Example";
         //ExampleRegularConvo.NPCTalking = true;
         //dialogForRegularConvo.Add(ExampleRegularConvo);
-
+		base.SetInterrogationConvo();
         //Interrogation
         //Element 0
 

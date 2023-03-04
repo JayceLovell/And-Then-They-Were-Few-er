@@ -87,12 +87,12 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder15 = new DialogRegularConvo();
             ExampleForBeforeMurder15.NPCTalking = true;
-            ExampleForBeforeMurder15.Text = "(Jayson hurriedly picks himself up hurriedly, and stretches out his hand to shake Ashlyn's)";
+            ExampleForBeforeMurder15.Text = "(Jayson hurriedly picks himself up, and stretches out his hand to shake Ashlyn's)";
             dialogForRegularConvo.Add(ExampleForBeforeMurder15);
 
             DialogRegularConvo ExampleForBeforeMurder16 = new DialogRegularConvo();
             ExampleForBeforeMurder16.NPCTalking = true;
-            ExampleForBeforeMurder16.Text = "(Jayson is winded, still comes off as confident, but clearly a bit embarrassed)";
+            ExampleForBeforeMurder16.Text = "(Jayson is winded, still comes off as confident, but is clearly a bit embarrassed)";
             dialogForRegularConvo.Add(ExampleForBeforeMurder16);
 
             DialogRegularConvo ExampleForBeforeMurder17 = new DialogRegularConvo();
@@ -425,7 +425,7 @@ public class Jayson : Character
 
         ExampleInterrogationConvo11.Question1 = new Question();
         ExampleInterrogationConvo11.Question1.QuestionText = "Steel Eyed Robin K? The same Robin K that solved the mystery of the exploding puppies??";
-        ExampleInterrogationConvo11.Question1.NextElementNumber = 0;
+        ExampleInterrogationConvo11.Question1.NextElementNumber = 12;
 
         ExampleInterrogationConvo11.Question2 = new Question();
         ExampleInterrogationConvo11.Question2.QuestionText = " ";
