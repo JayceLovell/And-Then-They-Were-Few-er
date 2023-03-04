@@ -43,6 +43,31 @@ public class Nikki : Character
             ExampleForBeforeMurder6.NPCTalking = true;
             ExampleForBeforeMurder6.Text = "You’ll just have to wait and see! Can’t spoil the surprise!";
             dialogForRegularConvo.Add(ExampleForBeforeMurder6);
+			
+			DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
+            ExampleForBeforeMurder7.NPCTalking = false;
+            ExampleForBeforeMurder7.Text = "*chuckles* Alright. By the way, where did Watson rush off to? He left right after letting me in, I was hoping to get his insight on this gasket case I've been working";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder7);
+			
+			DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
+            ExampleForBeforeMurder8.NPCTalking = true;
+            ExampleForBeforeMurder8.Text = "*gives a short laugh* Always on the job, eh?";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder8);
+			
+			DialogRegularConvo ExampleForBeforeMurder9 = new DialogRegularConvo();
+            ExampleForBeforeMurder9.NPCTalking = true;
+            ExampleForBeforeMurder9.Text = "I'd instructed him to go right back to the lab once everyone was here. Just some final touches in prep for the showcase!";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder9);
+			
+			DialogRegularConvo ExampleForBeforeMurder10 = new DialogRegularConvo();
+            ExampleForBeforeMurder10.NPCTalking = false;
+            ExampleForBeforeMurder10.Text = "Ah, alright. Perhaps I'll talk to him after the showcase then. ";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder10);
+			
+			DialogRegularConvo ExampleForBeforeMurder11 = new DialogRegularConvo();
+            ExampleForBeforeMurder11.NPCTalking = false;
+            ExampleForBeforeMurder11.Text = "Well, chow Nikki. I know you're going to kill it tonight!";
+            dialogForRegularConvo.Add(ExampleForBeforeMurder11);
         }
         else
         {

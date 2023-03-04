@@ -82,10 +82,10 @@ public class TextController : MonoBehaviour
     private void LoadText()
     {
         // Create Intro To Game Text
-        IntroText = "After talking to each of the other guests, the showcase begins.\r\n\r\nNikki is able to display her invention, the synthesizer, and everyone is impressed.\r\n\r\nLater on, after the showcase…\r\n\r\n";
+        IntroText = "Ashlyn Hunt, our intrepid detective, has been invited by her friend Nikki Test to her invention showcase. \r\n\r\nAshlyn arrives, and is welcomed by Watson, Nikki's robot butler. \r\n\r\nWith Ashlyn being the last guest to arrive, Watson makes his departure, and Ashlyn goes on to interact with the other guests...";
 
         // Game Won text
-        GameWonText = "Ashlyn correctly deduces that it was Rachel that was the murderer. \r\n\r\nRachel and Nikki had got into an argument about Nikki joining the family business. In a fit of anger, Rachel had pushed Nikki and she hit her head, dying due to blood loss.\r\n\r\nRachel attempted to hide the keys to the lab in the toilet, and was heard by John&his Father. She also tried to make Nikki’s death look like an attack, which is why the pipe was in the corner. Rachel placed it there.\r\n\r\nRachel is remorseful and accepts her fate. Once the storm clears she is escorted by Ashlyn and the Mayor to the Police Station\r\n";
+        GameWonText = "Ashlyn correctly deduces that it was Rachel that was the murderer. \r\n\r\nRachel and Nikki had got into an argument about Nikki joining the family business. In a fit of anger, Rachel had pushed Nikki and she hit her head, dying due to blood loss.\r\n\r\nRachel is remorseful and accepts her fate. Once the storm clears she is escorted by Ashlyn and the Mayor to the Police Station\r\n";
 
         // Game Time Out
         TimeOutText = "Ashlyn was unable to deduce the identity of the murderer. \r\n\r\nThe storm outside clears up, but the tempest of unsatisfaction within Ashlyn's soul will never stop, knowing that Nikki's murderer will never be brought to justice...";
