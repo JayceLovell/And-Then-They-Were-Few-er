@@ -107,6 +107,46 @@ public class TextController : MonoBehaviour
         Ashlyn.SelectCharacterName = Character.CharacterName.Ashlyn;
         Ashlyn.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. She now knew the identity of Nikki's murderer. And yet...\r\n\r\n\"It's me. I murdered Nikki\" Ashlyn says, to the astonishment and disbelief of the other guests.\r\n\r\nShe allows Frederick to handcuff her and is escorted out of the mansion.\r\n\r\nAs she is taken to the police station, Ashlyn reflects on the events of the night. \r\n\r\nOf course, she wasn't the true murderer, but to reveal their true identity... She would never know what their true motive was, but Ashlyn's discovery of their identity would haunt her for a very long time... ";
         GameOverTexts.Add(Ashlyn);
+		
+		GameOverText Damien = new GameOverText();
+        Damien.SelectCharacterName = Character.CharacterName.Damien;
+        Damien.text = "Damien Placeholder Ending ";
+        GameOverTexts.Add(Damien);
+		
+		GameOverText Fredrick = new GameOverText();
+        Fredrick.SelectCharacterName = Character.CharacterName.Fredrick;
+        Fredrick.text = "Fredrick Placeholder Ending ";
+        GameOverTexts.Add(Fredrick);
+		
+		GameOverText Jayson = new GameOverText();
+        Jayson.SelectCharacterName = Character.CharacterName.Jayson;
+        Jayson.text = "Jayson Placeholder Ending ";
+        GameOverTexts.Add(Jayson);
+		
+		GameOverText John = new GameOverText();
+        John.SelectCharacterName = Character.CharacterName.John;
+        John.text = "John Placeholder Ending ";
+        GameOverTexts.Add(John);
+		
+		GameOverText Karol = new GameOverText();
+        Karol.SelectCharacterName = Character.CharacterName.Karol;
+        Karol.text = "Karol Placeholder Ending ";
+        GameOverTexts.Add(Karol);
+		
+		GameOverText Mirianne = new GameOverText();
+        Mirianne.SelectCharacterName = Character.CharacterName.Mirianne;
+        Mirianne.text = "Mirianne Placeholder Ending ";
+        GameOverTexts.Add(Mirianne);
+		
+		GameOverText OCM = new GameOverText();
+        OCM.SelectCharacterName = Character.CharacterName.OCM;
+        OCM.text = "OCM Placeholder Ending ";
+        GameOverTexts.Add(OCM);
+		
+		GameOverText Rachel = new GameOverText();
+        Rachel.SelectCharacterName = Character.CharacterName.Rachel;
+        Rachel.text = "Rachel Placeholder Ending ";
+        GameOverTexts.Add(Rachel);
     }
     /// <summary>
     /// When ever the Ok button is pressed or E is pressed this method is called.
