@@ -348,13 +348,181 @@ public class Frederick : Character
         ExampledialogueAfterClue.Response = " I don't know what that is ";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
+        //Right Clue Dialogue
+        //Element 0
         DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
         ExampledialogueAfterClue1.CorrectClue = true;
         ExampledialogueAfterClue1.EndInterrogation = false;
-        ExampledialogueAfterClue1.NoQuestions = true;
+        ExampledialogueAfterClue1.NoQuestions = false;
         ExampledialogueAfterClue1.NPCTalking = true;
-        ExampledialogueAfterClue1.Response = " *looks nervous* ";
+        ExampledialogueAfterClue1.Response = " Ah, you found them! Excellent";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue1.Question1 = new Question();
+        ExampledialogueAfterClue1.Question1.QuestionText = "Yes, now if only we knew who tried to hide them!";
+        ExampledialogueAfterClue1.Question1.NextElementNumber = 1;
+
+        ExampledialogueAfterClue1.Question2 = new Question();
+        ExampledialogueAfterClue1.Question2.QuestionText = " ";
+        ExampledialogueAfterClue1.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue1.Question3 = new Question();
+        ExampledialogueAfterClue1.Question3.QuestionText = " ";
+        ExampledialogueAfterClue1.Question3.NextElementNumber = 0;
+        //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Element 1
+        DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
+        ExampledialogueAfterClue2.CorrectClue = true;
+        ExampledialogueAfterClue2.EndInterrogation = false;
+        ExampledialogueAfterClue2.NoQuestions = false;
+        ExampledialogueAfterClue2.NPCTalking = true;
+        ExampledialogueAfterClue2.Response = "Yes. I must say, the toilet was a very strange place to try to hide them";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue2);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue2.Question1 = new Question();
+        ExampledialogueAfterClue2.Question1.QuestionText = "It was... Wait a minute. I never mentioned where I'd found the keys... How did you know they were in the toilet stall?";
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 2;
+
+        ExampledialogueAfterClue2.Question2 = new Question();
+        ExampledialogueAfterClue2.Question2.QuestionText = "It's a shame John and his Dad weren't able to see who was in the next stall";
+        ExampledialogueAfterClue2.Question2.NextElementNumber = 6;
+
+        ExampledialogueAfterClue2.Question3 = new Question();
+        ExampledialogueAfterClue2.Question3.QuestionText = " ";
+        ExampledialogueAfterClue2.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue2);
+
+        //Element 2
+        DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
+        ExampledialogueAfterClue3.CorrectClue = true;
+        ExampledialogueAfterClue3.EndInterrogation = false;
+        ExampledialogueAfterClue3.NoQuestions = false;
+        ExampledialogueAfterClue3.NPCTalking = true;
+        ExampledialogueAfterClue3.Response = "*coughs* If I recall, I believe I had heard that fellow Jayson mention seeing a pair of keys in the toilet stall ";
+       // DialogueAfterClues.Add(ExampledialogueAfterClue3);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue3.Question1 = new Question();
+        ExampledialogueAfterClue3.Question1.QuestionText = "You don't say... Now that I think about it, how did you know the keys were missing in the first place? ";
+        ExampledialogueAfterClue3.Question1.NextElementNumber = 3;
+
+        ExampledialogueAfterClue3.Question2 = new Question();
+        ExampledialogueAfterClue3.Question2.QuestionText = " ";
+        ExampledialogueAfterClue3.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue3.Question3 = new Question();
+        ExampledialogueAfterClue3.Question3.QuestionText = " ";
+        ExampledialogueAfterClue3.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue3);
+
+        //Element 3
+        DialogueAfterClue ExampledialogueAfterClue4 = new DialogueAfterClue();
+        ExampledialogueAfterClue4.CorrectClue = true;
+        ExampledialogueAfterClue4.EndInterrogation = false;
+        ExampledialogueAfterClue4.NoQuestions = false;
+        ExampledialogueAfterClue4.NPCTalking = true;
+        ExampledialogueAfterClue4.Response = "*stuttering* My dear, why does any of this matter? We have the keys, that's the important thing!";
+        // DialogueAfterClues.Add(ExampledialogueAfterClue3);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue4.Question1 = new Question();
+        ExampledialogueAfterClue4.Question1.QuestionText = "Indeed... ";
+        ExampledialogueAfterClue4.Question1.NextElementNumber = 4;
+
+        ExampledialogueAfterClue4.Question2 = new Question();
+        ExampledialogueAfterClue4.Question2.QuestionText = "Don't forget, we need to figure out who took they keys in the first place! ";
+        ExampledialogueAfterClue4.Question2.NextElementNumber = 5;
+
+        ExampledialogueAfterClue4.Question3 = new Question();
+        ExampledialogueAfterClue4.Question3.QuestionText = " ";
+        ExampledialogueAfterClue4.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue4);
+
+        //Element 4
+        DialogueAfterClue ExampledialogueAfterClue5 = new DialogueAfterClue();
+        ExampledialogueAfterClue5.CorrectClue = true;
+        ExampledialogueAfterClue5.EndInterrogation = false;
+        ExampledialogueAfterClue5.NoQuestions = false;
+        ExampledialogueAfterClue5.NPCTalking = true;
+        ExampledialogueAfterClue5.Response = "I think I should hold on to them, just in case...";
+        // DialogueAfterClues.Add(ExampledialogueAfterClue3);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue5.Question1 = new Question();
+        ExampledialogueAfterClue5.Question1.QuestionText = "No, I think I'll hang on to them... ";
+        ExampledialogueAfterClue5.Question1.NextElementNumber = 3;
+
+        ExampledialogueAfterClue5.Question2 = new Question();
+        ExampledialogueAfterClue5.Question2.QuestionText = " ";
+        ExampledialogueAfterClue5.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue5.Question3 = new Question();
+        ExampledialogueAfterClue5.Question3.QuestionText = " ";
+        ExampledialogueAfterClue5.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue5);
+
+        //Element 5
+        DialogueAfterClue ExampledialogueAfterClue6 = new DialogueAfterClue();
+        ExampledialogueAfterClue6.CorrectClue = true;
+        ExampledialogueAfterClue6.EndInterrogation = true;
+        ExampledialogueAfterClue6.NoQuestions = false;
+        ExampledialogueAfterClue6.NPCTalking = true;
+        ExampledialogueAfterClue6.Response = "A-Ah yes, of course!";
+        // DialogueAfterClues.Add(ExampledialogueAfterClue3);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue6.Question1 = new Question();
+        ExampledialogueAfterClue6.Question1.QuestionText = " ";
+        ExampledialogueAfterClue6.Question1.NextElementNumber = 3;
+
+        ExampledialogueAfterClue6.Question2 = new Question();
+        ExampledialogueAfterClue6.Question2.QuestionText = " ";
+        ExampledialogueAfterClue6.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue6.Question3 = new Question();
+        ExampledialogueAfterClue6.Question3.QuestionText = " ";
+        ExampledialogueAfterClue6.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue6);
+
+        //Element 6
+        DialogueAfterClue ExampledialogueAfterClue7 = new DialogueAfterClue();
+        ExampledialogueAfterClue7.CorrectClue = true;
+        ExampledialogueAfterClue7.EndInterrogation = true;
+        ExampledialogueAfterClue7.NoQuestions = false;
+        ExampledialogueAfterClue7.NPCTalking = true;
+        ExampledialogueAfterClue7.Response = "There were TWO people in that stall?? ";
+        // DialogueAfterClues.Add(ExampledialogueAfterClue3);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue7.Question1 = new Question();
+        ExampledialogueAfterClue7.Question1.QuestionText = "Don't ask...";
+        ExampledialogueAfterClue7.Question1.NextElementNumber = 1;
+
+        ExampledialogueAfterClue7.Question2 = new Question();
+        ExampledialogueAfterClue7.Question2.QuestionText = " ";
+        ExampledialogueAfterClue7.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue7.Question3 = new Question();
+        ExampledialogueAfterClue7.Question3.QuestionText = " ";
+        ExampledialogueAfterClue7.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue7);
 
     }
 }

@@ -523,7 +523,7 @@ public class Damien : Character
         //Element 6
         DialogueAfterClue ExampledialogueAfterClue7 = new DialogueAfterClue();
         ExampledialogueAfterClue7.CorrectClue = true;
-        ExampledialogueAfterClue7.EndInterrogation = true;
+        ExampledialogueAfterClue7.EndInterrogation = false;
         ExampledialogueAfterClue7.NoQuestions = false;
         ExampledialogueAfterClue7.NPCTalking = true;
         ExampledialogueAfterClue7.Response = " Well, we didn't want anyone to find it";
