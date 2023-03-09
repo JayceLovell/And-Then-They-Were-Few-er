@@ -114,7 +114,7 @@ public class TextController : MonoBehaviour
         GameOverTexts.Add(Damien);
 		
 		GameOverText Fredrick = new GameOverText();
-        Fredrick.SelectCharacterName = Character.CharacterName.Fredrick;
+        Fredrick.SelectCharacterName = Character.CharacterName.Frederick;
         Fredrick.text = "Fredrick Placeholder Ending ";
         GameOverTexts.Add(Fredrick);
 		
@@ -139,7 +139,7 @@ public class TextController : MonoBehaviour
         GameOverTexts.Add(Mirianne);
 		
 		GameOverText OCM = new GameOverText();
-        OCM.SelectCharacterName = Character.CharacterName.OCM;
+        OCM.SelectCharacterName = Character.CharacterName.OldCrazyMan;
         OCM.text = "OCM Placeholder Ending ";
         GameOverTexts.Add(OCM);
 		
