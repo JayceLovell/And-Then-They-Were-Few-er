@@ -91,12 +91,12 @@ public class John : Character
         ExampleInterrogationConvo.Question1.NextElementNumber = 1;
 
         ExampleInterrogationConvo.Question2 = new Question();
-        ExampleInterrogationConvo.Question2.QuestionText = " ";
-        ExampleInterrogationConvo.Question2.NextElementNumber = 0;
+        ExampleInterrogationConvo.Question2.QuestionText = "Who do you think might have done this to Nikki? ";
+        ExampleInterrogationConvo.Question2.NextElementNumber = 10;
 
         ExampleInterrogationConvo.Question3 = new Question();
-        ExampleInterrogationConvo.Question3.QuestionText = " ";
-        ExampleInterrogationConvo.Question3.NextElementNumber = 0;
+        ExampleInterrogationConvo.Question3.QuestionText = "Why is your Dad so obsessed with gears? ";
+        ExampleInterrogationConvo.Question3.NextElementNumber = 13;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo);
 
@@ -320,6 +320,126 @@ public class John : Character
         ExampleInterrogationConvo9.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo9);
+		
+		//Element 10
+
+        DialogueForInterrogation ExampleInterrogationConvo10 = new DialogueForInterrogation();
+        ExampleInterrogationConvo10.NextElementNumber = 1;
+        ExampleInterrogationConvo10.NPCTalking = true;
+        ExampleInterrogationConvo10.EndInterrogation = false;
+        ExampleInterrogationConvo10.NoQuestions = false;
+        ExampleInterrogationConvo10.Response = "I'm not sure. I didn't know Nikki too well to be honest";
+        //Creating a Question
+
+        ExampleInterrogationConvo10.Question1 = new Question();
+        ExampleInterrogationConvo10.Question1.QuestionText = "Hm, what's your connection to Nikki? Why did she invite you and your father?";
+        ExampleInterrogationConvo10.Question1.NextElementNumber = 7;
+
+        ExampleInterrogationConvo10.Question2 = new Question();
+        ExampleInterrogationConvo10.Question2.QuestionText = "Well, did you see anyone acting strangely before, during or after the showcase? ";
+        ExampleInterrogationConvo10.Question2.NextElementNumber = 11;
+
+        ExampleInterrogationConvo10.Question3 = new Question();
+        ExampleInterrogationConvo10.Question3.QuestionText = " ";
+        ExampleInterrogationConvo10.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo10);
+		
+		//Element 11
+
+        DialogueForInterrogation ExampleInterrogationConvo11 = new DialogueForInterrogation();
+        ExampleInterrogationConvo11.NextElementNumber = 1;
+        ExampleInterrogationConvo11.NPCTalking = true;
+        ExampleInterrogationConvo11.EndInterrogation = false;
+        ExampleInterrogationConvo11.NoQuestions = false;
+        ExampleInterrogationConvo11.Response = "Not really, I was too focused on trying to keep Dad in check ";
+        //Creating a Question
+
+        ExampleInterrogationConvo11.Question1 = new Question();
+        ExampleInterrogationConvo11.Question1.QuestionText = "Not to sound rude, but what's up with your Dad? ";
+        ExampleInterrogationConvo11.Question1.NextElementNumber = 12;
+
+        ExampleInterrogationConvo11.Question2 = new Question();
+        ExampleInterrogationConvo11.Question2.QuestionText = " ";
+        ExampleInterrogationConvo11.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo11.Question3 = new Question();
+        ExampleInterrogationConvo11.Question3.QuestionText = " ";
+        ExampleInterrogationConvo11.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo11);
+		
+		//Element 12
+
+        DialogueForInterrogation ExampleInterrogationConvo12 = new DialogueForInterrogation();
+        ExampleInterrogationConvo12.NextElementNumber = 1;
+        ExampleInterrogationConvo12.NPCTalking = true;
+        ExampleInterrogationConvo12.EndInterrogation = false;
+        ExampleInterrogationConvo12.NoQuestions = false;
+        ExampleInterrogationConvo12.Response = "He tends to be a little high strung, but he's a nice guy once you get to know him! ";
+        //Creating a Question
+
+        ExampleInterrogationConvo12.Question1 = new Question();
+        ExampleInterrogationConvo12.Question1.QuestionText = "Right... ";
+        ExampleInterrogationConvo12.Question1.NextElementNumber = 0;
+
+        ExampleInterrogationConvo12.Question2 = new Question();
+        ExampleInterrogationConvo12.Question2.QuestionText = "Why's he so obsessed with gears?";
+        ExampleInterrogationConvo12.Question2.NextElementNumber = 13;
+
+        ExampleInterrogationConvo12.Question3 = new Question();
+        ExampleInterrogationConvo12.Question3.QuestionText = " ";
+        ExampleInterrogationConvo12.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo12);
+		
+		//Element 13
+
+        DialogueForInterrogation ExampleInterrogationConvo13 = new DialogueForInterrogation();
+        ExampleInterrogationConvo13.NextElementNumber = 1;
+        ExampleInterrogationConvo13.NPCTalking = true;
+        ExampleInterrogationConvo13.EndInterrogation = false;
+        ExampleInterrogationConvo13.NoQuestions = false;
+        ExampleInterrogationConvo13.Response = "*John's face darkens* It's all because of Nanda Smoki, that bastard! I'll never forgive him!";
+        //Creating a Question
+
+        ExampleInterrogationConvo13.Question1 = new Question();
+        ExampleInterrogationConvo13.Question1.QuestionText = "*startled* Wait, who is Nanda Smoki? ";
+        ExampleInterrogationConvo13.Question1.NextElementNumber = 14;
+
+        ExampleInterrogationConvo13.Question2 = new Question();
+        ExampleInterrogationConvo13.Question2.QuestionText = " ";
+        ExampleInterrogationConvo13.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo13.Question3 = new Question();
+        ExampleInterrogationConvo13.Question3.QuestionText = " ";
+        ExampleInterrogationConvo13.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo13);
+		
+		//Element 14
+
+        DialogueForInterrogation ExampleInterrogationConvo14 = new DialogueForInterrogation();
+        ExampleInterrogationConvo14.NextElementNumber = 1;
+        ExampleInterrogationConvo14.NPCTalking = true;
+        ExampleInterrogationConvo14.EndInterrogation = true;
+        ExampleInterrogationConvo14.NoQuestions = false;
+        ExampleInterrogationConvo14.Response = "WE DON'T TALK ABOUT NANDA SMOKI";
+        //Creating a Question
+
+        ExampleInterrogationConvo14.Question1 = new Question();
+        ExampleInterrogationConvo14.Question1.QuestionText = " ";
+        ExampleInterrogationConvo14.Question1.NextElementNumber = 0;
+
+        ExampleInterrogationConvo14.Question2 = new Question();
+        ExampleInterrogationConvo14.Question2.QuestionText = " ";
+        ExampleInterrogationConvo14.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo14.Question3 = new Question();
+        ExampleInterrogationConvo14.Question3.QuestionText = " ";
+        ExampleInterrogationConvo14.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo14);
     }
     public override void SetAfterClueConvo()
     {
