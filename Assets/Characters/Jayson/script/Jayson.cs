@@ -603,7 +603,11 @@ public class Jayson : Character
     {
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
-        ExampledialogueAfterClue.Response = "Intriguing...";
+        ExampledialogueAfterClue.CorrectClue = false;
+        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.NoQuestions = true;
+        ExampledialogueAfterClue.NPCTalking = true;
+        ExampledialogueAfterClue.Response = " Intriguing!... What is it? ";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
     }

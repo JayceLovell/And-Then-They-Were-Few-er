@@ -97,12 +97,12 @@ public class Mirianne : Character
         ExampleInterrogationConvo.Question1.NextElementNumber = 1;
 
         ExampleInterrogationConvo.Question2 = new Question();
-        ExampleInterrogationConvo.Question2.QuestionText = " ";
-        ExampleInterrogationConvo.Question2.NextElementNumber = 0;
+        ExampleInterrogationConvo.Question2.QuestionText = "How's the ol' business doing? ";
+        ExampleInterrogationConvo.Question2.NextElementNumber = 15;
 
         ExampleInterrogationConvo.Question3 = new Question();
-        ExampleInterrogationConvo.Question3.QuestionText = " ";
-        ExampleInterrogationConvo.Question3.NextElementNumber = 0;        
+        ExampleInterrogationConvo.Question3.QuestionText = "What you said earlier about someone eclipsing Nikki,  what did you mean by that?";
+        ExampleInterrogationConvo.Question3.NextElementNumber = 18;        
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo);
 
@@ -481,6 +481,141 @@ public class Mirianne : Character
         ExampleInterrogationConvo14.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo14);
+		
+		//Element 15
+
+        DialogueForInterrogation ExampleInterrogationConvo15 = new DialogueForInterrogation();
+        ExampleInterrogationConvo15.NextElementNumber = 1;
+        ExampleInterrogationConvo15.NPCTalking = true;
+        ExampleInterrogationConvo15.EndInterrogation = false;
+        ExampleInterrogationConvo15.NoQuestions = false;
+        ExampleInterrogationConvo15.Response = "*raises eyebrow* Wouldn't you like to know?";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo15.Question1 = new Question();
+        ExampleInterrogationConvo15.Question1.QuestionText = "Mmm, call me curious. I've heard that the Jelani fashion brand has overtaken yours in popularity....";
+        ExampleInterrogationConvo15.Question1.NextElementNumber = 16;
+
+        ExampleInterrogationConvo15.Question2 = new Question();
+        ExampleInterrogationConvo15.Question2.QuestionText = " ";
+        ExampleInterrogationConvo15.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo15.Question3 = new Question();
+        ExampleInterrogationConvo15.Question3.QuestionText = " ";
+        ExampleInterrogationConvo15.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo15);
+		
+		//Element 16
+
+        DialogueForInterrogation ExampleInterrogationConvo16 = new DialogueForInterrogation();
+        ExampleInterrogationConvo16.NextElementNumber = 1;
+        ExampleInterrogationConvo16.NPCTalking = true;
+        ExampleInterrogationConvo16.EndInterrogation = false;
+        ExampleInterrogationConvo16.NoQuestions = false;
+        ExampleInterrogationConvo16.Response = "Nonsense! MiriFab is the #1 brand in Wandermere.";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo16.Question1 = new Question();
+        ExampleInterrogationConvo16.Question1.QuestionText = " Oh really? Tell me, who was it that was featured on the cover of Fashion Digest's 'Hot&Trending' Digest? Because I don't remember seeing you on that cover...";
+        ExampleInterrogationConvo16.Question1.NextElementNumber = 17;
+
+        ExampleInterrogationConvo16.Question2 = new Question();
+        ExampleInterrogationConvo16.Question2.QuestionText = " ";
+        ExampleInterrogationConvo16.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo16.Question3 = new Question();
+        ExampleInterrogationConvo16.Question3.QuestionText = " ";
+        ExampleInterrogationConvo16.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo16);
+		
+		//Element 17
+
+        DialogueForInterrogation ExampleInterrogationConvo17 = new DialogueForInterrogation();
+        ExampleInterrogationConvo17.NextElementNumber = 1;
+        ExampleInterrogationConvo17.NPCTalking = true;
+        ExampleInterrogationConvo17.EndInterrogation = false;
+        ExampleInterrogationConvo17.NoQuestions = false;
+        ExampleInterrogationConvo17.Response = "Shut up! I don't see how any of this is relevant to what happened last night!";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo17.Question1 = new Question();
+        ExampleInterrogationConvo17.Question1.QuestionText = "Fair Enough. Let's get back on track...";
+        ExampleInterrogationConvo17.Question1.NextElementNumber = 0;
+
+        ExampleInterrogationConvo17.Question2 = new Question();
+        ExampleInterrogationConvo17.Question2.QuestionText = " ";
+        ExampleInterrogationConvo17.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo17.Question3 = new Question();
+        ExampleInterrogationConvo17.Question3.QuestionText = " ";
+        ExampleInterrogationConvo17.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo17);
+		
+		//Element 18
+
+        DialogueForInterrogation ExampleInterrogationConvo18 = new DialogueForInterrogation();
+        ExampleInterrogationConvo18.NextElementNumber = 1;
+        ExampleInterrogationConvo18.NPCTalking = true;
+        ExampleInterrogationConvo18.EndInterrogation = false;
+        ExampleInterrogationConvo18.NoQuestions = false;
+        ExampleInterrogationConvo18.Response = "Oh... Well, I'm Karol's sponsor. And I do believe she has some ideas that may surpass Nikki's";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo18.Question1 = new Question();
+        ExampleInterrogationConvo18.Question1.QuestionText = "Hmm, okay...";
+        ExampleInterrogationConvo18.Question1.NextElementNumber = 0;
+
+        ExampleInterrogationConvo18.Question2 = new Question();
+        ExampleInterrogationConvo18.Question2.QuestionText = "What led you to sponsoring her?";
+        ExampleInterrogationConvo18.Question2.NextElementNumber = 19;
+
+        ExampleInterrogationConvo18.Question3 = new Question();
+        ExampleInterrogationConvo18.Question3.QuestionText = " ";
+        ExampleInterrogationConvo18.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo18);
+		
+		//Element 19
+
+        DialogueForInterrogation ExampleInterrogationConvo19 = new DialogueForInterrogation();
+        ExampleInterrogationConvo19.NextElementNumber = 1;
+        ExampleInterrogationConvo19.NPCTalking = true;
+        ExampleInterrogationConvo19.EndInterrogation = false;
+        ExampleInterrogationConvo19.NoQuestions = false;
+        ExampleInterrogationConvo19.Response = "A music producer friend of mine, Lay, he recommended her. She built some of his sound machines, and he has the best beats in the business! So I thought I might put her talents to other use... ";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo19.Question1 = new Question();
+        ExampleInterrogationConvo19.Question1.QuestionText = "I see... ";
+        ExampleInterrogationConvo19.Question1.NextElementNumber = 0;
+
+        ExampleInterrogationConvo19.Question2 = new Question();
+        ExampleInterrogationConvo19.Question2.QuestionText = " ";
+        ExampleInterrogationConvo19.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo19.Question3 = new Question();
+        ExampleInterrogationConvo19.Question3.QuestionText = " ";
+        ExampleInterrogationConvo19.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo19);
 
 
     }

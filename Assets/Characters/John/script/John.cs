@@ -445,7 +445,11 @@ public class John : Character
     {
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
-        ExampledialogueAfterClue.Response = "I don't know!";
+        ExampledialogueAfterClue.CorrectClue = false;
+        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.NoQuestions = true;
+        ExampledialogueAfterClue.NPCTalking = true;
+        ExampledialogueAfterClue.Response = " I don't know!";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
     }

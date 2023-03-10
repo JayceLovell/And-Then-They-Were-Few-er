@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeadSprite: {fileID: 0}
-  correctClue: {fileID: 11400000, guid: 7087b5c05d2005f4da16952f4cb1ab28, type: 2}
-  Name: 9
+  correctClue: {fileID: 11400000, guid: fabbbfcd08dcc3b408e4d1c76c404e3b, type: 2}
+  Name: 10
   Profile: {fileID: 21300000, guid: e973213e9d1a61a42a55b67b51f11ecd, type: 3}
   InterrigationSprite: {fileID: 1887985970, guid: 162e3c45f9cb5aa4bb20762dd844301c, type: 3}
   CharacterSetUps:
