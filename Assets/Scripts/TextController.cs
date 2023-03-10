@@ -114,7 +114,7 @@ public class TextController : MonoBehaviour
         GameOverTexts.Add(Damien);
 		
 		GameOverText Fredrick = new GameOverText();
-        Fredrick.SelectCharacterName = Character.CharacterName.Fredrick;
+        Fredrick.SelectCharacterName = Character.CharacterName.Frederick;
         Fredrick.text = "Fredrick Placeholder Ending ";
         GameOverTexts.Add(Fredrick);
 		
