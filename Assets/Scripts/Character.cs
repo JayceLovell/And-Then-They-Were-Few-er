@@ -87,6 +87,7 @@ public class Character :MonoBehaviour
         Mirianne,
         Nikki,
         OldCrazyMan,
+        Robot,
         Rachel
     }
     /// <summary>

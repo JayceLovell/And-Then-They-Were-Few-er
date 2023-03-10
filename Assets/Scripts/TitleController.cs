@@ -8,19 +8,32 @@ using UnityEngine.UI;
 public class TitleController : MonoBehaviour
 {
     private GameManager _gameManager;
-    public GameObject VolumeSlider;
 
-    private bool _isVolumeDisplayed;
-    public bool IsVolumeDisplayed
+    public Slider FXVolumeSlider;
+    public Slider BGVolumeSlider;
+
+    public float BGVolume
     {
-        get { return _isVolumeDisplayed; }
-        set { _isVolumeDisplayed = value; }
+        get { return _gameManager.BgmVolume; }
+        set { _gameManager.BgmVolume = value; }
     }
+    public float FXVolume
+    {
+        get { return _gameManager.SfxVolume; }
+        set { _gameManager.SfxVolume = value; }
+    }
+
+
     void Start()
     {
         _gameManager = GameManager.Instance;
         Button HelpButton = GameObject.Find("HelpButton").GetComponent<Button>();
         HelpButton.onClick.AddListener(delegate { _gameManager.LoadInstructions(); });
+
+        FXVolumeSlider.value = _gameManager.SfxVolume;
+
+        BGVolumeSlider.onValueChanged.AddListener(value => SoundManager.MasterVolumeChanged(value));
+        BGVolumeSlider.value = _gameManager.BgmVolume;
     }
     void OnQuit()
     {
@@ -33,19 +46,5 @@ public class TitleController : MonoBehaviour
     public void NewGame()
     {
         _gameManager.NewGame();
-    }
-    public void DisplayVolume()
-    {
-        if (!_isVolumeDisplayed)
-        {
-            VolumeSlider.SetActive(true);
-            _isVolumeDisplayed = true;
-            VolumeSlider.GetComponent<Slider>().value = _gameManager.BgmVolume;
-        }
-        else
-        {
-            VolumeSlider.SetActive(false);
-            _isVolumeDisplayed=false;
-        }
     }
 }

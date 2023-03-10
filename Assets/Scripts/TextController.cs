@@ -138,10 +138,12 @@ public class TextController : MonoBehaviour
         Mirianne.text = "Mirianne Placeholder Ending ";
         GameOverTexts.Add(Mirianne);
 		
-		GameOverText OldCrazyMan = new GameOverText();
-        OldCrazyMan.SelectCharacterName = Character.CharacterName.OldCrazyMan;
-        OldCrazyMan.text = "OldCrazyMan Placeholder Ending ";
-        GameOverTexts.Add(OldCrazyMan);
+
+		GameOverText OCM = new GameOverText();
+        OCM.SelectCharacterName = Character.CharacterName.OldCrazyMan;
+        OCM.text = "OCM Placeholder Ending ";
+        GameOverTexts.Add(OCM);
+
 		
 		GameOverText Rachel = new GameOverText();
         Rachel.SelectCharacterName = Character.CharacterName.Rachel;
