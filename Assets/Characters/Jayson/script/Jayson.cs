@@ -360,7 +360,7 @@ public class Jayson : Character
         DialogueForInterrogation ExampleInterrogationConvo9 = new DialogueForInterrogation();
         ExampleInterrogationConvo9.NextElementNumber = 1;
         ExampleInterrogationConvo9.NPCTalking = true;
-        ExampleInterrogationConvo9.EndInterrogation = true;
+        ExampleInterrogationConvo9.EndInterrogation = false;
         ExampleInterrogationConvo9.NoQuestions = false;
         ExampleInterrogationConvo9.Response = "He wouldn't tell me, but I just have a feeling it had something to do with Karol. " +
             "I know he felt guilty about keeping it hidden from Nikki.";
@@ -533,7 +533,7 @@ public class Jayson : Character
 
         ExampleInterrogationConvo15.Question1 = new Question();
         ExampleInterrogationConvo15.Question1.QuestionText = "Ummm, let's get back on track...";
-        ExampleInterrogationConvo15.Question1.NextElementNumber = 10;
+        ExampleInterrogationConvo15.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo15.Question2 = new Question();
         ExampleInterrogationConvo15.Question2.QuestionText = " ";
@@ -560,7 +560,7 @@ public class Jayson : Character
 
         ExampleInterrogationConvo16.Question1 = new Question();
         ExampleInterrogationConvo16.Question1.QuestionText = "*Give Jayson a reassuring smile*";
-        ExampleInterrogationConvo16.Question1.NextElementNumber = 10;
+        ExampleInterrogationConvo16.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo16.Question2 = new Question();
         ExampleInterrogationConvo16.Question2.QuestionText = " ";
@@ -587,7 +587,7 @@ public class Jayson : Character
 
         ExampleInterrogationConvo17.Question1 = new Question();
         ExampleInterrogationConvo17.Question1.QuestionText = "*gasps* I never would have guessed! Genius!!";
-        ExampleInterrogationConvo17.Question1.NextElementNumber = 12;
+        ExampleInterrogationConvo17.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo17.Question2 = new Question();
         ExampleInterrogationConvo17.Question2.QuestionText = " ";
@@ -604,7 +604,7 @@ public class Jayson : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
         ExampledialogueAfterClue.Response = " Intriguing!... What is it? ";
