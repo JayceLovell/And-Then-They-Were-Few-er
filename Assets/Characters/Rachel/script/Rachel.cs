@@ -107,7 +107,7 @@ public class Rachel : Character
 
         ExampleInterrogationConvo.Question2 = new Question();
         ExampleInterrogationConvo.Question2.QuestionText = "After the storm clears, is there any way we can reach out to her father, to let him know as well? ";
-        ExampleInterrogationConvo.Question2.NextElementNumber = 9;
+        ExampleInterrogationConvo.Question2.NextElementNumber = 10;
 
         ExampleInterrogationConvo.Question3 = new Question();
         ExampleInterrogationConvo.Question3.QuestionText = " ";
@@ -194,7 +194,7 @@ public class Rachel : Character
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
         ExampleInterrogationConvo4.NPCTalking = true;
-        ExampleInterrogationConvo4.EndInterrogation = true;
+        ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
         ExampleInterrogationConvo4.Response = "May I have a moment? I just..." +
             "(Rachel turns away from Ashlyn, and starts to sob again)";
@@ -286,7 +286,7 @@ public class Rachel : Character
 
         ExampleInterrogationConvo7.Question1 = new Question();
         ExampleInterrogationConvo7.Question1.QuestionText = "Ah, alright";
-        ExampleInterrogationConvo7.Question1.NextElementNumber = 1;
+        ExampleInterrogationConvo7.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo7.Question2 = new Question();
         ExampleInterrogationConvo7.Question2.QuestionText = " ";
@@ -303,7 +303,7 @@ public class Rachel : Character
         DialogueForInterrogation ExampleInterrogationConvo8 = new DialogueForInterrogation();
         ExampleInterrogationConvo8.NextElementNumber = 1;
         ExampleInterrogationConvo8.NPCTalking = true;
-        ExampleInterrogationConvo8.EndInterrogation = true;
+        ExampleInterrogationConvo8.EndInterrogation = false;
         ExampleInterrogationConvo8.NoQuestions = false;
         ExampleInterrogationConvo8.Response = "Hm, perhaps Damien?";
 
@@ -313,7 +313,7 @@ public class Rachel : Character
 
         ExampleInterrogationConvo8.Question1 = new Question();
         ExampleInterrogationConvo8.Question1.QuestionText = "I'll make sure to ask him";
-        ExampleInterrogationConvo8.Question1.NextElementNumber = 1;
+        ExampleInterrogationConvo8.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question2 = new Question();
         ExampleInterrogationConvo8.Question2.QuestionText = " ";
@@ -340,7 +340,7 @@ public class Rachel : Character
 
         ExampleInterrogationConvo9.Question1 = new Question();
         ExampleInterrogationConvo9.Question1.QuestionText = "I'll make sure to ask him";
-        ExampleInterrogationConvo9.Question1.NextElementNumber = 1;
+        ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
         ExampleInterrogationConvo9.Question2.QuestionText = " ";
@@ -546,7 +546,7 @@ public class Rachel : Character
         DialogueForInterrogation ExampleInterrogationConvo17 = new DialogueForInterrogation();
         ExampleInterrogationConvo17.NextElementNumber = 1;
         ExampleInterrogationConvo17.NPCTalking = true;
-        ExampleInterrogationConvo17.EndInterrogation = true;
+        ExampleInterrogationConvo17.EndInterrogation = false;
         ExampleInterrogationConvo17.NoQuestions = false;
         ExampleInterrogationConvo17.Response = "Even if I knew where he was, that man has no business whatsover in our lives!";
 
@@ -601,7 +601,7 @@ public class Rachel : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking=true;       
         ExampledialogueAfterClue.Response = "*Stares Blankly*";
@@ -636,7 +636,7 @@ public class Rachel : Character
         //Element 1
         DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
         ExampledialogueAfterClue2.CorrectClue = true;
-        ExampledialogueAfterClue2.EndInterrogation = true;
+        ExampledialogueAfterClue2.EndInterrogation = false;
         ExampledialogueAfterClue2.NoQuestions = false;
         ExampledialogueAfterClue2.NPCTalking = true;
         ExampledialogueAfterClue2.Response = "I-I don't know. Like I told you earlier I left him tidying up in the main hall!";
@@ -661,7 +661,7 @@ public class Rachel : Character
         //Element 2
         DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
         ExampledialogueAfterClue3.CorrectClue = true;
-        ExampledialogueAfterClue3.EndInterrogation = true;
+        ExampledialogueAfterClue3.EndInterrogation = false;
         ExampledialogueAfterClue3.NoQuestions = false;
         ExampledialogueAfterClue3.NPCTalking = true;
         ExampledialogueAfterClue3.Response = "*shaking* I'm certain";
