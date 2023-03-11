@@ -192,7 +192,7 @@ public class Damien : Character
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
         ExampleInterrogationConvo4.NPCTalking = true;
-        ExampleInterrogationConvo4.EndInterrogation = true;
+        ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
         ExampleInterrogationConvo4.Response = "*Damien gets defensive* I don't see anything wrong with that";
         //Creating a Question
@@ -216,7 +216,7 @@ public class Damien : Character
         DialogueForInterrogation ExampleInterrogationConvo5 = new DialogueForInterrogation();
         ExampleInterrogationConvo5.NextElementNumber = 1;
         ExampleInterrogationConvo5.NPCTalking = true;
-        ExampleInterrogationConvo5.EndInterrogation = true;
+        ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "His recharge station should be right next to Rachel's room";
         //Creating a Question
@@ -271,7 +271,7 @@ public class Damien : Character
 
         ExampleInterrogationConvo7.Question1 = new Question();
         ExampleInterrogationConvo7.Question1.QuestionText = "Fair Enough ";
-        ExampleInterrogationConvo7.Question1.NextElementNumber = 6;
+        ExampleInterrogationConvo7.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo7.Question2 = new Question();
         ExampleInterrogationConvo7.Question2.QuestionText = "But with Nikki gone, Karol basically has no competition left in Wandermere... ";
@@ -295,7 +295,7 @@ public class Damien : Character
 
         ExampleInterrogationConvo8.Question1 = new Question();
         ExampleInterrogationConvo8.Question1.QuestionText = "*eyebrow raised* Hm, okay";
-        ExampleInterrogationConvo8.Question1.NextElementNumber = 6;
+        ExampleInterrogationConvo8.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question2 = new Question();
         ExampleInterrogationConvo8.Question2.QuestionText = "How exactly do you 'know' Karol?";
@@ -319,7 +319,7 @@ public class Damien : Character
 
         ExampleInterrogationConvo9.Question1 = new Question();
         ExampleInterrogationConvo9.Question1.QuestionText = "(Thinking to herself) It seems I might need something more to get him to open up about Karol ";
-        ExampleInterrogationConvo9.Question1.NextElementNumber = 6;
+        ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
         ExampleInterrogationConvo9.Question2.QuestionText = " ";
@@ -343,7 +343,7 @@ public class Damien : Character
 
         ExampleInterrogationConvo10.Question1 = new Question();
         ExampleInterrogationConvo10.Question1.QuestionText = "Ah, alright ";
-        ExampleInterrogationConvo10.Question1.NextElementNumber = 6;
+        ExampleInterrogationConvo10.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question2 = new Question();
         ExampleInterrogationConvo10.Question2.QuestionText = " ";
@@ -363,7 +363,7 @@ public class Damien : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
         ExampledialogueAfterClue.Response = " What's that? ";
@@ -508,7 +508,7 @@ public class Damien : Character
 
         ExampledialogueAfterClue6.Question1 = new Question();
         ExampledialogueAfterClue6.Question1.QuestionText = "Hmm";
-        ExampledialogueAfterClue6.Question1.NextElementNumber = 3;
+        ExampledialogueAfterClue6.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue6.Question2 = new Question();
         ExampledialogueAfterClue6.Question2.QuestionText = " ";
