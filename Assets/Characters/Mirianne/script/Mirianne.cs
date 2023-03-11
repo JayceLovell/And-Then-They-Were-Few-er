@@ -142,16 +142,16 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo2.Question1 = new Question();
-        ExampleInterrogationConvo2.Question1.QuestionText = " ";
-        ExampleInterrogationConvo2.Question1.NextElementNumber = 0;
+        ExampleInterrogationConvo2.Question1.QuestionText = "I’d just like to know all the facts, before the Mayor and I approach the police. ";
+        ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
         ExampleInterrogationConvo2.Question2.QuestionText = " ";
         ExampleInterrogationConvo2.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo2.Question3 = new Question();
-        ExampleInterrogationConvo2.Question3.QuestionText = "I’d just like to know all the facts, before the Mayor and I approach the police.";
-        ExampleInterrogationConvo2.Question3.NextElementNumber = 3;
+        ExampleInterrogationConvo2.Question3.QuestionText = "";
+        ExampleInterrogationConvo2.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo2);
 
@@ -387,7 +387,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo11.Question1 = new Question();
-        ExampleInterrogationConvo11.Question1.QuestionText = "Next?";
+        ExampleInterrogationConvo11.Question1.QuestionText = "Next";
         ExampleInterrogationConvo11.Question1.NextElementNumber = 12;
 
         ExampleInterrogationConvo11.Question2 = new Question();
@@ -459,7 +459,7 @@ public class Mirianne : Character
         DialogueForInterrogation ExampleInterrogationConvo14 = new DialogueForInterrogation();
         ExampleInterrogationConvo14.NextElementNumber = 1;
         ExampleInterrogationConvo14.NPCTalking = true;
-        ExampleInterrogationConvo14.EndInterrogation = true;
+        ExampleInterrogationConvo14.EndInterrogation = false;
         ExampleInterrogationConvo14.NoQuestions = false;
         ExampleInterrogationConvo14.Response = "I didn’t pay it any mind. Shortly after, I left for my room." +
             "May I go now, “Detective”?";
@@ -469,7 +469,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo14.Question1 = new Question();
-        ExampleInterrogationConvo14.Question1.QuestionText = "Yes. And Mirianne, Thank You";
+        ExampleInterrogationConvo14.Question1.QuestionText = "Not Quite Yet...";
         ExampleInterrogationConvo14.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo14.Question2 = new Question();
@@ -625,7 +625,7 @@ public class Mirianne : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
         ExampledialogueAfterClue.Response = "Do I look like I know?";
@@ -648,7 +648,7 @@ public class Mirianne : Character
         ExampledialogueAfterClue1.Question1.NextElementNumber = 1;
 
         ExampledialogueAfterClue1.Question2 = new Question();
-        ExampledialogueAfterClue1.Question2.QuestionText = "Oh, no need to worry this is just ketchup!";
+        ExampledialogueAfterClue1.Question2.QuestionText = " "; //Oh, no need to worry this is just ketchup!
         ExampledialogueAfterClue1.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue1.Question3 = new Question();
@@ -860,7 +860,7 @@ public class Mirianne : Character
         //Element 9
         DialogueAfterClue ExampledialogueAfterClue10 = new DialogueAfterClue();
         ExampledialogueAfterClue10.CorrectClue = true;
-        ExampledialogueAfterClue10.EndInterrogation = true;
+        ExampledialogueAfterClue10.EndInterrogation = false;
         ExampledialogueAfterClue10.NoQuestions = false;
         ExampledialogueAfterClue10.NPCTalking = true;
         ExampledialogueAfterClue10.Response = "Ashlyn, I know you and I have our issues, but you have to believe me, I didn't kill Nikki";
@@ -869,7 +869,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampledialogueAfterClue10.Question1 = new Question();
-        ExampledialogueAfterClue10.Question1.QuestionText = " ";
+        ExampledialogueAfterClue10.Question1.QuestionText = "Hmm... ";
         ExampledialogueAfterClue10.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue10.Question2 = new Question();
