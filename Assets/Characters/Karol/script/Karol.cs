@@ -140,16 +140,16 @@ public class Karol : Character
         //Creating a Question
 
         ExampleInterrogationConvo2.Question1 = new Question();
-        ExampleInterrogationConvo2.Question1.QuestionText = " ";
-        ExampleInterrogationConvo2.Question1.NextElementNumber = 0;
+        ExampleInterrogationConvo2.Question1.QuestionText = "But I suppose that now Nikki is gone, you should have no competition left in Wandermere eh?  ";
+        ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
         ExampleInterrogationConvo2.Question2.QuestionText = " ";
         ExampleInterrogationConvo2.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo2.Question3 = new Question();
-        ExampleInterrogationConvo2.Question3.QuestionText = "But I suppose that now Nikki is gone, you should have no competition left in Wandermere eh? ";
-        ExampleInterrogationConvo2.Question3.NextElementNumber = 3;
+        ExampleInterrogationConvo2.Question3.QuestionText = "";
+        ExampleInterrogationConvo2.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo2);
 
@@ -183,7 +183,7 @@ public class Karol : Character
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
         ExampleInterrogationConvo4.NPCTalking = true;
-        ExampleInterrogationConvo4.EndInterrogation = true;
+        ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = true;
         ExampleInterrogationConvo4.Response = " Now, Nikki and I may have been rivals, but I still had respect for her! " +
             "If anything I’d want her to still be alive, to witness me surpass her!"/* +
@@ -193,8 +193,8 @@ public class Karol : Character
         //Creating a Question
 
         ExampleInterrogationConvo4.Question1 = new Question();
-        ExampleInterrogationConvo4.Question1.QuestionText = " ";
-        ExampleInterrogationConvo4.Question1.NextElementNumber = 5;
+        ExampleInterrogationConvo4.Question1.QuestionText = "Hm... ";
+        ExampleInterrogationConvo4.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question2 = new Question();
         ExampleInterrogationConvo4.Question2.QuestionText = " ";
@@ -334,7 +334,7 @@ public class Karol : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
         ExampledialogueAfterClue.Response = " *Looks confused* ";
@@ -519,7 +519,7 @@ public class Karol : Character
         //Element 7
         DialogueAfterClue ExampledialogueAfterClue8 = new DialogueAfterClue();
         ExampledialogueAfterClue8.CorrectClue = true;
-        ExampledialogueAfterClue8.EndInterrogation = true;
+        ExampledialogueAfterClue8.EndInterrogation = false;
         ExampledialogueAfterClue8.NoQuestions = false;
         ExampledialogueAfterClue8.NPCTalking = true;
         ExampledialogueAfterClue8.Response = "Well, needless to say negotiations are still ongoing!";
@@ -529,7 +529,7 @@ public class Karol : Character
 
         ExampledialogueAfterClue8.Question1 = new Question();
         ExampledialogueAfterClue8.Question1.QuestionText = "*chokes* ";
-        ExampledialogueAfterClue8.Question1.NextElementNumber = 7;
+        ExampledialogueAfterClue8.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue8.Question2 = new Question();
         ExampledialogueAfterClue8.Question2.QuestionText = " ";
