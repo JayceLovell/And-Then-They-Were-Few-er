@@ -228,14 +228,14 @@ public class John : Character
         DialogueForInterrogation ExampleInterrogationConvo6 = new DialogueForInterrogation();
         ExampleInterrogationConvo6.NextElementNumber = 1;
         ExampleInterrogationConvo6.NPCTalking = true;
-        ExampleInterrogationConvo6.EndInterrogation = true;
+        ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
         ExampleInterrogationConvo6.Response = "After that, it seemed like they went into the next stall. " +
             "I think I might have heard something hit the floor, but I’m not sure, I didn’t look in to check.";
         //Creating a Question
 
         ExampleInterrogationConvo6.Question1 = new Question();
-        ExampleInterrogationConvo6.Question1.QuestionText = " ";
+        ExampleInterrogationConvo6.Question1.QuestionText = "Back ";
         ExampleInterrogationConvo6.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo6.Question2 = new Question();
@@ -309,7 +309,7 @@ public class John : Character
 
         ExampleInterrogationConvo9.Question1 = new Question();
         ExampleInterrogationConvo9.Question1.QuestionText = "Nikki always was a kind soul...";
-        ExampleInterrogationConvo9.Question1.NextElementNumber = 3;
+        ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
         ExampleInterrogationConvo9.Question2.QuestionText = " ";
