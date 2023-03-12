@@ -100,6 +100,10 @@ public class InterrogationController : MonoBehaviour
     {
         SceneManager.LoadScene("GrandHall");
     }
+    public void Back()
+    {
+        SceneManager.LoadScene("GrandHall");
+    }
     IEnumerator WaitForOneSecond()
     {
         yield return new WaitForSeconds(0.5f);
