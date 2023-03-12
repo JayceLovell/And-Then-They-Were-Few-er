@@ -145,13 +145,13 @@ public class OldCrazyMan : Character
         DialogueForInterrogation ExampleInterrogationConvo3 = new DialogueForInterrogation();
         ExampleInterrogationConvo3.NextElementNumber = 1;
         ExampleInterrogationConvo3.NPCTalking = true;
-        ExampleInterrogationConvo3.EndInterrogation = true;
+        ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
         ExampleInterrogationConvo3.Response = "I always ask him to accompany me so that I have someone to hold my gears. Don’t want to drop them in the toilet!";
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
-        ExampleInterrogationConvo3.Question1.QuestionText = " ";
+        ExampleInterrogationConvo3.Question1.QuestionText = "Okay...";
         ExampleInterrogationConvo3.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo3.Question2 = new Question();
@@ -217,13 +217,13 @@ public class OldCrazyMan : Character
         DialogueForInterrogation ExampleInterrogationConvo6 = new DialogueForInterrogation();
         ExampleInterrogationConvo6.NextElementNumber = 1;
         ExampleInterrogationConvo6.NPCTalking = true;
-        ExampleInterrogationConvo6.EndInterrogation = true;
+        ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
         ExampleInterrogationConvo6.Response = "*clutching his cheek* I'm sorry. I shouldn't have said that, she was your best friend after all";
         //Creating a Question
 
         ExampleInterrogationConvo6.Question1 = new Question();
-        ExampleInterrogationConvo6.Question1.QuestionText = " ";
+        ExampleInterrogationConvo6.Question1.QuestionText = "Nevermind, let's get back on track ";
         ExampleInterrogationConvo6.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo6.Question2 = new Question();
@@ -337,7 +337,7 @@ public class OldCrazyMan : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
         ExampledialogueAfterClue.Response = "I'm sorry, if it's not a gear bit, I don't wanna hear about it";
@@ -381,8 +381,8 @@ public class OldCrazyMan : Character
         //Creating a Question
 
         ExampledialogueAfterClue2.Question1 = new Question();
-        ExampledialogueAfterClue2.Question1.QuestionText = " ";
-        ExampledialogueAfterClue2.Question1.NextElementNumber = 1;
+        ExampledialogueAfterClue2.Question1.QuestionText = "Okay...";
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue2.Question2 = new Question();
         ExampledialogueAfterClue2.Question2.QuestionText = " ";

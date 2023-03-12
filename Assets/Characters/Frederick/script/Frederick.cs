@@ -108,7 +108,7 @@ public class Frederick : Character
 
         ExampleInterrogationConvo2.Question1 = new Question();
         ExampleInterrogationConvo2.Question1.QuestionText = "Interesting";
-        ExampleInterrogationConvo2.Question1.NextElementNumber = 1;
+        ExampleInterrogationConvo2.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo2.Question2 = new Question();
         ExampleInterrogationConvo2.Question2.QuestionText = " ";
@@ -132,7 +132,7 @@ public class Frederick : Character
 
         ExampleInterrogationConvo3.Question1 = new Question();
         ExampleInterrogationConvo3.Question1.QuestionText = "Very interesting";
-        ExampleInterrogationConvo3.Question1.NextElementNumber = 1;
+        ExampleInterrogationConvo3.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo3.Question2 = new Question();
         ExampleInterrogationConvo3.Question2.QuestionText = " ";
@@ -173,7 +173,7 @@ public class Frederick : Character
         DialogueForInterrogation ExampleInterrogationConvo5 = new DialogueForInterrogation();
         ExampleInterrogationConvo5.NextElementNumber = 1;
         ExampleInterrogationConvo5.NPCTalking = true;
-        ExampleInterrogationConvo5.EndInterrogation = true;
+        ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "It might do us some good to look for them";
         //Creating a Question
@@ -252,7 +252,7 @@ public class Frederick : Character
 
         ExampleInterrogationConvo8.Question1 = new Question();
         ExampleInterrogationConvo8.Question1.QuestionText = "Oh ye of little faith...";
-        ExampleInterrogationConvo8.Question1.NextElementNumber = 1;
+        ExampleInterrogationConvo8.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question2 = new Question();
         ExampleInterrogationConvo8.Question2.QuestionText = " ";
@@ -276,7 +276,7 @@ public class Frederick : Character
 
         ExampleInterrogationConvo9.Question1 = new Question();
         ExampleInterrogationConvo9.Question1.QuestionText = "*coughs* Nothing!";
-        ExampleInterrogationConvo9.Question1.NextElementNumber = 7;
+        ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
         ExampleInterrogationConvo9.Question2.QuestionText = " ";
@@ -300,7 +300,7 @@ public class Frederick : Character
 
         ExampleInterrogationConvo10.Question1 = new Question();
         ExampleInterrogationConvo10.Question1.QuestionText = "...";
-        ExampleInterrogationConvo10.Question1.NextElementNumber = 7;
+        ExampleInterrogationConvo10.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question2 = new Question();
         ExampleInterrogationConvo10.Question2.QuestionText = " ";
@@ -342,7 +342,7 @@ public class Frederick : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
         ExampledialogueAfterClue.Response = " I don't know what that is ";
@@ -462,7 +462,7 @@ public class Frederick : Character
 
         ExampledialogueAfterClue5.Question1 = new Question();
         ExampledialogueAfterClue5.Question1.QuestionText = "No, I think I'll hang on to them... ";
-        ExampledialogueAfterClue5.Question1.NextElementNumber = 3;
+        ExampledialogueAfterClue5.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue5.Question2 = new Question();
         ExampledialogueAfterClue5.Question2.QuestionText = " ";
@@ -477,7 +477,7 @@ public class Frederick : Character
         //Element 5
         DialogueAfterClue ExampledialogueAfterClue6 = new DialogueAfterClue();
         ExampledialogueAfterClue6.CorrectClue = true;
-        ExampledialogueAfterClue6.EndInterrogation = true;
+        ExampledialogueAfterClue6.EndInterrogation = false;
         ExampledialogueAfterClue6.NoQuestions = false;
         ExampledialogueAfterClue6.NPCTalking = true;
         ExampledialogueAfterClue6.Response = "A-Ah yes, of course!";
@@ -486,8 +486,8 @@ public class Frederick : Character
         //Creating a Question
 
         ExampledialogueAfterClue6.Question1 = new Question();
-        ExampledialogueAfterClue6.Question1.QuestionText = " ";
-        ExampledialogueAfterClue6.Question1.NextElementNumber = 3;
+        ExampledialogueAfterClue6.Question1.QuestionText = "Back";
+        ExampledialogueAfterClue6.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue6.Question2 = new Question();
         ExampledialogueAfterClue6.Question2.QuestionText = " ";
@@ -502,7 +502,7 @@ public class Frederick : Character
         //Element 6
         DialogueAfterClue ExampledialogueAfterClue7 = new DialogueAfterClue();
         ExampledialogueAfterClue7.CorrectClue = true;
-        ExampledialogueAfterClue7.EndInterrogation = true;
+        ExampledialogueAfterClue7.EndInterrogation = false;
         ExampledialogueAfterClue7.NoQuestions = false;
         ExampledialogueAfterClue7.NPCTalking = true;
         ExampledialogueAfterClue7.Response = "There were TWO people in that stall?? ";
@@ -512,7 +512,7 @@ public class Frederick : Character
 
         ExampledialogueAfterClue7.Question1 = new Question();
         ExampledialogueAfterClue7.Question1.QuestionText = "Don't ask...";
-        ExampledialogueAfterClue7.Question1.NextElementNumber = 1;
+        ExampledialogueAfterClue7.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue7.Question2 = new Question();
         ExampledialogueAfterClue7.Question2.QuestionText = " ";
