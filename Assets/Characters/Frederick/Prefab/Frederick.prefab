@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeadSprite: {fileID: 0}
-  correctClue: {fileID: 0}
+  correctClue: {fileID: 11400000, guid: 7087b5c05d2005f4da16952f4cb1ab28, type: 2}
   Name: 2
   Profile: {fileID: 21300000, guid: 873b9ce669533af4eb19076d1ea44dc0, type: 3}
   InterrigationSprite: {fileID: 246210415, guid: f9a45caddfae4924f8cf463a39bab0f7, type: 3}

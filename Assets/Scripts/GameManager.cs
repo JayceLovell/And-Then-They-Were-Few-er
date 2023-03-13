@@ -356,12 +356,12 @@ public class GameManager : MonoBehaviour
             default:
                 Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
                 break;
-        }        
+        }
+        SavePlayerPrefs();
     }
     void OnSceneUnloaded(Scene current)
     {
-        _currentScene = SceneManager.GetActiveScene().name;
-        SavePlayerPrefs();
+        _lastScene = SceneManager.GetActiveScene().name;        
     }
     public void LoadInstructions()
     {

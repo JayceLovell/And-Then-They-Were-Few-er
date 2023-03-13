@@ -106,8 +106,8 @@ public class Rachel : Character
         ExampleInterrogationConvo.Question1.NextElementNumber = 1;
 
         ExampleInterrogationConvo.Question2 = new Question();
-        ExampleInterrogationConvo.Question2.QuestionText = " ";
-        ExampleInterrogationConvo.Question2.NextElementNumber = 0;
+        ExampleInterrogationConvo.Question2.QuestionText = "After the storm clears, is there any way we can reach out to her father, to let him know as well? ";
+        ExampleInterrogationConvo.Question2.NextElementNumber = 10;
 
         ExampleInterrogationConvo.Question3 = new Question();
         ExampleInterrogationConvo.Question3.QuestionText = " ";
@@ -194,7 +194,7 @@ public class Rachel : Character
         DialogueForInterrogation ExampleInterrogationConvo4 = new DialogueForInterrogation();
         ExampleInterrogationConvo4.NextElementNumber = 1;
         ExampleInterrogationConvo4.NPCTalking = true;
-        ExampleInterrogationConvo4.EndInterrogation = true;
+        ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
         ExampleInterrogationConvo4.Response = "May I have a moment? I just..." +
             "(Rachel turns away from Ashlyn, and starts to sob again)";
@@ -286,7 +286,7 @@ public class Rachel : Character
 
         ExampleInterrogationConvo7.Question1 = new Question();
         ExampleInterrogationConvo7.Question1.QuestionText = "Ah, alright";
-        ExampleInterrogationConvo7.Question1.NextElementNumber = 1;
+        ExampleInterrogationConvo7.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo7.Question2 = new Question();
         ExampleInterrogationConvo7.Question2.QuestionText = " ";
@@ -303,7 +303,7 @@ public class Rachel : Character
         DialogueForInterrogation ExampleInterrogationConvo8 = new DialogueForInterrogation();
         ExampleInterrogationConvo8.NextElementNumber = 1;
         ExampleInterrogationConvo8.NPCTalking = true;
-        ExampleInterrogationConvo8.EndInterrogation = true;
+        ExampleInterrogationConvo8.EndInterrogation = false;
         ExampleInterrogationConvo8.NoQuestions = false;
         ExampleInterrogationConvo8.Response = "Hm, perhaps Damien?";
 
@@ -313,7 +313,7 @@ public class Rachel : Character
 
         ExampleInterrogationConvo8.Question1 = new Question();
         ExampleInterrogationConvo8.Question1.QuestionText = "I'll make sure to ask him";
-        ExampleInterrogationConvo8.Question1.NextElementNumber = 1;
+        ExampleInterrogationConvo8.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question2 = new Question();
         ExampleInterrogationConvo8.Question2.QuestionText = " ";
@@ -324,6 +324,276 @@ public class Rachel : Character
         ExampleInterrogationConvo8.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo8);
+		
+		//Element 9
+
+        DialogueForInterrogation ExampleInterrogationConvo9 = new DialogueForInterrogation();
+        ExampleInterrogationConvo9.NextElementNumber = 1;
+        ExampleInterrogationConvo9.NPCTalking = true;
+        ExampleInterrogationConvo9.EndInterrogation = false;
+        ExampleInterrogationConvo9.NoQuestions = false;
+        ExampleInterrogationConvo9.Response = "*raises her head sharply* That bastard left us years ago! It's always just been me and Nikki";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo9.Question1 = new Question();
+        ExampleInterrogationConvo9.Question1.QuestionText = "I'll make sure to ask him";
+        ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
+
+        ExampleInterrogationConvo9.Question2 = new Question();
+        ExampleInterrogationConvo9.Question2.QuestionText = " ";
+        ExampleInterrogationConvo9.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo9.Question3 = new Question();
+        ExampleInterrogationConvo9.Question3.QuestionText = " ";
+        ExampleInterrogationConvo9.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo9);
+		
+		//Element 10
+
+        DialogueForInterrogation ExampleInterrogationConvo10 = new DialogueForInterrogation();
+        ExampleInterrogationConvo10.NextElementNumber = 1;
+        ExampleInterrogationConvo10.NPCTalking = true;
+        ExampleInterrogationConvo10.EndInterrogation = false;
+        ExampleInterrogationConvo10.NoQuestions = false;
+        ExampleInterrogationConvo10.Response = "*raises her head sharply* That bastard left us years ago! It's always just been me and Nikki";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo10.Question1 = new Question();
+        ExampleInterrogationConvo10.Question1.QuestionText = "Oh...";
+        ExampleInterrogationConvo10.Question1.NextElementNumber = 11;
+
+        ExampleInterrogationConvo10.Question2 = new Question();
+        ExampleInterrogationConvo10.Question2.QuestionText = "Surely he would want to know what happened to his only child?";
+        ExampleInterrogationConvo10.Question2.NextElementNumber = 17;
+
+        ExampleInterrogationConvo10.Question3 = new Question();
+        ExampleInterrogationConvo10.Question3.QuestionText = " ";
+        ExampleInterrogationConvo10.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo10);
+		
+		//Element 11
+
+        DialogueForInterrogation ExampleInterrogationConvo11 = new DialogueForInterrogation();
+        ExampleInterrogationConvo11.NextElementNumber = 1;
+        ExampleInterrogationConvo11.NPCTalking = true;
+        ExampleInterrogationConvo11.EndInterrogation = false;
+        ExampleInterrogationConvo11.NoQuestions = false;
+        ExampleInterrogationConvo11.Response = "Yes! Raising Nikki, and managing the bakery all by myself! ";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo11.Question1 = new Question();
+        ExampleInterrogationConvo11.Question1.QuestionText = "That must have been tough";
+        ExampleInterrogationConvo11.Question1.NextElementNumber = 12;
+
+        ExampleInterrogationConvo11.Question2 = new Question();
+        ExampleInterrogationConvo11.Question2.QuestionText = " ";
+        ExampleInterrogationConvo11.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo11.Question3 = new Question();
+        ExampleInterrogationConvo11.Question3.QuestionText = " ";
+        ExampleInterrogationConvo11.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo11);
+		
+		//Element 12
+
+        DialogueForInterrogation ExampleInterrogationConvo12 = new DialogueForInterrogation();
+        ExampleInterrogationConvo12.NextElementNumber = 1;
+        ExampleInterrogationConvo12.NPCTalking = true;
+        ExampleInterrogationConvo12.EndInterrogation = false;
+        ExampleInterrogationConvo12.NoQuestions = false;
+        ExampleInterrogationConvo12.Response = "It wasn't easy. That bakery has been in my family for generations. I'd hoped Nikki would carry the pan and keep it going...";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo12.Question1 = new Question();
+        ExampleInterrogationConvo12.Question1.QuestionText = "...but her heart was always set on being an inventor, not a baker...";
+        ExampleInterrogationConvo12.Question1.NextElementNumber = 13;
+
+        ExampleInterrogationConvo12.Question2 = new Question();
+        ExampleInterrogationConvo12.Question2.QuestionText = " ";
+        ExampleInterrogationConvo12.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo12.Question3 = new Question();
+        ExampleInterrogationConvo12.Question3.QuestionText = " ";
+        ExampleInterrogationConvo12.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo12);
+		
+		//Element 13
+
+        DialogueForInterrogation ExampleInterrogationConvo13 = new DialogueForInterrogation();
+        ExampleInterrogationConvo13.NextElementNumber = 1;
+        ExampleInterrogationConvo13.NPCTalking = true;
+        ExampleInterrogationConvo13.EndInterrogation = false;
+        ExampleInterrogationConvo13.NoQuestions = false;
+        ExampleInterrogationConvo13.Response = "What rubbish!";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo13.Question1 = new Question();
+        ExampleInterrogationConvo13.Question1.QuestionText = "*shocked* Rubbish?";
+        ExampleInterrogationConvo13.Question1.NextElementNumber = 14;
+
+        ExampleInterrogationConvo13.Question2 = new Question();
+        ExampleInterrogationConvo13.Question2.QuestionText = " ";
+        ExampleInterrogationConvo13.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo13.Question3 = new Question();
+        ExampleInterrogationConvo13.Question3.QuestionText = " ";
+        ExampleInterrogationConvo13.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo13);
+		
+		//Element 14
+
+        DialogueForInterrogation ExampleInterrogationConvo14 = new DialogueForInterrogation();
+        ExampleInterrogationConvo14.NextElementNumber = 1;
+        ExampleInterrogationConvo14.NPCTalking = true;
+        ExampleInterrogationConvo14.EndInterrogation = false;
+        ExampleInterrogationConvo14.NoQuestions = false;
+        ExampleInterrogationConvo14.Response = "Well, what career is inventing, especially for a woman?? She'd have been better off following me in my footsteps, as I did my mother, and she did before me, and so on...";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo14.Question1 = new Question();
+        ExampleInterrogationConvo14.Question1.QuestionText = "It's that kind of thinking that's held Wandermere back for years";
+        ExampleInterrogationConvo14.Question1.NextElementNumber = 18;
+
+        ExampleInterrogationConvo14.Question2 = new Question();
+        ExampleInterrogationConvo14.Question2.QuestionText = "*coldy* I see, so you would have wanted Nikki to abandon her dreams, just because you never had a chance to fulfil any of yours? ";
+        ExampleInterrogationConvo14.Question2.NextElementNumber = 15;
+
+        ExampleInterrogationConvo14.Question3 = new Question();
+        ExampleInterrogationConvo14.Question3.QuestionText = " ";
+        ExampleInterrogationConvo14.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo14);
+		
+		//Element 15
+
+        DialogueForInterrogation ExampleInterrogationConvo15 = new DialogueForInterrogation();
+        ExampleInterrogationConvo15.NextElementNumber = 1;
+        ExampleInterrogationConvo15.NPCTalking = true;
+        ExampleInterrogationConvo15.EndInterrogation = false;
+        ExampleInterrogationConvo15.NoQuestions = false;
+        ExampleInterrogationConvo15.Response = "*stands up* How dare you! That's exactly what Nikki told me when I was talking to her last night in the lab, and I'll tell you, just like I told her, that - ";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo15.Question1 = new Question();
+        ExampleInterrogationConvo15.Question1.QuestionText = "Wait, you talked to Nikki in the lab last night? When was this?";
+        ExampleInterrogationConvo15.Question1.NextElementNumber = 16;
+
+        ExampleInterrogationConvo15.Question2 = new Question();
+        ExampleInterrogationConvo15.Question2.QuestionText = " ";
+        ExampleInterrogationConvo15.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo15.Question3 = new Question();
+        ExampleInterrogationConvo15.Question3.QuestionText = " ";
+        ExampleInterrogationConvo15.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo15);
+		
+		//Element 16
+
+        DialogueForInterrogation ExampleInterrogationConvo16 = new DialogueForInterrogation();
+        ExampleInterrogationConvo16.NextElementNumber = 1;
+        ExampleInterrogationConvo16.NPCTalking = true;
+        ExampleInterrogationConvo16.EndInterrogation = false;
+        ExampleInterrogationConvo16.NoQuestions = false;
+        ExampleInterrogationConvo16.Response = "*pauses, and is startled for a moment* I-it doesn't matter!";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo16.Question1 = new Question();
+        ExampleInterrogationConvo16.Question1.QuestionText = "...when did you last see Nikki?";
+        ExampleInterrogationConvo16.Question1.NextElementNumber = 2;
+
+        ExampleInterrogationConvo16.Question2 = new Question();
+        ExampleInterrogationConvo16.Question2.QuestionText = " ";
+        ExampleInterrogationConvo16.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo16.Question3 = new Question();
+        ExampleInterrogationConvo16.Question3.QuestionText = " ";
+        ExampleInterrogationConvo16.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo16);
+		
+		//Element 17
+
+        DialogueForInterrogation ExampleInterrogationConvo17 = new DialogueForInterrogation();
+        ExampleInterrogationConvo17.NextElementNumber = 1;
+        ExampleInterrogationConvo17.NPCTalking = true;
+        ExampleInterrogationConvo17.EndInterrogation = false;
+        ExampleInterrogationConvo17.NoQuestions = false;
+        ExampleInterrogationConvo17.Response = "Even if I knew where he was, that man has no business whatsover in our lives!";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo17.Question1 = new Question();
+        ExampleInterrogationConvo17.Question1.QuestionText = "Okay! Okay...";
+        ExampleInterrogationConvo17.Question1.NextElementNumber = 0;
+
+        ExampleInterrogationConvo17.Question2 = new Question();
+        ExampleInterrogationConvo17.Question2.QuestionText = " ";
+        ExampleInterrogationConvo17.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo17.Question3 = new Question();
+        ExampleInterrogationConvo17.Question3.QuestionText = " ";
+        ExampleInterrogationConvo17.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo17);
+		
+		//Element 18
+
+        DialogueForInterrogation ExampleInterrogationConvo18 = new DialogueForInterrogation();
+        ExampleInterrogationConvo18.NextElementNumber = 1;
+        ExampleInterrogationConvo18.NPCTalking = true;
+        ExampleInterrogationConvo18.EndInterrogation = false;
+        ExampleInterrogationConvo18.NoQuestions = false;
+        ExampleInterrogationConvo18.Response = "*scoffs* You 'modern' women...' ";
+
+
+
+        //Creating a Question
+
+        ExampleInterrogationConvo18.Question1 = new Question();
+        ExampleInterrogationConvo18.Question1.QuestionText = "Back ";
+        ExampleInterrogationConvo18.Question1.NextElementNumber = 14;
+
+        ExampleInterrogationConvo18.Question2 = new Question();
+        ExampleInterrogationConvo18.Question2.QuestionText = " ";
+        ExampleInterrogationConvo18.Question2.NextElementNumber = 0;
+
+        ExampleInterrogationConvo18.Question3 = new Question();
+        ExampleInterrogationConvo18.Question3.QuestionText = " ";
+        ExampleInterrogationConvo18.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueForInterrogations.Add(ExampleInterrogationConvo18);
 
     }
     public override void SetAfterClueConvo()
@@ -331,7 +601,7 @@ public class Rachel : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking=true;       
         ExampledialogueAfterClue.Response = "*Stares Blankly*";
@@ -366,7 +636,7 @@ public class Rachel : Character
         //Element 1
         DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
         ExampledialogueAfterClue2.CorrectClue = true;
-        ExampledialogueAfterClue2.EndInterrogation = true;
+        ExampledialogueAfterClue2.EndInterrogation = false;
         ExampledialogueAfterClue2.NoQuestions = false;
         ExampledialogueAfterClue2.NPCTalking = true;
         ExampledialogueAfterClue2.Response = "I-I don't know. Like I told you earlier I left him tidying up in the main hall!";
@@ -391,7 +661,7 @@ public class Rachel : Character
         //Element 2
         DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
         ExampledialogueAfterClue3.CorrectClue = true;
-        ExampledialogueAfterClue3.EndInterrogation = true;
+        ExampledialogueAfterClue3.EndInterrogation = false;
         ExampledialogueAfterClue3.NoQuestions = false;
         ExampledialogueAfterClue3.NPCTalking = true;
         ExampledialogueAfterClue3.Response = "*shaking* I'm certain";

@@ -87,6 +87,7 @@ public class Character :MonoBehaviour
         Mirianne,
         Nikki,
         OldCrazyMan,
+        Robot,
         Rachel
     }
     /// <summary>
@@ -286,8 +287,8 @@ public class Character :MonoBehaviour
                 SetInterrogationConvo();
                 SetAfterClueConvo();
                 break;
-            default:
-                Debug.LogError("No setup written for "+Scene+" in Character Class");
+            default:                
+                Debug.LogWarning("No setup written for "+Scene+" in Character Class");
                 break;
         }
     }
@@ -297,21 +298,21 @@ public class Character :MonoBehaviour
     /// </summary>
     public virtual void SetRegularConvo()
     {
-
+        dialogForRegularConvo.Clear();
     }
     /// <summary>
     /// Method for populating the Interrogation Dialogue List
     /// </summary>
     public virtual void SetInterrogationConvo()
     {
-
+        DialogueForInterrogations.Clear();
     }
     /// <summary>
     /// Method for populating the After Clue Dialogue List
     /// </summary>
     public virtual void SetAfterClueConvo()
     {
-
+        DialogueAfterClues.Clear();
     }
     /// <summary>
     /// Start talking

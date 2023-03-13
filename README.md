@@ -257,6 +257,6 @@ SuperNatural and out there ideas for characters:
 <div align="center" >
 
 ## Game Progress
-![80%](https://progress-bar.dev/80)  
+![90%](https://progress-bar.dev/90)  
 bar by [Progress bar dev](https://github.com/fredericojordan/progress-bar)
 </div>
