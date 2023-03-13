@@ -337,7 +337,7 @@ public class OldCrazyMan : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = false;
+        ExampledialogueAfterClue.EndInterrogation = true;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
         ExampledialogueAfterClue.Response = "I'm sorry, if it's not a gear bit, I don't wanna hear about it";

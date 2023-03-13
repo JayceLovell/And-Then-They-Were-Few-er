@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -156,6 +157,7 @@ public class GameManager : MonoBehaviour
     {
         get
         {
+            _currentScene = SceneManager.GetActiveScene().name;
             return _currentScene;
         }        
     }
@@ -249,8 +251,10 @@ public class GameManager : MonoBehaviour
 
         PlayerPrefs.SetString("Playing", "Playing");
     }
-    public void SavePlayerPrefs()
+    public async void SavePlayerPrefs()
     {
+        await Task.Delay(5000);
+
         int gameStateInt = Convert.ToInt32(PlayerProgress);
         PlayerPrefs.SetInt("Player Progress", gameStateInt);
         PlayerPrefs.SetFloat("BGM Volume", _bgmVolume);
@@ -301,7 +305,7 @@ public class GameManager : MonoBehaviour
         //check if player is new
         if(PlayerPrefs.HasKey("Playing"))
         {
-            _lastScene = _currentScene;
+            //_lastScene = _currentScene;
             if (PlayerProgress == GameState.NewGame)
                 SceneManager.LoadScene("Text");
             else if (PlayerProgress == GameState.AfterMurder)
@@ -326,7 +330,6 @@ public class GameManager : MonoBehaviour
     /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        _currentScene = SceneManager.GetActiveScene().name;
         switch (scene.name)
         {
             case "Title":
@@ -342,16 +345,13 @@ public class GameManager : MonoBehaviour
                 break;
             case "Entrance":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
-                SavePlayerPrefs();
                 break;
             case "GrandHall":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
                 _timeStart = true;
-                SavePlayerPrefs();
                 break;
             case "Big Reveal":
                 SoundManager.StartBackground(SoundManager.BgSound.BigReveal);
-                SavePlayerPrefs();
                 break;
             default:
                 Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
@@ -368,15 +368,14 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Instructions", LoadSceneMode.Additive);
     }
     public void Quit()
-    {
-        _lastScene = _currentScene;
+    {        
         SavePlayerPrefs();
         Application.Quit();
     }
     void OnDisable()
     {
         Debug.Log("GameManger Disable");
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-        SceneManager.sceneUnloaded -= OnSceneUnloaded;
+        //SceneManager.sceneLoaded -= OnSceneLoaded;
+        //SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 }
