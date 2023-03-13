@@ -5745,6 +5745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clue Menu Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1364704662080305078, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1584624441972276297, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5831,55 +5835,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1607401222706839529, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1607401222706839529, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1607401222706839529, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.0000073313713
       objectReference: {fileID: 0}
     - target: {fileID: 3071892037440810831, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3071892037440810831, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 4385178315365026149, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4385178315365026149, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5808128441085500040, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5808128441085500040, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5808128441085500040, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 5808128441085500040, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 7292958395087552553, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7292958395087552553, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76470ce0c8c11bc4697766e6fc659f8c, type: 3}
@@ -9728,7 +9732,7 @@ GameObject:
   - component: {fileID: 1006781594}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
