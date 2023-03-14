@@ -73,7 +73,7 @@ public class TextController : MonoBehaviour
                 }
                 break;
             default:
-                Debug.LogError("Didn't hit a enum in TextController");
+                Debug.LogError("Didn't hit a enum in TextController at Start");
                 break;
         }        
     }

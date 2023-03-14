@@ -44,17 +44,20 @@ public class ClueManager : MonoBehaviour
 
     void Awake()
     {
-        if (ClueManager.Instance == null)
-            _instance = this;
-        else
+        // Check if there is already an instance of GameManager
+        if (_instance != null && _instance != this)
+        {
+            // If there is an instance already, destroy this new one
             Destroy(this.gameObject);
+            return;
+        }
+
+        // Set the instance of the GameManager
+        _instance = this;
+
         DontDestroyOnLoad(ClueManager.Instance);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {        
-    }
     /// <summary>
     /// Either display or remove Menu
     /// </summary>

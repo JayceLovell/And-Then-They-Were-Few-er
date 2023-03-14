@@ -186,15 +186,24 @@ public class GameManager : MonoBehaviour
     }
     void Awake()
     {
+        // Check if there is already an instance of GameManager
+        if (_instance != null && _instance != this)
+        {
+            // If there is an instance already, destroy this new one
+            Destroy(this.gameObject);
+            return;
+        }
+
+        // Set the instance of the GameManager
         _instance = this;
+
         DontDestroyOnLoad(GameManager.Instance);
-        _loadPlayerPrefs();
     }
     // Start is called before the first frame update
     void Start()
     {
         IsGameOver = false;
-        IsGamePaused = false;       
+        IsGamePaused = false;        
     }
 
     // Update is called once per frame
@@ -298,8 +307,14 @@ public class GameManager : MonoBehaviour
     public void NewGame()
     {
         PlayerPrefs.DeleteAll();
+        SavePlayerPrefs();
         _loadPlayerPrefs();
         PlayerProgress = GameState.NewGame;
+        IsGameOver = false;
+        IsGameWon = false;
+        IsGamePaused = false;
+        
+        GameTime = 900;
         StartGame();
     }
     public void StartGame()
@@ -307,6 +322,7 @@ public class GameManager : MonoBehaviour
         //check if player is new
         if(PlayerPrefs.HasKey("Playing"))
         {
+            _loadPlayerPrefs();
             //_lastScene = _currentScene;
             if (PlayerProgress == GameState.NewGame)
                 SceneManager.LoadScene("Text");

@@ -19,7 +19,7 @@ public class UiManager : MonoBehaviour
     private float _countDownSeconds;
     private bool _isClockActive;
     private bool _isPauseActive;
-    private GameManager _gameManager;
+    private GameManager GameManager;
     private static UiManager _instance;
    
     public static UiManager Instance
@@ -43,16 +43,22 @@ public class UiManager : MonoBehaviour
     // Awake is called before Start
     void Awake()
     {
+        // Check if there is already an instance of GameManager
+        if (_instance != null && _instance != this)
+        {
+            // If there is an instance already, destroy this new one
+            Destroy(this.gameObject);
+            return;
+        }
+
+        // Set the instance of the GameManager
         _instance = this;
+
         DontDestroyOnLoad(UiManager.Instance);
-    }
-    void Start()
-    {
-        _gameManager = GameManager.Instance;
     }
     void Update()
     {
-        if (_gameManager.IsGamePaused)
+        if (GameManager.Instance.IsGamePaused)
         {
             if (!_isPauseActive)
             {
@@ -81,30 +87,30 @@ public class UiManager : MonoBehaviour
     {
         //Set Up Background Volume Slider
         Slider volumeslider = GameObject.Find("BGVolumeSlider").GetComponent<Slider>();
-        volumeslider.value = _gameManager.BgmVolume;
-        volumeslider.onValueChanged.AddListener(delegate { _gameManager.BgmVolume = volumeslider.value; });
+        volumeslider.value = GameManager.Instance.BgmVolume;
+        volumeslider.onValueChanged.AddListener(delegate { GameManager.Instance.BgmVolume = volumeslider.value; });
         volumeslider.onValueChanged.AddListener(value => SoundManager.MasterVolumeChanged(value));
 
         //Set Up FX Volume Slider
         Slider FXvolumeslider = GameObject.Find("FXVolumeSlider").GetComponent<Slider>();
-        FXvolumeslider.value = _gameManager.SfxVolume;
-        FXvolumeslider.onValueChanged.AddListener(delegate { _gameManager.SfxVolume = FXvolumeslider.value; });
+        FXvolumeslider.value = GameManager.Instance.SfxVolume;
+        FXvolumeslider.onValueChanged.AddListener(delegate { GameManager.Instance.SfxVolume = FXvolumeslider.value; });
 
         //Set Up ResumeButton
         Button ResumeButton = GameObject.Find("ResumeButton").GetComponent<Button>();
-        ResumeButton.onClick.AddListener(delegate { _gameManager.IsGamePaused = false; });
+        ResumeButton.onClick.AddListener(delegate { GameManager.Instance.IsGamePaused = false; });
 
         //Set Up HelpButton
         Button HelpButton = GameObject.Find("HelpButton").GetComponent<Button>();
-            HelpButton.onClick.AddListener(delegate { _gameManager.LoadInstructions(); });
+            HelpButton.onClick.AddListener(delegate { GameManager.Instance.LoadInstructions(); });
 
         //Set Up SaveButton
         Button SaveButton = GameObject.Find("SaveButton").GetComponent<Button>();
-        SaveButton.onClick.AddListener(delegate{ _gameManager.SavePlayerPrefs(); });
+        SaveButton.onClick.AddListener(delegate{ GameManager.Instance.SavePlayerPrefs(); });
 
         //Set Up QuitButton
         Button QuitButton = GameObject.Find("QuitButton").GetComponent<Button>();
-        QuitButton.onClick.AddListener(delegate { _gameManager.Quit(); });
+        QuitButton.onClick.AddListener(delegate { GameManager.Instance.Quit(); });
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -119,14 +125,14 @@ public class UiManager : MonoBehaviour
         }        
     }
     private void _updateClock()
-    {
-        switch (_gameManager.CurrentScene)
+    {        
+        switch (GameManager.Instance.CurrentScene)
         {
             case "Entrance":
-                if (_gameManager.PlayerProgress == GameManager.GameState.AfterMurder)
+                if (GameManager.Instance.PlayerProgress == GameManager.GameState.AfterMurder)
                 {
-                    _countDownMinutes = Mathf.FloorToInt(_gameManager.GameTime / 60);
-                    _countDownSeconds = Mathf.FloorToInt(_gameManager.GameTime % 60);
+                    _countDownMinutes = Mathf.FloorToInt(GameManager.Instance.GameTime / 60);
+                    _countDownSeconds = Mathf.FloorToInt(GameManager.Instance.GameTime % 60);
                     _clockText.text = string.Format("{00:00}:{01:00}", _countDownMinutes, _countDownSeconds);
                 }
                 else
@@ -135,15 +141,15 @@ public class UiManager : MonoBehaviour
 
                 break;
             case "GrandHall":
-                _countDownMinutes = Mathf.FloorToInt(_gameManager.GameTime / 60);
-                _countDownSeconds = Mathf.FloorToInt(_gameManager.GameTime% 60);
+                _countDownMinutes = Mathf.FloorToInt(GameManager.Instance.GameTime / 60);
+                _countDownSeconds = Mathf.FloorToInt(GameManager.Instance.GameTime% 60);
                 _clockText.text= string.Format("{00:00}:{01:00}", _countDownMinutes,_countDownSeconds);
                 break;
             default:
                 if (GameManager.Instance.PlayerProgress == GameManager.GameState.BeforeMurder)
                 {
-                    _countDownMinutes = Mathf.FloorToInt(_gameManager.GameTime / 60);
-                    _countDownSeconds = Mathf.FloorToInt(_gameManager.GameTime % 60);
+                    _countDownMinutes = Mathf.FloorToInt(GameManager.Instance.GameTime / 60);
+                    _countDownSeconds = Mathf.FloorToInt(GameManager.Instance.GameTime % 60);
                     _clockText.text = string.Format("{00:00}:{01:00}", _countDownMinutes, _countDownSeconds);
                 }
                 else
