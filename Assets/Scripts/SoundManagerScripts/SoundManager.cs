@@ -25,7 +25,7 @@ public static class SoundManager
     }
     public static void MasterVolumeChanged(float value)
     {
-        AudioListener.volume = value;
+       GameObject.Find("BgSound").GetComponent<AudioSource>().volume = value;
     }
     public static void StartBackground(BgSound bgSound)
     {
@@ -33,7 +33,7 @@ public static class SoundManager
         AudioSource audioSource = bgsoundGameObject.AddComponent<AudioSource>();
         audioSource.PlayOneShot(GetBGAudio(bgSound));
         audioSource.loop = true;
-        audioSource.volume= GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().BgmVolume;
+        audioSource.volume = GameManager.Instance.BgmVolume;
         bgsoundGameObject.AddComponent<SoundBGVolume>();
     }
     /// <summary>
@@ -45,7 +45,7 @@ public static class SoundManager
         GameObject soundGameObject = new GameObject("SoundFX");
         AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
         audioSource.PlayOneShot(GetAudio(sound));
-        audioSource.volume = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SfxVolume;
+        audioSource.volume = GameManager.Instance.SfxVolume;
         soundGameObject.AddComponent<SoundFXLife>().SoundLength=GetAudio(sound).length;
     }
     private static AudioClip GetBGAudio(BgSound sound)

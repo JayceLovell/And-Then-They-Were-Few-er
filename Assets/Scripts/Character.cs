@@ -681,7 +681,7 @@ public class Character :MonoBehaviour
                 _dialogBox.SetUpQuestions(3, DialogueForInterrogations[_numDialog].Question3.QuestionText, DialogueForInterrogations[_numDialog].Question3.NextElementNumber, DialogueForInterrogations[_numDialog].Question3.EndInterrogation);
             }
         }
-        yield return new WaitForSeconds(4.0f);
+        yield return new WaitForSeconds(8.0f);
 
         InDialog = false;
         _dialogBox.Display(false);

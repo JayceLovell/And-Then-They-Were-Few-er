@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -122,7 +123,8 @@ public class GameManager : MonoBehaviour
             _isGameLost = value;
             if(_isGameLost)
             {
-                _timeStart = false;                
+                _timeStart = false;
+                PlayerProgress = GameState.WrongPerson;
                 SceneManager.LoadScene("Text");
             }
         }
@@ -156,6 +158,7 @@ public class GameManager : MonoBehaviour
     {
         get
         {
+            _currentScene = SceneManager.GetActiveScene().name;
             return _currentScene;
         }        
     }
@@ -183,15 +186,24 @@ public class GameManager : MonoBehaviour
     }
     void Awake()
     {
+        // Check if there is already an instance of GameManager
+        if (_instance != null && _instance != this)
+        {
+            // If there is an instance already, destroy this new one
+            Destroy(this.gameObject);
+            return;
+        }
+
+        // Set the instance of the GameManager
         _instance = this;
+
         DontDestroyOnLoad(GameManager.Instance);
-        _loadPlayerPrefs();
     }
     // Start is called before the first frame update
     void Start()
     {
         IsGameOver = false;
-        IsGamePaused = false;       
+        IsGamePaused = false;        
     }
 
     // Update is called once per frame
@@ -238,7 +250,8 @@ public class GameManager : MonoBehaviour
         {
             if (cluesArray[i] != "")
             {
-                Clue clue = new Clue();
+                //Clue clue = new Clue();
+                Clue clue = ScriptableObject.CreateInstance<Clue>();
                 clue.name = cluesName[i];
                 clue.ClueText = cluesArray[i];
                 clue.PickedUp = (pickedUpArray[i] == "1");
@@ -249,8 +262,10 @@ public class GameManager : MonoBehaviour
 
         PlayerPrefs.SetString("Playing", "Playing");
     }
-    public void SavePlayerPrefs()
+    public async void SavePlayerPrefs()
     {
+        await Task.Delay(5000);
+
         int gameStateInt = Convert.ToInt32(PlayerProgress);
         PlayerPrefs.SetInt("Player Progress", gameStateInt);
         PlayerPrefs.SetFloat("BGM Volume", _bgmVolume);
@@ -292,8 +307,14 @@ public class GameManager : MonoBehaviour
     public void NewGame()
     {
         PlayerPrefs.DeleteAll();
+        SavePlayerPrefs();
         _loadPlayerPrefs();
         PlayerProgress = GameState.NewGame;
+        IsGameOver = false;
+        IsGameWon = false;
+        IsGamePaused = false;
+        
+        GameTime = 900;
         StartGame();
     }
     public void StartGame()
@@ -301,7 +322,8 @@ public class GameManager : MonoBehaviour
         //check if player is new
         if(PlayerPrefs.HasKey("Playing"))
         {
-            _lastScene = _currentScene;
+            _loadPlayerPrefs();
+            //_lastScene = _currentScene;
             if (PlayerProgress == GameState.NewGame)
                 SceneManager.LoadScene("Text");
             else if (PlayerProgress == GameState.AfterMurder)
@@ -318,7 +340,7 @@ public class GameManager : MonoBehaviour
     public void GameOver(Character.CharacterName Chosen)
     {
         this.Chosen = Chosen;
-        IsGameOver= true;
+        IsGameOver = true;
     }
     /// <summary>
     /// Calls on scene/summary>
@@ -326,7 +348,6 @@ public class GameManager : MonoBehaviour
     /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        _currentScene = SceneManager.GetActiveScene().name;
         switch (scene.name)
         {
             case "Title":
@@ -342,16 +363,13 @@ public class GameManager : MonoBehaviour
                 break;
             case "Entrance":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
-                SavePlayerPrefs();
                 break;
             case "GrandHall":
                 SoundManager.StartBackground(SoundManager.BgSound.Background);
                 _timeStart = true;
-                SavePlayerPrefs();
                 break;
             case "Big Reveal":
                 SoundManager.StartBackground(SoundManager.BgSound.BigReveal);
-                SavePlayerPrefs();
                 break;
             default:
                 Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
@@ -368,15 +386,14 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Instructions", LoadSceneMode.Additive);
     }
     public void Quit()
-    {
-        _lastScene = _currentScene;
+    {        
         SavePlayerPrefs();
         Application.Quit();
     }
     void OnDisable()
     {
         Debug.Log("GameManger Disable");
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-        SceneManager.sceneUnloaded -= OnSceneUnloaded;
+        //SceneManager.sceneLoaded -= OnSceneLoaded;
+        //SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 }

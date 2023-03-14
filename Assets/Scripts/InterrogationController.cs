@@ -8,7 +8,6 @@ using UnityEngine.InputSystem;
 public class InterrogationController : MonoBehaviour
 {
     private Sprite _interrogationNPC;
-    private GameManager _gameManager;
     private Component _npcComponent=null;
     private int _nextElementForInterrogating;
     [SerializeField]
@@ -43,7 +42,6 @@ public class InterrogationController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _gameManager = GameManager.Instance;
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("InterrogationScene"));
         //Grab profile quick before disappear
         Profile = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().Profile;
