@@ -123,7 +123,8 @@ public class GameManager : MonoBehaviour
             _isGameLost = value;
             if(_isGameLost)
             {
-                _timeStart = false;                
+                _timeStart = false;
+                PlayerProgress = GameState.WrongPerson;
                 SceneManager.LoadScene("Text");
             }
         }
@@ -240,7 +241,8 @@ public class GameManager : MonoBehaviour
         {
             if (cluesArray[i] != "")
             {
-                Clue clue = new Clue();
+                //Clue clue = new Clue();
+                Clue clue = ScriptableObject.CreateInstance<Clue>();
                 clue.name = cluesName[i];
                 clue.ClueText = cluesArray[i];
                 clue.PickedUp = (pickedUpArray[i] == "1");
@@ -322,7 +324,7 @@ public class GameManager : MonoBehaviour
     public void GameOver(Character.CharacterName Chosen)
     {
         this.Chosen = Chosen;
-        IsGameOver= true;
+        IsGameOver = true;
     }
     /// <summary>
     /// Calls on scene/summary>

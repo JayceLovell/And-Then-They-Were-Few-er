@@ -62,10 +62,12 @@ public class TextController : MonoBehaviour
                         if (gameOverText.SelectCharacterName == _gameManager.Chosen)
                         {
                             StartCoroutine(PrintText(gameOverText.text));
+                            break;
                         }
                     }
                     catch
                     {
+                        Debug.LogWarning("Something went wrong in finding Chosen so playing default lose text");
                         StartCoroutine(PrintText(DefaultLoseText));
                     }
                 }
