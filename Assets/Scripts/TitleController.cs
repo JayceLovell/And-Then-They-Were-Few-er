@@ -9,7 +9,6 @@ using UnityEngine.UI;
 
 public class TitleController : MonoBehaviour
 {
-    private GameManager _gameManager;
 
     public Slider FXVolumeSlider;
     public Slider BGVolumeSlider;
@@ -17,26 +16,36 @@ public class TitleController : MonoBehaviour
 
     public float BGVolume
     {
-        get { return _gameManager.BgmVolume; }
-        set { _gameManager.BgmVolume = value; }
+        get { return GameManager.Instance.BgmVolume; }
+        set { GameManager.Instance.BgmVolume = value; }
     }
     public float FXVolume
     {
-        get { return _gameManager.SfxVolume; }
-        set { _gameManager.SfxVolume = value; }
+        get { return GameManager.Instance.SfxVolume; }
+        set { GameManager.Instance.SfxVolume = value; }
     }
 
 
     void Start()
-    {
-        _gameManager = GameManager.Instance;
+    {   
+        //Button Setup
         Button HelpButton = GameObject.Find("HelpButton").GetComponent<Button>();
-        HelpButton.onClick.AddListener(delegate { _gameManager.LoadInstructions(); });
+        HelpButton.onClick.AddListener(delegate { GameManager.Instance.LoadInstructions(); });
 
-        FXVolumeSlider.value = _gameManager.SfxVolume;
+        Button PlayButton = GameObject.Find("PlayButton").GetComponent<Button>();
+        if (PlayerPrefs.HasKey("Playing"))                 
+            PlayButton.interactable = true;        
+        else
+            PlayButton.interactable = false;
 
-        BGVolumeSlider.onValueChanged.AddListener(value => SoundManager.MasterVolumeChanged(value));
-        BGVolumeSlider.value = _gameManager.BgmVolume;
+
+            //Slider Setup
+            FXVolumeSlider.value = GameManager.Instance.SfxVolume;
+
+        BGVolumeSlider.onValueChanged.AddListener(value => SoundManager.MasterVolumeChanged(value));        
+        BGVolumeSlider.value = GameManager.Instance.BgmVolume;
+
+
 
         //populate resolutionDropdown
         resolutionDropdown.ClearOptions();
@@ -89,15 +98,15 @@ public class TitleController : MonoBehaviour
 
     void OnQuit()
     {
-        _gameManager.Quit();
+        GameManager.Instance.Quit();
     }
     public void OnStart()
     {
-        _gameManager.StartGame();
+        GameManager.Instance.StartGame();
     }
     public void NewGame()
     {
-        _gameManager.NewGame();
+        GameManager.Instance.NewGame();
     }
     /// <summary>
     /// When resolution is selected

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3c67b43f38e124f40bfb6874fe8a2a14
+guid: 2c8d525020361bb4fb2963fc30c9f646
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_0
+      name: Jayson_new_idle_0
       rect:
         serializedVersion: 2
         x: 11
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11114d9597efa4645a9c54baff22d057
-      internalID: -2036632894
+      spriteID: aa71ba9c20992d141b348fab34e741cb
+      internalID: -1359082850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_1
+      name: Jayson_new_idle_1
       rect:
         serializedVersion: 2
         x: 142
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e6867aa3a4834a4f8fa9ee9b00c7484
-      internalID: 1906793097
+      spriteID: c365ccda4a03cc14a93be2dd49797ddd
+      internalID: -987550594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_2
+      name: Jayson_new_idle_2
       rect:
         serializedVersion: 2
         x: 265
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eb89e2488250934bb8920b6568c6352
-      internalID: 546401806
+      spriteID: f927eccd4dc2c2747b6fc65404369445
+      internalID: -1694067204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_3
+      name: Jayson_new_idle_3
       rect:
         serializedVersion: 2
         x: 384
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0cf34341d9e7e74ea3a32d145326f87
-      internalID: 1109398250
+      spriteID: c58be4638a29d36459f769377182bfff
+      internalID: 1333797562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_4
+      name: Jayson_new_idle_4
       rect:
         serializedVersion: 2
         x: 520
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6205c73962f30d44c8cd4367378f3e55
-      internalID: 20071719
+      spriteID: 97ebe245b76310446a5e9dbe35505c84
+      internalID: -185676749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_5
+      name: Jayson_new_idle_5
       rect:
         serializedVersion: 2
         x: 9
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 586a175a166633046925642dbf62c09f
-      internalID: -398322107
+      spriteID: b8da7310f52496c4c922cc3289acf9e3
+      internalID: -1721806332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_6
+      name: Jayson_new_idle_6
       rect:
         serializedVersion: 2
         x: 127
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f87c9ac32561334bbddbfb7abcd8014
-      internalID: 1400064873
+      spriteID: 614f009cfe9832b49878b155f1121014
+      internalID: 112272059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_7
+      name: Jayson_new_idle_7
       rect:
         serializedVersion: 2
         x: 258
@@ -278,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84709ec55b168824da43cb6541d15262
-      internalID: -90949552
+      spriteID: 538b280a463d68e4e8838a1b49b07c36
+      internalID: 347171015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_8
+      name: Jayson_new_idle_8
       rect:
         serializedVersion: 2
         x: 385
@@ -299,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 727379dc20213ce4a85ee6b793fdc0fe
-      internalID: 626197210
+      spriteID: 7876b0d73d2446c428413fd9b9add7c4
+      internalID: -1641641223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_9
+      name: Jayson_new_idle_9
       rect:
         serializedVersion: 2
         x: 521
@@ -320,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1e9b06c5aaa37045997fd79956c1495
-      internalID: -475280068
+      spriteID: 35f1ddd8c5b94724e9e0c26818fcaa93
+      internalID: 861882428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_10
+      name: Jayson_new_idle_10
       rect:
         serializedVersion: 2
         x: 20
@@ -341,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ffcd08f2c88de14e816201002da422a
-      internalID: 835405882
+      spriteID: c1da3f8bafd5ef545a61d5783049cf70
+      internalID: 1581702780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_11
+      name: Jayson_new_idle_11
       rect:
         serializedVersion: 2
         x: 145
@@ -362,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c2a5b43b7fd71f4b9e2b638c5d9fb59
-      internalID: -1501465643
+      spriteID: 66b1581585953b1428751aca85013653
+      internalID: -1370003180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_12
+      name: Jayson_new_idle_12
       rect:
         serializedVersion: 2
         x: 280
@@ -383,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 335d8ecf2a650c14b8490fc6994a89dd
-      internalID: -1268525205
+      spriteID: 134dc569bc5d78b4dba8939360a93817
+      internalID: -833602143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_13
+      name: Jayson_new_idle_13
       rect:
         serializedVersion: 2
         x: 411
@@ -404,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d8bc4b260089c845a281491a20f6a03
-      internalID: -381203751
+      spriteID: 7f73f4677e3badb4dae3e075bcf25a15
+      internalID: -1576823210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_14
+      name: Jayson_new_idle_14
       rect:
         serializedVersion: 2
         x: 539
@@ -425,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5e781e498f324d489971fa0138d9946
-      internalID: 1280599828
+      spriteID: d417b4bc698cec84eb0d1db501d18dc8
+      internalID: 1689519609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_15
+      name: Jayson_new_idle_15
       rect:
         serializedVersion: 2
         x: 22
@@ -446,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 056466fa1770d284ab2e3e2acf0efba9
-      internalID: 112289431
+      spriteID: 39158ddf29d4e434aacf8c30bf5ccf4f
+      internalID: -1174572044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_16
+      name: Jayson_new_idle_16
       rect:
         serializedVersion: 2
         x: 151
@@ -467,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d3363226786edb46ad440ee21620293
-      internalID: -1674776835
+      spriteID: 2044b38c73275aa49ad685b785b1aadc
+      internalID: -426665800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_17
+      name: Jayson_new_idle_17
       rect:
         serializedVersion: 2
         x: 284
@@ -488,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5868a36f9485e6a438972931cae65378
-      internalID: 1964408771
+      spriteID: d3eea95b9c131cc4f9e6889f89bae134
+      internalID: 1071251291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_18
+      name: Jayson_new_idle_18
       rect:
         serializedVersion: 2
         x: 419
@@ -509,14 +509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c46532396c3d23249900d79763efc6f5
-      internalID: 519224569
+      spriteID: 2aaccf944c5005345a270a7060dff391
+      internalID: -2029771807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jayson SpriteSheet Idle_19
+      name: Jayson_new_idle_19
       rect:
         serializedVersion: 2
         x: 550
@@ -530,8 +530,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c55fc0a9d10c61f489f7cbd7a0e50767
-      internalID: -2121135317
+      spriteID: 33e95a3e4cce0a94ebc7401a11d8cfca
+      internalID: -952997532
       vertices: []
       indices: 
       edges: []
@@ -547,26 +547,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jayson SpriteSheet Idle_6: 1400064873
-      Jayson SpriteSheet Idle_8: 626197210
-      Jayson SpriteSheet Idle_14: 1280599828
-      Jayson SpriteSheet Idle_12: -1268525205
-      Jayson SpriteSheet Idle_2: 546401806
-      Jayson SpriteSheet Idle_15: 112289431
-      Jayson SpriteSheet Idle_1: 1906793097
-      Jayson SpriteSheet Idle_4: 20071719
-      Jayson SpriteSheet Idle_5: -398322107
-      Jayson SpriteSheet Idle_7: -90949552
-      Jayson SpriteSheet Idle_13: -381203751
-      Jayson SpriteSheet Idle_17: 1964408771
-      Jayson SpriteSheet Idle_19: -2121135317
-      Jayson SpriteSheet Idle_0: -2036632894
-      Jayson SpriteSheet Idle_16: -1674776835
-      Jayson SpriteSheet Idle_18: 519224569
-      Jayson SpriteSheet Idle_9: -475280068
-      Jayson SpriteSheet Idle_10: 835405882
-      Jayson SpriteSheet Idle_11: -1501465643
-      Jayson SpriteSheet Idle_3: 1109398250
+      Jayson_new_idle_2: -1694067204
+      Jayson_new_idle_14: 1689519609
+      Jayson_new_idle_8: -1641641223
+      Jayson_new_idle_16: -426665800
+      Jayson_new_idle_19: -952997532
+      Jayson_new_idle_10: 1581702780
+      Jayson_new_idle_17: 1071251291
+      Jayson_new_idle_11: -1370003180
+      Jayson_new_idle_4: -185676749
+      Jayson_new_idle_7: 347171015
+      Jayson_new_idle_5: -1721806332
+      Jayson_new_idle_0: -1359082850
+      Jayson_new_idle_15: -1174572044
+      Jayson_new_idle_9: 861882428
+      Jayson_new_idle_12: -833602143
+      Jayson_new_idle_1: -987550594
+      Jayson_new_idle_13: -1576823210
+      Jayson_new_idle_18: -2029771807
+      Jayson_new_idle_6: 112272059
+      Jayson_new_idle_3: 1333797562
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

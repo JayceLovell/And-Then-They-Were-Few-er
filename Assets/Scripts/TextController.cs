@@ -73,7 +73,7 @@ public class TextController : MonoBehaviour
                 }
                 break;
             default:
-                Debug.LogError("Didn't hit a enum in TextController");
+                Debug.LogError("Didn't hit a enum in TextController at Start");
                 break;
         }        
     }
@@ -206,7 +206,8 @@ public class TextController : MonoBehaviour
     IEnumerator PrintText(string text)
     {
         DisplayText.text = "";
-        _isFinishDisplayText = false;
+        OkButton.interactable = false;
+       _isFinishDisplayText = false;
         foreach (char c in text)
         {
             DisplayText.text += c;
