@@ -76,26 +76,38 @@ public class Player : MonoBehaviour
         {
             case 1:
                 _animator.SetBool("Up", true);
+                _animator.SetBool("Down", false);
+                _animator.SetBool("Right", false);
+                _animator.SetBool("Left", false);
                 break;
             case -1:
                 _animator.SetBool("Down", true);
-                break;
-            default:
                 _animator.SetBool("Up", false);
-                _animator.SetBool("Down", false);
+                _animator.SetBool("Right", false);
+                _animator.SetBool("Left", false);
+                break;
+            //default:
+            //    _animator.SetBool("Up", false);
+            //    _animator.SetBool("Down", false);
                 break;
         }
         switch (moveInput.x)
         {
             case 1:
                 _animator.SetBool("Right", true);
+                _animator.SetBool("Left", false);
+                _animator.SetBool("Down", false);
+                _animator.SetBool("Up", false);
                 break;
             case -1:
                 _animator.SetBool("Left", true);
-                break;
-            default:
-                _animator.SetBool("Left", false);
+                _animator.SetBool("Down", false);
+                _animator.SetBool("Up", false);
                 _animator.SetBool("Right", false);
+                break;
+            //default:
+            //    _animator.SetBool("Left", false);
+            //    _animator.SetBool("Right", false);
                 break;
         }
 
