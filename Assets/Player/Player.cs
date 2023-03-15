@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
 
     private GameController _gameController;
 
+    //Animator animator = GetComponent<Animator>();
+
     public bool PlayWalkSound;
 
     public float PlayerSpeed;
@@ -59,60 +61,114 @@ public class Player : MonoBehaviour
     //        PlayWalkSound = false;
     //    }
     //}
+    public enum Direction
+    {
+        Up,
+        Down,
+        Left,
+        Right
+    }
+
+    private Direction lastMove;
+
     void FixedUpdate()
     {
-        if(Talking)
+        if (Talking)
         {
             moveInput = Vector2.zero;
-            _animator.SetBool("Moving", false);
+            //_animator.SetBool("Moving", false);
+
         }
-        else
-            _animator.SetBool("Moving", true);
 
         _rigidbody.velocity = moveInput * PlayerSpeed;
+
+        //if (moveInput == Vector2.zero )
+        //{
+            
+            //if (moveInput.y == 1)
+            //{
+            //    _animator.SetInteger("AnimationCondition", 3);
+            //}
+            //else if (moveInput.y == -1)
+            //{
+            //    _animator.SetInteger("AnimationCondition", 2);
+            //}
+            //else if (moveInput.x == -1)
+            //{
+            //    _animator.SetInteger("AnimationCondition", 1);
+            //}
+            //else if (moveInput.x == 1)
+            //{
+            //    _animator.SetInteger("AnimationCondition", 4);
+            //}
+            //switch (lastMove)
+            //{
+            //    case Direction.Up:
+            //        _animator.SetInteger("AnimationCondition", 3);
+            //        break;
+            //    case Direction.Down:
+            //        _animator.SetInteger("AnimationCondition", 2);
+            //        break;
+            //    case Direction.Left:
+            //        _animator.SetInteger("AnimationCondition", 1);
+            //        break;
+            //    case Direction.Right:
+            //        _animator.SetInteger("AnimationCondition", 4);
+            //        break;
+            //}
+
+       // }
         
+        
+        
+            if (moveInput.y == 1)
+            {
+               
+                    _animator.SetInteger("AnimationCondition", 7);
+                    lastMove = Direction.Up;
+                
+            }
+            else if (moveInput.y == -1)
+            {
+                _animator.SetInteger("AnimationCondition", 6);
+                lastMove = Direction.Down;
+            }
+           
 
-        switch (moveInput.y)
+            if (moveInput.x == -1)
+            {
+                _animator.SetInteger("AnimationCondition", 5);
+                lastMove = Direction.Left;
+            }
+            else if (moveInput.x == 1)
+            {
+                _animator.SetInteger("AnimationCondition", 8);
+                lastMove = Direction.Right;
+            }
+
+            if(moveInput == Vector2.zero && lastMove == Direction.Up)
+            {
+            _animator.SetInteger("AnimationCondition", 3);
+            }
+        else if (moveInput == Vector2.zero && lastMove == Direction.Down)
         {
-            case 1:
-                _animator.SetBool("Up", true);
-                _animator.SetBool("Down", false);
-                _animator.SetBool("Right", false);
-                _animator.SetBool("Left", false);
-                break;
-            case -1:
-                _animator.SetBool("Down", true);
-                _animator.SetBool("Up", false);
-                _animator.SetBool("Right", false);
-                _animator.SetBool("Left", false);
-                break;
-            //default:
-            //    _animator.SetBool("Up", false);
-            //    _animator.SetBool("Down", false);
-                break;
+            _animator.SetInteger("AnimationCondition", 2);
         }
-        switch (moveInput.x)
+        else if (moveInput == Vector2.zero && lastMove == Direction.Left)
         {
-            case 1:
-                _animator.SetBool("Right", true);
-                _animator.SetBool("Left", false);
-                _animator.SetBool("Down", false);
-                _animator.SetBool("Up", false);
-                break;
-            case -1:
-                _animator.SetBool("Left", true);
-                _animator.SetBool("Down", false);
-                _animator.SetBool("Up", false);
-                _animator.SetBool("Right", false);
-                break;
-            //default:
-            //    _animator.SetBool("Left", false);
-            //    _animator.SetBool("Right", false);
-                break;
+            _animator.SetInteger("AnimationCondition", 1);
+        }
+        else if (moveInput == Vector2.zero && lastMove == Direction.Right)
+        {
+            _animator.SetInteger("AnimationCondition", 4);
         }
 
-        if(moveInput == Vector2.zero)
-            _animator.SetBool("Moving", false);
+
+
+
+
+
+
     }
     /// <summary>
     /// Responds to input system on move event
