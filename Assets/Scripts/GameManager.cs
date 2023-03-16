@@ -374,7 +374,7 @@ public class GameManager : MonoBehaviour
                 SoundManager.StartBackground(SoundManager.BgSound.BigReveal);
                 break;
             default:
-                Debug.Log("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
+                Debug.LogWarning("Scene - " + scene.name + " Isn't added to Game Manager so no sound is played.");
                 break;
         }        
     }
@@ -394,7 +394,7 @@ public class GameManager : MonoBehaviour
     void OnDisable()
     {
         Debug.Log("GameManger Disable");
-        //SceneManager.sceneLoaded -= OnSceneLoaded;
-        //SceneManager.sceneUnloaded -= OnSceneUnloaded;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 }

@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -63,6 +65,8 @@ public class UiManager : MonoBehaviour
             if (!_isPauseActive)
             {
                 _pauseMenu = Instantiate(PauseMenuPrefab, GameObject.FindGameObjectWithTag("Canvas").transform);
+                //Set object for event system
+                EventSystem.current.SetSelectedGameObject(GameObject.Find("ResumeButton"));            
                 _isPauseActive = true;
                 _setUpPauseMenuUI();
             }
@@ -87,13 +91,13 @@ public class UiManager : MonoBehaviour
     {
         //Set Up Background Volume Slider
         Slider volumeslider = GameObject.Find("BGVolumeSlider").GetComponent<Slider>();
-        volumeslider.value = GameManager.Instance.BgmVolume;
+        volumeslider.value = (float)GameManager.Instance.BgmVolume/100;
         volumeslider.onValueChanged.AddListener(delegate { GameManager.Instance.BgmVolume = volumeslider.value; });
         volumeslider.onValueChanged.AddListener(value => SoundManager.MasterVolumeChanged(value));
 
         //Set Up FX Volume Slider
         Slider FXvolumeslider = GameObject.Find("FXVolumeSlider").GetComponent<Slider>();
-        FXvolumeslider.value = GameManager.Instance.SfxVolume;
+        FXvolumeslider.value = (float)GameManager.Instance.SfxVolume/100;
         FXvolumeslider.onValueChanged.AddListener(delegate { GameManager.Instance.SfxVolume = FXvolumeslider.value; });
 
         //Set Up ResumeButton
@@ -110,7 +114,7 @@ public class UiManager : MonoBehaviour
 
         //Set Up QuitButton
         Button QuitButton = GameObject.Find("QuitButton").GetComponent<Button>();
-        QuitButton.onClick.AddListener(delegate { GameManager.Instance.Quit(); });
+        QuitButton.onClick.AddListener(delegate { GameManager.Instance.Quit(); });        
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
