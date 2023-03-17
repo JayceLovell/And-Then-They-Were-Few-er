@@ -172,6 +172,7 @@ public class Player : MonoBehaviour
     /// </summary>
     void OnInteract()
     {
+        PlayerObjectTextBox.SetActive(false);
         if (CanTalkToNPC)
         {
             Component CharactersScript = null;

@@ -15,6 +15,9 @@ public class Objects : MonoBehaviour
     protected DialogueObjectController _dialogueObjectController;
     protected GameController _gameController;
 
+    public string ClueStatementText;
+    public Clue ClueStatement;
+
     public DialogueObjectController dialogueObjectController
     {
         get
@@ -37,12 +40,11 @@ public class Objects : MonoBehaviour
         StairsToSecretRoom,
         RoomSwitch,
         PlayerReadyTrigger,
-        JukeBox
+        JukeBox,
+        Fountain
     }
 
     public TypeOfObject objectType;
-
-    public String Dialog;
 
     /// <summary>
     /// Dialogue For Interrogation
@@ -107,7 +109,21 @@ public class Objects : MonoBehaviour
     protected virtual void Start()
     {
         _gameController = GameObject.Find("GameController").GetComponent<GameController>();
+
+        if(objectType == TypeOfObject.Clue)
+            switch (GameManager.Instance.PlayerProgress)
+            {
+                case GameManager.GameState.BeforeMurder:
+                    this.gameObject.SetActive(false);
+                break;
+                case GameManager.GameState.AfterMurder:
+                    if (ClueStatement.PickedUp)
+                        this.gameObject.SetActive(false);
+                    break;
+            }       
+
         SetUpDialogue();
+
         InDialog = false;
     }
     /// <summary>
@@ -150,7 +166,7 @@ public class Objects : MonoBehaviour
                 _dialogueObjectController.Text += c;
                 yield return new WaitForSeconds(0.02f);
             }
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(0.5f);
         }
         else
         {
@@ -187,6 +203,11 @@ public class Objects : MonoBehaviour
         {
             _index = 0;
             GameObject.Find("Player").GetComponent<Player>().Talking = false;
+            if (objectType == TypeOfObject.Clue)
+            {
+                ClueManager.Instance.AddClue(ClueStatement);                
+                Destroy(this.gameObject);
+            }
         }
         else
           _index++;

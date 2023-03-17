@@ -8,8 +8,7 @@ public class MoveToOtherRoom : Objects
     private SoundBGVolume soundBGVolume;
 
     public override void Use()
-    {        
-        base.Use();
+    {              
         soundBGVolume = GameObject.FindObjectOfType<SoundBGVolume>();
         soundBGVolume.LowerVolume(1f);
         StartCoroutine(littleWaitBefore());

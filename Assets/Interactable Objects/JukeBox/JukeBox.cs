@@ -28,22 +28,39 @@ public class JukeBox : Objects
 
         DialogueForObject.Add(ExampleForDialogueForObject);
 
-        DialogueForObjects ExampleForDialogueForObject1 = new DialogueForObjects();
-        ExampleForDialogueForObject1.JustAshlynTalking = false;
-        ExampleForDialogueForObject.EndInteraction = false;
-        ExampleForDialogueForObject1.Text = "What should i do to it?";
-
         //Add option1
-        ExampleForDialogueForObject1.Option1 = new Options();
-        ExampleForDialogueForObject1.Option1.OptionSelectedInteger = 1;
-        ExampleForDialogueForObject1.Option1.OptionText = "Turn Off Music";
-        ExampleForDialogueForObject1.Option1.NextElementNumber = 2;
+        DialogueForObjects ExampleForDialogueForObject1 = new DialogueForObjects();
+
+        if (GameObject.Find("BgSound").GetComponent<AudioSource>().isPlaying)
+        {           
+            ExampleForDialogueForObject1.JustAshlynTalking = false;
+            ExampleForDialogueForObject.EndInteraction = false;
+            ExampleForDialogueForObject1.Text = "What should i do to it?";
+
+
+            ExampleForDialogueForObject1.Option1 = new Options();
+            ExampleForDialogueForObject1.Option1.OptionSelectedInteger = 1;
+            ExampleForDialogueForObject1.Option1.OptionText = "Turn Off Music";
+            ExampleForDialogueForObject1.Option1.NextElementNumber = 2;
+        }
+        else
+        {
+            ExampleForDialogueForObject1.JustAshlynTalking = false;
+            ExampleForDialogueForObject.EndInteraction = false;
+            ExampleForDialogueForObject1.Text = "What should i do to it?";
+
+
+            ExampleForDialogueForObject1.Option1 = new Options();
+            ExampleForDialogueForObject1.Option1.OptionSelectedInteger = 1;
+            ExampleForDialogueForObject1.Option1.OptionText = "Turn On Music";
+            ExampleForDialogueForObject1.Option1.NextElementNumber = 2;
+        }
 
         //Add option2
+        // THis one not finish waiting Lay stuff
         ExampleForDialogueForObject1.Option2 = new Options();
         ExampleForDialogueForObject1.Option2.OptionSelectedInteger = 2;
-        ExampleForDialogueForObject1.Option2.OptionText = "Select different music";
-        /// Adnan i havn't finish this one
+        ExampleForDialogueForObject1.Option2.OptionText = "Select different music";        
 
         DialogueForObject.Add(ExampleForDialogueForObject1);
 
