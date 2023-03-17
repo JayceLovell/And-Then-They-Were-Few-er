@@ -12,10 +12,9 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private Animator _animator;
     private bool _talking;
+    private float _keyHeldTime;
 
     private GameController _gameController;
-
-    //Animator animator = GetComponent<Animator>();
 
     public bool PlayWalkSound;
 
@@ -53,14 +52,6 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
-    //void Update()
-    //{
-    //    if (PlayWalkSound)
-    //    {
-    //        SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
-    //        PlayWalkSound = false;
-    //    }
-    //}
     public enum Direction
     {
         Up,
@@ -71,103 +62,91 @@ public class Player : MonoBehaviour
 
     private Direction lastMove;
 
-    void FixedUpdate()
+    void Update()
     {
-        if (Talking)
+        if (Talking)        
+            moveInput = Vector2.zero;                         
+        
+        if(moveInput!= Vector2.zero)
         {
-            moveInput = Vector2.zero;
-            //_animator.SetBool("Moving", false);
-
-        }
-
-        _rigidbody.velocity = moveInput * PlayerSpeed;
-
-        //if (moveInput == Vector2.zero )
-        //{
-            
-            //if (moveInput.y == 1)
-            //{
-            //    _animator.SetInteger("AnimationCondition", 3);
-            //}
-            //else if (moveInput.y == -1)
-            //{
-            //    _animator.SetInteger("AnimationCondition", 2);
-            //}
-            //else if (moveInput.x == -1)
-            //{
-            //    _animator.SetInteger("AnimationCondition", 1);
-            //}
-            //else if (moveInput.x == 1)
-            //{
-            //    _animator.SetInteger("AnimationCondition", 4);
-            //}
-            //switch (lastMove)
-            //{
-            //    case Direction.Up:
-            //        _animator.SetInteger("AnimationCondition", 3);
-            //        break;
-            //    case Direction.Down:
-            //        _animator.SetInteger("AnimationCondition", 2);
-            //        break;
-            //    case Direction.Left:
-            //        _animator.SetInteger("AnimationCondition", 1);
-            //        break;
-            //    case Direction.Right:
-            //        _animator.SetInteger("AnimationCondition", 4);
-            //        break;
-            //}
-
-       // }
-        
-        
-        
-            if (moveInput.y == 1)
+            _keyHeldTime += Time.deltaTime;
+            if (_keyHeldTime >= 0.1f)
             {
-               
+                if (moveInput.y == 1)
+                {
                     _animator.SetInteger("AnimationCondition", 7);
                     lastMove = Direction.Up;
-                
-            }
-            else if (moveInput.y == -1)
-            {
-                _animator.SetInteger("AnimationCondition", 6);
-                lastMove = Direction.Down;
-            }
-           
+                }
+                else if (moveInput.y == -1)
+                {
+                    _animator.SetInteger("AnimationCondition", 6);
+                    lastMove = Direction.Down;
+                }
 
-            if (moveInput.x == -1)
-            {
-                _animator.SetInteger("AnimationCondition", 5);
-                lastMove = Direction.Left;
+                if (moveInput.x == -1)
+                {
+                    _animator.SetInteger("AnimationCondition", 5);
+                    lastMove = Direction.Left;
+                }
+                else if (moveInput.x == 1)
+                {
+                    _animator.SetInteger("AnimationCondition", 8);
+                    lastMove = Direction.Right;
+                }
+                if(_keyHeldTime >=0.3f)
+                    _rigidbody.velocity = moveInput * PlayerSpeed;
             }
-            else if (moveInput.x == 1)
+            else
             {
-                _animator.SetInteger("AnimationCondition", 8);
-                lastMove = Direction.Right;
+                switch (moveInput.x)
+                {
+                    case 1:
+                        _animator.SetInteger("AnimationCondition", 4);
+                        lastMove = Direction.Right;
+                        break;
+                    case -1:
+                        _animator.SetInteger("AnimationCondition", 1);
+                        lastMove = Direction.Left;
+                        break;
+                }
+                switch(moveInput.y)
+                {
+                    case 1:
+                        _animator.SetInteger("AnimationCondition", 3);
+                        lastMove = Direction.Up;
+                        break;
+                    case -1:
+                        _animator.SetInteger("AnimationCondition", 2);
+                        lastMove= Direction.Down;
+                        break;
+                }
             }
-
-            if(moveInput == Vector2.zero && lastMove == Direction.Up)
-            {
-            _animator.SetInteger("AnimationCondition", 3);
-            }
-        else if (moveInput == Vector2.zero && lastMove == Direction.Down)
-        {
-            _animator.SetInteger("AnimationCondition", 2);
         }
-        else if (moveInput == Vector2.zero && lastMove == Direction.Left)
+        else
         {
-            _animator.SetInteger("AnimationCondition", 1);
-        }
-        else if (moveInput == Vector2.zero && lastMove == Direction.Right)
-        {
-            _animator.SetInteger("AnimationCondition", 4);
-        }
+            _rigidbody.velocity = moveInput * PlayerSpeed;
 
+            //Reset to 0
+            _keyHeldTime = 0f;
 
-
-
-
-
+            // Set Idle Animation
+            if (lastMove == Direction.Up)
+            {
+                _animator.SetInteger("AnimationCondition", 3);
+            }
+            else if (lastMove == Direction.Down)
+            {
+                _animator.SetInteger("AnimationCondition", 2);
+            }
+            else if (lastMove == Direction.Left)
+            {
+                _animator.SetInteger("AnimationCondition", 1);
+            }
+            else if (lastMove == Direction.Right)
+            {
+                _animator.SetInteger("AnimationCondition", 4);
+            }
+        }        
 
     }
     /// <summary>

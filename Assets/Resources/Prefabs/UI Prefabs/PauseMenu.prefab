@@ -2065,6 +2065,7 @@ GameObject:
   - component: {fileID: 5418320647651298012}
   - component: {fileID: 3756401149375338027}
   - component: {fileID: 2916891000526971472}
+  - component: {fileID: 3045820216462916956}
   m_Layer: 5
   m_Name: SaveButton
   m_TagString: Untagged
@@ -2175,6 +2176,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &3045820216462916956
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667703482187998612}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 32d95425218a95d48b5e69d3201dc712, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7814361102702261841
 GameObject:
   m_ObjectHideFlags: 0
