@@ -73,6 +73,7 @@ public class ClueManager : MonoBehaviour
         catch
         {
             Debug.LogError("Clue Menu is Null");
+            StartCoroutine(WaitToGrabRequired());
         }
     }
     public void AddClueButton(Clue clue)
@@ -163,6 +164,6 @@ public class ClueManager : MonoBehaviour
     void OnDisable()
     {
         Debug.Log("Clue Manager Disable");
-        //SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
