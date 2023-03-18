@@ -198,7 +198,7 @@ public class Damien : Character
         //Creating a Question
 
         ExampleInterrogationConvo4.Question1 = new Question();
-        ExampleInterrogationConvo4.Question1.QuestionText = "If you say so...";
+        ExampleInterrogationConvo4.Question1.QuestionText = "If you say so... [Back to the first screen]";
         ExampleInterrogationConvo4.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question2 = new Question();
@@ -222,7 +222,7 @@ public class Damien : Character
         //Creating a Question
 
         ExampleInterrogationConvo5.Question1 = new Question();
-        ExampleInterrogationConvo5.Question1.QuestionText = "Oh really...";
+        ExampleInterrogationConvo5.Question1.QuestionText = "Oh really... [Back to the first screen]";
         ExampleInterrogationConvo5.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo5.Question2 = new Question();
@@ -254,7 +254,7 @@ public class Damien : Character
         ExampleInterrogationConvo6.Question2.NextElementNumber = 10;
 
         ExampleInterrogationConvo6.Question3 = new Question();
-        ExampleInterrogationConvo6.Question3.QuestionText = "Ah, okay";
+        ExampleInterrogationConvo6.Question3.QuestionText = "Ah, okay [Back to the first screen]";
         ExampleInterrogationConvo6.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo6);
@@ -270,7 +270,7 @@ public class Damien : Character
         //Creating a Question
 
         ExampleInterrogationConvo7.Question1 = new Question();
-        ExampleInterrogationConvo7.Question1.QuestionText = "Fair Enough ";
+        ExampleInterrogationConvo7.Question1.QuestionText = "Fair Enough [Back to the first screen]";
         ExampleInterrogationConvo7.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo7.Question2 = new Question();
@@ -294,7 +294,7 @@ public class Damien : Character
         //Creating a Question
 
         ExampleInterrogationConvo8.Question1 = new Question();
-        ExampleInterrogationConvo8.Question1.QuestionText = "*eyebrow raised* Hm, okay";
+        ExampleInterrogationConvo8.Question1.QuestionText = "*eyebrow raised* Hm, okay (Back to the first screen)";
         ExampleInterrogationConvo8.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question2 = new Question();
@@ -318,7 +318,7 @@ public class Damien : Character
         //Creating a Question
 
         ExampleInterrogationConvo9.Question1 = new Question();
-        ExampleInterrogationConvo9.Question1.QuestionText = "(Thinking to herself) It seems I might need something more to get him to open up about Karol ";
+        ExampleInterrogationConvo9.Question1.QuestionText = "(Thinking to herself) It seems I might need something more to get him to open up about Karol [Back to the first screen]";
         ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
@@ -342,7 +342,7 @@ public class Damien : Character
         //Creating a Question
 
         ExampleInterrogationConvo10.Question1 = new Question();
-        ExampleInterrogationConvo10.Question1.QuestionText = "Ah, alright ";
+        ExampleInterrogationConvo10.Question1.QuestionText = "Ah, alright [Back to the first screen]";
         ExampleInterrogationConvo10.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question2 = new Question();
@@ -482,7 +482,7 @@ public class Damien : Character
         //Creating a Question
 
         ExampledialogueAfterClue5.Question1 = new Question();
-        ExampledialogueAfterClue5.Question1.QuestionText = "I see";
+        ExampledialogueAfterClue5.Question1.QuestionText = "I see [Back to previous screen]";
         ExampledialogueAfterClue5.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue5.Question2 = new Question();
@@ -499,7 +499,7 @@ public class Damien : Character
         DialogueAfterClue ExampledialogueAfterClue6 = new DialogueAfterClue();
         ExampledialogueAfterClue6.CorrectClue = true;
         ExampledialogueAfterClue6.EndInterrogation = true;
-        ExampledialogueAfterClue6.NoQuestions = false;
+        ExampledialogueAfterClue6.NoQuestions = true;
         ExampledialogueAfterClue6.NPCTalking = true;
         ExampledialogueAfterClue6.Response = " Yes";
         // DialogueAfterClues.Add(ExampledialogueAfterClue3);

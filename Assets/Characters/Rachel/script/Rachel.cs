@@ -204,7 +204,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampleInterrogationConvo4.Question1 = new Question();
-        ExampleInterrogationConvo4.Question1.QuestionText = "Of Course";
+        ExampleInterrogationConvo4.Question1.QuestionText = "Of Course [Back to the first screen]";
         ExampleInterrogationConvo4.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question2 = new Question();
@@ -231,7 +231,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampleInterrogationConvo5.Question1 = new Question();
-        ExampleInterrogationConvo5.Question1.QuestionText = "Next";
+        ExampleInterrogationConvo5.Question1.QuestionText = "[Next]";
         ExampleInterrogationConvo5.Question1.NextElementNumber = 6;
 
         ExampleInterrogationConvo5.Question2 = new Question();
@@ -285,7 +285,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampleInterrogationConvo7.Question1 = new Question();
-        ExampleInterrogationConvo7.Question1.QuestionText = "Ah, alright";
+        ExampleInterrogationConvo7.Question1.QuestionText = "Ah, alright [Back to the first screen]";
         ExampleInterrogationConvo7.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo7.Question2 = new Question();
@@ -312,7 +312,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampleInterrogationConvo8.Question1 = new Question();
-        ExampleInterrogationConvo8.Question1.QuestionText = "I'll make sure to ask him";
+        ExampleInterrogationConvo8.Question1.QuestionText = "I'll make sure to ask him [Back to the first screen]";
         ExampleInterrogationConvo8.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question2 = new Question();
@@ -339,7 +339,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampleInterrogationConvo9.Question1 = new Question();
-        ExampleInterrogationConvo9.Question1.QuestionText = "I'll make sure to ask him";
+        ExampleInterrogationConvo9.Question1.QuestionText = "[Back to the first screen]";
         ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
@@ -555,7 +555,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampleInterrogationConvo17.Question1 = new Question();
-        ExampleInterrogationConvo17.Question1.QuestionText = "Okay! Okay...";
+        ExampleInterrogationConvo17.Question1.QuestionText = "Okay! Okay... [Back to the first screen]";
         ExampleInterrogationConvo17.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo17.Question2 = new Question();
@@ -582,7 +582,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampleInterrogationConvo18.Question1 = new Question();
-        ExampleInterrogationConvo18.Question1.QuestionText = "Back ";
+        ExampleInterrogationConvo18.Question1.QuestionText = "[Back] ";
         ExampleInterrogationConvo18.Question1.NextElementNumber = 14;
 
         ExampleInterrogationConvo18.Question2 = new Question();
@@ -670,7 +670,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampledialogueAfterClue3.Question1 = new Question();
-        ExampledialogueAfterClue3.Question1.QuestionText = "I see";
+        ExampledialogueAfterClue3.Question1.QuestionText = "I see [Back to the first screen]";
         ExampledialogueAfterClue3.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue3.Question2 = new Question();
@@ -695,7 +695,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampledialogueAfterClue4.Question1 = new Question();
-        ExampledialogueAfterClue4.Question1.QuestionText = "Hmm";
+        ExampledialogueAfterClue4.Question1.QuestionText = "Hmm [Back to the first screen]";
         ExampledialogueAfterClue4.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue4.Question2 = new Question();
@@ -720,7 +720,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampledialogueAfterClue5.Question1 = new Question();
-        ExampledialogueAfterClue5.Question1.QuestionText = "Hmmm";
+        ExampledialogueAfterClue5.Question1.QuestionText = "Hmmm [Back to the first screen]";
         ExampledialogueAfterClue5.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue5.Question2 = new Question();

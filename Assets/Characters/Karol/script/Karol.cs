@@ -193,7 +193,7 @@ public class Karol : Character
         //Creating a Question
 
         ExampleInterrogationConvo4.Question1 = new Question();
-        ExampleInterrogationConvo4.Question1.QuestionText = "Hm... ";
+        ExampleInterrogationConvo4.Question1.QuestionText = "Hm... [Back to the first screen]";
         ExampleInterrogationConvo4.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question2 = new Question();
@@ -217,7 +217,7 @@ public class Karol : Character
         //Creating a Question
 
         ExampleInterrogationConvo5.Question1 = new Question();
-        ExampleInterrogationConvo5.Question1.QuestionText = " Okay, I think I know enough now...";
+        ExampleInterrogationConvo5.Question1.QuestionText = " Okay, I think I know enough now... [Back to the first screen]";
         ExampleInterrogationConvo5.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo5.Question2 = new Question();
@@ -289,7 +289,7 @@ public class Karol : Character
         //Creating a Question
 
         ExampleInterrogationConvo8.Question1 = new Question();
-        ExampleInterrogationConvo8.Question1.QuestionText = "Hm!";
+        ExampleInterrogationConvo8.Question1.QuestionText = "Hm! [Back to the first screen]";
         ExampleInterrogationConvo8.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question2 = new Question();
@@ -313,7 +313,7 @@ public class Karol : Character
         //Creating a Question
 
         ExampleInterrogationConvo9.Question1 = new Question();
-        ExampleInterrogationConvo9.Question1.QuestionText = "(Thinking to herself) It seems I might need something more to get her to open up about Damien ";
+        ExampleInterrogationConvo9.Question1.QuestionText = "(Thinking to herself) It seems I might need something more to get her to open up about Damien [Back to the first screen]";
         ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
@@ -453,7 +453,7 @@ public class Karol : Character
         //Creating a Question
 
         ExampledialogueAfterClue5.Question1 = new Question();
-        ExampledialogueAfterClue5.Question1.QuestionText = "Previous Screen ";
+        ExampledialogueAfterClue5.Question1.QuestionText = "[Previous Screen] ";
         ExampledialogueAfterClue5.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue5.Question2 = new Question();
@@ -528,7 +528,7 @@ public class Karol : Character
         //Creating a Question
 
         ExampledialogueAfterClue8.Question1 = new Question();
-        ExampledialogueAfterClue8.Question1.QuestionText = "*chokes* ";
+        ExampledialogueAfterClue8.Question1.QuestionText = "*chokes* [Back to the first screen]";
         ExampledialogueAfterClue8.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue8.Question2 = new Question();
