@@ -196,7 +196,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo4.Question1 = new Question();
-        ExampleInterrogationConvo4.Question1.QuestionText = "Next";
+        ExampleInterrogationConvo4.Question1.QuestionText = "[Next]";
         ExampleInterrogationConvo4.Question1.NextElementNumber = 5;
 
         ExampleInterrogationConvo4.Question2 = new Question();
@@ -223,7 +223,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo5.Question1 = new Question();
-        ExampleInterrogationConvo5.Question1.QuestionText = "Next";
+        ExampleInterrogationConvo5.Question1.QuestionText = "[Next]";
         ExampleInterrogationConvo5.Question1.NextElementNumber = 6;
 
         ExampleInterrogationConvo5.Question2 = new Question();
@@ -277,7 +277,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo7.Question1 = new Question();
-        ExampleInterrogationConvo7.Question1.QuestionText = "Next";
+        ExampleInterrogationConvo7.Question1.QuestionText = "[Next]";
         ExampleInterrogationConvo7.Question1.NextElementNumber = 8;
 
         ExampleInterrogationConvo7.Question2 = new Question();
@@ -304,7 +304,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo8.Question1 = new Question();
-        ExampleInterrogationConvo8.Question1.QuestionText = "Next";
+        ExampleInterrogationConvo8.Question1.QuestionText = "[Next]";
         ExampleInterrogationConvo8.Question1.NextElementNumber = 9;
 
         ExampleInterrogationConvo8.Question2 = new Question();
@@ -387,7 +387,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo11.Question1 = new Question();
-        ExampleInterrogationConvo11.Question1.QuestionText = "Next";
+        ExampleInterrogationConvo11.Question1.QuestionText = "[Next]";
         ExampleInterrogationConvo11.Question1.NextElementNumber = 12;
 
         ExampleInterrogationConvo11.Question2 = new Question();
@@ -441,7 +441,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo13.Question1 = new Question();
-        ExampleInterrogationConvo13.Question1.QuestionText = "Next";
+        ExampleInterrogationConvo13.Question1.QuestionText = "[Next]";
         ExampleInterrogationConvo13.Question1.NextElementNumber = 14;
 
         ExampleInterrogationConvo13.Question2 = new Question();
@@ -550,7 +550,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo17.Question1 = new Question();
-        ExampleInterrogationConvo17.Question1.QuestionText = "Fair Enough. Let's get back on track...";
+        ExampleInterrogationConvo17.Question1.QuestionText = "Fair Enough. Let's get back on track... [Back to the first screen]";
         ExampleInterrogationConvo17.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo17.Question2 = new Question();
@@ -577,7 +577,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo18.Question1 = new Question();
-        ExampleInterrogationConvo18.Question1.QuestionText = "Hmm, okay...";
+        ExampleInterrogationConvo18.Question1.QuestionText = "Hmm, okay... [Back to the first screen]";
         ExampleInterrogationConvo18.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo18.Question2 = new Question();
@@ -604,7 +604,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo19.Question1 = new Question();
-        ExampleInterrogationConvo19.Question1.QuestionText = "I see... ";
+        ExampleInterrogationConvo19.Question1.QuestionText = "I see... [Back to the first screen]";
         ExampleInterrogationConvo19.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo19.Question2 = new Question();
@@ -719,7 +719,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampledialogueAfterClue4.Question1 = new Question();
-        ExampledialogueAfterClue4.Question1.QuestionText = "Previous Screen";
+        ExampledialogueAfterClue4.Question1.QuestionText = "[Previous Screen]";
         ExampledialogueAfterClue4.Question1.NextElementNumber = 2;
 
         ExampledialogueAfterClue4.Question2 = new Question();
@@ -744,7 +744,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampledialogueAfterClue5.Question1 = new Question();
-        ExampledialogueAfterClue5.Question1.QuestionText = "Next";
+        ExampledialogueAfterClue5.Question1.QuestionText = "[Next]";
         ExampledialogueAfterClue5.Question1.NextElementNumber = 5;
 
         ExampledialogueAfterClue5.Question2 = new Question();
@@ -769,7 +769,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampledialogueAfterClue6.Question1 = new Question();
-        ExampledialogueAfterClue6.Question1.QuestionText = "Next";
+        ExampledialogueAfterClue6.Question1.QuestionText = "[Next]";
         ExampledialogueAfterClue6.Question1.NextElementNumber = 6;
 
         ExampledialogueAfterClue6.Question2 = new Question();
@@ -794,7 +794,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampledialogueAfterClue7.Question1 = new Question();
-        ExampledialogueAfterClue7.Question1.QuestionText = "Next";
+        ExampledialogueAfterClue7.Question1.QuestionText = "[Next]";
         ExampledialogueAfterClue7.Question1.NextElementNumber = 7;
 
         ExampledialogueAfterClue7.Question2 = new Question();
@@ -869,7 +869,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampledialogueAfterClue10.Question1 = new Question();
-        ExampledialogueAfterClue10.Question1.QuestionText = "Hmm... ";
+        ExampledialogueAfterClue10.Question1.QuestionText = "Hmm... [Back to the first screen]";
         ExampledialogueAfterClue10.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue10.Question2 = new Question();

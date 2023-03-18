@@ -62,7 +62,8 @@ public class OldCrazyMan : Character
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
-            ExampleForAfterMurder.Text = "Precious....My precious gears, are they safe?";
+            //ExampleForAfterMurder.Text = "Precious....My precious gears, are they safe?";
+            ExampleForAfterMurder.Text = "Looking for the right plant? It's located in the top right corner of the next room... The Gears Have Spoken!";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
@@ -151,7 +152,7 @@ public class OldCrazyMan : Character
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
-        ExampleInterrogationConvo3.Question1.QuestionText = "Okay...";
+        ExampleInterrogationConvo3.Question1.QuestionText = "Okay... [Back to the first screen]";
         ExampleInterrogationConvo3.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo3.Question2 = new Question();
@@ -179,7 +180,7 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo4.Question1.NextElementNumber = 5;
 
         ExampleInterrogationConvo4.Question2 = new Question();
-        ExampleInterrogationConvo4.Question2.QuestionText = "I'm the one asking the questions here!";
+        ExampleInterrogationConvo4.Question2.QuestionText = "I'm the one asking the questions here! [Back to the first screen]";
         ExampleInterrogationConvo4.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question3 = new Question();
@@ -223,7 +224,7 @@ public class OldCrazyMan : Character
         //Creating a Question
 
         ExampleInterrogationConvo6.Question1 = new Question();
-        ExampleInterrogationConvo6.Question1.QuestionText = "Nevermind, let's get back on track ";
+        ExampleInterrogationConvo6.Question1.QuestionText = "Nevermind, let's get back on track [Back to the first screen]";
         ExampleInterrogationConvo6.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo6.Question2 = new Question();
@@ -247,7 +248,7 @@ public class OldCrazyMan : Character
         //Creating a Question
 
         ExampleInterrogationConvo7.Question1 = new Question();
-        ExampleInterrogationConvo7.Question1.QuestionText = "*clutches face in disbelief* Okay, we're getting a bit sidetracked here. I'll ask again...";
+        ExampleInterrogationConvo7.Question1.QuestionText = "*clutches face in disbelief* Okay, we're getting a bit sidetracked here. I'll ask again... [Back to the first screen]";
         ExampleInterrogationConvo7.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo7.Question2 = new Question();
@@ -271,7 +272,7 @@ public class OldCrazyMan : Character
         //Creating a Question
 
         ExampleInterrogationConvo8.Question1 = new Question();
-        ExampleInterrogationConvo8.Question1.QuestionText = "Hey! Let's get back on track. Now... ";
+        ExampleInterrogationConvo8.Question1.QuestionText = "Hey! Let's get back on track. Now... [Back to the first screen]";
         ExampleInterrogationConvo8.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question2 = new Question();
@@ -295,7 +296,7 @@ public class OldCrazyMan : Character
         //Creating a Question
 
         ExampleInterrogationConvo9.Question1 = new Question();
-        ExampleInterrogationConvo9.Question1.QuestionText = "Next";
+        ExampleInterrogationConvo9.Question1.QuestionText = "[Next]";
         ExampleInterrogationConvo9.Question1.NextElementNumber = 10;
 
         ExampleInterrogationConvo9.Question2 = new Question();
@@ -319,7 +320,7 @@ public class OldCrazyMan : Character
         //Creating a Question
 
         ExampleInterrogationConvo10.Question1 = new Question();
-        ExampleInterrogationConvo10.Question1.QuestionText = "*rolling her eyes* ...Thanks? Now, back to the questions...";
+        ExampleInterrogationConvo10.Question1.QuestionText = "*rolling her eyes* ...Thanks? Now, back to the questions... [Back to the first screen]";
         ExampleInterrogationConvo10.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question2 = new Question();
@@ -381,7 +382,7 @@ public class OldCrazyMan : Character
         //Creating a Question
 
         ExampledialogueAfterClue2.Question1 = new Question();
-        ExampledialogueAfterClue2.Question1.QuestionText = "Okay...";
+        ExampledialogueAfterClue2.Question1.QuestionText = "Okay... [Back to the first screen]";
         ExampledialogueAfterClue2.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue2.Question2 = new Question();

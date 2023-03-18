@@ -235,7 +235,7 @@ public class John : Character
         //Creating a Question
 
         ExampleInterrogationConvo6.Question1 = new Question();
-        ExampleInterrogationConvo6.Question1.QuestionText = "Back ";
+        ExampleInterrogationConvo6.Question1.QuestionText = "[Back to the first screen]";
         ExampleInterrogationConvo6.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo6.Question2 = new Question();
@@ -308,7 +308,7 @@ public class John : Character
         //Creating a Question
 
         ExampleInterrogationConvo9.Question1 = new Question();
-        ExampleInterrogationConvo9.Question1.QuestionText = "Nikki always was a kind soul...";
+        ExampleInterrogationConvo9.Question1.QuestionText = "Nikki always was a kind soul... [Back to the first screen]";
         ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
@@ -380,7 +380,7 @@ public class John : Character
         //Creating a Question
 
         ExampleInterrogationConvo12.Question1 = new Question();
-        ExampleInterrogationConvo12.Question1.QuestionText = "Right... ";
+        ExampleInterrogationConvo12.Question1.QuestionText = "Right... [Back to the first screen]";
         ExampleInterrogationConvo12.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo12.Question2 = new Question();

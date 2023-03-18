@@ -205,7 +205,7 @@ public class Jayson : Character
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
-        ExampleInterrogationConvo3.Question1.QuestionText = "(Sticks tongue out) It still don't make sense though.";
+        ExampleInterrogationConvo3.Question1.QuestionText = "(Sticks tongue out) It still don't make sense though [Back to the first screen]";
         ExampleInterrogationConvo3.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo3.Question2 = new Question();
@@ -370,7 +370,7 @@ public class Jayson : Character
         //Creating a Question
 
         ExampleInterrogationConvo9.Question1 = new Question();
-        ExampleInterrogationConvo9.Question1.QuestionText = "I see...";
+        ExampleInterrogationConvo9.Question1.QuestionText = "I see... [Back to the first screen]";
         ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
@@ -397,7 +397,7 @@ public class Jayson : Character
         //Creating a Question
 
         ExampleInterrogationConvo10.Question1 = new Question();
-        ExampleInterrogationConvo10.Question1.QuestionText = "(rolls eyes) Gee, that's really helpful";
+        ExampleInterrogationConvo10.Question1.QuestionText = "(rolls eyes) Gee, that's really helpful [Back to the first screen]";
         ExampleInterrogationConvo10.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question2 = new Question();
@@ -532,7 +532,7 @@ public class Jayson : Character
         //Creating a Question
 
         ExampleInterrogationConvo15.Question1 = new Question();
-        ExampleInterrogationConvo15.Question1.QuestionText = "Ummm, let's get back on track...";
+        ExampleInterrogationConvo15.Question1.QuestionText = "Ummm, let's get back on track... [Back to the first screen]";
         ExampleInterrogationConvo15.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo15.Question2 = new Question();
@@ -559,7 +559,7 @@ public class Jayson : Character
         //Creating a Question
 
         ExampleInterrogationConvo16.Question1 = new Question();
-        ExampleInterrogationConvo16.Question1.QuestionText = "*Give Jayson a reassuring smile*";
+        ExampleInterrogationConvo16.Question1.QuestionText = "*Give Jayson a reassuring smile* [Back to the first screen]";
         ExampleInterrogationConvo16.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo16.Question2 = new Question();
@@ -586,7 +586,7 @@ public class Jayson : Character
         //Creating a Question
 
         ExampleInterrogationConvo17.Question1 = new Question();
-        ExampleInterrogationConvo17.Question1.QuestionText = "*gasps* I never would have guessed! Genius!!";
+        ExampleInterrogationConvo17.Question1.QuestionText = "*gasps* I never would have guessed! Genius!! [Back to the first screen]";
         ExampleInterrogationConvo17.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo17.Question2 = new Question();
