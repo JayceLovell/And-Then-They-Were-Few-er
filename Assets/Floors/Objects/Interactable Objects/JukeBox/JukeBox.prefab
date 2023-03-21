@@ -52,7 +52,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
@@ -125,8 +125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2792fa5d25bd8f143906bcc0c7d56dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClueStatementText: 
+  ClueStatement: {fileID: 0}
   objectType: 8
-  Dialog: The JukeBox is playing a lovelly melody.
   DialogueForObject: []
   _playingAnimation: {fileID: 5105397124060837197}
 --- !u!95 &5105397124060837197
