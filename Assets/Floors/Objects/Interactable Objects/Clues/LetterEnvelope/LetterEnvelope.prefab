@@ -51,7 +51,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
@@ -98,10 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d9969ae2c913a47b024d347374564e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectType: 2
-  Dialog: Now I wonder who would be writing to Karol...
   ClueStatementText: A letter that seems to be addressed to Karol
   ClueStatement: {fileID: 11400000, guid: 52baf6bcfbca9a24cb1e6065720093c4, type: 2}
+  objectType: 2
+  DialogueForObject: []
 --- !u!61 &254073631070774349
 BoxCollider2D:
   m_ObjectHideFlags: 0
