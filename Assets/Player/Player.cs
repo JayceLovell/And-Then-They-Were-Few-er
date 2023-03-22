@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private Animator _animator;
     private bool _talking;
     private float _keyHeldTime;
+    private float _idleTime;
 
     private GameController _gameController;
 
@@ -69,6 +70,7 @@ public class Player : MonoBehaviour
         
         if(moveInput!= Vector2.zero)
         {
+            _idleTime = 0.0f;
             _keyHeldTime += Time.deltaTime;
             if (_keyHeldTime >= 0.1f)
             {
@@ -97,29 +99,29 @@ public class Player : MonoBehaviour
                     _rigidbody.velocity = moveInput * PlayerSpeed;
             }
             else
-            {
-                switch (moveInput.x)
-                {
-                    case 1:
-                        _animator.SetInteger("AnimationCondition", 4);
-                        lastMove = Direction.Right;
-                        break;
-                    case -1:
-                        _animator.SetInteger("AnimationCondition", 1);
-                        lastMove = Direction.Left;
-                        break;
-                }
-                switch(moveInput.y)
-                {
-                    case 1:
-                        _animator.SetInteger("AnimationCondition", 3);
-                        lastMove = Direction.Up;
-                        break;
-                    case -1:
-                        _animator.SetInteger("AnimationCondition", 2);
-                        lastMove= Direction.Down;
-                        break;
-                }
+            {                
+                    switch (moveInput.x)
+                    {
+                        case 1:
+                            _animator.SetInteger("AnimationCondition", 4);
+                            lastMove = Direction.Right;
+                            break;
+                        case -1:
+                            _animator.SetInteger("AnimationCondition", 1);
+                            lastMove = Direction.Left;
+                            break;
+                    }
+                    switch (moveInput.y)
+                    {
+                        case 1:
+                            _animator.SetInteger("AnimationCondition", 3);
+                            lastMove = Direction.Up;
+                            break;
+                        case -1:
+                            _animator.SetInteger("AnimationCondition", 2);
+                            lastMove = Direction.Down;
+                            break;
+                    }                
             }
         }
         else
@@ -129,8 +131,14 @@ public class Player : MonoBehaviour
             //Reset to 0
             _keyHeldTime = 0f;
 
+            _idleTime += Time.deltaTime;
+
             // Set Idle Animation
-            if (lastMove == Direction.Up)
+            if (_idleTime > 15.0f)
+            {
+                _animator.SetInteger("AnimationCondition", 9);
+            }            
+            else if (lastMove == Direction.Up)
             {
                 _animator.SetInteger("AnimationCondition", 3);
             }
@@ -146,7 +154,7 @@ public class Player : MonoBehaviour
             {
                 _animator.SetInteger("AnimationCondition", 4);
             }
-        }        
+        }    
 
     }
     /// <summary>
