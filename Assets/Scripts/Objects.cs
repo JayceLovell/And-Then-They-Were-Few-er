@@ -15,6 +15,8 @@ public class Objects : MonoBehaviour
     protected DialogueObjectController _dialogueObjectController;
     protected GameController _gameController;
 
+    [Tooltip("Only fill these out if clue is selected")]
+    [Header("Clue stuff")]
     public string ClueStatementText;
     public Clue ClueStatement;
 
@@ -41,9 +43,10 @@ public class Objects : MonoBehaviour
         RoomSwitch,
         PlayerReadyTrigger,
         JukeBox,
+        LightMachine,
         Fountain
     }
-
+    [Space(10)]
     public TypeOfObject objectType;
 
     /// <summary>
@@ -62,9 +65,9 @@ public class Objects : MonoBehaviour
         /// <summary>
         /// True to End Interaction with object after this Element
         /// </summary>
-        public bool EndInteraction;
+        public bool EndInteraction = false;
         /// <summary>
-        /// Next Element to go to YOU ONLY NEED TO PLACE THIS IF YOU HAVE NO Options
+        /// Next Element to go to.
         /// </summary>
         public int NextElementNumber;
 
@@ -202,12 +205,20 @@ public class Objects : MonoBehaviour
         if (DialogueForObject[_index].EndInteraction)
         {
             _index = 0;
+            
+            // Release player
             GameObject.Find("Player").GetComponent<Player>().Talking = false;
+
+            //Remove Clue from game
             if (objectType == TypeOfObject.Clue)
             {
                 ClueManager.Instance.AddClue(ClueStatement);                
                 Destroy(this.gameObject);
             }
+
+            //Remove DialogueBox if player havn't move
+            yield return new WaitForSeconds(2.0f);
+            _dialogueObjectController.Display(false);
         }
         else
           _index++;

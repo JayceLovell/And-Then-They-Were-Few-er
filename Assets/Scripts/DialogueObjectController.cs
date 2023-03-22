@@ -232,14 +232,17 @@ public class DialogueObjectController : MonoBehaviour
             case 1:
                 Question1 = OptionText;
                 QuestionButton1.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject),new object[] { OptionNumber }));
-                    break;
+                QuestionButton1.interactable = true;
+                break;
             case 2:
                 Question2 = OptionText;
                 QuestionButton2.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject),new object[] { OptionNumber }));
+                QuestionButton2.interactable = true;
                 break;
             case 3:
                 Question3 = OptionText;
                 QuestionButton3.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject), new object[] { OptionNumber }));
+                QuestionButton3.interactable = true;
                 break;
             default:
                 Debug.LogError("Option out of bounds");
