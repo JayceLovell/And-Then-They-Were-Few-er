@@ -87,7 +87,11 @@ public class TextController : MonoBehaviour
         IntroText = "Ashlyn Hunt, our intrepid detective, has been invited by her friend Nikki Test to her invention showcase. \r\n\r\nAshlyn arrives, and is welcomed by Watson, Nikki's robot butler. \r\n\r\nWith Ashlyn being the last guest to arrive, Watson makes his departure, and Ashlyn goes on to interact with the other guests...";
 
         // Game Won text
-        GameWonText = "Ashlyn correctly deduces that it was Rachel that was the murderer. \r\n\r\nRachel and Nikki had got into an argument about Nikki joining the family business. In a fit of anger, Rachel had pushed Nikki and she hit her head, dying due to blood loss.\r\n\r\nRachel is remorseful and accepts her fate. Once the storm clears she is escorted by Ashlyn and the Mayor to the Police Station\r\n";
+        GameWonText = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+            "She now knew the identity of Nikki's murderer. And yet..." + "\r\n\r\n\"It was Rachel. She murdered Nikki!\" Ashlyn says, to the astonishment and disbelief of the other guests." + "\r\n\r\nRachel sighs, stands up, and slowly nods her head as she begins to sob." +
+            "\r\n\r\nRachel tearfully explains how she and Nikki had got into an argument about Nikki joining the family business, after the showcase. In a fit of anger, Rachel had pushed Nikki and she hit her head, dying due to blood loss." +
+            "\r\n\r\nOnce the storm clears, Rachel is escorted by Ashlyn and the Mayor to the Police Station. Rachel is remorseful and accepts her fate..." +
+            "\r\n\r\nRACHEL IS THE MURDERER";
 
         // Game Time Out
         TimeOutText = "Ashlyn was unable to deduce the identity of the murderer. \r\n\r\nThe storm outside clears up, but the tempest of unsatisfaction within Ashlyn's soul will never stop, knowing that Nikki's murderer will never be brought to justice...";
@@ -173,11 +177,11 @@ public class TextController : MonoBehaviour
 		
 		GameOverText Rachel = new GameOverText();
         Rachel.SelectCharacterName = Character.CharacterName.Rachel;
-        Rachel.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+        Rachel.text = "RAKKELL" /*"Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
             "She now knew the identity of Nikki's murderer. And yet..." + "\r\n\r\n\"It was Rachel. She murdered Nikki!\" Ashlyn says, to the astonishment and disbelief of the other guests." + "\r\n\r\nRachel sighs, stands up, and slowly nods her head as she begins to sob." +
             "\r\n\r\nRachel tearfully explains how she and Nikki had got into an argument about Nikki joining the family business, after the showcase. In a fit of anger, Rachel had pushed Nikki and she hit her head, dying due to blood loss." +
             "\r\n\r\nOnce the storm clears, Rachel is escorted by Ashlyn and the Mayor to the Police Station. Rachel is remorseful and accepts her fate..." +
-            "\r\n\r\nRACHEL IS THE MURDERER";
+            "\r\n\r\nRACHEL IS THE MURDERER"*/;
         GameOverTexts.Add(Rachel);
     }
     /// <summary>
