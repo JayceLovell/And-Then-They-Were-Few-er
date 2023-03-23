@@ -195,20 +195,23 @@ public class DialogueObjectController : MonoBehaviour
         {
             case 1:
                 Question1= QuestionText;
-                if(End)
+                QuestionButton1.onClick.RemoveAllListeners();
+                if (End)
                     QuestionButton1.onClick.AddListener(()=>_interrogationController.OnQuit());
                 else
                     QuestionButton1.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
                 break;
             case 2:
                 Question2= QuestionText;
-                if(End)
+                QuestionButton2.onClick.RemoveAllListeners();
+                if (End)
                     QuestionButton2.onClick.AddListener(() => _interrogationController.OnQuit());
                 else
                     QuestionButton2.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
                 break;
             case 3:            
                 Question3= QuestionText;
+                QuestionButton3.onClick.RemoveAllListeners();
                 if (End)
                     QuestionButton3.onClick.AddListener(() => _interrogationController.OnQuit());
                 else
@@ -231,16 +234,19 @@ public class DialogueObjectController : MonoBehaviour
         {
             case 1:
                 Question1 = OptionText;
+                QuestionButton1.onClick.RemoveAllListeners();
                 QuestionButton1.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject),new object[] { OptionNumber }));
                 QuestionButton1.interactable = true;
                 break;
             case 2:
                 Question2 = OptionText;
+                QuestionButton2.onClick.RemoveAllListeners();
                 QuestionButton2.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject),new object[] { OptionNumber }));
                 QuestionButton2.interactable = true;
                 break;
             case 3:
                 Question3 = OptionText;
+                QuestionButton3.onClick.RemoveAllListeners();
                 QuestionButton3.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject), new object[] { OptionNumber }));
                 QuestionButton3.interactable = true;
                 break;

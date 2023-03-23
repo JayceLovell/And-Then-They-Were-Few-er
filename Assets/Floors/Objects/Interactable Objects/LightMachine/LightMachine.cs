@@ -139,14 +139,15 @@ public class LightMachine : Objects
         base.Use();
     }
 
-    public override void OptionSelected(int index)
+    public override void OptionSelected(int OptionSelected)
     {
+        int TempIndex = _index;
         //first check how far we are in the dialogue
         switch (_index)
         {
             case 2:
                 // All Options will start with 1
-                switch (index)
+                switch (OptionSelected)
                 {
                     case 1:
                         if (Cycle)
@@ -159,71 +160,62 @@ public class LightMachine : Objects
 
                         Animator.SetBool("Cycle", Cycle);
 
-                        _index = DialogueForObject[_index-1].Option1.NextElementNumber;
-                        Use();
+                        TempIndex = DialogueForObject[_index-1].Option1.NextElementNumber;                        
                         break;
-                    case 2:                       
-                        _index = DialogueForObject[_index-1].Option2.NextElementNumber;
-                        Use();
+                    case 2:
+                        TempIndex = DialogueForObject[_index-1].Option2.NextElementNumber;                        
                         break;                      
                 }
                 break;
             case 3:
                 Animator.enabled = false;
-                switch (index)
+                switch (OptionSelected)
                 {
                     case 1:                        
                         Renderer.sprite = Blue;
-                        _index = DialogueForObject[_index - 1].Option1.NextElementNumber;
-                        Use();
-                        break;
+                        TempIndex = DialogueForObject[_index - 1].Option1.NextElementNumber;                        
+                       break;
                     case 2:                        
                         Renderer.sprite = Orange;
-                        _index = DialogueForObject[_index - 1].Option2.NextElementNumber;
-                        Use();
+                        TempIndex = DialogueForObject[_index - 1].Option2.NextElementNumber;                        
                         break;
                     case 3:
-                        _index = DialogueForObject[_index - 1].Option3.NextElementNumber;
-                        Use();
+                        TempIndex = DialogueForObject[_index - 1].Option3.NextElementNumber;                        
                         break;
                 }
                 break;
             case 4:
                 Animator.enabled = false;
-                switch (index)
+                switch (OptionSelected)
                 {
                     case 1:
                         Renderer.sprite = Red;
-                        _index = DialogueForObject[_index - 1].Option1.NextElementNumber;
-                        InDialog = false;
-                        Use();
-                        break;
+                        TempIndex = DialogueForObject[_index - 1].Option1.NextElementNumber;                                              
+                    break;
                     case 2:
                         Renderer.sprite = Yellow;
-                        _index = DialogueForObject[_index - 1].Option2.NextElementNumber;
-                        Use();
+                        TempIndex = DialogueForObject[_index - 1].Option2.NextElementNumber;                        
                         break;
                     case 3:
-                        _index = DialogueForObject[_index - 1].Option3.NextElementNumber;
-                        Use();
+                        TempIndex = DialogueForObject[_index - 1].Option3.NextElementNumber;                        
                         break;
                 }
                 break;
             case 5:
                 Animator.enabled = false;
-                switch (index)
+                switch (OptionSelected)
                 {
                     case 1:
                         Renderer.sprite = Brown;
-                        _index = DialogueForObject[_index - 1].Option1.NextElementNumber;
-                        Use();
+                        TempIndex = DialogueForObject[_index - 1].Option1.NextElementNumber;                        
                         break;
                     case 2:
-                        _index = DialogueForObject[_index - 1].Option3.NextElementNumber;
-                        Use();
+                        TempIndex = DialogueForObject[_index - 1].Option2.NextElementNumber;                        
                         break;
                 }
                 break;
         }
+        _index = TempIndex;
+        Use();
     }
 }
