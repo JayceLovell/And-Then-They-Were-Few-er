@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeadRobot : Clues
+public class DeadWattson : Clues
 {
 	protected override void SetUpDialogue()
     {

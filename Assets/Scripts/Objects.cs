@@ -10,6 +10,7 @@ using static Character;
 /// </summary>
 public class Objects : MonoBehaviour
 {
+    private bool NoMoreTalk;
     protected bool InDialog;
     protected int _index = 0;
     protected DialogueObjectController _dialogueObjectController;
@@ -128,22 +129,27 @@ public class Objects : MonoBehaviour
         SetUpDialogue();
 
         InDialog = false;
+        NoMoreTalk = false;
     }
     /// <summary>
     /// Default class for using an object
     /// </summary>
     public virtual void Use()
     {
-        if (!InDialog)
+        if (!InDialog && !NoMoreTalk)
         {
+            SetUpDialogue();
             if (_index == 0)
                 _dialogueObjectController.Display(true);
             StartCoroutine(Display());
         }
+        else
+            // Release player
+            GameObject.Find("Player").GetComponent<Player>().Talking = false;
     }
     protected virtual void SetUpDialogue()
     {
-        Debug.Log("Setting up Dialog for "+gameObject.name);
+        DialogueForObject.Clear();
     }
     /// <summary>
     /// Called when option selected
@@ -204,6 +210,7 @@ public class Objects : MonoBehaviour
 
         if (DialogueForObject[_index].EndInteraction)
         {
+            NoMoreTalk = true;
             _index = 0;
             
             // Release player
@@ -219,6 +226,8 @@ public class Objects : MonoBehaviour
             //Remove DialogueBox if player havn't move
             yield return new WaitForSeconds(2.0f);
             _dialogueObjectController.Display(false);
+            NoMoreTalk = false;
+
         }
         else
           _index++;

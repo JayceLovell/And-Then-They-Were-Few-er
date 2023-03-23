@@ -134,7 +134,7 @@ public class Player : MonoBehaviour
             _idleTime += Time.deltaTime;
 
             // Set Idle Animation
-            if (_idleTime > 15.0f)
+            if (_idleTime > 60.0f)
             {
                 _animator.SetInteger("AnimationCondition", 9);
             }            
