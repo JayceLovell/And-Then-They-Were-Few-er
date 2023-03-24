@@ -146,12 +146,12 @@ public class Rachel : Character
         ExampleInterrogationConvo2.NPCTalking = true;
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
-        ExampleInterrogationConvo2.Response = "After the showcase. Watson and I were helping her to clean up, " +
+        ExampleInterrogationConvo2.Response = "After the showcase. Wattson and I were helping her to clean up, " +
             "but I felt a bit faint and went to bed shortly after.";
         //Creating a Question
 
         ExampleInterrogationConvo2.Question1 = new Question();
-        ExampleInterrogationConvo2.Question1.QuestionText = "Speaking of Watson, I haven’t seen him all night. Where could he be?";
+        ExampleInterrogationConvo2.Question1.QuestionText = "Speaking of Wattson, I haven’t seen him all night. Where could he be?";
         ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
@@ -614,7 +614,7 @@ public class Rachel : Character
         ExampledialogueAfterClue1.EndInterrogation = false;
         ExampledialogueAfterClue1.NoQuestions = false;
         ExampledialogueAfterClue1.NPCTalking = true;
-        ExampledialogueAfterClue1.Response = "Oh no, Watson!";
+        ExampledialogueAfterClue1.Response = "Oh no, Wattson!";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question

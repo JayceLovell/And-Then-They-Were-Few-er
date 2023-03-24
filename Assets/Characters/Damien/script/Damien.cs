@@ -106,7 +106,7 @@ public class Damien : Character
         ExampleInterrogationConvo.Question1.NextElementNumber = 1;
 
         ExampleInterrogationConvo.Question2 = new Question();
-        ExampleInterrogationConvo.Question2.QuestionText = "Do you know where Watson is?";
+        ExampleInterrogationConvo.Question2.QuestionText = "Do you know where Wattson is?";
         ExampleInterrogationConvo.Question2.NextElementNumber = 5;
 
         ExampleInterrogationConvo.Question3 = new Question();

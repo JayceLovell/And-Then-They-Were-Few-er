@@ -46,7 +46,7 @@ public class Nikki : Character
 			
 			DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
             ExampleForBeforeMurder7.NPCTalking = false;
-            ExampleForBeforeMurder7.Text = "*chuckles* Alright. By the way, where did Watson rush off to? He left right after letting me in, I was hoping to get his insight on this gasket case I've been working";
+            ExampleForBeforeMurder7.Text = "*chuckles* Alright. By the way, where did Wattson rush off to? He left right after letting me in, I was hoping to get his insight on this gasket case I've been working";
             dialogForRegularConvo.Add(ExampleForBeforeMurder7);
 			
 			DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();

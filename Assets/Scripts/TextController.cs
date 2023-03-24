@@ -84,10 +84,14 @@ public class TextController : MonoBehaviour
     private void LoadText()
     {
         // Create Intro To Game Text
-        IntroText = "Ashlyn Hunt, our intrepid detective, has been invited by her friend Nikki Test to her invention showcase. \r\n\r\nAshlyn arrives, and is welcomed by Watson, Nikki's robot butler. \r\n\r\nWith Ashlyn being the last guest to arrive, Watson makes his departure, and Ashlyn goes on to interact with the other guests...";
+        IntroText = "Ashlyn Hunt, our intrepid detective, has been invited by her friend Nikki Test to her invention showcase. \r\n\r\nAshlyn arrives, and is welcomed by Wattson, Nikki's robot butler. \r\n\r\nWith Ashlyn being the last guest to arrive, Wattson makes his departure, and Ashlyn goes on to interact with the other guests...";
 
         // Game Won text
-        GameWonText = "Ashlyn correctly deduces that it was Rachel that was the murderer. \r\n\r\nRachel and Nikki had got into an argument about Nikki joining the family business. In a fit of anger, Rachel had pushed Nikki and she hit her head, dying due to blood loss.\r\n\r\nRachel is remorseful and accepts her fate. Once the storm clears she is escorted by Ashlyn and the Mayor to the Police Station\r\n";
+        GameWonText = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+            "She now knew the identity of Nikki's murderer. And yet..." + "\r\n\r\n\"It was Rachel. She murdered Nikki!\" Ashlyn says, to the astonishment and disbelief of the other guests." + "\r\n\r\nRachel sighs, stands up, and slowly nods her head as she begins to sob." +
+            "\r\n\r\nRachel tearfully explains how she and Nikki had got into an argument about Nikki joining the family business, after the showcase. In a fit of anger, Rachel had pushed Nikki and she hit her head, dying due to blood loss." +
+            "\r\n\r\nOnce the storm clears, Rachel is escorted by Ashlyn and the Mayor to the Police Station. Rachel is remorseful and accepts her fate..." +
+            "\r\n\r\nRACHEL IS THE MURDERER";
 
         // Game Time Out
         TimeOutText = "Ashlyn was unable to deduce the identity of the murderer. \r\n\r\nThe storm outside clears up, but the tempest of unsatisfaction within Ashlyn's soul will never stop, knowing that Nikki's murderer will never be brought to justice...";
@@ -105,7 +109,7 @@ public class TextController : MonoBehaviour
         AfterMurderText.Add("The guests had been invited to sleepover at the mansion after the showcase. They all go to bed, except for Nikki and Watson, who stay behind to clean up. As the night goes on, a thunderstorm begins to rage...");
         AfterMurderText.Add("An hour or so after the showcase, everyone has gone to sleep. The storm continues to rage outside.\r\n\r\nA clap of thunder wakes Ashlyn up. She decides to grab a glass of milk\r\n\r\nShe happens to pass by the lab, which has the door ajar\r\n\r\nPeeking inside, she sees Nikki lying on the floor...");
         AfterMurderText.Add("Ashlyn runs in and finds that Nikki is dead.\r\n\r\nShe mourns for her friend, and looks around the room.\r\n\r\nShe notices a bloody pipe in the corner of the room.\r\n\r\nSeeing nothing else, she leaves to announce the death of Nikki Test...");
-        AfterMurderText.Add("Ashlyn announces her discovery to the shock of the other guests.\r\n\r\nThe storm prevents them from leaving to go to the police.\r\n\r\nAshlyn decided to investigate and get to the bottom of the gruesome murder...");
+        AfterMurderText.Add("Ashlyn announces her discovery to the shock of the other guests.\r\n\r\nThe storm prevents them from leaving to go to the police.\r\n\r\nAshlyn decides to investigate and get to the bottom of the gruesome murder...");
 
         // Create GameOver on which character selected
         GameOverText Ashlyn = new GameOverText();
@@ -118,7 +122,18 @@ public class TextController : MonoBehaviour
 		
 		GameOverText Damien = new GameOverText();
         Damien.SelectCharacterName = Character.CharacterName.Damien;
-        Damien.text = "Damien Placeholder Ending ";
+        Damien.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+            "She now knew the identity of Nikki's murderer. " + "\r\n\r\n\"It was Damien. He murdered Nikki!\" Ashlyn says, to the astonishment and disbelief of the other guests." + "\r\n\r\nDamien remains silent. He stands up slowly, and extends his wrists, indicating for Ashlyn to handcuff him." +
+         "\r\n\r\n\"Damien...No!\", Karol shouts, looking horrified." +
+         "\r\n\r\n\"There's no way!\", Jayson says in a stunned voice." +
+            "\r\n\r\nDamien continues to remain quiet, and allows himself to be handcuffed, occasionally glancing at Karol, who had turned away from him." +
+            "After the storm clears, he is taken to the police station." +
+            "\r\n\r\n\"However, over the next few days, the police are unable to find any physical evidence that links Damien to the murder of Nikki." +
+            "\r\n\r\nA week after being taken into custody, Damien is released. As he leaves the station, he finds Jayson waiting outside." +
+            "\r\n\r\nThey walk back together, and Damien confesses to Jayson that he did not murder Nikki. He took the blame because he believed someone else to have done it, but did not wish to see them imprisoned, and had decided to remain silent." +
+             "\r\n\r\n\"The things one does for love...\" Jayson says, as he shakes his head. " +
+             "\r\n\r\nThey continue down the path in silence. Unbeknownst to the two young men, Ashlyn is silently tailing them from behind, listening. She has her doubts, but it becomes clear that..." +
+            "\r\n\r\nDAMIEN IS NOT THE MURDERER"; 
         GameOverTexts.Add(Damien);
 		
 		GameOverText Fredrick = new GameOverText();
@@ -144,12 +159,27 @@ public class TextController : MonoBehaviour
 		
 		GameOverText John = new GameOverText();
         John.SelectCharacterName = Character.CharacterName.John;
-        John.text = "John Placeholder Ending ";
+        John.text = "Okay. You and I both know John didn't do it. The only crime he's committed is poor toilet protocol." +
+            "\r\n\r\nUnfortunately, you're going to have to replay the game to find out who did...Sorry! " +
+            "\r\n\r\nJOHN IS NOT THE MURDERER ";
         GameOverTexts.Add(John);
 		
 		GameOverText Karol = new GameOverText();
         Karol.SelectCharacterName = Character.CharacterName.Karol;
-        Karol.text = "Karol Placeholder Ending ";
+        Karol.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+            "She now knew the identity of Nikki's murderer. " + "\r\n\r\n\"It was Karol. She murdered Nikki!\" Ashlyn says, to the astonishment and disbelief of the other guests." + "\r\n\r\nKarol rises angrily. As she opens her mouth to speak, Damien too stands up, and raises his hand to cut her off." +
+         "\r\n\r\n\"It wasn't Karol... It was I that murdered Nikki\", Damien says gravely." +
+            "\r\n\r\nEveryone is stunned. Karol, in particular, looks shocked, but remains quiet." +
+            "\r\n\r\nAshlyn is taken aback by this confession, but seeing the look of grim resignation on Damien's face, nods to Frederick, and they handcuff Damien." +
+            "After the storm clears, Damien is taken to the police station." +
+            "\r\n\r\n\"However, over the next few days, despite his confession, the police are unable to find any physical evidence that links either Karol or Damien to the murder of Nikki." +
+            "\r\n\r\nA week after being taken into custody, Damien is released. As he leaves the station, he finds Karol waiting outside." +
+            "\r\n\r\nThey walk back together, and Damien confesses to Karol that he took the blame for the murder because he believed Karol to have done it, but due to his love for her, did not wish to see her imprisoned." +
+             "\r\n\r\nKarol grabs Damien by the shoulders and tearfully looks him straight in the face." +
+             "\r\n\r\n\"Damien, I-I swear to you, I didn't murder Nikki!\". " +
+             "\r\n\r\nThere is a long silence, as Damien stares back at Karol, desperately searching her face for the truth. After a few minutes, he slowly nods his head, and they embrace." +
+             "\r\n\r\nUnbeknowst to both of them, Ashlyn is lurking in the shadows nearby, watching. She has her doubts, but seeing them together, it becomes clear that..." +
+            "\r\n\r\nKAROL IS NOT THE MURDERER";
         GameOverTexts.Add(Karol);
 		
 		GameOverText Mirianne = new GameOverText();
