@@ -110,7 +110,10 @@ public class TextController : MonoBehaviour
         // Create GameOver on which character selected
         GameOverText Ashlyn = new GameOverText();
         Ashlyn.SelectCharacterName = Character.CharacterName.Ashlyn;
-        Ashlyn.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. She now knew the identity of Nikki's murderer. And yet...\r\n\r\n\"It's me. I murdered Nikki\" Ashlyn says, to the astonishment and disbelief of the other guests.\r\n\r\nShe allows Frederick to handcuff her and is escorted out of the mansion.\r\n\r\nAs she is taken to the police station, Ashlyn reflects on the events of the night. \r\n\r\nOf course, she wasn't the true murderer, but to reveal their true identity... She would never know what their true motive was, but Ashlyn's discovery of their identity would haunt her for a very long time... ";
+        Ashlyn.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. She now knew the identity of Nikki's murderer. And yet..." +
+            "\r\n\r\n\"It's me. I murdered Nikki\" Ashlyn says, to the astonishment and disbelief of the other guests." +
+            "\r\n\r\nShe allows Frederick to handcuff her and is escorted out of the mansion.\r\n\r\nAs she is taken to the police station, Ashlyn reflects on the events of the night. " +
+            "\r\n\r\nOf course, she wasn't the true murderer, but to reveal their true identity... She would never know what their true motive was, but Ashlyn's discovery of their identity would haunt her for a very long time... ";
         GameOverTexts.Add(Ashlyn);
 		
 		GameOverText Damien = new GameOverText();
@@ -120,12 +123,23 @@ public class TextController : MonoBehaviour
 		
 		GameOverText Fredrick = new GameOverText();
         Fredrick.SelectCharacterName = Character.CharacterName.Frederick;
-        Fredrick.text = "Fredrick Placeholder Ending ";
+        Fredrick.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+            "She now knew the identity of Nikki's murderer. " + "\r\n\r\n\"It was the Mayor. He murdered Nikki!\" Ashlyn says, to the astonishment and disbelief of the other guests." + "\r\n\r\nFrederick faints in shock." +
+            "\r\n\r\nOnce Frederick has been woken up, Ashlyn explains how she deduced that Frederick at one point had the keys to Nikki's lab, and how he tried to flush them down the toilet, but was overheard by John and his father. " +
+            "\r\n\r\nFrederick admits to having stolen the keys from Watson, but denies any part in Nikki's murder, and insists that he was unaware she was dead until Ashlyn had announced her discovery later that night. " +
+            "\r\n\r\nFrederick goes on to explain how he had managed to steal the keys from Watson after the showcase, and had intended to sneak into the lab to steal Nikki's notes on the synthesizer." +
+            "Frederick's plan was to photocopy the notes, and have government funded scientists develop their own version, so that the town council could cut Nikki out of the picture and avoid having to pay her for her work. " +
+            "\r\n\r\n\"We just didn't have enough money in the town budget to pay Nikki... All the money was spent on my re-election campaign!\" , Frederick said sheepishly." +
+            "\r\n\r\nHe had tried getting in the lab later that night, but on his way there he saw Mirianne leaving the room. In that moment he panicked, and ran to the toilet to try to hide, dropping the keys in the stall in his confusion." +
+            "\r\n\r\nThe storm eventually clears. Frederick is escorted by Ashlyn and Jayson to the Police Station to have his statement taken, however... " +
+            "\r\n\r\nFREDERICK IS NOT THE MURDERER";
         GameOverTexts.Add(Fredrick);
 		
 		GameOverText Jayson = new GameOverText();
         Jayson.SelectCharacterName = Character.CharacterName.Jayson;
-        Jayson.text = "Jayson Placeholder Ending ";
+        Jayson.text = "Okay. You and I both know Jayson didn't do it. " +
+            "\r\n\r\nUnfortunately, you're going to have to replay the game to find out who did...Sorry! " +
+            "\r\n\r\nJAYSON IS NOT THE MURDERER ";
         GameOverTexts.Add(Jayson);
 		
 		GameOverText John = new GameOverText();
@@ -140,7 +154,14 @@ public class TextController : MonoBehaviour
 		
 		GameOverText Mirianne = new GameOverText();
         Mirianne.SelectCharacterName = Character.CharacterName.Mirianne;
-        Mirianne.text = "Mirianne Placeholder Ending ";
+        Mirianne.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+            "She now knew the identity of Nikki's murderer. " + "\r\n\r\n\"It was Mirianne. She murdered Nikki!\" Ashlyn says, to the astonishment and disbelief of the other guests." + "\r\n\r\nMirianne stands up furiously, and denies it all." +
+            "\r\n\r\nMirianne protests that while she did indeed know that Nikki had been killed prior to Ashlyn's announcement, she was not the one to do it. " +
+            "\r\n\r\nAccording to Mirriane, that night she happened to be passing by the lab, only to discover Nikki on the floor, and bleeding heavily. " +
+            "She rushed to her body to try to stop the bleeding with a handkerchief that was lying on the ground nearby, but it was already too late." +
+            "\r\n\r\nMirianne insists that her fear of being suspected of the murder is the reason she did not raise the alarm. " +
+            "\r\n\r\nAs the storm clears, Mirianne is escorted by Ashlyn and the Mayor to the Police Station to have her statement taken, however... " +
+            "\r\n\r\nMIRIANNE IS NOT THE MURDERER"; 
         GameOverTexts.Add(Mirianne);
 		
 
@@ -152,7 +173,11 @@ public class TextController : MonoBehaviour
 		
 		GameOverText Rachel = new GameOverText();
         Rachel.SelectCharacterName = Character.CharacterName.Rachel;
-        Rachel.text = "Rachel Placeholder Ending ";
+        Rachel.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+            "She now knew the identity of Nikki's murderer. And yet..." + "\r\n\r\n\"It was Rachel. She murdered Nikki!\" Ashlyn says, to the astonishment and disbelief of the other guests." + "\r\n\r\nRachel sighs, stands up, and slowly nods her head as she begins to sob." +
+            "\r\n\r\nRachel tearfully explains how she and Nikki had got into an argument about Nikki joining the family business, after the showcase. In a fit of anger, Rachel had pushed Nikki and she hit her head, dying due to blood loss." +
+            "\r\n\r\nOnce the storm clears, Rachel is escorted by Ashlyn and the Mayor to the Police Station. Rachel is remorseful and accepts her fate..." +
+            "\r\n\r\nRACHEL IS THE MURDERER";
         GameOverTexts.Add(Rachel);
     }
     /// <summary>

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -194,20 +195,23 @@ public class DialogueObjectController : MonoBehaviour
         {
             case 1:
                 Question1= QuestionText;
-                if(End)
+                QuestionButton1.onClick.RemoveAllListeners();
+                if (End)
                     QuestionButton1.onClick.AddListener(()=>_interrogationController.OnQuit());
                 else
                     QuestionButton1.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
                 break;
             case 2:
                 Question2= QuestionText;
-                if(End)
+                QuestionButton2.onClick.RemoveAllListeners();
+                if (End)
                     QuestionButton2.onClick.AddListener(() => _interrogationController.OnQuit());
                 else
                     QuestionButton2.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
                 break;
             case 3:            
                 Question3= QuestionText;
+                QuestionButton3.onClick.RemoveAllListeners();
                 if (End)
                     QuestionButton3.onClick.AddListener(() => _interrogationController.OnQuit());
                 else
@@ -218,6 +222,76 @@ public class DialogueObjectController : MonoBehaviour
                 break;
         }
     }
+    /// <summary>
+    /// SettingUp options for talking to objects
+    /// </summary>
+    /// <param name="OptionNumber">Number of option to return back to interactble object for selected option</param>
+    /// <param name="OptionText">Text to Display</param>
+    /// <param name="IntereactbleOject">The object that the player is interacting with for this option just put "this.gameobject;".</param>
+    public void SetUpQuestions(int OptionNumber,string OptionText,GameObject IntereactbleOject)
+    {
+        switch(OptionNumber)
+        {
+            case 1:
+                Question1 = OptionText;
+                QuestionButton1.onClick.RemoveAllListeners();
+                QuestionButton1.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject),new object[] { OptionNumber }));
+                QuestionButton1.interactable = true;
+                break;
+            case 2:
+                Question2 = OptionText;
+                QuestionButton2.onClick.RemoveAllListeners();
+                QuestionButton2.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject),new object[] { OptionNumber }));
+                QuestionButton2.interactable = true;
+                break;
+            case 3:
+                Question3 = OptionText;
+                QuestionButton3.onClick.RemoveAllListeners();
+                QuestionButton3.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject), new object[] { OptionNumber }));
+                QuestionButton3.interactable = true;
+                break;
+            default:
+                Debug.LogError("Option out of bounds");
+                break;
+        }
+    }
+    /// <summary>
+    /// NoOption
+    /// </summary>
+    public void SetUpQuestions(int OptionNumber,string OptionText)
+    {
+        switch (OptionNumber)
+        {
+            case 1:
+                Question1 = OptionText;
+                QuestionButton1.interactable = false;
+                break;
+            case 2:
+                Question2 = OptionText;
+                QuestionButton2.interactable = false;
+                break;
+            case 3:
+                Question3 = OptionText;
+                QuestionButton3.interactable = false;
+                break;
+        }
+    }
 
+    private Component GetObjectScript(GameObject Object)
+    {
+        Component ObjectScript = null;
+
+        Component[] components =Object.GetComponents(typeof(Component));
+        foreach (Component component in components)
+        {
+            if (component.GetType().Name == Object.name)
+            {
+                ObjectScript = component;
+                break;
+            }
+        }
+
+        return ObjectScript;
+    }
 
 }

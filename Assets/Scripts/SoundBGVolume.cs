@@ -16,6 +16,15 @@ public class SoundBGVolume : MonoBehaviour
         StartCoroutine(LowerVolumeOverTime(duration));
     }
 
+    public void PauseMusic()
+    {
+        if (audioSource.isPlaying)
+            audioSource.Pause();
+        else
+            audioSource.Play();
+
+    }
+
     private IEnumerator LowerVolumeOverTime(float duration)
     {
         float elapsedTime = 0;
