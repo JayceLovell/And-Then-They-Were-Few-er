@@ -525,7 +525,7 @@ public class Jayson : Character
         ExampleInterrogationConvo15.NPCTalking = true;
         ExampleInterrogationConvo15.EndInterrogation = false;
         ExampleInterrogationConvo15.NoQuestions = false;
-        ExampleInterrogationConvo15.Response = "Moe!";
+        ExampleInterrogationConvo15.Response = "Proving the existence of the pet illuminati!";
 
 
 

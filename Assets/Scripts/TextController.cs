@@ -128,7 +128,7 @@ public class TextController : MonoBehaviour
          "\r\n\r\n\"There's no way!\", Jayson says in a stunned voice." +
             "\r\n\r\nDamien continues to remain quiet, and allows himself to be handcuffed, occasionally glancing at Karol, who had turned away from him." +
             "After the storm clears, he is taken to the police station." +
-            "\r\n\r\n\"However, over the next few days, the police are unable to find any physical evidence that links Damien to the murder of Nikki." +
+            "\r\n\r\nHowever, over the next few days, the police are unable to find any physical evidence that links Damien to the murder of Nikki." +
             "\r\n\r\nA week after being taken into custody, Damien is released. As he leaves the station, he finds Jayson waiting outside." +
             "\r\n\r\nThey walk back together, and Damien confesses to Jayson that he did not murder Nikki. He took the blame because he believed someone else to have done it, but did not wish to see them imprisoned, and had decided to remain silent." +
              "\r\n\r\n\"The things one does for love...\" Jayson says, as he shakes his head. " +
@@ -172,7 +172,7 @@ public class TextController : MonoBehaviour
             "\r\n\r\nEveryone is stunned. Karol, in particular, looks shocked, but remains quiet." +
             "\r\n\r\nAshlyn is taken aback by this confession, but seeing the look of grim resignation on Damien's face, nods to Frederick, and they handcuff Damien." +
             "After the storm clears, Damien is taken to the police station." +
-            "\r\n\r\n\"However, over the next few days, despite his confession, the police are unable to find any physical evidence that links either Karol or Damien to the murder of Nikki." +
+            "\r\n\r\nHowever, over the next few days, despite his confession, the police are unable to find any physical evidence that links either Karol or Damien to the murder of Nikki." +
             "\r\n\r\nA week after being taken into custody, Damien is released. As he leaves the station, he finds Karol waiting outside." +
             "\r\n\r\nThey walk back together, and Damien confesses to Karol that he took the blame for the murder because he believed Karol to have done it, but due to his love for her, did not wish to see her imprisoned." +
              "\r\n\r\nKarol grabs Damien by the shoulders and tearfully looks him straight in the face." +
@@ -197,7 +197,15 @@ public class TextController : MonoBehaviour
 
 		GameOverText OCM = new GameOverText();
         OCM.SelectCharacterName = Character.CharacterName.OldCrazyMan;
-        OCM.text = "OCM Placeholder Ending ";
+        OCM.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+            "She now knew the identity of Nikki's murderer. " + "\r\n\r\n\"It was... him!\" Ashlyn says, as she points at John's father, the Old Crazy Man. " +
+         "\r\n\r\n\"NOW WAIT JUST A MINUTE!\"  he shouts, looking startled." +
+         "\r\n\r\n\"I know what this is about! You just want to frame me and get me locked up! That way, the gears will be yours for the taking! Well, you can't have them!\"" +
+            "\r\n\r\nIn a manic state, the old man rushes to the other side of the room and jumps straight through the window, smashing the glass." +
+            "\r\n\r\nThere is a moment of stunned shock and silence, before everyone rushes outside to attempt to catch him." +
+            "\r\n\r\nHowever, they find him right outside the window, lying unconscious in the grass. The Old Fool had been knocked out in his attempt to fling himself out the window." +
+            "\r\n\r\nA week later, the Old Man is released from the hospital. During his stay there, he had been interviewed by the police, but it soon became very clear that he had nothing to do with Nikki's murder." +
+            "\r\n\r\nTHE OLD CRAZY MAN IS NOT THE MURDERER";
         GameOverTexts.Add(OCM);
 
 		
