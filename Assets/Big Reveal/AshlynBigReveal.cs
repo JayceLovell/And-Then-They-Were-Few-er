@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Playables;
 
 /// <summary>
@@ -69,6 +70,7 @@ public class AshlynBigReveal : Character
     {
         DialogBox.Display(false);
         SelectionPanel.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(GameObject.FindGameObjectWithTag("Profile"));
 
     }
     /// <summary>

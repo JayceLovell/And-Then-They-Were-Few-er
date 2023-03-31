@@ -12,9 +12,11 @@ public class Objects : MonoBehaviour
 {
     private bool NoMoreTalk;
     protected bool InDialog;
-    protected int _index = 0;
+    protected int _index = 0;    
     protected DialogueObjectController _dialogueObjectController;
     protected GameController _gameController;
+
+    public bool IsOptions;
 
     [Tooltip("Only fill these out if clue is selected")]
     [Header("Clue stuff")]
@@ -163,6 +165,7 @@ public class Objects : MonoBehaviour
 
     IEnumerator Display()
     {
+        IsOptions = false;
         _dialogueObjectController.Text = "";
         InDialog = true;
 
@@ -179,6 +182,7 @@ public class Objects : MonoBehaviour
         }
         else
         {
+            IsOptions = true;
             _dialogueObjectController.SwitchMode(true);
             _dialogueObjectController.Text = DialogueForObject[_index].Text;
             try {
