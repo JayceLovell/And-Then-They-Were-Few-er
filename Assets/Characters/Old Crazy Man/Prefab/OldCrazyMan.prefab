@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5295276547665168061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: bc8297b0fe44b734b8e1ada1cc4aa0b1, type: 3}
+  m_Sprite: {fileID: 2037709385, guid: f1def6674aa416141832abf492f5fc91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.75, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,119 +99,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d5c66acca41364884e9d91b9acf3d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InterrigrationMode: 1
+  DeadSprite: {fileID: 0}
+  correctClue: {fileID: 11400000, guid: 9db6be187c443654aa16b08d4ce16a9b, type: 2}
   Name: 8
-  CorrectClue: {fileID: 0}
-  Profile: {fileID: 21300000, guid: 8297ec95d6d9e22439dd4dc270b49de3, type: 3}
-  InterrigationSprite: {fileID: 0}
-  characterPosition:
+  Profile: {fileID: 21300000, guid: 4f9c3737e7c6a9b49b6eefd01d49af35, type: 3}
+  InterrigationSprite: {fileID: 2037709385, guid: f1def6674aa416141832abf492f5fc91, type: 3}
+  CharacterSetUps:
   - Scene: 1
     Position: {x: 7.037209, y: -3.78581}
+    IsDead: 0
   - Scene: 2
     Position: {x: -5.546519, y: 9.166698}
-  dialogForRegularConvo:
-  - Text: '(The father of John. Very random. Loud and rude)
-
-
-
-'
-    ImTalking: 1
-  - Text: 'Do you smell it in the air?
-
-
-
-'
-    ImTalking: 1
-  - Text: 'Excuse me? Smell what?
-
-
-
-
-'
-    ImTalking: 0
-  - Text: 'The gears of course! I love the smell of freshly oiled gears!
-
-
-
-'
-    ImTalking: 1
-  - Text: "(The Crazy Old Man has an excited but wild look about him) \n\r\n"
-    ImTalking: 1
-  - Text: 'Well, I can kind of relate. I like the smell of fresh ink and newly printed
-      parchment paper
-
-
-
-'
-    ImTalking: 0
-  - Text: 'Ashlyn smiles cheekily
-
-
-
-'
-    ImTalking: 0
-  - Text: 'Ink? Parchment! Now that''s just weird
-
-
-
-'
-    ImTalking: 1
-  - Text: (The Crazy Old Man sticks his tongue out at Ashlyn and starts muttering
-      to himself)
-    ImTalking: 1
-  - Text: (Ashlyn, mystified, walks away)
-    ImTalking: 0
-  DialogueForInterrogations:
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: 
-    Question1:
-      QuestionText: Where were you at the time of the murder?
-      NextElementNumber: 1
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: I was in the bathroom.
-    Question1:
-      QuestionText: Can anyone verify that you were there?
-      NextElementNumber: 2
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: Yes, my son was inside with me.
-    Question1:
-      QuestionText: Your son was in the stall with you? Why??
-      NextElementNumber: 3
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  - NoQuestions: 1
-    NextElementNumber: 0
-    Response: "I always ask him to accompany me so that I have someone to hold my
-      gears. Don\u2019t want to drop them in the toilet!"
-    Question1:
-      QuestionText: Your son was in the stall with you? Why??
-      NextElementNumber: 4
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: 
-      NextElementNumber: 0
-  dialogueAfterClue: []
+    IsDead: 0
+  dialogForRegularConvo: []
+  DialogueForInterrogations: []
+  DialogueAfterClues: []
 --- !u!95 &966495018851844531
 Animator:
   serializedVersion: 4
@@ -222,7 +124,7 @@ Animator:
   m_GameObject: {fileID: 5295276547665168061}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 784200504b9165f47858e9b5da8b4233, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4f20b5d44401c2b41990a087b3663670, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -245,16 +147,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.021404527, y: -0.011525631}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.42, y: 0.33}
-    newSize: {x: 1, y: 2}
+    oldSize: {x: 0.75, y: 0.96}
+    newSize: {x: 0.75, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14009331, y: 0.17193529}
+  m_Size: {x: 0.75, y: 0.96}
   m_EdgeRadius: 0

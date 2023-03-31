@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private Animator _animator;
     private bool _talking;
+    private float _keyHeldTime;
+    private float _idleTime;
 
     private GameController _gameController;
 
@@ -51,50 +53,109 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
+    public enum Direction
+    {
+        Up,
+        Down,
+        Left,
+        Right
+    }
+
+    private Direction lastMove;
+
     void Update()
     {
-        if (PlayWalkSound)
-        {
-            SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
-            PlayWalkSound = false;
-        }
-    }
-    void FixedUpdate()
-    {
-        if(Talking)
-        {
-            moveInput = Vector2.zero;
-        }
-
-        _rigidbody.velocity = moveInput * PlayerSpeed;
+        if (Talking)        
+            moveInput = Vector2.zero;                         
         
+        if(moveInput!= Vector2.zero)
+        {
+            _idleTime = 0.0f;
+            _keyHeldTime += Time.deltaTime;
+            if (_keyHeldTime >= 0.1f)
+            {
+                if (moveInput.y == 1)
+                {
+                    _animator.SetInteger("AnimationCondition", 7);
+                    lastMove = Direction.Up;
+                }
+                else if (moveInput.y == -1)
+                {
+                    _animator.SetInteger("AnimationCondition", 6);
+                    lastMove = Direction.Down;
+                }
 
-        switch (moveInput.y)
-        {
-            case 1:
-                _animator.SetBool("Up", true);
-                break;
-            case -1:
-                _animator.SetBool("Down", true);
-                break;
-            default:
-                _animator.SetBool("Up", false);
-                _animator.SetBool("Down", false);
-                break;
+                if (moveInput.x == -1)
+                {
+                    _animator.SetInteger("AnimationCondition", 5);
+                    lastMove = Direction.Left;
+                }
+                else if (moveInput.x == 1)
+                {
+                    _animator.SetInteger("AnimationCondition", 8);
+                    lastMove = Direction.Right;
+                }
+                if(_keyHeldTime >=0.3f)
+                    _rigidbody.velocity = moveInput * PlayerSpeed;
+            }
+            else
+            {                
+                    switch (moveInput.x)
+                    {
+                        case 1:
+                            _animator.SetInteger("AnimationCondition", 4);
+                            lastMove = Direction.Right;
+                            break;
+                        case -1:
+                            _animator.SetInteger("AnimationCondition", 1);
+                            lastMove = Direction.Left;
+                            break;
+                    }
+                    switch (moveInput.y)
+                    {
+                        case 1:
+                            _animator.SetInteger("AnimationCondition", 3);
+                            lastMove = Direction.Up;
+                            break;
+                        case -1:
+                            _animator.SetInteger("AnimationCondition", 2);
+                            lastMove = Direction.Down;
+                            break;
+                    }                
+            }
         }
-        switch (moveInput.x)
+        else
         {
-            case 1:
-                _animator.SetBool("Right", true);
-                break;
-            case -1:
-                _animator.SetBool("Left", true);
-                break;
-            default:
-                _animator.SetBool("Left", false);
-                _animator.SetBool("Right", false);
-                break;
-        }
+            _rigidbody.velocity = moveInput * PlayerSpeed;
+
+            //Reset to 0
+            _keyHeldTime = 0f;
+
+            _idleTime += Time.deltaTime;
+
+            // Set Idle Animation
+            if (_idleTime > 60.0f)
+            {
+                _animator.SetInteger("AnimationCondition", 9);
+            }            
+            else if (lastMove == Direction.Up)
+            {
+                _animator.SetInteger("AnimationCondition", 3);
+            }
+            else if (lastMove == Direction.Down)
+            {
+                _animator.SetInteger("AnimationCondition", 2);
+            }
+            else if (lastMove == Direction.Left)
+            {
+                _animator.SetInteger("AnimationCondition", 1);
+            }
+            else if (lastMove == Direction.Right)
+            {
+                _animator.SetInteger("AnimationCondition", 4);
+            }
+        }    
+
     }
     /// <summary>
     /// Responds to input system on move event
@@ -119,6 +180,7 @@ public class Player : MonoBehaviour
     /// </summary>
     void OnInteract()
     {
+        PlayerObjectTextBox.SetActive(false);
         if (CanTalkToNPC)
         {
             Component CharactersScript = null;
@@ -156,13 +218,21 @@ public class Player : MonoBehaviour
         // Interacting with object
         else if (CanInteract)
         {
+            Talking = true;
+            CurrentInteractableObject.GetComponent<Objects>().dialogueObjectController = DialogBox;
+            ImTalking();           
             CurrentInteractableObject.GetComponent<Objects>().Use();
+
         }
         else
         {
             //for future use
         }
 
+    }
+    void OnBringUpClues()
+    {
+        ClueManager.Instance.ToggleMenu();
     }
 
     public void ImTalking()
@@ -178,19 +248,6 @@ public class Player : MonoBehaviour
     {
         GameManager.Instance.Quit();
     }
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.tag == "NPC")
-    //    {
-    //        CurrentNPCToTalkTo = collision.gameObject;
-    //        CanTalkToNPC = true;
-    //        // Wrote this since character isn't animating just static
-    //        NPCSprite = collision.transform.GetComponentInParent<SpriteRenderer>().sprite;
-    //        //In future use this to grab the interrigation sprite.
-    //        //collision.transform.GetComponentInParent<Character>().InterrigationSprite;
-    //        NPCDisplay.GetComponent<SpriteRenderer>().sprite = NPCSprite;
-    //    }
-    //}
     void OnTriggerStay2D(Collider2D collision)
     {
 
@@ -228,7 +285,7 @@ public class Player : MonoBehaviour
         CanInteract = false;
         CanTalkToNPC = false;
         PlayerObjectTextBox.SetActive(false);
-        DialogueManager.dialogueManager.CloseTextBox();
+        DialogBox.Display(false);
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -238,6 +295,6 @@ public class Player : MonoBehaviour
         CanInteract = false;
         CanTalkToNPC = false;
         PlayerObjectTextBox.SetActive(false);
-        DialogueManager.dialogueManager.CloseTextBox();
+        DialogBox.Display(false);
     }
 }

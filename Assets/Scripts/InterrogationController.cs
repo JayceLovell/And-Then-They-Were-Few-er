@@ -8,12 +8,12 @@ using UnityEngine.InputSystem;
 public class InterrogationController : MonoBehaviour
 {
     private Sprite _interrogationNPC;
-    private GameManager _gameManager;
     private Component _npcComponent=null;
     private int _nextElementForInterrogating;
     [SerializeField]
     private Sprite Profile;
 
+    public Material ShadowMaterial;
     public Sprite PlayerProfile;
     public DialogueObjectController DialogBox;
     public Transform NPCPosition;
@@ -42,7 +42,6 @@ public class InterrogationController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _gameManager = GameManager.Instance;
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("InterrogationScene"));
         //Grab profile quick before disappear
         Profile = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().Profile;
@@ -54,6 +53,7 @@ public class InterrogationController : MonoBehaviour
     }    
     public void OnInterrogate()
     {
+
         if (_npcComponent == null)
         {
             Component[] components = NPC.GetComponents(typeof(Component));
@@ -65,6 +65,13 @@ public class InterrogationController : MonoBehaviour
                     break;
                 }
             }
+
+            //sets up the shadows of npcs
+            _npcComponent.GetComponent<Renderer>().shadowCastingMode= UnityEngine.Rendering.ShadowCastingMode.On;
+            _npcComponent.GetComponent<Renderer>().receiveShadows = true;
+            _npcComponent.GetComponent<Renderer>().material = ShadowMaterial;
+            
+
         }
         if ((bool)_npcComponent.GetType().GetProperty("InDialog").GetValue(_npcComponent))
             _npcComponent.GetType().GetMethod("ContinueDialogue").Invoke(_npcComponent, null);
@@ -74,14 +81,26 @@ public class InterrogationController : MonoBehaviour
             _npcComponent.GetType().GetMethod("StartDialogue").Invoke(_npcComponent, null);
         }
     }
-    public void ImTalking()
+    public void PlayerTalking()
     {
         DialogBox.SpeakerName = "Ashlyn";
         DialogBox.SpeakerImage = Profile;
     }
+    public void PresentClueToNPC(Clue clue)
+    {
+        _npcComponent.GetType().GetMethod("PresentClue").Invoke(_npcComponent, new object[] { clue });
+    }
+    void OnBringUpClues()
+    {
+        ClueManager.Instance.ToggleMenu();
+    }
     public void OnQuit()
     {
-        GameManager.Instance.Quit();
+        SceneManager.LoadScene("GrandHall");
+    }
+    public void Back()
+    {
+        SceneManager.LoadScene("GrandHall");
     }
     IEnumerator WaitForOneSecond()
     {

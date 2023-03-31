@@ -1,7 +1,7 @@
 <div align="center" >
 
 # And Then They Were Few(er) 
- Game develop by ontario tech students for GDW [Download Game](http:google.com)
+ Game develop by ontario tech students for GDW [Download Game](https://github.com/JayceLovell/And-Then-They-Were-Few-er/releases/tag/v0.8.0-beta)
 
 
 ![Picture1](https://user-images.githubusercontent.com/19291090/192363433-bc6617ac-9b03-42a5-9cc0-d60ab35bd1c7.jpg)
@@ -151,7 +151,7 @@ With a cast of 6 characters, there will also be an emphasis on the double faced 
 (For the music, we want the background music to be ambient and somewhat ominous, to give the player a feeling of tension as they search the mansion)
 
 ### Sound Effects
- - Finding a clue
+ - Finding a clue 
  - Changing options on the menus and dialogue options
  - Player walking
  - Sound effect of opening doors
@@ -175,32 +175,49 @@ Steampunk Aesthetic. Game will be set in a mansion. Pixel art,not detailed.
 
 #### Detective Ashlyn (Protagonist)
 
+![Ashlyn Profile](https://user-images.githubusercontent.com/19291090/219197948-4ba5a974-4beb-4519-9beb-3092e0112ee8.png)
+
 Detective. Liar(to get her results) ,con artist type, looks for results, can be cruel in her methods,underground and small detective (Make the character neutral to appeal more) (Not a strong personality that way the player can immerse into the character).
 
 #### Nikki Test
 
+![Nikki Profile](https://user-images.githubusercontent.com/19291090/219198536-2b5aa450-c1ef-4079-ac91-3c161ab591bd.png)
+
+
 ![Picture4](https://user-images.githubusercontent.com/19291090/192364032-1d53cc9b-cefe-4a50-a012-71cac2d37c4d.jpg)
+
+
 The inventor that is murdered. Nikki grew up in an impoverished neighborhood. Her father left when she was young, leaving her with her mother with the family business. Too stubborn to follow her mothers wishes and take on the family business she instead used her intelligence to invent the Synthesizer.
 
 ### Supporting Characters
 
 #### Damien
 
+![Damien Profile](https://user-images.githubusercontent.com/19291090/219197687-3a3b384a-c8ae-4d75-a913-d69e2622a72e.png)
+
 A young apprentice of Nikki Test.
 
 #### Jayson
+
+![Jayson Profile](https://user-images.githubusercontent.com/19291090/219197534-f20e16ea-1665-43ee-9b02-91453bcc8485.png)
 
 A player, stud, and a clumsy wanna be detective trying to solve the mystery but ruins clues and makes chaos. Justice warrior, noisy and loud .Odd character obsesses with mysteries and conspiracies.
 
 #### Mirianne
 
+![Mirianne Profile](https://user-images.githubusercontent.com/19291090/219197309-cffe1a30-9e95-4940-980a-2ddb9cfd4828.png)
+
 A vain trend chasing fashion designer .
 
 #### Karol
 
+![Karol Profile](https://user-images.githubusercontent.com/19291090/219197190-f5c325af-47e5-49d2-aa1a-ae3c874b5e07.png)
+
 The eccentric and energetic rival inventor to Nikki Test, is sponsored by Mirianne .
 
 #### Rachel
+
+![Rachel Profile](https://user-images.githubusercontent.com/19291090/219197070-602cf925-7d5e-4aa1-b620-1f12ecc72d73.png)
 
 The over-controling mother of Nikki Test.
 
@@ -210,13 +227,21 @@ These characters roles were cut for design reasons.
 
 #### John
 
+![John Profile](https://user-images.githubusercontent.com/19291090/219196909-009c1bb1-42df-4f04-b716-2eba4937e3aa.png)
+
+
 Nervous character always searching for his father and fixing the problems he causes.
 
 #### Frederick
 
+![Frederick Profile](https://user-images.githubusercontent.com/19291090/219196791-0b806aba-251d-4476-9008-8612975bc173.png)
+
+
 The corrupt mayor of the town
 
 #### Old Crazy man
+
+![Crazy Old Man Profile](https://user-images.githubusercontent.com/19291090/219196566-719cc2e2-c815-4e4b-b11e-db6cf354c4a4.png)
 
 The father of John, will do stuff at random like carrying a chicken head to scare possums or onions to wear off racoons. Loud and rude (Motive he was looking around the mansion and stumbled upon a secret lab of the scientist) .
 
@@ -232,6 +257,6 @@ SuperNatural and out there ideas for characters:
 <div align="center" >
 
 ## Game Progress
-![50%](https://progress-bar.dev/50)  
+![90%](https://progress-bar.dev/90)  
 bar by [Progress bar dev](https://github.com/fredericojordan/progress-bar)
 </div>

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6375446272540135202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 163864177, guid: a01b8ceadbab47441b62ce6bdb864c25, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -1112354176, guid: cfe7656a1a0642242ae321dceeef9116, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,198 +99,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca888270c82497b4ea76be7391269b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InterrigrationMode: 0
+  DeadSprite: {fileID: 0}
+  correctClue: {fileID: 11400000, guid: 52baf6bcfbca9a24cb1e6065720093c4, type: 2}
   Name: 1
-  CorrectClue: {fileID: 0}
-  Profile: {fileID: 21300000, guid: c79b7a2451e629c488f1f9b2a4b6fbaa, type: 3}
-  InterrigationSprite: {fileID: 1176520706, guid: a01b8ceadbab47441b62ce6bdb864c25, type: 3}
-  characterPosition: []
-  dialogForRegularConvo:
-  - Text: '(A young apprentice of Nikki Test)
-
-
-
-
-
-'
-    ImTalking: 1
-  - Text: 'Ah, you must be Detective Ashlyn. Nikki has told me so much about you.
-
-
-
-'
-    ImTalking: 1
-  - Text: 'She has? So I would assume you''re Nikki''s apprentice then?
-
-
-
-'
-    ImTalking: 0
-  - Text: 'Oh, pardon me I forgot to introduce myself. I am Damien and yes I am Nikki''s
-      apprentice.
-
-
-
-'
-    ImTalking: 1
-  - Text: 'Nikki was so excited to finally meet you again, so please make yourself
-      at home.
-
-
-
-'
-    ImTalking: 1
-  - Text: '(Ashlyn begins to blush a little)
-
-
-
-'
-    ImTalking: 0
-  - Text: 'I''m surprised Nikki still cares about me that much considering it''s
-      been years since we last talked.
-
-
-
-'
-    ImTalking: 0
-  - Text: 'Of course Nikki still cares. To tell the truth she''s been wanting to
-      meet with you again for a while now but has been far too busy to reach out
-      until now.
-
-
-
-'
-    ImTalking: 1
-  - Text: 'Whoa... I guess it isn''t easy being an inventor.
-
-
-
-'
-    ImTalking: 0
-  - Text: "Sadly it isn't but that's what makes today quite special. \r\n\r\n"
-    ImTalking: 1
-  - Text: 'She arranged this whole event so we could celebrate her achievements and
-      have a good time.
-
-
-
-'
-    ImTalking: 1
-  - Text: 'So please enjoy the food and drink and relax.
-
-
-
-
-'
-    ImTalking: 1
-  - Text: "Haha, yeah will do.\r"
-    ImTalking: 0
-  DialogueForInterrogations:
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: Hello
-    Question1:
-      QuestionText: "There are members in this household that strongly suspect you
-        of being Nikki\u2019s murderer"
-      NextElementNumber: 1
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: Where were you at the time of the murder?
-      NextElementNumber: 3
-  - NoQuestions: 0
-    NextElementNumber: 2
-    Response: Me?!
-    Question1:
-      QuestionText: Yes, and I might be inclined to agree! When I found Nikki, there
-        was a pipe in the corner of the room. Did you use this to attack Nikki?
-      NextElementNumber: 2
-    Question2:
-      QuestionText: 
-      NextElementNumber: 0
-    Question3:
-      QuestionText: No Option
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 4
-    Response: "I assure you Detective, I\u2019m the last person here who would want
-      Nikki dead. She\u2019s the only person who was willing to take me in as an
-      apprentice.\n\n"
-    Question1:
-      QuestionText: Really? And yet I hear that she was thinking of replacing you!
-      NextElementNumber: 4
-    Question2:
-      QuestionText: No Option
-      NextElementNumber: 0
-    Question3:
-      QuestionText: No Option
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 5
-    Response: I was in the study
-    Question1:
-      QuestionText: 'Is there anyone that can verify this? '
-      NextElementNumber: 5
-    Question2:
-      QuestionText: No Option
-      NextElementNumber: 0
-    Question3:
-      QuestionText: No Option
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: "I don\u2019t know about that. But I do know that Nikki was already
-      stressed over the pressure she was getting from her Mother to abandon her scientific
-      pursuits and follow in the family business."
-    Question1:
-      QuestionText: No Option
-      NextElementNumber: 2
-    Question2:
-      QuestionText: No Option
-      NextElementNumber: 0
-    Question3:
-      QuestionText: No Option
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 6
-    Response: Yes, Karol was with me
-    Question1:
-      QuestionText: Really? And why were you two together?
-      NextElementNumber: 6
-    Question2:
-      QuestionText: No Option
-      NextElementNumber: 0
-    Question3:
-      QuestionText: No Option
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 7
-    Response: '*Damien stutters*... Umm, we had struck up a conversation about Nikki''s
-      synthesizer.'
-    Question1:
-      QuestionText: Hm, you would discuss your mentor's latest invention with her
-        biggest rival?
-      NextElementNumber: 7
-    Question2:
-      QuestionText: No Option
-      NextElementNumber: 0
-    Question3:
-      QuestionText: No Option
-      NextElementNumber: 0
-  - NoQuestions: 0
-    NextElementNumber: 0
-    Response: Umm...
-    Question1:
-      QuestionText: No Option
-      NextElementNumber: 0
-    Question2:
-      QuestionText: No Option
-      NextElementNumber: 0
-    Question3:
-      QuestionText: No Option
-      NextElementNumber: 0
-  dialogueAfterClue: []
+  Profile: {fileID: 21300000, guid: aa82be60ec96972418a30364e3a3858e, type: 3}
+  InterrigationSprite: {fileID: -1112354176, guid: cfe7656a1a0642242ae321dceeef9116, type: 3}
+  CharacterSetUps:
+  - Scene: 1
+    Position: {x: 29.65184, y: 9.091576}
+    IsDead: 0
+  - Scene: 2
+    Position: {x: -0.6488919, y: 5.316116}
+    IsDead: 0
+  dialogForRegularConvo: []
+  DialogueForInterrogations: []
+  DialogueAfterClues: []
 --- !u!95 &3567300424763006586
 Animator:
   serializedVersion: 4
@@ -301,7 +124,7 @@ Animator:
   m_GameObject: {fileID: 6375446272540135202}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fb80353c8f79d9744a809e37e173686f, type: 2}
+  m_Controller: {fileID: 9100000, guid: d2643c62e77b6ba4dbeed54dea9cca1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -324,16 +147,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.008591}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.11, y: 0.17}
+    oldSize: {x: 0.74, y: 1.11}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14, y: 0.1528166}
+  m_Size: {x: 0.74, y: 1.11}
   m_EdgeRadius: 0

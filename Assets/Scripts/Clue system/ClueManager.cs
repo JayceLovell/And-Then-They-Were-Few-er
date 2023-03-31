@@ -1,54 +1,169 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ClueManager : MonoBehaviour
 {
-    public List<Clue> clues;
+    private static ClueManager _instance;
+
+    public List<Clue> Clues;
 
     public GameObject clueButton;
 
-    public Transform clueListContent;
+    [SerializeField]
+    private ScrollRect clueListContent;
 
-    public GameObject clueMenu;
+    [SerializeField]
+    private GameObject _clueMenu;
 
-    // Start is called before the first frame update
-    void Start()
+    public GameObject ClueMenu
     {
-        for (int i = 0; i < clues.Count; i++)
-        {
-            AddClueButton(clues[i]);
+        get {
+            if(_clueMenu == null)
+                FindClueMenu();
+            return _clueMenu; 
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public static ClueManager Instance
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        get
+        {            
+            return _instance;
+        }
+    }
+    //CalledFirst
+    void OnEnable()
+    {
+        Debug.Log("Clue Manager Enabled");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void Awake()
+    {
+        // Check if there is already an instance of GameManager
+        if (_instance != null && _instance != this)
         {
-            if (clueMenu.activeSelf)
-            {
-                clueMenu.SetActive(false);
-            }
+            // If there is an instance already, destroy this new one
+            Destroy(this.gameObject);
+            return;
+        }
+
+        // Set the instance of the GameManager
+        _instance = this;
+
+        DontDestroyOnLoad(ClueManager.Instance);
+    }
+
+    /// <summary>
+    /// Either display or remove Menu
+    /// </summary>
+    public void ToggleMenu()
+    {
+        try
+        {
+            if (ClueMenu.activeInHierarchy)
+                ClueMenu.SetActive(false);
             else
-            {
-                clueMenu.SetActive(true);
-            }
+                ClueMenu.SetActive(true);
+        }
+        catch
+        {
+            Debug.LogError("Clue Menu is Null");
+            StartCoroutine(WaitToGrabRequired());
         }
     }
-
     public void AddClueButton(Clue clue)
     {
-        ClueButton button = Instantiate(clueButton, clueListContent).GetComponent<ClueButton>();
+        ClueButton button = Instantiate(clueButton, clueListContent.content).GetComponent<ClueButton>();
 
-        button.clueManager = this;
         button.clue = clue;
     }
 
     public void AddClue(Clue clue)
     {
-        clues.Add(clue);
+        Clues.Add(clue);
 
         AddClueButton(clue);
+    }
+    // Any stuff the manager has to do for each scene have it be done here
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        switch (scene.name)
+        {
+            case "Entrance":
+            case "GrandHall":
+            case "InterrogationScene":
+                try
+                {
+                    StartCoroutine(WaitToGrabRequired());
+                }
+                catch
+                {
+                    Debug.Log("Something weird is going on");
+                }
+                break;
+            default:
+                break;
+        }
+    }
+    IEnumerator WaitToGrabRequired()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        FindClueMenu();
+
+        if (ClueMenu == null)
+            StartCoroutine(WaitToGrabRequired());
+        else
+        {
+            for (int i = 0; i < _clueMenu.transform.childCount; i++)
+            {
+                Transform child = _clueMenu.transform.GetChild(i);
+
+                if (child.name == "Clues")
+                {
+                    clueListContent = child.gameObject.GetComponent<ScrollRect>();
+                    break;
+                }
+            }
+        }
+
+        //Add Clues buttons
+        if (Clues.Count > 0)
+        {
+            foreach (Clue clue in Clues)
+            {
+                AddClueButton(clue);
+            }
+        }
+
+    }
+    /// <summary>
+    /// Look for ClueMenu and assign it.
+    /// </summary>
+    private void FindClueMenu()
+    {
+        Transform canvasTransform = GameObject.Find("Canvas").transform;
+
+        for (int i = 0; i < canvasTransform.childCount; i++)
+        {
+            Transform child = canvasTransform.GetChild(i);
+
+            if (child.name == "Clue Menu Prefab")
+            {
+                _clueMenu = child.gameObject;
+                break;
+            }
+        }
+    }
+
+    void OnDisable()
+    {
+        Debug.Log("Clue Manager Disable");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

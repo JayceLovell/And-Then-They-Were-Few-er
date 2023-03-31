@@ -17,8 +17,9 @@ public class BigRevealController : MonoBehaviour
             case Character.CharacterName.Karol:
             case Character.CharacterName.Mirianne:            
             case Character.CharacterName.Nikki:
+            case Character.CharacterName.Robot:
             case Character.CharacterName.OldCrazyMan:
-                GameManager.Instance.IsGameOver = true;
+                GameManager.Instance.GameOver(characterName);
                 break;
             case Character.CharacterName.Rachel:
                 GameManager.Instance.IsGameWon = true;
@@ -40,6 +41,7 @@ public class BigRevealController : MonoBehaviour
     public void SelectedMirianne() => Selected(Character.CharacterName.Mirianne);
     public void SelectedNikki() => Selected(Character.CharacterName.Nikki);
     public void SelectedOldCrazyMan() => Selected(Character.CharacterName.OldCrazyMan);
+    public void SelectedRobot() => Selected(Character.CharacterName.Robot);
     public void SelectedRachel() => Selected(Character.CharacterName.Rachel);
 
 }
