@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Reflection;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.Profiling;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -217,11 +219,17 @@ public class Player : MonoBehaviour
         }
         // Interacting with object
         else if (CanInteract)
-        {
+        {            
             Talking = true;
             CurrentInteractableObject.GetComponent<Objects>().dialogueObjectController = DialogBox;
-            ImTalking();           
-            CurrentInteractableObject.GetComponent<Objects>().Use();
+            ImTalking();
+
+            if(!CurrentInteractableObject.GetComponent<Objects>().IsOptions)                
+                CurrentInteractableObject.GetComponent<Objects>().Use();
+            else
+            {
+                EventSystem.current.currentSelectedGameObject.GetComponent<Button>().onClick.Invoke();
+            }
 
         }
         else

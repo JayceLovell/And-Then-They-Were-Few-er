@@ -16783,7 +16783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7664251454001391691, guid: 784663a0522210243bf45fd75d250d9f, type: 3}
       propertyPath: m_Name
-      value: LightMachine (1)
+      value: LightMachine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 784663a0522210243bf45fd75d250d9f, type: 3}
