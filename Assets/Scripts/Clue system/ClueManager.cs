@@ -38,7 +38,6 @@ public class ClueManager : MonoBehaviour
     //CalledFirst
     void OnEnable()
     {
-        Debug.Log("Clue Manager Enabled");
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -163,7 +162,6 @@ public class ClueManager : MonoBehaviour
 
     void OnDisable()
     {
-        Debug.Log("Clue Manager Disable");
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
