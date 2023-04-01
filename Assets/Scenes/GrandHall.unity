@@ -759,7 +759,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379050557245956705, guid: b579a09a002df314fa309857b0dd574b, type: 3}
       propertyPath: m_Name
-      value: Nikki Test
+      value: Nikki
       objectReference: {fileID: 0}
     - target: {fileID: 2464139286769317214, guid: b579a09a002df314fa309857b0dd574b, type: 3}
       propertyPath: m_RootOrder

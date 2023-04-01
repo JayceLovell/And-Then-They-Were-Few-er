@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6858053411055140244}
   - component: {fileID: 614554593310986191}
   m_Layer: 0
-  m_Name: Nikki Test
+  m_Name: Nikki
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9d00fb2b7737c47b9c9f10c16456e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeadSprite: {fileID: 21300000, guid: cd5015dfe9c6b0a49a28af5ce051ad0c, type: 3}
+  DeadSprite: {fileID: 0}
   correctClue: {fileID: 0}
   Name: 0
   Profile: {fileID: 21300000, guid: de47a22c972e4904da60abaa08400235, type: 3}

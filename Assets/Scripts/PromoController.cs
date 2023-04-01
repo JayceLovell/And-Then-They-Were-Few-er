@@ -8,6 +8,7 @@ public class PromoController : MonoBehaviour
 {
     public float idleTimeThreshold = 30f; // time in seconds before video plays
     private float idleTimeCounter = 0f;
+    bool isPlayingPromo;
     private int promoSceneIndex;
     
     void Update()
@@ -23,22 +24,24 @@ public class PromoController : MonoBehaviour
         }
 
         // check if it's time to play the video
-        if (promoSceneIndex == -1 && idleTimeCounter >= idleTimeThreshold)
+        if (idleTimeCounter >= idleTimeThreshold && !isPlayingPromo)
         {
+            isPlayingPromo = true;
             SceneManager.LoadScene("Promo Trailer", LoadSceneMode.Additive);
             promoSceneIndex = SceneManager.GetSceneByName("Promo Trailer").buildIndex;
             GameObject.Find("BgSound").GetComponent<SoundBGVolume>().LowerVolume(1f);
             SceneManager.SetActiveScene(                
-                    SceneManager.GetSceneByBuildIndex(promoSceneIndex));
+                    SceneManager.GetSceneByBuildIndex(promoSceneIndex));            
         }
     }
 
     void LateUpdate()
     {
         // check if player has input and unload the scene
-        if (promoSceneIndex != -1 && (Mouse.current.delta.IsActuated() || Keyboard.current.anyKey.IsActuated()))
+        if (isPlayingPromo && (Mouse.current.delta.IsActuated() || Keyboard.current.anyKey.IsActuated()))
         {
-            SceneManager.UnloadSceneAsync(promoSceneIndex);
+            isPlayingPromo = false;
+            SceneManager.UnloadSceneAsync("Promo Trailer");
             GameObject.Find("BgSound").GetComponent<AudioSource>().volume = GameManager.Instance.BgmVolume;
             promoSceneIndex = -1;
             idleTimeCounter = 0f;

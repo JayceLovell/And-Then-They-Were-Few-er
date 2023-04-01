@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -201,6 +202,11 @@ public class Player : MonoBehaviour
                 CharactersScript.GetType().GetMethod("ContinueDialogue").Invoke(CharactersScript, null);
             else
             {
+                //Get the Imdead property
+                if((bool)CharactersScript.GetType().GetProperty("ImDead").GetValue(CharactersScript))
+                {
+                    return;
+                }
                 if (_gameController._gameManager.CurrentScene == "GrandHall")
                 {
                     _gameController.InInterrogation= true;
