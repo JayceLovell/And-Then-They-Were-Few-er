@@ -217,6 +217,25 @@ public class TextController : MonoBehaviour
             "\r\n\r\nOnce the storm clears, Rachel is escorted by Ashlyn and the Mayor to the Police Station. Rachel is remorseful and accepts her fate..." +
             "\r\n\r\nRACHEL IS THE MURDERER";
         GameOverTexts.Add(Rachel);
+
+        GameOverText Robot = new GameOverText();
+        Robot.SelectCharacterName = Character.CharacterName.Robot;
+        Robot.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+            "\r\n\r\nShe walks over to the de-activated Wattson, Nikki's robot butler. " +
+            "\r\n\r\n\"Please re-activate him\" Ashlyn says to Damien, who looks puzzled." + "\"I believe he's the key to all of this.\"" +
+            "\r\n\r\nThough looking doubtful, Damien approaches Wattson and gets to work. The rest of the household watches silently as Damien tinkers with Wattson's open chestboard." +
+            "\r\n\r\nIt takes some time, but Damien is eventually able to get Wattson semi-operational, at least to a point where he can talk." +
+            "\r\n\r\n\"I know who did it. I know who killed Mistress Nikki\"  Wattson says, his damaged voicebox making his voice sound distorted and ominous." +
+            "\r\n\r\nSuddenly, there is a flash of lightning. Thunder rumbles outside." +
+            "\r\n\r\n...and the lights go out." +
+            "\r\n\r\nThere are a few seconds of silence, but this is soon broken by a loud crash." +
+            "\r\n\r\nThere is another flash of lightning, and this lights the dark room momentarily." +
+            "\r\n\r\nSomebody screams. For, in that brief flash of light, Wattson's now mangled head becomes visible. " +
+            "\r\n\r\nThe lights turn back on, and the rest of the household is able to properly view Wattson. His body has been destroyed." +
+            "\r\n\r\nIt seems, in that moment of darkness, someone used the opportunity to silence Wattson." +
+            "\r\n\r\nAshlyn looks around at the other guests, who are all seemingly quite as shocked as she is. Not knowing what to say, she turns to the window, where the storm continues to rage outside..." +
+            "\r\n\r\nWATTSON IS SILENCED";
+        GameOverTexts.Add(Robot);
     }
     /// <summary>
     /// When ever the Ok button is pressed or E is pressed this method is called.
