@@ -6,7 +6,6 @@ public class FootPrint : Clues
 {
 	protected override void SetUpDialogue()
     {
-		//Resending
         base.SetUpDialogue();
 
         DialogueForObjects ExampleForDialogueForObject = new DialogueForObjects();

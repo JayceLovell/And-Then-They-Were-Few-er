@@ -28,6 +28,13 @@ public class Character :MonoBehaviour
     [SerializeField]
     private Clue correctClue;
 
+    public bool ImDead
+    {
+        get
+        {
+            return imDead;
+        }        
+    }
     /// <summary>
     /// The Element Number of the List we want.
     /// </summary>

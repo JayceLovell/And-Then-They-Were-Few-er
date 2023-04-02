@@ -28,6 +28,7 @@ public class instructionsController : MonoBehaviour
 
         InstructionsButton.interactable = false;
         Controlls.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(GameObject.Find("CloseButton"));
     }
     public void SwitchToControlls()
     {
@@ -36,9 +37,11 @@ public class instructionsController : MonoBehaviour
 
         InstructionsButton.interactable = true;
         Controlls.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(GameObject.Find("CloseButton"));
     }
     public void Close()
     {
+        EventSystem.current.SetSelectedGameObject(GameObject.Find("QuitButton"));        
         SceneManager.UnloadSceneAsync("Instructions");
     }
 }

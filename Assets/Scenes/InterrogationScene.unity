@@ -15282,6 +15282,8 @@ MonoBehaviour:
   DialogBox: {fileID: 763131799}
   NPCPosition: {fileID: 1029176320}
   NPC: {fileID: 0}
+  EventSystemObject: {fileID: 2025978594}
+  CameraObject: {fileID: 2052234009}
 --- !u!4 &1714865939
 Transform:
   m_ObjectHideFlags: 0
@@ -16884,8 +16886,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EventSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 5445220536949439367, guid: 4992fa34c6c56a74fa948323e73e12af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4992fa34c6c56a74fa948323e73e12af, type: 3}
+--- !u!1 &2025978594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5445220536949439367, guid: 4992fa34c6c56a74fa948323e73e12af, type: 3}
+  m_PrefabInstance: {fileID: 2025978593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2026042471
 GameObject:
   m_ObjectHideFlags: 0
@@ -17002,7 +17013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2052234010
 Transform:
   m_ObjectHideFlags: 0

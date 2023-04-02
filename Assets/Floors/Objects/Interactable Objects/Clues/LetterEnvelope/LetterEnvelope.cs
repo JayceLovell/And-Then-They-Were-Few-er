@@ -6,7 +6,6 @@ public class LetterEnvelope : Clues
 {
 	protected override void SetUpDialogue()
     {
-		//Resending
         base.SetUpDialogue();
 
         DialogueForObjects ExampleForDialogueForObject = new DialogueForObjects();

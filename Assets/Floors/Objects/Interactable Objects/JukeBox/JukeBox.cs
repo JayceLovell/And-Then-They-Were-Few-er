@@ -56,11 +56,11 @@ public class JukeBox : Objects
             ExampleForDialogueForObject1.Option1.NextElementNumber = 2;
         }
 
-        //Add option2
-        // THis one not finish waiting Lay stuff
-        ExampleForDialogueForObject1.Option2 = new Options();
-        ExampleForDialogueForObject1.Option2.OptionSelectedInteger = 2;
-        ExampleForDialogueForObject1.Option2.OptionText = "Select different music";        
+        ////Add option2
+        //// THis one not finish waiting Lay stuff
+        //ExampleForDialogueForObject1.Option2 = new Options();
+        //ExampleForDialogueForObject1.Option2.OptionSelectedInteger = 2;
+        //ExampleForDialogueForObject1.Option2.OptionText = "Select different music";        
 
         DialogueForObject.Add(ExampleForDialogueForObject1);
 

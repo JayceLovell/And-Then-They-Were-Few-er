@@ -21,8 +21,7 @@ public class SoundBGVolume : MonoBehaviour
         if (audioSource.isPlaying)
             audioSource.Pause();
         else
-            audioSource.Play();
-
+            audioSource.UnPause();
     }
 
     private IEnumerator LowerVolumeOverTime(float duration)

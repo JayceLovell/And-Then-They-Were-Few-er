@@ -258,7 +258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6453729880420150325, guid: 7a7367310e437c442925401747854eb1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.316116
+      value: 5.612
       objectReference: {fileID: 0}
     - target: {fileID: 6453729880420150325, guid: 7a7367310e437c442925401747854eb1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2191737698677662689, guid: 2f2977feda8e39c4b9cccd8ff4ad52a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.679589
+      value: -2.354
       objectReference: {fileID: 0}
     - target: {fileID: 2191737698677662689, guid: 2f2977feda8e39c4b9cccd8ff4ad52a3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -539,7 +539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1430715500328768031, guid: 4f5a03f006f407444bf3e6c56e86ab24, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.37678
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 1430715500328768031, guid: 4f5a03f006f407444bf3e6c56e86ab24, type: 3}
       propertyPath: m_LocalPosition.z
@@ -600,7 +600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5022030404219044078, guid: b420277a064b8d042a68943d51b3e3b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.540929
+      value: -6.274
       objectReference: {fileID: 0}
     - target: {fileID: 5022030404219044078, guid: b420277a064b8d042a68943d51b3e3b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -759,7 +759,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379050557245956705, guid: b579a09a002df314fa309857b0dd574b, type: 3}
       propertyPath: m_Name
-      value: Nikki Test
+      value: Nikki
       objectReference: {fileID: 0}
     - target: {fileID: 2464139286769317214, guid: b579a09a002df314fa309857b0dd574b, type: 3}
       propertyPath: m_RootOrder

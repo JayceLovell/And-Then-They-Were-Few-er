@@ -211,11 +211,11 @@ public class TextController : MonoBehaviour
 		
 		GameOverText Rachel = new GameOverText();
         Rachel.SelectCharacterName = Character.CharacterName.Rachel;
-        Rachel.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
+        Rachel.text = "RAKKELL" /*"Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
             "She now knew the identity of Nikki's murderer. And yet..." + "\r\n\r\n\"It was Rachel. She murdered Nikki!\" Ashlyn says, to the astonishment and disbelief of the other guests." + "\r\n\r\nRachel sighs, stands up, and slowly nods her head as she begins to sob." +
             "\r\n\r\nRachel tearfully explains how she and Nikki had got into an argument about Nikki joining the family business, after the showcase. In a fit of anger, Rachel had pushed Nikki and she hit her head, dying due to blood loss." +
             "\r\n\r\nOnce the storm clears, Rachel is escorted by Ashlyn and the Mayor to the Police Station. Rachel is remorseful and accepts her fate..." +
-            "\r\n\r\nRACHEL IS THE MURDERER";
+            "\r\n\r\nRACHEL IS THE MURDERER"*/;
         GameOverTexts.Add(Rachel);
 
         GameOverText Robot = new GameOverText();
