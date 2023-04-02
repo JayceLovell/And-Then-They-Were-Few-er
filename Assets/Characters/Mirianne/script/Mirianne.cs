@@ -434,7 +434,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo13.NPCTalking = true;
         ExampleInterrogationConvo13.EndInterrogation = false;
         ExampleInterrogationConvo13.NoQuestions = false;
-        ExampleInterrogationConvo13.Response = "[Miriane's expression hardens]";
+        ExampleInterrogationConvo13.Response = "[Mirianne's expression hardens]";
 
 
 
@@ -570,7 +570,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo18.NPCTalking = true;
         ExampleInterrogationConvo18.EndInterrogation = false;
         ExampleInterrogationConvo18.NoQuestions = false;
-        ExampleInterrogationConvo18.Response = "Oh... Well, I'm Karol's sponsor. And I do believe she has some ideas that may surpass Nikki's";
+        ExampleInterrogationConvo18.Response = "Oh... Well, I'm Karol's sponsor. And I do believe she has some ideas that may surpass Nikki's.";
 
 
 
@@ -663,7 +663,7 @@ public class Mirianne : Character
         ExampledialogueAfterClue2.EndInterrogation = false;
         ExampledialogueAfterClue2.NoQuestions = false;
         ExampledialogueAfterClue2.NPCTalking = true;
-        ExampledialogueAfterClue2.Response = "*starts to shift uncomfortably* I... er... um";
+        ExampledialogueAfterClue2.Response = "*starts to shift uncomfortably* I... er... um...";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
@@ -688,7 +688,7 @@ public class Mirianne : Character
         ExampledialogueAfterClue3.EndInterrogation = false;
         ExampledialogueAfterClue3.NoQuestions = false;
         ExampledialogueAfterClue3.NPCTalking = true;
-        ExampledialogueAfterClue3.Response = "*Takes a deep breath and closes her eyes* ...I was in the room after she had been killed";
+        ExampledialogueAfterClue3.Response = "*Takes a deep breath and closes her eyes* ...I was in the room after she had been killed.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
@@ -738,7 +738,7 @@ public class Mirianne : Character
         ExampledialogueAfterClue5.EndInterrogation = false;
         ExampledialogueAfterClue5.NoQuestions = false;
         ExampledialogueAfterClue5.NPCTalking = true;
-        ExampledialogueAfterClue5.Response = "Well, after I heard the two voices arguing, I went to investigate";
+        ExampledialogueAfterClue5.Response = "Well, after I heard the two voices arguing, I went to investigate.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
@@ -763,7 +763,7 @@ public class Mirianne : Character
         ExampledialogueAfterClue6.EndInterrogation = false;
         ExampledialogueAfterClue6.NoQuestions = false;
         ExampledialogueAfterClue6.NPCTalking = true;
-        ExampledialogueAfterClue6.Response = "I'd thought I heard them coming from the lab, and that's where I went to check. When I entered, Nikki was lying on the floor, bleeding";
+        ExampledialogueAfterClue6.Response = "I'd thought I heard them coming from the lab, and that's where I went to check. When I entered, Nikki was lying on the floor, bleeding.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
@@ -788,7 +788,7 @@ public class Mirianne : Character
         ExampledialogueAfterClue7.EndInterrogation = false;
         ExampledialogueAfterClue7.NoQuestions = false;
         ExampledialogueAfterClue7.NPCTalking = true;
-        ExampledialogueAfterClue7.Response = "I rushed to her body to check to see if she was ok. That handkerchief was next to her, and I applied it to her wound to see if I could stop the bleeding, but it was too late. She was already dead";
+        ExampledialogueAfterClue7.Response = "I rushed to her body to check to see if she was ok. That handkerchief was next to her, and I applied it to her wound to see if I could stop the bleeding, but it was too late. She was already dead.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
@@ -813,13 +813,13 @@ public class Mirianne : Character
         ExampledialogueAfterClue8.EndInterrogation = false;
         ExampledialogueAfterClue8.NoQuestions = false;
         ExampledialogueAfterClue8.NPCTalking = true;
-        ExampledialogueAfterClue8.Response = "I thought about calling for help, but I panicked. I just didn't know how to explain myself without looking suspicious";
+        ExampledialogueAfterClue8.Response = "I thought about calling for help, but I panicked. I just didn't know how to explain myself without looking suspicious.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
 
         ExampledialogueAfterClue8.Question1 = new Question();
-        ExampledialogueAfterClue8.Question1.QuestionText = "No kidding";
+        ExampledialogueAfterClue8.Question1.QuestionText = "No kidding...";
         ExampledialogueAfterClue8.Question1.NextElementNumber = 9;
 
         ExampledialogueAfterClue8.Question2 = new Question();

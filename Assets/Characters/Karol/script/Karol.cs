@@ -12,7 +12,7 @@ public class Karol : Character
         {
             DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
             ExampleForBeforeMurder.NPCTalking = true;
-            ExampleForBeforeMurder.Text = "(The eccentric and energetic rival inventor to Nikki Test. She is sponsored by Mirianne)";
+            ExampleForBeforeMurder.Text = "(The eccentric and egotistical rival inventor to Nikki Test. She is sponsored by Mirianne)";
             dialogForRegularConvo.Add(ExampleForBeforeMurder);
 
             DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
@@ -27,7 +27,7 @@ public class Karol : Character
 
             DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
             ExampleForBeforeMurder3.NPCTalking = false;
-            ExampleForBeforeMurder3.Text = "Uh... no sorry, can't say I have";
+            ExampleForBeforeMurder3.Text = "Uh... no sorry, can't say I have.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder3);
 
             DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
@@ -349,7 +349,7 @@ public class Karol : Character
         ExampledialogueAfterClue1.EndInterrogation = false;
         ExampledialogueAfterClue1.NoQuestions = false;
         ExampledialogueAfterClue1.NPCTalking = true;
-        ExampledialogueAfterClue1.Response = "I-I don't know what that is";
+        ExampledialogueAfterClue1.Response = "I-I don't know what that is.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
@@ -424,7 +424,7 @@ public class Karol : Character
         ExampledialogueAfterClue4.EndInterrogation = false;
         ExampledialogueAfterClue4.NoQuestions = false;
         ExampledialogueAfterClue4.NPCTalking = true;
-        ExampledialogueAfterClue4.Response = "Him and I have an ongoing... er... 'entanglement', and it seems he wanted to re-negotiate the terms of our contract";
+        ExampledialogueAfterClue4.Response = "Him and I have an ongoing... er... 'entanglement', and it seems he wanted to re-negotiate the terms of our contract.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
@@ -474,7 +474,7 @@ public class Karol : Character
         ExampledialogueAfterClue6.EndInterrogation = false;
         ExampledialogueAfterClue6.NoQuestions = false;
         ExampledialogueAfterClue6.NPCTalking = true;
-        ExampledialogueAfterClue6.Response = "We met in the study";
+        ExampledialogueAfterClue6.Response = "We met in the study.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
@@ -499,7 +499,7 @@ public class Karol : Character
         ExampledialogueAfterClue7.EndInterrogation = false;
         ExampledialogueAfterClue7.NoQuestions = false;
         ExampledialogueAfterClue7.NPCTalking = true;
-        ExampledialogueAfterClue7.Response = "I didn't lie! I just left out the part about me leaving afterwards to go meet Damien in the study";
+        ExampledialogueAfterClue7.Response = "I didn't lie! I just left out the part about me leaving afterwards to go meet Damien in the study.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question

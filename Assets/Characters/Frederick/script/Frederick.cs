@@ -26,12 +26,12 @@ public class Frederick : Character
 
             DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
             ExampleForBeforeMurder1.NPCTalking = false;
-            ExampleForBeforeMurder1.Text = "Good Evening Mayor";
+            ExampleForBeforeMurder1.Text = "Good Evening Mayor.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder1);
 
             DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
             ExampleForBeforeMurder2.NPCTalking = true;
-            ExampleForBeforeMurder2.Text = "Good Evening Ms. Hunt";
+            ExampleForBeforeMurder2.Text = "Good Evening Ms. Hunt.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder2);
 
         }
@@ -175,7 +175,7 @@ public class Frederick : Character
         ExampleInterrogationConvo5.NPCTalking = true;
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
-        ExampleInterrogationConvo5.Response = "It might do us some good to look for them";
+        ExampleInterrogationConvo5.Response = "It might do us some good to look for them.";
         //Creating a Question
 
         ExampleInterrogationConvo5.Question1 = new Question();
@@ -247,7 +247,7 @@ public class Frederick : Character
         ExampleInterrogationConvo8.NPCTalking = true;
         ExampleInterrogationConvo8.EndInterrogation = false;
         ExampleInterrogationConvo8.NoQuestions = false;
-        ExampleInterrogationConvo8.Response = "*Hrmph* If you say so";
+        ExampleInterrogationConvo8.Response = "*Hrmph* If you say so...";
         //Creating a Question
 
         ExampleInterrogationConvo8.Question1 = new Question();
@@ -355,7 +355,7 @@ public class Frederick : Character
         ExampledialogueAfterClue1.EndInterrogation = false;
         ExampledialogueAfterClue1.NoQuestions = false;
         ExampledialogueAfterClue1.NPCTalking = true;
-        ExampledialogueAfterClue1.Response = " Ah, you found them! Excellent";
+        ExampledialogueAfterClue1.Response = " Ah, you found them! Excellent.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
@@ -380,7 +380,7 @@ public class Frederick : Character
         ExampledialogueAfterClue2.EndInterrogation = false;
         ExampledialogueAfterClue2.NoQuestions = false;
         ExampledialogueAfterClue2.NPCTalking = true;
-        ExampledialogueAfterClue2.Response = "Yes. I must say, the toilet was a very strange place to try to hide them";
+        ExampledialogueAfterClue2.Response = "Yes. I must say, the toilet was a very strange place to try to hide them.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue2);
 
         //Creating a Question
@@ -405,7 +405,7 @@ public class Frederick : Character
         ExampledialogueAfterClue3.EndInterrogation = false;
         ExampledialogueAfterClue3.NoQuestions = false;
         ExampledialogueAfterClue3.NPCTalking = true;
-        ExampledialogueAfterClue3.Response = "*coughs* If I recall, I believe I had heard that fellow Jayson mention seeing a pair of keys in the toilet stall ";
+        ExampledialogueAfterClue3.Response = "*coughs* If I recall, I believe I had heard that fellow Jayson mention seeing a pair of keys in the toilet stall.";
        // DialogueAfterClues.Add(ExampledialogueAfterClue3);
 
         //Creating a Question

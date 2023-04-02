@@ -17,7 +17,7 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
             ExampleForBeforeMurder1.NPCTalking = false;
-            ExampleForBeforeMurder1.Text = "Good Evening";
+            ExampleForBeforeMurder1.Text = "Good Evening.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder1);
 
             DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
@@ -27,7 +27,7 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
             ExampleForBeforeMurder3.NPCTalking = true;
-            ExampleForBeforeMurder3.Text = "Well, hello there";
+            ExampleForBeforeMurder3.Text = "Well, hello there!";
             dialogForRegularConvo.Add(ExampleForBeforeMurder3);
 
             DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
@@ -37,12 +37,12 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
             ExampleForBeforeMurder5.NPCTalking = false;
-            ExampleForBeforeMurder5.Text = "Well, hello yourself";
+            ExampleForBeforeMurder5.Text = "Well, hello yourself.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder5);
 
             DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
             ExampleForBeforeMurder6.NPCTalking = true;
-            ExampleForBeforeMurder6.Text = "You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's hot new detective in the flesh";
+            ExampleForBeforeMurder6.Text = "You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's hot new detective in the flesh.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder6);
 
             DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
@@ -62,12 +62,12 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder10 = new DialogRegularConvo();
             ExampleForBeforeMurder10.NPCTalking = true;
-            ExampleForBeforeMurder10.Text = "That's yet to be determined";
+            ExampleForBeforeMurder10.Text = "That's yet to be determined.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder10);
 
             DialogRegularConvo ExampleForBeforeMurder11 = new DialogRegularConvo();
             ExampleForBeforeMurder11.NPCTalking = true;
-            ExampleForBeforeMurder11.Text = "I'm afraid though, that you might have some competition";
+            ExampleForBeforeMurder11.Text = "I'm afraid though, that you might have some competition.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder11);
 
             DialogRegularConvo ExampleForBeforeMurder12 = new DialogRegularConvo();
@@ -97,7 +97,7 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder17 = new DialogRegularConvo();
             ExampleForBeforeMurder17.NPCTalking = true;
-            ExampleForBeforeMurder17.Text = "Jayson Klutsch! I may not have your reputation quite yet, but I do believe I'm a force to be reckoned with";
+            ExampleForBeforeMurder17.Text = "Jayson Klutsch! I may not have your reputation quite yet, but I do believe I'm a force to be reckoned with!";
             dialogForRegularConvo.Add(ExampleForBeforeMurder17);
 
             DialogRegularConvo ExampleForBeforeMurder18 = new DialogRegularConvo();
@@ -107,7 +107,7 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder19 = new DialogRegularConvo();
             ExampleForBeforeMurder19.NPCTalking = false;
-            ExampleForBeforeMurder19.Text = "Glad to make your acquaintance";
+            ExampleForBeforeMurder19.Text = "Glad to make your acquaintance.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder19);
         }
         else
@@ -225,7 +225,7 @@ public class Jayson : Character
         ExampleInterrogationConvo4.NPCTalking = true;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
-        ExampleInterrogationConvo4.Response = "I didn't know her personally, it's Damien that invited me to the event";
+        ExampleInterrogationConvo4.Response = "I didn't know her personally, it's Damien that invited me to the event.";
 
 
 
@@ -253,7 +253,7 @@ public class Jayson : Character
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "Him and I go waaay back. Plus I wanted to make sure he was doing ok, " +
-            "he had been a bit sad the past few days";
+            "he had been a bit sad the past few days.";
 
 
 
@@ -307,7 +307,7 @@ public class Jayson : Character
         ExampleInterrogationConvo7.NPCTalking = true;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
-        ExampleInterrogationConvo7.Response = "Alright, I'll spill! Damien and Karol had a thing";
+        ExampleInterrogationConvo7.Response = "Alright, I'll spill! Damien and Karol had a thing.";
 
 
 
@@ -471,7 +471,7 @@ public class Jayson : Character
         ExampleInterrogationConvo13.NPCTalking = true;
         ExampleInterrogationConvo13.EndInterrogation = false;
         ExampleInterrogationConvo13.NoQuestions = false;
-        ExampleInterrogationConvo13.Response = "*sighs* Don't I know it. But between you and me, I don't think detective work is my true calling";
+        ExampleInterrogationConvo13.Response = "*sighs* Don't I know it. But between you and me, I don't think detective work is my true calling.";
 
 
 

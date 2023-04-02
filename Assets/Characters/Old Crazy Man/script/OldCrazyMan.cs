@@ -39,7 +39,7 @@ public class OldCrazyMan : Character
 
             DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
             ExampleForBeforeMurder5.NPCTalking = false;
-            ExampleForBeforeMurder5.Text = "Well, I can kind of relate. I like the smell of fresh ink and newly printed parchment paper";
+            ExampleForBeforeMurder5.Text = "Well, I can kind of relate. I like the smell of fresh ink and newly printed parchment paper.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder5);
 
             DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
@@ -49,7 +49,7 @@ public class OldCrazyMan : Character
 
             DialogRegularConvo ExampleForBeforeMurder7= new DialogRegularConvo();
             ExampleForBeforeMurder7.NPCTalking = true;
-            ExampleForBeforeMurder7.Text = "Ink? Parchment! Now that's just weird";
+            ExampleForBeforeMurder7.Text = "Ink? Parchment! Now that's just weird.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder7);
 
             DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
@@ -63,7 +63,7 @@ public class OldCrazyMan : Character
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
             //ExampleForAfterMurder.Text = "Precious....My precious gears, are they safe?";
-            ExampleForAfterMurder.Text = "Looking for the right plant? It's located in the top right corner of the next room... The Gears Have Spoken!";
+            ExampleForAfterMurder.Text = "Looking for the right plant to bring this case to a close? It's located in the top right corner of the next room, right next to the entrance of the lab... The Gears Have Spoken!";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
@@ -220,7 +220,7 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo6.NPCTalking = true;
         ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
-        ExampleInterrogationConvo6.Response = "*clutching his cheek* I'm sorry. I shouldn't have said that, she was your best friend after all";
+        ExampleInterrogationConvo6.Response = "*clutching his cheek* I'm sorry. I shouldn't have said that, she was your best friend after all.";
         //Creating a Question
 
         ExampleInterrogationConvo6.Question1 = new Question();

@@ -22,7 +22,7 @@ public class John : Character
 
             DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
             ExampleForBeforeMurder2.NPCTalking = false;
-            ExampleForBeforeMurder2.Text = "Hi";
+            ExampleForBeforeMurder2.Text = "Hi!";
             dialogForRegularConvo.Add(ExampleForBeforeMurder2);
 
             DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
@@ -155,7 +155,7 @@ public class John : Character
         ExampleInterrogationConvo3.NPCTalking = true;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
-        ExampleInterrogationConvo3.Response = "I was in the bathroom with my Dad";
+        ExampleInterrogationConvo3.Response = "I was in the bathroom with my Dad.";
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
@@ -206,7 +206,7 @@ public class John : Character
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "No idea. But before they realized it was occupied they tried really hard to get in. " +
-            "They must have need to pee really badly";
+            "They must have need to pee really badly!";
         //Creating a Question
 
         ExampleInterrogationConvo5.Question1 = new Question();
@@ -328,7 +328,7 @@ public class John : Character
         ExampleInterrogationConvo10.NPCTalking = true;
         ExampleInterrogationConvo10.EndInterrogation = false;
         ExampleInterrogationConvo10.NoQuestions = false;
-        ExampleInterrogationConvo10.Response = "I'm not sure. I didn't know Nikki too well to be honest";
+        ExampleInterrogationConvo10.Response = "I'm not sure. I didn't know Nikki too well to be honest.";
         //Creating a Question
 
         ExampleInterrogationConvo10.Question1 = new Question();
@@ -352,7 +352,7 @@ public class John : Character
         ExampleInterrogationConvo11.NPCTalking = true;
         ExampleInterrogationConvo11.EndInterrogation = false;
         ExampleInterrogationConvo11.NoQuestions = false;
-        ExampleInterrogationConvo11.Response = "Not really, I was too focused on trying to keep Dad in check ";
+        ExampleInterrogationConvo11.Response = "Not really, I was too focused on trying to keep Dad in check. ";
         //Creating a Question
 
         ExampleInterrogationConvo11.Question1 = new Question();

@@ -278,7 +278,7 @@ public class Rachel : Character
         ExampleInterrogationConvo7.NPCTalking = true;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
-        ExampleInterrogationConvo7.Response = "Oh, I must have dropped it somewhere";
+        ExampleInterrogationConvo7.Response = "Oh, I must have dropped it somewhere.";
 
 
 
@@ -332,7 +332,7 @@ public class Rachel : Character
         ExampleInterrogationConvo9.NPCTalking = true;
         ExampleInterrogationConvo9.EndInterrogation = false;
         ExampleInterrogationConvo9.NoQuestions = false;
-        ExampleInterrogationConvo9.Response = "*raises her head sharply* That bastard left us years ago! It's always just been me and Nikki";
+        ExampleInterrogationConvo9.Response = "*raises her head sharply* That bastard left us years ago! It's always just been me and Nikki.";
 
 
 
@@ -359,7 +359,7 @@ public class Rachel : Character
         ExampleInterrogationConvo10.NPCTalking = true;
         ExampleInterrogationConvo10.EndInterrogation = false;
         ExampleInterrogationConvo10.NoQuestions = false;
-        ExampleInterrogationConvo10.Response = "*raises her head sharply* That bastard left us years ago! It's always just been me and Nikki";
+        ExampleInterrogationConvo10.Response = "*raises her head sharply* That bastard left us years ago! It's always just been me and Nikki.";
 
 
 

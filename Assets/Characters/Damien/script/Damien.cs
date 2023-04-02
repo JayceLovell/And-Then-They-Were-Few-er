@@ -146,7 +146,7 @@ public class Damien : Character
         ExampleInterrogationConvo2.NPCTalking = true;
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
-        ExampleInterrogationConvo2.Response = "Yes, Karol was with me";
+        ExampleInterrogationConvo2.Response = "Yes, Karol was with me.";
         //Creating a Question
 
         ExampleInterrogationConvo2.Question1 = new Question();
@@ -194,7 +194,7 @@ public class Damien : Character
         ExampleInterrogationConvo4.NPCTalking = true;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
-        ExampleInterrogationConvo4.Response = "*Damien gets defensive* I don't see anything wrong with that";
+        ExampleInterrogationConvo4.Response = "*Damien gets defensive* I don't see anything wrong with that.";
         //Creating a Question
 
         ExampleInterrogationConvo4.Question1 = new Question();
@@ -218,7 +218,7 @@ public class Damien : Character
         ExampleInterrogationConvo5.NPCTalking = true;
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
-        ExampleInterrogationConvo5.Response = "His recharge station should be right next to Rachel's room";
+        ExampleInterrogationConvo5.Response = "His recharge station should be right next to Rachel's room.";
         //Creating a Question
 
         ExampleInterrogationConvo5.Question1 = new Question();
@@ -242,7 +242,7 @@ public class Damien : Character
         ExampleInterrogationConvo6.NPCTalking = true;
         ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
-        ExampleInterrogationConvo6.Response = "I don't believe so... Nikki got on well with everyone";
+        ExampleInterrogationConvo6.Response = "I don't believe so... Nikki got on well with everyone.";
         //Creating a Question
 
         ExampleInterrogationConvo6.Question1 = new Question();
@@ -266,7 +266,7 @@ public class Damien : Character
         ExampleInterrogationConvo7.NPCTalking = true;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
-        ExampleInterrogationConvo7.Response = "Okay yes, Karol and Nikki are... were rivals, but they did respect one another";
+        ExampleInterrogationConvo7.Response = "Okay yes, Karol and Nikki are... were rivals, but they did respect one another.";
         //Creating a Question
 
         ExampleInterrogationConvo7.Question1 = new Question();
@@ -290,7 +290,7 @@ public class Damien : Character
         ExampleInterrogationConvo8.NPCTalking = true;
         ExampleInterrogationConvo8.EndInterrogation = false;
         ExampleInterrogationConvo8.NoQuestions = false;
-        ExampleInterrogationConvo8.Response = "*stands up* Detective, I know Karol. She wouldn't do this";
+        ExampleInterrogationConvo8.Response = "*stands up* Detective, I know Karol. She wouldn't do this.";
         //Creating a Question
 
         ExampleInterrogationConvo8.Question1 = new Question();
@@ -338,7 +338,7 @@ public class Damien : Character
         ExampleInterrogationConvo10.NPCTalking = true;
         ExampleInterrogationConvo10.EndInterrogation = false;
         ExampleInterrogationConvo10.NoQuestions = false;
-        ExampleInterrogationConvo10.Response = "As far as I know, Nikki and Mirianne had never met before tonight ";
+        ExampleInterrogationConvo10.Response = "As far as I know, Nikki and Mirianne had never met before tonight. ";
         //Creating a Question
 
         ExampleInterrogationConvo10.Question1 = new Question();
@@ -426,7 +426,7 @@ public class Damien : Character
         ExampledialogueAfterClue3.EndInterrogation = false;
         ExampledialogueAfterClue3.NoQuestions = false;
         ExampledialogueAfterClue3.NPCTalking = true;
-        ExampledialogueAfterClue3.Response = "*sighs* I had written to Karol  about possibly reconsidering our relationship";
+        ExampledialogueAfterClue3.Response = "*sighs* I had written to Karol  about possibly reconsidering our relationship.";
        // DialogueAfterClues.Add(ExampledialogueAfterClue3);
 
         //Creating a Question
@@ -511,7 +511,7 @@ public class Damien : Character
         ExampledialogueAfterClue7.EndInterrogation = false;
         ExampledialogueAfterClue7.NoQuestions = false;
         ExampledialogueAfterClue7.NPCTalking = true;
-        ExampledialogueAfterClue7.Response = " Well, we didn't want anyone to find it";
+        ExampledialogueAfterClue7.Response = " Well, we didn't want anyone to find it...";
         // DialogueAfterClues.Add(ExampledialogueAfterClue3);
 
         //Creating a Question
