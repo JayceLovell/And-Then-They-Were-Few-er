@@ -6,6 +6,7 @@ public class IronPipe : Clues
 {
 	protected override void SetUpDialogue()
     {
+		//Resending
         base.SetUpDialogue();
 
         DialogueForObjects ExampleForDialogueForObject = new DialogueForObjects();
