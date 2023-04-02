@@ -130,11 +130,11 @@ public class Damien : Character
         ExampleInterrogationConvo1.Question1.NextElementNumber = 2;
 
         ExampleInterrogationConvo1.Question2 = new Question();
-        ExampleInterrogationConvo1.Question2.QuestionText = " ";
+        ExampleInterrogationConvo1.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo1.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo1.Question3 = new Question();
-        ExampleInterrogationConvo1.Question3.QuestionText = " ";
+        ExampleInterrogationConvo1.Question3.QuestionText = "  ";
         ExampleInterrogationConvo1.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo1);
@@ -154,11 +154,11 @@ public class Damien : Character
         ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
-        ExampleInterrogationConvo2.Question2.QuestionText = " ";
+        ExampleInterrogationConvo2.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo2.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo2.Question3 = new Question();
-        ExampleInterrogationConvo2.Question3.QuestionText = " ";
+        ExampleInterrogationConvo2.Question3.QuestionText = "  ";
         ExampleInterrogationConvo2.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo2);
@@ -178,11 +178,11 @@ public class Damien : Character
         ExampleInterrogationConvo3.Question1.NextElementNumber = 4;
 
         ExampleInterrogationConvo3.Question2 = new Question();
-        ExampleInterrogationConvo3.Question2.QuestionText = " ";
+        ExampleInterrogationConvo3.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo3.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo3.Question3 = new Question();
-        ExampleInterrogationConvo3.Question3.QuestionText = " ";
+        ExampleInterrogationConvo3.Question3.QuestionText = "  ";
         ExampleInterrogationConvo3.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo3);
@@ -202,11 +202,11 @@ public class Damien : Character
         ExampleInterrogationConvo4.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question2 = new Question();
-        ExampleInterrogationConvo4.Question2.QuestionText = " ";
+        ExampleInterrogationConvo4.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo4.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question3 = new Question();
-        ExampleInterrogationConvo4.Question3.QuestionText = " ";
+        ExampleInterrogationConvo4.Question3.QuestionText = "  ";
         ExampleInterrogationConvo4.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo4);
@@ -226,11 +226,11 @@ public class Damien : Character
         ExampleInterrogationConvo5.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo5.Question2 = new Question();
-        ExampleInterrogationConvo5.Question2.QuestionText = " ";
+        ExampleInterrogationConvo5.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo5.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo5.Question3 = new Question();
-        ExampleInterrogationConvo5.Question3.QuestionText = " ";
+        ExampleInterrogationConvo5.Question3.QuestionText = "  ";
         ExampleInterrogationConvo5.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo5);
@@ -278,7 +278,7 @@ public class Damien : Character
         ExampleInterrogationConvo7.Question2.NextElementNumber = 8;
 
         ExampleInterrogationConvo7.Question3 = new Question();
-        ExampleInterrogationConvo7.Question3.QuestionText = " ";
+        ExampleInterrogationConvo7.Question3.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo7.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo7);
@@ -302,7 +302,7 @@ public class Damien : Character
         ExampleInterrogationConvo8.Question2.NextElementNumber = 9;
 
         ExampleInterrogationConvo8.Question3 = new Question();
-        ExampleInterrogationConvo8.Question3.QuestionText = " ";
+        ExampleInterrogationConvo8.Question3.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo8.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo8);
@@ -322,11 +322,11 @@ public class Damien : Character
         ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
-        ExampleInterrogationConvo9.Question2.QuestionText = " ";
+        ExampleInterrogationConvo9.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo9.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question3 = new Question();
-        ExampleInterrogationConvo9.Question3.QuestionText = " ";
+        ExampleInterrogationConvo9.Question3.QuestionText = "  ";
         ExampleInterrogationConvo9.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo9);
@@ -346,11 +346,11 @@ public class Damien : Character
         ExampleInterrogationConvo10.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question2 = new Question();
-        ExampleInterrogationConvo10.Question2.QuestionText = " ";
+        ExampleInterrogationConvo10.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo10.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question3 = new Question();
-        ExampleInterrogationConvo10.Question3.QuestionText = " ";
+        ExampleInterrogationConvo10.Question3.QuestionText = "  ";
         ExampleInterrogationConvo10.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo10);
@@ -415,7 +415,7 @@ public class Damien : Character
         ExampledialogueAfterClue2.Question2.NextElementNumber = 7;
 
         ExampledialogueAfterClue2.Question3 = new Question();
-        ExampledialogueAfterClue2.Question3.QuestionText = " ";
+        ExampledialogueAfterClue2.Question3.QuestionText = "[Back to the first screen]";
         ExampledialogueAfterClue2.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue2);
@@ -436,11 +436,11 @@ public class Damien : Character
         ExampledialogueAfterClue3.Question1.NextElementNumber = 4;
 
         ExampledialogueAfterClue3.Question2 = new Question();
-        ExampledialogueAfterClue3.Question2.QuestionText = " ";
+        ExampledialogueAfterClue3.Question2.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue3.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue3.Question3 = new Question();
-        ExampledialogueAfterClue3.Question3.QuestionText = " ";
+        ExampledialogueAfterClue3.Question3.QuestionText = "  ";
         ExampledialogueAfterClue3.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue3);
@@ -465,7 +465,7 @@ public class Damien : Character
         ExampledialogueAfterClue4.Question2.NextElementNumber = 6;
 
         ExampledialogueAfterClue4.Question3 = new Question();
-        ExampledialogueAfterClue4.Question3.QuestionText = " ";
+        ExampledialogueAfterClue4.Question3.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue4.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue4);
@@ -486,11 +486,11 @@ public class Damien : Character
         ExampledialogueAfterClue5.Question1.NextElementNumber = 2;
 
         ExampledialogueAfterClue5.Question2 = new Question();
-        ExampledialogueAfterClue5.Question2.QuestionText = " ";
+        ExampledialogueAfterClue5.Question2.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue5.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue5.Question3 = new Question();
-        ExampledialogueAfterClue5.Question3.QuestionText = " ";
+        ExampledialogueAfterClue5.Question3.QuestionText = "  ";
         ExampledialogueAfterClue5.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue5);
@@ -521,11 +521,11 @@ public class Damien : Character
         ExampledialogueAfterClue7.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue7.Question2 = new Question();
-        ExampledialogueAfterClue7.Question2.QuestionText = " ";
+        ExampledialogueAfterClue7.Question2.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue7.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue7.Question3 = new Question();
-        ExampledialogueAfterClue7.Question3.QuestionText = " ";
+        ExampledialogueAfterClue7.Question3.QuestionText = "  ";
         ExampledialogueAfterClue7.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue7);
