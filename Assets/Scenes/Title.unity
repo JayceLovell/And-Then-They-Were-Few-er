@@ -2618,7 +2618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0709548c3aea25342b83117ee614e1c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleTimeThreshold: 5
+  idleTimeThreshold: 300
 --- !u!1 &881861598
 GameObject:
   m_ObjectHideFlags: 0

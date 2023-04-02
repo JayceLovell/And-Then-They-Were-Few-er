@@ -180,7 +180,8 @@ public class DialogueObjectController : MonoBehaviour
             if (GameManager.Instance.CurrentScene == "InterrogationScene")
                 EventSystem.current.firstSelectedGameObject = GameObject.Find("BackButton");
             else
-                EventSystem.current.firstSelectedGameObject = GameObject.Find("Question 1");
+                EventSystem.current.SetSelectedGameObject(GameObject.Find("Question 1"));
+                //EventSystem.current.firstSelectedGameObject = GameObject.Find("Question 1");
         }
         else
         {
