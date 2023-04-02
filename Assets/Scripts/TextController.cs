@@ -194,7 +194,7 @@ public class TextController : MonoBehaviour
             "\r\n\r\nMIRIANNE IS NOT THE MURDERER"; 
         GameOverTexts.Add(Mirianne);
 		
-
+//Resending
 		GameOverText OCM = new GameOverText();
         OCM.SelectCharacterName = Character.CharacterName.OldCrazyMan;
         OCM.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
