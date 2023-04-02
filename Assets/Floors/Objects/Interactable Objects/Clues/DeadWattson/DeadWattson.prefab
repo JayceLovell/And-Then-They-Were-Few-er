@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930361f82677765429c4b80334d0e1ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectType: 2
-  Dialog: Watson... Oh no....
-  ClueStatementText: Watson, Nikki's robot butler. Seems to have been shut down and
-    isn't booting up
+  IsOptions: 0
+  ClueStatementText: Deactivated Wattson.
   ClueStatement: {fileID: 11400000, guid: fabbbfcd08dcc3b408e4d1c76c404e3b, type: 2}
+  objectType: 2
+  DialogueForObject: []

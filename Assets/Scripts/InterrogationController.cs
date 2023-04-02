@@ -32,9 +32,13 @@ public class InterrogationController : MonoBehaviour
         }
         set
         {          
-                _nextElementForInterrogating = value;
+            _nextElementForInterrogating = value;
+            if((bool)_npcComponent.GetType().GetProperty("CluePresented").GetValue(_npcComponent))
+                _npcComponent.GetType().GetProperty("NumDialogAfterClue").SetValue(_npcComponent, value);
+            else
                 _npcComponent.GetType().GetProperty("NumDialog").SetValue(_npcComponent, value);
-                _npcComponent.GetType().GetMethod("ContinueDialogue").Invoke(_npcComponent, null);
+
+            _npcComponent.GetType().GetMethod("ContinueDialogue").Invoke(_npcComponent, null);
         }
     }
     

@@ -7,7 +7,8 @@ public class Clues : Objects
 
     protected override void Start()
     {
-        base.Start();       
+        ClueStatement.PickedUp = ClueManager.Instance.HasClueBeenPickedUp(ClueStatement);
+        base.Start();        
     }
     protected override void SetUpDialogue()
     {
