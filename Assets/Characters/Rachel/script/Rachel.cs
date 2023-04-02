@@ -582,7 +582,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampleInterrogationConvo18.Question1 = new Question();
-        ExampleInterrogationConvo18.Question1.QuestionText = "[Back] ";
+        ExampleInterrogationConvo18.Question1.QuestionText = "[Previous Screen] ";
         ExampleInterrogationConvo18.Question1.NextElementNumber = 14;
 
         ExampleInterrogationConvo18.Question2 = new Question();

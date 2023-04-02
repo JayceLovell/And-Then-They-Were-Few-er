@@ -63,7 +63,7 @@ public class OldCrazyMan : Character
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
             //ExampleForAfterMurder.Text = "Precious....My precious gears, are they safe?";
-            ExampleForAfterMurder.Text = "Looking for the right plant to bring this case to a close? It's located in the top right corner of the next room, right next to the entrance of the lab... The Gears Have Spoken!";
+            ExampleForAfterMurder.Text = "Looking for the right plant to bring this case to a close? It's located in the top right corner of the next room, right next to the light machine, and near the entrance to the lab... The Gears Have Spoken!";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }

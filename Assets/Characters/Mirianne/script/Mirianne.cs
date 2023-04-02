@@ -469,7 +469,7 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo14.Question1 = new Question();
-        ExampleInterrogationConvo14.Question1.QuestionText = "Not Quite Yet...";
+        ExampleInterrogationConvo14.Question1.QuestionText = "Not Quite Yet... [Back to first screen]";
         ExampleInterrogationConvo14.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo14.Question2 = new Question();

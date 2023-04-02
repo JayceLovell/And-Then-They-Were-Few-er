@@ -87,7 +87,7 @@ public class Damien : Character
             // Create convo after Murder
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
-            ExampleForAfterMurder.Text = "Poor Nikki";
+            ExampleForAfterMurder.Text = "Poor Nikki...";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
