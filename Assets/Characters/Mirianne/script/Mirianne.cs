@@ -12,7 +12,7 @@ public class Mirianne : Character
         {
             DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
             ExampleForBeforeMurder.NPCTalking = true;
-            ExampleForBeforeMurder.Text = "(Miriane, a wealthy but vain trend chasing fashion designer)";
+            ExampleForBeforeMurder.Text = "(Mirianne, a wealthy but vain trend-chasing fashion designer)";
             dialogForRegularConvo.Add(ExampleForBeforeMurder);
 
             DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
@@ -22,7 +22,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
             ExampleForBeforeMurder2.NPCTalking = false;
-            ExampleForBeforeMurder2.Text = "Well, hello to you too";
+            ExampleForBeforeMurder2.Text = "Well, hello to you too.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder2);
 
             DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
@@ -32,7 +32,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
             ExampleForBeforeMurder4.NPCTalking = false;
-            ExampleForBeforeMurder4.Text = "I'm a friend of Nikki's";
+            ExampleForBeforeMurder4.Text = "I'm a friend of Nikki's.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder4);
 
             DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
@@ -42,7 +42,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
             ExampleForBeforeMurder6.NPCTalking = true;
-            ExampleForBeforeMurder6.Text = "Ah, I see";
+            ExampleForBeforeMurder6.Text = "Ah, I see.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder6);
 
             DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
@@ -57,7 +57,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForBeforeMurder9 = new DialogRegularConvo();
             ExampleForBeforeMurder9.NPCTalking = false;
-            ExampleForBeforeMurder9.Text = "Yeah, ol' Nikki's on the up and up";
+            ExampleForBeforeMurder9.Text = "Yeah, ol' Nikki's on the up and up.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder9);
 
             DialogRegularConvo ExampleForBeforeMurder10 = new DialogRegularConvo();
@@ -67,7 +67,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForBeforeMurder11 = new DialogRegularConvo();
             ExampleForBeforeMurder11.NPCTalking = true;
-            ExampleForBeforeMurder11.Text = "(Ashlyn narrows her eyes at Mirianne as she walks away. Mirianne narrows hers as well )";
+            ExampleForBeforeMurder11.Text = "(Ashlyn narrows her eyes at Mirianne as she walks away. Mirianne narrows hers as well)";
             dialogForRegularConvo.Add(ExampleForBeforeMurder11);
         }
         else
@@ -75,7 +75,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
-            ExampleForAfterMurder.Text = "I can't wait for this storm to end so I can leave this wretched mansion";
+            ExampleForAfterMurder.Text = "I can't wait for this storm to end so I can leave this wretched mansion!";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
@@ -113,11 +113,11 @@ public class Mirianne : Character
         ExampleInterrogationConvo1.NPCTalking = true;
         ExampleInterrogationConvo1.EndInterrogation = false;
         ExampleInterrogationConvo1.NoQuestions = false;
-        ExampleInterrogationConvo1.Response = "I don’t see why this is any of your business, “Detective”";
+        ExampleInterrogationConvo1.Response = "I don't see why this is any of your business, “Detective”";
         //Creating a Question
 
         ExampleInterrogationConvo1.Question1 = new Question();
-        ExampleInterrogationConvo1.Question1.QuestionText = "Hey! Don’t tell me you are going to undermine an active murder investigation";
+        ExampleInterrogationConvo1.Question1.QuestionText = "Hey! Don't tell me you are going to undermine an active murder investigation!";
         ExampleInterrogationConvo1.Question1.NextElementNumber = 2;
 
         ExampleInterrogationConvo1.Question2 = new Question();
@@ -138,11 +138,11 @@ public class Mirianne : Character
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
         ExampleInterrogationConvo2.Response = "Well, last time I checked, you are not the police." +
-            "I thought you and our dear Mayor were going to fetch real law enforcement once this storm cleared up";
+            "I thought you and our dear Mayor were going to fetch real law enforcement once this storm cleared up.";
         //Creating a Question
 
         ExampleInterrogationConvo2.Question1 = new Question();
-        ExampleInterrogationConvo2.Question1.QuestionText = "I’d just like to know all the facts, before the Mayor and I approach the police. ";
+        ExampleInterrogationConvo2.Question1.QuestionText = "I'd just like to know all the facts, before the Mayor and I approach the police ";
         ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
@@ -159,15 +159,15 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo3 = new DialogueForInterrogation();
         ExampleInterrogationConvo3.NextElementNumber = 1;
-        ExampleInterrogationConvo3.NPCTalking = true;
+        ExampleInterrogationConvo3.NPCTalking = false;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
-        ExampleInterrogationConvo3.Response = "(Ashlyn takes a deep breath, trying to control her anger)" +
-            "Ashlyn then sighs, and her tone changes  from interrogative to mournful";
+        ExampleInterrogationConvo3.Response = "[Ashlyn takes a deep breath, trying to control her anger." +
+            "Ashlyn then sighs, and her tone changes  from interrogative to mournful]";
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
-        ExampleInterrogationConvo3.Question1.QuestionText = "There’s a potential murderer on the loose. And Nikki was my best friend. " +
+        ExampleInterrogationConvo3.Question1.QuestionText = "There's a potential murderer on the loose. And Nikki was my best friend. " +
             "I need to get to the bottom of this";
         ExampleInterrogationConvo3.Question1.NextElementNumber = 4;
 
@@ -188,8 +188,8 @@ public class Mirianne : Character
         ExampleInterrogationConvo4.NPCTalking = true;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
-        ExampleInterrogationConvo4.Response = " (Mirianne, who had been glaring at Ashlyn, " +
-            "changes her expression somewhat to a look of resentful understanding)";
+        ExampleInterrogationConvo4.Response = " [Mirianne, who had been glaring at Ashlyn, " +
+            "changes her expression somewhat to a look of resentful understanding]";
 
 
 
@@ -216,7 +216,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo5.NPCTalking = true;
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
-        ExampleInterrogationConvo5.Response = "Well, if there’s one thing that hasn’t changed, it’s how much you’re willing to do for your friends…";
+        ExampleInterrogationConvo5.Response = "Well, if there's one thing that hasn't changed, it's how much you're willing to do for your friends…";
 
 
 
@@ -270,7 +270,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo7.NPCTalking = true;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
-        ExampleInterrogationConvo7.Response = "(Mirianne stutters for a bit, shocked, but quickly recovers)";
+        ExampleInterrogationConvo7.Response = "[Mirianne stutters for a bit, shocked, but quickly recovers]";
 
 
 
@@ -324,7 +324,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo9.NPCTalking = true;
         ExampleInterrogationConvo9.EndInterrogation = false;
         ExampleInterrogationConvo9.NoQuestions = false;
-        ExampleInterrogationConvo9.Response = "I could hear two people talking very loudly, but couldn’t make out what they were saying." +
+        ExampleInterrogationConvo9.Response = "I could hear two people talking very loudly, but couldn't make out what they were saying." +
             "The storm was too loud.";
 
 
@@ -380,7 +380,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo11.NPCTalking = true;
         ExampleInterrogationConvo11.EndInterrogation = false;
         ExampleInterrogationConvo11.NoQuestions = false;
-        ExampleInterrogationConvo11.Response = "(Mirianne begins to scowl)";
+        ExampleInterrogationConvo11.Response = "[Mirianne begins to scowl]";
 
 
 
@@ -434,7 +434,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo13.NPCTalking = true;
         ExampleInterrogationConvo13.EndInterrogation = false;
         ExampleInterrogationConvo13.NoQuestions = false;
-        ExampleInterrogationConvo13.Response = "(Miriane’s expression hardens)";
+        ExampleInterrogationConvo13.Response = "[Miriane's expression hardens]";
 
 
 
@@ -461,7 +461,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo14.NPCTalking = true;
         ExampleInterrogationConvo14.EndInterrogation = false;
         ExampleInterrogationConvo14.NoQuestions = false;
-        ExampleInterrogationConvo14.Response = "I didn’t pay it any mind. Shortly after, I left for my room." +
+        ExampleInterrogationConvo14.Response = "I didn't pay it any mind. Shortly after, I left for my room." +
             "May I go now, “Detective”?";
 
 

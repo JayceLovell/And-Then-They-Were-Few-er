@@ -32,7 +32,7 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
             ExampleForBeforeMurder4.NPCTalking = false;
-            ExampleForBeforeMurder4.Text = "(Ashlyn returns Jayson’s smile)";
+            ExampleForBeforeMurder4.Text = "(Ashlyn returns Jayson's smile)";
             dialogForRegularConvo.Add(ExampleForBeforeMurder4);
 
             DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();

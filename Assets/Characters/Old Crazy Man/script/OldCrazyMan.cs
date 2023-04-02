@@ -148,7 +148,7 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo3.NPCTalking = true;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
-        ExampleInterrogationConvo3.Response = "I always ask him to accompany me so that I have someone to hold my gears. Don’t want to drop them in the toilet!";
+        ExampleInterrogationConvo3.Response = "I always ask him to accompany me so that I have someone to hold my gears. Don't want to drop them in the toilet!";
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
@@ -410,5 +410,5 @@ public class OldCrazyMan : Character
      
      Your son was in the stall with you? Why?? element 3
 
-    response: I always ask him to accompany me so that I have someone to hold my gears. Don’t want to drop them in the toilet!
+    response: I always ask him to accompany me so that I have someone to hold my gears. Don't want to drop them in the toilet!
 */

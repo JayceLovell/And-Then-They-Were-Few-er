@@ -159,7 +159,7 @@ public class John : Character
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
-        ExampleInterrogationConvo3.Question1.QuestionText = "(while shaking her head): For God’s sake. Well, at least that provides an alibi for the both of you.";
+        ExampleInterrogationConvo3.Question1.QuestionText = "(while shaking her head): For God's sake. Well, at least that provides an alibi for the both of you.";
         ExampleInterrogationConvo3.Question1.NextElementNumber = 4;
 
         ExampleInterrogationConvo3.Question2 = new Question();
@@ -179,7 +179,7 @@ public class John : Character
         ExampleInterrogationConvo4.NPCTalking = true;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
-        ExampleInterrogationConvo4.Response = "Please don’t tell anyone! I was already scared that we would get caught last night, " +
+        ExampleInterrogationConvo4.Response = "Please don't tell anyone! I was already scared that we would get caught last night, " +
             "someone tried to use the bathroom when we were in there!";
 
         //Creating a Question
@@ -210,7 +210,7 @@ public class John : Character
         //Creating a Question
 
         ExampleInterrogationConvo5.Question1 = new Question();
-        ExampleInterrogationConvo5.Question1.QuestionText = "I’ll bet they did…";
+        ExampleInterrogationConvo5.Question1.QuestionText = "I'll bet they did…";
         ExampleInterrogationConvo5.Question1.NextElementNumber = 6;
 
         ExampleInterrogationConvo5.Question2 = new Question();
@@ -231,7 +231,7 @@ public class John : Character
         ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
         ExampleInterrogationConvo6.Response = "After that, it seemed like they went into the next stall. " +
-            "I think I might have heard something hit the floor, but I’m not sure, I didn’t look in to check.";
+            "I think I might have heard something hit the floor, but I'm not sure, I didn't look in to check.";
         //Creating a Question
 
         ExampleInterrogationConvo6.Question1 = new Question();

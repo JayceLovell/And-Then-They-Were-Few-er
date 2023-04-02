@@ -22,7 +22,7 @@ public class Karol : Character
 
             DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
             ExampleForBeforeMurder2.NPCTalking = true;
-            ExampleForBeforeMurder2.Text = "Hello yes, I am Karol. Inventor extraordinaire! I’m sure you’ve heard all about me.";
+            ExampleForBeforeMurder2.Text = "Hello yes, I am Karol. Inventor extraordinaire! I'm sure you've heard all about me.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder2);
 
             DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
@@ -110,7 +110,7 @@ public class Karol : Character
         ExampleInterrogationConvo1.NPCTalking = true;
         ExampleInterrogationConvo1.EndInterrogation = false;
         ExampleInterrogationConvo1.NoQuestions = false;
-        ExampleInterrogationConvo1.Response = "I was in my room. I couldn’t sleep of course.";
+        ExampleInterrogationConvo1.Response = "I was in my room. I couldn't sleep of course.";
         //Creating a Question
 
         ExampleInterrogationConvo1.Question1 = new Question();
@@ -134,9 +134,9 @@ public class Karol : Character
         ExampleInterrogationConvo2.NPCTalking = true;
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
-        ExampleInterrogationConvo2.Response = "Nikki’s Synthesizer! I hate to say it, but it’s the most amazing technology I’ve ever seen!" +
-            "My brain could just not stop thinking of way’s to one up her designs." +
-            "It’s a shame that now she’s gone, it might never see the light of day…";
+        ExampleInterrogationConvo2.Response = "Nikki's Synthesizer! I hate to say it, but it's the most amazing technology I've ever seen!" +
+            "My brain could just not stop thinking of way's to one up her designs." +
+            "It's a shame that now she's gone, it might never see the light of day…";
         //Creating a Question
 
         ExampleInterrogationConvo2.Question1 = new Question();
@@ -161,7 +161,7 @@ public class Karol : Character
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
         ExampleInterrogationConvo3.Response = "What are you trying to say Detective?" +
-            "Are you trying to suggest that it was me who killed Nikki? That’s a heavy accusation!";
+            "Are you trying to suggest that it was me who killed Nikki? That's a heavy accusation!";
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
@@ -186,8 +186,8 @@ public class Karol : Character
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = true;
         ExampleInterrogationConvo4.Response = " Now, Nikki and I may have been rivals, but I still had respect for her! " +
-            "If anything I’d want her to still be alive, to witness me surpass her!"/* +
-            "If you want someone to suspect, Detective, I’d suggest looking into Mr. Damien. " +
+            "If anything I'd want her to still be alive, to witness me surpass her!"/* +
+            "If you want someone to suspect, Detective, I'd suggest looking into Mr. Damien. " +
             "I heard Nikki was thinking of firing him, maybe he felt threatened."*/;
 
 

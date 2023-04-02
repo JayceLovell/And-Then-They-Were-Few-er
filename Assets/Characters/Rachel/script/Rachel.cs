@@ -37,7 +37,7 @@ public class Rachel : Character
 
             DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
             ExampleForBeforeMurder5.NPCTalking = false;
-            ExampleForBeforeMurder5.Text = "Sorry about all this. I’m Ashlyn by the way, nice to meet you.";
+            ExampleForBeforeMurder5.Text = "Sorry about all this. I'm Ashlyn by the way, nice to meet you.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder5);
 
             DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
@@ -47,7 +47,7 @@ public class Rachel : Character
 
             DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
             ExampleForBeforeMurder7.NPCTalking = true;
-            ExampleForBeforeMurder7.Text = "I’m Rachel. Nikki’s Mother.";
+            ExampleForBeforeMurder7.Text = "I'm Rachel. Nikki's Mother.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder7);
 
             DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
@@ -102,7 +102,7 @@ public class Rachel : Character
         //Creating Questions
 
         ExampleInterrogationConvo.Question1 = new Question();
-        ExampleInterrogationConvo.Question1.QuestionText = "Rachel, I’m so sorry for your loss.";
+        ExampleInterrogationConvo.Question1.QuestionText = "Rachel, I'm so sorry for your loss.";
         ExampleInterrogationConvo.Question1.NextElementNumber = 1;
 
         ExampleInterrogationConvo.Question2 = new Question();
@@ -122,7 +122,7 @@ public class Rachel : Character
         ExampleInterrogationConvo1.NPCTalking = true;
         ExampleInterrogationConvo1.EndInterrogation = false;
         ExampleInterrogationConvo1.NoQuestions = false;
-        ExampleInterrogationConvo1.Response = "I just can’t believe she’s gone. Who would do this to my poor baby?";
+        ExampleInterrogationConvo1.Response = "I just can't believe she's gone. Who would do this to my poor baby?";
         //Creating a Question
 
         ExampleInterrogationConvo1.Question1 = new Question();
@@ -151,7 +151,7 @@ public class Rachel : Character
         //Creating a Question
 
         ExampleInterrogationConvo2.Question1 = new Question();
-        ExampleInterrogationConvo2.Question1.QuestionText = "Speaking of Wattson, I haven’t seen him all night. Where could he be?";
+        ExampleInterrogationConvo2.Question1.QuestionText = "Speaking of Wattson, I haven't seen him all night. Where could he be?";
         ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
@@ -172,7 +172,7 @@ public class Rachel : Character
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
         ExampleInterrogationConvo3.Response = " (a bit startled): Ah, Nikki usually shuts him down for the night before bed. " +
-            "I don’t know where he is kept though.";
+            "I don't know where he is kept though.";
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();

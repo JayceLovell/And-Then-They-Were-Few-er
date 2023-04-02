@@ -539,18 +539,18 @@ public class Damien : Character
  Potential Dialogue for if Karol accuses Damien of potentially being the murderer
 
 
-A: There are members in this household that strongly suspect you of being Nikki’s murderer
+A: There are members in this household that strongly suspect you of being Nikki's murderer
 
 D: Me?!
     
 A: Yes, and I might be inclined to agree! When I found Nikki, 
 there was a pipe in the corner of the room. Did you use this to attack Nikki?
 
-D: I assure you Detective, I’m the last person here who would want Nikki dead. 
-She’s the only person who was willing to take me in as an apprentice.
+D: I assure you Detective, I'm the last person here who would want Nikki dead. 
+She's the only person who was willing to take me in as an apprentice.
 
 A: Really? And yet I hear that she was thinking of replacing you!
 
-D:I don’t know about that. But I do know that Nikki was already stressed 
+D:I don't know about that. But I do know that Nikki was already stressed 
     over the pressure she was getting from her Mother to abandon her scientific pursuits and follow in the family business.
 */
