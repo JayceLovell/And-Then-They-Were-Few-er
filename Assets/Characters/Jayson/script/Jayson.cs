@@ -604,10 +604,10 @@ public class Jayson : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
-        ExampledialogueAfterClue.Response = " Intriguing!... What is it? ";
+        ExampledialogueAfterClue.Response = " Intriguing!... What is it? [It seems this is not the right clue for Jayson...]";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
     }

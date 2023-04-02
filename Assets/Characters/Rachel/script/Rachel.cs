@@ -601,14 +601,14 @@ public class Rachel : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking=true;       
-        ExampledialogueAfterClue.Response = "*Stares Blankly*";
+        ExampledialogueAfterClue.Response = "*Stares Blankly at Ashlyn* [It seems this is not the right clue for Rachel...]";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
         //Right Clue Dialogue
-        //Element 0
+        //Element 1
         DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
         ExampledialogueAfterClue1.CorrectClue = true;
         ExampledialogueAfterClue1.EndInterrogation = false;
@@ -621,11 +621,11 @@ public class Rachel : Character
 
         ExampledialogueAfterClue1.Question1 = new Question();
         ExampledialogueAfterClue1.Question1.QuestionText = "We found him out in the courtyard";
-        ExampledialogueAfterClue1.Question1.NextElementNumber = 4;
+        ExampledialogueAfterClue1.Question1.NextElementNumber = 5;
 
         ExampledialogueAfterClue1.Question2 = new Question();
         ExampledialogueAfterClue1.Question2.QuestionText = "Who do you think did this to him?";
-        ExampledialogueAfterClue1.Question2.NextElementNumber = 3;
+        ExampledialogueAfterClue1.Question2.NextElementNumber = 4;
 
         ExampledialogueAfterClue1.Question3 = new Question();
         ExampledialogueAfterClue1.Question3.QuestionText = "Why wasn't he at his recharge station? Damien had told me he charges next to your room";
@@ -633,7 +633,7 @@ public class Rachel : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
-        //Element 1
+        //Element 2
         DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
         ExampledialogueAfterClue2.CorrectClue = true;
         ExampledialogueAfterClue2.EndInterrogation = false;
@@ -658,7 +658,7 @@ public class Rachel : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue2);
 
-        //Element 2
+        //Element 3
         DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
         ExampledialogueAfterClue3.CorrectClue = true;
         ExampledialogueAfterClue3.EndInterrogation = false;
@@ -683,7 +683,7 @@ public class Rachel : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue3);
 
-        //Element 3
+        //Element 4
         DialogueAfterClue ExampledialogueAfterClue4 = new DialogueAfterClue();
         ExampledialogueAfterClue4.CorrectClue = true;
         ExampledialogueAfterClue4.EndInterrogation = false;
@@ -708,7 +708,7 @@ public class Rachel : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue4);
 
-        //Element 4
+        //Element 5
         DialogueAfterClue ExampledialogueAfterClue5 = new DialogueAfterClue();
         ExampledialogueAfterClue5.CorrectClue = true;
         ExampledialogueAfterClue5.EndInterrogation = false;

@@ -339,7 +339,7 @@ public class Karol : Character
         ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
-        ExampledialogueAfterClue.Response = " *Looks confused* ";
+        ExampledialogueAfterClue.Response = " *Looks confused* [It seems this is not the right clue for Karol...]";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
         //Right Clue Dialogue

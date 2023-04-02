@@ -446,10 +446,10 @@ public class John : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
-        ExampledialogueAfterClue.Response = " I don't know!";
+        ExampledialogueAfterClue.Response = " I don't know! [It seems this is not the right clue for John...]";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
     }

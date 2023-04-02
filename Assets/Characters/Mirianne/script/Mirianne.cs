@@ -628,7 +628,7 @@ public class Mirianne : Character
         ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
-        ExampledialogueAfterClue.Response = "Do I look like I know?";
+        ExampledialogueAfterClue.Response = "Do I look like I know? [It seems this is not the right clue for Mirianne...]";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
         //Right Clue Dialogue
