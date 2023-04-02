@@ -629,7 +629,7 @@ public class Rachel : Character
 
         ExampledialogueAfterClue1.Question3 = new Question();
         ExampledialogueAfterClue1.Question3.QuestionText = "Why wasn't he at his recharge station? Damien had told me he charges next to your room";
-        ExampledialogueAfterClue1.Question3.NextElementNumber = 1;
+        ExampledialogueAfterClue1.Question3.NextElementNumber = 2;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
@@ -646,7 +646,7 @@ public class Rachel : Character
 
         ExampledialogueAfterClue2.Question1 = new Question();
         ExampledialogueAfterClue2.Question1.QuestionText = "But you were the last person to see him Rachel. You're sure no one else was there, besides the two of you?";
-        ExampledialogueAfterClue2.Question1.NextElementNumber = 2;
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue2.Question2 = new Question();
         ExampledialogueAfterClue2.Question2.QuestionText = " ";
@@ -671,7 +671,7 @@ public class Rachel : Character
 
         ExampledialogueAfterClue3.Question1 = new Question();
         ExampledialogueAfterClue3.Question1.QuestionText = "I see [Back to the first screen]";
-        ExampledialogueAfterClue3.Question1.NextElementNumber = 0;
+        ExampledialogueAfterClue3.Question1.NextElementNumber = 1;
 
         ExampledialogueAfterClue3.Question2 = new Question();
         ExampledialogueAfterClue3.Question2.QuestionText = " ";
@@ -696,7 +696,7 @@ public class Rachel : Character
 
         ExampledialogueAfterClue4.Question1 = new Question();
         ExampledialogueAfterClue4.Question1.QuestionText = "Hmm [Back to the first screen]";
-        ExampledialogueAfterClue4.Question1.NextElementNumber = 0;
+        ExampledialogueAfterClue4.Question1.NextElementNumber = 1;
 
         ExampledialogueAfterClue4.Question2 = new Question();
         ExampledialogueAfterClue4.Question2.QuestionText = " ";
@@ -721,7 +721,7 @@ public class Rachel : Character
 
         ExampledialogueAfterClue5.Question1 = new Question();
         ExampledialogueAfterClue5.Question1.QuestionText = "Hmmm [Back to the first screen]";
-        ExampledialogueAfterClue5.Question1.NextElementNumber = 0;
+        ExampledialogueAfterClue5.Question1.NextElementNumber = 1;
 
         ExampledialogueAfterClue5.Question2 = new Question();
         ExampledialogueAfterClue5.Question2.QuestionText = " ";

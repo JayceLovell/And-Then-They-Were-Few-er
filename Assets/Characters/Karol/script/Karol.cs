@@ -188,7 +188,9 @@ public class Karol : Character
         ExampleInterrogationConvo4.Response = " Now, Nikki and I may have been rivals, but I still had respect for her! " +
             "If anything I’d want her to still be alive, to witness me surpass her!"/* +
             "If you want someone to suspect, Detective, I’d suggest looking into Mr. Damien. " +
-            "I heard Nikki was thinking of firing him, maybe he felt threatened."*/;
+            "I heard Nikki was thinking of firing him, maybe he felt threatened."*/;
+
+
 
         //Creating a Question
 

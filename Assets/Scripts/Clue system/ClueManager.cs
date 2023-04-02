@@ -88,6 +88,17 @@ public class ClueManager : MonoBehaviour
 
         AddClueButton(clue);
     }
+    public bool HasClueBeenPickedUp(Clue ClueToCheck)
+    {
+        foreach (Clue clue in Clues)
+        {
+            if (clue.name == ClueToCheck.name  && clue.PickedUp)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     // Any stuff the manager has to do for each scene have it be done here
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {

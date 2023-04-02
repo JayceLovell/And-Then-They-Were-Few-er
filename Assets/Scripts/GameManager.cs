@@ -53,8 +53,9 @@ public class GameManager : MonoBehaviour
             _gameTime = value;
             if (_gameTime <= 0)
             {
+                _timeStart = false;
                 PlayerProgress = GameState.TimeOut;
-                IsGameOver = true;
+                SceneManager.LoadScene("Text");
             }                
         }
     }

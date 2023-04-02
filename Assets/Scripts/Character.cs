@@ -22,7 +22,7 @@ public class Character :MonoBehaviour
     private int _numDialogAfterClue;
     private bool _isTalking;
     private bool _inDialog;
-    private bool _nterrogationMode;
+    private bool _interrogationMode;
     private bool _cluePresented;
     private bool _correctCluePresented;
     [SerializeField]
@@ -41,6 +41,14 @@ public class Character :MonoBehaviour
     public int NumDialog
     {
         set { _numDialog = value; }
+    }
+    public int NumDialogAfterClue
+    {
+        set { _numDialogAfterClue = value; }
+    }
+    public bool CluePresented
+    {
+        get { return _cluePresented; }
     }
     /// <summary>
     /// I am in dialog.
@@ -62,9 +70,9 @@ public class Character :MonoBehaviour
     {
         get
         {
-            return _nterrogationMode;
+            return _interrogationMode;
         }
-        set { _nterrogationMode = value;}
+        set { _interrogationMode = value;}
     }
 
     /// <summary>
@@ -377,7 +385,7 @@ public class Character :MonoBehaviour
             }            
             try
             {
-                EndInterrogationForClue = DialogueAfterClues[_numDialogAfterClue].EndInterrogation && _cluePresented;
+                EndInterrogationForClue = DialogueAfterClues[_numDialogAfterClue].EndInterrogation && !_correctCluePresented;
             }
             catch
             {
@@ -446,10 +454,17 @@ public class Character :MonoBehaviour
     /// <param name="clue">Send the Clue over</param>
     public void PresentClue(Clue clue)
     {
-        if(clue.name == correctClue.name)
-            _correctCluePresented= true;
-        else
+        try
+        {
+            if (clue.name == correctClue.name)
+                _correctCluePresented = true;
+            else
+                _correctCluePresented = false;
+        }
+        catch
+        {
             _correctCluePresented = false;
+        }
 
         _cluePresented= true;
         _numDialogAfterClue = 0;
@@ -547,17 +562,10 @@ public class Character :MonoBehaviour
                         }
                     }
                     else
-                    {
-                        //foreach (char c in DialogueAfterClues[_numDialog].Response.ToCharArray())
-                        //{
-                        //    _dialogBox.Text += c;
-                        //    yield return new WaitForSeconds(0.02f);
-                        //}
+                    {                        
                         if (DialogueAfterClues[_numDialogAfterClue].NoQuestions)
                         {
-                            _dialogBox.SwitchMode(false);
-                            //_dialogBox.Text = DialogueAfterClues[_numDialog].Response;
-                            //_interrogationController.NextElementForInterrogating = DialogueAfterClues[_numDialog].NextElementNumber;
+                            _dialogBox.SwitchMode(false);                          
                             foreach (char c in DialogueAfterClues[_numDialogAfterClue].Response.ToCharArray())
                             {
                                 _dialogBox.Text += c;
@@ -616,9 +624,7 @@ public class Character :MonoBehaviour
                     {
                         if (DialogueAfterClues[_numDialogAfterClue].NoQuestions)
                         {
-                            _dialogBox.SwitchMode(false);
-                            //_dialogBox.Text = DialogueAfterClues[_numDialog].Response;
-                            //_interrogationController.NextElementForInterrogating = DialogueAfterClues[_numDialog].NextElementNumber;
+                            _dialogBox.SwitchMode(false);                           
                             foreach (char c in DialogueAfterClues[_numDialogAfterClue].Response.ToCharArray())
                             {
                                 _dialogBox.Text += c;
@@ -640,17 +646,10 @@ public class Character :MonoBehaviour
                 }
             }
             else
-            {
-                //foreach (char c in DialogueAfterClues[_numDialog].Response.ToCharArray())
-                //{
-                //    _dialogBox.Text += c;
-                //    yield return new WaitForSeconds(0.02f);
-                //}
+            {               
                 if (DialogueAfterClues[_numDialogAfterClue].NoQuestions)
                 {
-                    _dialogBox.SwitchMode(false);
-                    //_dialogBox.Text = DialogueAfterClues[_numDialog].Response;
-                    //_interrogationController.NextElementForInterrogating = DialogueAfterClues[_numDialog].NextElementNumber;
+                    _dialogBox.SwitchMode(false);                    
                     foreach (char c in DialogueAfterClues[_numDialogAfterClue].Response.ToCharArray())
                     {
                         _dialogBox.Text += c;
@@ -688,7 +687,7 @@ public class Character :MonoBehaviour
                 _dialogBox.SetUpQuestions(3, DialogueForInterrogations[_numDialog].Question3.QuestionText, DialogueForInterrogations[_numDialog].Question3.NextElementNumber, DialogueForInterrogations[_numDialog].Question3.EndInterrogation);
             }
         }
-        yield return new WaitForSeconds(8.0f);
+        yield return new WaitForSeconds(4.0f);
 
         InDialog = false;
         _dialogBox.Display(false);

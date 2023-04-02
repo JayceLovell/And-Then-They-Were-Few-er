@@ -358,7 +358,7 @@ public class OldCrazyMan : Character
 
         ExampledialogueAfterClue1.Question1 = new Question();
         ExampledialogueAfterClue1.Question1.QuestionText = "Pipey??";
-        ExampledialogueAfterClue1.Question1.NextElementNumber = 1;
+        ExampledialogueAfterClue1.Question1.NextElementNumber = 2;
 
         ExampledialogueAfterClue1.Question2 = new Question();
         ExampledialogueAfterClue1.Question2.QuestionText = " ";
@@ -374,25 +374,25 @@ public class OldCrazyMan : Character
         DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
         ExampledialogueAfterClue2.CorrectClue = true;
         ExampledialogueAfterClue2.EndInterrogation = true;
-        ExampledialogueAfterClue2.NoQuestions = false;
+        ExampledialogueAfterClue2.NoQuestions = true;
         ExampledialogueAfterClue2.NPCTalking = true;
         ExampledialogueAfterClue2.Response = "Yes, Pipey! My pet pipe";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
-        //Creating a Question
+        ////Creating a Question
 
-        ExampledialogueAfterClue2.Question1 = new Question();
-        ExampledialogueAfterClue2.Question1.QuestionText = "Okay... [Back to the first screen]";
-        ExampledialogueAfterClue2.Question1.NextElementNumber = 0;
+        //ExampledialogueAfterClue2.Question1 = new Question();
+        //ExampledialogueAfterClue2.Question1.QuestionText = "Okay... [Back to the first screen]";
+        //ExampledialogueAfterClue2.Question1.NextElementNumber = 1;
 
-        ExampledialogueAfterClue2.Question2 = new Question();
-        ExampledialogueAfterClue2.Question2.QuestionText = " ";
-        ExampledialogueAfterClue2.Question2.NextElementNumber = 0;
+        //ExampledialogueAfterClue2.Question2 = new Question();
+        //ExampledialogueAfterClue2.Question2.QuestionText = " ";
+        //ExampledialogueAfterClue2.Question2.NextElementNumber = 0;
 
-        ExampledialogueAfterClue2.Question3 = new Question();
-        ExampledialogueAfterClue2.Question3.QuestionText = " ";
-        ExampledialogueAfterClue2.Question3.NextElementNumber = 0;
-        //Add unique item
+        //ExampledialogueAfterClue2.Question3 = new Question();
+        //ExampledialogueAfterClue2.Question3.QuestionText = " ";
+        //ExampledialogueAfterClue2.Question3.NextElementNumber = 0;
+        ////Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue2);
 
     }
