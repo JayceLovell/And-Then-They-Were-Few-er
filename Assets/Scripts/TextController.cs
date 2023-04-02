@@ -101,13 +101,13 @@ public class TextController : MonoBehaviour
 
         // Before Murder Text
         /*BeforeMurderText.Add("After talking to each of the other guests, the showcase begins.\r\n\r\nNikki is able to display her invention, the synthesizer, and everyone is impressed.\r\n\r\nLater on, after the showcase�\r\n");
-        BeforeMurderText.Add("The guests had been invited to sleepover at the mansion after the showcase. They all go to bed, except for Nikki and Watson, who stay behind to clean up. As the night goes on, a thunderstorm begins to rage...");*/
+        BeforeMurderText.Add("The guests had been invited to sleepover at the mansion after the showcase. They all go to bed, except for Nikki and Wattson, who stay behind to clean up. As the night goes on, a thunderstorm begins to rage...");*/
 
         // After Murder Text
 
-        AfterMurderText.Add("After talking to each of the other guests, the showcase begins.\r\n\r\nNikki is able to display her invention, the synthesizer, and everyone is impressed.\r\n\r\nLater on, after the showcase�\r\n");
-        AfterMurderText.Add("The guests had been invited to sleepover at the mansion after the showcase. They all go to bed, except for Nikki and Watson, who stay behind to clean up. As the night goes on, a thunderstorm begins to rage...");
-        AfterMurderText.Add("An hour or so after the showcase, everyone has gone to sleep. The storm continues to rage outside.\r\n\r\nA clap of thunder wakes Ashlyn up. She decides to grab a glass of milk\r\n\r\nShe happens to pass by the lab, which has the door ajar\r\n\r\nPeeking inside, she sees Nikki lying on the floor...");
+        AfterMurderText.Add("After talking to each of the other guests, the showcase begins.\r\n\r\nNikki is able to display her invention, the synthesizer, and everyone is impressed.\r\n\r\nLater on, after the showcase...\r\n");
+        AfterMurderText.Add("The guests had been invited to sleepover at the mansion after the showcase. They all depart for their bedrooms, except for Nikki and Wattson, who stay behind to clean up. As the night goes on, a thunderstorm begins to rage...");
+        AfterMurderText.Add("A few hours after the showcase, everyone has seemingly gone to sleep. The storm continues to rage outside.\r\n\r\nA clap of thunder wakes Ashlyn up. She decides to grab a glass of milk.\r\n\r\nShe happens to pass by the lab, which has the door ajar.\r\n\r\nPeeking inside, she sees Nikki lying on the floor...");
         AfterMurderText.Add("Ashlyn runs in and finds that Nikki is dead.\r\n\r\nShe mourns for her friend, and looks around the room.\r\n\r\nShe notices a bloody pipe in the corner of the room.\r\n\r\nSeeing nothing else, she leaves to announce the death of Nikki Test...");
         AfterMurderText.Add("Ashlyn announces her discovery to the shock of the other guests.\r\n\r\nThe storm prevents them from leaving to go to the police.\r\n\r\nAshlyn decides to investigate and get to the bottom of the gruesome murder...");
 
@@ -141,8 +141,8 @@ public class TextController : MonoBehaviour
         Fredrick.text = "Ashlyn took a deep breath. The clues, the interrogations, they had all led to this moment. " +
             "She now knew the identity of Nikki's murderer. " + "\r\n\r\n\"It was the Mayor. He murdered Nikki!\" Ashlyn says, to the astonishment and disbelief of the other guests." + "\r\n\r\nFrederick faints in shock." +
             "\r\n\r\nOnce Frederick has been woken up, Ashlyn explains how she deduced that Frederick at one point had the keys to Nikki's lab, and how he tried to flush them down the toilet, but was overheard by John and his father. " +
-            "\r\n\r\nFrederick admits to having stolen the keys from Watson, but denies any part in Nikki's murder, and insists that he was unaware she was dead until Ashlyn had announced her discovery later that night. " +
-            "\r\n\r\nFrederick goes on to explain how he had managed to steal the keys from Watson after the showcase, and had intended to sneak into the lab to steal Nikki's notes on the synthesizer." +
+            "\r\n\r\nFrederick admits to having stolen the keys from Wattson, but denies any part in Nikki's murder, and insists that he was unaware she was dead until Ashlyn had announced her discovery later that night. " +
+            "\r\n\r\nFrederick goes on to explain how he had managed to steal the keys from Wattson after the showcase, and had intended to sneak into the lab to steal Nikki's notes on the synthesizer." +
             "Frederick's plan was to photocopy the notes, and have government funded scientists develop their own version, so that the town council could cut Nikki out of the picture and avoid having to pay her for her work. " +
             "\r\n\r\n\"We just didn't have enough money in the town budget to pay Nikki... All the money was spent on my re-election campaign!\" , Frederick said sheepishly." +
             "\r\n\r\nHe had tried getting in the lab later that night, but on his way there he saw Mirianne leaving the room. In that moment he panicked, and ran to the toilet to try to hide, dropping the keys in the stall in his confusion." +

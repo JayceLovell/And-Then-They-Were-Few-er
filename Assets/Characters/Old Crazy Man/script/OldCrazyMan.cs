@@ -373,27 +373,77 @@ public class OldCrazyMan : Character
         //Element 2
         DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
         ExampledialogueAfterClue2.CorrectClue = true;
-        ExampledialogueAfterClue2.EndInterrogation = true;
-        ExampledialogueAfterClue2.NoQuestions = true;
+        ExampledialogueAfterClue2.EndInterrogation = false;
+        ExampledialogueAfterClue2.NoQuestions = false;
         ExampledialogueAfterClue2.NPCTalking = true;
-        ExampledialogueAfterClue2.Response = "Yes, Pipey! My pet pipe";
+        ExampledialogueAfterClue2.Response = "Yes, Pipey! My pet pipe!";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
-        ////Creating a Question
+        //Creating a Question
 
-        //ExampledialogueAfterClue2.Question1 = new Question();
-        //ExampledialogueAfterClue2.Question1.QuestionText = "Okay... [Back to the first screen]";
-        //ExampledialogueAfterClue2.Question1.NextElementNumber = 1;
+        ExampledialogueAfterClue2.Question1 = new Question();
+        ExampledialogueAfterClue2.Question1.QuestionText = "But... but why is it covered in blood?? ";
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 3;
 
-        //ExampledialogueAfterClue2.Question2 = new Question();
-        //ExampledialogueAfterClue2.Question2.QuestionText = " ";
-        //ExampledialogueAfterClue2.Question2.NextElementNumber = 0;
+        ExampledialogueAfterClue2.Question2 = new Question();
+        ExampledialogueAfterClue2.Question2.QuestionText = " ";
+        ExampledialogueAfterClue2.Question2.NextElementNumber = 0;
 
-        //ExampledialogueAfterClue2.Question3 = new Question();
-        //ExampledialogueAfterClue2.Question3.QuestionText = " ";
-        //ExampledialogueAfterClue2.Question3.NextElementNumber = 0;
-        ////Add unique item
+        ExampledialogueAfterClue2.Question3 = new Question();
+        ExampledialogueAfterClue2.Question3.QuestionText = " ";
+        ExampledialogueAfterClue2.Question3.NextElementNumber = 0;
+        //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue2);
+		
+		//Element 3
+        DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
+        ExampledialogueAfterClue3.CorrectClue = true;
+        ExampledialogueAfterClue3.EndInterrogation = false;
+        ExampledialogueAfterClue3.NoQuestions = false;
+        ExampledialogueAfterClue3.NPCTalking = true;
+        ExampledialogueAfterClue3.Response = "Blood? That's not blood! That's Qirat brand ketchup! I accidentally got some on poor pipey... ";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue3.Question1 = new Question();
+        ExampledialogueAfterClue3.Question1.QuestionText = "*exasperated* And how did it end up in the lab??";
+        ExampledialogueAfterClue3.Question1.NextElementNumber = 4;
+
+        ExampledialogueAfterClue3.Question2 = new Question();
+        ExampledialogueAfterClue3.Question2.QuestionText = " ";
+        ExampledialogueAfterClue3.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue3.Question3 = new Question();
+        ExampledialogueAfterClue3.Question3.QuestionText = " ";
+        ExampledialogueAfterClue3.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue3);
+		
+		//Element 4
+        DialogueAfterClue ExampledialogueAfterClue4 = new DialogueAfterClue();
+        ExampledialogueAfterClue4.CorrectClue = true;
+        ExampledialogueAfterClue4.EndInterrogation = false;
+        ExampledialogueAfterClue4.NoQuestions = true;
+        ExampledialogueAfterClue4.NPCTalking = true;
+        ExampledialogueAfterClue4.Response = "That, my dear, is the real mystery... ";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue4.Question1 = new Question();
+        ExampledialogueAfterClue4.Question1.QuestionText = " ";
+        ExampledialogueAfterClue4.Question1.NextElementNumber = 0;
+
+        ExampledialogueAfterClue4.Question2 = new Question();
+        ExampledialogueAfterClue4.Question2.QuestionText = " ";
+        ExampledialogueAfterClue4.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue4.Question3 = new Question();
+        ExampledialogueAfterClue4.Question3.QuestionText = " ";
+        ExampledialogueAfterClue4.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue4);
 
     }
 }
