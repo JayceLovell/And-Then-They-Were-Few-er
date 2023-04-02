@@ -625,14 +625,14 @@ public class Mirianne : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
         ExampledialogueAfterClue.Response = "Do I look like I know?";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
         //Right Clue Dialogue
-        //Element 0
+        //Element 1
         DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
         ExampledialogueAfterClue1.CorrectClue = true;
         ExampledialogueAfterClue1.EndInterrogation = false;
@@ -645,7 +645,7 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue1.Question1 = new Question();
         ExampledialogueAfterClue1.Question1.QuestionText = "Look familiar?";
-        ExampledialogueAfterClue1.Question1.NextElementNumber = 1;
+        ExampledialogueAfterClue1.Question1.NextElementNumber = 2;
 
         ExampledialogueAfterClue1.Question2 = new Question();
         ExampledialogueAfterClue1.Question2.QuestionText = " "; //Oh, no need to worry this is just ketchup!
@@ -657,7 +657,7 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
-        //Element 1
+        //Element 2
         DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
         ExampledialogueAfterClue2.CorrectClue = true;
         ExampledialogueAfterClue2.EndInterrogation = false;
@@ -670,7 +670,7 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue2.Question1 = new Question();
         ExampledialogueAfterClue2.Question1.QuestionText = "What?";
-        ExampledialogueAfterClue2.Question1.NextElementNumber = 2;
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue2.Question2 = new Question();
         ExampledialogueAfterClue2.Question2.QuestionText = " ";
@@ -682,7 +682,7 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue2);
 
-        //Element 2
+        //Element 3
         DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
         ExampledialogueAfterClue3.CorrectClue = true;
         ExampledialogueAfterClue3.EndInterrogation = false;
@@ -695,11 +695,11 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue3.Question1 = new Question();
         ExampledialogueAfterClue3.Question1.QuestionText = "What?!";
-        ExampledialogueAfterClue3.Question1.NextElementNumber = 3;
+        ExampledialogueAfterClue3.Question1.NextElementNumber = 4;
 
         ExampledialogueAfterClue3.Question2 = new Question();
         ExampledialogueAfterClue3.Question2.QuestionText = "Why?!";
-        ExampledialogueAfterClue3.Question2.NextElementNumber = 4;
+        ExampledialogueAfterClue3.Question2.NextElementNumber = 5;
 
         ExampledialogueAfterClue3.Question3 = new Question();
         ExampledialogueAfterClue3.Question3.QuestionText = " ";
@@ -707,7 +707,7 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue3);
 
-        //Element 3
+        //Element 4
         DialogueAfterClue ExampledialogueAfterClue4 = new DialogueAfterClue();
         ExampledialogueAfterClue4.CorrectClue = true;
         ExampledialogueAfterClue4.EndInterrogation = false;
@@ -720,7 +720,7 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue4.Question1 = new Question();
         ExampledialogueAfterClue4.Question1.QuestionText = "[Previous Screen]";
-        ExampledialogueAfterClue4.Question1.NextElementNumber = 2;
+        ExampledialogueAfterClue4.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue4.Question2 = new Question();
         ExampledialogueAfterClue4.Question2.QuestionText = " ";
@@ -732,7 +732,7 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue4);
 
-        //Element 4
+        //Element 5
         DialogueAfterClue ExampledialogueAfterClue5 = new DialogueAfterClue();
         ExampledialogueAfterClue5.CorrectClue = true;
         ExampledialogueAfterClue5.EndInterrogation = false;
@@ -745,7 +745,7 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue5.Question1 = new Question();
         ExampledialogueAfterClue5.Question1.QuestionText = "[Next]";
-        ExampledialogueAfterClue5.Question1.NextElementNumber = 5;
+        ExampledialogueAfterClue5.Question1.NextElementNumber = 6;
 
         ExampledialogueAfterClue5.Question2 = new Question();
         ExampledialogueAfterClue5.Question2.QuestionText = " ";
@@ -757,7 +757,7 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue5);
 
-        //Element 5
+        //Element 6
         DialogueAfterClue ExampledialogueAfterClue6 = new DialogueAfterClue();
         ExampledialogueAfterClue6.CorrectClue = true;
         ExampledialogueAfterClue6.EndInterrogation = false;
@@ -770,7 +770,7 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue6.Question1 = new Question();
         ExampledialogueAfterClue6.Question1.QuestionText = "[Next]";
-        ExampledialogueAfterClue6.Question1.NextElementNumber = 6;
+        ExampledialogueAfterClue6.Question1.NextElementNumber = 7;
 
         ExampledialogueAfterClue6.Question2 = new Question();
         ExampledialogueAfterClue6.Question2.QuestionText = " ";
@@ -782,7 +782,7 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue6);
 
-        //Element 6
+        //Element 7
         DialogueAfterClue ExampledialogueAfterClue7 = new DialogueAfterClue();
         ExampledialogueAfterClue7.CorrectClue = true;
         ExampledialogueAfterClue7.EndInterrogation = false;
@@ -795,7 +795,7 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue7.Question1 = new Question();
         ExampledialogueAfterClue7.Question1.QuestionText = "[Next]";
-        ExampledialogueAfterClue7.Question1.NextElementNumber = 7;
+        ExampledialogueAfterClue7.Question1.NextElementNumber = 8;
 
         ExampledialogueAfterClue7.Question2 = new Question();
         ExampledialogueAfterClue7.Question2.QuestionText = " ";
@@ -807,7 +807,7 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue7);
 
-        //Element 7
+        //Element 8
         DialogueAfterClue ExampledialogueAfterClue8 = new DialogueAfterClue();
         ExampledialogueAfterClue8.CorrectClue = true;
         ExampledialogueAfterClue8.EndInterrogation = false;
@@ -820,11 +820,11 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue8.Question1 = new Question();
         ExampledialogueAfterClue8.Question1.QuestionText = "No kidding";
-        ExampledialogueAfterClue8.Question1.NextElementNumber = 8;
+        ExampledialogueAfterClue8.Question1.NextElementNumber = 9;
 
         ExampledialogueAfterClue8.Question2 = new Question();
         ExampledialogueAfterClue8.Question2.QuestionText = "But this makes you look even more suspicious! ";
-        ExampledialogueAfterClue8.Question2.NextElementNumber = 9;
+        ExampledialogueAfterClue8.Question2.NextElementNumber = 10;
 
         ExampledialogueAfterClue8.Question3 = new Question();
         ExampledialogueAfterClue8.Question3.QuestionText = " ";
@@ -832,7 +832,7 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue8);
 
-        //Element 8
+        //Element 9
         DialogueAfterClue ExampledialogueAfterClue9 = new DialogueAfterClue();
         ExampledialogueAfterClue9.CorrectClue = true;
         ExampledialogueAfterClue9.EndInterrogation = false;
@@ -845,11 +845,11 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue9.Question1 = new Question();
         ExampledialogueAfterClue9.Question1.QuestionText = "*remain silent*";
-        ExampledialogueAfterClue9.Question1.NextElementNumber = 9;
+        ExampledialogueAfterClue9.Question1.NextElementNumber = 10;
 
         ExampledialogueAfterClue9.Question2 = new Question();
         ExampledialogueAfterClue9.Question2.QuestionText = "*shakes head in exasparation* I wouldn't hide evidence! Really Mirianne?";
-        ExampledialogueAfterClue9.Question2.NextElementNumber = 9;
+        ExampledialogueAfterClue9.Question2.NextElementNumber = 10;
 
         ExampledialogueAfterClue9.Question3 = new Question();
         ExampledialogueAfterClue9.Question3.QuestionText = " ";
@@ -857,13 +857,13 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue9);
 
-        //Element 9
+        //Element 10
         DialogueAfterClue ExampledialogueAfterClue10 = new DialogueAfterClue();
         ExampledialogueAfterClue10.CorrectClue = true;
         ExampledialogueAfterClue10.EndInterrogation = false;
-        ExampledialogueAfterClue10.NoQuestions = false;
+        ExampledialogueAfterClue10.NoQuestions = true;
         ExampledialogueAfterClue10.NPCTalking = true;
-        ExampledialogueAfterClue10.Response = "Ashlyn, I know you and I have our issues, but you have to believe me, I didn't kill Nikki";
+        ExampledialogueAfterClue10.Response = "Ashlyn, I know you and I have our issues, but you have to believe me, I didn't kill Nikki!";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question

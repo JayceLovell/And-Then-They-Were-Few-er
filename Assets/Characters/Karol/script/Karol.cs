@@ -336,14 +336,14 @@ public class Karol : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
         ExampledialogueAfterClue.Response = " *Looks confused* ";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
         //Right Clue Dialogue
-        //Element 0
+        //Element 1
         DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
         ExampledialogueAfterClue1.CorrectClue = true;
         ExampledialogueAfterClue1.EndInterrogation = false;
@@ -356,7 +356,7 @@ public class Karol : Character
 
         ExampledialogueAfterClue1.Question1 = new Question();
         ExampledialogueAfterClue1.Question1.QuestionText = "Really? It seems to be addressed to you...";
-        ExampledialogueAfterClue1.Question1.NextElementNumber = 1;
+        ExampledialogueAfterClue1.Question1.NextElementNumber = 2;
 
         ExampledialogueAfterClue1.Question2 = new Question();
         ExampledialogueAfterClue1.Question2.QuestionText = " ";
@@ -368,7 +368,7 @@ public class Karol : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
-        //Element 1
+        //Element 2
         DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
         ExampledialogueAfterClue2.CorrectClue = true;
         ExampledialogueAfterClue2.EndInterrogation = false;
@@ -381,7 +381,7 @@ public class Karol : Character
 
         ExampledialogueAfterClue2.Question1 = new Question();
         ExampledialogueAfterClue2.Question1.QuestionText = "Now, the truth please";
-        ExampledialogueAfterClue2.Question1.NextElementNumber = 2;
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue2.Question2 = new Question();
         ExampledialogueAfterClue2.Question2.QuestionText = " ";
@@ -393,7 +393,7 @@ public class Karol : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue2);
 
-        //Element 2
+        //Element 3
         DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
         ExampledialogueAfterClue3.CorrectClue = true;
         ExampledialogueAfterClue3.EndInterrogation = false;
@@ -406,7 +406,7 @@ public class Karol : Character
 
         ExampledialogueAfterClue3.Question1 = new Question();
         ExampledialogueAfterClue3.Question1.QuestionText = "Why would Damien be writing to you?";
-        ExampledialogueAfterClue3.Question1.NextElementNumber = 3;
+        ExampledialogueAfterClue3.Question1.NextElementNumber = 4;
 
         ExampledialogueAfterClue3.Question2 = new Question();
         ExampledialogueAfterClue3.Question2.QuestionText = " ";
@@ -418,7 +418,7 @@ public class Karol : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue3);
 
-        //Element 3
+        //Element 4
         DialogueAfterClue ExampledialogueAfterClue4 = new DialogueAfterClue();
         ExampledialogueAfterClue4.CorrectClue = true;
         ExampledialogueAfterClue4.EndInterrogation = false;
@@ -431,11 +431,11 @@ public class Karol : Character
 
         ExampledialogueAfterClue4.Question1 = new Question();
         ExampledialogueAfterClue4.Question1.QuestionText = "So basically y'all were hooking up and he wanted to end things?";
-        ExampledialogueAfterClue4.Question1.NextElementNumber = 4;
+        ExampledialogueAfterClue4.Question1.NextElementNumber = 5;
 
         ExampledialogueAfterClue4.Question2 = new Question();
         ExampledialogueAfterClue4.Question2.QuestionText = "Ah, and where did you meetup to discuss your 'contract'?";
-        ExampledialogueAfterClue4.Question2.NextElementNumber = 5;
+        ExampledialogueAfterClue4.Question2.NextElementNumber = 6;
 
         ExampledialogueAfterClue4.Question3 = new Question();
         ExampledialogueAfterClue4.Question3.QuestionText = " ";
@@ -443,7 +443,7 @@ public class Karol : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue4);
 
-        //Element 4
+        //Element 5
         DialogueAfterClue ExampledialogueAfterClue5 = new DialogueAfterClue();
         ExampledialogueAfterClue5.CorrectClue = true;
         ExampledialogueAfterClue5.EndInterrogation = false;
@@ -456,7 +456,7 @@ public class Karol : Character
 
         ExampledialogueAfterClue5.Question1 = new Question();
         ExampledialogueAfterClue5.Question1.QuestionText = "[Previous Screen] ";
-        ExampledialogueAfterClue5.Question1.NextElementNumber = 3;
+        ExampledialogueAfterClue5.Question1.NextElementNumber = 4;
 
         ExampledialogueAfterClue5.Question2 = new Question();
         ExampledialogueAfterClue5.Question2.QuestionText = " ";
@@ -468,7 +468,7 @@ public class Karol : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue5);
 
-        //Element 5
+        //Element 6
         DialogueAfterClue ExampledialogueAfterClue6 = new DialogueAfterClue();
         ExampledialogueAfterClue6.CorrectClue = true;
         ExampledialogueAfterClue6.EndInterrogation = false;
@@ -481,7 +481,7 @@ public class Karol : Character
 
         ExampledialogueAfterClue6.Question1 = new Question();
         ExampledialogueAfterClue6.Question1.QuestionText = "Why did you lie to me earlier about being in your room?";
-        ExampledialogueAfterClue6.Question1.NextElementNumber = 6;
+        ExampledialogueAfterClue6.Question1.NextElementNumber = 7;
 
         ExampledialogueAfterClue6.Question2 = new Question();
         ExampledialogueAfterClue6.Question2.QuestionText = " ";
@@ -493,7 +493,7 @@ public class Karol : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue6);
 
-        //Element 6
+        //Element 7
         DialogueAfterClue ExampledialogueAfterClue7 = new DialogueAfterClue();
         ExampledialogueAfterClue7.CorrectClue = true;
         ExampledialogueAfterClue7.EndInterrogation = false;
@@ -506,7 +506,7 @@ public class Karol : Character
 
         ExampledialogueAfterClue7.Question1 = new Question();
         ExampledialogueAfterClue7.Question1.QuestionText = "*raises eyebrow* Mm hmm...";
-        ExampledialogueAfterClue7.Question1.NextElementNumber = 7;
+        ExampledialogueAfterClue7.Question1.NextElementNumber = 8;
 
         ExampledialogueAfterClue7.Question2 = new Question();
         ExampledialogueAfterClue7.Question2.QuestionText = " ";
@@ -518,19 +518,19 @@ public class Karol : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue7);
 
-        //Element 7
+        //Element 8
         DialogueAfterClue ExampledialogueAfterClue8 = new DialogueAfterClue();
         ExampledialogueAfterClue8.CorrectClue = true;
         ExampledialogueAfterClue8.EndInterrogation = false;
-        ExampledialogueAfterClue8.NoQuestions = false;
+        ExampledialogueAfterClue8.NoQuestions = true;
         ExampledialogueAfterClue8.NPCTalking = true;
-        ExampledialogueAfterClue8.Response = "Well, needless to say negotiations are still ongoing!";
+        ExampledialogueAfterClue8.Response = "Well, needless to say, negotiations are still ongoing!";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
 
         ExampledialogueAfterClue8.Question1 = new Question();
-        ExampledialogueAfterClue8.Question1.QuestionText = "*chokes* [Back to the first screen]";
+        ExampledialogueAfterClue8.Question1.QuestionText = " "; //*chokes* [Back to the first screen]
         ExampledialogueAfterClue8.Question1.NextElementNumber = 0;
 
         ExampledialogueAfterClue8.Question2 = new Question();
