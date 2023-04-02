@@ -168,7 +168,7 @@ public class TextController : MonoBehaviour
             "\r\n\r\nMIRIANNE IS NOT THE MURDERER"; 
         GameOverTexts.Add(Mirianne);
 		
-
+//Resending
 		GameOverText OCM = new GameOverText();
         OCM.SelectCharacterName = Character.CharacterName.OldCrazyMan;
         OCM.text = "OCM Placeholder Ending ";
