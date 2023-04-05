@@ -98,7 +98,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 10
-  m_fontSizeMax: 1000
+  m_fontSizeMax: 20
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -251,6 +251,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8a3b21c38817c45baee473b553585e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueManager: {fileID: 0}
   clue: {fileID: 0}
   text: {fileID: 3203519594628687998}

@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class DialogueObjectController : MonoBehaviour
@@ -103,11 +106,10 @@ public class DialogueObjectController : MonoBehaviour
             SpeakerProfile.sprite = value;
         }
     }
-
-    [Header("Who is talking?")]
     /// <summary>
     /// DO NOT SEND NAME HERE
     /// </summary>
+    [Header("Who is talking?")]
     [SerializeField]
     private TextMeshProUGUI SpeakerLabel;
 
@@ -170,10 +172,16 @@ public class DialogueObjectController : MonoBehaviour
     /// <param name="State">True for Interrogation false for regular speech</param>
     public void SwitchMode(bool State)
     {
+        Text = "";
         if (State)
         {
             InterrigationObjects.SetActive(true);
             SpeechObjects.SetActive(false);
+            if (GameManager.Instance.CurrentScene == "InterrogationScene")
+                EventSystem.current.firstSelectedGameObject = GameObject.Find("BackButton");
+            else
+                EventSystem.current.SetSelectedGameObject(GameObject.Find("Question 1"));
+                //EventSystem.current.firstSelectedGameObject = GameObject.Find("Question 1");
         }
         else
         {
@@ -187,27 +195,110 @@ public class DialogueObjectController : MonoBehaviour
     /// <param name="QuestionNumber">the number Question Example 1,2 or 3</param>
     /// <param name="QuestionText">The String to fill the Question with</param>
     /// <param name="WhereQuestionGoing">Which element this question goes to.</param>
-    public void SetUpQuestions(int QuestionNumber, string QuestionText, int WhereQuestionGoing)
+    /// <param name="End">True for when this option ends interrogation</param>
+    public void SetUpQuestions(int QuestionNumber, string QuestionText, int WhereQuestionGoing,bool End)
     {
         switch (QuestionNumber)
         {
             case 1:
                 Question1= QuestionText;
-                QuestionButton1.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
+                QuestionButton1.onClick.RemoveAllListeners();
+                if (End)
+                    QuestionButton1.onClick.AddListener(()=>_interrogationController.OnQuit());
+                else
+                    QuestionButton1.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
                 break;
             case 2:
                 Question2= QuestionText;
-                QuestionButton2.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
+                QuestionButton2.onClick.RemoveAllListeners();
+                if (End)
+                    QuestionButton2.onClick.AddListener(() => _interrogationController.OnQuit());
+                else
+                    QuestionButton2.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
                 break;
             case 3:            
                 Question3= QuestionText;
-                QuestionButton3.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
+                QuestionButton3.onClick.RemoveAllListeners();
+                if (End)
+                    QuestionButton3.onClick.AddListener(() => _interrogationController.OnQuit());
+                else
+                    QuestionButton3.onClick.AddListener(()=>_interrogationController.NextElementForInterrogating= WhereQuestionGoing);
                 break;
             default:
                 Debug.LogError("Questioning out of bounds");
                 break;
         }
     }
+    /// <summary>
+    /// SettingUp options for talking to objects
+    /// </summary>
+    /// <param name="OptionNumber">Number of option to return back to interactble object for selected option</param>
+    /// <param name="OptionText">Text to Display</param>
+    /// <param name="IntereactbleOject">The object that the player is interacting with for this option just put "this.gameobject;".</param>
+    public void SetUpQuestions(int OptionNumber,string OptionText,GameObject IntereactbleOject)
+    {
+        switch(OptionNumber)
+        {
+            case 1:
+                Question1 = OptionText;
+                QuestionButton1.onClick.RemoveAllListeners();
+                QuestionButton1.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject),new object[] { OptionNumber }));
+                QuestionButton1.interactable = true;
+                break;
+            case 2:
+                Question2 = OptionText;
+                QuestionButton2.onClick.RemoveAllListeners();
+                QuestionButton2.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject),new object[] { OptionNumber }));
+                QuestionButton2.interactable = true;
+                break;
+            case 3:
+                Question3 = OptionText;
+                QuestionButton3.onClick.RemoveAllListeners();
+                QuestionButton3.onClick.AddListener(() => GetObjectScript(IntereactbleOject).GetType().GetMethod("OptionSelected").Invoke(GetObjectScript(IntereactbleOject), new object[] { OptionNumber }));
+                QuestionButton3.interactable = true;
+                break;
+            default:
+                Debug.LogError("Option out of bounds");
+                break;
+        }
+    }
+    /// <summary>
+    /// NoOption
+    /// </summary>
+    public void SetUpQuestions(int OptionNumber,string OptionText)
+    {
+        switch (OptionNumber)
+        {
+            case 1:
+                Question1 = OptionText;
+                QuestionButton1.interactable = false;
+                break;
+            case 2:
+                Question2 = OptionText;
+                QuestionButton2.interactable = false;
+                break;
+            case 3:
+                Question3 = OptionText;
+                QuestionButton3.interactable = false;
+                break;
+        }
+    }
 
+    private Component GetObjectScript(GameObject Object)
+    {
+        Component ObjectScript = null;
+
+        Component[] components =Object.GetComponents(typeof(Component));
+        foreach (Component component in components)
+        {
+            if (component.GetType().Name == Object.name)
+            {
+                ObjectScript = component;
+                break;
+            }
+        }
+
+        return ObjectScript;
+    }
 
 }

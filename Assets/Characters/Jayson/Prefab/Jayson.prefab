@@ -112,21 +112,15 @@ MonoBehaviour:
     Position: {x: -4.744253, y: -4.863781}
     IsDead: 0
   dialogForRegularConvo:
-  - Text: '(An attractive but clumsy wannabe detective trying to solve the mystery
-      but ruins clues and makes chaos.Odd character, who is obsessed with mysteries
-      and conspiracies)
-
-'
+  - Text: (An attractive, but clumsy, amateur detective)
     NPCTalking: 1
   - Text: Good Evening
     NPCTalking: 0
-  - Text: (Jayson looks Ashlyn up and down)
+  - Text: (Jayson smiles at Ashlyn)
     NPCTalking: 1
   - Text: Well, Hello There
     NPCTalking: 1
-  - Text: '(Ashlyn finds Jayson quite attractive, and returns his smile)
-
-'
+  - Text: "(Ashlyn returns Jayson\u2019s smile)"
     NPCTalking: 0
   - Text: Well, Hello yourself
     NPCTalking: 0
@@ -166,17 +160,14 @@ MonoBehaviour:
 
 '
     NPCTalking: 0
-  - Text: '(Jayson hurriedly picks himself up hurriedly and stretches out his hand
-      to shake Ashlyn''s)
+  - Text: '(Jayson hurriedly picks himself up, and stretches out his hand to shake
+      Ashlyn''s)
 
 
 
 '
     NPCTalking: 1
-  - Text: '(Winded, still comes off as confident, but clearly a bit embarrassed)
-
-
-'
+  - Text: (Jayson is winded, still comes off as confident, but is clearly a bit embarrassed)
     NPCTalking: 1
   - Text: 'Jayson Klutsch! I may not have your reputation quite yet, but I do believe
       I''m a force to be reckoned with

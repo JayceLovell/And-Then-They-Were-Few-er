@@ -19,19 +19,36 @@ public class Character :MonoBehaviour
     [SerializeField]
     private Sprite DeadSprite;
     private int _numDialog;
+    private int _numDialogAfterClue;
     private bool _isTalking;
     private bool _inDialog;
-    private bool _nterrogationMode;
+    private bool _interrogationMode;
+    private bool _cluePresented;
     private bool _correctCluePresented;
     [SerializeField]
     private Clue correctClue;
 
+    public bool ImDead
+    {
+        get
+        {
+            return imDead;
+        }        
+    }
     /// <summary>
     /// The Element Number of the List we want.
     /// </summary>
     public int NumDialog
     {
         set { _numDialog = value; }
+    }
+    public int NumDialogAfterClue
+    {
+        set { _numDialogAfterClue = value; }
+    }
+    public bool CluePresented
+    {
+        get { return _cluePresented; }
     }
     /// <summary>
     /// I am in dialog.
@@ -53,9 +70,9 @@ public class Character :MonoBehaviour
     {
         get
         {
-            return _nterrogationMode;
+            return _interrogationMode;
         }
-        set { _nterrogationMode = value;}
+        set { _interrogationMode = value;}
     }
 
     /// <summary>
@@ -85,6 +102,7 @@ public class Character :MonoBehaviour
         Mirianne,
         Nikki,
         OldCrazyMan,
+        Robot,
         Rachel
     }
     /// <summary>
@@ -189,16 +207,26 @@ public class Character :MonoBehaviour
         /// The Next Element in the list to go to if this question is selected
         /// </summary>
         public int NextElementNumber;
+
+        /// <summary>
+        /// True for if this option ends interrogation
+        /// </summary>
+        public bool EndInterrogation;
     }
 
     /// <summary>
-    /// Interigation Dialog after clue found
+    /// Interigation Dialog after clue found.
+    /// DO NOT PUT CORRECT CLUE DIALOGUE FIRST!!!
     /// </summary>
     public List<DialogueAfterClue> DialogueAfterClues;
 
     [System.Serializable]
     public class DialogueAfterClue
     {
+        /// <summary>
+        /// Dialogue to show for when correct clue.
+        /// </summary>
+        public bool CorrectClue;
         /// <summary>
         /// True is no Question and just talking
         /// </summary>
@@ -254,6 +282,7 @@ public class Character :MonoBehaviour
             case "GrandHall":
                 InterrogationMode = true;
                 SetInterrogationConvo();
+                SetAfterClueConvo();
                 try
                 {
                     CharacterSetUp thisSetup = CharacterSetUps.FirstOrDefault(cs => cs.Scene.ToString() == Scene);
@@ -273,8 +302,8 @@ public class Character :MonoBehaviour
                 SetInterrogationConvo();
                 SetAfterClueConvo();
                 break;
-            default:
-                Debug.LogError("No setup written for "+Scene+" in Character Class");
+            default:                
+                Debug.LogWarning("No setup written for "+Scene+" in Character Class");
                 break;
         }
     }
@@ -284,21 +313,21 @@ public class Character :MonoBehaviour
     /// </summary>
     public virtual void SetRegularConvo()
     {
-
+        dialogForRegularConvo.Clear();
     }
     /// <summary>
     /// Method for populating the Interrogation Dialogue List
     /// </summary>
     public virtual void SetInterrogationConvo()
     {
-
+        DialogueForInterrogations.Clear();
     }
     /// <summary>
     /// Method for populating the After Clue Dialogue List
     /// </summary>
     public virtual void SetAfterClueConvo()
     {
-
+        DialogueAfterClues.Clear();
     }
     /// <summary>
     /// Start talking
@@ -353,22 +382,20 @@ public class Character :MonoBehaviour
             catch
             {
                 EndInterrogation = false;
-            }
+            }            
             try
             {
-                EndInterrogationForClue = DialogueAfterClues[_numDialog].EndInterrogation;
+                EndInterrogationForClue = DialogueAfterClues[_numDialogAfterClue].EndInterrogation && !_correctCluePresented;
             }
             catch
             {
                 EndInterrogationForClue= false;
-            }
+            }            
+
             if ((EndInterrogation && InterrogationMode) ||
                 dialogForRegularConvo.Count <= _numDialog && !InterrogationMode ||
-                (EndInterrogationForClue && InterrogationMode))                 
-            {
-                InDialog = false;
-                _dialogBox.Display(false);
-                _numDialog= 0;
+                (EndInterrogationForClue && InterrogationMode))                                 
+            {               
 
                 if (!InterrogationMode)
                 {
@@ -376,7 +403,7 @@ public class Character :MonoBehaviour
                     _animator.SetBool("Up", false);
                     _animator.SetBool("Down", false);
                     _animator.SetBool("Left", false);
-                    _animator.SetBool("Right", false);
+                    _animator.SetBool("Right", false);                    
                 }
                 else
                 {
@@ -389,12 +416,13 @@ public class Character :MonoBehaviour
 
                 if (InterrogationMode)
                 {
-                    if (DialogueForInterrogations[_numDialog].NPCTalking)
+                    if (DialogueForInterrogations[_numDialog].NPCTalking || (DialogueAfterClues[_numDialogAfterClue].NPCTalking && _cluePresented))
                     {
                         _dialogBox.SpeakerName = Name.ToString();
                         _dialogBox.SpeakerImage = Profile;
                     }
-                    _interrogationController.PlayerTalking();
+                    else
+                        _interrogationController.PlayerTalking();
                 }
                 else
                 {
@@ -408,7 +436,15 @@ public class Character :MonoBehaviour
                 }
 
                 StartCoroutine(Talk());
-                _numDialog++;
+                if (_cluePresented)
+                {                    
+                    if (EndInterrogationForClue)
+                        _cluePresented = false;
+                    else
+                        _numDialogAfterClue++;
+                }
+                else
+                    _numDialog++;
             }
         }        
     }
@@ -418,10 +454,21 @@ public class Character :MonoBehaviour
     /// <param name="clue">Send the Clue over</param>
     public void PresentClue(Clue clue)
     {
-        if(clue==correctClue)
-            _correctCluePresented= true;
-        else
+        try
+        {
+            if (clue.name == correctClue.name)
+                _correctCluePresented = true;
+            else
+                _correctCluePresented = false;
+        }
+        catch
+        {
             _correctCluePresented = false;
+        }
+
+        _cluePresented= true;
+        _numDialogAfterClue = 0;
+        ContinueDialogue();
     }
     private void LookAtPlayer(GameObject Player)
     {
@@ -462,7 +509,8 @@ public class Character :MonoBehaviour
         }
     }
     /// <summary>
-    /// hold up one at a time
+    /// hold up one at a time.
+    /// And all other Dialogue
     /// </summary>
     /// <returns></returns>
     IEnumerator Talk()
@@ -478,26 +526,60 @@ public class Character :MonoBehaviour
                 }
                 break;
             case "InterrogationScene":
-                if (_correctCluePresented)
+                if (_cluePresented)
                 {
-                    //foreach (char c in DialogueAfterClues[_numDialog].Response.ToCharArray())
-                    //{
-                    //    _dialogBox.Text += c;
-                    //    yield return new WaitForSeconds(0.02f);
-                    //}
-                    if (DialogueAfterClues[_numDialog].NoQuestions)
+                    if (_correctCluePresented)
                     {
-                        _dialogBox.SwitchMode(false);
-                        _dialogBox.Text = DialogueAfterClues[_numDialog].Response;
-                        _interrogationController.NextElementForInterrogating = DialogueAfterClues[_numDialog].NextElementNumber;
+                        //temp for now to adjust later for polish
+                        bool find = true; ;
+                        while (find)
+                        {
+                            if (DialogueAfterClues[_numDialogAfterClue].CorrectClue)
+                            {
+                                if (DialogueAfterClues[_numDialogAfterClue].NoQuestions)
+                                {
+                                    _dialogBox.SwitchMode(false);
+                                    //_dialogBox.Text = DialogueAfterClues[_numDialog].Response;
+                                    //_interrogationController.NextElementForInterrogating = DialogueAfterClues[_numDialog].NextElementNumber;
+                                    foreach (char c in DialogueAfterClues[_numDialogAfterClue].Response.ToCharArray())
+                                    {
+                                        _dialogBox.Text += c;
+                                        yield return new WaitForSeconds(0.02f);
+                                    }
+                                }
+                                else
+                                {
+                                    _dialogBox.SwitchMode(true);
+                                    _dialogBox.Text = DialogueAfterClues[_numDialogAfterClue].Response;
+                                    _dialogBox.SetUpQuestions(1, DialogueAfterClues[_numDialogAfterClue].Question1.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question1.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question1.EndInterrogation);
+                                    _dialogBox.SetUpQuestions(2, DialogueAfterClues[_numDialogAfterClue].Question2.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question2.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question2.EndInterrogation);
+                                    _dialogBox.SetUpQuestions(3, DialogueAfterClues[_numDialogAfterClue].Question3.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question3.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question3.EndInterrogation);
+                                }
+                                find = false;
+                            }
+                            else
+                                _numDialogAfterClue++;
+                        }
                     }
                     else
-                    {
-                        _dialogBox.SwitchMode(true);
-                        _dialogBox.Text = DialogueAfterClues[_numDialog].Response;
-                        _dialogBox.SetUpQuestions(1, DialogueAfterClues[_numDialog].Question1.QuestionText, DialogueAfterClues[_numDialog].Question1.NextElementNumber);
-                        _dialogBox.SetUpQuestions(2, DialogueAfterClues[_numDialog].Question2.QuestionText, DialogueAfterClues[_numDialog].Question2.NextElementNumber);
-                        _dialogBox.SetUpQuestions(3, DialogueAfterClues[_numDialog].Question3.QuestionText, DialogueAfterClues[_numDialog].Question3.NextElementNumber);
+                    {                        
+                        if (DialogueAfterClues[_numDialogAfterClue].NoQuestions)
+                        {
+                            _dialogBox.SwitchMode(false);                          
+                            foreach (char c in DialogueAfterClues[_numDialogAfterClue].Response.ToCharArray())
+                            {
+                                _dialogBox.Text += c;
+                                yield return new WaitForSeconds(0.02f);
+                            }
+                        }
+                        else
+                        {
+                            _dialogBox.SwitchMode(true);
+                            _dialogBox.Text = DialogueAfterClues[_numDialogAfterClue].Response;
+                            _dialogBox.SetUpQuestions(1, DialogueAfterClues[_numDialogAfterClue].Question1.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question1.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question1.EndInterrogation);
+                            _dialogBox.SetUpQuestions(2, DialogueAfterClues[_numDialogAfterClue].Question2.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question2.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question2.EndInterrogation);
+                            _dialogBox.SetUpQuestions(3, DialogueAfterClues[_numDialogAfterClue].Question3.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question3.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question3.EndInterrogation);
+                        }
                     }
                 }
                 else
@@ -512,9 +594,9 @@ public class Character :MonoBehaviour
                     {
                         _dialogBox.SwitchMode(true);
                         _dialogBox.Text = DialogueForInterrogations[_numDialog].Response;
-                        _dialogBox.SetUpQuestions(1, DialogueForInterrogations[_numDialog].Question1.QuestionText, DialogueForInterrogations[_numDialog].Question1.NextElementNumber);
-                        _dialogBox.SetUpQuestions(2, DialogueForInterrogations[_numDialog].Question2.QuestionText, DialogueForInterrogations[_numDialog].Question2.NextElementNumber);
-                        _dialogBox.SetUpQuestions(3, DialogueForInterrogations[_numDialog].Question3.QuestionText, DialogueForInterrogations[_numDialog].Question3.NextElementNumber);
+                        _dialogBox.SetUpQuestions(1, DialogueForInterrogations[_numDialog].Question1.QuestionText, DialogueForInterrogations[_numDialog].Question1.NextElementNumber, DialogueForInterrogations[_numDialog].Question1.EndInterrogation);
+                        _dialogBox.SetUpQuestions(2, DialogueForInterrogations[_numDialog].Question2.QuestionText, DialogueForInterrogations[_numDialog].Question2.NextElementNumber, DialogueForInterrogations[_numDialog].Question2.EndInterrogation);
+                        _dialogBox.SetUpQuestions(3, DialogueForInterrogations[_numDialog].Question3.QuestionText, DialogueForInterrogations[_numDialog].Question3.NextElementNumber, DialogueForInterrogations[_numDialog].Question3.EndInterrogation);
                     }
                 }
                 break;
@@ -524,14 +606,64 @@ public class Character :MonoBehaviour
         }
         _isTalking = false;
     }
+    /// <summary>
+    /// Handles Final Dialogue
+    /// </summary>
+    /// <returns></returns>
     IEnumerator FinalDialogue()
     {
-        if (_correctCluePresented)
+        if (_cluePresented)
         {
-            foreach (char c in DialogueAfterClues[_numDialog].Response.ToCharArray())
+            if (_correctCluePresented)
             {
-                _dialogBox.Text += c;
-                yield return new WaitForSeconds(0.02f);
+                //temp for now to adjust later for polish
+                bool find = true; ;
+                while (find)
+                {
+                    if (DialogueAfterClues[_numDialogAfterClue].CorrectClue)
+                    {
+                        if (DialogueAfterClues[_numDialogAfterClue].NoQuestions)
+                        {
+                            _dialogBox.SwitchMode(false);                           
+                            foreach (char c in DialogueAfterClues[_numDialogAfterClue].Response.ToCharArray())
+                            {
+                                _dialogBox.Text += c;
+                                yield return new WaitForSeconds(0.02f);
+                            }
+                        }
+                        else
+                        {
+                            _dialogBox.SwitchMode(true);
+                            _dialogBox.Text = DialogueAfterClues[_numDialogAfterClue].Response;
+                            _dialogBox.SetUpQuestions(1, DialogueAfterClues[_numDialogAfterClue].Question1.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question1.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question1.EndInterrogation);
+                            _dialogBox.SetUpQuestions(2, DialogueAfterClues[_numDialogAfterClue].Question2.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question2.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question2.EndInterrogation);
+                            _dialogBox.SetUpQuestions(3, DialogueAfterClues[_numDialogAfterClue].Question3.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question3.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question3.EndInterrogation);
+                        }
+                        find = false;
+                    }
+                    else
+                        _numDialogAfterClue++;
+                }
+            }
+            else
+            {               
+                if (DialogueAfterClues[_numDialogAfterClue].NoQuestions)
+                {
+                    _dialogBox.SwitchMode(false);                    
+                    foreach (char c in DialogueAfterClues[_numDialogAfterClue].Response.ToCharArray())
+                    {
+                        _dialogBox.Text += c;
+                        yield return new WaitForSeconds(0.02f);
+                    }
+                }
+                else
+                {
+                    _dialogBox.SwitchMode(true);
+                    _dialogBox.Text = DialogueAfterClues[_numDialogAfterClue].Response;
+                    _dialogBox.SetUpQuestions(1, DialogueAfterClues[_numDialogAfterClue].Question1.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question1.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question1.EndInterrogation);
+                    _dialogBox.SetUpQuestions(2, DialogueAfterClues[_numDialogAfterClue].Question2.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question2.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question2.EndInterrogation);
+                    _dialogBox.SetUpQuestions(3, DialogueAfterClues[_numDialogAfterClue].Question3.QuestionText, DialogueAfterClues[_numDialogAfterClue].Question3.NextElementNumber, DialogueAfterClues[_numDialogAfterClue].Question3.EndInterrogation);
+                }
             }
         }
         else
@@ -550,12 +682,17 @@ public class Character :MonoBehaviour
             {
                 _dialogBox.SwitchMode(true);
                 _dialogBox.Text = DialogueForInterrogations[_numDialog].Response;
-                _dialogBox.SetUpQuestions(1, DialogueForInterrogations[_numDialog].Question1.QuestionText, DialogueForInterrogations[_numDialog].Question1.NextElementNumber);
-                _dialogBox.SetUpQuestions(2, DialogueForInterrogations[_numDialog].Question2.QuestionText, DialogueForInterrogations[_numDialog].Question2.NextElementNumber);
-                _dialogBox.SetUpQuestions(3, DialogueForInterrogations[_numDialog].Question3.QuestionText, DialogueForInterrogations[_numDialog].Question3.NextElementNumber);
+                _dialogBox.SetUpQuestions(1, DialogueForInterrogations[_numDialog].Question1.QuestionText, DialogueForInterrogations[_numDialog].Question1.NextElementNumber, DialogueForInterrogations[_numDialog].Question1.EndInterrogation);
+                _dialogBox.SetUpQuestions(2, DialogueForInterrogations[_numDialog].Question2.QuestionText, DialogueForInterrogations[_numDialog].Question2.NextElementNumber, DialogueForInterrogations[_numDialog].Question2.EndInterrogation);
+                _dialogBox.SetUpQuestions(3, DialogueForInterrogations[_numDialog].Question3.QuestionText, DialogueForInterrogations[_numDialog].Question3.NextElementNumber, DialogueForInterrogations[_numDialog].Question3.EndInterrogation);
             }
         }
-        yield return new WaitForSeconds(0.07f);
+        yield return new WaitForSeconds(4.0f);
+
+        InDialog = false;
+        _dialogBox.Display(false);
+        _numDialog = 0;
+
         SceneManager.LoadScene("GrandHall");
     }
 }

@@ -2,16 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.Profiling;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
     private Animator _animator;
     private bool _talking;
+    private float _keyHeldTime;
+    private float _idleTime;
 
     private GameController _gameController;
 
@@ -51,56 +56,109 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
-    //void Update()
-    //{
-    //    if (PlayWalkSound)
-    //    {
-    //        SoundManager.PlaySound(SoundManager.SoundFX.PlayerWalk);
-    //        PlayWalkSound = false;
-    //    }
-    //}
-    void FixedUpdate()
+    public enum Direction
     {
-        if(Talking)
+        Up,
+        Down,
+        Left,
+        Right
+    }
+
+    private Direction lastMove;
+
+    void Update()
+    {
+        if (Talking)        
+            moveInput = Vector2.zero;                         
+        
+        if(moveInput!= Vector2.zero)
         {
-            moveInput = Vector2.zero;
-            _animator.SetBool("Moving", false);
+            _idleTime = 0.0f;
+            _keyHeldTime += Time.deltaTime;
+            if (_keyHeldTime >= 0.1f)
+            {
+                if (moveInput.y == 1)
+                {
+                    _animator.SetInteger("AnimationCondition", 7);
+                    lastMove = Direction.Up;
+                }
+                else if (moveInput.y == -1)
+                {
+                    _animator.SetInteger("AnimationCondition", 6);
+                    lastMove = Direction.Down;
+                }
+
+                if (moveInput.x == -1)
+                {
+                    _animator.SetInteger("AnimationCondition", 5);
+                    lastMove = Direction.Left;
+                }
+                else if (moveInput.x == 1)
+                {
+                    _animator.SetInteger("AnimationCondition", 8);
+                    lastMove = Direction.Right;
+                }
+                if(_keyHeldTime >=0.3f)
+                    _rigidbody.velocity = moveInput * PlayerSpeed;
+            }
+            else
+            {                
+                    switch (moveInput.x)
+                    {
+                        case 1:
+                            _animator.SetInteger("AnimationCondition", 4);
+                            lastMove = Direction.Right;
+                            break;
+                        case -1:
+                            _animator.SetInteger("AnimationCondition", 1);
+                            lastMove = Direction.Left;
+                            break;
+                    }
+                    switch (moveInput.y)
+                    {
+                        case 1:
+                            _animator.SetInteger("AnimationCondition", 3);
+                            lastMove = Direction.Up;
+                            break;
+                        case -1:
+                            _animator.SetInteger("AnimationCondition", 2);
+                            lastMove = Direction.Down;
+                            break;
+                    }                
+            }
         }
         else
-            _animator.SetBool("Moving", true);
-
-        _rigidbody.velocity = moveInput * PlayerSpeed;
-        
-
-        switch (moveInput.y)
         {
-            case 1:
-                _animator.SetBool("Up", true);
-                break;
-            case -1:
-                _animator.SetBool("Down", true);
-                break;
-            default:
-                _animator.SetBool("Up", false);
-                _animator.SetBool("Down", false);
-                break;
-        }
-        switch (moveInput.x)
-        {
-            case 1:
-                _animator.SetBool("Right", true);
-                break;
-            case -1:
-                _animator.SetBool("Left", true);
-                break;
-            default:
-                _animator.SetBool("Left", false);
-                _animator.SetBool("Right", false);
-                break;
-        }
+            _rigidbody.velocity = moveInput * PlayerSpeed;
 
-        if(moveInput == Vector2.zero)
-            _animator.SetBool("Moving", false);
+            //Reset to 0
+            _keyHeldTime = 0f;
+
+            _idleTime += Time.deltaTime;
+
+            // Set Idle Animation
+            if (_idleTime > 60.0f)
+            {
+                _animator.SetInteger("AnimationCondition", 9);
+            }            
+            else if (lastMove == Direction.Up)
+            {
+                _animator.SetInteger("AnimationCondition", 3);
+            }
+            else if (lastMove == Direction.Down)
+            {
+                _animator.SetInteger("AnimationCondition", 2);
+            }
+            else if (lastMove == Direction.Left)
+            {
+                _animator.SetInteger("AnimationCondition", 1);
+            }
+            else if (lastMove == Direction.Right)
+            {
+                _animator.SetInteger("AnimationCondition", 4);
+            }
+        }    
+
     }
     /// <summary>
     /// Responds to input system on move event
@@ -125,6 +183,7 @@ public class Player : MonoBehaviour
     /// </summary>
     void OnInteract()
     {
+        PlayerObjectTextBox.SetActive(false);
         if (CanTalkToNPC)
         {
             Component CharactersScript = null;
@@ -143,6 +202,11 @@ public class Player : MonoBehaviour
                 CharactersScript.GetType().GetMethod("ContinueDialogue").Invoke(CharactersScript, null);
             else
             {
+                //Get the Imdead property
+                if((bool)CharactersScript.GetType().GetProperty("ImDead").GetValue(CharactersScript))
+                {
+                    return;
+                }
                 if (_gameController._gameManager.CurrentScene == "GrandHall")
                 {
                     _gameController.InInterrogation= true;
@@ -161,11 +225,17 @@ public class Player : MonoBehaviour
         }
         // Interacting with object
         else if (CanInteract)
-        {
+        {            
             Talking = true;
             CurrentInteractableObject.GetComponent<Objects>().dialogueObjectController = DialogBox;
-            ImTalking();           
-            CurrentInteractableObject.GetComponent<Objects>().Use();
+            ImTalking();
+
+            if(!CurrentInteractableObject.GetComponent<Objects>().IsOptions)                
+                CurrentInteractableObject.GetComponent<Objects>().Use();
+            else
+            {
+                EventSystem.current.currentSelectedGameObject.GetComponent<Button>().onClick.Invoke();
+            }
 
         }
         else

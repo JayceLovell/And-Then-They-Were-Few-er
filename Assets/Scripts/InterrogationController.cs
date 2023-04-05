@@ -4,20 +4,25 @@ using UnityEngine;
 using UnityEngine.Profiling;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
+using UnityEditor;
 
 public class InterrogationController : MonoBehaviour
 {
     private Sprite _interrogationNPC;
-    private GameManager _gameManager;
     private Component _npcComponent=null;
     private int _nextElementForInterrogating;
     [SerializeField]
     private Sprite Profile;
 
+    public Material ShadowMaterial;
     public Sprite PlayerProfile;
     public DialogueObjectController DialogBox;
     public Transform NPCPosition;
     public GameObject NPC;
+
+    public GameObject EventSystemObject;
+    public GameObject CameraObject;
 
     public int NextElementForInterrogating
     {
@@ -26,9 +31,13 @@ public class InterrogationController : MonoBehaviour
             return _nextElementForInterrogating;
         }
         set
-        {
+        {          
             _nextElementForInterrogating = value;
-            _npcComponent.GetType().GetProperty("NumDialog").SetValue(_npcComponent, value);
+            if((bool)_npcComponent.GetType().GetProperty("CluePresented").GetValue(_npcComponent))
+                _npcComponent.GetType().GetProperty("NumDialogAfterClue").SetValue(_npcComponent, value);
+            else
+                _npcComponent.GetType().GetProperty("NumDialog").SetValue(_npcComponent, value);
+
             _npcComponent.GetType().GetMethod("ContinueDialogue").Invoke(_npcComponent, null);
         }
     }
@@ -42,7 +51,6 @@ public class InterrogationController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _gameManager = GameManager.Instance;
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("InterrogationScene"));
         //Grab profile quick before disappear
         Profile = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().Profile;
@@ -54,6 +62,7 @@ public class InterrogationController : MonoBehaviour
     }    
     public void OnInterrogate()
     {
+
         if (_npcComponent == null)
         {
             Component[] components = NPC.GetComponents(typeof(Component));
@@ -65,6 +74,13 @@ public class InterrogationController : MonoBehaviour
                     break;
                 }
             }
+
+            //sets up the shadows of npcs
+            _npcComponent.GetComponent<Renderer>().shadowCastingMode= UnityEngine.Rendering.ShadowCastingMode.On;
+            _npcComponent.GetComponent<Renderer>().receiveShadows = true;
+            _npcComponent.GetComponent<Renderer>().material = ShadowMaterial;
+            
+
         }
         if ((bool)_npcComponent.GetType().GetProperty("InDialog").GetValue(_npcComponent))
             _npcComponent.GetType().GetMethod("ContinueDialogue").Invoke(_npcComponent, null);
@@ -89,7 +105,11 @@ public class InterrogationController : MonoBehaviour
     }
     public void OnQuit()
     {
-        GameManager.Instance.Quit();
+        SceneManager.LoadScene("GrandHall");
+    }
+    public void Back()
+    {
+        SceneManager.LoadScene("GrandHall");
     }
     IEnumerator WaitForOneSecond()
     {
@@ -99,6 +119,9 @@ public class InterrogationController : MonoBehaviour
         NPC.transform.position = NPCPosition.position;
 
         //idk why but gotta do this
+
+        CameraObject.SetActive(true);
+        EventSystemObject.SetActive(true);
         gameObject.GetComponent<PlayerInput>().enabled= false;
         gameObject.GetComponent<PlayerInput>().enabled = true;
 

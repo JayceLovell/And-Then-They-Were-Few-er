@@ -18,7 +18,7 @@ public class ClueButton : MonoBehaviour
     {
         if (GameManager.Instance.CurrentScene=="InterrogationScene")
         {
-            GameObject.FindGameObjectWithTag("interrogationController").GetComponent<InterrogationController>().PresentClueToNPC(clue);
+            GameObject.FindGameObjectWithTag("InterrogationController").GetComponent<InterrogationController>().PresentClueToNPC(clue);
         }
     }
 }
