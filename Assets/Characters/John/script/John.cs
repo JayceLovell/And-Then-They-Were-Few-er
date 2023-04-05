@@ -22,7 +22,7 @@ public class John : Character
 
             DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
             ExampleForBeforeMurder2.NPCTalking = false;
-            ExampleForBeforeMurder2.Text = "Hi";
+            ExampleForBeforeMurder2.Text = "Hi!";
             dialogForRegularConvo.Add(ExampleForBeforeMurder2);
 
             DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
@@ -115,7 +115,7 @@ public class John : Character
         ExampleInterrogationConvo1.Question1.NextElementNumber = 2;
 
         ExampleInterrogationConvo1.Question2 = new Question();
-        ExampleInterrogationConvo1.Question2.QuestionText = " ";
+        ExampleInterrogationConvo1.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo1.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo1.Question3 = new Question();
@@ -139,7 +139,7 @@ public class John : Character
         ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
-        ExampleInterrogationConvo2.Question2.QuestionText = " ";
+        ExampleInterrogationConvo2.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo2.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo2.Question3 = new Question();
@@ -155,11 +155,11 @@ public class John : Character
         ExampleInterrogationConvo3.NPCTalking = true;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
-        ExampleInterrogationConvo3.Response = "I was in the bathroom with my Dad";
+        ExampleInterrogationConvo3.Response = "I was in the bathroom with my Dad.";
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
-        ExampleInterrogationConvo3.Question1.QuestionText = "(while shaking her head): For God’s sake. Well, at least that provides an alibi for the both of you.";
+        ExampleInterrogationConvo3.Question1.QuestionText = "(while shaking her head): For God's sake. Well, at least that provides an alibi for the both of you.";
         ExampleInterrogationConvo3.Question1.NextElementNumber = 4;
 
         ExampleInterrogationConvo3.Question2 = new Question();
@@ -167,7 +167,7 @@ public class John : Character
         ExampleInterrogationConvo3.Question2.NextElementNumber = 7;
 
         ExampleInterrogationConvo3.Question3 = new Question();
-        ExampleInterrogationConvo3.Question3.QuestionText = " ";
+        ExampleInterrogationConvo3.Question3.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo3.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo3);
@@ -179,7 +179,7 @@ public class John : Character
         ExampleInterrogationConvo4.NPCTalking = true;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
-        ExampleInterrogationConvo4.Response = "Please don’t tell anyone! I was already scared that we would get caught last night, " +
+        ExampleInterrogationConvo4.Response = "Please don't tell anyone! I was already scared that we would get caught last night, " +
             "someone tried to use the bathroom when we were in there!";
 
         //Creating a Question
@@ -189,7 +189,7 @@ public class John : Character
         ExampleInterrogationConvo4.Question1.NextElementNumber = 5;
 
         ExampleInterrogationConvo4.Question2 = new Question();
-        ExampleInterrogationConvo4.Question2.QuestionText = " ";
+        ExampleInterrogationConvo4.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo4.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question3 = new Question();
@@ -206,15 +206,15 @@ public class John : Character
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "No idea. But before they realized it was occupied they tried really hard to get in. " +
-            "They must have need to pee really badly";
+            "They must have need to pee really badly!";
         //Creating a Question
 
         ExampleInterrogationConvo5.Question1 = new Question();
-        ExampleInterrogationConvo5.Question1.QuestionText = "I’ll bet they did…";
+        ExampleInterrogationConvo5.Question1.QuestionText = "I'll bet they did…";
         ExampleInterrogationConvo5.Question1.NextElementNumber = 6;
 
         ExampleInterrogationConvo5.Question2 = new Question();
-        ExampleInterrogationConvo5.Question2.QuestionText = " ";
+        ExampleInterrogationConvo5.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo5.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo5.Question3 = new Question();
@@ -231,7 +231,7 @@ public class John : Character
         ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
         ExampleInterrogationConvo6.Response = "After that, it seemed like they went into the next stall. " +
-            "I think I might have heard something hit the floor, but I’m not sure, I didn’t look in to check.";
+            "I think I might have heard something hit the floor, but I'm not sure, I didn't look in to check.";
         //Creating a Question
 
         ExampleInterrogationConvo6.Question1 = new Question();
@@ -263,7 +263,7 @@ public class John : Character
         ExampleInterrogationConvo7.Question1.NextElementNumber = 8;
 
         ExampleInterrogationConvo7.Question2 = new Question();
-        ExampleInterrogationConvo7.Question2.QuestionText = " ";
+        ExampleInterrogationConvo7.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo7.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo7.Question3 = new Question();
@@ -288,7 +288,7 @@ public class John : Character
         ExampleInterrogationConvo8.Question1.NextElementNumber = 9;
 
         ExampleInterrogationConvo8.Question2 = new Question();
-        ExampleInterrogationConvo8.Question2.QuestionText = " ";
+        ExampleInterrogationConvo8.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo8.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question3 = new Question();
@@ -312,7 +312,7 @@ public class John : Character
         ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
-        ExampleInterrogationConvo9.Question2.QuestionText = " ";
+        ExampleInterrogationConvo9.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo9.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question3 = new Question();
@@ -328,7 +328,7 @@ public class John : Character
         ExampleInterrogationConvo10.NPCTalking = true;
         ExampleInterrogationConvo10.EndInterrogation = false;
         ExampleInterrogationConvo10.NoQuestions = false;
-        ExampleInterrogationConvo10.Response = "I'm not sure. I didn't know Nikki too well to be honest";
+        ExampleInterrogationConvo10.Response = "I'm not sure. I didn't know Nikki too well to be honest.";
         //Creating a Question
 
         ExampleInterrogationConvo10.Question1 = new Question();
@@ -340,7 +340,7 @@ public class John : Character
         ExampleInterrogationConvo10.Question2.NextElementNumber = 11;
 
         ExampleInterrogationConvo10.Question3 = new Question();
-        ExampleInterrogationConvo10.Question3.QuestionText = " ";
+        ExampleInterrogationConvo10.Question3.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo10.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo10);
@@ -352,7 +352,7 @@ public class John : Character
         ExampleInterrogationConvo11.NPCTalking = true;
         ExampleInterrogationConvo11.EndInterrogation = false;
         ExampleInterrogationConvo11.NoQuestions = false;
-        ExampleInterrogationConvo11.Response = "Not really, I was too focused on trying to keep Dad in check ";
+        ExampleInterrogationConvo11.Response = "Not really, I was too focused on trying to keep Dad in check. ";
         //Creating a Question
 
         ExampleInterrogationConvo11.Question1 = new Question();
@@ -360,7 +360,7 @@ public class John : Character
         ExampleInterrogationConvo11.Question1.NextElementNumber = 12;
 
         ExampleInterrogationConvo11.Question2 = new Question();
-        ExampleInterrogationConvo11.Question2.QuestionText = " ";
+        ExampleInterrogationConvo11.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo11.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo11.Question3 = new Question();
@@ -408,7 +408,7 @@ public class John : Character
         ExampleInterrogationConvo13.Question1.NextElementNumber = 14;
 
         ExampleInterrogationConvo13.Question2 = new Question();
-        ExampleInterrogationConvo13.Question2.QuestionText = " ";
+        ExampleInterrogationConvo13.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo13.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo13.Question3 = new Question();
@@ -446,10 +446,10 @@ public class John : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
-        ExampledialogueAfterClue.Response = " I don't know!";
+        ExampledialogueAfterClue.Response = " I don't know! [It seems this is not the right clue for John...]";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
     }

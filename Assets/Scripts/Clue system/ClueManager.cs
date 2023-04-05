@@ -38,7 +38,6 @@ public class ClueManager : MonoBehaviour
     //CalledFirst
     void OnEnable()
     {
-        Debug.Log("Clue Manager Enabled");
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -88,6 +87,17 @@ public class ClueManager : MonoBehaviour
         Clues.Add(clue);
 
         AddClueButton(clue);
+    }
+    public bool HasClueBeenPickedUp(Clue ClueToCheck)
+    {
+        foreach (Clue clue in Clues)
+        {
+            if (clue.name == ClueToCheck.name  && clue.PickedUp)
+            {
+                return true;
+            }
+        }
+        return false;
     }
     // Any stuff the manager has to do for each scene have it be done here
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -163,7 +173,6 @@ public class ClueManager : MonoBehaviour
 
     void OnDisable()
     {
-        Debug.Log("Clue Manager Disable");
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

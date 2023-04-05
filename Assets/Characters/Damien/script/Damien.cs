@@ -87,7 +87,7 @@ public class Damien : Character
             // Create convo after Murder
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
-            ExampleForAfterMurder.Text = "Poor Nikki";
+            ExampleForAfterMurder.Text = "Poor Nikki...";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
@@ -106,7 +106,7 @@ public class Damien : Character
         ExampleInterrogationConvo.Question1.NextElementNumber = 1;
 
         ExampleInterrogationConvo.Question2 = new Question();
-        ExampleInterrogationConvo.Question2.QuestionText = "Do you know where Watson is?";
+        ExampleInterrogationConvo.Question2.QuestionText = "Do you know where Wattson is?";
         ExampleInterrogationConvo.Question2.NextElementNumber = 5;
 
         ExampleInterrogationConvo.Question3 = new Question();
@@ -130,11 +130,11 @@ public class Damien : Character
         ExampleInterrogationConvo1.Question1.NextElementNumber = 2;
 
         ExampleInterrogationConvo1.Question2 = new Question();
-        ExampleInterrogationConvo1.Question2.QuestionText = " ";
+        ExampleInterrogationConvo1.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo1.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo1.Question3 = new Question();
-        ExampleInterrogationConvo1.Question3.QuestionText = " ";
+        ExampleInterrogationConvo1.Question3.QuestionText = "  ";
         ExampleInterrogationConvo1.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo1);
@@ -146,7 +146,7 @@ public class Damien : Character
         ExampleInterrogationConvo2.NPCTalking = true;
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
-        ExampleInterrogationConvo2.Response = "Yes, Karol was with me";
+        ExampleInterrogationConvo2.Response = "Yes, Karol was with me.";
         //Creating a Question
 
         ExampleInterrogationConvo2.Question1 = new Question();
@@ -154,11 +154,11 @@ public class Damien : Character
         ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
-        ExampleInterrogationConvo2.Question2.QuestionText = " ";
+        ExampleInterrogationConvo2.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo2.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo2.Question3 = new Question();
-        ExampleInterrogationConvo2.Question3.QuestionText = " ";
+        ExampleInterrogationConvo2.Question3.QuestionText = "  ";
         ExampleInterrogationConvo2.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo2);
@@ -178,11 +178,11 @@ public class Damien : Character
         ExampleInterrogationConvo3.Question1.NextElementNumber = 4;
 
         ExampleInterrogationConvo3.Question2 = new Question();
-        ExampleInterrogationConvo3.Question2.QuestionText = " ";
+        ExampleInterrogationConvo3.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo3.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo3.Question3 = new Question();
-        ExampleInterrogationConvo3.Question3.QuestionText = " ";
+        ExampleInterrogationConvo3.Question3.QuestionText = "  ";
         ExampleInterrogationConvo3.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo3);
@@ -194,7 +194,7 @@ public class Damien : Character
         ExampleInterrogationConvo4.NPCTalking = true;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
-        ExampleInterrogationConvo4.Response = "*Damien gets defensive* I don't see anything wrong with that";
+        ExampleInterrogationConvo4.Response = "*Damien gets defensive* I don't see anything wrong with that.";
         //Creating a Question
 
         ExampleInterrogationConvo4.Question1 = new Question();
@@ -202,11 +202,11 @@ public class Damien : Character
         ExampleInterrogationConvo4.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question2 = new Question();
-        ExampleInterrogationConvo4.Question2.QuestionText = " ";
+        ExampleInterrogationConvo4.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo4.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question3 = new Question();
-        ExampleInterrogationConvo4.Question3.QuestionText = " ";
+        ExampleInterrogationConvo4.Question3.QuestionText = "  ";
         ExampleInterrogationConvo4.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo4);
@@ -218,7 +218,7 @@ public class Damien : Character
         ExampleInterrogationConvo5.NPCTalking = true;
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
-        ExampleInterrogationConvo5.Response = "His recharge station should be right next to Rachel's room";
+        ExampleInterrogationConvo5.Response = "His recharge station should be right next to Rachel's room.";
         //Creating a Question
 
         ExampleInterrogationConvo5.Question1 = new Question();
@@ -226,11 +226,11 @@ public class Damien : Character
         ExampleInterrogationConvo5.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo5.Question2 = new Question();
-        ExampleInterrogationConvo5.Question2.QuestionText = " ";
+        ExampleInterrogationConvo5.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo5.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo5.Question3 = new Question();
-        ExampleInterrogationConvo5.Question3.QuestionText = " ";
+        ExampleInterrogationConvo5.Question3.QuestionText = "  ";
         ExampleInterrogationConvo5.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo5);
@@ -242,7 +242,7 @@ public class Damien : Character
         ExampleInterrogationConvo6.NPCTalking = true;
         ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
-        ExampleInterrogationConvo6.Response = "I don't believe so... Nikki got on well with everyone";
+        ExampleInterrogationConvo6.Response = "I don't believe so... Nikki got on well with everyone.";
         //Creating a Question
 
         ExampleInterrogationConvo6.Question1 = new Question();
@@ -266,7 +266,7 @@ public class Damien : Character
         ExampleInterrogationConvo7.NPCTalking = true;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
-        ExampleInterrogationConvo7.Response = "Okay yes, Karol and Nikki are... were rivals, but they did respect one another";
+        ExampleInterrogationConvo7.Response = "Okay yes, Karol and Nikki are... were rivals, but they did respect one another.";
         //Creating a Question
 
         ExampleInterrogationConvo7.Question1 = new Question();
@@ -278,7 +278,7 @@ public class Damien : Character
         ExampleInterrogationConvo7.Question2.NextElementNumber = 8;
 
         ExampleInterrogationConvo7.Question3 = new Question();
-        ExampleInterrogationConvo7.Question3.QuestionText = " ";
+        ExampleInterrogationConvo7.Question3.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo7.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo7);
@@ -290,7 +290,7 @@ public class Damien : Character
         ExampleInterrogationConvo8.NPCTalking = true;
         ExampleInterrogationConvo8.EndInterrogation = false;
         ExampleInterrogationConvo8.NoQuestions = false;
-        ExampleInterrogationConvo8.Response = "*stands up* Detective, I know Karol. She wouldn't do this";
+        ExampleInterrogationConvo8.Response = "*stands up* Detective, I know Karol. She wouldn't do this.";
         //Creating a Question
 
         ExampleInterrogationConvo8.Question1 = new Question();
@@ -302,7 +302,7 @@ public class Damien : Character
         ExampleInterrogationConvo8.Question2.NextElementNumber = 9;
 
         ExampleInterrogationConvo8.Question3 = new Question();
-        ExampleInterrogationConvo8.Question3.QuestionText = " ";
+        ExampleInterrogationConvo8.Question3.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo8.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo8);
@@ -322,11 +322,11 @@ public class Damien : Character
         ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
-        ExampleInterrogationConvo9.Question2.QuestionText = " ";
+        ExampleInterrogationConvo9.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo9.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question3 = new Question();
-        ExampleInterrogationConvo9.Question3.QuestionText = " ";
+        ExampleInterrogationConvo9.Question3.QuestionText = "  ";
         ExampleInterrogationConvo9.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo9);
@@ -338,7 +338,7 @@ public class Damien : Character
         ExampleInterrogationConvo10.NPCTalking = true;
         ExampleInterrogationConvo10.EndInterrogation = false;
         ExampleInterrogationConvo10.NoQuestions = false;
-        ExampleInterrogationConvo10.Response = "As far as I know, Nikki and Mirianne had never met before tonight ";
+        ExampleInterrogationConvo10.Response = "As far as I know, Nikki and Mirianne had never met before tonight. ";
         //Creating a Question
 
         ExampleInterrogationConvo10.Question1 = new Question();
@@ -346,11 +346,11 @@ public class Damien : Character
         ExampleInterrogationConvo10.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question2 = new Question();
-        ExampleInterrogationConvo10.Question2.QuestionText = " ";
+        ExampleInterrogationConvo10.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo10.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question3 = new Question();
-        ExampleInterrogationConvo10.Question3.QuestionText = " ";
+        ExampleInterrogationConvo10.Question3.QuestionText = "  ";
         ExampleInterrogationConvo10.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo10);
@@ -366,11 +366,11 @@ public class Damien : Character
         ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
-        ExampledialogueAfterClue.Response = " What's that? ";
+        ExampledialogueAfterClue.Response = " What's that? [It seems this is not the right clue for Damien...]";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
         //Right Clue Dialogue
-        //Element 0
+        //Element 1
         DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
         ExampledialogueAfterClue1.CorrectClue = true;
         ExampledialogueAfterClue1.EndInterrogation = false;
@@ -383,7 +383,7 @@ public class Damien : Character
 
         ExampledialogueAfterClue1.Question1 = new Question();
         ExampledialogueAfterClue1.Question1.QuestionText = "I found it in your room. Care to explain? ";
-        ExampledialogueAfterClue1.Question1.NextElementNumber = 1;
+        ExampledialogueAfterClue1.Question1.NextElementNumber = 2;
 
         ExampledialogueAfterClue1.Question2 = new Question();
         ExampledialogueAfterClue1.Question2.QuestionText = " ";
@@ -395,7 +395,7 @@ public class Damien : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
-        //Element 1
+        //Element 2
         DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
         ExampledialogueAfterClue2.CorrectClue = true;
         ExampledialogueAfterClue2.EndInterrogation = false;
@@ -408,44 +408,44 @@ public class Damien : Character
 
         ExampledialogueAfterClue2.Question1 = new Question();
         ExampledialogueAfterClue2.Question1.QuestionText = "And what are the contents of this letter?";
-        ExampledialogueAfterClue2.Question1.NextElementNumber = 2;
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue2.Question2 = new Question();
         ExampledialogueAfterClue2.Question2.QuestionText = "Why keep this hidden?";
-        ExampledialogueAfterClue2.Question2.NextElementNumber = 6;
+        ExampledialogueAfterClue2.Question2.NextElementNumber = 7;
 
         ExampledialogueAfterClue2.Question3 = new Question();
-        ExampledialogueAfterClue2.Question3.QuestionText = " ";
+        ExampledialogueAfterClue2.Question3.QuestionText = "[Back to the first screen]";
         ExampledialogueAfterClue2.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue2);
 
-        //Element 2
+        //Element 3
         DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
         ExampledialogueAfterClue3.CorrectClue = true;
         ExampledialogueAfterClue3.EndInterrogation = false;
         ExampledialogueAfterClue3.NoQuestions = false;
         ExampledialogueAfterClue3.NPCTalking = true;
-        ExampledialogueAfterClue3.Response = "*sighs* I had written to Karol  about possibly reconsidering our relationship";
+        ExampledialogueAfterClue3.Response = "*sighs* I had written to Karol  about possibly reconsidering our relationship.";
        // DialogueAfterClues.Add(ExampledialogueAfterClue3);
 
         //Creating a Question
 
         ExampledialogueAfterClue3.Question1 = new Question();
         ExampledialogueAfterClue3.Question1.QuestionText = "Your relationship? You two are together?";
-        ExampledialogueAfterClue3.Question1.NextElementNumber = 3;
+        ExampledialogueAfterClue3.Question1.NextElementNumber = 4;
 
         ExampledialogueAfterClue3.Question2 = new Question();
-        ExampledialogueAfterClue3.Question2.QuestionText = " ";
+        ExampledialogueAfterClue3.Question2.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue3.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue3.Question3 = new Question();
-        ExampledialogueAfterClue3.Question3.QuestionText = " ";
+        ExampledialogueAfterClue3.Question3.QuestionText = "  ";
         ExampledialogueAfterClue3.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue3);
 
-        //Element 3
+        //Element 4
         DialogueAfterClue ExampledialogueAfterClue4 = new DialogueAfterClue();
         ExampledialogueAfterClue4.CorrectClue = true;
         ExampledialogueAfterClue4.EndInterrogation = false;
@@ -458,19 +458,19 @@ public class Damien : Character
 
         ExampledialogueAfterClue4.Question1 = new Question();
         ExampledialogueAfterClue4.Question1.QuestionText = "Why?";
-        ExampledialogueAfterClue4.Question1.NextElementNumber = 4;
+        ExampledialogueAfterClue4.Question1.NextElementNumber = 5;
 
         ExampledialogueAfterClue4.Question2 = new Question();
         ExampledialogueAfterClue4.Question2.QuestionText = "And is this the real reason that you and Karol were in the study together? ";
-        ExampledialogueAfterClue4.Question2.NextElementNumber = 5;
+        ExampledialogueAfterClue4.Question2.NextElementNumber = 6;
 
         ExampledialogueAfterClue4.Question3 = new Question();
-        ExampledialogueAfterClue4.Question3.QuestionText = " ";
+        ExampledialogueAfterClue4.Question3.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue4.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue4);
 
-        //Element 4
+        //Element 5
         DialogueAfterClue ExampledialogueAfterClue5 = new DialogueAfterClue();
         ExampledialogueAfterClue5.CorrectClue = true;
         ExampledialogueAfterClue5.EndInterrogation = false;
@@ -483,64 +483,49 @@ public class Damien : Character
 
         ExampledialogueAfterClue5.Question1 = new Question();
         ExampledialogueAfterClue5.Question1.QuestionText = "I see [Back to previous screen]";
-        ExampledialogueAfterClue5.Question1.NextElementNumber = 3;
+        ExampledialogueAfterClue5.Question1.NextElementNumber = 2;
 
         ExampledialogueAfterClue5.Question2 = new Question();
-        ExampledialogueAfterClue5.Question2.QuestionText = " ";
+        ExampledialogueAfterClue5.Question2.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue5.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue5.Question3 = new Question();
-        ExampledialogueAfterClue5.Question3.QuestionText = " ";
+        ExampledialogueAfterClue5.Question3.QuestionText = "  ";
         ExampledialogueAfterClue5.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue5);
 
-        //Element 5
+        //Element 6
         DialogueAfterClue ExampledialogueAfterClue6 = new DialogueAfterClue();
         ExampledialogueAfterClue6.CorrectClue = true;
         ExampledialogueAfterClue6.EndInterrogation = true;
         ExampledialogueAfterClue6.NoQuestions = true;
         ExampledialogueAfterClue6.NPCTalking = true;
         ExampledialogueAfterClue6.Response = " Yes";
-        // DialogueAfterClues.Add(ExampledialogueAfterClue3);
-
-        //Creating a Question
-
-        ExampledialogueAfterClue6.Question1 = new Question();
-        ExampledialogueAfterClue6.Question1.QuestionText = "Hmm";
-        ExampledialogueAfterClue6.Question1.NextElementNumber = 0;
-
-        ExampledialogueAfterClue6.Question2 = new Question();
-        ExampledialogueAfterClue6.Question2.QuestionText = " ";
-        ExampledialogueAfterClue6.Question2.NextElementNumber = 0;
-
-        ExampledialogueAfterClue6.Question3 = new Question();
-        ExampledialogueAfterClue6.Question3.QuestionText = " ";
-        ExampledialogueAfterClue6.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue6);
 
-        //Element 6
+        //Element 7
         DialogueAfterClue ExampledialogueAfterClue7 = new DialogueAfterClue();
         ExampledialogueAfterClue7.CorrectClue = true;
         ExampledialogueAfterClue7.EndInterrogation = false;
         ExampledialogueAfterClue7.NoQuestions = false;
         ExampledialogueAfterClue7.NPCTalking = true;
-        ExampledialogueAfterClue7.Response = " Well, we didn't want anyone to find it";
+        ExampledialogueAfterClue7.Response = " Well, we didn't want anyone to find it...";
         // DialogueAfterClues.Add(ExampledialogueAfterClue3);
 
         //Creating a Question
 
         ExampledialogueAfterClue7.Question1 = new Question();
         ExampledialogueAfterClue7.Question1.QuestionText = "*sternly* Don't be a smart ass. Explain";
-        ExampledialogueAfterClue7.Question1.NextElementNumber = 2;
+        ExampledialogueAfterClue7.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue7.Question2 = new Question();
-        ExampledialogueAfterClue7.Question2.QuestionText = " ";
+        ExampledialogueAfterClue7.Question2.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue7.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue7.Question3 = new Question();
-        ExampledialogueAfterClue7.Question3.QuestionText = " ";
+        ExampledialogueAfterClue7.Question3.QuestionText = "  ";
         ExampledialogueAfterClue7.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue7);
@@ -554,18 +539,18 @@ public class Damien : Character
  Potential Dialogue for if Karol accuses Damien of potentially being the murderer
 
 
-A: There are members in this household that strongly suspect you of being Nikki’s murderer
+A: There are members in this household that strongly suspect you of being Nikki's murderer
 
 D: Me?!
     
 A: Yes, and I might be inclined to agree! When I found Nikki, 
 there was a pipe in the corner of the room. Did you use this to attack Nikki?
 
-D: I assure you Detective, I’m the last person here who would want Nikki dead. 
-She’s the only person who was willing to take me in as an apprentice.
+D: I assure you Detective, I'm the last person here who would want Nikki dead. 
+She's the only person who was willing to take me in as an apprentice.
 
 A: Really? And yet I hear that she was thinking of replacing you!
 
-D:I don’t know about that. But I do know that Nikki was already stressed 
+D:I don't know about that. But I do know that Nikki was already stressed 
     over the pressure she was getting from her Mother to abandon her scientific pursuits and follow in the family business.
 */

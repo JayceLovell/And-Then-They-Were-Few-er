@@ -39,7 +39,7 @@ public class OldCrazyMan : Character
 
             DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
             ExampleForBeforeMurder5.NPCTalking = false;
-            ExampleForBeforeMurder5.Text = "Well, I can kind of relate. I like the smell of fresh ink and newly printed parchment paper";
+            ExampleForBeforeMurder5.Text = "Well, I can kind of relate. I like the smell of fresh ink and newly printed parchment paper.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder5);
 
             DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
@@ -49,7 +49,7 @@ public class OldCrazyMan : Character
 
             DialogRegularConvo ExampleForBeforeMurder7= new DialogRegularConvo();
             ExampleForBeforeMurder7.NPCTalking = true;
-            ExampleForBeforeMurder7.Text = "Ink? Parchment! Now that's just weird";
+            ExampleForBeforeMurder7.Text = "Ink? Parchment! Now that's just weird.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder7);
 
             DialogRegularConvo ExampleForBeforeMurder8 = new DialogRegularConvo();
@@ -63,7 +63,7 @@ public class OldCrazyMan : Character
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
             //ExampleForAfterMurder.Text = "Precious....My precious gears, are they safe?";
-            ExampleForAfterMurder.Text = "Looking for the right plant? It's located in the top right corner of the next room... The Gears Have Spoken!";
+            ExampleForAfterMurder.Text = "Looking for the right plant to bring this case to a close? It's located in the top right corner of the next room, right next to the light machine, and near the entrance to the lab... The Gears Have Spoken!";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
@@ -108,7 +108,7 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo1.Question1.NextElementNumber = 2;
 
         ExampleInterrogationConvo1.Question2 = new Question();
-        ExampleInterrogationConvo1.Question2.QuestionText = " ";
+        ExampleInterrogationConvo1.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo1.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo1.Question3 = new Question();
@@ -132,11 +132,11 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
-        ExampleInterrogationConvo2.Question2.QuestionText = " ";
+        ExampleInterrogationConvo2.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo2.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo2.Question3 = new Question();
-        ExampleInterrogationConvo2.Question3.QuestionText = " ";
+        ExampleInterrogationConvo2.Question3.QuestionText = "  ";
         ExampleInterrogationConvo2.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo2);
@@ -148,7 +148,7 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo3.NPCTalking = true;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
-        ExampleInterrogationConvo3.Response = "I always ask him to accompany me so that I have someone to hold my gears. Don’t want to drop them in the toilet!";
+        ExampleInterrogationConvo3.Response = "I always ask him to accompany me so that I have someone to hold my gears. Don't want to drop them in the toilet!";
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
@@ -208,7 +208,7 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo5.Question2.NextElementNumber = 7;
 
         ExampleInterrogationConvo5.Question3 = new Question();
-        ExampleInterrogationConvo5.Question3.QuestionText = " ";
+        ExampleInterrogationConvo5.Question3.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo5.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo5);
@@ -220,7 +220,7 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo6.NPCTalking = true;
         ExampleInterrogationConvo6.EndInterrogation = false;
         ExampleInterrogationConvo6.NoQuestions = false;
-        ExampleInterrogationConvo6.Response = "*clutching his cheek* I'm sorry. I shouldn't have said that, she was your best friend after all";
+        ExampleInterrogationConvo6.Response = "*clutching his cheek* I'm sorry. I shouldn't have said that, she was your best friend after all.";
         //Creating a Question
 
         ExampleInterrogationConvo6.Question1 = new Question();
@@ -228,11 +228,11 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo6.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo6.Question2 = new Question();
-        ExampleInterrogationConvo6.Question2.QuestionText = " ";
+        ExampleInterrogationConvo6.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo6.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo6.Question3 = new Question();
-        ExampleInterrogationConvo6.Question3.QuestionText = " ";
+        ExampleInterrogationConvo6.Question3.QuestionText = "  ";
         ExampleInterrogationConvo6.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo6);
@@ -256,7 +256,7 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo7.Question2.NextElementNumber = 8;
 
         ExampleInterrogationConvo7.Question3 = new Question();
-        ExampleInterrogationConvo7.Question3.QuestionText = " ";
+        ExampleInterrogationConvo7.Question3.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo7.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo7);
@@ -276,11 +276,11 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo8.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question2 = new Question();
-        ExampleInterrogationConvo8.Question2.QuestionText = " ";
+        ExampleInterrogationConvo8.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo8.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question3 = new Question();
-        ExampleInterrogationConvo8.Question3.QuestionText = " ";
+        ExampleInterrogationConvo8.Question3.QuestionText = "  ";
         ExampleInterrogationConvo8.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo8);
@@ -300,11 +300,11 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo9.Question1.NextElementNumber = 10;
 
         ExampleInterrogationConvo9.Question2 = new Question();
-        ExampleInterrogationConvo9.Question2.QuestionText = " ";
+        ExampleInterrogationConvo9.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo9.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question3 = new Question();
-        ExampleInterrogationConvo9.Question3.QuestionText = " ";
+        ExampleInterrogationConvo9.Question3.QuestionText = "  ";
         ExampleInterrogationConvo9.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo9);
@@ -324,11 +324,11 @@ public class OldCrazyMan : Character
         ExampleInterrogationConvo10.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question2 = new Question();
-        ExampleInterrogationConvo10.Question2.QuestionText = " ";
+        ExampleInterrogationConvo10.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo10.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question3 = new Question();
-        ExampleInterrogationConvo10.Question3.QuestionText = " ";
+        ExampleInterrogationConvo10.Question3.QuestionText = "  ";
         ExampleInterrogationConvo10.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo10);
@@ -338,14 +338,14 @@ public class OldCrazyMan : Character
         base.SetAfterClueConvo();
         DialogueAfterClue ExampledialogueAfterClue = new DialogueAfterClue();
         ExampledialogueAfterClue.CorrectClue = false;
-        ExampledialogueAfterClue.EndInterrogation = true;
+        ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
-        ExampledialogueAfterClue.Response = "I'm sorry, if it's not a gear bit, I don't wanna hear about it";
+        ExampledialogueAfterClue.Response = "I'm sorry, if it's not a gear bit, I don't wanna hear about it [It seems this is not the right clue for this crazy old geezer...]";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
         //Right Clue Dialogue
-        //Element 0
+        //Element 1
         DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
         ExampledialogueAfterClue1.CorrectClue = true;
         ExampledialogueAfterClue1.EndInterrogation = false;
@@ -358,7 +358,7 @@ public class OldCrazyMan : Character
 
         ExampledialogueAfterClue1.Question1 = new Question();
         ExampledialogueAfterClue1.Question1.QuestionText = "Pipey??";
-        ExampledialogueAfterClue1.Question1.NextElementNumber = 1;
+        ExampledialogueAfterClue1.Question1.NextElementNumber = 2;
 
         ExampledialogueAfterClue1.Question2 = new Question();
         ExampledialogueAfterClue1.Question2.QuestionText = " ";
@@ -370,23 +370,23 @@ public class OldCrazyMan : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
-        //Element 1
+        //Element 2
         DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
         ExampledialogueAfterClue2.CorrectClue = true;
-        ExampledialogueAfterClue2.EndInterrogation = true;
+        ExampledialogueAfterClue2.EndInterrogation = false;
         ExampledialogueAfterClue2.NoQuestions = false;
         ExampledialogueAfterClue2.NPCTalking = true;
-        ExampledialogueAfterClue2.Response = "Yes, Pipey! My pet pipe";
+        ExampledialogueAfterClue2.Response = "Yes, Pipey! My pet pipe!";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
 
         ExampledialogueAfterClue2.Question1 = new Question();
-        ExampledialogueAfterClue2.Question1.QuestionText = "Okay... [Back to the first screen]";
-        ExampledialogueAfterClue2.Question1.NextElementNumber = 0;
+        ExampledialogueAfterClue2.Question1.QuestionText = "But... but why is it covered in blood?? ";
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue2.Question2 = new Question();
-        ExampledialogueAfterClue2.Question2.QuestionText = " ";
+        ExampledialogueAfterClue2.Question2.QuestionText = "[Back to the first screen]";
         ExampledialogueAfterClue2.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue2.Question3 = new Question();
@@ -394,6 +394,56 @@ public class OldCrazyMan : Character
         ExampledialogueAfterClue2.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue2);
+		
+		//Element 3
+        DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
+        ExampledialogueAfterClue3.CorrectClue = true;
+        ExampledialogueAfterClue3.EndInterrogation = false;
+        ExampledialogueAfterClue3.NoQuestions = false;
+        ExampledialogueAfterClue3.NPCTalking = true;
+        ExampledialogueAfterClue3.Response = "Blood? That's not blood! That's Qirat brand ketchup! I accidentally got some on poor pipey... ";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue3.Question1 = new Question();
+        ExampledialogueAfterClue3.Question1.QuestionText = "*exasperated* And how did it end up in the lab??";
+        ExampledialogueAfterClue3.Question1.NextElementNumber = 4;
+
+        ExampledialogueAfterClue3.Question2 = new Question();
+        ExampledialogueAfterClue3.Question2.QuestionText = "[Back to the first screen]";
+        ExampledialogueAfterClue3.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue3.Question3 = new Question();
+        ExampledialogueAfterClue3.Question3.QuestionText = " ";
+        ExampledialogueAfterClue3.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue3);
+		
+		//Element 4
+        DialogueAfterClue ExampledialogueAfterClue4 = new DialogueAfterClue();
+        ExampledialogueAfterClue4.CorrectClue = true;
+        ExampledialogueAfterClue4.EndInterrogation = false;
+        ExampledialogueAfterClue4.NoQuestions = true;
+        ExampledialogueAfterClue4.NPCTalking = true;
+        ExampledialogueAfterClue4.Response = "That, my dear, is the real mystery... ";
+        //DialogueAfterClues.Add(ExampledialogueAfterClue1);
+
+        //Creating a Question
+
+        ExampledialogueAfterClue4.Question1 = new Question();
+        ExampledialogueAfterClue4.Question1.QuestionText = " ";
+        ExampledialogueAfterClue4.Question1.NextElementNumber = 0;
+
+        ExampledialogueAfterClue4.Question2 = new Question();
+        ExampledialogueAfterClue4.Question2.QuestionText = " ";
+        ExampledialogueAfterClue4.Question2.NextElementNumber = 0;
+
+        ExampledialogueAfterClue4.Question3 = new Question();
+        ExampledialogueAfterClue4.Question3.QuestionText = " ";
+        ExampledialogueAfterClue4.Question3.NextElementNumber = 0;
+        //Add unique item
+        DialogueAfterClues.Add(ExampledialogueAfterClue4);
 
     }
 }
@@ -410,5 +460,5 @@ public class OldCrazyMan : Character
      
      Your son was in the stall with you? Why?? element 3
 
-    response: I always ask him to accompany me so that I have someone to hold my gears. Don’t want to drop them in the toilet!
+    response: I always ask him to accompany me so that I have someone to hold my gears. Don't want to drop them in the toilet!
 */

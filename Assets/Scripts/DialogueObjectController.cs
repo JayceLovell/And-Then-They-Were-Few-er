@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class DialogueObjectController : MonoBehaviour
@@ -175,6 +177,11 @@ public class DialogueObjectController : MonoBehaviour
         {
             InterrigationObjects.SetActive(true);
             SpeechObjects.SetActive(false);
+            if (GameManager.Instance.CurrentScene == "InterrogationScene")
+                EventSystem.current.firstSelectedGameObject = GameObject.Find("BackButton");
+            else
+                EventSystem.current.SetSelectedGameObject(GameObject.Find("Question 1"));
+                //EventSystem.current.firstSelectedGameObject = GameObject.Find("Question 1");
         }
         else
         {
