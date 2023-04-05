@@ -1,7 +1,7 @@
 <div align="center" >
 
 # And Then They Were Few(er) 
- Game developed by Ontario Tech students for GDW [Download Game](https://github.com/JayceLovell/And-Then-They-Were-Few-er/releases/tag/v0.8.0-beta)
+ Game developed by Ontario Tech students for GDW [Download Game](https://github.com/JayceLovell/And-Then-They-Were-Few-er/releases/download/v1.0.0/And.Then.They.Were.Few-eR.zip)
 
 
 ![Picture1](https://user-images.githubusercontent.com/19291090/192363433-bc6617ac-9b03-42a5-9cc0-d60ab35bd1c7.jpg)
@@ -244,6 +244,6 @@ The father of John. Loud, rude and a bit random.
 <div align="center" >
 
 ## Game Progress
-![100%](https://progress-bar.dev/90)  
+![100%](https://progress-bar.dev/100)  
 bar by [Progress bar dev](https://github.com/fredericojordan/progress-bar)
 </div>
