@@ -24,7 +24,7 @@ public class JukeBox : Objects
         DialogueForObjects ExampleForDialogueForObject = new DialogueForObjects();
         ExampleForDialogueForObject.JustAshlynTalking = true;
         ExampleForDialogueForObject.EndInteraction = false;
-        ExampleForDialogueForObject.Text = "The JukeBox is playing a lovelly melody.";
+        ExampleForDialogueForObject.Text = "The JukeBox is playing a lovely melody.";
 
         DialogueForObject.Add(ExampleForDialogueForObject);
 
@@ -35,7 +35,7 @@ public class JukeBox : Objects
         {           
             ExampleForDialogueForObject1.JustAshlynTalking = false;
             ExampleForDialogueForObject.EndInteraction = false;
-            ExampleForDialogueForObject1.Text = "What should i do to it?";
+            ExampleForDialogueForObject1.Text = "What should I do to it?";
 
 
             ExampleForDialogueForObject1.Option1 = new Options();
@@ -47,7 +47,7 @@ public class JukeBox : Objects
         {
             ExampleForDialogueForObject1.JustAshlynTalking = false;
             ExampleForDialogueForObject.EndInteraction = false;
-            ExampleForDialogueForObject1.Text = "What should i do to it?";
+            ExampleForDialogueForObject1.Text = "What should I do to it?";
 
 
             ExampleForDialogueForObject1.Option1 = new Options();
@@ -56,11 +56,11 @@ public class JukeBox : Objects
             ExampleForDialogueForObject1.Option1.NextElementNumber = 2;
         }
 
-        //Add option2
-        // THis one not finish waiting Lay stuff
-        ExampleForDialogueForObject1.Option2 = new Options();
-        ExampleForDialogueForObject1.Option2.OptionSelectedInteger = 2;
-        ExampleForDialogueForObject1.Option2.OptionText = "Select different music";        
+        ////Add option2
+        //// THis one not finish waiting Lay stuff
+        //ExampleForDialogueForObject1.Option2 = new Options();
+        //ExampleForDialogueForObject1.Option2.OptionSelectedInteger = 2;
+        //ExampleForDialogueForObject1.Option2.OptionText = "Select different music";        
 
         DialogueForObject.Add(ExampleForDialogueForObject1);
 

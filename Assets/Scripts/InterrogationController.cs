@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Profiling;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
+using UnityEditor;
 
 public class InterrogationController : MonoBehaviour
 {
@@ -19,6 +21,9 @@ public class InterrogationController : MonoBehaviour
     public Transform NPCPosition;
     public GameObject NPC;
 
+    public GameObject EventSystemObject;
+    public GameObject CameraObject;
+
     public int NextElementForInterrogating
     {
         get
@@ -26,9 +31,13 @@ public class InterrogationController : MonoBehaviour
             return _nextElementForInterrogating;
         }
         set
-        {
+        {          
             _nextElementForInterrogating = value;
-            _npcComponent.GetType().GetProperty("NumDialog").SetValue(_npcComponent, value);
+            if((bool)_npcComponent.GetType().GetProperty("CluePresented").GetValue(_npcComponent))
+                _npcComponent.GetType().GetProperty("NumDialogAfterClue").SetValue(_npcComponent, value);
+            else
+                _npcComponent.GetType().GetProperty("NumDialog").SetValue(_npcComponent, value);
+
             _npcComponent.GetType().GetMethod("ContinueDialogue").Invoke(_npcComponent, null);
         }
     }
@@ -110,6 +119,9 @@ public class InterrogationController : MonoBehaviour
         NPC.transform.position = NPCPosition.position;
 
         //idk why but gotta do this
+
+        CameraObject.SetActive(true);
+        EventSystemObject.SetActive(true);
         gameObject.GetComponent<PlayerInput>().enabled= false;
         gameObject.GetComponent<PlayerInput>().enabled = true;
 

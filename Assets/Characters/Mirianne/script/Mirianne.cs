@@ -12,7 +12,7 @@ public class Mirianne : Character
         {
             DialogRegularConvo ExampleForBeforeMurder = new DialogRegularConvo();
             ExampleForBeforeMurder.NPCTalking = true;
-            ExampleForBeforeMurder.Text = "(Miriane, a wealthy but vain trend chasing fashion designer)";
+            ExampleForBeforeMurder.Text = "(Mirianne, a wealthy but vain trend-chasing fashion designer)";
             dialogForRegularConvo.Add(ExampleForBeforeMurder);
 
             DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
@@ -22,7 +22,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
             ExampleForBeforeMurder2.NPCTalking = false;
-            ExampleForBeforeMurder2.Text = "Well, hello to you too";
+            ExampleForBeforeMurder2.Text = "Well, hello to you too.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder2);
 
             DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
@@ -32,7 +32,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
             ExampleForBeforeMurder4.NPCTalking = false;
-            ExampleForBeforeMurder4.Text = "I'm a friend of Nikki's";
+            ExampleForBeforeMurder4.Text = "I'm a friend of Nikki's.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder4);
 
             DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
@@ -42,7 +42,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
             ExampleForBeforeMurder6.NPCTalking = true;
-            ExampleForBeforeMurder6.Text = "Ah, I see";
+            ExampleForBeforeMurder6.Text = "Ah, I see.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder6);
 
             DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
@@ -57,7 +57,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForBeforeMurder9 = new DialogRegularConvo();
             ExampleForBeforeMurder9.NPCTalking = false;
-            ExampleForBeforeMurder9.Text = "Yeah, ol' Nikki's on the up and up";
+            ExampleForBeforeMurder9.Text = "Yeah, ol' Nikki's on the up and up.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder9);
 
             DialogRegularConvo ExampleForBeforeMurder10 = new DialogRegularConvo();
@@ -67,7 +67,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForBeforeMurder11 = new DialogRegularConvo();
             ExampleForBeforeMurder11.NPCTalking = true;
-            ExampleForBeforeMurder11.Text = "(Ashlyn narrows her eyes at Mirianne as she walks away. Mirianne narrows hers as well )";
+            ExampleForBeforeMurder11.Text = "(Ashlyn narrows her eyes at Mirianne as she walks away. Mirianne narrows hers as well)";
             dialogForRegularConvo.Add(ExampleForBeforeMurder11);
         }
         else
@@ -75,7 +75,7 @@ public class Mirianne : Character
 
             DialogRegularConvo ExampleForAfterMurder = new DialogRegularConvo();
             ExampleForAfterMurder.NPCTalking = true;
-            ExampleForAfterMurder.Text = "I can't wait for this storm to end so I can leave this wretched mansion";
+            ExampleForAfterMurder.Text = "I can't wait for this storm to end so I can leave this wretched mansion!";
             dialogForRegularConvo.Add(ExampleForAfterMurder);
         }
     }
@@ -113,15 +113,15 @@ public class Mirianne : Character
         ExampleInterrogationConvo1.NPCTalking = true;
         ExampleInterrogationConvo1.EndInterrogation = false;
         ExampleInterrogationConvo1.NoQuestions = false;
-        ExampleInterrogationConvo1.Response = "I don’t see why this is any of your business, “Detective”";
+        ExampleInterrogationConvo1.Response = "I don't see why this is any of your business, “Detective”";
         //Creating a Question
 
         ExampleInterrogationConvo1.Question1 = new Question();
-        ExampleInterrogationConvo1.Question1.QuestionText = "Hey! Don’t tell me you are going to undermine an active murder investigation";
+        ExampleInterrogationConvo1.Question1.QuestionText = "Hey! Don't tell me you are going to undermine an active murder investigation!";
         ExampleInterrogationConvo1.Question1.NextElementNumber = 2;
 
         ExampleInterrogationConvo1.Question2 = new Question();
-        ExampleInterrogationConvo1.Question2.QuestionText = " ";
+        ExampleInterrogationConvo1.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo1.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo1.Question3 = new Question();
@@ -138,15 +138,15 @@ public class Mirianne : Character
         ExampleInterrogationConvo2.EndInterrogation = false;
         ExampleInterrogationConvo2.NoQuestions = false;
         ExampleInterrogationConvo2.Response = "Well, last time I checked, you are not the police." +
-            "I thought you and our dear Mayor were going to fetch real law enforcement once this storm cleared up";
+            "I thought you and our dear Mayor were going to fetch real law enforcement once this storm cleared up.";
         //Creating a Question
 
         ExampleInterrogationConvo2.Question1 = new Question();
-        ExampleInterrogationConvo2.Question1.QuestionText = "I’d just like to know all the facts, before the Mayor and I approach the police. ";
+        ExampleInterrogationConvo2.Question1.QuestionText = "I'd just like to know all the facts, before the Mayor and I approach the police ";
         ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
-        ExampleInterrogationConvo2.Question2.QuestionText = " ";
+        ExampleInterrogationConvo2.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo2.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo2.Question3 = new Question();
@@ -159,20 +159,20 @@ public class Mirianne : Character
 
         DialogueForInterrogation ExampleInterrogationConvo3 = new DialogueForInterrogation();
         ExampleInterrogationConvo3.NextElementNumber = 1;
-        ExampleInterrogationConvo3.NPCTalking = true;
+        ExampleInterrogationConvo3.NPCTalking = false;
         ExampleInterrogationConvo3.EndInterrogation = false;
         ExampleInterrogationConvo3.NoQuestions = false;
-        ExampleInterrogationConvo3.Response = "(Ashlyn takes a deep breath, trying to control her anger)" +
-            "Ashlyn then sighs, and her tone changes  from interrogative to mournful";
+        ExampleInterrogationConvo3.Response = "[Ashlyn takes a deep breath, trying to control her anger." +
+            "Ashlyn then sighs, and her tone changes  from interrogative to mournful]";
         //Creating a Question
 
         ExampleInterrogationConvo3.Question1 = new Question();
-        ExampleInterrogationConvo3.Question1.QuestionText = "There’s a potential murderer on the loose. And Nikki was my best friend. " +
+        ExampleInterrogationConvo3.Question1.QuestionText = "There's a potential murderer on the loose. And Nikki was my best friend. " +
             "I need to get to the bottom of this";
         ExampleInterrogationConvo3.Question1.NextElementNumber = 4;
 
         ExampleInterrogationConvo3.Question2 = new Question();
-        ExampleInterrogationConvo3.Question2.QuestionText = " ";
+        ExampleInterrogationConvo3.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo3.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo3.Question3 = new Question();
@@ -188,8 +188,8 @@ public class Mirianne : Character
         ExampleInterrogationConvo4.NPCTalking = true;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
-        ExampleInterrogationConvo4.Response = " (Mirianne, who had been glaring at Ashlyn, " +
-            "changes her expression somewhat to a look of resentful understanding)";
+        ExampleInterrogationConvo4.Response = " [Mirianne, who had been glaring at Ashlyn, " +
+            "changes her expression somewhat to a look of resentful understanding]";
 
 
 
@@ -200,7 +200,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo4.Question1.NextElementNumber = 5;
 
         ExampleInterrogationConvo4.Question2 = new Question();
-        ExampleInterrogationConvo4.Question2.QuestionText = " ";
+        ExampleInterrogationConvo4.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo4.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question3 = new Question();
@@ -216,7 +216,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo5.NPCTalking = true;
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
-        ExampleInterrogationConvo5.Response = "Well, if there’s one thing that hasn’t changed, it’s how much you’re willing to do for your friends…";
+        ExampleInterrogationConvo5.Response = "Well, if there's one thing that hasn't changed, it's how much you're willing to do for your friends…";
 
 
 
@@ -227,7 +227,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo5.Question1.NextElementNumber = 6;
 
         ExampleInterrogationConvo5.Question2 = new Question();
-        ExampleInterrogationConvo5.Question2.QuestionText = " ";
+        ExampleInterrogationConvo5.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo5.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo5.Question3 = new Question();
@@ -254,7 +254,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo6.Question1.NextElementNumber = 7;
 
         ExampleInterrogationConvo6.Question2 = new Question();
-        ExampleInterrogationConvo6.Question2.QuestionText = " ";
+        ExampleInterrogationConvo6.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo6.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo6.Question3 = new Question();
@@ -270,7 +270,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo7.NPCTalking = true;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
-        ExampleInterrogationConvo7.Response = "(Mirianne stutters for a bit, shocked, but quickly recovers)";
+        ExampleInterrogationConvo7.Response = "[Mirianne stutters for a bit, shocked, but quickly recovers]";
 
 
 
@@ -281,7 +281,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo7.Question1.NextElementNumber = 8;
 
         ExampleInterrogationConvo7.Question2 = new Question();
-        ExampleInterrogationConvo7.Question2.QuestionText = " ";
+        ExampleInterrogationConvo7.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo7.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo7.Question3 = new Question();
@@ -308,7 +308,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo8.Question1.NextElementNumber = 9;
 
         ExampleInterrogationConvo8.Question2 = new Question();
-        ExampleInterrogationConvo8.Question2.QuestionText = " ";
+        ExampleInterrogationConvo8.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo8.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question3 = new Question();
@@ -324,7 +324,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo9.NPCTalking = true;
         ExampleInterrogationConvo9.EndInterrogation = false;
         ExampleInterrogationConvo9.NoQuestions = false;
-        ExampleInterrogationConvo9.Response = "I could hear two people talking very loudly, but couldn’t make out what they were saying." +
+        ExampleInterrogationConvo9.Response = "I could hear two people talking very loudly, but couldn't make out what they were saying." +
             "The storm was too loud.";
 
 
@@ -336,7 +336,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo9.Question1.NextElementNumber = 10;
 
         ExampleInterrogationConvo9.Question2 = new Question();
-        ExampleInterrogationConvo9.Question2.QuestionText = " ";
+        ExampleInterrogationConvo9.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo9.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question3 = new Question();
@@ -364,7 +364,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo10.Question1.NextElementNumber = 11;
 
         ExampleInterrogationConvo10.Question2 = new Question();
-        ExampleInterrogationConvo10.Question2.QuestionText = " ";
+        ExampleInterrogationConvo10.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo10.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo10.Question3 = new Question();
@@ -380,7 +380,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo11.NPCTalking = true;
         ExampleInterrogationConvo11.EndInterrogation = false;
         ExampleInterrogationConvo11.NoQuestions = false;
-        ExampleInterrogationConvo11.Response = "(Mirianne begins to scowl)";
+        ExampleInterrogationConvo11.Response = "[Mirianne begins to scowl]";
 
 
 
@@ -391,7 +391,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo11.Question1.NextElementNumber = 12;
 
         ExampleInterrogationConvo11.Question2 = new Question();
-        ExampleInterrogationConvo11.Question2.QuestionText = " ";
+        ExampleInterrogationConvo11.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo11.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo11.Question3 = new Question();
@@ -418,7 +418,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo12.Question1.NextElementNumber = 13;
 
         ExampleInterrogationConvo12.Question2 = new Question();
-        ExampleInterrogationConvo12.Question2.QuestionText = " ";
+        ExampleInterrogationConvo12.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo12.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo12.Question3 = new Question();
@@ -434,7 +434,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo13.NPCTalking = true;
         ExampleInterrogationConvo13.EndInterrogation = false;
         ExampleInterrogationConvo13.NoQuestions = false;
-        ExampleInterrogationConvo13.Response = "(Miriane’s expression hardens)";
+        ExampleInterrogationConvo13.Response = "[Mirianne's expression hardens]";
 
 
 
@@ -445,7 +445,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo13.Question1.NextElementNumber = 14;
 
         ExampleInterrogationConvo13.Question2 = new Question();
-        ExampleInterrogationConvo13.Question2.QuestionText = " ";
+        ExampleInterrogationConvo13.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo13.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo13.Question3 = new Question();
@@ -461,7 +461,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo14.NPCTalking = true;
         ExampleInterrogationConvo14.EndInterrogation = false;
         ExampleInterrogationConvo14.NoQuestions = false;
-        ExampleInterrogationConvo14.Response = "I didn’t pay it any mind. Shortly after, I left for my room." +
+        ExampleInterrogationConvo14.Response = "I didn't pay it any mind. Shortly after, I left for my room." +
             "May I go now, “Detective”?";
 
 
@@ -469,11 +469,11 @@ public class Mirianne : Character
         //Creating a Question
 
         ExampleInterrogationConvo14.Question1 = new Question();
-        ExampleInterrogationConvo14.Question1.QuestionText = "Not Quite Yet...";
+        ExampleInterrogationConvo14.Question1.QuestionText = "Not Quite Yet... [Back to first screen]";
         ExampleInterrogationConvo14.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo14.Question2 = new Question();
-        ExampleInterrogationConvo14.Question2.QuestionText = " ";
+        ExampleInterrogationConvo14.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo14.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo14.Question3 = new Question();
@@ -500,7 +500,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo15.Question1.NextElementNumber = 16;
 
         ExampleInterrogationConvo15.Question2 = new Question();
-        ExampleInterrogationConvo15.Question2.QuestionText = " ";
+        ExampleInterrogationConvo15.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo15.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo15.Question3 = new Question();
@@ -527,7 +527,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo16.Question1.NextElementNumber = 17;
 
         ExampleInterrogationConvo16.Question2 = new Question();
-        ExampleInterrogationConvo16.Question2.QuestionText = " ";
+        ExampleInterrogationConvo16.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo16.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo16.Question3 = new Question();
@@ -554,7 +554,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo17.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo17.Question2 = new Question();
-        ExampleInterrogationConvo17.Question2.QuestionText = " ";
+        ExampleInterrogationConvo17.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo17.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo17.Question3 = new Question();
@@ -570,7 +570,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo18.NPCTalking = true;
         ExampleInterrogationConvo18.EndInterrogation = false;
         ExampleInterrogationConvo18.NoQuestions = false;
-        ExampleInterrogationConvo18.Response = "Oh... Well, I'm Karol's sponsor. And I do believe she has some ideas that may surpass Nikki's";
+        ExampleInterrogationConvo18.Response = "Oh... Well, I'm Karol's sponsor. And I do believe she has some ideas that may surpass Nikki's.";
 
 
 
@@ -608,7 +608,7 @@ public class Mirianne : Character
         ExampleInterrogationConvo19.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo19.Question2 = new Question();
-        ExampleInterrogationConvo19.Question2.QuestionText = " ";
+        ExampleInterrogationConvo19.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo19.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo19.Question3 = new Question();
@@ -628,11 +628,11 @@ public class Mirianne : Character
         ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
-        ExampledialogueAfterClue.Response = "Do I look like I know?";
+        ExampledialogueAfterClue.Response = "Do I look like I know? [It seems this is not the right clue for Mirianne...]";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
         //Right Clue Dialogue
-        //Element 0
+        //Element 1
         DialogueAfterClue ExampledialogueAfterClue1 = new DialogueAfterClue();
         ExampledialogueAfterClue1.CorrectClue = true;
         ExampledialogueAfterClue1.EndInterrogation = false;
@@ -645,7 +645,7 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue1.Question1 = new Question();
         ExampledialogueAfterClue1.Question1.QuestionText = "Look familiar?";
-        ExampledialogueAfterClue1.Question1.NextElementNumber = 1;
+        ExampledialogueAfterClue1.Question1.NextElementNumber = 2;
 
         ExampledialogueAfterClue1.Question2 = new Question();
         ExampledialogueAfterClue1.Question2.QuestionText = " "; //Oh, no need to worry this is just ketchup!
@@ -657,23 +657,23 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
-        //Element 1
+        //Element 2
         DialogueAfterClue ExampledialogueAfterClue2 = new DialogueAfterClue();
         ExampledialogueAfterClue2.CorrectClue = true;
         ExampledialogueAfterClue2.EndInterrogation = false;
         ExampledialogueAfterClue2.NoQuestions = false;
         ExampledialogueAfterClue2.NPCTalking = true;
-        ExampledialogueAfterClue2.Response = "*starts to shift uncomfortably* I... er... um";
+        ExampledialogueAfterClue2.Response = "*starts to shift uncomfortably* I... er... um...";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
 
         ExampledialogueAfterClue2.Question1 = new Question();
         ExampledialogueAfterClue2.Question1.QuestionText = "What?";
-        ExampledialogueAfterClue2.Question1.NextElementNumber = 2;
+        ExampledialogueAfterClue2.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue2.Question2 = new Question();
-        ExampledialogueAfterClue2.Question2.QuestionText = " ";
+        ExampledialogueAfterClue2.Question2.QuestionText = "[Back to the first screen]";
         ExampledialogueAfterClue2.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue2.Question3 = new Question();
@@ -682,32 +682,32 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue2);
 
-        //Element 2
+        //Element 3
         DialogueAfterClue ExampledialogueAfterClue3 = new DialogueAfterClue();
         ExampledialogueAfterClue3.CorrectClue = true;
         ExampledialogueAfterClue3.EndInterrogation = false;
         ExampledialogueAfterClue3.NoQuestions = false;
         ExampledialogueAfterClue3.NPCTalking = true;
-        ExampledialogueAfterClue3.Response = "*Takes a deep breath and closes her eyes* ...I was in the room after she had been killed";
+        ExampledialogueAfterClue3.Response = "*Takes a deep breath and closes her eyes* ...I was in the room after she had been killed.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
 
         ExampledialogueAfterClue3.Question1 = new Question();
         ExampledialogueAfterClue3.Question1.QuestionText = "What?!";
-        ExampledialogueAfterClue3.Question1.NextElementNumber = 3;
+        ExampledialogueAfterClue3.Question1.NextElementNumber = 4;
 
         ExampledialogueAfterClue3.Question2 = new Question();
         ExampledialogueAfterClue3.Question2.QuestionText = "Why?!";
-        ExampledialogueAfterClue3.Question2.NextElementNumber = 4;
+        ExampledialogueAfterClue3.Question2.NextElementNumber = 5;
 
         ExampledialogueAfterClue3.Question3 = new Question();
-        ExampledialogueAfterClue3.Question3.QuestionText = " ";
+        ExampledialogueAfterClue3.Question3.QuestionText = "[Back to the first screen]";
         ExampledialogueAfterClue3.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue3);
 
-        //Element 3
+        //Element 4
         DialogueAfterClue ExampledialogueAfterClue4 = new DialogueAfterClue();
         ExampledialogueAfterClue4.CorrectClue = true;
         ExampledialogueAfterClue4.EndInterrogation = false;
@@ -720,10 +720,10 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue4.Question1 = new Question();
         ExampledialogueAfterClue4.Question1.QuestionText = "[Previous Screen]";
-        ExampledialogueAfterClue4.Question1.NextElementNumber = 2;
+        ExampledialogueAfterClue4.Question1.NextElementNumber = 3;
 
         ExampledialogueAfterClue4.Question2 = new Question();
-        ExampledialogueAfterClue4.Question2.QuestionText = " ";
+        ExampledialogueAfterClue4.Question2.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue4.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue4.Question3 = new Question();
@@ -732,23 +732,23 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue4);
 
-        //Element 4
+        //Element 5
         DialogueAfterClue ExampledialogueAfterClue5 = new DialogueAfterClue();
         ExampledialogueAfterClue5.CorrectClue = true;
         ExampledialogueAfterClue5.EndInterrogation = false;
         ExampledialogueAfterClue5.NoQuestions = false;
         ExampledialogueAfterClue5.NPCTalking = true;
-        ExampledialogueAfterClue5.Response = "Well, after I heard the two voices arguing, I went to investigate";
+        ExampledialogueAfterClue5.Response = "Well, after I heard the two voices arguing, I went to investigate.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
 
         ExampledialogueAfterClue5.Question1 = new Question();
         ExampledialogueAfterClue5.Question1.QuestionText = "[Next]";
-        ExampledialogueAfterClue5.Question1.NextElementNumber = 5;
+        ExampledialogueAfterClue5.Question1.NextElementNumber = 6;
 
         ExampledialogueAfterClue5.Question2 = new Question();
-        ExampledialogueAfterClue5.Question2.QuestionText = " ";
+        ExampledialogueAfterClue5.Question2.QuestionText = "[Back to the first screen]";
         ExampledialogueAfterClue5.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue5.Question3 = new Question();
@@ -757,23 +757,23 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue5);
 
-        //Element 5
+        //Element 6
         DialogueAfterClue ExampledialogueAfterClue6 = new DialogueAfterClue();
         ExampledialogueAfterClue6.CorrectClue = true;
         ExampledialogueAfterClue6.EndInterrogation = false;
         ExampledialogueAfterClue6.NoQuestions = false;
         ExampledialogueAfterClue6.NPCTalking = true;
-        ExampledialogueAfterClue6.Response = "I'd thought I heard them coming from the lab, and that's where I went to check. When I entered, Nikki was lying on the floor, bleeding";
+        ExampledialogueAfterClue6.Response = "I'd thought I heard them coming from the lab, and that's where I went to check. When I entered, Nikki was lying on the floor, bleeding.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
 
         ExampledialogueAfterClue6.Question1 = new Question();
         ExampledialogueAfterClue6.Question1.QuestionText = "[Next]";
-        ExampledialogueAfterClue6.Question1.NextElementNumber = 6;
+        ExampledialogueAfterClue6.Question1.NextElementNumber = 7;
 
         ExampledialogueAfterClue6.Question2 = new Question();
-        ExampledialogueAfterClue6.Question2.QuestionText = " ";
+        ExampledialogueAfterClue6.Question2.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue6.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue6.Question3 = new Question();
@@ -782,23 +782,23 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue6);
 
-        //Element 6
+        //Element 7
         DialogueAfterClue ExampledialogueAfterClue7 = new DialogueAfterClue();
         ExampledialogueAfterClue7.CorrectClue = true;
         ExampledialogueAfterClue7.EndInterrogation = false;
         ExampledialogueAfterClue7.NoQuestions = false;
         ExampledialogueAfterClue7.NPCTalking = true;
-        ExampledialogueAfterClue7.Response = "I rushed to her body to check to see if she was ok. That handkerchief was next to her, and I applied it to her wound to see if I could stop the bleeding, but it was too late. She was already dead";
+        ExampledialogueAfterClue7.Response = "I rushed to her body to check to see if she was ok. That handkerchief was next to her, and I applied it to her wound to see if I could stop the bleeding, but it was too late. She was already dead.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
 
         ExampledialogueAfterClue7.Question1 = new Question();
         ExampledialogueAfterClue7.Question1.QuestionText = "[Next]";
-        ExampledialogueAfterClue7.Question1.NextElementNumber = 7;
+        ExampledialogueAfterClue7.Question1.NextElementNumber = 8;
 
         ExampledialogueAfterClue7.Question2 = new Question();
-        ExampledialogueAfterClue7.Question2.QuestionText = " ";
+        ExampledialogueAfterClue7.Question2.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue7.Question2.NextElementNumber = 0;
 
         ExampledialogueAfterClue7.Question3 = new Question();
@@ -807,32 +807,32 @@ public class Mirianne : Character
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue7);
 
-        //Element 7
+        //Element 8
         DialogueAfterClue ExampledialogueAfterClue8 = new DialogueAfterClue();
         ExampledialogueAfterClue8.CorrectClue = true;
         ExampledialogueAfterClue8.EndInterrogation = false;
         ExampledialogueAfterClue8.NoQuestions = false;
         ExampledialogueAfterClue8.NPCTalking = true;
-        ExampledialogueAfterClue8.Response = "I thought about calling for help, but I panicked. I just didn't know how to explain myself without looking suspicious";
+        ExampledialogueAfterClue8.Response = "I thought about calling for help, but I panicked. I just didn't know how to explain myself without looking suspicious.";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question
 
         ExampledialogueAfterClue8.Question1 = new Question();
-        ExampledialogueAfterClue8.Question1.QuestionText = "No kidding";
-        ExampledialogueAfterClue8.Question1.NextElementNumber = 8;
+        ExampledialogueAfterClue8.Question1.QuestionText = "No kidding...";
+        ExampledialogueAfterClue8.Question1.NextElementNumber = 9;
 
         ExampledialogueAfterClue8.Question2 = new Question();
         ExampledialogueAfterClue8.Question2.QuestionText = "But this makes you look even more suspicious! ";
-        ExampledialogueAfterClue8.Question2.NextElementNumber = 9;
+        ExampledialogueAfterClue8.Question2.NextElementNumber = 10;
 
         ExampledialogueAfterClue8.Question3 = new Question();
-        ExampledialogueAfterClue8.Question3.QuestionText = " ";
+        ExampledialogueAfterClue8.Question3.QuestionText = "[Back to the first screen] ";
         ExampledialogueAfterClue8.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue8);
 
-        //Element 8
+        //Element 9
         DialogueAfterClue ExampledialogueAfterClue9 = new DialogueAfterClue();
         ExampledialogueAfterClue9.CorrectClue = true;
         ExampledialogueAfterClue9.EndInterrogation = false;
@@ -845,25 +845,25 @@ public class Mirianne : Character
 
         ExampledialogueAfterClue9.Question1 = new Question();
         ExampledialogueAfterClue9.Question1.QuestionText = "*remain silent*";
-        ExampledialogueAfterClue9.Question1.NextElementNumber = 9;
+        ExampledialogueAfterClue9.Question1.NextElementNumber = 10;
 
         ExampledialogueAfterClue9.Question2 = new Question();
         ExampledialogueAfterClue9.Question2.QuestionText = "*shakes head in exasparation* I wouldn't hide evidence! Really Mirianne?";
-        ExampledialogueAfterClue9.Question2.NextElementNumber = 9;
+        ExampledialogueAfterClue9.Question2.NextElementNumber = 10;
 
         ExampledialogueAfterClue9.Question3 = new Question();
-        ExampledialogueAfterClue9.Question3.QuestionText = " ";
+        ExampledialogueAfterClue9.Question3.QuestionText = "[Back to the first screen]";
         ExampledialogueAfterClue9.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueAfterClues.Add(ExampledialogueAfterClue9);
 
-        //Element 9
+        //Element 10
         DialogueAfterClue ExampledialogueAfterClue10 = new DialogueAfterClue();
         ExampledialogueAfterClue10.CorrectClue = true;
         ExampledialogueAfterClue10.EndInterrogation = false;
-        ExampledialogueAfterClue10.NoQuestions = false;
+        ExampledialogueAfterClue10.NoQuestions = true;
         ExampledialogueAfterClue10.NPCTalking = true;
-        ExampledialogueAfterClue10.Response = "Ashlyn, I know you and I have our issues, but you have to believe me, I didn't kill Nikki";
+        ExampledialogueAfterClue10.Response = "Ashlyn, I know you and I have our issues, but you have to believe me, I didn't kill Nikki!";
         //DialogueAfterClues.Add(ExampledialogueAfterClue1);
 
         //Creating a Question

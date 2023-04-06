@@ -39,7 +39,6 @@ public class UiManager : MonoBehaviour
     //CalledFirst
     void OnEnable()
     {
-        Debug.Log("UiManager Enabled");
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
     // Awake is called before Start
@@ -192,7 +191,6 @@ public class UiManager : MonoBehaviour
 
     void OnDisable()
     {
-        Debug.Log("UiManager Disable");
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 

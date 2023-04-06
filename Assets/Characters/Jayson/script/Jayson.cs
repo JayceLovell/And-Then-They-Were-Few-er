@@ -17,7 +17,7 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder1 = new DialogRegularConvo();
             ExampleForBeforeMurder1.NPCTalking = false;
-            ExampleForBeforeMurder1.Text = "Good Evening";
+            ExampleForBeforeMurder1.Text = "Good Evening.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder1);
 
             DialogRegularConvo ExampleForBeforeMurder2 = new DialogRegularConvo();
@@ -27,22 +27,22 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder3 = new DialogRegularConvo();
             ExampleForBeforeMurder3.NPCTalking = true;
-            ExampleForBeforeMurder3.Text = "Well, hello there";
+            ExampleForBeforeMurder3.Text = "Well, hello there!";
             dialogForRegularConvo.Add(ExampleForBeforeMurder3);
 
             DialogRegularConvo ExampleForBeforeMurder4 = new DialogRegularConvo();
             ExampleForBeforeMurder4.NPCTalking = false;
-            ExampleForBeforeMurder4.Text = "(Ashlyn returns Jayson’s smile)";
+            ExampleForBeforeMurder4.Text = "(Ashlyn returns Jayson's smile)";
             dialogForRegularConvo.Add(ExampleForBeforeMurder4);
 
             DialogRegularConvo ExampleForBeforeMurder5 = new DialogRegularConvo();
             ExampleForBeforeMurder5.NPCTalking = false;
-            ExampleForBeforeMurder5.Text = "Well, hello yourself";
+            ExampleForBeforeMurder5.Text = "Well, hello yourself.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder5);
 
             DialogRegularConvo ExampleForBeforeMurder6 = new DialogRegularConvo();
             ExampleForBeforeMurder6.NPCTalking = true;
-            ExampleForBeforeMurder6.Text = "You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's hot new detective in the flesh";
+            ExampleForBeforeMurder6.Text = "You're Ashlyn Hunt right? I never thought I'd get to meet Wandermere's hot new detective in the flesh.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder6);
 
             DialogRegularConvo ExampleForBeforeMurder7 = new DialogRegularConvo();
@@ -62,12 +62,12 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder10 = new DialogRegularConvo();
             ExampleForBeforeMurder10.NPCTalking = true;
-            ExampleForBeforeMurder10.Text = "That's yet to be determined";
+            ExampleForBeforeMurder10.Text = "That's yet to be determined.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder10);
 
             DialogRegularConvo ExampleForBeforeMurder11 = new DialogRegularConvo();
             ExampleForBeforeMurder11.NPCTalking = true;
-            ExampleForBeforeMurder11.Text = "I'm afraid though, that you might have some competition";
+            ExampleForBeforeMurder11.Text = "I'm afraid though, that you might have some competition.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder11);
 
             DialogRegularConvo ExampleForBeforeMurder12 = new DialogRegularConvo();
@@ -97,7 +97,7 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder17 = new DialogRegularConvo();
             ExampleForBeforeMurder17.NPCTalking = true;
-            ExampleForBeforeMurder17.Text = "Jayson Klutsch! I may not have your reputation quite yet, but I do believe I'm a force to be reckoned with";
+            ExampleForBeforeMurder17.Text = "Jayson Klutsch! I may not have your reputation quite yet, but I do believe I'm a force to be reckoned with!";
             dialogForRegularConvo.Add(ExampleForBeforeMurder17);
 
             DialogRegularConvo ExampleForBeforeMurder18 = new DialogRegularConvo();
@@ -107,7 +107,7 @@ public class Jayson : Character
 
             DialogRegularConvo ExampleForBeforeMurder19 = new DialogRegularConvo();
             ExampleForBeforeMurder19.NPCTalking = false;
-            ExampleForBeforeMurder19.Text = "Glad to make your acquaintance";
+            ExampleForBeforeMurder19.Text = "Glad to make your acquaintance.";
             dialogForRegularConvo.Add(ExampleForBeforeMurder19);
         }
         else
@@ -161,7 +161,7 @@ public class Jayson : Character
         ExampleInterrogationConvo1.Question1.NextElementNumber = 2;
 
         ExampleInterrogationConvo1.Question2 = new Question();
-        ExampleInterrogationConvo1.Question2.QuestionText = " ";
+        ExampleInterrogationConvo1.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo1.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo1.Question3 = new Question();
@@ -185,7 +185,7 @@ public class Jayson : Character
         ExampleInterrogationConvo2.Question1.NextElementNumber = 3;
 
         ExampleInterrogationConvo2.Question2 = new Question();
-        ExampleInterrogationConvo2.Question2.QuestionText = " ";
+        ExampleInterrogationConvo2.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo2.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo2.Question3 = new Question();
@@ -209,7 +209,7 @@ public class Jayson : Character
         ExampleInterrogationConvo3.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo3.Question2 = new Question();
-        ExampleInterrogationConvo3.Question2.QuestionText = " ";
+        ExampleInterrogationConvo3.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo3.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo3.Question3 = new Question();
@@ -225,7 +225,7 @@ public class Jayson : Character
         ExampleInterrogationConvo4.NPCTalking = true;
         ExampleInterrogationConvo4.EndInterrogation = false;
         ExampleInterrogationConvo4.NoQuestions = false;
-        ExampleInterrogationConvo4.Response = "I didn't know her personally, it's Damien that invited me to the event";
+        ExampleInterrogationConvo4.Response = "I didn't know her personally, it's Damien that invited me to the event.";
 
 
 
@@ -236,7 +236,7 @@ public class Jayson : Character
         ExampleInterrogationConvo4.Question1.NextElementNumber = 5;
 
         ExampleInterrogationConvo4.Question2 = new Question();
-        ExampleInterrogationConvo4.Question2.QuestionText = " ";
+        ExampleInterrogationConvo4.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo4.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo4.Question3 = new Question();
@@ -253,7 +253,7 @@ public class Jayson : Character
         ExampleInterrogationConvo5.EndInterrogation = false;
         ExampleInterrogationConvo5.NoQuestions = false;
         ExampleInterrogationConvo5.Response = "Him and I go waaay back. Plus I wanted to make sure he was doing ok, " +
-            "he had been a bit sad the past few days";
+            "he had been a bit sad the past few days.";
 
 
 
@@ -264,7 +264,7 @@ public class Jayson : Character
         ExampleInterrogationConvo5.Question1.NextElementNumber = 6;
 
         ExampleInterrogationConvo5.Question2 = new Question();
-        ExampleInterrogationConvo5.Question2.QuestionText = " ";
+        ExampleInterrogationConvo5.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo5.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo5.Question3 = new Question();
@@ -291,7 +291,7 @@ public class Jayson : Character
         ExampleInterrogationConvo6.Question1.NextElementNumber = 7;
 
         ExampleInterrogationConvo6.Question2 = new Question();
-        ExampleInterrogationConvo6.Question2.QuestionText = " ";
+        ExampleInterrogationConvo6.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo6.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo6.Question3 = new Question();
@@ -307,7 +307,7 @@ public class Jayson : Character
         ExampleInterrogationConvo7.NPCTalking = true;
         ExampleInterrogationConvo7.EndInterrogation = false;
         ExampleInterrogationConvo7.NoQuestions = false;
-        ExampleInterrogationConvo7.Response = "Alright, I'll spill! Damien and Karol had a thing";
+        ExampleInterrogationConvo7.Response = "Alright, I'll spill! Damien and Karol had a thing.";
 
 
 
@@ -318,7 +318,7 @@ public class Jayson : Character
         ExampleInterrogationConvo7.Question1.NextElementNumber = 8;
 
         ExampleInterrogationConvo7.Question2 = new Question();
-        ExampleInterrogationConvo7.Question2.QuestionText = " ";
+        ExampleInterrogationConvo7.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo7.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo7.Question3 = new Question();
@@ -346,7 +346,7 @@ public class Jayson : Character
         ExampleInterrogationConvo8.Question1.NextElementNumber = 9;
 
         ExampleInterrogationConvo8.Question2 = new Question();
-        ExampleInterrogationConvo8.Question2.QuestionText = " ";
+        ExampleInterrogationConvo8.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo8.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo8.Question3 = new Question();
@@ -374,7 +374,7 @@ public class Jayson : Character
         ExampleInterrogationConvo9.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question2 = new Question();
-        ExampleInterrogationConvo9.Question2.QuestionText = " ";
+        ExampleInterrogationConvo9.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo9.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo9.Question3 = new Question();
@@ -428,7 +428,7 @@ public class Jayson : Character
         ExampleInterrogationConvo11.Question1.NextElementNumber = 12;
 
         ExampleInterrogationConvo11.Question2 = new Question();
-        ExampleInterrogationConvo11.Question2.QuestionText = " ";
+        ExampleInterrogationConvo11.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo11.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo11.Question3 = new Question();
@@ -459,7 +459,7 @@ public class Jayson : Character
         ExampleInterrogationConvo12.Question2.NextElementNumber = 17;
 
         ExampleInterrogationConvo12.Question3 = new Question();
-        ExampleInterrogationConvo12.Question3.QuestionText = " ";
+        ExampleInterrogationConvo12.Question3.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo12.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo12);
@@ -471,7 +471,7 @@ public class Jayson : Character
         ExampleInterrogationConvo13.NPCTalking = true;
         ExampleInterrogationConvo13.EndInterrogation = false;
         ExampleInterrogationConvo13.NoQuestions = false;
-        ExampleInterrogationConvo13.Response = "*sighs* Don't I know it. But between you and me, I don't think detective work is my true calling";
+        ExampleInterrogationConvo13.Response = "*sighs* Don't I know it. But between you and me, I don't think detective work is my true calling.";
 
 
 
@@ -482,7 +482,7 @@ public class Jayson : Character
         ExampleInterrogationConvo13.Question1.NextElementNumber = 14;
 
         ExampleInterrogationConvo13.Question2 = new Question();
-        ExampleInterrogationConvo13.Question2.QuestionText = " ";
+        ExampleInterrogationConvo13.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo13.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo13.Question3 = new Question();
@@ -513,7 +513,7 @@ public class Jayson : Character
         ExampleInterrogationConvo14.Question2.NextElementNumber = 15;
 
         ExampleInterrogationConvo14.Question3 = new Question();
-        ExampleInterrogationConvo14.Question3.QuestionText = " ";
+        ExampleInterrogationConvo14.Question3.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo14.Question3.NextElementNumber = 0;
         //Add unique item
         DialogueForInterrogations.Add(ExampleInterrogationConvo14);
@@ -525,7 +525,7 @@ public class Jayson : Character
         ExampleInterrogationConvo15.NPCTalking = true;
         ExampleInterrogationConvo15.EndInterrogation = false;
         ExampleInterrogationConvo15.NoQuestions = false;
-        ExampleInterrogationConvo15.Response = "Moe!";
+        ExampleInterrogationConvo15.Response = "Proving the existence of the pet illuminati!";
 
 
 
@@ -536,7 +536,7 @@ public class Jayson : Character
         ExampleInterrogationConvo15.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo15.Question2 = new Question();
-        ExampleInterrogationConvo15.Question2.QuestionText = " ";
+        ExampleInterrogationConvo15.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo15.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo15.Question3 = new Question();
@@ -563,7 +563,7 @@ public class Jayson : Character
         ExampleInterrogationConvo16.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo16.Question2 = new Question();
-        ExampleInterrogationConvo16.Question2.QuestionText = " ";
+        ExampleInterrogationConvo16.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo16.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo16.Question3 = new Question();
@@ -590,7 +590,7 @@ public class Jayson : Character
         ExampleInterrogationConvo17.Question1.NextElementNumber = 0;
 
         ExampleInterrogationConvo17.Question2 = new Question();
-        ExampleInterrogationConvo17.Question2.QuestionText = " ";
+        ExampleInterrogationConvo17.Question2.QuestionText = "[Back to the first screen] ";
         ExampleInterrogationConvo17.Question2.NextElementNumber = 0;
 
         ExampleInterrogationConvo17.Question3 = new Question();
@@ -607,7 +607,7 @@ public class Jayson : Character
         ExampledialogueAfterClue.EndInterrogation = false;
         ExampledialogueAfterClue.NoQuestions = true;
         ExampledialogueAfterClue.NPCTalking = true;
-        ExampledialogueAfterClue.Response = " Intriguing!... What is it? ";
+        ExampledialogueAfterClue.Response = " Intriguing!... What is it? [It seems this is not the right clue for Jayson...]";
         DialogueAfterClues.Add(ExampledialogueAfterClue);
 
     }

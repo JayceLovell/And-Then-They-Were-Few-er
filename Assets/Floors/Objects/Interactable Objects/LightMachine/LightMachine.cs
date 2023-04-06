@@ -37,7 +37,7 @@ public class LightMachine : Objects
         
         DialogueForObjects Dialogue0 = new DialogueForObjects();
         Dialogue0.JustAshlynTalking = true;
-        Dialogue0.Text = "Hmm want kind of device is this?";
+        Dialogue0.Text = "Hmm what kind of device is this?";
 
         DialogueForObject.Add(Dialogue0);
 
@@ -128,7 +128,7 @@ public class LightMachine : Objects
         DialogueForObjects Dialogue5 = new DialogueForObjects();
         Dialogue5.JustAshlynTalking = true;
         Dialogue5.EndInteraction = true;
-        Dialogue5.Text = "Neet.";
+        Dialogue5.Text = "Neat.";
 
         DialogueForObject.Add(Dialogue5);
 
